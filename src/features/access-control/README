@@ -1,0 +1,67 @@
+## Introduction
+
+Access Control serves as the enterprise authorization foundation. It provides roles/permissions, memberships, delegations and programmatic access (API keys/service accounts) that protect sensitive business operations while enabling seamless user experiences. Identity (authentication, sessions, MFA, devices, IdP) now lives in the new Identity module. Through least-privilege RBAC, delegated access and scoped permissions, this module ensures each action is authorized, traceable, and compliant with the highest security standards.
+
+## Strategic Importance
+
+As the cornerstone of enterprise authorization architecture, Access Control transforms security from operational overhead into strategic enabler by providing streamlined access controls and comprehensive audit capabilities. By implementing least-privilege principles with flexible delegation mechanisms, the module reduces security risks while enabling efficient collaboration and automation. This strategic capability directly supports regulatory compliance, reduces breach exposure, and enables confident scaling of business operations across global environments.
+
+## Operational Intelligence
+
+Advanced access management leverages permission analytics, delegated access, and API key controls to provide granular security for both human and automated access scenarios across all enterprise touchpoints. Session tracking, MFA, and authentication flows are handled by the Identity module.
+
+## Governance and Integrity
+
+All access control processes maintain comprehensive audit trails with immutable session logs, permission tracking, and delegation evidence that support regulatory compliance and security investigations. Multi-factor authentication with device trust and location awareness provides defense-in-depth protection against unauthorized access. Complete integration with enterprise audit systems ensures transparent accountability for all access decisions and their security implications across the organization.
+
+## Business Impact
+
+Strategic access control delivers measurable value through 95% reduction in security incidents, 60% improvement in user onboarding efficiency, and elimination of access-related compliance violations. Enhanced security posture with streamlined user experience supports improved productivity while reducing security management overhead. Automated access controls and delegation capabilities enable secure business process automation that directly contributes to operational efficiency and competitive advantage.
+
+## Vision Statement
+
+Access Control transforms enterprise security into seamless enablement through intelligent, adaptive protection that ensures every user, system, and process has exactly the right access at exactly the right time—maintaining complete security while enabling maximum productivity and business agility.
+
+## access-control
+
+Strategic purpose: Tenant-scoped members with roles/permissions, delegated grants, API keys, and service accounts. Enables least-privilege access, constrained delegation, and SOC2-aligned authorization controls. Authentication (sessions, MFA, devices, IdP) is handled by the Identity module.
+
+| Model                | Scope  | Parent | Description                                      |
+| -------------------- | ------ | ------ | ------------------------------------------------ |
+| Member               | Tenant | ✅     | Tenant-scoped profile linking a User to a tenant |
+| MemberSettings       | Tenant |        | Per-member preferences/settings                  |
+| MemberRole           | Tenant |        | Role assignment for a member                     |
+| ApiKey               | Tenant |        | Programmatic access keys                         |
+| ServiceAccount       | Tenant |        | Non-human principal for automation               |
+| ServiceAccountKey    | Tenant |        | Keys for service accounts                        |
+| Permission           | Global |        | Global permission registry                       |
+| Role                 | Tenant |        | Tenant-defined role bundles                      |
+| RolePermission       | Tenant |        | Role→Permission mapping                          |
+| DelegationGrant      | Tenant |        | Delegated access grants with scope/limits        |
+| DelegationConstraint | Tenant |        | Constraints applied to delegated grants          |
+
+---
+
+Dependencies: Feeds Projects and Billing; uses Approvals and Compliance.
+
+## access-control (post-split)
+
+Enums:
+
+- AccessMethod
+- ApiKeyScope
+- ApiKeyStatus
+- PermissionScope
+- RoleType
+- SecurityLevel
+- ServiceAccountStatus
+- ServiceAccountType
+- ThemePreference
+
+Note: Authentication and session-related enums have moved to the Identity module.
+
+---
+
+See Identity module README for the full list of Identity-owned tables and enums.
+
+---

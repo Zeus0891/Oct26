@@ -1,0 +1,216 @@
+import { NextFunction, Request, Response, Router } from "express";
+import { prisma } from "../../core/config/prisma.config";
+import { AuthenticatedRequest } from "../../middlewares/types";
+import { MiddlewareChains } from "../../shared/routes/middleware-chain.builder";
+import { AuditService } from "../../shared/services/audit/audit.service";
+import { AuthService } from "../../shared/services/security/auth.service";
+import { JwtUtils } from "../../shared/utils/security/jwt.util";
+import { PasswordUtils } from "../../shared/utils/security/password.util";
+
+// Initialize services and controller (uses core prisma.config wiring)
+const auditService = new AuditService(prisma as any);
+const authService = new AuthService(prisma as any, auditService);
+// Note: AuthController exists but depends on domain models not yet aligned.
+// We wire AuthService to prisma for future use, while providing functional
+// handlers here to unblock Phase 1 endpoints.
+
+const router = Router();
+
+// POST /users/login — public
+router.post(
+  "/login",
+  ...MiddlewareChains.public(),
+  async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const { email, password, tenantId } = req.body || {};
+      if (!email || !password || !tenantId) {
+        res.status(400).json({
+          success: false,
+          error: "VALIDATION_ERROR",
+          message: "email, password and tenantId are required",
+        });
+        return;
+      }
+
+      const user = await prisma.user.findUnique({ where: { email } });
+      if (!user || !user.passwordHash) {
+        res.status(401).json({
+          success: false,
+          error: "INVALID_CREDENTIALS",
+          message: "Invalid credentials",
+        });
+        return;
+      }
+
+      const valid = await PasswordUtils.verify(password, user.passwordHash);
+      if (!valid) {
+        res.status(401).json({
+          success: false,
+          error: "INVALID_CREDENTIALS",
+          message: "Invalid credentials",
+        });
+        return;
+      }
+
+      const secret = process.env.JWT_SECRET || "change-me";
+      const tokens = JwtUtils.createTokenPair(user.id, secret, {
+        tenantId,
+        roles: [],
+        permissions: [],
+        accessExpiresIn: "1h",
+        refreshExpiresIn: "7d",
+      });
+
+      res.json({
+        success: true,
+        data: {
+          user: {
+            id: user.id,
+            email: user.email,
+            tenantId,
+            roles: [],
+            permissions: [],
+          },
+          tokens: {
+            accessToken: tokens.accessToken,
+            refreshToken: tokens.refreshToken,
+            tokenType: "Bearer",
+            expiresIn: 3600,
+          },
+        },
+      });
+    } catch (err) {
+      next(err);
+    }
+  }
+);
+
+// POST /users/register — public minimal registration
+router.post(
+  "/register",
+  ...MiddlewareChains.public(),
+  async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const { email, password, firstName, lastName } = req.body || {};
+
+      if (!email || !password) {
+        return res.status(400).json({
+          success: false,
+          error: "VALIDATION_ERROR",
+          message: "email and password are required",
+        });
+      }
+
+      // Basic uniqueness check
+      const existing = await prisma.user.findUnique({ where: { email } });
+      if (existing) {
+        return res.status(409).json({
+          success: false,
+          error: "EMAIL_TAKEN",
+          message: "Email is already registered",
+        });
+      }
+
+      const hashed = await PasswordUtils.hash(password);
+
+      const user = await prisma.user.create({
+        data: {
+          email,
+          firstName: firstName || null,
+          lastName: lastName || null,
+          passwordHash: hashed.hash,
+          emailVerified: false,
+          updatedAt: new Date(),
+        },
+        select: {
+          id: true,
+          email: true,
+          firstName: true,
+          lastName: true,
+          status: true,
+          createdAt: true,
+        },
+      });
+
+      return res.status(201).json({ success: true, data: { user } });
+    } catch (err) {
+      return next(err);
+    }
+  }
+);
+
+// POST /users/refresh — public (uses body refresh token)
+router.post(
+  "/refresh",
+  ...MiddlewareChains.public(),
+  async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const { refreshToken } = req.body || {};
+      if (!refreshToken) {
+        res.status(400).json({
+          success: false,
+          error: "INVALID_TOKEN",
+          message: "refreshToken is required",
+        });
+        return;
+      }
+      const secret = process.env.JWT_SECRET || "change-me";
+      const result = JwtUtils.refreshToken(refreshToken, secret, {
+        accessExpiresIn: "1h",
+        refreshExpiresIn: "7d",
+        rotateRefreshToken: true,
+        preserveClaims: ["tenantId", "roles", "permissions", "sessionId"],
+      });
+
+      if (!result.success || !result.tokens) {
+        res.status(401).json({
+          success: false,
+          error: result.code || "REFRESH_FAILED",
+          message: result.error || "Failed to refresh token",
+        });
+        return;
+      }
+
+      res.json({ success: true, data: result.tokens });
+    } catch (err) {
+      next(err);
+    }
+  }
+);
+
+// GET /users/profile — authenticated
+router.get(
+  "/profile",
+  ...MiddlewareChains.authenticated(),
+  async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const areq = req as AuthenticatedRequest;
+      if (!areq.user) {
+        res.status(401).json({
+          success: false,
+          error: "UNAUTHORIZED",
+          message: "User not authenticated",
+        });
+        return;
+      }
+
+      // Optionally expand from DB if needed later; for now return token context
+      res.json({
+        success: true,
+        data: {
+          user: {
+            id: areq.user.id,
+            email: areq.user.email,
+            tenantId: areq.user.tenantId,
+            roles: areq.user.roles,
+            permissions: areq.user.permissions,
+          },
+        },
+      });
+    } catch (err) {
+      next(err);
+    }
+  }
+);
+
+export default router;

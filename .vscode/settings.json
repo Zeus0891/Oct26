@@ -1,0 +1,399 @@
+  {
+    "[dotenv]": {
+      "editor.tokenColorCustomizations": {
+        "textMateRules": [
+          {
+            "scope": "variable.other.env",
+            "settings": {
+              "background": "#00000000"
+            }
+          }
+        ]
+    },
+  // ==== GitHub Copilot Core Configuration ====
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": true,
+    "prisma": true,
+    "yaml": true,
+    "json": true,
+    "typescript": true,
+    "javascript": true,
+    "typescriptreact": true,
+    "javascriptreact": true
+  },
+
+  // Inline Suggestions - Optimized for speed
+  "github.copilot.inlineSuggest.enabled": true,
+  "github.copilot.inlineSuggest.enableAutoTrigger": true,
+
+  // Next Edit Suggestions (NES) - New feature for predictive editing
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "github.copilot.nextEditSuggestions.fixes": true,
+
+  // ==== Copilot Chat & Agent Mode ====
+  "github.copilot.chat.agent.enabled": true,
+  "github.copilot.chat.agent.runTasks": true,
+  "chat.agent.enabled": true,
+
+  // Chat rendering and context
+  "chat.renderRelatedFiles": true,
+  "chat.experimental.statusIndicator.enabled": true,
+
+  // Custom Instructions - Critical for ERP development
+  "github.copilot.chat.codeGeneration.useInstructionFiles": true,
+  "chat.mcp.discovery.enabled": {
+    "claude-desktop": true,
+    "windsurf": true,
+    "cursor-global": true,
+    "cursor-workspace": true
+  },
+
+  // ==== Workspace Indexing for Better Context ====
+  // Enable remote workspace indexing for GitHub repos
+  "github.copilot.advanced": {
+    "workspaceIndexing": true,
+    "debug.overrideEngine": "automatic"
+  },
+
+  // ==== Editor Configuration ====
+  "editor.inlineSuggest.enabled": true,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.semanticHighlighting.enabled": true,
+  "editor.rulers": [100, 120],
+  "editor.suggestSelection": "first",
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": true,
+  "editor.wordWrap": "on",
+  "editor.linkedEditing": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+  "editor.stickyScroll.enabled": true,
+
+  // Code Actions - Auto-fix on save
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "never",
+    "source.addMissingImports": "explicit"
+  },
+
+  // ==== TypeScript / JavaScript Optimization ====
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "typescript.suggest.autoImports": true,
+  "typescript.suggest.paths": true,
+  "typescript.suggest.completeFunctionCalls": true,
+
+  // Performance optimization for TypeScript
+  "typescript.tsserver.maxTsServerMemory": 8192,
+  "typescript.tsserver.experimental.enableProjectDiagnostics": true,
+  "typescript.disableAutomaticTypeAcquisition": false,
+
+  // Inlay Hints - Enhanced code understanding
+  "javascript.inlayHints.parameterNames.enabled": "all",
+  "javascript.inlayHints.parameterTypes.enabled": true,
+  "javascript.inlayHints.variableTypes.enabled": true,
+  "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "typescript.inlayHints.parameterNames.enabled": "all",
+  "typescript.inlayHints.parameterTypes.enabled": true,
+  "typescript.inlayHints.variableTypes.enabled": true,
+  "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
+  "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "typescript.inlayHints.enumMemberValues.enabled": true,
+
+  // ==== Prisma Configuration ====
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2
+  },
+
+  // ==== TypeScript/JavaScript Formatting ====
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+
+  // ==== JSON & JSONC ====
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2
+  },
+
+  // ==== YAML Configuration ====
+  "[yaml]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+
+  // ==== SQL Configuration ====
+  "[sql]": {
+    "editor.defaultFormatter": "cweijan.vscode-postgresql-client2",
+    "editor.formatOnSave": false,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4
+  },
+
+  // ==== Markdown Configuration ====
+  "markdown.mermaid.enabled": true,
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "editor.rulers": [100],
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+
+  // ==== Git Configuration ====
+  "git.autorefresh": true,
+  "git.autofetch": true,
+  "git.autoRepositoryDetection": "subFolders",
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "git.suggestSmartCommit": true,
+
+  // ==== Files & Explorer ====
+  "explorer.excludeGitIgnore": false,
+  "files.showHiddenFiles": true,
+  "files.autoSave": "onFocusChange",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.exclude": {
+    "**/.git": false,
+    "**/.vscode": false,
+    "**/.DS_Store": true
+  },
+
+  // ==== Performance - File Watchers (Critical for large monorepos) ====
+  "files.watcherExclude": {
+    "**/.git/**": true,
+    "**/node_modules/**": true,
+    "**/dist/**": true,
+    "**/build/**": true,
+    "**/.next/**": true,
+    "**/.turbo/**": true,
+    "**/.cache/**": true,
+    "**/.yarn/**": true,
+    "**/.pnpm-store/**": true,
+    "**/generated/**": true,
+    "**/generated/prisma/**": true,
+    "**/prisma/documentation/prisma-docs/**": true,
+    "**/db/sql/**": true,
+    "**/coverage/**": true,
+    "**/storybook-static/**": true,
+    "**/.vite/**": true,
+    "**/out/**": true,
+    "**/.nx/**": true
+  },
+
+  // ==== Search Configuration (Performance) ====
+  "search.exclude": {
+    "**/.git": true,
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/.next": true,
+    "**/.turbo": true,
+    "**/.cache": true,
+    "**/.yarn": true,
+    "**/.pnpm-store": true,
+    "**/generated": true,
+    "**/generated/prisma": true,
+    "**/prisma/documentation/prisma-docs": true,
+    "**/db/sql": true,
+    "**/coverage": true,
+    "**/storybook-static": true,
+    "**/.vite": true,
+    "**/package-lock.json": true,
+    "**/yarn.lock": true,
+    "**/pnpm-lock.yaml": true,
+    "**/.env": false
+  },
+
+  // Smart search settings
+  "search.smartCase": true,
+  "search.followSymlinks": false,
+
+  // ==== Terminal Configuration ====
+  "terminal.integrated.defaultProfile.linux": "bash",
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.fontSize": 13,
+  "terminal.integrated.cursorBlinking": true,
+
+  // ==== Debugging ====
+  "debug.console.fontSize": 13,
+  "debug.internalConsoleOptions": "neverOpen",
+  "debug.javascript.autoAttachFilter": "smart",
+
+  // ==== Emmet Configuration ====
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact"
+  },
+  "emmet.triggerExpansionOnTab": true,
+
+  // ==== Path Intellisense ====
+  "path-intellisense.autoSlashAfterDirectory": true,
+  "path-intellisense.extensionOnImport": true,
+
+  // ==== Import Cost (Optional but useful for bundle optimization) ====
+  "importCost.showCalculatingDecoration": true,
+
+  // ==== Telemetry & Privacy ====
+  "telemetry.telemetryLevel": "off",
+  "github.copilot.telemetry.enabled": false,
+
+  // ==== Logging ====
+  "github.copilot.logLevel": "info",
+  "logLevel": "warn",
+
+  // ==== Security & Code Quality ====
+  "security.workspace.trust.untrustedFiles": "prompt",
+  "security.workspace.trust.enabled": true,
+
+  // ==== Extensions Recommendations ====
+  "extensions.ignoreRecommendations": false,
+
+  // ==== Window Configuration ====
+  "window.zoomLevel": 0,
+  "window.titleBarStyle": "custom",
+  "window.menuBarVisibility": "toggle",
+  "window.restoreWindows": "all",
+
+  // ==== Breadcrumbs ====
+  "breadcrumbs.enabled": true,
+  "breadcrumbs.symbolPath": "on",
+
+  // ==== Problems Panel ====
+  "problems.autoReveal": true,
+  "problems.sortOrder": "severity",
+
+  // ==== Diff Editor ====
+  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.renderSideBySide": true,
+
+  // ==== Workbench Configuration ====
+  "workbench.startupEditor": "welcomePageInEmptyWorkbench",
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.closeEmptyGroups": true,
+  "workbench.editor.limit.enabled": true,
+  "workbench.editor.limit.value": 10,
+  "workbench.colorTheme": "Default Dark Modern",
+  "workbench.iconTheme": "vs-seti",
+  "workbench.tree.indent": 20,
+
+  // ==== Performance - General ====
+  "extensions.autoUpdate": false,
+  "extensions.autoCheckUpdates": false,
+
+  // ==== NPM Scripts ====
+  "npm.enableRunFromFolder": true,
+  "npm.packageManager": "pnpm",
+  "npm.scriptExplorerAction": "run",
+
+  // ==== ESLint Configuration ====
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "eslint.enable": true,
+  "eslint.format.enable": false,
+  "eslint.lintTask.enable": true,
+  "eslint.run": "onType",
+
+  // ==== Prettier Configuration ====
+  "prettier.requireConfig": true,
+  "prettier.useEditorConfig": true,
+
+  // ==== Code Spell Checker (Optional but recommended) ====
+  "cSpell.enabled": true,
+  "cSpell.language": "en,en-US",
+
+  // ==== Todo Tree (Optional) ====
+  "todo-tree.general.tags": [
+    "TODO",
+    "FIXME",
+    "HACK",
+    "BUG",
+    "NOTE",
+    "XXX"
+  ],
+
+  // ==== Better Comments (Optional) ====
+  "better-comments.tags": [
+    {
+      "tag": "!",
+      "color": "#FF2D00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "?",
+      "color": "#3498DB",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "//",
+      "color": "#474747",
+      "strikethrough": true,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "todo",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "*",
+      "color": "#98C379",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    }
+  ],
+  "chat.mcp.access": "all"
+}
+  }
