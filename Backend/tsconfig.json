@@ -35,9 +35,15 @@
     "src/**/*",
     "prisma/**/*",
     "tests/**/*",
+    "scripts/**/*",
     "documentation/deprecable/ide"
   ],
-  "exclude": ["node_modules", "dist", "src/features/crm/TEMPLATE_*"],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "src/features/crm/TEMPLATE_*",
+    "scripts/RBAC/**/*"
+  ],
   "ts-node": {
     "files": true
   },
