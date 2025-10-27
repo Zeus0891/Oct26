@@ -1,9 +1,9 @@
-import { Response, NextFunction } from "express";
-import type { AuthenticatedRequest } from "@/shared/controllers/base/base.controller";
 import { prisma } from "@/core/config/prisma.config";
+import { DocumentGroupsService } from "@/features/tenant/services/documents.service";
+import type { AuthenticatedRequest } from "@/shared/controllers/base/base.controller";
 import { AuditService } from "@/shared/services/audit/audit.service";
 import { RBACService } from "@/shared/services/security/rbac.service";
-import { DocumentGroupsService } from "@/features/tenant/services/documents.service";
+import { NextFunction, Response } from "express";
 
 export class DocumentGroupsController {
   private readonly svc: DocumentGroupsService;
@@ -12,6 +12,27 @@ export class DocumentGroupsController {
     const audit = new AuditService(prisma);
     const rbac = new RBACService(prisma, audit);
     this.svc = service ?? new DocumentGroupsService(prisma, audit, rbac);
+  }
+
+  async create(
+    req: AuthenticatedRequest,
+    res: Response,
+    next: NextFunction
+  ): Promise<void> {
+    try {
+      if (!req.context?.tenant || !req.context?.actor) {
+        res.status(401).json({ success: false, error: "Unauthorized" });
+        return;
+      }
+      const result = await this.svc.create(req.context);
+      if (!result.success || !result.data) {
+        res.status(400).json(result);
+        return;
+      }
+      res.status(201).json({ success: true, data: result.data });
+    } catch (err) {
+      next(err);
+    }
   }
 
   async list(

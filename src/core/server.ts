@@ -19,6 +19,7 @@ import { bootstrapAndStart, BootstrapConfig } from "./bootstrap";
 // Feature modules
 import accessRouter from "../features/access-control";
 import usersRoutes from "../features/identity/users.routes";
+import projectsRouter from "../features/projects";
 import tenantRouter from "../features/tenant";
 import tenantPublicRoutes from "../features/tenant/routes/public.routes";
 
@@ -79,6 +80,8 @@ async function startServer(): Promise<void> {
           // Identity module - authentication + profile/MFA/devices
           // Access Control module - roles, permissions, role-permissions
           app.use("/api/access", accessRouter);
+          // Projects module - project entities (Projects, ProjectTasks, ProjectMembers)
+          app.use("/api/projects", projectsRouter);
         },
 
         enableGracefulShutdown: true,

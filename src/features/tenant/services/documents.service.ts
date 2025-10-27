@@ -1,17 +1,17 @@
+import { AuditService } from "@/shared/services/audit/audit.service";
 import {
-  PrismaClient,
-  Prisma,
-  DocumentGroup,
-  PlatformTenantChildStatus,
-} from "@prisma/client";
-import {
-  BaseService,
-  AuditAction,
-  ApiResponse,
+    ApiResponse,
+    AuditAction,
+    BaseService,
 } from "@/shared/services/base/base.service";
 import type { RequestContext } from "@/shared/services/base/context.service";
-import { AuditService } from "@/shared/services/audit/audit.service";
 import { RBACService } from "@/shared/services/security/rbac.service";
+import {
+    DocumentGroup,
+    PlatformTenantChildStatus,
+    Prisma,
+    PrismaClient,
+} from "@prisma/client";
 
 export interface ListDocumentsParams {
   page?: number;
@@ -30,8 +30,22 @@ export class DocumentGroupsService extends BaseService<DocumentGroup> {
     super(prisma, auditService, rbacService, "DocumentGroup");
   }
 
-  async create(): Promise<any> {
-    throw new Error("Not supported");
+  async create(ctx: RequestContext): Promise<ApiResponse<DocumentGroup>> {
+    return this.withAudit(ctx, AuditAction.CREATE, async () => {
+      const created = await this.withTenantRLS(ctx, async (tx) => {
+        const now = new Date();
+        return tx.documentGroup.create({
+          data: {
+            tenantId: ctx.tenant!.tenantId,
+            status: PlatformTenantChildStatus.ACTIVE,
+            updatedAt: now,
+            createdByActorId: ctx.actor?.userId,
+            updatedByActorId: ctx.actor?.userId,
+          },
+        });
+      });
+      return created;
+    });
   }
 
   async update(): Promise<any> {

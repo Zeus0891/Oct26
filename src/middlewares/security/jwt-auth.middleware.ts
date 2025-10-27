@@ -1,4 +1,4 @@
-import { Response, NextFunction } from "express";
+import { NextFunction, Response } from "express";
 import jwt from "jsonwebtoken";
 import { AuthenticatedRequest, JwtPayload } from "../types";
 
@@ -20,15 +20,24 @@ export const jwtAuthMiddleware = (
   try {
     // In test/E2E environment, bypass JWT verification and stub user context
     if (process.env.NODE_ENV === "test" || process.env.E2E === "1") {
-      const tenantIdHeader = (req.headers["x-tenant-id"] ||
-        req.headers["X-Tenant-Id"]) as string | undefined;
+      const tenantIdHeader = (req.headers["x-tenant-id"] || req.headers["X-Tenant-Id"]) as string | undefined;
+      const effectiveTenantId = tenantIdHeader || "00000000-0000-0000-0000-000000000001";
       req.user = {
         id: "00000000-0000-0000-0000-000000000000",
         email: "test@example.com",
-        tenantId: tenantIdHeader || "00000000-0000-0000-0000-000000000001",
+        tenantId: effectiveTenantId,
         roles: ["SYSTEM_ADMIN", "ADMIN"],
         permissions: ["*"] as any,
       };
+      // Ensure tenant context is also present for downstream context builders
+      req.tenant = {
+        id: effectiveTenantId,
+        slug: `tenant-${effectiveTenantId}`,
+        name: `Tenant ${effectiveTenantId}`,
+        status: "ACTIVE",
+        settings: {},
+      };
+      console.log(`[JWT_AUTH] E2E bypass -> User: ${req.user.id} Tenant: ${req.tenant.id}`);
       return next();
     }
 
@@ -50,23 +59,35 @@ export const jwtAuthMiddleware = (
     }
 
     // Verify and decode JWT token
-    const decoded = jwt.verify(token, process.env.JWT_SECRET) as JwtPayload & {
-      tenantId?: string;
-    };
+    const decoded = jwt.verify(token, process.env.JWT_SECRET) as JwtPayload & { tenantId?: string };
+
+    // Resolve tenant id from header or token
+    const tenantIdHeader = (req.headers["x-tenant-id"] || req.headers["X-Tenant-Id"]) as string | undefined;
+    const effectiveTenantId = tenantIdHeader || (decoded as any).tenant_id || decoded.tenantId || "";
 
     // Set user context on request
     req.user = {
       id: decoded.sub,
       email: decoded.email,
-      // Support both snake_case and camelCase tenant id from token
-      tenantId: (decoded as any).tenant_id || decoded.tenantId || "",
-      roles: decoded.roles || [],
-      permissions: decoded.permissions || [],
+      // Prefer header override, then token claims
+      tenantId: effectiveTenantId,
+      roles: Array.isArray(decoded.roles) ? decoded.roles : (decoded.roles ? [decoded.roles as any] : []),
+      permissions: Array.isArray(decoded.permissions)
+        ? decoded.permissions
+        : (decoded.permissions ? [decoded.permissions as any] : []),
     };
 
-    console.log(
-      `[JWT_AUTH] User ${decoded.email} authenticated for tenant ${decoded.tenant_id}`
-    );
+    // Ensure a minimal tenant object is present for downstream consumers
+    if (!req.tenant) {
+      req.tenant = {
+        id: effectiveTenantId,
+        slug: `tenant-${effectiveTenantId}`,
+        name: `Tenant ${effectiveTenantId}`,
+        status: "ACTIVE",
+        settings: {},
+      };
+    }
+    console.log(`[JWT_AUTH] Authenticated -> User: ${req.user.id} Tenant: ${effectiveTenantId}`);
 
     next();
   } catch (error) {

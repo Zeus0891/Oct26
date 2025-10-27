@@ -26,3 +26,6 @@ export * from "./approval-flow.types";
 
 // Task and assignment management
 export * from "./task.types";
+
+// Projects domain DTOs (API contracts for Projects module)
+export * from "./projects.types";

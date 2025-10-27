@@ -113,8 +113,7 @@ export * from "./security";
 
 // Re-export commonly needed context types from services for convenience
 export type {
-  RequestContext,
-  RLSClaims,
+    RLSClaims, RequestContext
 } from "../services/base/context.service";
 
 // =============================================================================
@@ -139,71 +138,25 @@ export * from "./finance";
  * workflow types when needed rather than using wildcard imports.
  */
 export {
-  // Status management types
-  StatusTrackingBase,
-  StatusTransition,
-  StatusLifecycle,
-  EstimateStatusInfo,
-  BidStatusInfo,
-  ProjectStatusInfo,
-  ApprovalStatusInfo,
-  SubmittalStatusInfo,
-  TaskStatusInfo,
-  StatusChangeEvent,
-  StatusValidationResult,
-  StatusTransitionRequest,
-  BulkStatusOperation,
-  StatusOperationResult,
-  StatusMetrics,
-
-  // Revision control types
-  RevisionTrackingBase,
-  RevisionMetadata,
-  EstimateRevisionInfo,
-  ProjectRevisionInfo,
-  GenericRevision,
-  RevisionComparison,
-  RevisionFieldChange,
-  CreateRevisionRequest,
-  RestoreRevisionRequest,
-  RevisionPermissions,
-  RevisionAuditEvent,
-  RevisionBranch,
-  RevisionMergeRequest,
-  RevisionMetrics,
-
-  // Workflow approval flow types (prefixed to avoid conflicts)
-  ApprovalRuleDefinition,
-  ApprovalStep,
-  ApprovalApprover,
-  ApprovalRequestInfo,
-  ApprovalDecisionInfo,
-  ApprovalWorkflowInstance,
-  ApprovalWorkflowState,
-  ApprovalStepInstance,
-  ApprovalWorkflowEvent,
-  ApprovalDelegationRequest,
-  ApprovalEscalation,
-  BulkApprovalOperation,
-  ApprovalNotificationConfig,
-
-  // Task management types
-  TaskInfo,
-  TaskAssignmentInfo,
-  TaskChecklistItemInfo,
-  TaskDependencyInfo,
-  TaskWithDetails,
-  CreateTaskRequest,
-  UpdateTaskRequest,
-  AssignTaskRequest,
-  TaskProgress,
-  TaskWorklog,
-  TaskFilter,
-  TaskSort,
-  TaskMetrics,
-  BulkTaskOperation,
-  TaskTemplate,
-  TaskNotificationConfig,
+    ApprovalApprover, ApprovalDecisionInfo, ApprovalDelegationRequest,
+    ApprovalEscalation, ApprovalNotificationConfig, ApprovalRequestInfo,
+    // Workflow approval flow types (prefixed to avoid conflicts)
+    ApprovalRuleDefinition, ApprovalStatusInfo, ApprovalStep, ApprovalStepInstance,
+    ApprovalWorkflowEvent, ApprovalWorkflowInstance,
+    ApprovalWorkflowState, AssignTaskRequest, BidStatusInfo, BulkApprovalOperation, BulkStatusOperation, BulkTaskOperation,
+    // Projects domain DTOs
+    CreateProjectDTO, CreateProjectMemberDTO, CreateProjectTaskDTO, CreateRevisionRequest, CreateTaskRequest, EstimateRevisionInfo, EstimateStatusInfo, GenericRevision, ProjectListFilter, ProjectMemberListFilter, ProjectRevisionInfo, ProjectStatusInfo, ProjectTaskListFilter, RestoreRevisionRequest, RevisionAuditEvent,
+    RevisionBranch, RevisionComparison,
+    RevisionFieldChange, RevisionMergeRequest, RevisionMetadata, RevisionMetrics, RevisionPermissions,
+    // Revision control types
+    RevisionTrackingBase, StatusChangeEvent, StatusLifecycle, StatusMetrics, StatusOperationResult,
+    // Status management types
+    StatusTrackingBase,
+    StatusTransition, StatusTransitionRequest, StatusValidationResult, SubmittalStatusInfo, TaskAssignmentInfo,
+    TaskChecklistItemInfo,
+    TaskDependencyInfo, TaskFilter,
+    // Task management types
+    TaskInfo, TaskMetrics, TaskNotificationConfig, TaskProgress, TaskSort, TaskStatusInfo, TaskTemplate, TaskWithDetails, TaskWorklog, UpdateProjectDTO, UpdateProjectMemberDTO, UpdateProjectTaskDTO, UpdateTaskRequest
 } from "./workflow";
 
 // =============================================================================
@@ -236,49 +189,25 @@ export * from "./integration";
  * easier access to frequently used enum values.
  */
 export type {
-  // Tenant and actor enums
-  TenantStatus,
-  TenantTier,
-  TenantRegion,
-  ActorType,
-  ActorStatus,
-  // Common impact/risk/theme enums
-  ImpactLevel,
-  RiskLevel,
-  ThemePreference,
-
-  // Security and RBAC enums
-  RoleType,
-  AssignmentScope,
-  PermissionScope,
-
-  // Financial enums
-  CurrencyCode,
-  DebitCreditIndicator,
-  PaymentStatus,
-  APBillStatus,
-
-  // Workflow enums
-  EstimateStatus,
-  ProjectStatus,
-  ApprovalStatus,
-  SubmittalStatus,
-  WorkItemStatus,
-  TaskPriority,
-  TaskType,
-
-  // Integration enums
-  IntegrationConnectionStatus,
-  IntegrationProviderStatus,
-  IntegrationCategory,
-  DeliveryStatus,
-  DeliveryChannel,
-  ApiKeyStatus,
-  ApiKeyScope,
-
-  // Common utility enums
-  RetentionPolicy,
-  AuditAction,
+    APBillStatus, ActorStatus, ActorType, ApiKeyScope, ApiKeyStatus, ApprovalStatus, AssignmentScope, AuditAction,
+    // Financial enums
+    CurrencyCode,
+    DebitCreditIndicator, DeliveryChannel, DeliveryStatus,
+    // Workflow enums
+    EstimateStatus,
+    // Common impact/risk/theme enums
+    ImpactLevel, IntegrationCategory,
+    // Integration enums
+    IntegrationConnectionStatus,
+    IntegrationProviderStatus, PaymentStatus, PermissionScope, ProjectStatus,
+    // Common utility enums
+    RetentionPolicy, RiskLevel,
+    // Security and RBAC enums
+    RoleType, SubmittalStatus, TaskPriority,
+    TaskType, TenantRegion,
+    // Tenant and actor enums
+    TenantStatus,
+    TenantTier, ThemePreference, WorkItemStatus
 } from "@prisma/client";
 
 // =============================================================================

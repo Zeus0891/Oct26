@@ -28,6 +28,7 @@
     "auth:curl": "bash scripts/auth-curl-smoke.sh",
   "tenant:smoke": "bash scripts/tenant-lifecycle-smoke.sh",
   "tenant:test:e2e": "cross-env E2E=1 ts-node -r tsconfig-paths/register scripts/tenant-lifecycle.test.ts",
+    "projects:smoke": "node scripts/projects-smoke.test.cjs",
     "test:e2e": "cross-env E2E=1 jest --runInBand --detectOpenHandles --forceExit",
     "test:e2e:ci": "cross-env E2E=1 jest --runInBand --ci",
     "validate-security": "ts-node scripts/run-security-validation.ts",

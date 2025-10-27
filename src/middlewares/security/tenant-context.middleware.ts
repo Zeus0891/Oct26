@@ -1,4 +1,5 @@
-import { Response, NextFunction } from "express";
+import { ContextService } from "@/shared/services/base/context.service";
+import { NextFunction, Response } from "express";
 import { AuthenticatedRequest, TenantContext } from "../types";
 
 /**
@@ -27,8 +28,8 @@ export const tenantContextMiddleware = async (
     const { user } = req;
 
     // Check for tenant switch request via header
-    const requestedTenantId = req.headers["x-tenant-id"] as string;
-    const targetTenantId = requestedTenantId || user.tenantId;
+  const requestedTenantId = (req.headers["x-tenant-id"] || req.headers["X-Tenant-Id"]) as string | undefined;
+  const targetTenantId = requestedTenantId || user.tenantId;
 
     // Validate tenant access (security check)
     if (requestedTenantId && requestedTenantId !== user.tenantId) {
@@ -55,14 +56,14 @@ export const tenantContextMiddleware = async (
     // For now, using minimal tenant context
     const tenantContext: TenantContext = {
       id: targetTenantId,
-      slug: `tenant-${targetTenantId}`, // Will be fetched from DB
-      name: `Tenant ${targetTenantId}`, // Will be fetched from DB
+      slug: `tenant-${targetTenantId}`, // Placeholder; DB fetch can enrich
+      name: `Tenant ${targetTenantId}`,
       status: "ACTIVE",
       settings: {},
     };
 
-    // Set tenant context on request
-    req.tenant = tenantContext;
+  // Set tenant context on request
+  req.tenant = tenantContext;
 
     // Establish RLS context for PostgreSQL
     // This integrates with our existing RLS helper functions
@@ -82,9 +83,14 @@ export const tenantContextMiddleware = async (
       },
     };
 
-    console.log(
-      `[TENANT_CONTEXT] Established context for tenant ${targetTenantId}, user ${user.email}`
-    );
+    // Build shared RequestContext so controllers relying on req.context work
+    try {
+      const contextService = new ContextService();
+      // @ts-ignore - attach for downstream features using shared base controllers
+      (req as any).context = contextService.createContextFromRequest(req as any);
+    } catch {}
+
+    console.log(`[TENANT_CONTEXT] Established -> User: ${user.id} Tenant: ${targetTenantId}`);
 
     next();
   } catch (error) {

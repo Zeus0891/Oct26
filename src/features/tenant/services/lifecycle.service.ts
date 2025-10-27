@@ -1,14 +1,14 @@
-import {
-  PrismaClient,
-  Tenant,
-  PlatformTenantChildStatus,
-  NumberSequenceResetMode,
-  TenantStatus,
-} from "@prisma/client";
+import { AuditService } from "@/shared/services/audit/audit.service";
 import { ApiResponse } from "@/shared/services/base/base.service";
 import type { RequestContext } from "@/shared/services/base/context.service";
-import { AuditService } from "@/shared/services/audit/audit.service";
 import { RBACService } from "@/shared/services/security/rbac.service";
+import {
+    NumberSequenceResetMode,
+    PlatformTenantChildStatus,
+    PrismaClient,
+    Tenant,
+    TenantStatus,
+} from "@prisma/client";
 
 export interface ProvisionTenantInput {
   name: string;
@@ -152,7 +152,28 @@ export class TenantLifecycleService {
           });
         }
 
-        // 5. Optionally seed default templates (placeholder if URLs/content needed)
+        // 5. Seed a baseline DocumentGroup to enable dependent modules (e.g., Projects)
+        // Ensure RLS claims are set within this transaction for the new tenant
+        try {
+          await tx.$executeRaw`select set_config('request.jwt.claims', ${JSON.stringify({
+            tenant_id: newTenant.id,
+            user_id: ctx.actor?.userId || null,
+            role: 'authenticated',
+            roles: 'ADMIN',
+            correlation_id: `tenant_provision_${Date.now()}`,
+          })}, true)`;
+        } catch {}
+        await tx.documentGroup.create({
+          data: {
+            tenantId: newTenant.id,
+            // status defaults to ACTIVE
+            updatedAt: now,
+            createdByActorId: ctx.actor?.userId,
+            updatedByActorId: ctx.actor?.userId,
+          },
+        });
+
+        // 6. Optionally seed default templates (placeholder if URLs/content needed)
         // NOTE: TermsTemplate and ContractTemplate have no business fields beyond base,
         // so we skip creation unless there's a URL or content field to populate in future schema updates.
 

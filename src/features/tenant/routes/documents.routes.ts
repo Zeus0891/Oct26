@@ -1,7 +1,7 @@
-import { Router } from "express";
+import { documentGroupsController as controller } from "@/features/tenant/controllers/documents.controller";
 import { securityStack } from "@/middlewares";
 import { PERMISSIONS } from "@/rbac/permissions";
-import { documentGroupsController as controller } from "@/features/tenant/controllers/documents.controller";
+import { Router } from "express";
 
 const router = Router();
 
@@ -11,6 +11,13 @@ router.get(
   "/",
   ...(securityStack(PERMISSIONS.DOCUMENTGROUP_READ) as any),
   controller.list.bind(controller) as any
+);
+
+// Create document group
+router.post(
+  "/",
+  ...(securityStack(PERMISSIONS.DOCUMENTGROUP_CREATE) as any),
+  controller.create.bind(controller) as any
 );
 
 // Get by id

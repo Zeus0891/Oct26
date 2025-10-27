@@ -15,7 +15,7 @@ import { Router } from "express";
 const tenantRouter = Router();
 
 // Mount sub-routers under /api/tenant
-tenantRouter.use("/", tenantRoutes); // Tenant profile operations (admin)
+// IMPORTANT: Mount specific paths BEFORE the catch-all tenant routes to avoid shadowing (e.g., "/:id")
 tenantRouter.use("/members", membersRoutes);
 tenantRouter.use("/feature-flags", featureFlagsRoutes);
 tenantRouter.use("/settings", settingsRoutes);
@@ -27,5 +27,7 @@ tenantRouter.use("/document-groups", documentsRoutes);
 tenantRouter.use("/templates", templatesRoutes);
 tenantRouter.use("/events", eventsRoutes);
 tenantRouter.use("/lifecycle", lifecycleRoutes);
+// Keep base tenant routes last (contains generic patterns like "/:id")
+tenantRouter.use("/", tenantRoutes); // Tenant profile operations (admin)
 
 export default tenantRouter;

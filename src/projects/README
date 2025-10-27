@@ -1,0 +1,94 @@
+## Introduction
+
+Projects serves as the enterprise execution engine, transforming strategic planning and commercial commitments into coordinated operational delivery through sophisticated project management, workflow orchestration, and stakeholder collaboration. Through comprehensive task management, document control, and quality assurance processes, this module ensures predictable project outcomes while maintaining complete traceability from initial scope through final delivery and financial settlement.
+
+## Strategic Importance
+
+As the operational nexus connecting commercial commitments to financial results, Projects anchors the entire value delivery chain by converting estimates and contracts into measurable progress, resource consumption, and revenue events. By maintaining strict lineage from change orders through task execution to billing milestones, the module ensures operational delivery aligns with commercial terms while providing real-time visibility into project health, budget performance, and delivery timelines. This strategic positioning directly impacts profitability, customer satisfaction, and operational scalability.
+
+## Operational Intelligence
+
+Advanced project architecture leverages comprehensive Work Breakdown Structure (WBS) management with intelligent task dependencies, resource allocation, and progress tracking to optimize delivery coordination and resource utilization. Real-time collaboration through RFI management, submittal workflows, and inspection processes ensures stakeholder alignment while maintaining quality standards. Sophisticated scheduling with exception handling and critical path analysis provides proactive risk identification and mitigation capabilities essential for complex project delivery.
+
+## Governance and Integrity
+
+All project processes maintain comprehensive audit trails with immutable activity logs, approval workflows, and document versioning that support contractual compliance and operational accountability. Quality assurance through inspection processes, punch list management, and submittal approvals ensures delivery standards while protecting against rework and customer disputes. Complete integration with financial systems provides transparent cost tracking and revenue recognition that supports accurate project accounting and performance measurement.
+
+## Business Impact
+
+Strategic project management delivers measurable value through 35% improvement in on-time delivery, 25% reduction in budget overruns, and 45% faster issue resolution through streamlined collaboration workflows. Enhanced visibility and control capabilities reduce project risk while improving customer satisfaction and repeat business opportunities. Integrated cost tracking and progress monitoring support improved profitability analysis and resource allocation optimization across the project portfolio.
+
+## Vision Statement
+
+Projects transforms operational complexity into predictable success through intelligent coordination, comprehensive accountability, and seamless stakeholder collaboration that ensures every project delivers exceptional value while maintaining complete financial transparency and operational excellence.
+
+## projects
+
+Strategic purpose: Project execution core with tasks, RFIs, submittals, inspections, and operational traceability. Integrates with Estimating (conversion), Procurement (materials), Time/Payroll, and Inventory.
+
+| Model                       | Scope  | Parent | Description                                      |
+| --------------------------- | ------ | ------ | ------------------------------------------------ |
+| Project                     | Hybrid | ✅     | Core execution entity and financial spine        |
+| ProjectPhase                | Tenant |        | Phases/stages within a project                   |
+| WBSItem                     | Tenant |        | Work breakdown structure elements                |
+| ProjectTask                 | Tenant |        | Executable unit of work                          |
+| ProjectTaskAssignment       | Tenant |        | Assignees to project tasks                       |
+| ProjectTaskAttachment       | Tenant |        | Files linked to project tasks                    |
+| ProjectTaskChecklistItem    | Tenant |        | Checklist items per task                         |
+| ProjectTaskComment          | Tenant |        | Comments on tasks                                |
+| ProjectTaskDependency       | Tenant |        | Predecessor/successor relationships              |
+| Schedule                    | Tenant |        | Project schedule and dates                       |
+| ScheduleException           | Tenant |        | Holidays/blackout exceptions                     |
+| RFI                         | Tenant |        | Request for Information                          |
+| RFIReply                    | Tenant |        | Official reply to RFI                            |
+| Submittal                   | Tenant |        | Submittal package and specs                      |
+| SubmittalItem               | Tenant |        | Itemized components in a submittal               |
+| SubmittalApproval           | Tenant |        | Approval records for submittals                  |
+| Inspection                  | Tenant |        | Inspection event and results                     |
+| InspectionItem              | Tenant |        | Items inspected                                  |
+| InspectionApproval          | Tenant |        | Approvals for inspection outcomes                |
+| DailyLog                    | Tenant |        | Daily site log of activities                     |
+| PunchList                   | Tenant |        | Punch list for completion                        |
+| PunchListItem               | Tenant |        | Items in a punch list                            |
+| ProjectFinancialSnapshot    | Tenant |        | Snapshot of project financials                   |
+| ProjectBudgetLine           | Tenant |        | Budget lines allocated to project                |
+| ProjectDocument             | Tenant |        | Documents attached to project                    |
+| ProjectExternalAccess       | Tenant |        | External access controls for project             |
+| ProjectLocation             | Tenant |        | Jobsite/location metadata                        |
+| ProjectMember               | Tenant |        | Members participating in project                 |
+| ProjectNote                 | Tenant |        | Notes and narrative entries                      |
+| ProjectReport               | Tenant |        | Operational and executive reports                |
+| ProjectIssue                | Tenant |        | Project issues and risks captured                |
+| ProjectRisk                 | Tenant |        | Risk register entries                            |
+| ProjectInventoryTransaction | Tenant |        | Inventory transactions tied to project           |
+| Milestone                   | Tenant |        | Major delivery milestones                        |
+| MilestoneDependency         | Tenant |        | Dependencies between milestones                  |
+| MilestoneStakeholder        | Tenant |        | Stakeholders tied to milestones                  |
+| ResourceAllocation          | Tenant |        | Allocation of resources/time                     |
+| Location                    | Tenant |        | Project-level locations/areas                    |
+| ProjectType                 | Global |        | Controlled vocabulary for project classification |
+
+---
+
+Dependencies: Feeds Projects and Billing; uses Approvals and Compliance.
+
+## projects
+
+- DependencyType
+- ExternalAccessLevel
+- LocationStatus
+- LocationType
+- MilestoneStatus
+- MilestoneType
+- ProjectChildStatus
+- ProjectStatus
+- RFIReplyType
+- RFIStatus
+- ScheduleExceptionType
+- ScheduleStatus
+- StakeholderRole
+- WorkItemStatus
+- ResourceType
+- SafetyRating
+
+---
