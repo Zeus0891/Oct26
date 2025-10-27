@@ -1,0 +1,14 @@
+{
+  "name": "rbac-generator",
+  "version": "1.0.0",
+  "description": "Auto-generates RBAC types from schema.yml",
+  "scripts": {
+    "generate:rbac": "node scripts/generate-rbac-types.js",
+    "watch:rbac": "node scripts/watch-rbac-schema.js",
+    "install:deps": "npm install js-yaml chokidar --save-dev"
+  },
+  "devDependencies": {
+    "js-yaml": "^4.1.0",
+    "chokidar": "^3.5.3"
+  }
+}

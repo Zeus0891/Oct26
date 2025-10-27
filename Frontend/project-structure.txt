@@ -1,0 +1,452 @@
+.
+├── .env
+├── .env.example
+├── .env.local
+├── .gitignore
+├── .vercel
+│   ├── README.txt
+│   └── project.json
+├── ACTION_PLAN_IDENTITY_RBAC_MODULES.md
+├── DEVICE_PROFILE_SERVICES_COMPLETED.md
+├── HOOKS_IMPLEMENTATION_STATUS.md
+├── IDENTITY_FORMS_COMPLETED.md
+├── IDENTITY_HOOKS_COMPLETED.md
+├── IDENTITY_VALIDATORS_COMPLETED.md
+├── MODULES_IMPLEMENTATION_GUIDE.md
+├── PHASE_1_IDENTITY_COMPLETED.md
+├── PHASE_2_RBAC_COMPLETED.md
+├── RBAC.schema.v7.yml
+├── RBAC_HOOKS_RULES_FIX.md
+├── RBAC_VALIDATORS_COMPLETED.md
+├── README.md
+├── SERVICES_IMPLEMENTATION_COMPLETED.md
+├── USE_MEMBERS_HOOK_COMPLETED.md
+├── USE_PERMISSIONS_HOOK_COMPLETED.md
+├── UTILS_IMPLEMENTATION_COMPLETED.md
+├── app
+│   ├── (drawer)
+│   │   ├── dashboard
+│   │   │   └── page.tsx
+│   │   ├── estimate
+│   │   │   └── page.tsx
+│   │   ├── finance
+│   │   │   └── page.tsx
+│   │   ├── inventory
+│   │   │   └── page.tsx
+│   │   ├── layout.tsx
+│   │   ├── members
+│   │   │   └── page.tsx
+│   │   ├── playground
+│   │   │   └── page.tsx
+│   │   └── reports
+│   │       └── page.tsx
+│   ├── (identity)
+│   │   ├── device-setup
+│   │   │   └── page.tsx
+│   │   ├── layout.tsx
+│   │   ├── login
+│   │   │   └── page.tsx
+│   │   ├── mfa-setup
+│   │   │   └── page.tsx
+│   │   ├── mfa-verify
+│   │   │   └── page.tsx
+│   │   ├── password-reset
+│   │   │   ├── [token]
+│   │   │   │   └── page.tsx
+│   │   │   └── page.tsx
+│   │   ├── profile
+│   │   │   └── page.tsx
+│   │   └── register
+│   │       └── page.tsx
+│   ├── api
+│   │   └── backend-health
+│   │       └── route.ts
+│   ├── api-test
+│   │   └── page.tsx
+│   ├── favicon.ico
+│   ├── globals.css
+│   ├── layout.tsx
+│   ├── modals
+│   │   ├── estimate
+│   │   │   ├── create
+│   │   │   │   └── page.tsx
+│   │   │   └── edit
+│   │   │       └── page.tsx
+│   │   ├── finance
+│   │   │   └── add-transaction
+│   │   │       └── page.tsx
+│   │   ├── inventory
+│   │   │   └── add-product
+│   │   │       └── page.tsx
+│   │   └── rbac
+│   │       ├── member-invite
+│   │       │   └── page.tsx
+│   │       └── member-settings
+│   │           └── page.tsx
+│   └── page.tsx
+├── clear-tokens.sh
+├── components
+│   ├── ClientHeaders.tsx
+│   ├── layouts
+│   │   ├── AuthLayout.tsx
+│   │   ├── DashboardLayout.tsx
+│   │   ├── IdentityLayout.tsx
+│   │   └── TenantLayout.tsx
+│   └── ui
+│       ├── Button.tsx
+│       ├── Card.tsx
+│       ├── Input.tsx
+│       ├── Label.tsx
+│       ├── badge.tsx
+│       ├── dropdown-menu.tsx
+│       ├── form.tsx
+│       ├── index.ts
+│       ├── select.tsx
+│       ├── table.tsx
+│       ├── tabs.tsx
+│       └── textarea.tsx
+├── config
+│   └── env.ts
+├── context
+│   ├── AuthContext.tsx
+│   ├── IdentityContext.tsx
+│   ├── RbacContext.tsx
+│   ├── SessionContext.tsx
+│   ├── TenantContext.tsx
+│   └── ThemeContext.tsx
+├── eslint.config.mjs
+├── features
+│   ├── dashboard
+│   │   └── screens
+│   │       └── DashboardScreen.tsx
+│   ├── estimate
+│   │   ├── API_REQUIREMENTS.md
+│   │   ├── Schema-Reference.prisma.md
+│   │   ├── components
+│   │   │   ├── actions
+│   │   │   │   ├── EstimateActionsMenu.tsx
+│   │   │   │   ├── EstimateBulkActions.tsx
+│   │   │   │   └── EstimateQuickFilters.tsx
+│   │   │   ├── common
+│   │   │   │   ├── EstimateSearchInput.tsx
+│   │   │   │   └── ViewModeToggle.tsx
+│   │   │   ├── display
+│   │   │   │   ├── EstimateCard.tsx
+│   │   │   │   ├── EstimateList.tsx
+│   │   │   │   ├── EstimateStatusBadge.tsx
+│   │   │   │   └── EstimateTableHeader.tsx
+│   │   │   ├── form
+│   │   │   │   ├── EstimateForm.tsx
+│   │   │   │   ├── core
+│   │   │   │   │   ├── EstimateForm.tsx
+│   │   │   │   │   ├── EstimateFormFooter.tsx
+│   │   │   │   │   ├── EstimateFormHeader.tsx
+│   │   │   │   │   ├── EstimateFormProvider.tsx
+│   │   │   │   │   └── EstimateFormToolbar.tsx
+│   │   │   │   ├── fields
+│   │   │   │   │   ├── EstimateAdvancedFields.tsx
+│   │   │   │   │   ├── EstimateBasicFields.tsx
+│   │   │   │   │   ├── EstimateClientFields.tsx
+│   │   │   │   │   ├── EstimateDateFields.tsx
+│   │   │   │   │   └── EstimateFinancialFields.tsx
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── providers
+│   │   │   │   │   └── LineItemsProvider.tsx
+│   │   │   │   ├── sections
+│   │   │   │   │   ├── EstimateDetailsSection.tsx
+│   │   │   │   │   ├── EstimateLineItemsSection.tsx
+│   │   │   │   │   ├── EstimatePreviewSection.tsx
+│   │   │   │   │   ├── EstimateSettingsSection.tsx
+│   │   │   │   │   ├── EstimateTermsSection.tsx
+│   │   │   │   │   ├── LineItemRow.tsx
+│   │   │   │   │   ├── LineItemRowOld.tsx
+│   │   │   │   │   ├── LineItemsSection.tsx
+│   │   │   │   │   └── LineItemsSummary.tsx
+│   │   │   │   ├── templates
+│   │   │   │   │   ├── EstimateFormAutoSave.tsx
+│   │   │   │   │   ├── EstimateFormTemplates.tsx
+│   │   │   │   │   └── EstimateQuickTemplates.tsx
+│   │   │   │   ├── types
+│   │   │   │   │   └── lineitem.types.ts
+│   │   │   │   ├── validation
+│   │   │   │   │   ├── EstimateFormErrors.tsx
+│   │   │   │   │   ├── EstimateFormSchema.tsx
+│   │   │   │   │   └── EstimateFormValidation.tsx
+│   │   │   │   └── wizards
+│   │   │   │       ├── EstimateFormProgress.tsx
+│   │   │   │       ├── EstimateFormSteps.tsx
+│   │   │   │       └── EstimateFormWizard.tsx
+│   │   │   ├── index.ts
+│   │   │   ├── layout
+│   │   │   │   ├── EstimateFiltersBar.tsx
+│   │   │   │   ├── EstimateScreenHeader.tsx
+│   │   │   │   └── EstimateStatsGrid.tsx
+│   │   │   └── states
+│   │   │       ├── EstimateEmptyState.tsx
+│   │   │       ├── EstimateErrorState.tsx
+│   │   │       └── EstimateLoadingState.tsx
+│   │   ├── docs
+│   │   │   └── estimating
+│   │   │       ├── BACKEND_INTEGRATION_NOTES.md
+│   │   │       ├── ESTIMATING_API_CONTRACT.md
+│   │   │       └── FRONTEND_BLUEPRINT.md
+│   │   ├── hooks
+│   │   │   ├── Estimating.hooks.info.md
+│   │   │   ├── index.ts
+│   │   │   ├── useBid.ts
+│   │   │   ├── useEstimate.ts
+│   │   │   ├── useEstimateDetail.ts
+│   │   │   ├── useEstimateLineItems.ts
+│   │   │   └── useEstimateRevisions.ts
+│   │   ├── screens
+│   │   │   └── EstimateScreen.tsx
+│   │   ├── services
+│   │   │   ├── bid-api.service.ts
+│   │   │   ├── estimate-api.service.ts
+│   │   │   ├── estimate-line-item-api.service.ts
+│   │   │   ├── estimate-revision-api.service.ts
+│   │   │   ├── estimateService.ts
+│   │   │   └── index.ts
+│   │   └── types
+│   │       ├── api.types.ts
+│   │       ├── bid.types.ts
+│   │       ├── estimate-approval.types.ts
+│   │       ├── estimate-attachment.types.ts
+│   │       ├── estimate-comment.types.ts
+│   │       ├── estimate-discount.types.ts
+│   │       ├── estimate-history.types.ts
+│   │       ├── estimate-line-item.types.ts
+│   │       ├── estimate-revision.types.ts
+│   │       ├── estimate-tax.types.ts
+│   │       ├── estimate-term.types.ts
+│   │       ├── estimate.types.ts
+│   │       ├── index.ts
+│   │       ├── shared.types.ts
+│   │       └── ui.types.ts
+│   ├── finance
+│   │   ├── components
+│   │   │   └── TransactionForm.tsx
+│   │   ├── data
+│   │   ├── hooks
+│   │   │   └── useFinance.ts
+│   │   ├── screens
+│   │   │   └── FinanceScreen.tsx
+│   │   ├── services
+│   │   │   └── financeService.ts
+│   │   └── utils
+│   ├── identity
+│   │   ├── README.md
+│   │   ├── components
+│   │   │   ├── forms
+│   │   │   │   ├── DeviceRegistrationForm.tsx
+│   │   │   │   ├── LoginForm.tsx
+│   │   │   │   ├── MFAForm.tsx
+│   │   │   │   ├── MfaSetupForm.tsx
+│   │   │   │   ├── MfaVerifyForm.tsx
+│   │   │   │   ├── PasswordChangeForm.tsx
+│   │   │   │   ├── PasswordResetForm.tsx
+│   │   │   │   ├── ProfileUpdateForm.tsx
+│   │   │   │   ├── SignupForm.tsx
+│   │   │   │   └── index.ts
+│   │   │   ├── guards
+│   │   │   │   ├── AuthGuard.tsx
+│   │   │   │   ├── SessionGuard.tsx
+│   │   │   │   └── index.ts
+│   │   │   ├── index.ts
+│   │   │   ├── providers
+│   │   │   │   ├── IdentityProvider.tsx
+│   │   │   │   ├── SessionProvider.tsx
+│   │   │   │   └── index.ts
+│   │   │   └── ui
+│   │   │       ├── AuthStatus.tsx
+│   │   │       ├── DeviceList.tsx
+│   │   │       ├── MfaStatus.tsx
+│   │   │       ├── PasswordStrengthMeter.tsx
+│   │   │       ├── ProfileCard.tsx
+│   │   │       ├── SecuritySettings.tsx
+│   │   │       ├── SessionStatus.tsx
+│   │   │       ├── TwoFactorSetup.tsx
+│   │   │       ├── UserAvatar.tsx
+│   │   │       └── index.ts
+│   │   ├── hooks
+│   │   │   ├── index.ts
+│   │   │   ├── useDevices.ts
+│   │   │   ├── useIdentity.ts
+│   │   │   ├── useMfa.ts
+│   │   │   ├── usePasswordReset.ts
+│   │   │   ├── useProfile.ts
+│   │   │   └── useSession.ts
+│   │   ├── index.ts
+│   │   ├── services
+│   │   │   ├── device.service.ts
+│   │   │   ├── identity.service.ts
+│   │   │   ├── index.ts
+│   │   │   ├── mfa.service.ts
+│   │   │   ├── password.service.ts
+│   │   │   ├── profile.service.ts
+│   │   │   └── session.service.ts
+│   │   ├── stores
+│   │   │   ├── identityStore.ts
+│   │   │   ├── index.ts
+│   │   │   ├── profileStore.ts
+│   │   │   └── sessionStore.ts
+│   │   ├── types
+│   │   │   ├── device.types.ts
+│   │   │   ├── identity.types.ts
+│   │   │   ├── index.ts
+│   │   │   ├── mfa.types.ts
+│   │   │   ├── profile.types.ts
+│   │   │   └── session.types.ts
+│   │   ├── utils
+│   │   │   ├── device.utils.ts
+│   │   │   ├── index.ts
+│   │   │   ├── mfa.utils.ts
+│   │   │   ├── session.utils.ts
+│   │   │   └── token.utils.ts
+│   │   └── validators
+│   │       ├── identity.validators.ts
+│   │       ├── index.ts
+│   │       ├── mfa.validators.ts
+│   │       ├── password.validators.ts
+│   │       ├── profile.validators.ts
+│   │       └── session.validators.ts
+│   ├── inventory
+│   │   ├── components
+│   │   │   └── ProductForm.tsx
+│   │   ├── data
+│   │   ├── hooks
+│   │   │   └── useInventory.ts
+│   │   ├── screens
+│   │   │   └── InventoryScreen.tsx
+│   │   ├── services
+│   │   │   └── inventoryService.ts
+│   │   └── utils
+│   ├── playground
+│   │   ├── components
+│   │   ├── demos
+│   │   │   ├── AnimationShowcase.tsx
+│   │   │   └── NeomorphicShowcase.tsx
+│   │   ├── screens
+│   │   │   └── PlaygroundScreen.tsx
+│   │   └── types
+│   │       └── index.ts
+│   ├── rbac
+│   │   ├── AUTO_GENERATED_RBAC.md
+│   │   ├── RBAC_USAGE_EXAMPLES.md
+│   │   ├── README.md
+│   │   ├── components
+│   │   │   ├── forms
+│   │   │   │   ├── MemberInviteForm.tsx
+│   │   │   │   ├── MemberRoleForm.tsx
+│   │   │   │   ├── MemberRoleManager.tsx
+│   │   │   │   ├── MemberStatusManager.tsx
+│   │   │   │   ├── MemberStatusManagerNew.tsx
+│   │   │   │   ├── PermissionForm.tsx
+│   │   │   │   ├── RoleAssignmentForm.tsx
+│   │   │   │   └── index.ts
+│   │   │   ├── guards
+│   │   │   │   ├── AdvancedGuards.tsx
+│   │   │   │   ├── ConditionalGuard.tsx
+│   │   │   │   ├── PermissionGuard.tsx
+│   │   │   │   ├── RbacGuards.tsx
+│   │   │   │   ├── RoleGuard.tsx
+│   │   │   │   ├── TenantGuard.tsx
+│   │   │   │   └── index.ts
+│   │   │   ├── index.ts
+│   │   │   ├── modals
+│   │   │   │   ├── MemberInviteModal.tsx
+│   │   │   │   └── MemberSettingsModal.tsx
+│   │   │   ├── providers
+│   │   │   │   ├── RBACProvider.tsx
+│   │   │   │   └── index.ts
+│   │   │   └── ui
+│   │   │       ├── PermissionList.tsx
+│   │   │       ├── PermissionMatrix.tsx
+│   │   │       ├── RoleBadge.tsx
+│   │   │       ├── RoleManagementPanel.tsx
+│   │   │       ├── RoleSelector.tsx
+│   │   │       ├── UserManagementPanel.tsx
+│   │   │       └── index.ts
+│   │   ├── examples
+│   │   │   └── RbacExamples.tsx
+│   │   ├── hooks
+│   │   │   ├── index.ts
+│   │   │   ├── useMemberSettings.ts
+│   │   │   ├── useMembers.ts
+│   │   │   ├── usePermissions.ts
+│   │   │   ├── useRbac.ts
+│   │   │   ├── useRoles.ts
+│   │   │   └── useTenantContext.ts
+│   │   ├── index.ts
+│   │   ├── screens
+│   │   │   └── MembersScreen.tsx
+│   │   ├── scripts
+│   │   │   ├── generate-rbac-types.js
+│   │   │   ├── package-lock.json
+│   │   │   ├── package.json
+│   │   │   ├── validate-rbac-sync.js
+│   │   │   └── watch-rbac-schema.js
+│   │   ├── services
+│   │   │   ├── index.ts
+│   │   │   ├── member-settings.service.ts
+│   │   │   ├── members.service.ts
+│   │   │   ├── permissions.service.ts
+│   │   │   ├── rbac.service.ts
+│   │   │   └── roles.service.ts
+│   │   ├── stores
+│   │   │   ├── index.ts
+│   │   │   ├── permissionsStore.ts
+│   │   │   ├── rbacStore.ts
+│   │   │   └── rolesStore.ts
+│   │   ├── types
+│   │   │   ├── index.ts
+│   │   │   ├── member-settings.types.ts
+│   │   │   ├── rbac.generated.ts
+│   │   │   ├── rbac.generation.json
+│   │   │   └── rbac.types.ts
+│   │   ├── utils
+│   │   │   ├── index.ts
+│   │   │   ├── permission.utils.ts
+│   │   │   ├── rbac.utils.ts
+│   │   │   └── role.utils.ts
+│   │   └── validators
+│   │       ├── index.ts
+│   │       └── rbac.validators.ts
+│   └── reports
+│       └── screens
+│           └── ReportsScreen.tsx
+├── hooks
+│   └── useFetch.ts
+├── lib
+│   ├── api.ts
+│   └── utils.ts
+├── middleware.ts
+├── next-env.d.ts
+├── next.config.ts
+├── package-lock.json
+├── package.json
+├── postcss.config.mjs
+├── project-structure.txt
+├── public
+│   ├── file.svg
+│   ├── globe.svg
+│   ├── next.svg
+│   ├── vercel.svg
+│   └── window.svg
+├── scripts
+│   ├── generate-rbac-types.js
+│   ├── package.json
+│   └── watch-rbac-schema.js
+├── services
+│   ├── index.ts
+│   └── tenant.service.ts
+├── shared
+│   ├── constants.ts
+│   └── validators.ts
+├── test-frontend.sh
+├── tsconfig.json
+├── tsconfig.tsbuildinfo
+└── types
+    └── global.d.ts
+
+120 directories, 330 files

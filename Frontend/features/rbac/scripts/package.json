@@ -1,0 +1,15 @@
+{
+  "name": "rbac-scripts",
+  "version": "1.0.0",
+  "description": "RBAC auto-generation scripts",
+  "scripts": {
+    "generate": "node generate-rbac-types.js",
+    "watch": "node watch-rbac-schema.js",
+    "watch-validate": "node watch-rbac-schema.js --validate",
+    "validate": "node validate-rbac-sync.js"
+  },
+  "devDependencies": {
+    "chokidar": "^4.0.3",
+    "js-yaml": "^4.1.0"
+  }
+}
