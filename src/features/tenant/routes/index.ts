@@ -1,20 +1,22 @@
-import { Router } from "express";
-import featureFlagsRoutes from "@/features/tenant/routes/feature-flags.routes";
-import settingsRoutes from "@/features/tenant/routes/settings.routes";
-import metricsRoutes from "@/features/tenant/routes/metrics.routes";
-import usageRoutes from "@/features/tenant/routes/usage.routes";
-import numberingRoutes from "@/features/tenant/routes/numbering.routes";
 import auditRoutes from "@/features/tenant/routes/audit.routes";
 import documentsRoutes from "@/features/tenant/routes/documents.routes";
-import templatesRoutes from "@/features/tenant/routes/templates.routes";
 import eventsRoutes from "@/features/tenant/routes/events.routes";
+import featureFlagsRoutes from "@/features/tenant/routes/feature-flags.routes";
 import lifecycleRoutes from "@/features/tenant/routes/lifecycle.routes";
+import membersRoutes from "@/features/tenant/routes/members.routes";
+import metricsRoutes from "@/features/tenant/routes/metrics.routes";
+import numberingRoutes from "@/features/tenant/routes/numbering.routes";
+import settingsRoutes from "@/features/tenant/routes/settings.routes";
+import templatesRoutes from "@/features/tenant/routes/templates.routes";
 import tenantRoutes from "@/features/tenant/routes/tenant.routes";
+import usageRoutes from "@/features/tenant/routes/usage.routes";
+import { Router } from "express";
 
 const tenantRouter = Router();
 
 // Mount sub-routers under /api/tenant
 tenantRouter.use("/", tenantRoutes); // Tenant profile operations (admin)
+tenantRouter.use("/members", membersRoutes);
 tenantRouter.use("/feature-flags", featureFlagsRoutes);
 tenantRouter.use("/settings", settingsRoutes);
 tenantRouter.use("/metrics", metricsRoutes);

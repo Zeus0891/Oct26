@@ -17,7 +17,9 @@ import { Express } from "express";
 import { bootstrapAndStart, BootstrapConfig } from "./bootstrap";
 
 // Feature modules
+import accessRouter from "../features/access-control";
 import usersRoutes from "../features/identity/users.routes";
+import tenantRouter from "../features/tenant";
 import tenantPublicRoutes from "../features/tenant/routes/public.routes";
 
 // Configuration and environment
@@ -70,10 +72,13 @@ async function startServer(): Promise<void> {
 
         // Mount feature module routers
         customRoutes: (app: Express) => {
-          // Tenant module - all tenant-scoped operations
+          // Tenant module - all tenant-scoped operations (protected by per-route stacks)
+          app.use("/api/tenant", tenantRouter);
 
           // Future feature modules will be mounted here:
           // Identity module - authentication + profile/MFA/devices
+          // Access Control module - roles, permissions, role-permissions
+          app.use("/api/access", accessRouter);
         },
 
         enableGracefulShutdown: true,

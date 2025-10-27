@@ -293,6 +293,7 @@ function validateRLSContext(context: RLSContext): void {
   const validRoles = [
     "SYSTEM_ADMIN",
     "TENANT_ADMIN",
+    "ADMIN",
     "PROJECT_MANAGER",
     "WORKER",
     "DRIVER",
@@ -312,8 +313,9 @@ function validateRLSContext(context: RLSContext): void {
  * Simple UUID validation
  */
 function isValidUUID(uuid: string): boolean {
+  // Accept UUID versions 1-5 and 7 (v7 commonly used by Prisma uuid(7))
   const uuidRegex =
-    /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
+    /^[0-9a-f]{8}-[0-9a-f]{4}-[1-57][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
   return uuidRegex.test(uuid);
 }
 
@@ -386,10 +388,7 @@ export const RLSUtils = {
 
 // Export types for external use
 export type {
-  RLSContext,
-  RLSOptions,
-  RLSOperationResult,
-  PrismaTransactionClient,
+    PrismaTransactionClient, RLSContext, RLSOperationResult, RLSOptions
 };
 
 export default withRLS;

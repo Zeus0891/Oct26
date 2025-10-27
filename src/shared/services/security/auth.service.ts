@@ -11,16 +11,15 @@
  */
 
 import { PrismaClient } from "@prisma/client";
-import type { RequestContext } from "../base/context.service";
-import {
-  AuditService,
-  AuditEventType,
-  AuditSeverity,
-} from "../audit/audit.service";
-import { PasswordUtils } from "../../utils/security/password.util";
-import { JwtUtils } from "../../utils/security/jwt.util";
 import { withTenantRLS } from "../../../lib/prisma/withRLS";
-import { ErrorUtils } from "../../utils/base/error.util";
+import { JwtUtils } from "../../utils/security/jwt.util";
+import { PasswordUtils } from "../../utils/security/password.util";
+import {
+    AuditEventType,
+    AuditService,
+    AuditSeverity,
+} from "../audit/audit.service";
+import type { RequestContext } from "../base/context.service";
 
 /**
  * Standard API response wrapper
@@ -706,41 +705,33 @@ export class AuthService {
     ctx: RequestContext
   ): Promise<ApiResponse<{ tokens: AuthResult["tokens"] }>> {
     try {
-      // Verify refresh token
       const jwtSecret =
         process.env.JWT_SECRET || "default-secret-change-in-production";
-      const verifyResult = JwtUtils.verify(refreshToken, jwtSecret);
-      if (!verifyResult.isValid || !verifyResult.payload) {
+
+      // Rotate tokens and preserve tenant/RBAC claims from the refresh token
+      const refreshResult = JwtUtils.refreshToken(refreshToken, jwtSecret, {
+        accessExpiresIn: "1h",
+        refreshExpiresIn: "7d",
+        rotateRefreshToken: true,
+        preserveClaims: ["tenantId", "roles", "permissions", "sessionId"],
+      });
+
+      if (!refreshResult.success || !refreshResult.tokens) {
         return {
           success: false,
           error: {
-            code: "INVALID_REFRESH_TOKEN",
-            message: "Invalid or expired refresh token",
+            code: refreshResult.code || "INVALID_REFRESH_TOKEN",
+            message:
+              refreshResult.error || "Invalid or expired refresh token",
           },
         };
       }
-
-      // Get user and session info
-      const user = await this.getUserById(verifyResult.payload.sub);
-      if (!user) {
-        return {
-          success: false,
-          error: {
-            code: "USER_NOT_FOUND",
-            message: "User not found",
-          },
-        };
-      }
-
-      // Generate new tokens
-      const newTokens = await this.generateTokens(user);
 
       await this.auditService.logEvent({
         type: AuditEventType.LOGIN,
         severity: AuditSeverity.LOW,
         description: "Tokens refreshed",
-        userId: user.id,
-        tenantId: user.tenantId,
+        userId: refreshResult.metadata?.userId,
         metadata: {
           correlationId: ctx.correlationId,
         },
@@ -748,7 +739,14 @@ export class AuthService {
 
       return {
         success: true,
-        data: { tokens: newTokens },
+        data: {
+          tokens: {
+            accessToken: refreshResult.tokens.accessToken,
+            refreshToken: refreshResult.tokens.refreshToken,
+            tokenType: refreshResult.tokens.tokenType,
+            expiresIn: refreshResult.tokens.expiresIn,
+          },
+        },
       };
     } catch (error) {
       console.error("[AuthService] Token refresh error:", error);
@@ -869,7 +867,7 @@ export class AuthService {
     }
 
     try {
-      return await withTenantRLS(
+      const tenantUser = await withTenantRLS(
         tenantId,
         [], // No specific roles needed for user lookup
         async (tx) => {
@@ -893,6 +891,13 @@ export class AuthService {
           });
         }
       );
+      if (!tenantUser) return null;
+
+      // Normalize to base user shape expected downstream while preserving tenant context
+      return {
+        ...tenantUser.user,
+        tenantId,
+      };
     } catch (error) {
       console.error("[AuthService] Error finding user:", error);
       return null;
@@ -977,8 +982,19 @@ export class AuthService {
     deviceInfo: any,
     ctx: RequestContext
   ): Promise<AuthResult> {
+    // Compute effective tenant-scoped RBAC claims
+    const tenantId = user.tenantId;
+    const { roles, permissions, memberId } = await this.computeTenantClaims(
+      tenantId,
+      user.id
+    );
+
     // Implementation would create full authenticated session
-    const tokens = await this.generateTokens(user);
+    const tokens = await this.generateTokens(user, {
+      tenantId,
+      roles,
+      permissions,
+    });
 
     return {
       success: true,
@@ -988,9 +1004,9 @@ export class AuthService {
         email: user.email,
         firstName: user.firstName,
         lastName: user.lastName,
-        tenantId: user.tenantId,
-        roles: user.roles || [],
-        permissions: user.permissions || [],
+        tenantId: tenantId,
+        roles: roles || [],
+        permissions: permissions || [],
       },
       session: {
         sessionId: "session-id",
@@ -1000,38 +1016,25 @@ export class AuthService {
     };
   }
 
-  private async generateTokens(user: any): Promise<AuthResult["tokens"]> {
+  private async generateTokens(
+    user: any,
+    claims?: { tenantId?: string; roles?: string[]; permissions?: string[]; sessionId?: string }
+  ): Promise<AuthResult["tokens"]> {
     const jwtSecret =
       process.env.JWT_SECRET || "default-secret-change-in-production";
 
-    const accessToken = JwtUtils.sign(
-      {
-        sub: user.id,
-        type: "access" as any,
-        tenantId: user.tenantId,
-        roles: user.roles || [],
-      },
-      jwtSecret,
-      {
-        expiresIn: "1h",
-      }
-    );
-
-    const refreshToken = JwtUtils.sign(
-      {
-        sub: user.id,
-        type: "refresh" as any,
-        tenantId: user.tenantId,
-      },
-      jwtSecret,
-      {
-        expiresIn: "7d",
-      }
-    );
+    const tokenPair = JwtUtils.createTokenPair(user.id, jwtSecret, {
+      accessExpiresIn: "1h",
+      refreshExpiresIn: "7d",
+      tenantId: claims?.tenantId ?? user.tenantId,
+      roles: claims?.roles ?? user.roles ?? [],
+      permissions: claims?.permissions ?? user.permissions ?? [],
+      sessionId: claims?.sessionId,
+    });
 
     return {
-      accessToken,
-      refreshToken,
+      accessToken: tokenPair.accessToken,
+      refreshToken: tokenPair.refreshToken,
       expiresIn: 3600,
       tokenType: "Bearer",
     };
@@ -1087,6 +1090,76 @@ export class AuthService {
   private async sendResetEmail(email: string, token: string): Promise<void> {
     // Implementation would send password reset email
     console.log(`[AuthService] Password reset email sent to ${email}`);
+  }
+
+  /**
+   * Compute effective tenant-scoped roles and permissions for a user
+   */
+  private async computeTenantClaims(
+    tenantId: string,
+    userId: string
+  ): Promise<{ roles: string[]; permissions: string[]; memberId?: string }> {
+    try {
+      return await withTenantRLS(
+        tenantId,
+        [],
+        async (tx) => {
+          const member = await tx.member.findFirst({
+            where: { tenantId, userId },
+            select: { id: true },
+          });
+          if (!member) {
+            return { roles: [], permissions: [], memberId: undefined };
+          }
+
+          const memberRoles: Array<{ roleId: string }> = await tx.memberRole.findMany({
+            where: { tenantId, memberId: member.id, deactivatedAt: null },
+            select: { roleId: true },
+          });
+          const roleIds: string[] = Array.from(new Set(memberRoles.map((r) => r.roleId)));
+          const roles: Array<{ code: string }> = roleIds.length
+            ? await tx.role.findMany({
+                where: { id: { in: roleIds } },
+                select: { code: true },
+              })
+            : ([] as { code: string }[]);
+          const roleCodes: string[] = roles.map((r) => r.code);
+
+          const rolePerms: Array<{ permissionId: string }> = roleIds.length
+            ? await tx.rolePermission.findMany({
+                where: {
+                  tenantId,
+                  roleId: { in: roleIds },
+                  isActive: true,
+                  isDenied: false,
+                },
+                select: { permissionId: true },
+              })
+            : ([] as { permissionId: string }[]);
+          const permIds: string[] = Array.from(
+            new Set(rolePerms.map((p) => p.permissionId))
+          );
+          const perms: Array<{ code: string }> = permIds.length
+            ? await tx.permission.findMany({
+                where: { id: { in: permIds } },
+                select: { code: true },
+              })
+            : ([] as { code: string }[]);
+          const permissionCodes: string[] = Array.from(
+            new Set(perms.map((p) => p.code))
+          );
+
+          return {
+            roles: roleCodes,
+            permissions: permissionCodes,
+            memberId: member.id,
+          };
+        }
+      );
+    } catch (error) {
+      console.error("[AuthService] Error computing tenant claims:", error);
+      return { roles: [], permissions: [], memberId: undefined };
+    }
   }
 
   /**

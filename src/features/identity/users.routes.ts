@@ -52,11 +52,64 @@ router.post(
         return;
       }
 
+      // Resolve tenant membership and RBAC claims
+      const tenant = await prisma.tenant.findUnique({ where: { id: tenantId }, select: { id: true } });
+      if (!tenant) {
+        res.status(404).json({
+          success: false,
+          error: "TENANT_NOT_FOUND",
+          message: "Tenant not found",
+        });
+        return;
+      }
+
+      const member = await prisma.member.findFirst({
+        where: { tenantId, userId: user.id },
+        select: { id: true },
+      });
+      if (!member) {
+        res.status(403).json({
+          success: false,
+          error: "NO_TENANT_ACCESS",
+          message: "User is not a member of the tenant",
+        });
+        return;
+      }
+
+      // Load roles for membership
+      const memberRoles = await prisma.memberRole.findMany({
+        where: { tenantId, memberId: member.id, deactivatedAt: null },
+        select: { roleId: true },
+      });
+      const roleIds = Array.from(new Set(memberRoles.map((r) => r.roleId)));
+      const roles = roleIds.length
+        ? await prisma.role.findMany({ where: { id: { in: roleIds } }, select: { id: true, code: true } })
+        : [] as { id: string; code: string }[];
+      const roleCodes = roles.map((r) => r.code);
+
+      // Load permissions from role grants
+      const rolePerms = roleIds.length
+        ? await prisma.rolePermission.findMany({
+            where: {
+              tenantId,
+              roleId: { in: roleIds },
+              isActive: true,
+              isDenied: false,
+            },
+            select: { permissionId: true },
+          })
+        : [] as { permissionId: string }[];
+      const permIds = Array.from(new Set(rolePerms.map((p) => p.permissionId)));
+      const perms = permIds.length
+        ? await prisma.permission.findMany({ where: { id: { in: permIds } }, select: { code: true } })
+        : [] as { code: string }[];
+      const permissionCodes = Array.from(new Set(perms.map((p) => p.code)));
+
       const secret = process.env.JWT_SECRET || "change-me";
       const tokens = JwtUtils.createTokenPair(user.id, secret, {
         tenantId,
-        roles: [],
-        permissions: [],
+        roles: roleCodes,
+        permissions: permissionCodes,
         accessExpiresIn: "1h",
         refreshExpiresIn: "7d",
       });
@@ -68,8 +121,8 @@ router.post(
             id: user.id,
             email: user.email,
             tenantId,
-            roles: [],
-            permissions: [],
+            roles: roleCodes,
+            permissions: permissionCodes,
           },
           tokens: {
             accessToken: tokens.accessToken,

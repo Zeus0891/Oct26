@@ -1,0 +1,18 @@
+-- Added missing RLS enablement discovered by integrity test
+ALTER TABLE public."AccountInsurance" ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public."CommissionRule" ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public."CustomerSegment" ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public."QuoteApproval" ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public."Territory" ENABLE ROW LEVEL SECURITY;
+
+-- Room schema tables
+ALTER TABLE public."RoomAnnotation" ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public."RoomExport" ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public."RoomMeasurement" ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public."RoomModel" ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public."RoomObject" ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public."RoomPlanPreset" ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public."RoomProcessingJob" ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public."RoomScanFile" ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public."RoomScanSession" ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public."RoomSurface" ENABLE ROW LEVEL SECURITY;

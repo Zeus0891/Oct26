@@ -1,1826 +1,1826 @@
 // ============================================================================
 // RBAC Permissions System v7 - Auto-generated
 // Generated from RBAC.schema.v7.yml
-// Date: 2025-10-18
+// Date: 2025-10-27
 // ============================================================================
 
 export const PERMISSIONS = {
   // ============================================================================
   // TENANT_MANAGEMENT
   // ============================================================================
-  TENANT_READ: "Tenant.read",
-  TENANT_UPDATE: "Tenant.update",
-  TENANT_DEACTIVATE: "Tenant.deactivate",
-  TENANTSETTINGS_READ: "TenantSettings.read",
-  TENANTSETTINGS_UPDATE: "TenantSettings.update",
-  TENANTSETTINGS_ACTIVATE: "TenantSettings.activate",
-  TENANTSETTINGS_DEACTIVATE: "TenantSettings.deactivate",
-  TENANTMETRICS_READ: "TenantMetrics.read",
-  TENANTMETRICS_EXPORT: "TenantMetrics.export",
-  TENANTFEATUREFLAG_READ: "TenantFeatureFlag.read",
-  TENANTFEATUREFLAG_CREATE: "TenantFeatureFlag.create",
-  TENANTFEATUREFLAG_UPDATE: "TenantFeatureFlag.update",
-  TENANTFEATUREFLAG_ACTIVATE: "TenantFeatureFlag.activate",
-  TENANTFEATUREFLAG_DEACTIVATE: "TenantFeatureFlag.deactivate",
-  TENANTUSAGERECORD_READ: "TenantUsageRecord.read",
-  TENANTUSAGERECORD_EXPORT: "TenantUsageRecord.export",
-  TENANTPRICELIST_READ: "TenantPriceList.read",
-  TENANTPRICELIST_CREATE: "TenantPriceList.create",
-  TENANTPRICELIST_UPDATE: "TenantPriceList.update",
-  TENANTPRICELIST_ACTIVATE: "TenantPriceList.activate",
-  TENANTPRICELIST_DEACTIVATE: "TenantPriceList.deactivate",
-  TENANTPRICEOVERRIDE_READ: "TenantPriceOverride.read",
-  TENANTPRICEOVERRIDE_CREATE: "TenantPriceOverride.create",
-  TENANTPRICEOVERRIDE_UPDATE: "TenantPriceOverride.update",
-  TENANTPRICEOVERRIDE_SOFT_DELETE: "TenantPriceOverride.soft_delete",
-  TENANTPRICEOVERRIDE_RESTORE: "TenantPriceOverride.restore",
+  TENANT_READ: 'Tenant.read',
+  TENANT_UPDATE: 'Tenant.update',
+  TENANT_DEACTIVATE: 'Tenant.deactivate',
+  TENANTSETTINGS_READ: 'TenantSettings.read',
+  TENANTSETTINGS_UPDATE: 'TenantSettings.update',
+  TENANTSETTINGS_ACTIVATE: 'TenantSettings.activate',
+  TENANTSETTINGS_DEACTIVATE: 'TenantSettings.deactivate',
+  TENANTMETRICS_READ: 'TenantMetrics.read',
+  TENANTMETRICS_EXPORT: 'TenantMetrics.export',
+  TENANTFEATUREFLAG_READ: 'TenantFeatureFlag.read',
+  TENANTFEATUREFLAG_CREATE: 'TenantFeatureFlag.create',
+  TENANTFEATUREFLAG_UPDATE: 'TenantFeatureFlag.update',
+  TENANTFEATUREFLAG_ACTIVATE: 'TenantFeatureFlag.activate',
+  TENANTFEATUREFLAG_DEACTIVATE: 'TenantFeatureFlag.deactivate',
+  TENANTUSAGERECORD_READ: 'TenantUsageRecord.read',
+  TENANTUSAGERECORD_EXPORT: 'TenantUsageRecord.export',
+  TENANTPRICELIST_READ: 'TenantPriceList.read',
+  TENANTPRICELIST_CREATE: 'TenantPriceList.create',
+  TENANTPRICELIST_UPDATE: 'TenantPriceList.update',
+  TENANTPRICELIST_ACTIVATE: 'TenantPriceList.activate',
+  TENANTPRICELIST_DEACTIVATE: 'TenantPriceList.deactivate',
+  TENANTPRICEOVERRIDE_READ: 'TenantPriceOverride.read',
+  TENANTPRICEOVERRIDE_CREATE: 'TenantPriceOverride.create',
+  TENANTPRICEOVERRIDE_UPDATE: 'TenantPriceOverride.update',
+  TENANTPRICEOVERRIDE_SOFT_DELETE: 'TenantPriceOverride.soft_delete',
+  TENANTPRICEOVERRIDE_RESTORE: 'TenantPriceOverride.restore',
 
   // ============================================================================
   // IDENTITY_ACCESS
   // ============================================================================
-  USER_READ: "User.read",
-  USER_CREATE: "User.create",
-  USER_UPDATE: "User.update",
-  USER_SOFT_DELETE: "User.soft_delete",
-  USER_RESTORE: "User.restore",
-  USER_ACTIVATE: "User.activate",
-  USER_DEACTIVATE: "User.deactivate",
-  USER_LOCK: "User.lock",
-  USER_UNLOCK: "User.unlock",
-  MEMBER_READ: "Member.read",
-  MEMBER_CREATE: "Member.create",
-  MEMBER_UPDATE: "Member.update",
-  MEMBER_SOFT_DELETE: "Member.soft_delete",
-  MEMBER_RESTORE: "Member.restore",
-  MEMBER_ASSIGN: "Member.assign",
-  MEMBER_UNASSIGN: "Member.unassign",
-  MEMBER_TRANSFER: "Member.transfer",
-  MEMBER_ACTIVATE: "Member.activate",
-  MEMBER_DEACTIVATE: "Member.deactivate",
-  MEMBERROLE_READ: "MemberRole.read",
-  MEMBERROLE_CREATE: "MemberRole.create",
-  MEMBERROLE_UPDATE: "MemberRole.update",
-  MEMBERROLE_SOFT_DELETE: "MemberRole.soft_delete",
-  MEMBERROLE_RESTORE: "MemberRole.restore",
-  MEMBERROLE_ASSIGN: "MemberRole.assign",
-  MEMBERROLE_UNASSIGN: "MemberRole.unassign",
-  MEMBERROLE_TRANSFER: "MemberRole.transfer",
-  MEMBERSETTINGS_READ: "MemberSettings.read",
-  MEMBERSETTINGS_UPDATE: "MemberSettings.update",
-  MEMBERSETTINGS_ACTIVATE: "MemberSettings.activate",
-  MEMBERSETTINGS_DEACTIVATE: "MemberSettings.deactivate",
-  MEMBERDOCUMENT_READ: "MemberDocument.read",
-  MEMBERDOCUMENT_CREATE: "MemberDocument.create",
-  MEMBERDOCUMENT_UPDATE: "MemberDocument.update",
-  MEMBERDOCUMENT_SOFT_DELETE: "MemberDocument.soft_delete",
-  MEMBERDOCUMENT_RESTORE: "MemberDocument.restore",
-  MEMBERDOCUMENT_APPROVE: "MemberDocument.approve",
-  MEMBERDOCUMENT_REJECT: "MemberDocument.reject",
+  USER_READ: 'User.read',
+  USER_CREATE: 'User.create',
+  USER_UPDATE: 'User.update',
+  USER_SOFT_DELETE: 'User.soft_delete',
+  USER_RESTORE: 'User.restore',
+  USER_ACTIVATE: 'User.activate',
+  USER_DEACTIVATE: 'User.deactivate',
+  USER_LOCK: 'User.lock',
+  USER_UNLOCK: 'User.unlock',
+  MEMBER_READ: 'Member.read',
+  MEMBER_CREATE: 'Member.create',
+  MEMBER_UPDATE: 'Member.update',
+  MEMBER_SOFT_DELETE: 'Member.soft_delete',
+  MEMBER_RESTORE: 'Member.restore',
+  MEMBER_ASSIGN: 'Member.assign',
+  MEMBER_UNASSIGN: 'Member.unassign',
+  MEMBER_TRANSFER: 'Member.transfer',
+  MEMBER_ACTIVATE: 'Member.activate',
+  MEMBER_DEACTIVATE: 'Member.deactivate',
+  MEMBERROLE_READ: 'MemberRole.read',
+  MEMBERROLE_CREATE: 'MemberRole.create',
+  MEMBERROLE_UPDATE: 'MemberRole.update',
+  MEMBERROLE_SOFT_DELETE: 'MemberRole.soft_delete',
+  MEMBERROLE_RESTORE: 'MemberRole.restore',
+  MEMBERROLE_ASSIGN: 'MemberRole.assign',
+  MEMBERROLE_UNASSIGN: 'MemberRole.unassign',
+  MEMBERROLE_TRANSFER: 'MemberRole.transfer',
+  MEMBERSETTINGS_READ: 'MemberSettings.read',
+  MEMBERSETTINGS_UPDATE: 'MemberSettings.update',
+  MEMBERSETTINGS_ACTIVATE: 'MemberSettings.activate',
+  MEMBERSETTINGS_DEACTIVATE: 'MemberSettings.deactivate',
+  MEMBERDOCUMENT_READ: 'MemberDocument.read',
+  MEMBERDOCUMENT_CREATE: 'MemberDocument.create',
+  MEMBERDOCUMENT_UPDATE: 'MemberDocument.update',
+  MEMBERDOCUMENT_SOFT_DELETE: 'MemberDocument.soft_delete',
+  MEMBERDOCUMENT_RESTORE: 'MemberDocument.restore',
+  MEMBERDOCUMENT_APPROVE: 'MemberDocument.approve',
+  MEMBERDOCUMENT_REJECT: 'MemberDocument.reject',
 
   // ============================================================================
   // RBAC_SECURITY
   // ============================================================================
-  ROLE_READ: "Role.read",
-  ROLE_CREATE: "Role.create",
-  ROLE_UPDATE: "Role.update",
-  ROLE_SOFT_DELETE: "Role.soft_delete",
-  ROLE_RESTORE: "Role.restore",
-  ROLE_ACTIVATE: "Role.activate",
-  ROLE_DEACTIVATE: "Role.deactivate",
-  PERMISSION_READ: "Permission.read",
-  ROLEPERMISSION_READ: "RolePermission.read",
-  ROLEPERMISSION_CREATE: "RolePermission.create",
-  ROLEPERMISSION_SOFT_DELETE: "RolePermission.soft_delete",
-  ROLEPERMISSION_RESTORE: "RolePermission.restore",
-  APIKEY_READ: "ApiKey.read",
-  APIKEY_CREATE: "ApiKey.create",
-  APIKEY_UPDATE: "ApiKey.update",
-  APIKEY_SOFT_DELETE: "ApiKey.soft_delete",
-  APIKEY_RESTORE: "ApiKey.restore",
-  APIKEY_ACTIVATE: "ApiKey.activate",
-  APIKEY_DEACTIVATE: "ApiKey.deactivate",
-  AUTHFACTOR_READ: "AuthFactor.read",
-  AUTHFACTOR_CREATE: "AuthFactor.create",
-  AUTHFACTOR_UPDATE: "AuthFactor.update",
-  AUTHFACTOR_SOFT_DELETE: "AuthFactor.soft_delete",
-  AUTHFACTOR_RESTORE: "AuthFactor.restore",
-  AUTHFACTOR_ACTIVATE: "AuthFactor.activate",
-  AUTHFACTOR_DEACTIVATE: "AuthFactor.deactivate",
+  ROLE_READ: 'Role.read',
+  ROLE_CREATE: 'Role.create',
+  ROLE_UPDATE: 'Role.update',
+  ROLE_SOFT_DELETE: 'Role.soft_delete',
+  ROLE_RESTORE: 'Role.restore',
+  ROLE_ACTIVATE: 'Role.activate',
+  ROLE_DEACTIVATE: 'Role.deactivate',
+  PERMISSION_READ: 'Permission.read',
+  ROLEPERMISSION_READ: 'RolePermission.read',
+  ROLEPERMISSION_CREATE: 'RolePermission.create',
+  ROLEPERMISSION_SOFT_DELETE: 'RolePermission.soft_delete',
+  ROLEPERMISSION_RESTORE: 'RolePermission.restore',
+  APIKEY_READ: 'ApiKey.read',
+  APIKEY_CREATE: 'ApiKey.create',
+  APIKEY_UPDATE: 'ApiKey.update',
+  APIKEY_SOFT_DELETE: 'ApiKey.soft_delete',
+  APIKEY_RESTORE: 'ApiKey.restore',
+  APIKEY_ACTIVATE: 'ApiKey.activate',
+  APIKEY_DEACTIVATE: 'ApiKey.deactivate',
+  AUTHFACTOR_READ: 'AuthFactor.read',
+  AUTHFACTOR_CREATE: 'AuthFactor.create',
+  AUTHFACTOR_UPDATE: 'AuthFactor.update',
+  AUTHFACTOR_SOFT_DELETE: 'AuthFactor.soft_delete',
+  AUTHFACTOR_RESTORE: 'AuthFactor.restore',
+  AUTHFACTOR_ACTIVATE: 'AuthFactor.activate',
+  AUTHFACTOR_DEACTIVATE: 'AuthFactor.deactivate',
 
   // ============================================================================
   // CRM_SALES
   // ============================================================================
-  ACCOUNT_READ: "Account.read",
-  ACCOUNT_CREATE: "Account.create",
-  ACCOUNT_UPDATE: "Account.update",
-  ACCOUNT_SOFT_DELETE: "Account.soft_delete",
-  ACCOUNT_RESTORE: "Account.restore",
-  ACCOUNT_ACTIVATE: "Account.activate",
-  ACCOUNT_DEACTIVATE: "Account.deactivate",
-  ACCOUNTADDRESS_READ: "AccountAddress.read",
-  ACCOUNTADDRESS_CREATE: "AccountAddress.create",
-  ACCOUNTADDRESS_UPDATE: "AccountAddress.update",
-  ACCOUNTADDRESS_SOFT_DELETE: "AccountAddress.soft_delete",
-  ACCOUNTADDRESS_RESTORE: "AccountAddress.restore",
-  CONTACT_READ: "Contact.read",
-  CONTACT_CREATE: "Contact.create",
-  CONTACT_UPDATE: "Contact.update",
-  CONTACT_SOFT_DELETE: "Contact.soft_delete",
-  CONTACT_RESTORE: "Contact.restore",
-  LEAD_READ: "Lead.read",
-  LEAD_CREATE: "Lead.create",
-  LEAD_UPDATE: "Lead.update",
-  LEAD_SOFT_DELETE: "Lead.soft_delete",
-  LEAD_RESTORE: "Lead.restore",
-  LEAD_ASSIGN: "Lead.assign",
-  LEAD_UNASSIGN: "Lead.unassign",
-  LEAD_TRANSFER: "Lead.transfer",
-  LEADACTIVITY_READ: "LeadActivity.read",
-  LEADACTIVITY_CREATE: "LeadActivity.create",
-  LEADACTIVITY_UPDATE: "LeadActivity.update",
-  LEADACTIVITY_SOFT_DELETE: "LeadActivity.soft_delete",
-  LEADACTIVITY_RESTORE: "LeadActivity.restore",
-  OPPORTUNITY_READ: "Opportunity.read",
-  OPPORTUNITY_CREATE: "Opportunity.create",
-  OPPORTUNITY_UPDATE: "Opportunity.update",
-  OPPORTUNITY_SOFT_DELETE: "Opportunity.soft_delete",
-  OPPORTUNITY_RESTORE: "Opportunity.restore",
-  OPPORTUNITY_ASSIGN: "Opportunity.assign",
-  OPPORTUNITY_UNASSIGN: "Opportunity.unassign",
-  OPPORTUNITY_TRANSFER: "Opportunity.transfer",
-  OPPORTUNITYSTAGE_READ: "OpportunityStage.read",
-  OPPORTUNITYSTAGE_CREATE: "OpportunityStage.create",
-  OPPORTUNITYSTAGE_UPDATE: "OpportunityStage.update",
-  OPPORTUNITYSTAGE_SOFT_DELETE: "OpportunityStage.soft_delete",
-  OPPORTUNITYSTAGE_RESTORE: "OpportunityStage.restore",
-  OPPORTUNITYLINEITEM_READ: "OpportunityLineItem.read",
-  OPPORTUNITYLINEITEM_CREATE: "OpportunityLineItem.create",
-  OPPORTUNITYLINEITEM_UPDATE: "OpportunityLineItem.update",
-  OPPORTUNITYLINEITEM_SOFT_DELETE: "OpportunityLineItem.soft_delete",
-  OPPORTUNITYLINEITEM_RESTORE: "OpportunityLineItem.restore",
-  QUOTE_READ: "Quote.read",
-  QUOTE_CREATE: "Quote.create",
-  QUOTE_UPDATE: "Quote.update",
-  QUOTE_SOFT_DELETE: "Quote.soft_delete",
-  QUOTE_RESTORE: "Quote.restore",
-  QUOTE_SEND: "Quote.send",
-  QUOTE_APPROVE: "Quote.approve",
-  QUOTE_REJECT: "Quote.reject",
-  QUOTELINEITEM_READ: "QuoteLineItem.read",
-  QUOTELINEITEM_CREATE: "QuoteLineItem.create",
-  QUOTELINEITEM_UPDATE: "QuoteLineItem.update",
-  QUOTELINEITEM_SOFT_DELETE: "QuoteLineItem.soft_delete",
-  QUOTELINEITEM_RESTORE: "QuoteLineItem.restore",
-  ESTIMATE_READ: "Estimate.read",
-  ESTIMATE_CREATE: "Estimate.create",
-  ESTIMATE_UPDATE: "Estimate.update",
-  ESTIMATE_SOFT_DELETE: "Estimate.soft_delete",
-  ESTIMATE_RESTORE: "Estimate.restore",
-  ESTIMATE_SEND: "Estimate.send",
-  ESTIMATE_APPROVE: "Estimate.approve",
-  ESTIMATE_REJECT: "Estimate.reject",
-  ESTIMATELINEITEM_READ: "EstimateLineItem.read",
-  ESTIMATELINEITEM_CREATE: "EstimateLineItem.create",
-  ESTIMATELINEITEM_UPDATE: "EstimateLineItem.update",
-  ESTIMATELINEITEM_SOFT_DELETE: "EstimateLineItem.soft_delete",
-  ESTIMATELINEITEM_RESTORE: "EstimateLineItem.restore",
-  ESTIMATEATTACHMENT_READ: "EstimateAttachment.read",
-  ESTIMATEATTACHMENT_CREATE: "EstimateAttachment.create",
-  ESTIMATEATTACHMENT_UPDATE: "EstimateAttachment.update",
-  ESTIMATEATTACHMENT_SOFT_DELETE: "EstimateAttachment.soft_delete",
-  ESTIMATEATTACHMENT_RESTORE: "EstimateAttachment.restore",
-  ESTIMATEAPPROVAL_READ: "EstimateApproval.read",
-  ESTIMATEAPPROVAL_CREATE: "EstimateApproval.create",
-  ESTIMATEAPPROVAL_APPROVE: "EstimateApproval.approve",
-  ESTIMATEAPPROVAL_REJECT: "EstimateApproval.reject",
-  REQUESTFORQUOTE_READ: "RequestForQuote.read",
-  REQUESTFORQUOTE_CREATE: "RequestForQuote.create",
-  REQUESTFORQUOTE_UPDATE: "RequestForQuote.update",
-  REQUESTFORQUOTE_SOFT_DELETE: "RequestForQuote.soft_delete",
-  REQUESTFORQUOTE_RESTORE: "RequestForQuote.restore",
-  REQUESTFORQUOTE_SEND: "RequestForQuote.send",
-  RFQLINE_READ: "RFQLine.read",
-  RFQLINE_CREATE: "RFQLine.create",
-  RFQLINE_UPDATE: "RFQLine.update",
-  RFQLINE_SOFT_DELETE: "RFQLine.soft_delete",
-  RFQLINE_RESTORE: "RFQLine.restore",
-  RFQRESPONSE_READ: "RFQResponse.read",
-  RFQRESPONSE_CREATE: "RFQResponse.create",
-  RFQRESPONSE_UPDATE: "RFQResponse.update",
-  RFQRESPONSE_SOFT_DELETE: "RFQResponse.soft_delete",
-  RFQRESPONSE_RESTORE: "RFQResponse.restore",
-  BID_READ: "Bid.read",
-  BID_CREATE: "Bid.create",
-  BID_UPDATE: "Bid.update",
-  BID_SOFT_DELETE: "Bid.soft_delete",
-  BID_RESTORE: "Bid.restore",
-  BID_SUBMIT: "Bid.submit",
-  BID_APPROVE: "Bid.approve",
-  BID_REJECT: "Bid.reject",
-  BIDCOMPARISON_READ: "BidComparison.read",
-  BIDCOMPARISON_CREATE: "BidComparison.create",
-  BIDCOMPARISON_UPDATE: "BidComparison.update",
-  BIDCOMPARISON_SOFT_DELETE: "BidComparison.soft_delete",
-  BIDCOMPARISON_RESTORE: "BidComparison.restore",
-  BIDINVITATION_READ: "BidInvitation.read",
-  BIDINVITATION_CREATE: "BidInvitation.create",
-  BIDINVITATION_UPDATE: "BidInvitation.update",
-  BIDINVITATION_SEND: "BidInvitation.send",
-  BIDINVITATION_SOFT_DELETE: "BidInvitation.soft_delete",
-  BIDINVITATION_RESTORE: "BidInvitation.restore",
-  BIDSUBMISSION_READ: "BidSubmission.read",
-  BIDSUBMISSION_CREATE: "BidSubmission.create",
-  BIDSUBMISSION_UPDATE: "BidSubmission.update",
-  BIDSUBMISSION_SUBMIT: "BidSubmission.submit",
-  BIDSUBMISSION_APPROVE: "BidSubmission.approve",
-  BIDSUBMISSION_REJECT: "BidSubmission.reject",
-  ACCOUNT_ASSIGN: "Account.assign",
-  ACCOUNT_UNASSIGN: "Account.unassign",
-  ACCOUNT_HARD_DELETE: "Account.hard_delete",
-  ACCOUNTADDRESS_HARD_DELETE: "AccountAddress.hard_delete",
-  CONTACT_HARD_DELETE: "Contact.hard_delete",
-  LEAD_HARD_DELETE: "Lead.hard_delete",
-  OPPORTUNITY_HARD_DELETE: "Opportunity.hard_delete",
-  QUOTE_HARD_DELETE: "Quote.hard_delete",
-  ESTIMATE_HARD_DELETE: "Estimate.hard_delete",
-  ESTIMATECOMMENT_READ: "EstimateComment.read",
-  ESTIMATECOMMENT_CREATE: "EstimateComment.create",
-  ESTIMATECOMMENT_UPDATE: "EstimateComment.update",
-  ESTIMATECOMMENT_SOFT_DELETE: "EstimateComment.soft_delete",
-  ESTIMATECOMMENT_RESTORE: "EstimateComment.restore",
-  ESTIMATEDISCOUNT_READ: "EstimateDiscount.read",
-  ESTIMATEDISCOUNT_CREATE: "EstimateDiscount.create",
-  ESTIMATEDISCOUNT_UPDATE: "EstimateDiscount.update",
-  ESTIMATEDISCOUNT_SOFT_DELETE: "EstimateDiscount.soft_delete",
-  ESTIMATEDISCOUNT_RESTORE: "EstimateDiscount.restore",
-  ESTIMATEHISTORYEVENT_READ: "EstimateHistoryEvent.read",
-  ESTIMATEHISTORYEVENT_CREATE: "EstimateHistoryEvent.create",
-  ESTIMATEREVISION_READ: "EstimateRevision.read",
-  ESTIMATEREVISION_CREATE: "EstimateRevision.create",
-  ESTIMATEREVISION_UPDATE: "EstimateRevision.update",
-  ESTIMATEREVISION_SOFT_DELETE: "EstimateRevision.soft_delete",
-  ESTIMATEREVISION_RESTORE: "EstimateRevision.restore",
-  ESTIMATETAX_READ: "EstimateTax.read",
-  ESTIMATETAX_CREATE: "EstimateTax.create",
-  ESTIMATETAX_UPDATE: "EstimateTax.update",
-  ESTIMATETAX_SOFT_DELETE: "EstimateTax.soft_delete",
-  ESTIMATETAX_RESTORE: "EstimateTax.restore",
-  ESTIMATETERM_READ: "EstimateTerm.read",
-  ESTIMATETERM_CREATE: "EstimateTerm.create",
-  ESTIMATETERM_UPDATE: "EstimateTerm.update",
-  ESTIMATETERM_SOFT_DELETE: "EstimateTerm.soft_delete",
-  ESTIMATETERM_RESTORE: "EstimateTerm.restore",
+  ACCOUNT_READ: 'Account.read',
+  ACCOUNT_CREATE: 'Account.create',
+  ACCOUNT_UPDATE: 'Account.update',
+  ACCOUNT_SOFT_DELETE: 'Account.soft_delete',
+  ACCOUNT_RESTORE: 'Account.restore',
+  ACCOUNT_ACTIVATE: 'Account.activate',
+  ACCOUNT_DEACTIVATE: 'Account.deactivate',
+  ACCOUNTADDRESS_READ: 'AccountAddress.read',
+  ACCOUNTADDRESS_CREATE: 'AccountAddress.create',
+  ACCOUNTADDRESS_UPDATE: 'AccountAddress.update',
+  ACCOUNTADDRESS_SOFT_DELETE: 'AccountAddress.soft_delete',
+  ACCOUNTADDRESS_RESTORE: 'AccountAddress.restore',
+  CONTACT_READ: 'Contact.read',
+  CONTACT_CREATE: 'Contact.create',
+  CONTACT_UPDATE: 'Contact.update',
+  CONTACT_SOFT_DELETE: 'Contact.soft_delete',
+  CONTACT_RESTORE: 'Contact.restore',
+  LEAD_READ: 'Lead.read',
+  LEAD_CREATE: 'Lead.create',
+  LEAD_UPDATE: 'Lead.update',
+  LEAD_SOFT_DELETE: 'Lead.soft_delete',
+  LEAD_RESTORE: 'Lead.restore',
+  LEAD_ASSIGN: 'Lead.assign',
+  LEAD_UNASSIGN: 'Lead.unassign',
+  LEAD_TRANSFER: 'Lead.transfer',
+  LEADACTIVITY_READ: 'LeadActivity.read',
+  LEADACTIVITY_CREATE: 'LeadActivity.create',
+  LEADACTIVITY_UPDATE: 'LeadActivity.update',
+  LEADACTIVITY_SOFT_DELETE: 'LeadActivity.soft_delete',
+  LEADACTIVITY_RESTORE: 'LeadActivity.restore',
+  OPPORTUNITY_READ: 'Opportunity.read',
+  OPPORTUNITY_CREATE: 'Opportunity.create',
+  OPPORTUNITY_UPDATE: 'Opportunity.update',
+  OPPORTUNITY_SOFT_DELETE: 'Opportunity.soft_delete',
+  OPPORTUNITY_RESTORE: 'Opportunity.restore',
+  OPPORTUNITY_ASSIGN: 'Opportunity.assign',
+  OPPORTUNITY_UNASSIGN: 'Opportunity.unassign',
+  OPPORTUNITY_TRANSFER: 'Opportunity.transfer',
+  OPPORTUNITYSTAGE_READ: 'OpportunityStage.read',
+  OPPORTUNITYSTAGE_CREATE: 'OpportunityStage.create',
+  OPPORTUNITYSTAGE_UPDATE: 'OpportunityStage.update',
+  OPPORTUNITYSTAGE_SOFT_DELETE: 'OpportunityStage.soft_delete',
+  OPPORTUNITYSTAGE_RESTORE: 'OpportunityStage.restore',
+  OPPORTUNITYLINEITEM_READ: 'OpportunityLineItem.read',
+  OPPORTUNITYLINEITEM_CREATE: 'OpportunityLineItem.create',
+  OPPORTUNITYLINEITEM_UPDATE: 'OpportunityLineItem.update',
+  OPPORTUNITYLINEITEM_SOFT_DELETE: 'OpportunityLineItem.soft_delete',
+  OPPORTUNITYLINEITEM_RESTORE: 'OpportunityLineItem.restore',
+  QUOTE_READ: 'Quote.read',
+  QUOTE_CREATE: 'Quote.create',
+  QUOTE_UPDATE: 'Quote.update',
+  QUOTE_SOFT_DELETE: 'Quote.soft_delete',
+  QUOTE_RESTORE: 'Quote.restore',
+  QUOTE_SEND: 'Quote.send',
+  QUOTE_APPROVE: 'Quote.approve',
+  QUOTE_REJECT: 'Quote.reject',
+  QUOTELINEITEM_READ: 'QuoteLineItem.read',
+  QUOTELINEITEM_CREATE: 'QuoteLineItem.create',
+  QUOTELINEITEM_UPDATE: 'QuoteLineItem.update',
+  QUOTELINEITEM_SOFT_DELETE: 'QuoteLineItem.soft_delete',
+  QUOTELINEITEM_RESTORE: 'QuoteLineItem.restore',
+  ESTIMATE_READ: 'Estimate.read',
+  ESTIMATE_CREATE: 'Estimate.create',
+  ESTIMATE_UPDATE: 'Estimate.update',
+  ESTIMATE_SOFT_DELETE: 'Estimate.soft_delete',
+  ESTIMATE_RESTORE: 'Estimate.restore',
+  ESTIMATE_SEND: 'Estimate.send',
+  ESTIMATE_APPROVE: 'Estimate.approve',
+  ESTIMATE_REJECT: 'Estimate.reject',
+  ESTIMATELINEITEM_READ: 'EstimateLineItem.read',
+  ESTIMATELINEITEM_CREATE: 'EstimateLineItem.create',
+  ESTIMATELINEITEM_UPDATE: 'EstimateLineItem.update',
+  ESTIMATELINEITEM_SOFT_DELETE: 'EstimateLineItem.soft_delete',
+  ESTIMATELINEITEM_RESTORE: 'EstimateLineItem.restore',
+  ESTIMATEATTACHMENT_READ: 'EstimateAttachment.read',
+  ESTIMATEATTACHMENT_CREATE: 'EstimateAttachment.create',
+  ESTIMATEATTACHMENT_UPDATE: 'EstimateAttachment.update',
+  ESTIMATEATTACHMENT_SOFT_DELETE: 'EstimateAttachment.soft_delete',
+  ESTIMATEATTACHMENT_RESTORE: 'EstimateAttachment.restore',
+  ESTIMATEAPPROVAL_READ: 'EstimateApproval.read',
+  ESTIMATEAPPROVAL_CREATE: 'EstimateApproval.create',
+  ESTIMATEAPPROVAL_APPROVE: 'EstimateApproval.approve',
+  ESTIMATEAPPROVAL_REJECT: 'EstimateApproval.reject',
+  REQUESTFORQUOTE_READ: 'RequestForQuote.read',
+  REQUESTFORQUOTE_CREATE: 'RequestForQuote.create',
+  REQUESTFORQUOTE_UPDATE: 'RequestForQuote.update',
+  REQUESTFORQUOTE_SOFT_DELETE: 'RequestForQuote.soft_delete',
+  REQUESTFORQUOTE_RESTORE: 'RequestForQuote.restore',
+  REQUESTFORQUOTE_SEND: 'RequestForQuote.send',
+  RFQLINE_READ: 'RFQLine.read',
+  RFQLINE_CREATE: 'RFQLine.create',
+  RFQLINE_UPDATE: 'RFQLine.update',
+  RFQLINE_SOFT_DELETE: 'RFQLine.soft_delete',
+  RFQLINE_RESTORE: 'RFQLine.restore',
+  RFQRESPONSE_READ: 'RFQResponse.read',
+  RFQRESPONSE_CREATE: 'RFQResponse.create',
+  RFQRESPONSE_UPDATE: 'RFQResponse.update',
+  RFQRESPONSE_SOFT_DELETE: 'RFQResponse.soft_delete',
+  RFQRESPONSE_RESTORE: 'RFQResponse.restore',
+  BID_READ: 'Bid.read',
+  BID_CREATE: 'Bid.create',
+  BID_UPDATE: 'Bid.update',
+  BID_SOFT_DELETE: 'Bid.soft_delete',
+  BID_RESTORE: 'Bid.restore',
+  BID_SUBMIT: 'Bid.submit',
+  BID_APPROVE: 'Bid.approve',
+  BID_REJECT: 'Bid.reject',
+  BIDCOMPARISON_READ: 'BidComparison.read',
+  BIDCOMPARISON_CREATE: 'BidComparison.create',
+  BIDCOMPARISON_UPDATE: 'BidComparison.update',
+  BIDCOMPARISON_SOFT_DELETE: 'BidComparison.soft_delete',
+  BIDCOMPARISON_RESTORE: 'BidComparison.restore',
+  BIDINVITATION_READ: 'BidInvitation.read',
+  BIDINVITATION_CREATE: 'BidInvitation.create',
+  BIDINVITATION_UPDATE: 'BidInvitation.update',
+  BIDINVITATION_SEND: 'BidInvitation.send',
+  BIDINVITATION_SOFT_DELETE: 'BidInvitation.soft_delete',
+  BIDINVITATION_RESTORE: 'BidInvitation.restore',
+  BIDSUBMISSION_READ: 'BidSubmission.read',
+  BIDSUBMISSION_CREATE: 'BidSubmission.create',
+  BIDSUBMISSION_UPDATE: 'BidSubmission.update',
+  BIDSUBMISSION_SUBMIT: 'BidSubmission.submit',
+  BIDSUBMISSION_APPROVE: 'BidSubmission.approve',
+  BIDSUBMISSION_REJECT: 'BidSubmission.reject',
+  ACCOUNT_ASSIGN: 'Account.assign',
+  ACCOUNT_UNASSIGN: 'Account.unassign',
+  ACCOUNT_HARD_DELETE: 'Account.hard_delete',
+  ACCOUNTADDRESS_HARD_DELETE: 'AccountAddress.hard_delete',
+  CONTACT_HARD_DELETE: 'Contact.hard_delete',
+  LEAD_HARD_DELETE: 'Lead.hard_delete',
+  OPPORTUNITY_HARD_DELETE: 'Opportunity.hard_delete',
+  QUOTE_HARD_DELETE: 'Quote.hard_delete',
+  ESTIMATE_HARD_DELETE: 'Estimate.hard_delete',
+  ESTIMATECOMMENT_READ: 'EstimateComment.read',
+  ESTIMATECOMMENT_CREATE: 'EstimateComment.create',
+  ESTIMATECOMMENT_UPDATE: 'EstimateComment.update',
+  ESTIMATECOMMENT_SOFT_DELETE: 'EstimateComment.soft_delete',
+  ESTIMATECOMMENT_RESTORE: 'EstimateComment.restore',
+  ESTIMATEDISCOUNT_READ: 'EstimateDiscount.read',
+  ESTIMATEDISCOUNT_CREATE: 'EstimateDiscount.create',
+  ESTIMATEDISCOUNT_UPDATE: 'EstimateDiscount.update',
+  ESTIMATEDISCOUNT_SOFT_DELETE: 'EstimateDiscount.soft_delete',
+  ESTIMATEDISCOUNT_RESTORE: 'EstimateDiscount.restore',
+  ESTIMATEHISTORYEVENT_READ: 'EstimateHistoryEvent.read',
+  ESTIMATEHISTORYEVENT_CREATE: 'EstimateHistoryEvent.create',
+  ESTIMATEREVISION_READ: 'EstimateRevision.read',
+  ESTIMATEREVISION_CREATE: 'EstimateRevision.create',
+  ESTIMATEREVISION_UPDATE: 'EstimateRevision.update',
+  ESTIMATEREVISION_SOFT_DELETE: 'EstimateRevision.soft_delete',
+  ESTIMATEREVISION_RESTORE: 'EstimateRevision.restore',
+  ESTIMATETAX_READ: 'EstimateTax.read',
+  ESTIMATETAX_CREATE: 'EstimateTax.create',
+  ESTIMATETAX_UPDATE: 'EstimateTax.update',
+  ESTIMATETAX_SOFT_DELETE: 'EstimateTax.soft_delete',
+  ESTIMATETAX_RESTORE: 'EstimateTax.restore',
+  ESTIMATETERM_READ: 'EstimateTerm.read',
+  ESTIMATETERM_CREATE: 'EstimateTerm.create',
+  ESTIMATETERM_UPDATE: 'EstimateTerm.update',
+  ESTIMATETERM_SOFT_DELETE: 'EstimateTerm.soft_delete',
+  ESTIMATETERM_RESTORE: 'EstimateTerm.restore',
 
   // ============================================================================
   // PROJECT_MANAGEMENT
   // ============================================================================
-  PROJECT_READ: "Project.read",
-  PROJECT_CREATE: "Project.create",
-  PROJECT_UPDATE: "Project.update",
-  PROJECT_SOFT_DELETE: "Project.soft_delete",
-  PROJECT_RESTORE: "Project.restore",
-  PROJECT_HARD_DELETE: "Project.hard_delete",
-  PROJECT_ARCHIVE: "Project.archive",
-  PROJECT_ACTIVATE: "Project.activate",
-  PROJECT_DEACTIVATE: "Project.deactivate",
-  PROJECT_DUPLICATE: "Project.duplicate",
-  PROJECT_TRANSFER: "Project.transfer",
-  PROJECTTASKASSIGNMENT_READ: "ProjectTaskAssignment.read",
-  PROJECTTASKASSIGNMENT_CREATE: "ProjectTaskAssignment.create",
-  PROJECTTASKASSIGNMENT_UPDATE: "ProjectTaskAssignment.update",
-  PROJECTTASKASSIGNMENT_SOFT_DELETE: "ProjectTaskAssignment.soft_delete",
-  PROJECTTASKASSIGNMENT_RESTORE: "ProjectTaskAssignment.restore",
-  PROJECTTASKASSIGNMENT_ASSIGN: "ProjectTaskAssignment.assign",
-  PROJECTTASKASSIGNMENT_UNASSIGN: "ProjectTaskAssignment.unassign",
-  PROJECTTASKASSIGNMENT_TRANSFER: "ProjectTaskAssignment.transfer",
-  PROJECTMEMBER_READ: "ProjectMember.read",
-  PROJECTMEMBER_CREATE: "ProjectMember.create",
-  PROJECTMEMBER_UPDATE: "ProjectMember.update",
-  PROJECTMEMBER_SOFT_DELETE: "ProjectMember.soft_delete",
-  PROJECTMEMBER_RESTORE: "ProjectMember.restore",
-  PROJECTMEMBER_ASSIGN: "ProjectMember.assign",
-  PROJECTMEMBER_UNASSIGN: "ProjectMember.unassign",
-  PROJECTMEMBER_TRANSFER: "ProjectMember.transfer",
-  PROJECTNOTE_READ: "ProjectNote.read",
-  PROJECTNOTE_CREATE: "ProjectNote.create",
-  PROJECTNOTE_UPDATE: "ProjectNote.update",
-  PROJECTNOTE_SOFT_DELETE: "ProjectNote.soft_delete",
-  PROJECTNOTE_RESTORE: "ProjectNote.restore",
-  PROJECTREPORT_READ: "ProjectReport.read",
-  PROJECTREPORT_CREATE: "ProjectReport.create",
-  PROJECTREPORT_UPDATE: "ProjectReport.update",
-  PROJECTREPORT_SOFT_DELETE: "ProjectReport.soft_delete",
-  PROJECTREPORT_RESTORE: "ProjectReport.restore",
-  PROJECTREPORT_EXPORT: "ProjectReport.export",
-  PROJECTBUDGETLINE_READ: "ProjectBudgetLine.read",
-  PROJECTBUDGETLINE_CREATE: "ProjectBudgetLine.create",
-  PROJECTBUDGETLINE_UPDATE: "ProjectBudgetLine.update",
-  PROJECTBUDGETLINE_SOFT_DELETE: "ProjectBudgetLine.soft_delete",
-  PROJECTBUDGETLINE_RESTORE: "ProjectBudgetLine.restore",
-  PROJECTFINANCIALSNAPSHOT_READ: "ProjectFinancialSnapshot.read",
-  PROJECTFINANCIALSNAPSHOT_CREATE: "ProjectFinancialSnapshot.create",
-  PROJECTFINANCIALSNAPSHOT_EXPORT: "ProjectFinancialSnapshot.export",
-  PROJECTINVENTORYTRANSACTION_READ: "ProjectInventoryTransaction.read",
-  PROJECTINVENTORYTRANSACTION_CREATE: "ProjectInventoryTransaction.create",
-  PROJECTINVENTORYTRANSACTION_UPDATE: "ProjectInventoryTransaction.update",
-  PROJECTINVENTORYTRANSACTION_SOFT_DELETE:
-    "ProjectInventoryTransaction.soft_delete",
-  PROJECTINVENTORYTRANSACTION_RESTORE: "ProjectInventoryTransaction.restore",
-  PROJECTPHASE_READ: "ProjectPhase.read",
-  PROJECTPHASE_CREATE: "ProjectPhase.create",
-  PROJECTPHASE_UPDATE: "ProjectPhase.update",
-  PROJECTPHASE_SOFT_DELETE: "ProjectPhase.soft_delete",
-  PROJECTPHASE_RESTORE: "ProjectPhase.restore",
-  PROJECTPHASE_ACTIVATE: "ProjectPhase.activate",
-  PROJECTPHASE_DEACTIVATE: "ProjectPhase.deactivate",
-  WBSITEM_READ: "WBSItem.read",
-  WBSITEM_CREATE: "WBSItem.create",
-  WBSITEM_UPDATE: "WBSItem.update",
-  WBSITEM_SOFT_DELETE: "WBSItem.soft_delete",
-  WBSITEM_RESTORE: "WBSItem.restore",
-  PROJECTLOCATION_READ: "ProjectLocation.read",
-  PROJECTLOCATION_CREATE: "ProjectLocation.create",
-  PROJECTLOCATION_UPDATE: "ProjectLocation.update",
-  PROJECTLOCATION_SOFT_DELETE: "ProjectLocation.soft_delete",
-  PROJECTLOCATION_RESTORE: "ProjectLocation.restore",
-  PROJECTTASK_READ: "ProjectTask.read",
-  PROJECTTASK_CREATE: "ProjectTask.create",
-  PROJECTTASK_UPDATE: "ProjectTask.update",
-  PROJECTTASK_SOFT_DELETE: "ProjectTask.soft_delete",
-  PROJECTTASK_RESTORE: "ProjectTask.restore",
-  PROJECTTASK_ASSIGN: "ProjectTask.assign",
-  PROJECTTASK_UNASSIGN: "ProjectTask.unassign",
-  PROJECTTASK_TRANSFER: "ProjectTask.transfer",
-  PROJECTTASKDEPENDENCY_READ: "ProjectTaskDependency.read",
-  PROJECTTASKDEPENDENCY_CREATE: "ProjectTaskDependency.create",
-  PROJECTTASKDEPENDENCY_UPDATE: "ProjectTaskDependency.update",
-  PROJECTTASKDEPENDENCY_SOFT_DELETE: "ProjectTaskDependency.soft_delete",
-  PROJECTTASKDEPENDENCY_RESTORE: "ProjectTaskDependency.restore",
-  PROJECTTASKATTACHMENT_READ: "ProjectTaskAttachment.read",
-  PROJECTTASKATTACHMENT_CREATE: "ProjectTaskAttachment.create",
-  PROJECTTASKATTACHMENT_UPDATE: "ProjectTaskAttachment.update",
-  PROJECTTASKATTACHMENT_SOFT_DELETE: "ProjectTaskAttachment.soft_delete",
-  PROJECTTASKATTACHMENT_RESTORE: "ProjectTaskAttachment.restore",
-  PROJECTTASKCOMMENT_READ: "ProjectTaskComment.read",
-  PROJECTTASKCOMMENT_CREATE: "ProjectTaskComment.create",
-  PROJECTTASKCOMMENT_UPDATE: "ProjectTaskComment.update",
-  PROJECTTASKCOMMENT_SOFT_DELETE: "ProjectTaskComment.soft_delete",
-  PROJECTTASKCOMMENT_RESTORE: "ProjectTaskComment.restore",
-  CHANGEORDER_READ: "ChangeOrder.read",
-  CHANGEORDER_CREATE: "ChangeOrder.create",
-  CHANGEORDER_UPDATE: "ChangeOrder.update",
-  CHANGEORDER_SOFT_DELETE: "ChangeOrder.soft_delete",
-  CHANGEORDER_RESTORE: "ChangeOrder.restore",
-  CHANGEORDER_APPROVE: "ChangeOrder.approve",
-  CHANGEORDER_REJECT: "ChangeOrder.reject",
-  CHANGEORDERLINE_READ: "ChangeOrderLine.read",
-  CHANGEORDERLINE_CREATE: "ChangeOrderLine.create",
-  CHANGEORDERLINE_UPDATE: "ChangeOrderLine.update",
-  CHANGEORDERLINE_SOFT_DELETE: "ChangeOrderLine.soft_delete",
-  CHANGEORDERLINE_RESTORE: "ChangeOrderLine.restore",
-  CHANGEORDERAPPROVAL_READ: "ChangeOrderApproval.read",
-  CHANGEORDERAPPROVAL_CREATE: "ChangeOrderApproval.create",
-  CHANGEORDERAPPROVAL_APPROVE: "ChangeOrderApproval.approve",
-  CHANGEORDERAPPROVAL_REJECT: "ChangeOrderApproval.reject",
-  CHANGEORDERDOCUMENT_READ: "ChangeOrderDocument.read",
-  CHANGEORDERDOCUMENT_CREATE: "ChangeOrderDocument.create",
-  CHANGEORDERDOCUMENT_UPDATE: "ChangeOrderDocument.update",
-  CHANGEORDERDOCUMENT_SOFT_DELETE: "ChangeOrderDocument.soft_delete",
-  CHANGEORDERDOCUMENT_RESTORE: "ChangeOrderDocument.restore",
-  RFI_READ: "RFI.read",
-  RFI_CREATE: "RFI.create",
-  RFI_UPDATE: "RFI.update",
-  RFI_SOFT_DELETE: "RFI.soft_delete",
-  RFI_RESTORE: "RFI.restore",
-  RFI_SEND: "RFI.send",
-  RFIREPLY_READ: "RFIReply.read",
-  RFIREPLY_CREATE: "RFIReply.create",
-  RFIREPLY_UPDATE: "RFIReply.update",
-  RFIREPLY_SOFT_DELETE: "RFIReply.soft_delete",
-  RFIREPLY_RESTORE: "RFIReply.restore",
-  SUBMITTAL_READ: "Submittal.read",
-  SUBMITTAL_CREATE: "Submittal.create",
-  SUBMITTAL_UPDATE: "Submittal.update",
-  SUBMITTAL_SOFT_DELETE: "Submittal.soft_delete",
-  SUBMITTAL_RESTORE: "Submittal.restore",
-  SUBMITTALITEM_READ: "SubmittalItem.read",
-  SUBMITTALITEM_CREATE: "SubmittalItem.create",
-  SUBMITTALITEM_UPDATE: "SubmittalItem.update",
-  SUBMITTALITEM_SOFT_DELETE: "SubmittalItem.soft_delete",
-  SUBMITTALITEM_RESTORE: "SubmittalItem.restore",
-  SUBMITTALAPPROVAL_READ: "SubmittalApproval.read",
-  SUBMITTALAPPROVAL_CREATE: "SubmittalApproval.create",
-  SUBMITTALAPPROVAL_APPROVE: "SubmittalApproval.approve",
-  SUBMITTALAPPROVAL_REJECT: "SubmittalApproval.reject",
-  INSPECTION_READ: "Inspection.read",
-  INSPECTION_CREATE: "Inspection.create",
-  INSPECTION_UPDATE: "Inspection.update",
-  INSPECTION_SOFT_DELETE: "Inspection.soft_delete",
-  INSPECTION_RESTORE: "Inspection.restore",
-  INSPECTIONITEM_READ: "InspectionItem.read",
-  INSPECTIONITEM_CREATE: "InspectionItem.create",
-  INSPECTIONITEM_UPDATE: "InspectionItem.update",
-  INSPECTIONITEM_SOFT_DELETE: "InspectionItem.soft_delete",
-  INSPECTIONITEM_RESTORE: "InspectionItem.restore",
-  INSPECTIONAPPROVAL_READ: "InspectionApproval.read",
-  INSPECTIONAPPROVAL_CREATE: "InspectionApproval.create",
-  INSPECTIONAPPROVAL_APPROVE: "InspectionApproval.approve",
-  INSPECTIONAPPROVAL_REJECT: "InspectionApproval.reject",
-  DAILYLOG_READ: "DailyLog.read",
-  DAILYLOG_CREATE: "DailyLog.create",
-  DAILYLOG_UPDATE: "DailyLog.update",
-  DAILYLOG_SOFT_DELETE: "DailyLog.soft_delete",
-  DAILYLOG_RESTORE: "DailyLog.restore",
-  PUNCHLIST_READ: "PunchList.read",
-  PUNCHLIST_CREATE: "PunchList.create",
-  PUNCHLIST_UPDATE: "PunchList.update",
-  PUNCHLIST_SOFT_DELETE: "PunchList.soft_delete",
-  PUNCHLIST_RESTORE: "PunchList.restore",
-  PUNCHLISTITEM_READ: "PunchListItem.read",
-  PUNCHLISTITEM_CREATE: "PunchListItem.create",
-  PUNCHLISTITEM_UPDATE: "PunchListItem.update",
-  PUNCHLISTITEM_SOFT_DELETE: "PunchListItem.soft_delete",
-  PUNCHLISTITEM_RESTORE: "PunchListItem.restore",
-  ACTIVITY_READ: "Activity.read",
-  ACTIVITY_CREATE: "Activity.create",
-  ACTIVITY_UPDATE: "Activity.update",
-  ACTIVITY_SOFT_DELETE: "Activity.soft_delete",
-  ACTIVITY_RESTORE: "Activity.restore",
-  ACTIVITYATTACHMENT_READ: "ActivityAttachment.read",
-  ACTIVITYATTACHMENT_CREATE: "ActivityAttachment.create",
-  ACTIVITYATTACHMENT_UPDATE: "ActivityAttachment.update",
-  ACTIVITYATTACHMENT_SOFT_DELETE: "ActivityAttachment.soft_delete",
-  ACTIVITYATTACHMENT_RESTORE: "ActivityAttachment.restore",
-  MILESTONE_READ: "Milestone.read",
-  MILESTONE_CREATE: "Milestone.create",
-  MILESTONE_UPDATE: "Milestone.update",
-  MILESTONE_SOFT_DELETE: "Milestone.soft_delete",
-  MILESTONE_RESTORE: "Milestone.restore",
-  MILESTONEDEPENDENCY_READ: "MilestoneDependency.read",
-  MILESTONEDEPENDENCY_CREATE: "MilestoneDependency.create",
-  MILESTONEDEPENDENCY_UPDATE: "MilestoneDependency.update",
-  MILESTONEDEPENDENCY_SOFT_DELETE: "MilestoneDependency.soft_delete",
-  MILESTONEDEPENDENCY_RESTORE: "MilestoneDependency.restore",
-  MILESTONESTAKEHOLDER_READ: "MilestoneStakeholder.read",
-  MILESTONESTAKEHOLDER_CREATE: "MilestoneStakeholder.create",
-  MILESTONESTAKEHOLDER_UPDATE: "MilestoneStakeholder.update",
-  MILESTONESTAKEHOLDER_SOFT_DELETE: "MilestoneStakeholder.soft_delete",
-  MILESTONESTAKEHOLDER_RESTORE: "MilestoneStakeholder.restore",
-  PROJECTDOCUMENT_READ: "ProjectDocument.read",
-  PROJECTDOCUMENT_CREATE: "ProjectDocument.create",
-  PROJECTDOCUMENT_UPDATE: "ProjectDocument.update",
-  PROJECTDOCUMENT_SOFT_DELETE: "ProjectDocument.soft_delete",
-  PROJECTDOCUMENT_RESTORE: "ProjectDocument.restore",
-  PROJECTEXTERNALACCESS_READ: "ProjectExternalAccess.read",
-  PROJECTEXTERNALACCESS_CREATE: "ProjectExternalAccess.create",
-  PROJECTEXTERNALACCESS_UPDATE: "ProjectExternalAccess.update",
-  PROJECTEXTERNALACCESS_SOFT_DELETE: "ProjectExternalAccess.soft_delete",
-  PROJECTEXTERNALACCESS_RESTORE: "ProjectExternalAccess.restore",
-  PROJECTEXTERNALACCESS_GRANT: "ProjectExternalAccess.grant",
-  PROJECTEXTERNALACCESS_REVOKE: "ProjectExternalAccess.revoke",
-  PROJECTISSUE_READ: "ProjectIssue.read",
-  PROJECTISSUE_CREATE: "ProjectIssue.create",
-  PROJECTISSUE_UPDATE: "ProjectIssue.update",
-  PROJECTISSUE_SOFT_DELETE: "ProjectIssue.soft_delete",
-  PROJECTISSUE_RESTORE: "ProjectIssue.restore",
-  PROJECTISSUE_ASSIGN: "ProjectIssue.assign",
-  PROJECTISSUE_RESOLVE: "ProjectIssue.resolve",
-  PROJECTLEDGERENTRY_READ: "ProjectLedgerEntry.read",
-  PROJECTLEDGERENTRY_CREATE: "ProjectLedgerEntry.create",
-  PROJECTLEDGERENTRY_UPDATE: "ProjectLedgerEntry.update",
-  PROJECTLEDGERENTRY_SOFT_DELETE: "ProjectLedgerEntry.soft_delete",
-  PROJECTLEDGERENTRY_RESTORE: "ProjectLedgerEntry.restore",
-  PROJECTRISK_READ: "ProjectRisk.read",
-  PROJECTRISK_CREATE: "ProjectRisk.create",
-  PROJECTRISK_UPDATE: "ProjectRisk.update",
-  PROJECTRISK_SOFT_DELETE: "ProjectRisk.soft_delete",
-  PROJECTRISK_RESTORE: "ProjectRisk.restore",
-  PROJECTRISK_ASSESS: "ProjectRisk.assess",
-  PROJECTRISK_MITIGATE: "ProjectRisk.mitigate",
-  PROJECTTASKCHECKLISTITEM_READ: "ProjectTaskChecklistItem.read",
-  PROJECTTASKCHECKLISTITEM_CREATE: "ProjectTaskChecklistItem.create",
-  PROJECTTASKCHECKLISTITEM_UPDATE: "ProjectTaskChecklistItem.update",
-  PROJECTTASKCHECKLISTITEM_SOFT_DELETE: "ProjectTaskChecklistItem.soft_delete",
-  PROJECTTASKCHECKLISTITEM_RESTORE: "ProjectTaskChecklistItem.restore",
-  PROJECTTASKCHECKLISTITEM_COMPLETE: "ProjectTaskChecklistItem.complete",
-  PROJECTTYPE_READ: "ProjectType.read",
-  PROJECTTYPE_CREATE: "ProjectType.create",
-  PROJECTTYPE_UPDATE: "ProjectType.update",
-  PROJECTTYPE_SOFT_DELETE: "ProjectType.soft_delete",
-  PROJECTTYPE_RESTORE: "ProjectType.restore",
-  PROJECTTYPE_ACTIVATE: "ProjectType.activate",
-  PROJECTTYPE_DEACTIVATE: "ProjectType.deactivate",
-  PROJECT_ASSIGN: "Project.assign",
-  PROJECT_UNASSIGN: "Project.unassign",
+  PROJECT_READ: 'Project.read',
+  PROJECT_CREATE: 'Project.create',
+  PROJECT_UPDATE: 'Project.update',
+  PROJECT_SOFT_DELETE: 'Project.soft_delete',
+  PROJECT_RESTORE: 'Project.restore',
+  PROJECT_HARD_DELETE: 'Project.hard_delete',
+  PROJECT_ARCHIVE: 'Project.archive',
+  PROJECT_ACTIVATE: 'Project.activate',
+  PROJECT_DEACTIVATE: 'Project.deactivate',
+  PROJECT_DUPLICATE: 'Project.duplicate',
+  PROJECT_TRANSFER: 'Project.transfer',
+  PROJECTTASKASSIGNMENT_READ: 'ProjectTaskAssignment.read',
+  PROJECTTASKASSIGNMENT_CREATE: 'ProjectTaskAssignment.create',
+  PROJECTTASKASSIGNMENT_UPDATE: 'ProjectTaskAssignment.update',
+  PROJECTTASKASSIGNMENT_SOFT_DELETE: 'ProjectTaskAssignment.soft_delete',
+  PROJECTTASKASSIGNMENT_RESTORE: 'ProjectTaskAssignment.restore',
+  PROJECTTASKASSIGNMENT_ASSIGN: 'ProjectTaskAssignment.assign',
+  PROJECTTASKASSIGNMENT_UNASSIGN: 'ProjectTaskAssignment.unassign',
+  PROJECTTASKASSIGNMENT_TRANSFER: 'ProjectTaskAssignment.transfer',
+  PROJECTMEMBER_READ: 'ProjectMember.read',
+  PROJECTMEMBER_CREATE: 'ProjectMember.create',
+  PROJECTMEMBER_UPDATE: 'ProjectMember.update',
+  PROJECTMEMBER_SOFT_DELETE: 'ProjectMember.soft_delete',
+  PROJECTMEMBER_RESTORE: 'ProjectMember.restore',
+  PROJECTMEMBER_ASSIGN: 'ProjectMember.assign',
+  PROJECTMEMBER_UNASSIGN: 'ProjectMember.unassign',
+  PROJECTMEMBER_TRANSFER: 'ProjectMember.transfer',
+  PROJECTNOTE_READ: 'ProjectNote.read',
+  PROJECTNOTE_CREATE: 'ProjectNote.create',
+  PROJECTNOTE_UPDATE: 'ProjectNote.update',
+  PROJECTNOTE_SOFT_DELETE: 'ProjectNote.soft_delete',
+  PROJECTNOTE_RESTORE: 'ProjectNote.restore',
+  PROJECTREPORT_READ: 'ProjectReport.read',
+  PROJECTREPORT_CREATE: 'ProjectReport.create',
+  PROJECTREPORT_UPDATE: 'ProjectReport.update',
+  PROJECTREPORT_SOFT_DELETE: 'ProjectReport.soft_delete',
+  PROJECTREPORT_RESTORE: 'ProjectReport.restore',
+  PROJECTREPORT_EXPORT: 'ProjectReport.export',
+  PROJECTBUDGETLINE_READ: 'ProjectBudgetLine.read',
+  PROJECTBUDGETLINE_CREATE: 'ProjectBudgetLine.create',
+  PROJECTBUDGETLINE_UPDATE: 'ProjectBudgetLine.update',
+  PROJECTBUDGETLINE_SOFT_DELETE: 'ProjectBudgetLine.soft_delete',
+  PROJECTBUDGETLINE_RESTORE: 'ProjectBudgetLine.restore',
+  PROJECTFINANCIALSNAPSHOT_READ: 'ProjectFinancialSnapshot.read',
+  PROJECTFINANCIALSNAPSHOT_CREATE: 'ProjectFinancialSnapshot.create',
+  PROJECTFINANCIALSNAPSHOT_EXPORT: 'ProjectFinancialSnapshot.export',
+  PROJECTINVENTORYTRANSACTION_READ: 'ProjectInventoryTransaction.read',
+  PROJECTINVENTORYTRANSACTION_CREATE: 'ProjectInventoryTransaction.create',
+  PROJECTINVENTORYTRANSACTION_UPDATE: 'ProjectInventoryTransaction.update',
+  PROJECTINVENTORYTRANSACTION_SOFT_DELETE: 'ProjectInventoryTransaction.soft_delete',
+  PROJECTINVENTORYTRANSACTION_RESTORE: 'ProjectInventoryTransaction.restore',
+  PROJECTPHASE_READ: 'ProjectPhase.read',
+  PROJECTPHASE_CREATE: 'ProjectPhase.create',
+  PROJECTPHASE_UPDATE: 'ProjectPhase.update',
+  PROJECTPHASE_SOFT_DELETE: 'ProjectPhase.soft_delete',
+  PROJECTPHASE_RESTORE: 'ProjectPhase.restore',
+  PROJECTPHASE_ACTIVATE: 'ProjectPhase.activate',
+  PROJECTPHASE_DEACTIVATE: 'ProjectPhase.deactivate',
+  WBSITEM_READ: 'WBSItem.read',
+  WBSITEM_CREATE: 'WBSItem.create',
+  WBSITEM_UPDATE: 'WBSItem.update',
+  WBSITEM_SOFT_DELETE: 'WBSItem.soft_delete',
+  WBSITEM_RESTORE: 'WBSItem.restore',
+  PROJECTLOCATION_READ: 'ProjectLocation.read',
+  PROJECTLOCATION_CREATE: 'ProjectLocation.create',
+  PROJECTLOCATION_UPDATE: 'ProjectLocation.update',
+  PROJECTLOCATION_SOFT_DELETE: 'ProjectLocation.soft_delete',
+  PROJECTLOCATION_RESTORE: 'ProjectLocation.restore',
+  PROJECTTASK_READ: 'ProjectTask.read',
+  PROJECTTASK_CREATE: 'ProjectTask.create',
+  PROJECTTASK_UPDATE: 'ProjectTask.update',
+  PROJECTTASK_SOFT_DELETE: 'ProjectTask.soft_delete',
+  PROJECTTASK_RESTORE: 'ProjectTask.restore',
+  PROJECTTASK_ASSIGN: 'ProjectTask.assign',
+  PROJECTTASK_UNASSIGN: 'ProjectTask.unassign',
+  PROJECTTASK_TRANSFER: 'ProjectTask.transfer',
+  PROJECTTASKDEPENDENCY_READ: 'ProjectTaskDependency.read',
+  PROJECTTASKDEPENDENCY_CREATE: 'ProjectTaskDependency.create',
+  PROJECTTASKDEPENDENCY_UPDATE: 'ProjectTaskDependency.update',
+  PROJECTTASKDEPENDENCY_SOFT_DELETE: 'ProjectTaskDependency.soft_delete',
+  PROJECTTASKDEPENDENCY_RESTORE: 'ProjectTaskDependency.restore',
+  PROJECTTASKATTACHMENT_READ: 'ProjectTaskAttachment.read',
+  PROJECTTASKATTACHMENT_CREATE: 'ProjectTaskAttachment.create',
+  PROJECTTASKATTACHMENT_UPDATE: 'ProjectTaskAttachment.update',
+  PROJECTTASKATTACHMENT_SOFT_DELETE: 'ProjectTaskAttachment.soft_delete',
+  PROJECTTASKATTACHMENT_RESTORE: 'ProjectTaskAttachment.restore',
+  PROJECTTASKCOMMENT_READ: 'ProjectTaskComment.read',
+  PROJECTTASKCOMMENT_CREATE: 'ProjectTaskComment.create',
+  PROJECTTASKCOMMENT_UPDATE: 'ProjectTaskComment.update',
+  PROJECTTASKCOMMENT_SOFT_DELETE: 'ProjectTaskComment.soft_delete',
+  PROJECTTASKCOMMENT_RESTORE: 'ProjectTaskComment.restore',
+  CHANGEORDER_READ: 'ChangeOrder.read',
+  CHANGEORDER_CREATE: 'ChangeOrder.create',
+  CHANGEORDER_UPDATE: 'ChangeOrder.update',
+  CHANGEORDER_SOFT_DELETE: 'ChangeOrder.soft_delete',
+  CHANGEORDER_RESTORE: 'ChangeOrder.restore',
+  CHANGEORDER_APPROVE: 'ChangeOrder.approve',
+  CHANGEORDER_REJECT: 'ChangeOrder.reject',
+  CHANGEORDERLINE_READ: 'ChangeOrderLine.read',
+  CHANGEORDERLINE_CREATE: 'ChangeOrderLine.create',
+  CHANGEORDERLINE_UPDATE: 'ChangeOrderLine.update',
+  CHANGEORDERLINE_SOFT_DELETE: 'ChangeOrderLine.soft_delete',
+  CHANGEORDERLINE_RESTORE: 'ChangeOrderLine.restore',
+  CHANGEORDERAPPROVAL_READ: 'ChangeOrderApproval.read',
+  CHANGEORDERAPPROVAL_CREATE: 'ChangeOrderApproval.create',
+  CHANGEORDERAPPROVAL_APPROVE: 'ChangeOrderApproval.approve',
+  CHANGEORDERAPPROVAL_REJECT: 'ChangeOrderApproval.reject',
+  CHANGEORDERDOCUMENT_READ: 'ChangeOrderDocument.read',
+  CHANGEORDERDOCUMENT_CREATE: 'ChangeOrderDocument.create',
+  CHANGEORDERDOCUMENT_UPDATE: 'ChangeOrderDocument.update',
+  CHANGEORDERDOCUMENT_SOFT_DELETE: 'ChangeOrderDocument.soft_delete',
+  CHANGEORDERDOCUMENT_RESTORE: 'ChangeOrderDocument.restore',
+  RFI_READ: 'RFI.read',
+  RFI_CREATE: 'RFI.create',
+  RFI_UPDATE: 'RFI.update',
+  RFI_SOFT_DELETE: 'RFI.soft_delete',
+  RFI_RESTORE: 'RFI.restore',
+  RFI_SEND: 'RFI.send',
+  RFIREPLY_READ: 'RFIReply.read',
+  RFIREPLY_CREATE: 'RFIReply.create',
+  RFIREPLY_UPDATE: 'RFIReply.update',
+  RFIREPLY_SOFT_DELETE: 'RFIReply.soft_delete',
+  RFIREPLY_RESTORE: 'RFIReply.restore',
+  SUBMITTAL_READ: 'Submittal.read',
+  SUBMITTAL_CREATE: 'Submittal.create',
+  SUBMITTAL_UPDATE: 'Submittal.update',
+  SUBMITTAL_SOFT_DELETE: 'Submittal.soft_delete',
+  SUBMITTAL_RESTORE: 'Submittal.restore',
+  SUBMITTALITEM_READ: 'SubmittalItem.read',
+  SUBMITTALITEM_CREATE: 'SubmittalItem.create',
+  SUBMITTALITEM_UPDATE: 'SubmittalItem.update',
+  SUBMITTALITEM_SOFT_DELETE: 'SubmittalItem.soft_delete',
+  SUBMITTALITEM_RESTORE: 'SubmittalItem.restore',
+  SUBMITTALAPPROVAL_READ: 'SubmittalApproval.read',
+  SUBMITTALAPPROVAL_CREATE: 'SubmittalApproval.create',
+  SUBMITTALAPPROVAL_APPROVE: 'SubmittalApproval.approve',
+  SUBMITTALAPPROVAL_REJECT: 'SubmittalApproval.reject',
+  INSPECTION_READ: 'Inspection.read',
+  INSPECTION_CREATE: 'Inspection.create',
+  INSPECTION_UPDATE: 'Inspection.update',
+  INSPECTION_SOFT_DELETE: 'Inspection.soft_delete',
+  INSPECTION_RESTORE: 'Inspection.restore',
+  INSPECTIONITEM_READ: 'InspectionItem.read',
+  INSPECTIONITEM_CREATE: 'InspectionItem.create',
+  INSPECTIONITEM_UPDATE: 'InspectionItem.update',
+  INSPECTIONITEM_SOFT_DELETE: 'InspectionItem.soft_delete',
+  INSPECTIONITEM_RESTORE: 'InspectionItem.restore',
+  INSPECTIONAPPROVAL_READ: 'InspectionApproval.read',
+  INSPECTIONAPPROVAL_CREATE: 'InspectionApproval.create',
+  INSPECTIONAPPROVAL_APPROVE: 'InspectionApproval.approve',
+  INSPECTIONAPPROVAL_REJECT: 'InspectionApproval.reject',
+  DAILYLOG_READ: 'DailyLog.read',
+  DAILYLOG_CREATE: 'DailyLog.create',
+  DAILYLOG_UPDATE: 'DailyLog.update',
+  DAILYLOG_SOFT_DELETE: 'DailyLog.soft_delete',
+  DAILYLOG_RESTORE: 'DailyLog.restore',
+  PUNCHLIST_READ: 'PunchList.read',
+  PUNCHLIST_CREATE: 'PunchList.create',
+  PUNCHLIST_UPDATE: 'PunchList.update',
+  PUNCHLIST_SOFT_DELETE: 'PunchList.soft_delete',
+  PUNCHLIST_RESTORE: 'PunchList.restore',
+  PUNCHLISTITEM_READ: 'PunchListItem.read',
+  PUNCHLISTITEM_CREATE: 'PunchListItem.create',
+  PUNCHLISTITEM_UPDATE: 'PunchListItem.update',
+  PUNCHLISTITEM_SOFT_DELETE: 'PunchListItem.soft_delete',
+  PUNCHLISTITEM_RESTORE: 'PunchListItem.restore',
+  ACTIVITY_READ: 'Activity.read',
+  ACTIVITY_CREATE: 'Activity.create',
+  ACTIVITY_UPDATE: 'Activity.update',
+  ACTIVITY_SOFT_DELETE: 'Activity.soft_delete',
+  ACTIVITY_RESTORE: 'Activity.restore',
+  ACTIVITYATTACHMENT_READ: 'ActivityAttachment.read',
+  ACTIVITYATTACHMENT_CREATE: 'ActivityAttachment.create',
+  ACTIVITYATTACHMENT_UPDATE: 'ActivityAttachment.update',
+  ACTIVITYATTACHMENT_SOFT_DELETE: 'ActivityAttachment.soft_delete',
+  ACTIVITYATTACHMENT_RESTORE: 'ActivityAttachment.restore',
+  MILESTONE_READ: 'Milestone.read',
+  MILESTONE_CREATE: 'Milestone.create',
+  MILESTONE_UPDATE: 'Milestone.update',
+  MILESTONE_SOFT_DELETE: 'Milestone.soft_delete',
+  MILESTONE_RESTORE: 'Milestone.restore',
+  MILESTONEDEPENDENCY_READ: 'MilestoneDependency.read',
+  MILESTONEDEPENDENCY_CREATE: 'MilestoneDependency.create',
+  MILESTONEDEPENDENCY_UPDATE: 'MilestoneDependency.update',
+  MILESTONEDEPENDENCY_SOFT_DELETE: 'MilestoneDependency.soft_delete',
+  MILESTONEDEPENDENCY_RESTORE: 'MilestoneDependency.restore',
+  MILESTONESTAKEHOLDER_READ: 'MilestoneStakeholder.read',
+  MILESTONESTAKEHOLDER_CREATE: 'MilestoneStakeholder.create',
+  MILESTONESTAKEHOLDER_UPDATE: 'MilestoneStakeholder.update',
+  MILESTONESTAKEHOLDER_SOFT_DELETE: 'MilestoneStakeholder.soft_delete',
+  MILESTONESTAKEHOLDER_RESTORE: 'MilestoneStakeholder.restore',
+  PROJECTDOCUMENT_READ: 'ProjectDocument.read',
+  PROJECTDOCUMENT_CREATE: 'ProjectDocument.create',
+  PROJECTDOCUMENT_UPDATE: 'ProjectDocument.update',
+  PROJECTDOCUMENT_SOFT_DELETE: 'ProjectDocument.soft_delete',
+  PROJECTDOCUMENT_RESTORE: 'ProjectDocument.restore',
+  PROJECTEXTERNALACCESS_READ: 'ProjectExternalAccess.read',
+  PROJECTEXTERNALACCESS_CREATE: 'ProjectExternalAccess.create',
+  PROJECTEXTERNALACCESS_UPDATE: 'ProjectExternalAccess.update',
+  PROJECTEXTERNALACCESS_SOFT_DELETE: 'ProjectExternalAccess.soft_delete',
+  PROJECTEXTERNALACCESS_RESTORE: 'ProjectExternalAccess.restore',
+  PROJECTEXTERNALACCESS_GRANT: 'ProjectExternalAccess.grant',
+  PROJECTEXTERNALACCESS_REVOKE: 'ProjectExternalAccess.revoke',
+  PROJECTISSUE_READ: 'ProjectIssue.read',
+  PROJECTISSUE_CREATE: 'ProjectIssue.create',
+  PROJECTISSUE_UPDATE: 'ProjectIssue.update',
+  PROJECTISSUE_SOFT_DELETE: 'ProjectIssue.soft_delete',
+  PROJECTISSUE_RESTORE: 'ProjectIssue.restore',
+  PROJECTISSUE_ASSIGN: 'ProjectIssue.assign',
+  PROJECTISSUE_RESOLVE: 'ProjectIssue.resolve',
+  PROJECTLEDGERENTRY_READ: 'ProjectLedgerEntry.read',
+  PROJECTLEDGERENTRY_CREATE: 'ProjectLedgerEntry.create',
+  PROJECTLEDGERENTRY_UPDATE: 'ProjectLedgerEntry.update',
+  PROJECTLEDGERENTRY_SOFT_DELETE: 'ProjectLedgerEntry.soft_delete',
+  PROJECTLEDGERENTRY_RESTORE: 'ProjectLedgerEntry.restore',
+  PROJECTRISK_READ: 'ProjectRisk.read',
+  PROJECTRISK_CREATE: 'ProjectRisk.create',
+  PROJECTRISK_UPDATE: 'ProjectRisk.update',
+  PROJECTRISK_SOFT_DELETE: 'ProjectRisk.soft_delete',
+  PROJECTRISK_RESTORE: 'ProjectRisk.restore',
+  PROJECTRISK_ASSESS: 'ProjectRisk.assess',
+  PROJECTRISK_MITIGATE: 'ProjectRisk.mitigate',
+  PROJECTTASKCHECKLISTITEM_READ: 'ProjectTaskChecklistItem.read',
+  PROJECTTASKCHECKLISTITEM_CREATE: 'ProjectTaskChecklistItem.create',
+  PROJECTTASKCHECKLISTITEM_UPDATE: 'ProjectTaskChecklistItem.update',
+  PROJECTTASKCHECKLISTITEM_SOFT_DELETE: 'ProjectTaskChecklistItem.soft_delete',
+  PROJECTTASKCHECKLISTITEM_RESTORE: 'ProjectTaskChecklistItem.restore',
+  PROJECTTASKCHECKLISTITEM_COMPLETE: 'ProjectTaskChecklistItem.complete',
+  PROJECTTYPE_READ: 'ProjectType.read',
+  PROJECTTYPE_CREATE: 'ProjectType.create',
+  PROJECTTYPE_UPDATE: 'ProjectType.update',
+  PROJECTTYPE_SOFT_DELETE: 'ProjectType.soft_delete',
+  PROJECTTYPE_RESTORE: 'ProjectType.restore',
+  PROJECTTYPE_ACTIVATE: 'ProjectType.activate',
+  PROJECTTYPE_DEACTIVATE: 'ProjectType.deactivate',
+  PROJECT_ASSIGN: 'Project.assign',
+  PROJECT_UNASSIGN: 'Project.unassign',
 
   // ============================================================================
   // TASK_EXECUTION
   // ============================================================================
-  TASK_READ: "Task.read",
-  TASK_CREATE: "Task.create",
-  TASK_UPDATE: "Task.update",
-  TASK_SOFT_DELETE: "Task.soft_delete",
-  TASK_RESTORE: "Task.restore",
-  TASK_HARD_DELETE: "Task.hard_delete",
-  TASK_ASSIGN: "Task.assign",
-  TASK_UNASSIGN: "Task.unassign",
-  TASK_TRANSFER: "Task.transfer",
-  TASK_ACTIVATE: "Task.activate",
-  TASK_DEACTIVATE: "Task.deactivate",
-  TASK_DUPLICATE: "Task.duplicate",
-  TASKASSIGNMENT_READ: "TaskAssignment.read",
-  TASKASSIGNMENT_CREATE: "TaskAssignment.create",
-  TASKASSIGNMENT_UPDATE: "TaskAssignment.update",
-  TASKASSIGNMENT_SOFT_DELETE: "TaskAssignment.soft_delete",
-  TASKASSIGNMENT_RESTORE: "TaskAssignment.restore",
-  TASKASSIGNMENT_ASSIGN: "TaskAssignment.assign",
-  TASKASSIGNMENT_UNASSIGN: "TaskAssignment.unassign",
-  TASKASSIGNMENT_TRANSFER: "TaskAssignment.transfer",
-  TASKDEPENDENCY_READ: "TaskDependency.read",
-  TASKDEPENDENCY_CREATE: "TaskDependency.create",
-  TASKDEPENDENCY_UPDATE: "TaskDependency.update",
-  TASKDEPENDENCY_SOFT_DELETE: "TaskDependency.soft_delete",
-  TASKDEPENDENCY_RESTORE: "TaskDependency.restore",
-  TASKATTACHMENT_READ: "TaskAttachment.read",
-  TASKATTACHMENT_CREATE: "TaskAttachment.create",
-  TASKATTACHMENT_UPDATE: "TaskAttachment.update",
-  TASKATTACHMENT_SOFT_DELETE: "TaskAttachment.soft_delete",
-  TASKATTACHMENT_RESTORE: "TaskAttachment.restore",
-  TASKCHECKLISTITEM_READ: "TaskChecklistItem.read",
-  TASKCHECKLISTITEM_CREATE: "TaskChecklistItem.create",
-  TASKCHECKLISTITEM_UPDATE: "TaskChecklistItem.update",
-  TASKCHECKLISTITEM_SOFT_DELETE: "TaskChecklistItem.soft_delete",
-  TASKCHECKLISTITEM_RESTORE: "TaskChecklistItem.restore",
+  TASK_READ: 'Task.read',
+  TASK_CREATE: 'Task.create',
+  TASK_UPDATE: 'Task.update',
+  TASK_SOFT_DELETE: 'Task.soft_delete',
+  TASK_RESTORE: 'Task.restore',
+  TASK_HARD_DELETE: 'Task.hard_delete',
+  TASK_ASSIGN: 'Task.assign',
+  TASK_UNASSIGN: 'Task.unassign',
+  TASK_TRANSFER: 'Task.transfer',
+  TASK_ACTIVATE: 'Task.activate',
+  TASK_DEACTIVATE: 'Task.deactivate',
+  TASK_DUPLICATE: 'Task.duplicate',
+  TASKASSIGNMENT_READ: 'TaskAssignment.read',
+  TASKASSIGNMENT_CREATE: 'TaskAssignment.create',
+  TASKASSIGNMENT_UPDATE: 'TaskAssignment.update',
+  TASKASSIGNMENT_SOFT_DELETE: 'TaskAssignment.soft_delete',
+  TASKASSIGNMENT_RESTORE: 'TaskAssignment.restore',
+  TASKASSIGNMENT_ASSIGN: 'TaskAssignment.assign',
+  TASKASSIGNMENT_UNASSIGN: 'TaskAssignment.unassign',
+  TASKASSIGNMENT_TRANSFER: 'TaskAssignment.transfer',
+  TASKDEPENDENCY_READ: 'TaskDependency.read',
+  TASKDEPENDENCY_CREATE: 'TaskDependency.create',
+  TASKDEPENDENCY_UPDATE: 'TaskDependency.update',
+  TASKDEPENDENCY_SOFT_DELETE: 'TaskDependency.soft_delete',
+  TASKDEPENDENCY_RESTORE: 'TaskDependency.restore',
+  TASKATTACHMENT_READ: 'TaskAttachment.read',
+  TASKATTACHMENT_CREATE: 'TaskAttachment.create',
+  TASKATTACHMENT_UPDATE: 'TaskAttachment.update',
+  TASKATTACHMENT_SOFT_DELETE: 'TaskAttachment.soft_delete',
+  TASKATTACHMENT_RESTORE: 'TaskAttachment.restore',
+  TASKCHECKLISTITEM_READ: 'TaskChecklistItem.read',
+  TASKCHECKLISTITEM_CREATE: 'TaskChecklistItem.create',
+  TASKCHECKLISTITEM_UPDATE: 'TaskChecklistItem.update',
+  TASKCHECKLISTITEM_SOFT_DELETE: 'TaskChecklistItem.soft_delete',
+  TASKCHECKLISTITEM_RESTORE: 'TaskChecklistItem.restore',
 
   // ============================================================================
   // FINANCIAL_OPERATIONS
   // ============================================================================
-  INVOICE_READ: "Invoice.read",
-  INVOICE_CREATE: "Invoice.create",
-  INVOICE_UPDATE: "Invoice.update",
-  INVOICE_SOFT_DELETE: "Invoice.soft_delete",
-  INVOICE_RESTORE: "Invoice.restore",
-  INVOICE_HARD_DELETE: "Invoice.hard_delete",
-  INVOICE_SEND: "Invoice.send",
-  INVOICE_DUPLICATE: "Invoice.duplicate",
-  INVOICE_EXPORT: "Invoice.export",
-  INVOICE_APPROVE: "Invoice.approve",
-  INVOICE_REJECT: "Invoice.reject",
-  INVOICELINEITEM_READ: "InvoiceLineItem.read",
-  INVOICELINEITEM_CREATE: "InvoiceLineItem.create",
-  INVOICELINEITEM_UPDATE: "InvoiceLineItem.update",
-  INVOICELINEITEM_SOFT_DELETE: "InvoiceLineItem.soft_delete",
-  INVOICELINEITEM_RESTORE: "InvoiceLineItem.restore",
-  INVOICEATTACHMENT_READ: "InvoiceAttachment.read",
-  INVOICEATTACHMENT_CREATE: "InvoiceAttachment.create",
-  INVOICEATTACHMENT_UPDATE: "InvoiceAttachment.update",
-  INVOICEATTACHMENT_SOFT_DELETE: "InvoiceAttachment.soft_delete",
-  INVOICEATTACHMENT_RESTORE: "InvoiceAttachment.restore",
-  INVOICETAX_READ: "InvoiceTax.read",
-  INVOICETAX_CREATE: "InvoiceTax.create",
-  INVOICETAX_UPDATE: "InvoiceTax.update",
-  INVOICETAX_SOFT_DELETE: "InvoiceTax.soft_delete",
-  INVOICETAX_RESTORE: "InvoiceTax.restore",
-  PAYMENT_READ: "Payment.read",
-  PAYMENT_CREATE: "Payment.create",
-  PAYMENT_UPDATE: "Payment.update",
-  PAYMENT_SOFT_DELETE: "Payment.soft_delete",
-  PAYMENT_RESTORE: "Payment.restore",
-  PAYMENT_EXPORT: "Payment.export",
-  PAYMENTSCHEDULE_READ: "PaymentSchedule.read",
-  PAYMENTSCHEDULE_CREATE: "PaymentSchedule.create",
-  PAYMENTSCHEDULE_UPDATE: "PaymentSchedule.update",
-  PAYMENTSCHEDULE_SOFT_DELETE: "PaymentSchedule.soft_delete",
-  PAYMENTSCHEDULE_RESTORE: "PaymentSchedule.restore",
-  APBILL_READ: "APBill.read",
-  APBILL_CREATE: "APBill.create",
-  APBILL_UPDATE: "APBill.update",
-  APBILL_SOFT_DELETE: "APBill.soft_delete",
-  APBILL_RESTORE: "APBill.restore",
-  APBILL_APPROVE: "APBill.approve",
-  APBILL_REJECT: "APBill.reject",
-  APBILLLINE_READ: "APBillLine.read",
-  APBILLLINE_CREATE: "APBillLine.create",
-  APBILLLINE_UPDATE: "APBillLine.update",
-  APBILLLINE_SOFT_DELETE: "APBillLine.soft_delete",
-  APBILLLINE_RESTORE: "APBillLine.restore",
-  BILLAPPROVAL_READ: "BillApproval.read",
-  BILLAPPROVAL_CREATE: "BillApproval.create",
-  BILLAPPROVAL_APPROVE: "BillApproval.approve",
-  BILLAPPROVAL_REJECT: "BillApproval.reject",
-  BILLPAYMENT_READ: "BillPayment.read",
-  BILLPAYMENT_CREATE: "BillPayment.create",
-  BILLPAYMENT_UPDATE: "BillPayment.update",
-  BILLPAYMENT_SOFT_DELETE: "BillPayment.soft_delete",
-  BILLPAYMENT_RESTORE: "BillPayment.restore",
-  EXPENSE_READ: "Expense.read",
-  EXPENSE_CREATE: "Expense.create",
-  EXPENSE_UPDATE: "Expense.update",
-  EXPENSE_SOFT_DELETE: "Expense.soft_delete",
-  EXPENSE_RESTORE: "Expense.restore",
-  EXPENSE_APPROVE: "Expense.approve",
-  EXPENSE_REJECT: "Expense.reject",
-  EXPENSE_EXPORT: "Expense.export",
-  EXPENSELINE_READ: "ExpenseLine.read",
-  EXPENSELINE_CREATE: "ExpenseLine.create",
-  EXPENSELINE_UPDATE: "ExpenseLine.update",
-  EXPENSELINE_SOFT_DELETE: "ExpenseLine.soft_delete",
-  EXPENSELINE_RESTORE: "ExpenseLine.restore",
-  EXPENSEAPPROVAL_READ: "ExpenseApproval.read",
-  EXPENSEAPPROVAL_CREATE: "ExpenseApproval.create",
-  EXPENSEAPPROVAL_APPROVE: "ExpenseApproval.approve",
-  EXPENSEAPPROVAL_REJECT: "ExpenseApproval.reject",
-  EXPENSERECEIPT_READ: "ExpenseReceipt.read",
-  EXPENSERECEIPT_CREATE: "ExpenseReceipt.create",
-  EXPENSERECEIPT_UPDATE: "ExpenseReceipt.update",
-  EXPENSERECEIPT_SOFT_DELETE: "ExpenseReceipt.soft_delete",
-  EXPENSERECEIPT_RESTORE: "ExpenseReceipt.restore",
-  CREDITMEMO_READ: "CreditMemo.read",
-  CREDITMEMO_CREATE: "CreditMemo.create",
-  CREDITMEMO_UPDATE: "CreditMemo.update",
-  CREDITMEMO_SOFT_DELETE: "CreditMemo.soft_delete",
-  CREDITMEMO_RESTORE: "CreditMemo.restore",
-  CREDITMEMOLINE_READ: "CreditMemoLine.read",
-  CREDITMEMOLINE_CREATE: "CreditMemoLine.create",
-  CREDITMEMOLINE_UPDATE: "CreditMemoLine.update",
-  CREDITMEMOLINE_SOFT_DELETE: "CreditMemoLine.soft_delete",
-  CREDITMEMOLINE_RESTORE: "CreditMemoLine.restore",
-  PURCHASEORDER_READ: "PurchaseOrder.read",
-  PURCHASEORDER_CREATE: "PurchaseOrder.create",
-  PURCHASEORDER_UPDATE: "PurchaseOrder.update",
-  PURCHASEORDER_SOFT_DELETE: "PurchaseOrder.soft_delete",
-  PURCHASEORDER_RESTORE: "PurchaseOrder.restore",
-  PURCHASEORDER_SEND: "PurchaseOrder.send",
-  PURCHASEORDER_APPROVE: "PurchaseOrder.approve",
-  PURCHASEORDER_REJECT: "PurchaseOrder.reject",
-  PURCHASEORDERLINE_READ: "PurchaseOrderLine.read",
-  PURCHASEORDERLINE_CREATE: "PurchaseOrderLine.create",
-  PURCHASEORDERLINE_UPDATE: "PurchaseOrderLine.update",
-  PURCHASEORDERLINE_SOFT_DELETE: "PurchaseOrderLine.soft_delete",
-  PURCHASEORDERLINE_RESTORE: "PurchaseOrderLine.restore",
-  PURCHASEORDERAPPROVAL_READ: "PurchaseOrderApproval.read",
-  PURCHASEORDERAPPROVAL_CREATE: "PurchaseOrderApproval.create",
-  PURCHASEORDERAPPROVAL_APPROVE: "PurchaseOrderApproval.approve",
-  PURCHASEORDERAPPROVAL_REJECT: "PurchaseOrderApproval.reject",
-  GLACCOUNT_READ: "GLAccount.read",
-  GLACCOUNT_CREATE: "GLAccount.create",
-  GLACCOUNT_UPDATE: "GLAccount.update",
-  GLACCOUNT_SOFT_DELETE: "GLAccount.soft_delete",
-  GLACCOUNT_RESTORE: "GLAccount.restore",
-  GLACCOUNT_ACTIVATE: "GLAccount.activate",
-  GLACCOUNT_DEACTIVATE: "GLAccount.deactivate",
-  JOURNALENTRY_READ: "JournalEntry.read",
-  JOURNALENTRY_CREATE: "JournalEntry.create",
-  JOURNALENTRY_UPDATE: "JournalEntry.update",
-  JOURNALENTRY_SOFT_DELETE: "JournalEntry.soft_delete",
-  JOURNALENTRY_RESTORE: "JournalEntry.restore",
-  JOURNALLINE_READ: "JournalLine.read",
-  JOURNALLINE_CREATE: "JournalLine.create",
-  JOURNALLINE_UPDATE: "JournalLine.update",
-  JOURNALLINE_SOFT_DELETE: "JournalLine.soft_delete",
-  JOURNALLINE_RESTORE: "JournalLine.restore",
-  BANKACCOUNT_READ: "BankAccount.read",
-  BANKACCOUNT_CREATE: "BankAccount.create",
-  BANKACCOUNT_UPDATE: "BankAccount.update",
-  BANKACCOUNT_SOFT_DELETE: "BankAccount.soft_delete",
-  BANKACCOUNT_RESTORE: "BankAccount.restore",
-  BANKACCOUNT_ACTIVATE: "BankAccount.activate",
-  BANKACCOUNT_DEACTIVATE: "BankAccount.deactivate",
-  BANKSTATEMENTLINE_READ: "BankStatementLine.read",
-  BANKSTATEMENTLINE_CREATE: "BankStatementLine.create",
-  BANKSTATEMENTLINE_UPDATE: "BankStatementLine.update",
-  BANKSTATEMENTLINE_SOFT_DELETE: "BankStatementLine.soft_delete",
-  BANKSTATEMENTLINE_RESTORE: "BankStatementLine.restore",
-  RECONCILIATION_READ: "Reconciliation.read",
-  RECONCILIATION_CREATE: "Reconciliation.create",
-  RECONCILIATION_UPDATE: "Reconciliation.update",
-  RECONCILIATION_SOFT_DELETE: "Reconciliation.soft_delete",
-  RECONCILIATION_RESTORE: "Reconciliation.restore",
-  PAYROLLRUN_READ: "PayrollRun.read",
-  PAYROLLRUN_CREATE: "PayrollRun.create",
-  PAYROLLRUN_UPDATE: "PayrollRun.update",
-  PAYROLLRUN_SOFT_DELETE: "PayrollRun.soft_delete",
-  PAYROLLRUN_RESTORE: "PayrollRun.restore",
-  PAYROLLRUN_APPROVE: "PayrollRun.approve",
-  PAYROLLRUN_REJECT: "PayrollRun.reject",
-  PAYROLLITEM_READ: "PayrollItem.read",
-  PAYROLLITEM_CREATE: "PayrollItem.create",
-  PAYROLLITEM_UPDATE: "PayrollItem.update",
-  PAYROLLITEM_SOFT_DELETE: "PayrollItem.soft_delete",
-  PAYROLLITEM_RESTORE: "PayrollItem.restore",
-  PAYROLLADJUSTMENT_READ: "PayrollAdjustment.read",
-  PAYROLLADJUSTMENT_CREATE: "PayrollAdjustment.create",
-  PAYROLLADJUSTMENT_UPDATE: "PayrollAdjustment.update",
-  PAYROLLADJUSTMENT_SOFT_DELETE: "PayrollAdjustment.soft_delete",
-  PAYROLLADJUSTMENT_RESTORE: "PayrollAdjustment.restore",
-  PAYROLLPAYMENT_READ: "PayrollPayment.read",
-  PAYROLLPAYMENT_CREATE: "PayrollPayment.create",
-  PAYROLLPAYMENT_UPDATE: "PayrollPayment.update",
-  PAYROLLPAYMENT_SOFT_DELETE: "PayrollPayment.soft_delete",
-  PAYROLLPAYMENT_RESTORE: "PayrollPayment.restore",
-  PAYROLLTAX_READ: "PayrollTax.read",
-  PAYROLLTAX_CREATE: "PayrollTax.create",
-  PAYROLLTAX_UPDATE: "PayrollTax.update",
-  PAYROLLTAX_SOFT_DELETE: "PayrollTax.soft_delete",
-  PAYROLLTAX_RESTORE: "PayrollTax.restore",
-  INVOICEPAYMENT_READ: "InvoicePayment.read",
-  INVOICEPAYMENT_CREATE: "InvoicePayment.create",
-  INVOICEPAYMENT_UPDATE: "InvoicePayment.update",
-  INVOICEPAYMENT_SOFT_DELETE: "InvoicePayment.soft_delete",
-  INVOICEPAYMENT_RESTORE: "InvoicePayment.restore",
-  PAYMENTAPPLICATION_READ: "PaymentApplication.read",
-  PAYMENTAPPLICATION_CREATE: "PaymentApplication.create",
-  PAYMENTAPPLICATION_UPDATE: "PaymentApplication.update",
-  PAYMENTAPPLICATION_SOFT_DELETE: "PaymentApplication.soft_delete",
-  PAYMENTAPPLICATION_RESTORE: "PaymentApplication.restore",
-  PAYMENTGATEWAY_READ: "PaymentGateway.read",
-  PAYMENTGATEWAY_CREATE: "PaymentGateway.create",
-  PAYMENTGATEWAY_UPDATE: "PaymentGateway.update",
-  PAYMENTGATEWAY_SOFT_DELETE: "PaymentGateway.soft_delete",
-  PAYMENTGATEWAY_RESTORE: "PaymentGateway.restore",
-  PAYMENTGATEWAY_ACTIVATE: "PaymentGateway.activate",
-  PAYMENTGATEWAY_DEACTIVATE: "PaymentGateway.deactivate",
-  PAYMENTMETHOD_READ: "PaymentMethod.read",
-  PAYMENTMETHOD_CREATE: "PaymentMethod.create",
-  PAYMENTMETHOD_UPDATE: "PaymentMethod.update",
-  PAYMENTMETHOD_SOFT_DELETE: "PaymentMethod.soft_delete",
-  PAYMENTMETHOD_RESTORE: "PaymentMethod.restore",
-  PAYMENTMETHODTOKEN_READ: "PaymentMethodToken.read",
-  PAYMENTMETHODTOKEN_CREATE: "PaymentMethodToken.create",
-  PAYMENTMETHODTOKEN_UPDATE: "PaymentMethodToken.update",
-  PAYMENTMETHODTOKEN_SOFT_DELETE: "PaymentMethodToken.soft_delete",
-  PAYMENTMETHODTOKEN_RESTORE: "PaymentMethodToken.restore",
-  PAYMENTTERM_READ: "PaymentTerm.read",
-  PAYMENTTERM_CREATE: "PaymentTerm.create",
-  PAYMENTTERM_UPDATE: "PaymentTerm.update",
-  PAYMENTTERM_SOFT_DELETE: "PaymentTerm.soft_delete",
-  PAYMENTTERM_RESTORE: "PaymentTerm.restore",
-  FRAUDPOLICY_READ: "FraudPolicy.read",
-  FRAUDPOLICY_CREATE: "FraudPolicy.create",
-  FRAUDPOLICY_UPDATE: "FraudPolicy.update",
-  FRAUDPOLICY_SOFT_DELETE: "FraudPolicy.soft_delete",
-  FRAUDPOLICY_RESTORE: "FraudPolicy.restore",
-  FRAUDPOLICY_ACTIVATE: "FraudPolicy.activate",
-  FRAUDPOLICY_DEACTIVATE: "FraudPolicy.deactivate",
-  FRAUDPOLICYRULE_READ: "FraudPolicyRule.read",
-  FRAUDPOLICYRULE_CREATE: "FraudPolicyRule.create",
-  FRAUDPOLICYRULE_UPDATE: "FraudPolicyRule.update",
-  FRAUDPOLICYRULE_SOFT_DELETE: "FraudPolicyRule.soft_delete",
-  FRAUDPOLICYRULE_RESTORE: "FraudPolicyRule.restore",
-  FRAUDPOLICYSCOPE_READ: "FraudPolicyScope.read",
-  FRAUDPOLICYSCOPE_CREATE: "FraudPolicyScope.create",
-  FRAUDPOLICYSCOPE_UPDATE: "FraudPolicyScope.update",
-  FRAUDPOLICYSCOPE_SOFT_DELETE: "FraudPolicyScope.soft_delete",
-  FRAUDPOLICYSCOPE_RESTORE: "FraudPolicyScope.restore",
-  CURRENCYRATE_READ: "CurrencyRate.read",
-  CURRENCYRATE_CREATE: "CurrencyRate.create",
-  CURRENCYRATE_UPDATE: "CurrencyRate.update",
-  FORECASTLINE_READ: "ForecastLine.read",
-  FORECASTLINE_CREATE: "ForecastLine.create",
-  FORECASTLINE_UPDATE: "ForecastLine.update",
-  FORECASTLINE_SOFT_DELETE: "ForecastLine.soft_delete",
-  FORECASTLINE_RESTORE: "ForecastLine.restore",
-  FORECASTSNAPSHOT_READ: "ForecastSnapshot.read",
-  FORECASTSNAPSHOT_CREATE: "ForecastSnapshot.create",
-  FORECASTSNAPSHOT_EXPORT: "ForecastSnapshot.export",
-  CHARGEBACK_READ: "Chargeback.read",
-  CHARGEBACK_CREATE: "Chargeback.create",
-  CHARGEBACK_UPDATE: "Chargeback.update",
-  CHARGEBACK_SOFT_DELETE: "Chargeback.soft_delete",
-  CHARGEBACK_RESTORE: "Chargeback.restore",
-  CHARGEBACKEVIDENCE_READ: "ChargebackEvidence.read",
-  CHARGEBACKEVIDENCE_CREATE: "ChargebackEvidence.create",
-  CHARGEBACKEVIDENCE_UPDATE: "ChargebackEvidence.update",
-  CHARGEBACKEVIDENCE_SOFT_DELETE: "ChargebackEvidence.soft_delete",
-  CHARGEBACKEVIDENCE_RESTORE: "ChargebackEvidence.restore",
-  REFUND_READ: "Refund.read",
-  REFUND_CREATE: "Refund.create",
-  REFUND_UPDATE: "Refund.update",
-  REFUND_SOFT_DELETE: "Refund.soft_delete",
-  REFUND_RESTORE: "Refund.restore",
-  PAYOUT_READ: "Payout.read",
-  PAYOUT_CREATE: "Payout.create",
-  PAYOUT_UPDATE: "Payout.update",
-  PAYOUT_SOFT_DELETE: "Payout.soft_delete",
-  PAYOUT_RESTORE: "Payout.restore",
-  EXPENSEREPORT_READ: "ExpenseReport.read",
-  EXPENSEREPORT_CREATE: "ExpenseReport.create",
-  EXPENSEREPORT_UPDATE: "ExpenseReport.update",
-  EXPENSEREPORT_SOFT_DELETE: "ExpenseReport.soft_delete",
-  EXPENSEREPORT_RESTORE: "ExpenseReport.restore",
-  EXPENSEREPORT_SUBMIT: "ExpenseReport.submit",
-  EXPENSEREPORT_APPROVE: "ExpenseReport.approve",
-  EXPENSEREPORT_REJECT: "ExpenseReport.reject",
-  REIMBURSEMENT_READ: "Reimbursement.read",
-  REIMBURSEMENT_CREATE: "Reimbursement.create",
-  REIMBURSEMENT_UPDATE: "Reimbursement.update",
-  REIMBURSEMENT_SOFT_DELETE: "Reimbursement.soft_delete",
-  REIMBURSEMENT_RESTORE: "Reimbursement.restore",
-  REIMBURSEMENT_PROCESS: "Reimbursement.process",
-  DUNNINGNOTICE_READ: "DunningNotice.read",
-  DUNNINGNOTICE_CREATE: "DunningNotice.create",
-  DUNNINGNOTICE_UPDATE: "DunningNotice.update",
-  DUNNINGNOTICE_SEND: "DunningNotice.send",
-  RETURNREMINDER_READ: "ReturnReminder.read",
-  RETURNREMINDER_CREATE: "ReturnReminder.create",
-  RETURNREMINDER_UPDATE: "ReturnReminder.update",
-  RETURNREMINDER_SEND: "ReturnReminder.send",
-  RETURNREMINDERATTEMPT_READ: "ReturnReminderAttempt.read",
-  RETURNREMINDERATTEMPT_CREATE: "ReturnReminderAttempt.create",
-  EXPENSERECEIPT_APPROVE: "ExpenseReceipt.approve",
-  EXPENSERECEIPT_REJECT: "ExpenseReceipt.reject",
-  PAYROLLRUN_SUBMIT: "PayrollRun.submit",
-  PAYSTATEMENT_READ: "PayStatement.read",
-  EXPENSE_HARD_DELETE: "Expense.hard_delete",
+  INVOICE_READ: 'Invoice.read',
+  INVOICE_CREATE: 'Invoice.create',
+  INVOICE_UPDATE: 'Invoice.update',
+  INVOICE_SOFT_DELETE: 'Invoice.soft_delete',
+  INVOICE_RESTORE: 'Invoice.restore',
+  INVOICE_HARD_DELETE: 'Invoice.hard_delete',
+  INVOICE_SEND: 'Invoice.send',
+  INVOICE_DUPLICATE: 'Invoice.duplicate',
+  INVOICE_EXPORT: 'Invoice.export',
+  INVOICE_APPROVE: 'Invoice.approve',
+  INVOICE_REJECT: 'Invoice.reject',
+  INVOICELINEITEM_READ: 'InvoiceLineItem.read',
+  INVOICELINEITEM_CREATE: 'InvoiceLineItem.create',
+  INVOICELINEITEM_UPDATE: 'InvoiceLineItem.update',
+  INVOICELINEITEM_SOFT_DELETE: 'InvoiceLineItem.soft_delete',
+  INVOICELINEITEM_RESTORE: 'InvoiceLineItem.restore',
+  INVOICEATTACHMENT_READ: 'InvoiceAttachment.read',
+  INVOICEATTACHMENT_CREATE: 'InvoiceAttachment.create',
+  INVOICEATTACHMENT_UPDATE: 'InvoiceAttachment.update',
+  INVOICEATTACHMENT_SOFT_DELETE: 'InvoiceAttachment.soft_delete',
+  INVOICEATTACHMENT_RESTORE: 'InvoiceAttachment.restore',
+  INVOICETAX_READ: 'InvoiceTax.read',
+  INVOICETAX_CREATE: 'InvoiceTax.create',
+  INVOICETAX_UPDATE: 'InvoiceTax.update',
+  INVOICETAX_SOFT_DELETE: 'InvoiceTax.soft_delete',
+  INVOICETAX_RESTORE: 'InvoiceTax.restore',
+  PAYMENT_READ: 'Payment.read',
+  PAYMENT_CREATE: 'Payment.create',
+  PAYMENT_UPDATE: 'Payment.update',
+  PAYMENT_SOFT_DELETE: 'Payment.soft_delete',
+  PAYMENT_RESTORE: 'Payment.restore',
+  PAYMENT_EXPORT: 'Payment.export',
+  PAYMENTSCHEDULE_READ: 'PaymentSchedule.read',
+  PAYMENTSCHEDULE_CREATE: 'PaymentSchedule.create',
+  PAYMENTSCHEDULE_UPDATE: 'PaymentSchedule.update',
+  PAYMENTSCHEDULE_SOFT_DELETE: 'PaymentSchedule.soft_delete',
+  PAYMENTSCHEDULE_RESTORE: 'PaymentSchedule.restore',
+  APBILL_READ: 'APBill.read',
+  APBILL_CREATE: 'APBill.create',
+  APBILL_UPDATE: 'APBill.update',
+  APBILL_SOFT_DELETE: 'APBill.soft_delete',
+  APBILL_RESTORE: 'APBill.restore',
+  APBILL_APPROVE: 'APBill.approve',
+  APBILL_REJECT: 'APBill.reject',
+  APBILLLINE_READ: 'APBillLine.read',
+  APBILLLINE_CREATE: 'APBillLine.create',
+  APBILLLINE_UPDATE: 'APBillLine.update',
+  APBILLLINE_SOFT_DELETE: 'APBillLine.soft_delete',
+  APBILLLINE_RESTORE: 'APBillLine.restore',
+  BILLAPPROVAL_READ: 'BillApproval.read',
+  BILLAPPROVAL_CREATE: 'BillApproval.create',
+  BILLAPPROVAL_APPROVE: 'BillApproval.approve',
+  BILLAPPROVAL_REJECT: 'BillApproval.reject',
+  BILLPAYMENT_READ: 'BillPayment.read',
+  BILLPAYMENT_CREATE: 'BillPayment.create',
+  BILLPAYMENT_UPDATE: 'BillPayment.update',
+  BILLPAYMENT_SOFT_DELETE: 'BillPayment.soft_delete',
+  BILLPAYMENT_RESTORE: 'BillPayment.restore',
+  EXPENSE_READ: 'Expense.read',
+  EXPENSE_CREATE: 'Expense.create',
+  EXPENSE_UPDATE: 'Expense.update',
+  EXPENSE_SOFT_DELETE: 'Expense.soft_delete',
+  EXPENSE_RESTORE: 'Expense.restore',
+  EXPENSE_APPROVE: 'Expense.approve',
+  EXPENSE_REJECT: 'Expense.reject',
+  EXPENSE_EXPORT: 'Expense.export',
+  EXPENSELINE_READ: 'ExpenseLine.read',
+  EXPENSELINE_CREATE: 'ExpenseLine.create',
+  EXPENSELINE_UPDATE: 'ExpenseLine.update',
+  EXPENSELINE_SOFT_DELETE: 'ExpenseLine.soft_delete',
+  EXPENSELINE_RESTORE: 'ExpenseLine.restore',
+  EXPENSEAPPROVAL_READ: 'ExpenseApproval.read',
+  EXPENSEAPPROVAL_CREATE: 'ExpenseApproval.create',
+  EXPENSEAPPROVAL_APPROVE: 'ExpenseApproval.approve',
+  EXPENSEAPPROVAL_REJECT: 'ExpenseApproval.reject',
+  EXPENSERECEIPT_READ: 'ExpenseReceipt.read',
+  EXPENSERECEIPT_CREATE: 'ExpenseReceipt.create',
+  EXPENSERECEIPT_UPDATE: 'ExpenseReceipt.update',
+  EXPENSERECEIPT_SOFT_DELETE: 'ExpenseReceipt.soft_delete',
+  EXPENSERECEIPT_RESTORE: 'ExpenseReceipt.restore',
+  CREDITMEMO_READ: 'CreditMemo.read',
+  CREDITMEMO_CREATE: 'CreditMemo.create',
+  CREDITMEMO_UPDATE: 'CreditMemo.update',
+  CREDITMEMO_SOFT_DELETE: 'CreditMemo.soft_delete',
+  CREDITMEMO_RESTORE: 'CreditMemo.restore',
+  CREDITMEMOLINE_READ: 'CreditMemoLine.read',
+  CREDITMEMOLINE_CREATE: 'CreditMemoLine.create',
+  CREDITMEMOLINE_UPDATE: 'CreditMemoLine.update',
+  CREDITMEMOLINE_SOFT_DELETE: 'CreditMemoLine.soft_delete',
+  CREDITMEMOLINE_RESTORE: 'CreditMemoLine.restore',
+  PURCHASEORDER_READ: 'PurchaseOrder.read',
+  PURCHASEORDER_CREATE: 'PurchaseOrder.create',
+  PURCHASEORDER_UPDATE: 'PurchaseOrder.update',
+  PURCHASEORDER_SOFT_DELETE: 'PurchaseOrder.soft_delete',
+  PURCHASEORDER_RESTORE: 'PurchaseOrder.restore',
+  PURCHASEORDER_SEND: 'PurchaseOrder.send',
+  PURCHASEORDER_APPROVE: 'PurchaseOrder.approve',
+  PURCHASEORDER_REJECT: 'PurchaseOrder.reject',
+  PURCHASEORDERLINE_READ: 'PurchaseOrderLine.read',
+  PURCHASEORDERLINE_CREATE: 'PurchaseOrderLine.create',
+  PURCHASEORDERLINE_UPDATE: 'PurchaseOrderLine.update',
+  PURCHASEORDERLINE_SOFT_DELETE: 'PurchaseOrderLine.soft_delete',
+  PURCHASEORDERLINE_RESTORE: 'PurchaseOrderLine.restore',
+  PURCHASEORDERAPPROVAL_READ: 'PurchaseOrderApproval.read',
+  PURCHASEORDERAPPROVAL_CREATE: 'PurchaseOrderApproval.create',
+  PURCHASEORDERAPPROVAL_APPROVE: 'PurchaseOrderApproval.approve',
+  PURCHASEORDERAPPROVAL_REJECT: 'PurchaseOrderApproval.reject',
+  GLACCOUNT_READ: 'GLAccount.read',
+  GLACCOUNT_CREATE: 'GLAccount.create',
+  GLACCOUNT_UPDATE: 'GLAccount.update',
+  GLACCOUNT_SOFT_DELETE: 'GLAccount.soft_delete',
+  GLACCOUNT_RESTORE: 'GLAccount.restore',
+  GLACCOUNT_ACTIVATE: 'GLAccount.activate',
+  GLACCOUNT_DEACTIVATE: 'GLAccount.deactivate',
+  JOURNALENTRY_READ: 'JournalEntry.read',
+  JOURNALENTRY_CREATE: 'JournalEntry.create',
+  JOURNALENTRY_UPDATE: 'JournalEntry.update',
+  JOURNALENTRY_SOFT_DELETE: 'JournalEntry.soft_delete',
+  JOURNALENTRY_RESTORE: 'JournalEntry.restore',
+  JOURNALLINE_READ: 'JournalLine.read',
+  JOURNALLINE_CREATE: 'JournalLine.create',
+  JOURNALLINE_UPDATE: 'JournalLine.update',
+  JOURNALLINE_SOFT_DELETE: 'JournalLine.soft_delete',
+  JOURNALLINE_RESTORE: 'JournalLine.restore',
+  BANKACCOUNT_READ: 'BankAccount.read',
+  BANKACCOUNT_CREATE: 'BankAccount.create',
+  BANKACCOUNT_UPDATE: 'BankAccount.update',
+  BANKACCOUNT_SOFT_DELETE: 'BankAccount.soft_delete',
+  BANKACCOUNT_RESTORE: 'BankAccount.restore',
+  BANKACCOUNT_ACTIVATE: 'BankAccount.activate',
+  BANKACCOUNT_DEACTIVATE: 'BankAccount.deactivate',
+  BANKSTATEMENTLINE_READ: 'BankStatementLine.read',
+  BANKSTATEMENTLINE_CREATE: 'BankStatementLine.create',
+  BANKSTATEMENTLINE_UPDATE: 'BankStatementLine.update',
+  BANKSTATEMENTLINE_SOFT_DELETE: 'BankStatementLine.soft_delete',
+  BANKSTATEMENTLINE_RESTORE: 'BankStatementLine.restore',
+  RECONCILIATION_READ: 'Reconciliation.read',
+  RECONCILIATION_CREATE: 'Reconciliation.create',
+  RECONCILIATION_UPDATE: 'Reconciliation.update',
+  RECONCILIATION_SOFT_DELETE: 'Reconciliation.soft_delete',
+  RECONCILIATION_RESTORE: 'Reconciliation.restore',
+  PAYROLLRUN_READ: 'PayrollRun.read',
+  PAYROLLRUN_CREATE: 'PayrollRun.create',
+  PAYROLLRUN_UPDATE: 'PayrollRun.update',
+  PAYROLLRUN_SOFT_DELETE: 'PayrollRun.soft_delete',
+  PAYROLLRUN_RESTORE: 'PayrollRun.restore',
+  PAYROLLRUN_APPROVE: 'PayrollRun.approve',
+  PAYROLLRUN_REJECT: 'PayrollRun.reject',
+  PAYROLLITEM_READ: 'PayrollItem.read',
+  PAYROLLITEM_CREATE: 'PayrollItem.create',
+  PAYROLLITEM_UPDATE: 'PayrollItem.update',
+  PAYROLLITEM_SOFT_DELETE: 'PayrollItem.soft_delete',
+  PAYROLLITEM_RESTORE: 'PayrollItem.restore',
+  PAYROLLADJUSTMENT_READ: 'PayrollAdjustment.read',
+  PAYROLLADJUSTMENT_CREATE: 'PayrollAdjustment.create',
+  PAYROLLADJUSTMENT_UPDATE: 'PayrollAdjustment.update',
+  PAYROLLADJUSTMENT_SOFT_DELETE: 'PayrollAdjustment.soft_delete',
+  PAYROLLADJUSTMENT_RESTORE: 'PayrollAdjustment.restore',
+  PAYROLLPAYMENT_READ: 'PayrollPayment.read',
+  PAYROLLPAYMENT_CREATE: 'PayrollPayment.create',
+  PAYROLLPAYMENT_UPDATE: 'PayrollPayment.update',
+  PAYROLLPAYMENT_SOFT_DELETE: 'PayrollPayment.soft_delete',
+  PAYROLLPAYMENT_RESTORE: 'PayrollPayment.restore',
+  PAYROLLTAX_READ: 'PayrollTax.read',
+  PAYROLLTAX_CREATE: 'PayrollTax.create',
+  PAYROLLTAX_UPDATE: 'PayrollTax.update',
+  PAYROLLTAX_SOFT_DELETE: 'PayrollTax.soft_delete',
+  PAYROLLTAX_RESTORE: 'PayrollTax.restore',
+  INVOICEPAYMENT_READ: 'InvoicePayment.read',
+  INVOICEPAYMENT_CREATE: 'InvoicePayment.create',
+  INVOICEPAYMENT_UPDATE: 'InvoicePayment.update',
+  INVOICEPAYMENT_SOFT_DELETE: 'InvoicePayment.soft_delete',
+  INVOICEPAYMENT_RESTORE: 'InvoicePayment.restore',
+  PAYMENTAPPLICATION_READ: 'PaymentApplication.read',
+  PAYMENTAPPLICATION_CREATE: 'PaymentApplication.create',
+  PAYMENTAPPLICATION_UPDATE: 'PaymentApplication.update',
+  PAYMENTAPPLICATION_SOFT_DELETE: 'PaymentApplication.soft_delete',
+  PAYMENTAPPLICATION_RESTORE: 'PaymentApplication.restore',
+  PAYMENTGATEWAY_READ: 'PaymentGateway.read',
+  PAYMENTGATEWAY_CREATE: 'PaymentGateway.create',
+  PAYMENTGATEWAY_UPDATE: 'PaymentGateway.update',
+  PAYMENTGATEWAY_SOFT_DELETE: 'PaymentGateway.soft_delete',
+  PAYMENTGATEWAY_RESTORE: 'PaymentGateway.restore',
+  PAYMENTGATEWAY_ACTIVATE: 'PaymentGateway.activate',
+  PAYMENTGATEWAY_DEACTIVATE: 'PaymentGateway.deactivate',
+  PAYMENTMETHOD_READ: 'PaymentMethod.read',
+  PAYMENTMETHOD_CREATE: 'PaymentMethod.create',
+  PAYMENTMETHOD_UPDATE: 'PaymentMethod.update',
+  PAYMENTMETHOD_SOFT_DELETE: 'PaymentMethod.soft_delete',
+  PAYMENTMETHOD_RESTORE: 'PaymentMethod.restore',
+  PAYMENTMETHODTOKEN_READ: 'PaymentMethodToken.read',
+  PAYMENTMETHODTOKEN_CREATE: 'PaymentMethodToken.create',
+  PAYMENTMETHODTOKEN_UPDATE: 'PaymentMethodToken.update',
+  PAYMENTMETHODTOKEN_SOFT_DELETE: 'PaymentMethodToken.soft_delete',
+  PAYMENTMETHODTOKEN_RESTORE: 'PaymentMethodToken.restore',
+  PAYMENTTERM_READ: 'PaymentTerm.read',
+  PAYMENTTERM_CREATE: 'PaymentTerm.create',
+  PAYMENTTERM_UPDATE: 'PaymentTerm.update',
+  PAYMENTTERM_SOFT_DELETE: 'PaymentTerm.soft_delete',
+  PAYMENTTERM_RESTORE: 'PaymentTerm.restore',
+  FRAUDPOLICY_READ: 'FraudPolicy.read',
+  FRAUDPOLICY_CREATE: 'FraudPolicy.create',
+  FRAUDPOLICY_UPDATE: 'FraudPolicy.update',
+  FRAUDPOLICY_SOFT_DELETE: 'FraudPolicy.soft_delete',
+  FRAUDPOLICY_RESTORE: 'FraudPolicy.restore',
+  FRAUDPOLICY_ACTIVATE: 'FraudPolicy.activate',
+  FRAUDPOLICY_DEACTIVATE: 'FraudPolicy.deactivate',
+  FRAUDPOLICYRULE_READ: 'FraudPolicyRule.read',
+  FRAUDPOLICYRULE_CREATE: 'FraudPolicyRule.create',
+  FRAUDPOLICYRULE_UPDATE: 'FraudPolicyRule.update',
+  FRAUDPOLICYRULE_SOFT_DELETE: 'FraudPolicyRule.soft_delete',
+  FRAUDPOLICYRULE_RESTORE: 'FraudPolicyRule.restore',
+  FRAUDPOLICYSCOPE_READ: 'FraudPolicyScope.read',
+  FRAUDPOLICYSCOPE_CREATE: 'FraudPolicyScope.create',
+  FRAUDPOLICYSCOPE_UPDATE: 'FraudPolicyScope.update',
+  FRAUDPOLICYSCOPE_SOFT_DELETE: 'FraudPolicyScope.soft_delete',
+  FRAUDPOLICYSCOPE_RESTORE: 'FraudPolicyScope.restore',
+  CURRENCYRATE_READ: 'CurrencyRate.read',
+  CURRENCYRATE_CREATE: 'CurrencyRate.create',
+  CURRENCYRATE_UPDATE: 'CurrencyRate.update',
+  FORECASTLINE_READ: 'ForecastLine.read',
+  FORECASTLINE_CREATE: 'ForecastLine.create',
+  FORECASTLINE_UPDATE: 'ForecastLine.update',
+  FORECASTLINE_SOFT_DELETE: 'ForecastLine.soft_delete',
+  FORECASTLINE_RESTORE: 'ForecastLine.restore',
+  FORECASTSNAPSHOT_READ: 'ForecastSnapshot.read',
+  FORECASTSNAPSHOT_CREATE: 'ForecastSnapshot.create',
+  FORECASTSNAPSHOT_EXPORT: 'ForecastSnapshot.export',
+  CHARGEBACK_READ: 'Chargeback.read',
+  CHARGEBACK_CREATE: 'Chargeback.create',
+  CHARGEBACK_UPDATE: 'Chargeback.update',
+  CHARGEBACK_SOFT_DELETE: 'Chargeback.soft_delete',
+  CHARGEBACK_RESTORE: 'Chargeback.restore',
+  CHARGEBACKEVIDENCE_READ: 'ChargebackEvidence.read',
+  CHARGEBACKEVIDENCE_CREATE: 'ChargebackEvidence.create',
+  CHARGEBACKEVIDENCE_UPDATE: 'ChargebackEvidence.update',
+  CHARGEBACKEVIDENCE_SOFT_DELETE: 'ChargebackEvidence.soft_delete',
+  CHARGEBACKEVIDENCE_RESTORE: 'ChargebackEvidence.restore',
+  REFUND_READ: 'Refund.read',
+  REFUND_CREATE: 'Refund.create',
+  REFUND_UPDATE: 'Refund.update',
+  REFUND_SOFT_DELETE: 'Refund.soft_delete',
+  REFUND_RESTORE: 'Refund.restore',
+  PAYOUT_READ: 'Payout.read',
+  PAYOUT_CREATE: 'Payout.create',
+  PAYOUT_UPDATE: 'Payout.update',
+  PAYOUT_SOFT_DELETE: 'Payout.soft_delete',
+  PAYOUT_RESTORE: 'Payout.restore',
+  EXPENSEREPORT_READ: 'ExpenseReport.read',
+  EXPENSEREPORT_CREATE: 'ExpenseReport.create',
+  EXPENSEREPORT_UPDATE: 'ExpenseReport.update',
+  EXPENSEREPORT_SOFT_DELETE: 'ExpenseReport.soft_delete',
+  EXPENSEREPORT_RESTORE: 'ExpenseReport.restore',
+  EXPENSEREPORT_SUBMIT: 'ExpenseReport.submit',
+  EXPENSEREPORT_APPROVE: 'ExpenseReport.approve',
+  EXPENSEREPORT_REJECT: 'ExpenseReport.reject',
+  REIMBURSEMENT_READ: 'Reimbursement.read',
+  REIMBURSEMENT_CREATE: 'Reimbursement.create',
+  REIMBURSEMENT_UPDATE: 'Reimbursement.update',
+  REIMBURSEMENT_SOFT_DELETE: 'Reimbursement.soft_delete',
+  REIMBURSEMENT_RESTORE: 'Reimbursement.restore',
+  REIMBURSEMENT_PROCESS: 'Reimbursement.process',
+  DUNNINGNOTICE_READ: 'DunningNotice.read',
+  DUNNINGNOTICE_CREATE: 'DunningNotice.create',
+  DUNNINGNOTICE_UPDATE: 'DunningNotice.update',
+  DUNNINGNOTICE_SEND: 'DunningNotice.send',
+  RETURNREMINDER_READ: 'ReturnReminder.read',
+  RETURNREMINDER_CREATE: 'ReturnReminder.create',
+  RETURNREMINDER_UPDATE: 'ReturnReminder.update',
+  RETURNREMINDER_SEND: 'ReturnReminder.send',
+  RETURNREMINDERATTEMPT_READ: 'ReturnReminderAttempt.read',
+  RETURNREMINDERATTEMPT_CREATE: 'ReturnReminderAttempt.create',
+  EXPENSERECEIPT_APPROVE: 'ExpenseReceipt.approve',
+  EXPENSERECEIPT_REJECT: 'ExpenseReceipt.reject',
+  PAYROLLRUN_SUBMIT: 'PayrollRun.submit',
+  PAYSTATEMENT_READ: 'PayStatement.read',
+  EXPENSE_HARD_DELETE: 'Expense.hard_delete',
 
   // ============================================================================
   // TIME_SCHEDULING
   // ============================================================================
-  CLOCKINCLOCKOUT_READ: "ClockInClockOut.read",
-  CLOCKINCLOCKOUT_CREATE: "ClockInClockOut.create",
-  CLOCKINCLOCKOUT_UPDATE: "ClockInClockOut.update",
-  CLOCKINCLOCKOUT_SOFT_DELETE: "ClockInClockOut.soft_delete",
-  CLOCKINCLOCKOUT_RESTORE: "ClockInClockOut.restore",
-  CLOCKINCLOCKOUT_APPROVE: "ClockInClockOut.approve",
-  CLOCKINCLOCKOUT_REJECT: "ClockInClockOut.reject",
-  CLOCKINCLOCKOUT_EXPORT: "ClockInClockOut.export",
-  SCHEDULE_READ: "Schedule.read",
-  SCHEDULE_CREATE: "Schedule.create",
-  SCHEDULE_UPDATE: "Schedule.update",
-  SCHEDULE_SOFT_DELETE: "Schedule.soft_delete",
-  SCHEDULE_RESTORE: "Schedule.restore",
-  SCHEDULE_PUBLISH: "Schedule.publish",
-  SCHEDULE_ACTIVATE: "Schedule.activate",
-  SCHEDULE_DEACTIVATE: "Schedule.deactivate",
-  SCHEDULEEXCEPTION_READ: "ScheduleException.read",
-  SCHEDULEEXCEPTION_CREATE: "ScheduleException.create",
-  SCHEDULEEXCEPTION_UPDATE: "ScheduleException.update",
-  SCHEDULEEXCEPTION_SOFT_DELETE: "ScheduleException.soft_delete",
-  SCHEDULEEXCEPTION_RESTORE: "ScheduleException.restore",
-  LEAVE_READ: "Leave.read",
-  LEAVE_CREATE: "Leave.create",
-  LEAVE_UPDATE: "Leave.update",
-  LEAVE_SOFT_DELETE: "Leave.soft_delete",
-  LEAVE_RESTORE: "Leave.restore",
-  LEAVE_APPROVE: "Leave.approve",
-  LEAVE_REJECT: "Leave.reject",
-  TIMESHEET_READ: "Timesheet.read",
-  TIMESHEET_CREATE: "Timesheet.create",
-  TIMESHEET_UPDATE: "Timesheet.update",
-  TIMESHEET_SOFT_DELETE: "Timesheet.soft_delete",
-  TIMESHEET_RESTORE: "Timesheet.restore",
-  TIMESHEET_SUBMIT: "Timesheet.submit",
-  TIMESHEET_APPROVE: "Timesheet.approve",
-  TIMESHEET_REJECT: "Timesheet.reject",
-  TIMESHEETENTRY_READ: "TimesheetEntry.read",
-  TIMESHEETENTRY_CREATE: "TimesheetEntry.create",
-  TIMESHEETENTRY_UPDATE: "TimesheetEntry.update",
-  TIMESHEETENTRY_SOFT_DELETE: "TimesheetEntry.soft_delete",
-  TIMESHEETENTRY_RESTORE: "TimesheetEntry.restore",
-  TIMESHEETAPPROVAL_READ: "TimesheetApproval.read",
-  TIMESHEETAPPROVAL_CREATE: "TimesheetApproval.create",
-  TIMESHEETAPPROVAL_APPROVE: "TimesheetApproval.approve",
-  TIMESHEETAPPROVAL_REJECT: "TimesheetApproval.reject",
-  LEAVEOFABSENCE_READ: "LeaveOfAbsence.read",
-  LEAVEOFABSENCE_CREATE: "LeaveOfAbsence.create",
-  LEAVEOFABSENCE_UPDATE: "LeaveOfAbsence.update",
-  LEAVEOFABSENCE_SOFT_DELETE: "LeaveOfAbsence.soft_delete",
-  LEAVEOFABSENCE_RESTORE: "LeaveOfAbsence.restore",
-  LEAVEOFABSENCE_APPROVE: "LeaveOfAbsence.approve",
-  LEAVEOFABSENCE_REJECT: "LeaveOfAbsence.reject",
-  ABSENCEBALANCE_READ: "AbsenceBalance.read",
-  ABSENCEBALANCE_CREATE: "AbsenceBalance.create",
-  ABSENCEBALANCE_UPDATE: "AbsenceBalance.update",
-  ABSENCEBALANCE_SOFT_DELETE: "AbsenceBalance.soft_delete",
-  ABSENCEBALANCE_RESTORE: "AbsenceBalance.restore",
-  HOLIDAYCALENDAR_READ: "HolidayCalendar.read",
-  HOLIDAYCALENDAR_CREATE: "HolidayCalendar.create",
-  HOLIDAYCALENDAR_UPDATE: "HolidayCalendar.update",
-  HOLIDAYCALENDAR_SOFT_DELETE: "HolidayCalendar.soft_delete",
-  HOLIDAYCALENDAR_RESTORE: "HolidayCalendar.restore",
-  OVERTIMERULE_READ: "OvertimeRule.read",
-  OVERTIMERULE_CREATE: "OvertimeRule.create",
-  OVERTIMERULE_UPDATE: "OvertimeRule.update",
-  OVERTIMERULE_SOFT_DELETE: "OvertimeRule.soft_delete",
-  OVERTIMERULE_RESTORE: "OvertimeRule.restore",
-  OVERTIMERULE_ACTIVATE: "OvertimeRule.activate",
-  OVERTIMERULE_DEACTIVATE: "OvertimeRule.deactivate",
-  PAYCALENDAR_READ: "PayCalendar.read",
-  PAYCALENDAR_CREATE: "PayCalendar.create",
-  PAYCALENDAR_UPDATE: "PayCalendar.update",
-  PAYCALENDAR_SOFT_DELETE: "PayCalendar.soft_delete",
-  PAYCALENDAR_RESTORE: "PayCalendar.restore",
-  PAYGROUP_READ: "PayGroup.read",
-  PAYGROUP_CREATE: "PayGroup.create",
-  PAYGROUP_UPDATE: "PayGroup.update",
-  PAYGROUP_SOFT_DELETE: "PayGroup.soft_delete",
-  PAYGROUP_RESTORE: "PayGroup.restore",
-  PAYGROUPASSIGNMENT_READ: "PayGroupAssignment.read",
-  PAYGROUPASSIGNMENT_CREATE: "PayGroupAssignment.create",
-  PAYGROUPASSIGNMENT_UPDATE: "PayGroupAssignment.update",
-  PAYGROUPASSIGNMENT_ASSIGN: "PayGroupAssignment.assign",
-  PAYGROUPASSIGNMENT_UNASSIGN: "PayGroupAssignment.unassign",
-  SCHEDULEEXCEPTION_APPROVE: "ScheduleException.approve",
-  SCHEDULEEXCEPTION_REJECT: "ScheduleException.reject",
-  SCHEDULE_HARD_DELETE: "Schedule.hard_delete",
+  CLOCKINCLOCKOUT_READ: 'ClockInClockOut.read',
+  CLOCKINCLOCKOUT_CREATE: 'ClockInClockOut.create',
+  CLOCKINCLOCKOUT_UPDATE: 'ClockInClockOut.update',
+  CLOCKINCLOCKOUT_SOFT_DELETE: 'ClockInClockOut.soft_delete',
+  CLOCKINCLOCKOUT_RESTORE: 'ClockInClockOut.restore',
+  CLOCKINCLOCKOUT_APPROVE: 'ClockInClockOut.approve',
+  CLOCKINCLOCKOUT_REJECT: 'ClockInClockOut.reject',
+  CLOCKINCLOCKOUT_EXPORT: 'ClockInClockOut.export',
+  SCHEDULE_READ: 'Schedule.read',
+  SCHEDULE_CREATE: 'Schedule.create',
+  SCHEDULE_UPDATE: 'Schedule.update',
+  SCHEDULE_SOFT_DELETE: 'Schedule.soft_delete',
+  SCHEDULE_RESTORE: 'Schedule.restore',
+  SCHEDULE_PUBLISH: 'Schedule.publish',
+  SCHEDULE_ACTIVATE: 'Schedule.activate',
+  SCHEDULE_DEACTIVATE: 'Schedule.deactivate',
+  SCHEDULEEXCEPTION_READ: 'ScheduleException.read',
+  SCHEDULEEXCEPTION_CREATE: 'ScheduleException.create',
+  SCHEDULEEXCEPTION_UPDATE: 'ScheduleException.update',
+  SCHEDULEEXCEPTION_SOFT_DELETE: 'ScheduleException.soft_delete',
+  SCHEDULEEXCEPTION_RESTORE: 'ScheduleException.restore',
+  LEAVE_READ: 'Leave.read',
+  LEAVE_CREATE: 'Leave.create',
+  LEAVE_UPDATE: 'Leave.update',
+  LEAVE_SOFT_DELETE: 'Leave.soft_delete',
+  LEAVE_RESTORE: 'Leave.restore',
+  LEAVE_APPROVE: 'Leave.approve',
+  LEAVE_REJECT: 'Leave.reject',
+  TIMESHEET_READ: 'Timesheet.read',
+  TIMESHEET_CREATE: 'Timesheet.create',
+  TIMESHEET_UPDATE: 'Timesheet.update',
+  TIMESHEET_SOFT_DELETE: 'Timesheet.soft_delete',
+  TIMESHEET_RESTORE: 'Timesheet.restore',
+  TIMESHEET_SUBMIT: 'Timesheet.submit',
+  TIMESHEET_APPROVE: 'Timesheet.approve',
+  TIMESHEET_REJECT: 'Timesheet.reject',
+  TIMESHEETENTRY_READ: 'TimesheetEntry.read',
+  TIMESHEETENTRY_CREATE: 'TimesheetEntry.create',
+  TIMESHEETENTRY_UPDATE: 'TimesheetEntry.update',
+  TIMESHEETENTRY_SOFT_DELETE: 'TimesheetEntry.soft_delete',
+  TIMESHEETENTRY_RESTORE: 'TimesheetEntry.restore',
+  TIMESHEETAPPROVAL_READ: 'TimesheetApproval.read',
+  TIMESHEETAPPROVAL_CREATE: 'TimesheetApproval.create',
+  TIMESHEETAPPROVAL_APPROVE: 'TimesheetApproval.approve',
+  TIMESHEETAPPROVAL_REJECT: 'TimesheetApproval.reject',
+  LEAVEOFABSENCE_READ: 'LeaveOfAbsence.read',
+  LEAVEOFABSENCE_CREATE: 'LeaveOfAbsence.create',
+  LEAVEOFABSENCE_UPDATE: 'LeaveOfAbsence.update',
+  LEAVEOFABSENCE_SOFT_DELETE: 'LeaveOfAbsence.soft_delete',
+  LEAVEOFABSENCE_RESTORE: 'LeaveOfAbsence.restore',
+  LEAVEOFABSENCE_APPROVE: 'LeaveOfAbsence.approve',
+  LEAVEOFABSENCE_REJECT: 'LeaveOfAbsence.reject',
+  ABSENCEBALANCE_READ: 'AbsenceBalance.read',
+  ABSENCEBALANCE_CREATE: 'AbsenceBalance.create',
+  ABSENCEBALANCE_UPDATE: 'AbsenceBalance.update',
+  ABSENCEBALANCE_SOFT_DELETE: 'AbsenceBalance.soft_delete',
+  ABSENCEBALANCE_RESTORE: 'AbsenceBalance.restore',
+  HOLIDAYCALENDAR_READ: 'HolidayCalendar.read',
+  HOLIDAYCALENDAR_CREATE: 'HolidayCalendar.create',
+  HOLIDAYCALENDAR_UPDATE: 'HolidayCalendar.update',
+  HOLIDAYCALENDAR_SOFT_DELETE: 'HolidayCalendar.soft_delete',
+  HOLIDAYCALENDAR_RESTORE: 'HolidayCalendar.restore',
+  OVERTIMERULE_READ: 'OvertimeRule.read',
+  OVERTIMERULE_CREATE: 'OvertimeRule.create',
+  OVERTIMERULE_UPDATE: 'OvertimeRule.update',
+  OVERTIMERULE_SOFT_DELETE: 'OvertimeRule.soft_delete',
+  OVERTIMERULE_RESTORE: 'OvertimeRule.restore',
+  OVERTIMERULE_ACTIVATE: 'OvertimeRule.activate',
+  OVERTIMERULE_DEACTIVATE: 'OvertimeRule.deactivate',
+  PAYCALENDAR_READ: 'PayCalendar.read',
+  PAYCALENDAR_CREATE: 'PayCalendar.create',
+  PAYCALENDAR_UPDATE: 'PayCalendar.update',
+  PAYCALENDAR_SOFT_DELETE: 'PayCalendar.soft_delete',
+  PAYCALENDAR_RESTORE: 'PayCalendar.restore',
+  PAYGROUP_READ: 'PayGroup.read',
+  PAYGROUP_CREATE: 'PayGroup.create',
+  PAYGROUP_UPDATE: 'PayGroup.update',
+  PAYGROUP_SOFT_DELETE: 'PayGroup.soft_delete',
+  PAYGROUP_RESTORE: 'PayGroup.restore',
+  PAYGROUPASSIGNMENT_READ: 'PayGroupAssignment.read',
+  PAYGROUPASSIGNMENT_CREATE: 'PayGroupAssignment.create',
+  PAYGROUPASSIGNMENT_UPDATE: 'PayGroupAssignment.update',
+  PAYGROUPASSIGNMENT_ASSIGN: 'PayGroupAssignment.assign',
+  PAYGROUPASSIGNMENT_UNASSIGN: 'PayGroupAssignment.unassign',
+  SCHEDULEEXCEPTION_APPROVE: 'ScheduleException.approve',
+  SCHEDULEEXCEPTION_REJECT: 'ScheduleException.reject',
+  SCHEDULE_HARD_DELETE: 'Schedule.hard_delete',
 
   // ============================================================================
   // INVENTORY_ASSETS
   // ============================================================================
-  INVENTORYITEM_READ: "InventoryItem.read",
-  INVENTORYITEM_CREATE: "InventoryItem.create",
-  INVENTORYITEM_UPDATE: "InventoryItem.update",
-  INVENTORYITEM_SOFT_DELETE: "InventoryItem.soft_delete",
-  INVENTORYITEM_RESTORE: "InventoryItem.restore",
-  INVENTORYITEM_ASSIGN: "InventoryItem.assign",
-  INVENTORYITEM_UNASSIGN: "InventoryItem.unassign",
-  INVENTORYITEM_TRANSFER: "InventoryItem.transfer",
-  INVENTORYITEM_ACTIVATE: "InventoryItem.activate",
-  INVENTORYITEM_DEACTIVATE: "InventoryItem.deactivate",
-  INVENTORYTRANSACTION_READ: "InventoryTransaction.read",
-  INVENTORYTRANSACTION_CREATE: "InventoryTransaction.create",
-  INVENTORYTRANSACTION_UPDATE: "InventoryTransaction.update",
-  INVENTORYTRANSACTION_SOFT_DELETE: "InventoryTransaction.soft_delete",
-  INVENTORYTRANSACTION_RESTORE: "InventoryTransaction.restore",
-  INVENTORYADJUSTMENT_READ: "InventoryAdjustment.read",
-  INVENTORYADJUSTMENT_CREATE: "InventoryAdjustment.create",
-  INVENTORYADJUSTMENT_UPDATE: "InventoryAdjustment.update",
-  INVENTORYADJUSTMENT_SOFT_DELETE: "InventoryAdjustment.soft_delete",
-  INVENTORYADJUSTMENT_RESTORE: "InventoryAdjustment.restore",
-  INVENTORYADJUSTMENT_APPROVE: "InventoryAdjustment.approve",
-  INVENTORYADJUSTMENT_REJECT: "InventoryAdjustment.reject",
-  INVENTORYCOUNT_READ: "InventoryCount.read",
-  INVENTORYCOUNT_CREATE: "InventoryCount.create",
-  INVENTORYCOUNT_UPDATE: "InventoryCount.update",
-  INVENTORYCOUNT_SOFT_DELETE: "InventoryCount.soft_delete",
-  INVENTORYCOUNT_RESTORE: "InventoryCount.restore",
-  INVENTORYCOUNTLINE_READ: "InventoryCountLine.read",
-  INVENTORYCOUNTLINE_CREATE: "InventoryCountLine.create",
-  INVENTORYCOUNTLINE_UPDATE: "InventoryCountLine.update",
-  INVENTORYCOUNTLINE_SOFT_DELETE: "InventoryCountLine.soft_delete",
-  INVENTORYCOUNTLINE_RESTORE: "InventoryCountLine.restore",
-  ASSET_READ: "Asset.read",
-  ASSET_CREATE: "Asset.create",
-  ASSET_UPDATE: "Asset.update",
-  ASSET_SOFT_DELETE: "Asset.soft_delete",
-  ASSET_RESTORE: "Asset.restore",
-  ASSET_ASSIGN: "Asset.assign",
-  ASSET_UNASSIGN: "Asset.unassign",
-  ASSET_TRANSFER: "Asset.transfer",
-  ASSET_ACTIVATE: "Asset.activate",
-  ASSET_DEACTIVATE: "Asset.deactivate",
-  ASSETASSIGNMENT_READ: "AssetAssignment.read",
-  ASSETASSIGNMENT_CREATE: "AssetAssignment.create",
-  ASSETASSIGNMENT_UPDATE: "AssetAssignment.update",
-  ASSETASSIGNMENT_SOFT_DELETE: "AssetAssignment.soft_delete",
-  ASSETASSIGNMENT_RESTORE: "AssetAssignment.restore",
-  ASSETASSIGNMENT_ASSIGN: "AssetAssignment.assign",
-  ASSETASSIGNMENT_UNASSIGN: "AssetAssignment.unassign",
-  ASSETASSIGNMENT_TRANSFER: "AssetAssignment.transfer",
-  ASSETMAINTENANCE_READ: "AssetMaintenance.read",
-  ASSETMAINTENANCE_CREATE: "AssetMaintenance.create",
-  ASSETMAINTENANCE_UPDATE: "AssetMaintenance.update",
-  ASSETMAINTENANCE_SOFT_DELETE: "AssetMaintenance.soft_delete",
-  ASSETMAINTENANCE_RESTORE: "AssetMaintenance.restore",
-  ASSETDEPRECIATION_READ: "AssetDepreciation.read",
-  ASSETDEPRECIATION_CREATE: "AssetDepreciation.create",
-  ASSETDEPRECIATION_UPDATE: "AssetDepreciation.update",
-  ASSETDEPRECIATION_SOFT_DELETE: "AssetDepreciation.soft_delete",
-  ASSETDEPRECIATION_RESTORE: "AssetDepreciation.restore",
-  ASSETDOCUMENT_READ: "AssetDocument.read",
-  ASSETDOCUMENT_CREATE: "AssetDocument.create",
-  ASSETDOCUMENT_UPDATE: "AssetDocument.update",
-  ASSETDOCUMENT_SOFT_DELETE: "AssetDocument.soft_delete",
-  ASSETDOCUMENT_RESTORE: "AssetDocument.restore",
-  ASSETMETERREADING_READ: "AssetMeterReading.read",
-  ASSETMETERREADING_CREATE: "AssetMeterReading.create",
-  ASSETMETERREADING_UPDATE: "AssetMeterReading.update",
-  ASSETMETERREADING_SOFT_DELETE: "AssetMeterReading.soft_delete",
-  ASSETMETERREADING_RESTORE: "AssetMeterReading.restore",
-  INVENTORYLOCATION_READ: "InventoryLocation.read",
-  INVENTORYLOCATION_CREATE: "InventoryLocation.create",
-  INVENTORYLOCATION_UPDATE: "InventoryLocation.update",
-  INVENTORYLOCATION_SOFT_DELETE: "InventoryLocation.soft_delete",
-  INVENTORYLOCATION_RESTORE: "InventoryLocation.restore",
-  INVENTORYBIN_READ: "InventoryBin.read",
-  INVENTORYBIN_CREATE: "InventoryBin.create",
-  INVENTORYBIN_UPDATE: "InventoryBin.update",
-  INVENTORYBIN_SOFT_DELETE: "InventoryBin.soft_delete",
-  INVENTORYBIN_RESTORE: "InventoryBin.restore",
-  INVENTORYRESERVATION_READ: "InventoryReservation.read",
-  INVENTORYRESERVATION_CREATE: "InventoryReservation.create",
-  INVENTORYRESERVATION_UPDATE: "InventoryReservation.update",
-  INVENTORYRESERVATION_SOFT_DELETE: "InventoryReservation.soft_delete",
-  INVENTORYRESERVATION_RESTORE: "InventoryReservation.restore",
-  INVENTORYATTACHMENT_READ: "InventoryAttachment.read",
-  INVENTORYATTACHMENT_CREATE: "InventoryAttachment.create",
-  INVENTORYATTACHMENT_UPDATE: "InventoryAttachment.update",
-  INVENTORYATTACHMENT_SOFT_DELETE: "InventoryAttachment.soft_delete",
-  INVENTORYATTACHMENT_RESTORE: "InventoryAttachment.restore",
-  GOODSRECEIPT_READ: "GoodsReceipt.read",
-  GOODSRECEIPT_CREATE: "GoodsReceipt.create",
-  GOODSRECEIPT_UPDATE: "GoodsReceipt.update",
-  GOODSRECEIPT_SOFT_DELETE: "GoodsReceipt.soft_delete",
-  GOODSRECEIPT_RESTORE: "GoodsReceipt.restore",
-  GOODSRECEIPTLINE_READ: "GoodsReceiptLine.read",
-  GOODSRECEIPTLINE_CREATE: "GoodsReceiptLine.create",
-  GOODSRECEIPTLINE_UPDATE: "GoodsReceiptLine.update",
-  GOODSRECEIPTLINE_SOFT_DELETE: "GoodsReceiptLine.soft_delete",
-  GOODSRECEIPTLINE_RESTORE: "GoodsReceiptLine.restore",
-  RFQRESPONSELINE_READ: "RFQResponseLine.read",
-  RFQRESPONSELINE_CREATE: "RFQResponseLine.create",
-  RFQRESPONSELINE_UPDATE: "RFQResponseLine.update",
-  RFQRESPONSELINE_SOFT_DELETE: "RFQResponseLine.soft_delete",
-  RFQRESPONSELINE_RESTORE: "RFQResponseLine.restore",
-  REASONCODE_READ: "ReasonCode.read",
-  REASONCODE_CREATE: "ReasonCode.create",
-  REASONCODE_UPDATE: "ReasonCode.update",
-  REASONCODE_SOFT_DELETE: "ReasonCode.soft_delete",
-  REASONCODE_RESTORE: "ReasonCode.restore",
-  RESOURCEALLOCATION_READ: "ResourceAllocation.read",
-  RESOURCEALLOCATION_CREATE: "ResourceAllocation.create",
-  RESOURCEALLOCATION_UPDATE: "ResourceAllocation.update",
-  RESOURCEALLOCATION_SOFT_DELETE: "ResourceAllocation.soft_delete",
-  RESOURCEALLOCATION_RESTORE: "ResourceAllocation.restore",
-  RESOURCEALLOCATION_ALLOCATE: "ResourceAllocation.allocate",
-  RESOURCEALLOCATION_DEALLOCATE: "ResourceAllocation.deallocate",
-  INVENTORYITEM_HARD_DELETE: "InventoryItem.hard_delete",
-  ASSET_HARD_DELETE: "Asset.hard_delete",
+  INVENTORYITEM_READ: 'InventoryItem.read',
+  INVENTORYITEM_CREATE: 'InventoryItem.create',
+  INVENTORYITEM_UPDATE: 'InventoryItem.update',
+  INVENTORYITEM_SOFT_DELETE: 'InventoryItem.soft_delete',
+  INVENTORYITEM_RESTORE: 'InventoryItem.restore',
+  INVENTORYITEM_ASSIGN: 'InventoryItem.assign',
+  INVENTORYITEM_UNASSIGN: 'InventoryItem.unassign',
+  INVENTORYITEM_TRANSFER: 'InventoryItem.transfer',
+  INVENTORYITEM_ACTIVATE: 'InventoryItem.activate',
+  INVENTORYITEM_DEACTIVATE: 'InventoryItem.deactivate',
+  INVENTORYTRANSACTION_READ: 'InventoryTransaction.read',
+  INVENTORYTRANSACTION_CREATE: 'InventoryTransaction.create',
+  INVENTORYTRANSACTION_UPDATE: 'InventoryTransaction.update',
+  INVENTORYTRANSACTION_SOFT_DELETE: 'InventoryTransaction.soft_delete',
+  INVENTORYTRANSACTION_RESTORE: 'InventoryTransaction.restore',
+  INVENTORYADJUSTMENT_READ: 'InventoryAdjustment.read',
+  INVENTORYADJUSTMENT_CREATE: 'InventoryAdjustment.create',
+  INVENTORYADJUSTMENT_UPDATE: 'InventoryAdjustment.update',
+  INVENTORYADJUSTMENT_SOFT_DELETE: 'InventoryAdjustment.soft_delete',
+  INVENTORYADJUSTMENT_RESTORE: 'InventoryAdjustment.restore',
+  INVENTORYADJUSTMENT_APPROVE: 'InventoryAdjustment.approve',
+  INVENTORYADJUSTMENT_REJECT: 'InventoryAdjustment.reject',
+  INVENTORYCOUNT_READ: 'InventoryCount.read',
+  INVENTORYCOUNT_CREATE: 'InventoryCount.create',
+  INVENTORYCOUNT_UPDATE: 'InventoryCount.update',
+  INVENTORYCOUNT_SOFT_DELETE: 'InventoryCount.soft_delete',
+  INVENTORYCOUNT_RESTORE: 'InventoryCount.restore',
+  INVENTORYCOUNTLINE_READ: 'InventoryCountLine.read',
+  INVENTORYCOUNTLINE_CREATE: 'InventoryCountLine.create',
+  INVENTORYCOUNTLINE_UPDATE: 'InventoryCountLine.update',
+  INVENTORYCOUNTLINE_SOFT_DELETE: 'InventoryCountLine.soft_delete',
+  INVENTORYCOUNTLINE_RESTORE: 'InventoryCountLine.restore',
+  ASSET_READ: 'Asset.read',
+  ASSET_CREATE: 'Asset.create',
+  ASSET_UPDATE: 'Asset.update',
+  ASSET_SOFT_DELETE: 'Asset.soft_delete',
+  ASSET_RESTORE: 'Asset.restore',
+  ASSET_ASSIGN: 'Asset.assign',
+  ASSET_UNASSIGN: 'Asset.unassign',
+  ASSET_TRANSFER: 'Asset.transfer',
+  ASSET_ACTIVATE: 'Asset.activate',
+  ASSET_DEACTIVATE: 'Asset.deactivate',
+  ASSETASSIGNMENT_READ: 'AssetAssignment.read',
+  ASSETASSIGNMENT_CREATE: 'AssetAssignment.create',
+  ASSETASSIGNMENT_UPDATE: 'AssetAssignment.update',
+  ASSETASSIGNMENT_SOFT_DELETE: 'AssetAssignment.soft_delete',
+  ASSETASSIGNMENT_RESTORE: 'AssetAssignment.restore',
+  ASSETASSIGNMENT_ASSIGN: 'AssetAssignment.assign',
+  ASSETASSIGNMENT_UNASSIGN: 'AssetAssignment.unassign',
+  ASSETASSIGNMENT_TRANSFER: 'AssetAssignment.transfer',
+  ASSETMAINTENANCE_READ: 'AssetMaintenance.read',
+  ASSETMAINTENANCE_CREATE: 'AssetMaintenance.create',
+  ASSETMAINTENANCE_UPDATE: 'AssetMaintenance.update',
+  ASSETMAINTENANCE_SOFT_DELETE: 'AssetMaintenance.soft_delete',
+  ASSETMAINTENANCE_RESTORE: 'AssetMaintenance.restore',
+  ASSETDEPRECIATION_READ: 'AssetDepreciation.read',
+  ASSETDEPRECIATION_CREATE: 'AssetDepreciation.create',
+  ASSETDEPRECIATION_UPDATE: 'AssetDepreciation.update',
+  ASSETDEPRECIATION_SOFT_DELETE: 'AssetDepreciation.soft_delete',
+  ASSETDEPRECIATION_RESTORE: 'AssetDepreciation.restore',
+  ASSETDOCUMENT_READ: 'AssetDocument.read',
+  ASSETDOCUMENT_CREATE: 'AssetDocument.create',
+  ASSETDOCUMENT_UPDATE: 'AssetDocument.update',
+  ASSETDOCUMENT_SOFT_DELETE: 'AssetDocument.soft_delete',
+  ASSETDOCUMENT_RESTORE: 'AssetDocument.restore',
+  ASSETMETERREADING_READ: 'AssetMeterReading.read',
+  ASSETMETERREADING_CREATE: 'AssetMeterReading.create',
+  ASSETMETERREADING_UPDATE: 'AssetMeterReading.update',
+  ASSETMETERREADING_SOFT_DELETE: 'AssetMeterReading.soft_delete',
+  ASSETMETERREADING_RESTORE: 'AssetMeterReading.restore',
+  INVENTORYLOCATION_READ: 'InventoryLocation.read',
+  INVENTORYLOCATION_CREATE: 'InventoryLocation.create',
+  INVENTORYLOCATION_UPDATE: 'InventoryLocation.update',
+  INVENTORYLOCATION_SOFT_DELETE: 'InventoryLocation.soft_delete',
+  INVENTORYLOCATION_RESTORE: 'InventoryLocation.restore',
+  INVENTORYBIN_READ: 'InventoryBin.read',
+  INVENTORYBIN_CREATE: 'InventoryBin.create',
+  INVENTORYBIN_UPDATE: 'InventoryBin.update',
+  INVENTORYBIN_SOFT_DELETE: 'InventoryBin.soft_delete',
+  INVENTORYBIN_RESTORE: 'InventoryBin.restore',
+  INVENTORYRESERVATION_READ: 'InventoryReservation.read',
+  INVENTORYRESERVATION_CREATE: 'InventoryReservation.create',
+  INVENTORYRESERVATION_UPDATE: 'InventoryReservation.update',
+  INVENTORYRESERVATION_SOFT_DELETE: 'InventoryReservation.soft_delete',
+  INVENTORYRESERVATION_RESTORE: 'InventoryReservation.restore',
+  INVENTORYATTACHMENT_READ: 'InventoryAttachment.read',
+  INVENTORYATTACHMENT_CREATE: 'InventoryAttachment.create',
+  INVENTORYATTACHMENT_UPDATE: 'InventoryAttachment.update',
+  INVENTORYATTACHMENT_SOFT_DELETE: 'InventoryAttachment.soft_delete',
+  INVENTORYATTACHMENT_RESTORE: 'InventoryAttachment.restore',
+  GOODSRECEIPT_READ: 'GoodsReceipt.read',
+  GOODSRECEIPT_CREATE: 'GoodsReceipt.create',
+  GOODSRECEIPT_UPDATE: 'GoodsReceipt.update',
+  GOODSRECEIPT_SOFT_DELETE: 'GoodsReceipt.soft_delete',
+  GOODSRECEIPT_RESTORE: 'GoodsReceipt.restore',
+  GOODSRECEIPTLINE_READ: 'GoodsReceiptLine.read',
+  GOODSRECEIPTLINE_CREATE: 'GoodsReceiptLine.create',
+  GOODSRECEIPTLINE_UPDATE: 'GoodsReceiptLine.update',
+  GOODSRECEIPTLINE_SOFT_DELETE: 'GoodsReceiptLine.soft_delete',
+  GOODSRECEIPTLINE_RESTORE: 'GoodsReceiptLine.restore',
+  RFQRESPONSELINE_READ: 'RFQResponseLine.read',
+  RFQRESPONSELINE_CREATE: 'RFQResponseLine.create',
+  RFQRESPONSELINE_UPDATE: 'RFQResponseLine.update',
+  RFQRESPONSELINE_SOFT_DELETE: 'RFQResponseLine.soft_delete',
+  RFQRESPONSELINE_RESTORE: 'RFQResponseLine.restore',
+  REASONCODE_READ: 'ReasonCode.read',
+  REASONCODE_CREATE: 'ReasonCode.create',
+  REASONCODE_UPDATE: 'ReasonCode.update',
+  REASONCODE_SOFT_DELETE: 'ReasonCode.soft_delete',
+  REASONCODE_RESTORE: 'ReasonCode.restore',
+  RESOURCEALLOCATION_READ: 'ResourceAllocation.read',
+  RESOURCEALLOCATION_CREATE: 'ResourceAllocation.create',
+  RESOURCEALLOCATION_UPDATE: 'ResourceAllocation.update',
+  RESOURCEALLOCATION_SOFT_DELETE: 'ResourceAllocation.soft_delete',
+  RESOURCEALLOCATION_RESTORE: 'ResourceAllocation.restore',
+  RESOURCEALLOCATION_ALLOCATE: 'ResourceAllocation.allocate',
+  RESOURCEALLOCATION_DEALLOCATE: 'ResourceAllocation.deallocate',
+  INVENTORYITEM_HARD_DELETE: 'InventoryItem.hard_delete',
+  ASSET_HARD_DELETE: 'Asset.hard_delete',
 
   // ============================================================================
   // COMMUNICATION
   // ============================================================================
-  CHANNEL_READ: "Channel.read",
-  CHANNEL_CREATE: "Channel.create",
-  CHANNEL_UPDATE: "Channel.update",
-  CHANNEL_SOFT_DELETE: "Channel.soft_delete",
-  CHANNEL_RESTORE: "Channel.restore",
-  CHANNEL_ARCHIVE: "Channel.archive",
-  CHANNEL_ACTIVATE: "Channel.activate",
-  CHANNEL_DEACTIVATE: "Channel.deactivate",
-  CHANNELMEMBER_READ: "ChannelMember.read",
-  CHANNELMEMBER_CREATE: "ChannelMember.create",
-  CHANNELMEMBER_UPDATE: "ChannelMember.update",
-  CHANNELMEMBER_SOFT_DELETE: "ChannelMember.soft_delete",
-  CHANNELMEMBER_RESTORE: "ChannelMember.restore",
-  CHANNELMEMBER_ASSIGN: "ChannelMember.assign",
-  CHANNELMEMBER_UNASSIGN: "ChannelMember.unassign",
-  DIRECTCHAT_READ: "DirectChat.read",
-  DIRECTCHAT_CREATE: "DirectChat.create",
-  DIRECTCHAT_UPDATE: "DirectChat.update",
-  DIRECTCHAT_SOFT_DELETE: "DirectChat.soft_delete",
-  DIRECTCHAT_RESTORE: "DirectChat.restore",
-  DIRECTCHAT_ARCHIVE: "DirectChat.archive",
-  DIRECTMESSAGE_READ: "DirectMessage.read",
-  DIRECTMESSAGE_CREATE: "DirectMessage.create",
-  DIRECTMESSAGE_UPDATE: "DirectMessage.update",
-  DIRECTMESSAGE_SOFT_DELETE: "DirectMessage.soft_delete",
-  DIRECTMESSAGE_RESTORE: "DirectMessage.restore",
-  DIRECTMESSAGEREAD_READ: "DirectMessageRead.read",
-  DIRECTMESSAGEREAD_CREATE: "DirectMessageRead.create",
-  DIRECTMESSAGEREAD_UPDATE: "DirectMessageRead.update",
-  NOTIFICATION_READ: "Notification.read",
-  NOTIFICATION_CREATE: "Notification.create",
-  NOTIFICATION_UPDATE: "Notification.update",
-  NOTIFICATION_SOFT_DELETE: "Notification.soft_delete",
-  NOTIFICATION_RESTORE: "Notification.restore",
-  INAPPANNOUNCEMENT_READ: "InAppAnnouncement.read",
-  INAPPANNOUNCEMENT_CREATE: "InAppAnnouncement.create",
-  INAPPANNOUNCEMENT_UPDATE: "InAppAnnouncement.update",
-  INAPPANNOUNCEMENT_SOFT_DELETE: "InAppAnnouncement.soft_delete",
-  INAPPANNOUNCEMENT_RESTORE: "InAppAnnouncement.restore",
-  INAPPANNOUNCEMENT_PUBLISH: "InAppAnnouncement.publish",
-  MESSAGE_READ: "Message.read",
-  MESSAGE_CREATE: "Message.create",
-  MESSAGE_UPDATE: "Message.update",
-  MESSAGE_SOFT_DELETE: "Message.soft_delete",
-  MESSAGE_RESTORE: "Message.restore",
-  MESSAGEATTACHMENT_READ: "MessageAttachment.read",
-  MESSAGEATTACHMENT_CREATE: "MessageAttachment.create",
-  MESSAGEATTACHMENT_UPDATE: "MessageAttachment.update",
-  MESSAGEATTACHMENT_SOFT_DELETE: "MessageAttachment.soft_delete",
-  MESSAGEATTACHMENT_RESTORE: "MessageAttachment.restore",
-  MESSAGEREAD_READ: "MessageRead.read",
-  MESSAGEREAD_CREATE: "MessageRead.create",
-  MESSAGEREAD_UPDATE: "MessageRead.update",
-  NOTIFICATIONPREFERENCE_READ: "NotificationPreference.read",
-  NOTIFICATIONPREFERENCE_CREATE: "NotificationPreference.create",
-  NOTIFICATIONPREFERENCE_UPDATE: "NotificationPreference.update",
-  NOTIFICATIONPREFERENCE_SOFT_DELETE: "NotificationPreference.soft_delete",
-  NOTIFICATIONPREFERENCE_RESTORE: "NotificationPreference.restore",
-  NOTIFICATIONTEMPLATE_READ: "NotificationTemplate.read",
-  NOTIFICATIONTEMPLATE_CREATE: "NotificationTemplate.create",
-  NOTIFICATIONTEMPLATE_UPDATE: "NotificationTemplate.update",
-  NOTIFICATIONTEMPLATE_SOFT_DELETE: "NotificationTemplate.soft_delete",
-  NOTIFICATIONTEMPLATE_RESTORE: "NotificationTemplate.restore",
-  EMAILTEMPLATE_READ: "EmailTemplate.read",
-  EMAILTEMPLATE_CREATE: "EmailTemplate.create",
-  EMAILTEMPLATE_UPDATE: "EmailTemplate.update",
-  EMAILTEMPLATE_SOFT_DELETE: "EmailTemplate.soft_delete",
-  EMAILTEMPLATE_RESTORE: "EmailTemplate.restore",
-  CHANNEL_HARD_DELETE: "Channel.hard_delete",
-  DIRECTCHAT_HARD_DELETE: "DirectChat.hard_delete",
+  CHANNEL_READ: 'Channel.read',
+  CHANNEL_CREATE: 'Channel.create',
+  CHANNEL_UPDATE: 'Channel.update',
+  CHANNEL_SOFT_DELETE: 'Channel.soft_delete',
+  CHANNEL_RESTORE: 'Channel.restore',
+  CHANNEL_ARCHIVE: 'Channel.archive',
+  CHANNEL_ACTIVATE: 'Channel.activate',
+  CHANNEL_DEACTIVATE: 'Channel.deactivate',
+  CHANNELMEMBER_READ: 'ChannelMember.read',
+  CHANNELMEMBER_CREATE: 'ChannelMember.create',
+  CHANNELMEMBER_UPDATE: 'ChannelMember.update',
+  CHANNELMEMBER_SOFT_DELETE: 'ChannelMember.soft_delete',
+  CHANNELMEMBER_RESTORE: 'ChannelMember.restore',
+  CHANNELMEMBER_ASSIGN: 'ChannelMember.assign',
+  CHANNELMEMBER_UNASSIGN: 'ChannelMember.unassign',
+  DIRECTCHAT_READ: 'DirectChat.read',
+  DIRECTCHAT_CREATE: 'DirectChat.create',
+  DIRECTCHAT_UPDATE: 'DirectChat.update',
+  DIRECTCHAT_SOFT_DELETE: 'DirectChat.soft_delete',
+  DIRECTCHAT_RESTORE: 'DirectChat.restore',
+  DIRECTCHAT_ARCHIVE: 'DirectChat.archive',
+  DIRECTMESSAGE_READ: 'DirectMessage.read',
+  DIRECTMESSAGE_CREATE: 'DirectMessage.create',
+  DIRECTMESSAGE_UPDATE: 'DirectMessage.update',
+  DIRECTMESSAGE_SOFT_DELETE: 'DirectMessage.soft_delete',
+  DIRECTMESSAGE_RESTORE: 'DirectMessage.restore',
+  DIRECTMESSAGEREAD_READ: 'DirectMessageRead.read',
+  DIRECTMESSAGEREAD_CREATE: 'DirectMessageRead.create',
+  DIRECTMESSAGEREAD_UPDATE: 'DirectMessageRead.update',
+  NOTIFICATION_READ: 'Notification.read',
+  NOTIFICATION_CREATE: 'Notification.create',
+  NOTIFICATION_UPDATE: 'Notification.update',
+  NOTIFICATION_SOFT_DELETE: 'Notification.soft_delete',
+  NOTIFICATION_RESTORE: 'Notification.restore',
+  INAPPANNOUNCEMENT_READ: 'InAppAnnouncement.read',
+  INAPPANNOUNCEMENT_CREATE: 'InAppAnnouncement.create',
+  INAPPANNOUNCEMENT_UPDATE: 'InAppAnnouncement.update',
+  INAPPANNOUNCEMENT_SOFT_DELETE: 'InAppAnnouncement.soft_delete',
+  INAPPANNOUNCEMENT_RESTORE: 'InAppAnnouncement.restore',
+  INAPPANNOUNCEMENT_PUBLISH: 'InAppAnnouncement.publish',
+  MESSAGE_READ: 'Message.read',
+  MESSAGE_CREATE: 'Message.create',
+  MESSAGE_UPDATE: 'Message.update',
+  MESSAGE_SOFT_DELETE: 'Message.soft_delete',
+  MESSAGE_RESTORE: 'Message.restore',
+  MESSAGEATTACHMENT_READ: 'MessageAttachment.read',
+  MESSAGEATTACHMENT_CREATE: 'MessageAttachment.create',
+  MESSAGEATTACHMENT_UPDATE: 'MessageAttachment.update',
+  MESSAGEATTACHMENT_SOFT_DELETE: 'MessageAttachment.soft_delete',
+  MESSAGEATTACHMENT_RESTORE: 'MessageAttachment.restore',
+  MESSAGEREAD_READ: 'MessageRead.read',
+  MESSAGEREAD_CREATE: 'MessageRead.create',
+  MESSAGEREAD_UPDATE: 'MessageRead.update',
+  NOTIFICATIONPREFERENCE_READ: 'NotificationPreference.read',
+  NOTIFICATIONPREFERENCE_CREATE: 'NotificationPreference.create',
+  NOTIFICATIONPREFERENCE_UPDATE: 'NotificationPreference.update',
+  NOTIFICATIONPREFERENCE_SOFT_DELETE: 'NotificationPreference.soft_delete',
+  NOTIFICATIONPREFERENCE_RESTORE: 'NotificationPreference.restore',
+  NOTIFICATIONTEMPLATE_READ: 'NotificationTemplate.read',
+  NOTIFICATIONTEMPLATE_CREATE: 'NotificationTemplate.create',
+  NOTIFICATIONTEMPLATE_UPDATE: 'NotificationTemplate.update',
+  NOTIFICATIONTEMPLATE_SOFT_DELETE: 'NotificationTemplate.soft_delete',
+  NOTIFICATIONTEMPLATE_RESTORE: 'NotificationTemplate.restore',
+  EMAILTEMPLATE_READ: 'EmailTemplate.read',
+  EMAILTEMPLATE_CREATE: 'EmailTemplate.create',
+  EMAILTEMPLATE_UPDATE: 'EmailTemplate.update',
+  EMAILTEMPLATE_SOFT_DELETE: 'EmailTemplate.soft_delete',
+  EMAILTEMPLATE_RESTORE: 'EmailTemplate.restore',
+  CHANNEL_HARD_DELETE: 'Channel.hard_delete',
+  DIRECTCHAT_HARD_DELETE: 'DirectChat.hard_delete',
 
   // ============================================================================
   // DOCUMENT_MANAGEMENT
   // ============================================================================
-  FILEOBJECT_READ: "FileObject.read",
-  FILEOBJECT_CREATE: "FileObject.create",
-  FILEOBJECT_UPDATE: "FileObject.update",
-  FILEOBJECT_SOFT_DELETE: "FileObject.soft_delete",
-  FILEOBJECT_RESTORE: "FileObject.restore",
-  ATTACHMENT_READ: "Attachment.read",
-  ATTACHMENT_CREATE: "Attachment.create",
-  ATTACHMENT_UPDATE: "Attachment.update",
-  ATTACHMENT_SOFT_DELETE: "Attachment.soft_delete",
-  ATTACHMENT_RESTORE: "Attachment.restore",
-  ATTACHMENT_APPROVE: "Attachment.approve",
-  ATTACHMENT_REJECT: "Attachment.reject",
-  ATTACHMENTLINK_READ: "AttachmentLink.read",
-  ATTACHMENTLINK_CREATE: "AttachmentLink.create",
-  ATTACHMENTLINK_UPDATE: "AttachmentLink.update",
-  ATTACHMENTLINK_SOFT_DELETE: "AttachmentLink.soft_delete",
-  ATTACHMENTLINK_RESTORE: "AttachmentLink.restore",
-  ESIGNATUREENVELOPE_READ: "ESignatureEnvelope.read",
-  ESIGNATUREENVELOPE_CREATE: "ESignatureEnvelope.create",
-  ESIGNATUREENVELOPE_UPDATE: "ESignatureEnvelope.update",
-  ESIGNATUREENVELOPE_SOFT_DELETE: "ESignatureEnvelope.soft_delete",
-  ESIGNATUREENVELOPE_RESTORE: "ESignatureEnvelope.restore",
-  ESIGNATUREENVELOPE_SEND: "ESignatureEnvelope.send",
-  ESIGNATURERECIPIENT_READ: "ESignatureRecipient.read",
-  ESIGNATURERECIPIENT_CREATE: "ESignatureRecipient.create",
-  ESIGNATURERECIPIENT_UPDATE: "ESignatureRecipient.update",
-  ESIGNATURERECIPIENT_SOFT_DELETE: "ESignatureRecipient.soft_delete",
-  ESIGNATURERECIPIENT_RESTORE: "ESignatureRecipient.restore",
-  DOCUMENTGROUP_READ: "DocumentGroup.read",
-  DOCUMENTGROUP_CREATE: "DocumentGroup.create",
-  DOCUMENTGROUP_UPDATE: "DocumentGroup.update",
-  DOCUMENTGROUP_SOFT_DELETE: "DocumentGroup.soft_delete",
-  DOCUMENTGROUP_RESTORE: "DocumentGroup.restore",
-  CONTRACTTEMPLATE_READ: "ContractTemplate.read",
-  CONTRACTTEMPLATE_CREATE: "ContractTemplate.create",
-  CONTRACTTEMPLATE_UPDATE: "ContractTemplate.update",
-  CONTRACTTEMPLATE_SOFT_DELETE: "ContractTemplate.soft_delete",
-  CONTRACTTEMPLATE_RESTORE: "ContractTemplate.restore",
-  TERMSTEMPLATE_READ: "TermsTemplate.read",
-  TERMSTEMPLATE_CREATE: "TermsTemplate.create",
-  TERMSTEMPLATE_UPDATE: "TermsTemplate.update",
-  TERMSTEMPLATE_SOFT_DELETE: "TermsTemplate.soft_delete",
-  TERMSTEMPLATE_RESTORE: "TermsTemplate.restore",
-  FILEOBJECT_HARD_DELETE: "FileObject.hard_delete",
-  ATTACHMENT_HARD_DELETE: "Attachment.hard_delete",
-  CONTRACTTEMPLATE_HARD_DELETE: "ContractTemplate.hard_delete",
-  TERMSTEMPLATE_HARD_DELETE: "TermsTemplate.hard_delete",
+  FILEOBJECT_READ: 'FileObject.read',
+  FILEOBJECT_CREATE: 'FileObject.create',
+  FILEOBJECT_UPDATE: 'FileObject.update',
+  FILEOBJECT_SOFT_DELETE: 'FileObject.soft_delete',
+  FILEOBJECT_RESTORE: 'FileObject.restore',
+  ATTACHMENT_READ: 'Attachment.read',
+  ATTACHMENT_CREATE: 'Attachment.create',
+  ATTACHMENT_UPDATE: 'Attachment.update',
+  ATTACHMENT_SOFT_DELETE: 'Attachment.soft_delete',
+  ATTACHMENT_RESTORE: 'Attachment.restore',
+  ATTACHMENT_APPROVE: 'Attachment.approve',
+  ATTACHMENT_REJECT: 'Attachment.reject',
+  ATTACHMENTLINK_READ: 'AttachmentLink.read',
+  ATTACHMENTLINK_CREATE: 'AttachmentLink.create',
+  ATTACHMENTLINK_UPDATE: 'AttachmentLink.update',
+  ATTACHMENTLINK_SOFT_DELETE: 'AttachmentLink.soft_delete',
+  ATTACHMENTLINK_RESTORE: 'AttachmentLink.restore',
+  ESIGNATUREENVELOPE_READ: 'ESignatureEnvelope.read',
+  ESIGNATUREENVELOPE_CREATE: 'ESignatureEnvelope.create',
+  ESIGNATUREENVELOPE_UPDATE: 'ESignatureEnvelope.update',
+  ESIGNATUREENVELOPE_SOFT_DELETE: 'ESignatureEnvelope.soft_delete',
+  ESIGNATUREENVELOPE_RESTORE: 'ESignatureEnvelope.restore',
+  ESIGNATUREENVELOPE_SEND: 'ESignatureEnvelope.send',
+  ESIGNATURERECIPIENT_READ: 'ESignatureRecipient.read',
+  ESIGNATURERECIPIENT_CREATE: 'ESignatureRecipient.create',
+  ESIGNATURERECIPIENT_UPDATE: 'ESignatureRecipient.update',
+  ESIGNATURERECIPIENT_SOFT_DELETE: 'ESignatureRecipient.soft_delete',
+  ESIGNATURERECIPIENT_RESTORE: 'ESignatureRecipient.restore',
+  DOCUMENTGROUP_READ: 'DocumentGroup.read',
+  DOCUMENTGROUP_CREATE: 'DocumentGroup.create',
+  DOCUMENTGROUP_UPDATE: 'DocumentGroup.update',
+  DOCUMENTGROUP_SOFT_DELETE: 'DocumentGroup.soft_delete',
+  DOCUMENTGROUP_RESTORE: 'DocumentGroup.restore',
+  CONTRACTTEMPLATE_READ: 'ContractTemplate.read',
+  CONTRACTTEMPLATE_CREATE: 'ContractTemplate.create',
+  CONTRACTTEMPLATE_UPDATE: 'ContractTemplate.update',
+  CONTRACTTEMPLATE_SOFT_DELETE: 'ContractTemplate.soft_delete',
+  CONTRACTTEMPLATE_RESTORE: 'ContractTemplate.restore',
+  TERMSTEMPLATE_READ: 'TermsTemplate.read',
+  TERMSTEMPLATE_CREATE: 'TermsTemplate.create',
+  TERMSTEMPLATE_UPDATE: 'TermsTemplate.update',
+  TERMSTEMPLATE_SOFT_DELETE: 'TermsTemplate.soft_delete',
+  TERMSTEMPLATE_RESTORE: 'TermsTemplate.restore',
+  FILEOBJECT_HARD_DELETE: 'FileObject.hard_delete',
+  ATTACHMENT_HARD_DELETE: 'Attachment.hard_delete',
+  CONTRACTTEMPLATE_HARD_DELETE: 'ContractTemplate.hard_delete',
+  TERMSTEMPLATE_HARD_DELETE: 'TermsTemplate.hard_delete',
 
   // ============================================================================
   // VENDOR_CONTRACT
   // ============================================================================
-  VENDOR_READ: "Vendor.read",
-  VENDOR_CREATE: "Vendor.create",
-  VENDOR_UPDATE: "Vendor.update",
-  VENDOR_SOFT_DELETE: "Vendor.soft_delete",
-  VENDOR_RESTORE: "Vendor.restore",
-  VENDOR_ACTIVATE: "Vendor.activate",
-  VENDOR_DEACTIVATE: "Vendor.deactivate",
-  VENDORCONTACT_READ: "VendorContact.read",
-  VENDORCONTACT_CREATE: "VendorContact.create",
-  VENDORCONTACT_UPDATE: "VendorContact.update",
-  VENDORCONTACT_SOFT_DELETE: "VendorContact.soft_delete",
-  VENDORCONTACT_RESTORE: "VendorContact.restore",
-  VENDORDOCUMENT_READ: "VendorDocument.read",
-  VENDORDOCUMENT_CREATE: "VendorDocument.create",
-  VENDORDOCUMENT_UPDATE: "VendorDocument.update",
-  VENDORDOCUMENT_SOFT_DELETE: "VendorDocument.soft_delete",
-  VENDORDOCUMENT_RESTORE: "VendorDocument.restore",
-  CONTRACT_READ: "Contract.read",
-  CONTRACT_CREATE: "Contract.create",
-  CONTRACT_UPDATE: "Contract.update",
-  CONTRACT_SOFT_DELETE: "Contract.soft_delete",
-  CONTRACT_RESTORE: "Contract.restore",
-  CONTRACT_SEND: "Contract.send",
-  CONTRACT_APPROVE: "Contract.approve",
-  CONTRACT_REJECT: "Contract.reject",
-  PERSON_READ: "Person.read",
-  PERSON_CREATE: "Person.create",
-  PERSON_UPDATE: "Person.update",
-  PERSON_SOFT_DELETE: "Person.soft_delete",
-  PERSON_RESTORE: "Person.restore",
-  PERSONNAME_READ: "PersonName.read",
-  PERSONNAME_CREATE: "PersonName.create",
-  PERSONNAME_UPDATE: "PersonName.update",
-  PERSONNAME_SOFT_DELETE: "PersonName.soft_delete",
-  PERSONNAME_RESTORE: "PersonName.restore",
-  PERSONADDRESS_READ: "PersonAddress.read",
-  PERSONADDRESS_CREATE: "PersonAddress.create",
-  PERSONADDRESS_UPDATE: "PersonAddress.update",
-  PERSONADDRESS_SOFT_DELETE: "PersonAddress.soft_delete",
-  PERSONADDRESS_RESTORE: "PersonAddress.restore",
-  PERSONCONTACTMETHOD_READ: "PersonContactMethod.read",
-  PERSONCONTACTMETHOD_CREATE: "PersonContactMethod.create",
-  PERSONCONTACTMETHOD_UPDATE: "PersonContactMethod.update",
-  PERSONCONTACTMETHOD_SOFT_DELETE: "PersonContactMethod.soft_delete",
-  PERSONCONTACTMETHOD_RESTORE: "PersonContactMethod.restore",
-  PERSONDOCUMENT_READ: "PersonDocument.read",
-  PERSONDOCUMENT_CREATE: "PersonDocument.create",
-  PERSONDOCUMENT_UPDATE: "PersonDocument.update",
-  PERSONDOCUMENT_SOFT_DELETE: "PersonDocument.soft_delete",
-  PERSONDOCUMENT_RESTORE: "PersonDocument.restore",
-  VENDOR_ASSIGN: "Vendor.assign",
-  VENDOR_UNASSIGN: "Vendor.unassign",
-  VENDOR_HARD_DELETE: "Vendor.hard_delete",
+  VENDOR_READ: 'Vendor.read',
+  VENDOR_CREATE: 'Vendor.create',
+  VENDOR_UPDATE: 'Vendor.update',
+  VENDOR_SOFT_DELETE: 'Vendor.soft_delete',
+  VENDOR_RESTORE: 'Vendor.restore',
+  VENDOR_ACTIVATE: 'Vendor.activate',
+  VENDOR_DEACTIVATE: 'Vendor.deactivate',
+  VENDORCONTACT_READ: 'VendorContact.read',
+  VENDORCONTACT_CREATE: 'VendorContact.create',
+  VENDORCONTACT_UPDATE: 'VendorContact.update',
+  VENDORCONTACT_SOFT_DELETE: 'VendorContact.soft_delete',
+  VENDORCONTACT_RESTORE: 'VendorContact.restore',
+  VENDORDOCUMENT_READ: 'VendorDocument.read',
+  VENDORDOCUMENT_CREATE: 'VendorDocument.create',
+  VENDORDOCUMENT_UPDATE: 'VendorDocument.update',
+  VENDORDOCUMENT_SOFT_DELETE: 'VendorDocument.soft_delete',
+  VENDORDOCUMENT_RESTORE: 'VendorDocument.restore',
+  CONTRACT_READ: 'Contract.read',
+  CONTRACT_CREATE: 'Contract.create',
+  CONTRACT_UPDATE: 'Contract.update',
+  CONTRACT_SOFT_DELETE: 'Contract.soft_delete',
+  CONTRACT_RESTORE: 'Contract.restore',
+  CONTRACT_SEND: 'Contract.send',
+  CONTRACT_APPROVE: 'Contract.approve',
+  CONTRACT_REJECT: 'Contract.reject',
+  PERSON_READ: 'Person.read',
+  PERSON_CREATE: 'Person.create',
+  PERSON_UPDATE: 'Person.update',
+  PERSON_SOFT_DELETE: 'Person.soft_delete',
+  PERSON_RESTORE: 'Person.restore',
+  PERSONNAME_READ: 'PersonName.read',
+  PERSONNAME_CREATE: 'PersonName.create',
+  PERSONNAME_UPDATE: 'PersonName.update',
+  PERSONNAME_SOFT_DELETE: 'PersonName.soft_delete',
+  PERSONNAME_RESTORE: 'PersonName.restore',
+  PERSONADDRESS_READ: 'PersonAddress.read',
+  PERSONADDRESS_CREATE: 'PersonAddress.create',
+  PERSONADDRESS_UPDATE: 'PersonAddress.update',
+  PERSONADDRESS_SOFT_DELETE: 'PersonAddress.soft_delete',
+  PERSONADDRESS_RESTORE: 'PersonAddress.restore',
+  PERSONCONTACTMETHOD_READ: 'PersonContactMethod.read',
+  PERSONCONTACTMETHOD_CREATE: 'PersonContactMethod.create',
+  PERSONCONTACTMETHOD_UPDATE: 'PersonContactMethod.update',
+  PERSONCONTACTMETHOD_SOFT_DELETE: 'PersonContactMethod.soft_delete',
+  PERSONCONTACTMETHOD_RESTORE: 'PersonContactMethod.restore',
+  PERSONDOCUMENT_READ: 'PersonDocument.read',
+  PERSONDOCUMENT_CREATE: 'PersonDocument.create',
+  PERSONDOCUMENT_UPDATE: 'PersonDocument.update',
+  PERSONDOCUMENT_SOFT_DELETE: 'PersonDocument.soft_delete',
+  PERSONDOCUMENT_RESTORE: 'PersonDocument.restore',
+  VENDOR_ASSIGN: 'Vendor.assign',
+  VENDOR_UNASSIGN: 'Vendor.unassign',
+  VENDOR_HARD_DELETE: 'Vendor.hard_delete',
 
   // ============================================================================
   // AI_AUTOMATION
   // ============================================================================
-  AIACTION_READ: "AIAction.read",
-  AIACTION_CREATE: "AIAction.create",
-  AIACTION_UPDATE: "AIAction.update",
-  AIACTION_SOFT_DELETE: "AIAction.soft_delete",
-  AIACTION_RESTORE: "AIAction.restore",
-  AIACTION_ACTIVATE: "AIAction.activate",
-  AIACTION_DEACTIVATE: "AIAction.deactivate",
-  AIACTIONRUN_READ: "AIActionRun.read",
-  AIACTIONRUN_CREATE: "AIActionRun.create",
-  AIACTIONRUN_UPDATE: "AIActionRun.update",
-  AIACTIONRUN_SOFT_DELETE: "AIActionRun.soft_delete",
-  AIACTIONRUN_RESTORE: "AIActionRun.restore",
-  AIJOB_READ: "AIJob.read",
-  AIJOB_CREATE: "AIJob.create",
-  AIJOB_UPDATE: "AIJob.update",
-  AIJOB_SOFT_DELETE: "AIJob.soft_delete",
-  AIJOB_RESTORE: "AIJob.restore",
-  AIJOBARTIFACT_READ: "AIJobArtifact.read",
-  AIJOBARTIFACT_CREATE: "AIJobArtifact.create",
-  AIJOBARTIFACT_UPDATE: "AIJobArtifact.update",
-  AIJOBARTIFACT_SOFT_DELETE: "AIJobArtifact.soft_delete",
-  AIJOBARTIFACT_RESTORE: "AIJobArtifact.restore",
-  AIINSIGHT_READ: "AIInsight.read",
-  AIINSIGHT_CREATE: "AIInsight.create",
-  AIINSIGHT_UPDATE: "AIInsight.update",
-  AIINSIGHT_SOFT_DELETE: "AIInsight.soft_delete",
-  AIINSIGHT_RESTORE: "AIInsight.restore",
-  AIINSIGHTFEEDBACK_READ: "AIInsightFeedback.read",
-  AIINSIGHTFEEDBACK_CREATE: "AIInsightFeedback.create",
-  AIINSIGHTFEEDBACK_UPDATE: "AIInsightFeedback.update",
-  AIINSIGHTFEEDBACK_SOFT_DELETE: "AIInsightFeedback.soft_delete",
-  AIINSIGHTFEEDBACK_RESTORE: "AIInsightFeedback.restore",
-  AIPLAYBOOK_READ: "AIPlaybook.read",
-  AIPLAYBOOK_CREATE: "AIPlaybook.create",
-  AIPLAYBOOK_UPDATE: "AIPlaybook.update",
-  AIPLAYBOOK_SOFT_DELETE: "AIPlaybook.soft_delete",
-  AIPLAYBOOK_RESTORE: "AIPlaybook.restore",
-  AIPLAYBOOK_ACTIVATE: "AIPlaybook.activate",
-  AIPLAYBOOK_DEACTIVATE: "AIPlaybook.deactivate",
-  AIPLAYBOOKSTEP_READ: "AIPlaybookStep.read",
-  AIPLAYBOOKSTEP_CREATE: "AIPlaybookStep.create",
-  AIPLAYBOOKSTEP_UPDATE: "AIPlaybookStep.update",
-  AIPLAYBOOKSTEP_SOFT_DELETE: "AIPlaybookStep.soft_delete",
-  AIPLAYBOOKSTEP_RESTORE: "AIPlaybookStep.restore",
-  AIPROMPTTEMPLATE_READ: "AIPromptTemplate.read",
-  AIPROMPTTEMPLATE_CREATE: "AIPromptTemplate.create",
-  AIPROMPTTEMPLATE_UPDATE: "AIPromptTemplate.update",
-  AIPROMPTTEMPLATE_SOFT_DELETE: "AIPromptTemplate.soft_delete",
-  AIPROMPTTEMPLATE_RESTORE: "AIPromptTemplate.restore",
-  AIASSISTANTPROFILE_READ: "AIAssistantProfile.read",
-  AIASSISTANTPROFILE_CREATE: "AIAssistantProfile.create",
-  AIASSISTANTPROFILE_UPDATE: "AIAssistantProfile.update",
-  AIASSISTANTPROFILE_SOFT_DELETE: "AIAssistantProfile.soft_delete",
-  AIASSISTANTPROFILE_RESTORE: "AIAssistantProfile.restore",
-  AIASSISTANTPROFILE_ACTIVATE: "AIAssistantProfile.activate",
-  AIASSISTANTPROFILE_DEACTIVATE: "AIAssistantProfile.deactivate",
-  AIDOCUMENTINDEX_READ: "AIDocumentIndex.read",
-  AIDOCUMENTINDEX_CREATE: "AIDocumentIndex.create",
-  AIDOCUMENTINDEX_UPDATE: "AIDocumentIndex.update",
-  AIDOCUMENTINDEX_SOFT_DELETE: "AIDocumentIndex.soft_delete",
-  AIDOCUMENTINDEX_RESTORE: "AIDocumentIndex.restore",
-  AIDOCUMENTCHUNK_READ: "AIDocumentChunk.read",
-  AIDOCUMENTCHUNK_CREATE: "AIDocumentChunk.create",
-  AIDOCUMENTCHUNK_UPDATE: "AIDocumentChunk.update",
-  AIDOCUMENTCHUNK_SOFT_DELETE: "AIDocumentChunk.soft_delete",
-  AIDOCUMENTCHUNK_RESTORE: "AIDocumentChunk.restore",
-  AIEMBEDDING_READ: "AIEmbedding.read",
-  AIEMBEDDING_CREATE: "AIEmbedding.create",
-  AIEMBEDDING_UPDATE: "AIEmbedding.update",
-  AIEMBEDDING_SOFT_DELETE: "AIEmbedding.soft_delete",
-  AIEMBEDDING_RESTORE: "AIEmbedding.restore",
+  AIACTION_READ: 'AIAction.read',
+  AIACTION_CREATE: 'AIAction.create',
+  AIACTION_UPDATE: 'AIAction.update',
+  AIACTION_SOFT_DELETE: 'AIAction.soft_delete',
+  AIACTION_RESTORE: 'AIAction.restore',
+  AIACTION_ACTIVATE: 'AIAction.activate',
+  AIACTION_DEACTIVATE: 'AIAction.deactivate',
+  AIACTIONRUN_READ: 'AIActionRun.read',
+  AIACTIONRUN_CREATE: 'AIActionRun.create',
+  AIACTIONRUN_UPDATE: 'AIActionRun.update',
+  AIACTIONRUN_SOFT_DELETE: 'AIActionRun.soft_delete',
+  AIACTIONRUN_RESTORE: 'AIActionRun.restore',
+  AIJOB_READ: 'AIJob.read',
+  AIJOB_CREATE: 'AIJob.create',
+  AIJOB_UPDATE: 'AIJob.update',
+  AIJOB_SOFT_DELETE: 'AIJob.soft_delete',
+  AIJOB_RESTORE: 'AIJob.restore',
+  AIJOBARTIFACT_READ: 'AIJobArtifact.read',
+  AIJOBARTIFACT_CREATE: 'AIJobArtifact.create',
+  AIJOBARTIFACT_UPDATE: 'AIJobArtifact.update',
+  AIJOBARTIFACT_SOFT_DELETE: 'AIJobArtifact.soft_delete',
+  AIJOBARTIFACT_RESTORE: 'AIJobArtifact.restore',
+  AIINSIGHT_READ: 'AIInsight.read',
+  AIINSIGHT_CREATE: 'AIInsight.create',
+  AIINSIGHT_UPDATE: 'AIInsight.update',
+  AIINSIGHT_SOFT_DELETE: 'AIInsight.soft_delete',
+  AIINSIGHT_RESTORE: 'AIInsight.restore',
+  AIINSIGHTFEEDBACK_READ: 'AIInsightFeedback.read',
+  AIINSIGHTFEEDBACK_CREATE: 'AIInsightFeedback.create',
+  AIINSIGHTFEEDBACK_UPDATE: 'AIInsightFeedback.update',
+  AIINSIGHTFEEDBACK_SOFT_DELETE: 'AIInsightFeedback.soft_delete',
+  AIINSIGHTFEEDBACK_RESTORE: 'AIInsightFeedback.restore',
+  AIPLAYBOOK_READ: 'AIPlaybook.read',
+  AIPLAYBOOK_CREATE: 'AIPlaybook.create',
+  AIPLAYBOOK_UPDATE: 'AIPlaybook.update',
+  AIPLAYBOOK_SOFT_DELETE: 'AIPlaybook.soft_delete',
+  AIPLAYBOOK_RESTORE: 'AIPlaybook.restore',
+  AIPLAYBOOK_ACTIVATE: 'AIPlaybook.activate',
+  AIPLAYBOOK_DEACTIVATE: 'AIPlaybook.deactivate',
+  AIPLAYBOOKSTEP_READ: 'AIPlaybookStep.read',
+  AIPLAYBOOKSTEP_CREATE: 'AIPlaybookStep.create',
+  AIPLAYBOOKSTEP_UPDATE: 'AIPlaybookStep.update',
+  AIPLAYBOOKSTEP_SOFT_DELETE: 'AIPlaybookStep.soft_delete',
+  AIPLAYBOOKSTEP_RESTORE: 'AIPlaybookStep.restore',
+  AIPROMPTTEMPLATE_READ: 'AIPromptTemplate.read',
+  AIPROMPTTEMPLATE_CREATE: 'AIPromptTemplate.create',
+  AIPROMPTTEMPLATE_UPDATE: 'AIPromptTemplate.update',
+  AIPROMPTTEMPLATE_SOFT_DELETE: 'AIPromptTemplate.soft_delete',
+  AIPROMPTTEMPLATE_RESTORE: 'AIPromptTemplate.restore',
+  AIASSISTANTPROFILE_READ: 'AIAssistantProfile.read',
+  AIASSISTANTPROFILE_CREATE: 'AIAssistantProfile.create',
+  AIASSISTANTPROFILE_UPDATE: 'AIAssistantProfile.update',
+  AIASSISTANTPROFILE_SOFT_DELETE: 'AIAssistantProfile.soft_delete',
+  AIASSISTANTPROFILE_RESTORE: 'AIAssistantProfile.restore',
+  AIASSISTANTPROFILE_ACTIVATE: 'AIAssistantProfile.activate',
+  AIASSISTANTPROFILE_DEACTIVATE: 'AIAssistantProfile.deactivate',
+  AIDOCUMENTINDEX_READ: 'AIDocumentIndex.read',
+  AIDOCUMENTINDEX_CREATE: 'AIDocumentIndex.create',
+  AIDOCUMENTINDEX_UPDATE: 'AIDocumentIndex.update',
+  AIDOCUMENTINDEX_SOFT_DELETE: 'AIDocumentIndex.soft_delete',
+  AIDOCUMENTINDEX_RESTORE: 'AIDocumentIndex.restore',
+  AIDOCUMENTCHUNK_READ: 'AIDocumentChunk.read',
+  AIDOCUMENTCHUNK_CREATE: 'AIDocumentChunk.create',
+  AIDOCUMENTCHUNK_UPDATE: 'AIDocumentChunk.update',
+  AIDOCUMENTCHUNK_SOFT_DELETE: 'AIDocumentChunk.soft_delete',
+  AIDOCUMENTCHUNK_RESTORE: 'AIDocumentChunk.restore',
+  AIEMBEDDING_READ: 'AIEmbedding.read',
+  AIEMBEDDING_CREATE: 'AIEmbedding.create',
+  AIEMBEDDING_UPDATE: 'AIEmbedding.update',
+  AIEMBEDDING_SOFT_DELETE: 'AIEmbedding.soft_delete',
+  AIEMBEDDING_RESTORE: 'AIEmbedding.restore',
 
   // ============================================================================
   // ROOMPLAN_SPATIAL
   // ============================================================================
-  ROOMSCANSESSION_READ: "RoomScanSession.read",
-  ROOMSCANSESSION_LIST: "RoomScanSession.list",
-  ROOMSCANSESSION_CREATE: "RoomScanSession.create",
-  ROOMSCANSESSION_UPDATE: "RoomScanSession.update",
-  ROOMSCANSESSION_SOFT_DELETE: "RoomScanSession.soft_delete",
-  ROOMSCANSESSION_RESTORE: "RoomScanSession.restore",
-  ROOMSCANSESSION_ACTIVATE: "RoomScanSession.activate",
-  ROOMSCANSESSION_DEACTIVATE: "RoomScanSession.deactivate",
-  ROOMSCANSESSION_EXPORT: "RoomScanSession.export",
-  ROOMSCANFILE_READ: "RoomScanFile.read",
-  ROOMSCANFILE_LIST: "RoomScanFile.list",
-  ROOMSCANFILE_CREATE: "RoomScanFile.create",
-  ROOMSCANFILE_UPDATE: "RoomScanFile.update",
-  ROOMSCANFILE_SOFT_DELETE: "RoomScanFile.soft_delete",
-  ROOMSCANFILE_RESTORE: "RoomScanFile.restore",
-  ROOMSCANFILE_EXPORT: "RoomScanFile.export",
-  ROOMMODEL_READ: "RoomModel.read",
-  ROOMMODEL_LIST: "RoomModel.list",
-  ROOMMODEL_CREATE: "RoomModel.create",
-  ROOMMODEL_UPDATE: "RoomModel.update",
-  ROOMMODEL_SOFT_DELETE: "RoomModel.soft_delete",
-  ROOMMODEL_RESTORE: "RoomModel.restore",
-  ROOMMODEL_PUBLISH: "RoomModel.publish",
-  ROOMMODEL_EXPORT: "RoomModel.export",
-  ROOMMODEL_DUPLICATE: "RoomModel.duplicate",
-  ROOMMEASUREMENT_READ: "RoomMeasurement.read",
-  ROOMMEASUREMENT_LIST: "RoomMeasurement.list",
-  ROOMMEASUREMENT_CREATE: "RoomMeasurement.create",
-  ROOMMEASUREMENT_UPDATE: "RoomMeasurement.update",
-  ROOMMEASUREMENT_SOFT_DELETE: "RoomMeasurement.soft_delete",
-  ROOMMEASUREMENT_RESTORE: "RoomMeasurement.restore",
-  ROOMMEASUREMENT_EXPORT: "RoomMeasurement.export",
-  ROOMOBJECT_READ: "RoomObject.read",
-  ROOMOBJECT_LIST: "RoomObject.list",
-  ROOMOBJECT_CREATE: "RoomObject.create",
-  ROOMOBJECT_UPDATE: "RoomObject.update",
-  ROOMOBJECT_SOFT_DELETE: "RoomObject.soft_delete",
-  ROOMOBJECT_RESTORE: "RoomObject.restore",
-  ROOMOBJECT_EXPORT: "RoomObject.export",
-  ROOMSURFACE_READ: "RoomSurface.read",
-  ROOMSURFACE_LIST: "RoomSurface.list",
-  ROOMSURFACE_CREATE: "RoomSurface.create",
-  ROOMSURFACE_UPDATE: "RoomSurface.update",
-  ROOMSURFACE_SOFT_DELETE: "RoomSurface.soft_delete",
-  ROOMSURFACE_RESTORE: "RoomSurface.restore",
-  ROOMSURFACE_EXPORT: "RoomSurface.export",
-  ROOMANNOTATION_READ: "RoomAnnotation.read",
-  ROOMANNOTATION_LIST: "RoomAnnotation.list",
-  ROOMANNOTATION_CREATE: "RoomAnnotation.create",
-  ROOMANNOTATION_UPDATE: "RoomAnnotation.update",
-  ROOMANNOTATION_SOFT_DELETE: "RoomAnnotation.soft_delete",
-  ROOMANNOTATION_RESTORE: "RoomAnnotation.restore",
-  ROOMANNOTATION_PUBLISH: "RoomAnnotation.publish",
-  ROOMANNOTATION_EXPORT: "RoomAnnotation.export",
-  ROOMEXPORT_READ: "RoomExport.read",
-  ROOMEXPORT_LIST: "RoomExport.list",
-  ROOMEXPORT_CREATE: "RoomExport.create",
-  ROOMEXPORT_UPDATE: "RoomExport.update",
-  ROOMEXPORT_SOFT_DELETE: "RoomExport.soft_delete",
-  ROOMEXPORT_RESTORE: "RoomExport.restore",
-  ROOMEXPORT_EXPORT: "RoomExport.export",
-  ROOMEXPORT_SEND: "RoomExport.send",
-  ROOMPLANPRESET_READ: "RoomPlanPreset.read",
-  ROOMPLANPRESET_LIST: "RoomPlanPreset.list",
-  ROOMPLANPRESET_CREATE: "RoomPlanPreset.create",
-  ROOMPLANPRESET_UPDATE: "RoomPlanPreset.update",
-  ROOMPLANPRESET_SOFT_DELETE: "RoomPlanPreset.soft_delete",
-  ROOMPLANPRESET_RESTORE: "RoomPlanPreset.restore",
-  ROOMPLANPRESET_DUPLICATE: "RoomPlanPreset.duplicate",
-  ROOMPLANPRESET_PUBLISH: "RoomPlanPreset.publish",
-  ROOMPROCESSINGJOB_READ: "RoomProcessingJob.read",
-  ROOMPROCESSINGJOB_LIST: "RoomProcessingJob.list",
-  ROOMPROCESSINGJOB_CREATE: "RoomProcessingJob.create",
-  ROOMPROCESSINGJOB_UPDATE: "RoomProcessingJob.update",
-  ROOMPROCESSINGJOB_SOFT_DELETE: "RoomProcessingJob.soft_delete",
-  ROOMPROCESSINGJOB_RESTORE: "RoomProcessingJob.restore",
-  ROOMPROCESSINGJOB_ACTIVATE: "RoomProcessingJob.activate",
-  ROOMPROCESSINGJOB_DEACTIVATE: "RoomProcessingJob.deactivate",
+  ROOMSCANSESSION_READ: 'RoomScanSession.read',
+  ROOMSCANSESSION_LIST: 'RoomScanSession.list',
+  ROOMSCANSESSION_CREATE: 'RoomScanSession.create',
+  ROOMSCANSESSION_UPDATE: 'RoomScanSession.update',
+  ROOMSCANSESSION_SOFT_DELETE: 'RoomScanSession.soft_delete',
+  ROOMSCANSESSION_RESTORE: 'RoomScanSession.restore',
+  ROOMSCANSESSION_ACTIVATE: 'RoomScanSession.activate',
+  ROOMSCANSESSION_DEACTIVATE: 'RoomScanSession.deactivate',
+  ROOMSCANSESSION_EXPORT: 'RoomScanSession.export',
+  ROOMSCANFILE_READ: 'RoomScanFile.read',
+  ROOMSCANFILE_LIST: 'RoomScanFile.list',
+  ROOMSCANFILE_CREATE: 'RoomScanFile.create',
+  ROOMSCANFILE_UPDATE: 'RoomScanFile.update',
+  ROOMSCANFILE_SOFT_DELETE: 'RoomScanFile.soft_delete',
+  ROOMSCANFILE_RESTORE: 'RoomScanFile.restore',
+  ROOMSCANFILE_EXPORT: 'RoomScanFile.export',
+  ROOMMODEL_READ: 'RoomModel.read',
+  ROOMMODEL_LIST: 'RoomModel.list',
+  ROOMMODEL_CREATE: 'RoomModel.create',
+  ROOMMODEL_UPDATE: 'RoomModel.update',
+  ROOMMODEL_SOFT_DELETE: 'RoomModel.soft_delete',
+  ROOMMODEL_RESTORE: 'RoomModel.restore',
+  ROOMMODEL_PUBLISH: 'RoomModel.publish',
+  ROOMMODEL_EXPORT: 'RoomModel.export',
+  ROOMMODEL_DUPLICATE: 'RoomModel.duplicate',
+  ROOMMEASUREMENT_READ: 'RoomMeasurement.read',
+  ROOMMEASUREMENT_LIST: 'RoomMeasurement.list',
+  ROOMMEASUREMENT_CREATE: 'RoomMeasurement.create',
+  ROOMMEASUREMENT_UPDATE: 'RoomMeasurement.update',
+  ROOMMEASUREMENT_SOFT_DELETE: 'RoomMeasurement.soft_delete',
+  ROOMMEASUREMENT_RESTORE: 'RoomMeasurement.restore',
+  ROOMMEASUREMENT_EXPORT: 'RoomMeasurement.export',
+  ROOMOBJECT_READ: 'RoomObject.read',
+  ROOMOBJECT_LIST: 'RoomObject.list',
+  ROOMOBJECT_CREATE: 'RoomObject.create',
+  ROOMOBJECT_UPDATE: 'RoomObject.update',
+  ROOMOBJECT_SOFT_DELETE: 'RoomObject.soft_delete',
+  ROOMOBJECT_RESTORE: 'RoomObject.restore',
+  ROOMOBJECT_EXPORT: 'RoomObject.export',
+  ROOMSURFACE_READ: 'RoomSurface.read',
+  ROOMSURFACE_LIST: 'RoomSurface.list',
+  ROOMSURFACE_CREATE: 'RoomSurface.create',
+  ROOMSURFACE_UPDATE: 'RoomSurface.update',
+  ROOMSURFACE_SOFT_DELETE: 'RoomSurface.soft_delete',
+  ROOMSURFACE_RESTORE: 'RoomSurface.restore',
+  ROOMSURFACE_EXPORT: 'RoomSurface.export',
+  ROOMANNOTATION_READ: 'RoomAnnotation.read',
+  ROOMANNOTATION_LIST: 'RoomAnnotation.list',
+  ROOMANNOTATION_CREATE: 'RoomAnnotation.create',
+  ROOMANNOTATION_UPDATE: 'RoomAnnotation.update',
+  ROOMANNOTATION_SOFT_DELETE: 'RoomAnnotation.soft_delete',
+  ROOMANNOTATION_RESTORE: 'RoomAnnotation.restore',
+  ROOMANNOTATION_PUBLISH: 'RoomAnnotation.publish',
+  ROOMANNOTATION_EXPORT: 'RoomAnnotation.export',
+  ROOMEXPORT_READ: 'RoomExport.read',
+  ROOMEXPORT_LIST: 'RoomExport.list',
+  ROOMEXPORT_CREATE: 'RoomExport.create',
+  ROOMEXPORT_UPDATE: 'RoomExport.update',
+  ROOMEXPORT_SOFT_DELETE: 'RoomExport.soft_delete',
+  ROOMEXPORT_RESTORE: 'RoomExport.restore',
+  ROOMEXPORT_EXPORT: 'RoomExport.export',
+  ROOMEXPORT_SEND: 'RoomExport.send',
+  ROOMPLANPRESET_READ: 'RoomPlanPreset.read',
+  ROOMPLANPRESET_LIST: 'RoomPlanPreset.list',
+  ROOMPLANPRESET_CREATE: 'RoomPlanPreset.create',
+  ROOMPLANPRESET_UPDATE: 'RoomPlanPreset.update',
+  ROOMPLANPRESET_SOFT_DELETE: 'RoomPlanPreset.soft_delete',
+  ROOMPLANPRESET_RESTORE: 'RoomPlanPreset.restore',
+  ROOMPLANPRESET_DUPLICATE: 'RoomPlanPreset.duplicate',
+  ROOMPLANPRESET_PUBLISH: 'RoomPlanPreset.publish',
+  ROOMPROCESSINGJOB_READ: 'RoomProcessingJob.read',
+  ROOMPROCESSINGJOB_LIST: 'RoomProcessingJob.list',
+  ROOMPROCESSINGJOB_CREATE: 'RoomProcessingJob.create',
+  ROOMPROCESSINGJOB_UPDATE: 'RoomProcessingJob.update',
+  ROOMPROCESSINGJOB_SOFT_DELETE: 'RoomProcessingJob.soft_delete',
+  ROOMPROCESSINGJOB_RESTORE: 'RoomProcessingJob.restore',
+  ROOMPROCESSINGJOB_ACTIVATE: 'RoomProcessingJob.activate',
+  ROOMPROCESSINGJOB_DEACTIVATE: 'RoomProcessingJob.deactivate',
 
   // ============================================================================
   // HR_EMPLOYMENT
   // ============================================================================
-  EMPLOYMENT_READ: "Employment.read",
-  EMPLOYMENT_CREATE: "Employment.create",
-  EMPLOYMENT_UPDATE: "Employment.update",
-  EMPLOYMENT_SOFT_DELETE: "Employment.soft_delete",
-  EMPLOYMENT_RESTORE: "Employment.restore",
-  EMPLOYMENT_ACTIVATE: "Employment.activate",
-  EMPLOYMENT_DEACTIVATE: "Employment.deactivate",
-  POSITION_READ: "Position.read",
-  POSITION_CREATE: "Position.create",
-  POSITION_UPDATE: "Position.update",
-  POSITION_SOFT_DELETE: "Position.soft_delete",
-  POSITION_RESTORE: "Position.restore",
-  POSITION_ACTIVATE: "Position.activate",
-  POSITION_DEACTIVATE: "Position.deactivate",
-  POSITIONASSIGNMENT_READ: "PositionAssignment.read",
-  POSITIONASSIGNMENT_CREATE: "PositionAssignment.create",
-  POSITIONASSIGNMENT_UPDATE: "PositionAssignment.update",
-  POSITIONASSIGNMENT_SOFT_DELETE: "PositionAssignment.soft_delete",
-  POSITIONASSIGNMENT_RESTORE: "PositionAssignment.restore",
-  POSITIONASSIGNMENT_ASSIGN: "PositionAssignment.assign",
-  POSITIONASSIGNMENT_UNASSIGN: "PositionAssignment.unassign",
-  POSITIONBUDGET_READ: "PositionBudget.read",
-  POSITIONBUDGET_CREATE: "PositionBudget.create",
-  POSITIONBUDGET_UPDATE: "PositionBudget.update",
-  POSITIONBUDGET_SOFT_DELETE: "PositionBudget.soft_delete",
-  POSITIONBUDGET_RESTORE: "PositionBudget.restore",
-  COMPENSATIONCOMPONENT_READ: "CompensationComponent.read",
-  COMPENSATIONCOMPONENT_CREATE: "CompensationComponent.create",
-  COMPENSATIONCOMPONENT_UPDATE: "CompensationComponent.update",
-  COMPENSATIONCOMPONENT_SOFT_DELETE: "CompensationComponent.soft_delete",
-  COMPENSATIONCOMPONENT_RESTORE: "CompensationComponent.restore",
-  COMPENSATIONCOMPONENT_ACTIVATE: "CompensationComponent.activate",
-  COMPENSATIONCOMPONENT_DEACTIVATE: "CompensationComponent.deactivate",
-  COMPENSATIONPLAN_READ: "CompensationPlan.read",
-  COMPENSATIONPLAN_CREATE: "CompensationPlan.create",
-  COMPENSATIONPLAN_UPDATE: "CompensationPlan.update",
-  COMPENSATIONPLAN_SOFT_DELETE: "CompensationPlan.soft_delete",
-  COMPENSATIONPLAN_RESTORE: "CompensationPlan.restore",
-  COMPENSATIONPLAN_ACTIVATE: "CompensationPlan.activate",
-  COMPENSATIONPLAN_DEACTIVATE: "CompensationPlan.deactivate",
-  ALLOWANCE_READ: "Allowance.read",
-  ALLOWANCE_CREATE: "Allowance.create",
-  ALLOWANCE_UPDATE: "Allowance.update",
-  ALLOWANCE_SOFT_DELETE: "Allowance.soft_delete",
-  ALLOWANCE_RESTORE: "Allowance.restore",
-  ALLOWANCE_APPROVE: "Allowance.approve",
-  ALLOWANCE_REJECT: "Allowance.reject",
-  DEDUCTION_READ: "Deduction.read",
-  DEDUCTION_CREATE: "Deduction.create",
-  DEDUCTION_UPDATE: "Deduction.update",
-  DEDUCTION_SOFT_DELETE: "Deduction.soft_delete",
-  DEDUCTION_RESTORE: "Deduction.restore",
-  DEDUCTION_APPROVE: "Deduction.approve",
-  DEDUCTION_REJECT: "Deduction.reject",
-  BENEFITDEPENDENT_READ: "BenefitDependent.read",
-  BENEFITDEPENDENT_CREATE: "BenefitDependent.create",
-  BENEFITDEPENDENT_UPDATE: "BenefitDependent.update",
-  BENEFITDEPENDENT_SOFT_DELETE: "BenefitDependent.soft_delete",
-  BENEFITDEPENDENT_RESTORE: "BenefitDependent.restore",
-  BENEFITENROLLMENT_READ: "BenefitEnrollment.read",
-  BENEFITENROLLMENT_CREATE: "BenefitEnrollment.create",
-  BENEFITENROLLMENT_UPDATE: "BenefitEnrollment.update",
-  BENEFITENROLLMENT_SOFT_DELETE: "BenefitEnrollment.soft_delete",
-  BENEFITENROLLMENT_RESTORE: "BenefitEnrollment.restore",
-  BENEFITENROLLMENT_APPROVE: "BenefitEnrollment.approve",
-  BENEFITENROLLMENT_REJECT: "BenefitEnrollment.reject",
-  CERTIFICATION_READ: "Certification.read",
-  CERTIFICATION_CREATE: "Certification.create",
-  CERTIFICATION_UPDATE: "Certification.update",
-  CERTIFICATION_SOFT_DELETE: "Certification.soft_delete",
-  CERTIFICATION_RESTORE: "Certification.restore",
-  CERTIFICATION_APPROVE: "Certification.approve",
-  CERTIFICATION_REJECT: "Certification.reject",
-  PERFORMANCEGOAL_READ: "PerformanceGoal.read",
-  PERFORMANCEGOAL_CREATE: "PerformanceGoal.create",
-  PERFORMANCEGOAL_UPDATE: "PerformanceGoal.update",
-  PERFORMANCEGOAL_SOFT_DELETE: "PerformanceGoal.soft_delete",
-  PERFORMANCEGOAL_RESTORE: "PerformanceGoal.restore",
-  PERFORMANCEREVIEW_READ: "PerformanceReview.read",
-  PERFORMANCEREVIEW_CREATE: "PerformanceReview.create",
-  PERFORMANCEREVIEW_UPDATE: "PerformanceReview.update",
-  PERFORMANCEREVIEW_SOFT_DELETE: "PerformanceReview.soft_delete",
-  PERFORMANCEREVIEW_RESTORE: "PerformanceReview.restore",
-  PERFORMANCEREVIEW_APPROVE: "PerformanceReview.approve",
-  PERFORMANCEREVIEW_REJECT: "PerformanceReview.reject",
-  GRADE_READ: "Grade.read",
-  GRADE_CREATE: "Grade.create",
-  GRADE_UPDATE: "Grade.update",
-  GRADE_SOFT_DELETE: "Grade.soft_delete",
-  GRADE_RESTORE: "Grade.restore",
-  DEPARTMENT_READ: "Department.read",
-  DEPARTMENT_CREATE: "Department.create",
-  DEPARTMENT_UPDATE: "Department.update",
-  DEPARTMENT_SOFT_DELETE: "Department.soft_delete",
-  DEPARTMENT_RESTORE: "Department.restore",
-  DEPARTMENT_ACTIVATE: "Department.activate",
-  DEPARTMENT_DEACTIVATE: "Department.deactivate",
-  ORGUNIT_READ: "OrgUnit.read",
-  ORGUNIT_CREATE: "OrgUnit.create",
-  ORGUNIT_UPDATE: "OrgUnit.update",
-  ORGUNIT_SOFT_DELETE: "OrgUnit.soft_delete",
-  ORGUNIT_RESTORE: "OrgUnit.restore",
-  ORGUNIT_ACTIVATE: "OrgUnit.activate",
-  ORGUNIT_DEACTIVATE: "OrgUnit.deactivate",
-  TRAININGENROLLMENT_READ: "TrainingEnrollment.read",
-  TRAININGENROLLMENT_CREATE: "TrainingEnrollment.create",
-  TRAININGENROLLMENT_UPDATE: "TrainingEnrollment.update",
-  TRAININGENROLLMENT_SOFT_DELETE: "TrainingEnrollment.soft_delete",
-  TRAININGENROLLMENT_RESTORE: "TrainingEnrollment.restore",
-  TRAININGENROLLMENT_APPROVE: "TrainingEnrollment.approve",
-  TRAININGENROLLMENT_REJECT: "TrainingEnrollment.reject",
-  WORKER_READ: "Worker.read",
-  WORKER_CREATE: "Worker.create",
-  WORKER_UPDATE: "Worker.update",
-  WORKER_SOFT_DELETE: "Worker.soft_delete",
-  WORKER_RESTORE: "Worker.restore",
-  WORKER_ACTIVATE: "Worker.activate",
-  WORKER_DEACTIVATE: "Worker.deactivate",
-  LOSSINVESTIGATION_READ: "LossInvestigation.read",
-  LOSSINVESTIGATION_CREATE: "LossInvestigation.create",
-  LOSSINVESTIGATION_UPDATE: "LossInvestigation.update",
-  LOSSINVESTIGATION_SOFT_DELETE: "LossInvestigation.soft_delete",
-  LOSSINVESTIGATION_RESTORE: "LossInvestigation.restore",
-  LOSSINVESTIGATIONFINDING_READ: "LossInvestigationFinding.read",
-  LOSSINVESTIGATIONFINDING_CREATE: "LossInvestigationFinding.create",
-  LOSSINVESTIGATIONFINDING_UPDATE: "LossInvestigationFinding.update",
-  LOSSINVESTIGATIONFINDING_SOFT_DELETE: "LossInvestigationFinding.soft_delete",
-  LOSSINVESTIGATIONFINDING_RESTORE: "LossInvestigationFinding.restore",
-  MITIGATIONACTION_READ: "MitigationAction.read",
-  MITIGATIONACTION_CREATE: "MitigationAction.create",
-  MITIGATIONACTION_UPDATE: "MitigationAction.update",
-  MITIGATIONACTION_SOFT_DELETE: "MitigationAction.soft_delete",
-  MITIGATIONACTION_RESTORE: "MitigationAction.restore",
-  MITIGATIONACTION_IMPLEMENT: "MitigationAction.implement",
-  RISKFACTOR_READ: "RiskFactor.read",
-  RISKFACTOR_CREATE: "RiskFactor.create",
-  RISKFACTOR_UPDATE: "RiskFactor.update",
-  RISKFACTOR_SOFT_DELETE: "RiskFactor.soft_delete",
-  RISKFACTOR_RESTORE: "RiskFactor.restore",
-  RISKFACTOR_ASSESS: "RiskFactor.assess",
-  SCHEDULERISK_READ: "ScheduleRisk.read",
-  SCHEDULERISK_CREATE: "ScheduleRisk.create",
-  SCHEDULERISK_UPDATE: "ScheduleRisk.update",
-  SCHEDULERISK_SOFT_DELETE: "ScheduleRisk.soft_delete",
-  SCHEDULERISK_RESTORE: "ScheduleRisk.restore",
-  ANOMALYCASE_READ: "AnomalyCase.read",
-  ANOMALYCASE_CREATE: "AnomalyCase.create",
-  ANOMALYCASE_UPDATE: "AnomalyCase.update",
-  ANOMALYCASE_SOFT_DELETE: "AnomalyCase.soft_delete",
-  ANOMALYCASE_RESTORE: "AnomalyCase.restore",
-  ANOMALYCASE_INVESTIGATE: "AnomalyCase.investigate",
-  ANOMALYCASEACTION_READ: "AnomalyCaseAction.read",
-  ANOMALYCASEACTION_CREATE: "AnomalyCaseAction.create",
-  ANOMALYCASEACTION_UPDATE: "AnomalyCaseAction.update",
-  ANOMALYCASEACTION_EXECUTE: "AnomalyCaseAction.execute",
-  ANOMALYSIGNAL_READ: "AnomalySignal.read",
-  ANOMALYSIGNAL_CREATE: "AnomalySignal.create",
-  ANOMALYSIGNAL_UPDATE: "AnomalySignal.update",
-  ANOMALYSIGNALFEATURE_READ: "AnomalySignalFeature.read",
-  ANOMALYSIGNALFEATURE_CREATE: "AnomalySignalFeature.create",
-  ANOMALYSIGNALFEATURE_UPDATE: "AnomalySignalFeature.update",
+  EMPLOYMENT_READ: 'Employment.read',
+  EMPLOYMENT_CREATE: 'Employment.create',
+  EMPLOYMENT_UPDATE: 'Employment.update',
+  EMPLOYMENT_SOFT_DELETE: 'Employment.soft_delete',
+  EMPLOYMENT_RESTORE: 'Employment.restore',
+  EMPLOYMENT_ACTIVATE: 'Employment.activate',
+  EMPLOYMENT_DEACTIVATE: 'Employment.deactivate',
+  POSITION_READ: 'Position.read',
+  POSITION_CREATE: 'Position.create',
+  POSITION_UPDATE: 'Position.update',
+  POSITION_SOFT_DELETE: 'Position.soft_delete',
+  POSITION_RESTORE: 'Position.restore',
+  POSITION_ACTIVATE: 'Position.activate',
+  POSITION_DEACTIVATE: 'Position.deactivate',
+  POSITIONASSIGNMENT_READ: 'PositionAssignment.read',
+  POSITIONASSIGNMENT_CREATE: 'PositionAssignment.create',
+  POSITIONASSIGNMENT_UPDATE: 'PositionAssignment.update',
+  POSITIONASSIGNMENT_SOFT_DELETE: 'PositionAssignment.soft_delete',
+  POSITIONASSIGNMENT_RESTORE: 'PositionAssignment.restore',
+  POSITIONASSIGNMENT_ASSIGN: 'PositionAssignment.assign',
+  POSITIONASSIGNMENT_UNASSIGN: 'PositionAssignment.unassign',
+  POSITIONBUDGET_READ: 'PositionBudget.read',
+  POSITIONBUDGET_CREATE: 'PositionBudget.create',
+  POSITIONBUDGET_UPDATE: 'PositionBudget.update',
+  POSITIONBUDGET_SOFT_DELETE: 'PositionBudget.soft_delete',
+  POSITIONBUDGET_RESTORE: 'PositionBudget.restore',
+  COMPENSATIONCOMPONENT_READ: 'CompensationComponent.read',
+  COMPENSATIONCOMPONENT_CREATE: 'CompensationComponent.create',
+  COMPENSATIONCOMPONENT_UPDATE: 'CompensationComponent.update',
+  COMPENSATIONCOMPONENT_SOFT_DELETE: 'CompensationComponent.soft_delete',
+  COMPENSATIONCOMPONENT_RESTORE: 'CompensationComponent.restore',
+  COMPENSATIONCOMPONENT_ACTIVATE: 'CompensationComponent.activate',
+  COMPENSATIONCOMPONENT_DEACTIVATE: 'CompensationComponent.deactivate',
+  COMPENSATIONPLAN_READ: 'CompensationPlan.read',
+  COMPENSATIONPLAN_CREATE: 'CompensationPlan.create',
+  COMPENSATIONPLAN_UPDATE: 'CompensationPlan.update',
+  COMPENSATIONPLAN_SOFT_DELETE: 'CompensationPlan.soft_delete',
+  COMPENSATIONPLAN_RESTORE: 'CompensationPlan.restore',
+  COMPENSATIONPLAN_ACTIVATE: 'CompensationPlan.activate',
+  COMPENSATIONPLAN_DEACTIVATE: 'CompensationPlan.deactivate',
+  ALLOWANCE_READ: 'Allowance.read',
+  ALLOWANCE_CREATE: 'Allowance.create',
+  ALLOWANCE_UPDATE: 'Allowance.update',
+  ALLOWANCE_SOFT_DELETE: 'Allowance.soft_delete',
+  ALLOWANCE_RESTORE: 'Allowance.restore',
+  ALLOWANCE_APPROVE: 'Allowance.approve',
+  ALLOWANCE_REJECT: 'Allowance.reject',
+  DEDUCTION_READ: 'Deduction.read',
+  DEDUCTION_CREATE: 'Deduction.create',
+  DEDUCTION_UPDATE: 'Deduction.update',
+  DEDUCTION_SOFT_DELETE: 'Deduction.soft_delete',
+  DEDUCTION_RESTORE: 'Deduction.restore',
+  DEDUCTION_APPROVE: 'Deduction.approve',
+  DEDUCTION_REJECT: 'Deduction.reject',
+  BENEFITDEPENDENT_READ: 'BenefitDependent.read',
+  BENEFITDEPENDENT_CREATE: 'BenefitDependent.create',
+  BENEFITDEPENDENT_UPDATE: 'BenefitDependent.update',
+  BENEFITDEPENDENT_SOFT_DELETE: 'BenefitDependent.soft_delete',
+  BENEFITDEPENDENT_RESTORE: 'BenefitDependent.restore',
+  BENEFITENROLLMENT_READ: 'BenefitEnrollment.read',
+  BENEFITENROLLMENT_CREATE: 'BenefitEnrollment.create',
+  BENEFITENROLLMENT_UPDATE: 'BenefitEnrollment.update',
+  BENEFITENROLLMENT_SOFT_DELETE: 'BenefitEnrollment.soft_delete',
+  BENEFITENROLLMENT_RESTORE: 'BenefitEnrollment.restore',
+  BENEFITENROLLMENT_APPROVE: 'BenefitEnrollment.approve',
+  BENEFITENROLLMENT_REJECT: 'BenefitEnrollment.reject',
+  CERTIFICATION_READ: 'Certification.read',
+  CERTIFICATION_CREATE: 'Certification.create',
+  CERTIFICATION_UPDATE: 'Certification.update',
+  CERTIFICATION_SOFT_DELETE: 'Certification.soft_delete',
+  CERTIFICATION_RESTORE: 'Certification.restore',
+  CERTIFICATION_APPROVE: 'Certification.approve',
+  CERTIFICATION_REJECT: 'Certification.reject',
+  PERFORMANCEGOAL_READ: 'PerformanceGoal.read',
+  PERFORMANCEGOAL_CREATE: 'PerformanceGoal.create',
+  PERFORMANCEGOAL_UPDATE: 'PerformanceGoal.update',
+  PERFORMANCEGOAL_SOFT_DELETE: 'PerformanceGoal.soft_delete',
+  PERFORMANCEGOAL_RESTORE: 'PerformanceGoal.restore',
+  PERFORMANCEREVIEW_READ: 'PerformanceReview.read',
+  PERFORMANCEREVIEW_CREATE: 'PerformanceReview.create',
+  PERFORMANCEREVIEW_UPDATE: 'PerformanceReview.update',
+  PERFORMANCEREVIEW_SOFT_DELETE: 'PerformanceReview.soft_delete',
+  PERFORMANCEREVIEW_RESTORE: 'PerformanceReview.restore',
+  PERFORMANCEREVIEW_APPROVE: 'PerformanceReview.approve',
+  PERFORMANCEREVIEW_REJECT: 'PerformanceReview.reject',
+  GRADE_READ: 'Grade.read',
+  GRADE_CREATE: 'Grade.create',
+  GRADE_UPDATE: 'Grade.update',
+  GRADE_SOFT_DELETE: 'Grade.soft_delete',
+  GRADE_RESTORE: 'Grade.restore',
+  DEPARTMENT_READ: 'Department.read',
+  DEPARTMENT_CREATE: 'Department.create',
+  DEPARTMENT_UPDATE: 'Department.update',
+  DEPARTMENT_SOFT_DELETE: 'Department.soft_delete',
+  DEPARTMENT_RESTORE: 'Department.restore',
+  DEPARTMENT_ACTIVATE: 'Department.activate',
+  DEPARTMENT_DEACTIVATE: 'Department.deactivate',
+  ORGUNIT_READ: 'OrgUnit.read',
+  ORGUNIT_CREATE: 'OrgUnit.create',
+  ORGUNIT_UPDATE: 'OrgUnit.update',
+  ORGUNIT_SOFT_DELETE: 'OrgUnit.soft_delete',
+  ORGUNIT_RESTORE: 'OrgUnit.restore',
+  ORGUNIT_ACTIVATE: 'OrgUnit.activate',
+  ORGUNIT_DEACTIVATE: 'OrgUnit.deactivate',
+  TRAININGENROLLMENT_READ: 'TrainingEnrollment.read',
+  TRAININGENROLLMENT_CREATE: 'TrainingEnrollment.create',
+  TRAININGENROLLMENT_UPDATE: 'TrainingEnrollment.update',
+  TRAININGENROLLMENT_SOFT_DELETE: 'TrainingEnrollment.soft_delete',
+  TRAININGENROLLMENT_RESTORE: 'TrainingEnrollment.restore',
+  TRAININGENROLLMENT_APPROVE: 'TrainingEnrollment.approve',
+  TRAININGENROLLMENT_REJECT: 'TrainingEnrollment.reject',
+  WORKER_READ: 'Worker.read',
+  WORKER_CREATE: 'Worker.create',
+  WORKER_UPDATE: 'Worker.update',
+  WORKER_SOFT_DELETE: 'Worker.soft_delete',
+  WORKER_RESTORE: 'Worker.restore',
+  WORKER_ACTIVATE: 'Worker.activate',
+  WORKER_DEACTIVATE: 'Worker.deactivate',
+  LOSSINVESTIGATION_READ: 'LossInvestigation.read',
+  LOSSINVESTIGATION_CREATE: 'LossInvestigation.create',
+  LOSSINVESTIGATION_UPDATE: 'LossInvestigation.update',
+  LOSSINVESTIGATION_SOFT_DELETE: 'LossInvestigation.soft_delete',
+  LOSSINVESTIGATION_RESTORE: 'LossInvestigation.restore',
+  LOSSINVESTIGATIONFINDING_READ: 'LossInvestigationFinding.read',
+  LOSSINVESTIGATIONFINDING_CREATE: 'LossInvestigationFinding.create',
+  LOSSINVESTIGATIONFINDING_UPDATE: 'LossInvestigationFinding.update',
+  LOSSINVESTIGATIONFINDING_SOFT_DELETE: 'LossInvestigationFinding.soft_delete',
+  LOSSINVESTIGATIONFINDING_RESTORE: 'LossInvestigationFinding.restore',
+  MITIGATIONACTION_READ: 'MitigationAction.read',
+  MITIGATIONACTION_CREATE: 'MitigationAction.create',
+  MITIGATIONACTION_UPDATE: 'MitigationAction.update',
+  MITIGATIONACTION_SOFT_DELETE: 'MitigationAction.soft_delete',
+  MITIGATIONACTION_RESTORE: 'MitigationAction.restore',
+  MITIGATIONACTION_IMPLEMENT: 'MitigationAction.implement',
+  RISKFACTOR_READ: 'RiskFactor.read',
+  RISKFACTOR_CREATE: 'RiskFactor.create',
+  RISKFACTOR_UPDATE: 'RiskFactor.update',
+  RISKFACTOR_SOFT_DELETE: 'RiskFactor.soft_delete',
+  RISKFACTOR_RESTORE: 'RiskFactor.restore',
+  RISKFACTOR_ASSESS: 'RiskFactor.assess',
+  SCHEDULERISK_READ: 'ScheduleRisk.read',
+  SCHEDULERISK_CREATE: 'ScheduleRisk.create',
+  SCHEDULERISK_UPDATE: 'ScheduleRisk.update',
+  SCHEDULERISK_SOFT_DELETE: 'ScheduleRisk.soft_delete',
+  SCHEDULERISK_RESTORE: 'ScheduleRisk.restore',
+  ANOMALYCASE_READ: 'AnomalyCase.read',
+  ANOMALYCASE_CREATE: 'AnomalyCase.create',
+  ANOMALYCASE_UPDATE: 'AnomalyCase.update',
+  ANOMALYCASE_SOFT_DELETE: 'AnomalyCase.soft_delete',
+  ANOMALYCASE_RESTORE: 'AnomalyCase.restore',
+  ANOMALYCASE_INVESTIGATE: 'AnomalyCase.investigate',
+  ANOMALYCASEACTION_READ: 'AnomalyCaseAction.read',
+  ANOMALYCASEACTION_CREATE: 'AnomalyCaseAction.create',
+  ANOMALYCASEACTION_UPDATE: 'AnomalyCaseAction.update',
+  ANOMALYCASEACTION_EXECUTE: 'AnomalyCaseAction.execute',
+  ANOMALYSIGNAL_READ: 'AnomalySignal.read',
+  ANOMALYSIGNAL_CREATE: 'AnomalySignal.create',
+  ANOMALYSIGNAL_UPDATE: 'AnomalySignal.update',
+  ANOMALYSIGNALFEATURE_READ: 'AnomalySignalFeature.read',
+  ANOMALYSIGNALFEATURE_CREATE: 'AnomalySignalFeature.create',
+  ANOMALYSIGNALFEATURE_UPDATE: 'AnomalySignalFeature.update',
 
   // ============================================================================
   // APPROVAL_WORKFLOWS
   // ============================================================================
-  APPROVALREQUEST_READ: "ApprovalRequest.read",
-  APPROVALREQUEST_CREATE: "ApprovalRequest.create",
-  APPROVALREQUEST_UPDATE: "ApprovalRequest.update",
-  APPROVALREQUEST_SOFT_DELETE: "ApprovalRequest.soft_delete",
-  APPROVALREQUEST_RESTORE: "ApprovalRequest.restore",
-  APPROVALREQUEST_SUBMIT: "ApprovalRequest.submit",
-  APPROVALREQUEST_APPROVE: "ApprovalRequest.approve",
-  APPROVALREQUEST_REJECT: "ApprovalRequest.reject",
-  APPROVALDECISION_READ: "ApprovalDecision.read",
-  APPROVALDECISION_CREATE: "ApprovalDecision.create",
-  APPROVALDECISION_UPDATE: "ApprovalDecision.update",
-  APPROVALDECISION_SOFT_DELETE: "ApprovalDecision.soft_delete",
-  APPROVALDECISION_RESTORE: "ApprovalDecision.restore",
-  APPROVALRULE_READ: "ApprovalRule.read",
-  APPROVALRULE_CREATE: "ApprovalRule.create",
-  APPROVALRULE_UPDATE: "ApprovalRule.update",
-  APPROVALRULE_SOFT_DELETE: "ApprovalRule.soft_delete",
-  APPROVALRULE_RESTORE: "ApprovalRule.restore",
-  APPROVALRULE_ACTIVATE: "ApprovalRule.activate",
-  APPROVALRULE_DEACTIVATE: "ApprovalRule.deactivate",
+  APPROVALREQUEST_READ: 'ApprovalRequest.read',
+  APPROVALREQUEST_CREATE: 'ApprovalRequest.create',
+  APPROVALREQUEST_UPDATE: 'ApprovalRequest.update',
+  APPROVALREQUEST_SOFT_DELETE: 'ApprovalRequest.soft_delete',
+  APPROVALREQUEST_RESTORE: 'ApprovalRequest.restore',
+  APPROVALREQUEST_SUBMIT: 'ApprovalRequest.submit',
+  APPROVALREQUEST_APPROVE: 'ApprovalRequest.approve',
+  APPROVALREQUEST_REJECT: 'ApprovalRequest.reject',
+  APPROVALDECISION_READ: 'ApprovalDecision.read',
+  APPROVALDECISION_CREATE: 'ApprovalDecision.create',
+  APPROVALDECISION_UPDATE: 'ApprovalDecision.update',
+  APPROVALDECISION_SOFT_DELETE: 'ApprovalDecision.soft_delete',
+  APPROVALDECISION_RESTORE: 'ApprovalDecision.restore',
+  APPROVALRULE_READ: 'ApprovalRule.read',
+  APPROVALRULE_CREATE: 'ApprovalRule.create',
+  APPROVALRULE_UPDATE: 'ApprovalRule.update',
+  APPROVALRULE_SOFT_DELETE: 'ApprovalRule.soft_delete',
+  APPROVALRULE_RESTORE: 'ApprovalRule.restore',
+  APPROVALRULE_ACTIVATE: 'ApprovalRule.activate',
+  APPROVALRULE_DEACTIVATE: 'ApprovalRule.deactivate',
 
   // ============================================================================
   // SYSTEM_OPERATIONS
   // ============================================================================
-  JOBRUN_READ: "JobRun.read",
-  JOBRUN_CREATE: "JobRun.create",
-  JOBRUN_UPDATE: "JobRun.update",
-  JOBRUN_SOFT_DELETE: "JobRun.soft_delete",
-  JOBRUN_RESTORE: "JobRun.restore",
-  JOBSCHEDULE_READ: "JobSchedule.read",
-  JOBSCHEDULE_CREATE: "JobSchedule.create",
-  JOBSCHEDULE_UPDATE: "JobSchedule.update",
-  JOBSCHEDULE_ACTIVATE: "JobSchedule.activate",
-  JOBSCHEDULE_DEACTIVATE: "JobSchedule.deactivate",
-  JOBFAMILY_READ: "JobFamily.read",
-  JOBFAMILY_CREATE: "JobFamily.create",
-  JOBFAMILY_UPDATE: "JobFamily.update",
-  JOBFAMILY_SOFT_DELETE: "JobFamily.soft_delete",
-  JOBFAMILY_RESTORE: "JobFamily.restore",
-  JOBPROFILE_READ: "JobProfile.read",
-  JOBPROFILE_CREATE: "JobProfile.create",
-  JOBPROFILE_UPDATE: "JobProfile.update",
-  JOBPROFILE_SOFT_DELETE: "JobProfile.soft_delete",
-  JOBPROFILE_RESTORE: "JobProfile.restore",
-  JOBPROFILEASSIGNMENT_READ: "JobProfileAssignment.read",
-  JOBPROFILEASSIGNMENT_CREATE: "JobProfileAssignment.create",
-  JOBPROFILEASSIGNMENT_UPDATE: "JobProfileAssignment.update",
-  JOBPROFILEASSIGNMENT_ASSIGN: "JobProfileAssignment.assign",
-  JOBPROFILEASSIGNMENT_UNASSIGN: "JobProfileAssignment.unassign",
-  DISTRIBUTEDLOCK_READ: "DistributedLock.read",
-  DISTRIBUTEDLOCK_CREATE: "DistributedLock.create",
-  DISTRIBUTEDLOCK_UPDATE: "DistributedLock.update",
-  NUMBERSEQUENCE_READ: "NumberSequence.read",
-  NUMBERSEQUENCE_CREATE: "NumberSequence.create",
-  NUMBERSEQUENCE_UPDATE: "NumberSequence.update",
-  WEATHER_ALERTS_READ: "weather_alerts.read",
-  WEATHER_ALERTS_CREATE: "weather_alerts.create",
-  WEATHER_ALERTS_UPDATE: "weather_alerts.update",
-  WEATHER_ALERTS_ACTIVATE: "weather_alerts.activate",
-  WEATHER_ALERTS_DEACTIVATE: "weather_alerts.deactivate",
-  WEATHER_WATCHES_READ: "weather_watches.read",
-  WEATHER_WATCHES_CREATE: "weather_watches.create",
-  WEATHER_WATCHES_UPDATE: "weather_watches.update",
-  WEATHER_INCIDENTS_READ: "weather_incidents.read",
-  WEATHER_INCIDENTS_CREATE: "weather_incidents.create",
-  WEATHER_INCIDENTS_UPDATE: "weather_incidents.update",
-  WEATHER_INCIDENTS_RESOLVE: "weather_incidents.resolve",
-  WEATHER_ALERT_DELIVERIES_READ: "weather_alert_deliveries.read",
-  WEATHER_ALERT_DELIVERIES_CREATE: "weather_alert_deliveries.create",
-  WEATHER_ALERT_DELIVERIES_UPDATE: "weather_alert_deliveries.update",
-  WEATHER_FORECAST_CACHE_READ: "weather_forecast_cache.read",
-  WEATHER_FORECAST_CACHE_CREATE: "weather_forecast_cache.create",
-  WEATHER_FORECAST_CACHE_UPDATE: "weather_forecast_cache.update",
-  WEATHER_PROVIDERS_READ: "weather_providers.read",
-  WEATHER_PROVIDERS_CREATE: "weather_providers.create",
-  WEATHER_PROVIDERS_UPDATE: "weather_providers.update",
-  WEATHER_PROVIDERS_ACTIVATE: "weather_providers.activate",
-  WEATHER_PROVIDERS_DEACTIVATE: "weather_providers.deactivate",
-  WEATHER_RISK_FACTORS_READ: "weather_risk_factors.read",
-  WEATHER_RISK_FACTORS_CREATE: "weather_risk_factors.create",
-  WEATHER_RISK_FACTORS_UPDATE: "weather_risk_factors.update",
-  WEATHER_RISK_FACTORS_ACTIVATE: "weather_risk_factors.activate",
-  WEATHER_RISK_FACTORS_DEACTIVATE: "weather_risk_factors.deactivate",
+  JOBRUN_READ: 'JobRun.read',
+  JOBRUN_CREATE: 'JobRun.create',
+  JOBRUN_UPDATE: 'JobRun.update',
+  JOBRUN_SOFT_DELETE: 'JobRun.soft_delete',
+  JOBRUN_RESTORE: 'JobRun.restore',
+  JOBSCHEDULE_READ: 'JobSchedule.read',
+  JOBSCHEDULE_CREATE: 'JobSchedule.create',
+  JOBSCHEDULE_UPDATE: 'JobSchedule.update',
+  JOBSCHEDULE_ACTIVATE: 'JobSchedule.activate',
+  JOBSCHEDULE_DEACTIVATE: 'JobSchedule.deactivate',
+  JOBFAMILY_READ: 'JobFamily.read',
+  JOBFAMILY_CREATE: 'JobFamily.create',
+  JOBFAMILY_UPDATE: 'JobFamily.update',
+  JOBFAMILY_SOFT_DELETE: 'JobFamily.soft_delete',
+  JOBFAMILY_RESTORE: 'JobFamily.restore',
+  JOBPROFILE_READ: 'JobProfile.read',
+  JOBPROFILE_CREATE: 'JobProfile.create',
+  JOBPROFILE_UPDATE: 'JobProfile.update',
+  JOBPROFILE_SOFT_DELETE: 'JobProfile.soft_delete',
+  JOBPROFILE_RESTORE: 'JobProfile.restore',
+  JOBPROFILEASSIGNMENT_READ: 'JobProfileAssignment.read',
+  JOBPROFILEASSIGNMENT_CREATE: 'JobProfileAssignment.create',
+  JOBPROFILEASSIGNMENT_UPDATE: 'JobProfileAssignment.update',
+  JOBPROFILEASSIGNMENT_ASSIGN: 'JobProfileAssignment.assign',
+  JOBPROFILEASSIGNMENT_UNASSIGN: 'JobProfileAssignment.unassign',
+  DISTRIBUTEDLOCK_READ: 'DistributedLock.read',
+  DISTRIBUTEDLOCK_CREATE: 'DistributedLock.create',
+  DISTRIBUTEDLOCK_UPDATE: 'DistributedLock.update',
+  NUMBERSEQUENCE_READ: 'NumberSequence.read',
+  NUMBERSEQUENCE_CREATE: 'NumberSequence.create',
+  NUMBERSEQUENCE_UPDATE: 'NumberSequence.update',
+  WEATHER_ALERTS_READ: 'weather_alerts.read',
+  WEATHER_ALERTS_CREATE: 'weather_alerts.create',
+  WEATHER_ALERTS_UPDATE: 'weather_alerts.update',
+  WEATHER_ALERTS_ACTIVATE: 'weather_alerts.activate',
+  WEATHER_ALERTS_DEACTIVATE: 'weather_alerts.deactivate',
+  WEATHER_WATCHES_READ: 'weather_watches.read',
+  WEATHER_WATCHES_CREATE: 'weather_watches.create',
+  WEATHER_WATCHES_UPDATE: 'weather_watches.update',
+  WEATHER_INCIDENTS_READ: 'weather_incidents.read',
+  WEATHER_INCIDENTS_CREATE: 'weather_incidents.create',
+  WEATHER_INCIDENTS_UPDATE: 'weather_incidents.update',
+  WEATHER_INCIDENTS_RESOLVE: 'weather_incidents.resolve',
+  WEATHER_ALERT_DELIVERIES_READ: 'weather_alert_deliveries.read',
+  WEATHER_ALERT_DELIVERIES_CREATE: 'weather_alert_deliveries.create',
+  WEATHER_ALERT_DELIVERIES_UPDATE: 'weather_alert_deliveries.update',
+  WEATHER_FORECAST_CACHE_READ: 'weather_forecast_cache.read',
+  WEATHER_FORECAST_CACHE_CREATE: 'weather_forecast_cache.create',
+  WEATHER_FORECAST_CACHE_UPDATE: 'weather_forecast_cache.update',
+  WEATHER_PROVIDERS_READ: 'weather_providers.read',
+  WEATHER_PROVIDERS_CREATE: 'weather_providers.create',
+  WEATHER_PROVIDERS_UPDATE: 'weather_providers.update',
+  WEATHER_PROVIDERS_ACTIVATE: 'weather_providers.activate',
+  WEATHER_PROVIDERS_DEACTIVATE: 'weather_providers.deactivate',
+  WEATHER_RISK_FACTORS_READ: 'weather_risk_factors.read',
+  WEATHER_RISK_FACTORS_CREATE: 'weather_risk_factors.create',
+  WEATHER_RISK_FACTORS_UPDATE: 'weather_risk_factors.update',
+  WEATHER_RISK_FACTORS_ACTIVATE: 'weather_risk_factors.activate',
+  WEATHER_RISK_FACTORS_DEACTIVATE: 'weather_risk_factors.deactivate',
 
   // ============================================================================
   // INTEGRATIONS_WEBHOOKS
   // ============================================================================
-  WEBHOOK_READ: "Webhook.read",
-  WEBHOOK_CREATE: "Webhook.create",
-  WEBHOOK_UPDATE: "Webhook.update",
-  WEBHOOK_SOFT_DELETE: "Webhook.soft_delete",
-  WEBHOOK_RESTORE: "Webhook.restore",
-  WEBHOOK_ACTIVATE: "Webhook.activate",
-  WEBHOOK_DEACTIVATE: "Webhook.deactivate",
-  WEBHOOKENDPOINT_READ: "WebhookEndpoint.read",
-  WEBHOOKENDPOINT_CREATE: "WebhookEndpoint.create",
-  WEBHOOKENDPOINT_UPDATE: "WebhookEndpoint.update",
-  WEBHOOKENDPOINT_SOFT_DELETE: "WebhookEndpoint.soft_delete",
-  WEBHOOKENDPOINT_RESTORE: "WebhookEndpoint.restore",
-  WEBHOOKDELIVERY_READ: "WebhookDelivery.read",
-  WEBHOOKDELIVERY_CREATE: "WebhookDelivery.create",
-  WEBHOOKDELIVERY_UPDATE: "WebhookDelivery.update",
-  WEBHOOKDELIVERY_SOFT_DELETE: "WebhookDelivery.soft_delete",
-  WEBHOOKDELIVERY_RESTORE: "WebhookDelivery.restore",
-  WEBHOOKEVENT_READ: "WebhookEvent.read",
-  WEBHOOKEVENT_CREATE: "WebhookEvent.create",
-  WEBHOOKEVENT_UPDATE: "WebhookEvent.update",
-  WEBHOOKEVENT_SOFT_DELETE: "WebhookEvent.soft_delete",
-  WEBHOOKEVENT_RESTORE: "WebhookEvent.restore",
-  WEBHOOKLOG_READ: "WebhookLog.read",
-  WEBHOOKLOG_CREATE: "WebhookLog.create",
-  WEBHOOKLOG_UPDATE: "WebhookLog.update",
-  WEBHOOKLOG_SOFT_DELETE: "WebhookLog.soft_delete",
-  WEBHOOKLOG_RESTORE: "WebhookLog.restore",
-  INTEGRATIONCONNECTION_READ: "IntegrationConnection.read",
-  INTEGRATIONCONNECTION_CREATE: "IntegrationConnection.create",
-  INTEGRATIONCONNECTION_UPDATE: "IntegrationConnection.update",
-  INTEGRATIONCONNECTION_SOFT_DELETE: "IntegrationConnection.soft_delete",
-  INTEGRATIONCONNECTION_RESTORE: "IntegrationConnection.restore",
-  INTEGRATIONCONNECTION_ACTIVATE: "IntegrationConnection.activate",
-  INTEGRATIONCONNECTION_DEACTIVATE: "IntegrationConnection.deactivate",
-  INTEGRATIONCONNECTOR_READ: "IntegrationConnector.read",
-  INTEGRATIONCONNECTOR_CREATE: "IntegrationConnector.create",
-  INTEGRATIONCONNECTOR_UPDATE: "IntegrationConnector.update",
-  INTEGRATIONCONNECTOR_SOFT_DELETE: "IntegrationConnector.soft_delete",
-  INTEGRATIONCONNECTOR_RESTORE: "IntegrationConnector.restore",
-  INTEGRATIONMAPPING_READ: "IntegrationMapping.read",
-  INTEGRATIONMAPPING_CREATE: "IntegrationMapping.create",
-  INTEGRATIONMAPPING_UPDATE: "IntegrationMapping.update",
-  INTEGRATIONMAPPING_SOFT_DELETE: "IntegrationMapping.soft_delete",
-  INTEGRATIONMAPPING_RESTORE: "IntegrationMapping.restore",
-  INTEGRATIONPROVIDER_READ: "IntegrationProvider.read",
-  INTEGRATIONPROVIDER_CREATE: "IntegrationProvider.create",
-  INTEGRATIONPROVIDER_UPDATE: "IntegrationProvider.update",
-  INTEGRATIONPROVIDER_SOFT_DELETE: "IntegrationProvider.soft_delete",
-  INTEGRATIONPROVIDER_RESTORE: "IntegrationProvider.restore",
-  INTEGRATIONSECRET_READ: "IntegrationSecret.read",
-  INTEGRATIONSECRET_CREATE: "IntegrationSecret.create",
-  INTEGRATIONSECRET_UPDATE: "IntegrationSecret.update",
-  INTEGRATIONSECRET_SOFT_DELETE: "IntegrationSecret.soft_delete",
-  INTEGRATIONSECRET_RESTORE: "IntegrationSecret.restore",
-  SYNCJOB_READ: "SyncJob.read",
-  SYNCJOB_CREATE: "SyncJob.create",
-  SYNCJOB_UPDATE: "SyncJob.update",
-  SYNCJOB_SOFT_DELETE: "SyncJob.soft_delete",
-  SYNCJOB_RESTORE: "SyncJob.restore",
-  SYNCLOG_READ: "SyncLog.read",
-  SYNCLOG_CREATE: "SyncLog.create",
-  SYNCLOG_UPDATE: "SyncLog.update",
-  SYNCLOG_SOFT_DELETE: "SyncLog.soft_delete",
-  SYNCLOG_RESTORE: "SyncLog.restore",
-  SYNCSTATE_READ: "SyncState.read",
-  SYNCSTATE_CREATE: "SyncState.create",
-  SYNCSTATE_UPDATE: "SyncState.update",
-  SYNCSTATE_SOFT_DELETE: "SyncState.soft_delete",
-  SYNCSTATE_RESTORE: "SyncState.restore",
+  WEBHOOK_READ: 'Webhook.read',
+  WEBHOOK_CREATE: 'Webhook.create',
+  WEBHOOK_UPDATE: 'Webhook.update',
+  WEBHOOK_SOFT_DELETE: 'Webhook.soft_delete',
+  WEBHOOK_RESTORE: 'Webhook.restore',
+  WEBHOOK_ACTIVATE: 'Webhook.activate',
+  WEBHOOK_DEACTIVATE: 'Webhook.deactivate',
+  WEBHOOKENDPOINT_READ: 'WebhookEndpoint.read',
+  WEBHOOKENDPOINT_CREATE: 'WebhookEndpoint.create',
+  WEBHOOKENDPOINT_UPDATE: 'WebhookEndpoint.update',
+  WEBHOOKENDPOINT_SOFT_DELETE: 'WebhookEndpoint.soft_delete',
+  WEBHOOKENDPOINT_RESTORE: 'WebhookEndpoint.restore',
+  WEBHOOKDELIVERY_READ: 'WebhookDelivery.read',
+  WEBHOOKDELIVERY_CREATE: 'WebhookDelivery.create',
+  WEBHOOKDELIVERY_UPDATE: 'WebhookDelivery.update',
+  WEBHOOKDELIVERY_SOFT_DELETE: 'WebhookDelivery.soft_delete',
+  WEBHOOKDELIVERY_RESTORE: 'WebhookDelivery.restore',
+  WEBHOOKEVENT_READ: 'WebhookEvent.read',
+  WEBHOOKEVENT_CREATE: 'WebhookEvent.create',
+  WEBHOOKEVENT_UPDATE: 'WebhookEvent.update',
+  WEBHOOKEVENT_SOFT_DELETE: 'WebhookEvent.soft_delete',
+  WEBHOOKEVENT_RESTORE: 'WebhookEvent.restore',
+  WEBHOOKLOG_READ: 'WebhookLog.read',
+  WEBHOOKLOG_CREATE: 'WebhookLog.create',
+  WEBHOOKLOG_UPDATE: 'WebhookLog.update',
+  WEBHOOKLOG_SOFT_DELETE: 'WebhookLog.soft_delete',
+  WEBHOOKLOG_RESTORE: 'WebhookLog.restore',
+  INTEGRATIONCONNECTION_READ: 'IntegrationConnection.read',
+  INTEGRATIONCONNECTION_CREATE: 'IntegrationConnection.create',
+  INTEGRATIONCONNECTION_UPDATE: 'IntegrationConnection.update',
+  INTEGRATIONCONNECTION_SOFT_DELETE: 'IntegrationConnection.soft_delete',
+  INTEGRATIONCONNECTION_RESTORE: 'IntegrationConnection.restore',
+  INTEGRATIONCONNECTION_ACTIVATE: 'IntegrationConnection.activate',
+  INTEGRATIONCONNECTION_DEACTIVATE: 'IntegrationConnection.deactivate',
+  INTEGRATIONCONNECTOR_READ: 'IntegrationConnector.read',
+  INTEGRATIONCONNECTOR_CREATE: 'IntegrationConnector.create',
+  INTEGRATIONCONNECTOR_UPDATE: 'IntegrationConnector.update',
+  INTEGRATIONCONNECTOR_SOFT_DELETE: 'IntegrationConnector.soft_delete',
+  INTEGRATIONCONNECTOR_RESTORE: 'IntegrationConnector.restore',
+  INTEGRATIONMAPPING_READ: 'IntegrationMapping.read',
+  INTEGRATIONMAPPING_CREATE: 'IntegrationMapping.create',
+  INTEGRATIONMAPPING_UPDATE: 'IntegrationMapping.update',
+  INTEGRATIONMAPPING_SOFT_DELETE: 'IntegrationMapping.soft_delete',
+  INTEGRATIONMAPPING_RESTORE: 'IntegrationMapping.restore',
+  INTEGRATIONPROVIDER_READ: 'IntegrationProvider.read',
+  INTEGRATIONPROVIDER_CREATE: 'IntegrationProvider.create',
+  INTEGRATIONPROVIDER_UPDATE: 'IntegrationProvider.update',
+  INTEGRATIONPROVIDER_SOFT_DELETE: 'IntegrationProvider.soft_delete',
+  INTEGRATIONPROVIDER_RESTORE: 'IntegrationProvider.restore',
+  INTEGRATIONSECRET_READ: 'IntegrationSecret.read',
+  INTEGRATIONSECRET_CREATE: 'IntegrationSecret.create',
+  INTEGRATIONSECRET_UPDATE: 'IntegrationSecret.update',
+  INTEGRATIONSECRET_SOFT_DELETE: 'IntegrationSecret.soft_delete',
+  INTEGRATIONSECRET_RESTORE: 'IntegrationSecret.restore',
+  SYNCJOB_READ: 'SyncJob.read',
+  SYNCJOB_CREATE: 'SyncJob.create',
+  SYNCJOB_UPDATE: 'SyncJob.update',
+  SYNCJOB_SOFT_DELETE: 'SyncJob.soft_delete',
+  SYNCJOB_RESTORE: 'SyncJob.restore',
+  SYNCLOG_READ: 'SyncLog.read',
+  SYNCLOG_CREATE: 'SyncLog.create',
+  SYNCLOG_UPDATE: 'SyncLog.update',
+  SYNCLOG_SOFT_DELETE: 'SyncLog.soft_delete',
+  SYNCLOG_RESTORE: 'SyncLog.restore',
+  SYNCSTATE_READ: 'SyncState.read',
+  SYNCSTATE_CREATE: 'SyncState.create',
+  SYNCSTATE_UPDATE: 'SyncState.update',
+  SYNCSTATE_SOFT_DELETE: 'SyncState.soft_delete',
+  SYNCSTATE_RESTORE: 'SyncState.restore',
 
   // ============================================================================
   // SYSTEM_CONFIG
   // ============================================================================
-  LOCATION_READ: "Location.read",
-  LOCATION_CREATE: "Location.create",
-  LOCATION_UPDATE: "Location.update",
-  LOCATION_SOFT_DELETE: "Location.soft_delete",
-  LOCATION_RESTORE: "Location.restore",
-  COUNTRY_READ: "Country.read",
-  COUNTRY_CREATE: "Country.create",
-  COUNTRY_UPDATE: "Country.update",
-  COUNTRY_SOFT_DELETE: "Country.soft_delete",
-  COUNTRY_RESTORE: "Country.restore",
-  REGION_READ: "Region.read",
-  REGION_CREATE: "Region.create",
-  REGION_UPDATE: "Region.update",
-  REGION_SOFT_DELETE: "Region.soft_delete",
-  REGION_RESTORE: "Region.restore",
-  STATEPROVINCE_READ: "StateProvince.read",
-  STATEPROVINCE_CREATE: "StateProvince.create",
-  STATEPROVINCE_UPDATE: "StateProvince.update",
-  STATEPROVINCE_SOFT_DELETE: "StateProvince.soft_delete",
-  STATEPROVINCE_RESTORE: "StateProvince.restore",
-  PRICELIST_READ: "PriceList.read",
-  PRICELIST_CREATE: "PriceList.create",
-  PRICELIST_UPDATE: "PriceList.update",
-  PRICELIST_SOFT_DELETE: "PriceList.soft_delete",
-  PRICELIST_RESTORE: "PriceList.restore",
-  PRICELIST_ACTIVATE: "PriceList.activate",
-  PRICELIST_DEACTIVATE: "PriceList.deactivate",
-  PRICELISTITEM_READ: "PriceListItem.read",
-  PRICELISTITEM_CREATE: "PriceListItem.create",
-  PRICELISTITEM_UPDATE: "PriceListItem.update",
-  PRICELISTITEM_SOFT_DELETE: "PriceListItem.soft_delete",
-  PRICELISTITEM_RESTORE: "PriceListItem.restore",
-  COSTCENTER_READ: "CostCenter.read",
-  COSTCENTER_CREATE: "CostCenter.create",
-  COSTCENTER_UPDATE: "CostCenter.update",
-  COSTCENTER_SOFT_DELETE: "CostCenter.soft_delete",
-  COSTCENTER_RESTORE: "CostCenter.restore",
-  COSTCATEGORY_READ: "CostCategory.read",
-  COSTCATEGORY_CREATE: "CostCategory.create",
-  COSTCATEGORY_UPDATE: "CostCategory.update",
-  COSTCATEGORY_SOFT_DELETE: "CostCategory.soft_delete",
-  COSTCATEGORY_RESTORE: "CostCategory.restore",
-  COSTCODE_READ: "CostCode.read",
-  COSTCODE_CREATE: "CostCode.create",
-  COSTCODE_UPDATE: "CostCode.update",
-  COSTCODE_SOFT_DELETE: "CostCode.soft_delete",
-  COSTCODE_RESTORE: "CostCode.restore",
-  UNITOFMEASURE_READ: "UnitOfMeasure.read",
-  UNITOFMEASURE_CREATE: "UnitOfMeasure.create",
-  UNITOFMEASURE_UPDATE: "UnitOfMeasure.update",
-  UNITOFMEASURE_SOFT_DELETE: "UnitOfMeasure.soft_delete",
-  UNITOFMEASURE_RESTORE: "UnitOfMeasure.restore",
-  WORKTYPE_READ: "WorkType.read",
-  WORKTYPE_CREATE: "WorkType.create",
-  WORKTYPE_UPDATE: "WorkType.update",
-  WORKTYPE_SOFT_DELETE: "WorkType.soft_delete",
-  WORKTYPE_RESTORE: "WorkType.restore",
+  LOCATION_READ: 'Location.read',
+  LOCATION_CREATE: 'Location.create',
+  LOCATION_UPDATE: 'Location.update',
+  LOCATION_SOFT_DELETE: 'Location.soft_delete',
+  LOCATION_RESTORE: 'Location.restore',
+  COUNTRY_READ: 'Country.read',
+  COUNTRY_CREATE: 'Country.create',
+  COUNTRY_UPDATE: 'Country.update',
+  COUNTRY_SOFT_DELETE: 'Country.soft_delete',
+  COUNTRY_RESTORE: 'Country.restore',
+  REGION_READ: 'Region.read',
+  REGION_CREATE: 'Region.create',
+  REGION_UPDATE: 'Region.update',
+  REGION_SOFT_DELETE: 'Region.soft_delete',
+  REGION_RESTORE: 'Region.restore',
+  STATEPROVINCE_READ: 'StateProvince.read',
+  STATEPROVINCE_CREATE: 'StateProvince.create',
+  STATEPROVINCE_UPDATE: 'StateProvince.update',
+  STATEPROVINCE_SOFT_DELETE: 'StateProvince.soft_delete',
+  STATEPROVINCE_RESTORE: 'StateProvince.restore',
+  PRICELIST_READ: 'PriceList.read',
+  PRICELIST_CREATE: 'PriceList.create',
+  PRICELIST_UPDATE: 'PriceList.update',
+  PRICELIST_SOFT_DELETE: 'PriceList.soft_delete',
+  PRICELIST_RESTORE: 'PriceList.restore',
+  PRICELIST_ACTIVATE: 'PriceList.activate',
+  PRICELIST_DEACTIVATE: 'PriceList.deactivate',
+  PRICELISTITEM_READ: 'PriceListItem.read',
+  PRICELISTITEM_CREATE: 'PriceListItem.create',
+  PRICELISTITEM_UPDATE: 'PriceListItem.update',
+  PRICELISTITEM_SOFT_DELETE: 'PriceListItem.soft_delete',
+  PRICELISTITEM_RESTORE: 'PriceListItem.restore',
+  COSTCENTER_READ: 'CostCenter.read',
+  COSTCENTER_CREATE: 'CostCenter.create',
+  COSTCENTER_UPDATE: 'CostCenter.update',
+  COSTCENTER_SOFT_DELETE: 'CostCenter.soft_delete',
+  COSTCENTER_RESTORE: 'CostCenter.restore',
+  COSTCATEGORY_READ: 'CostCategory.read',
+  COSTCATEGORY_CREATE: 'CostCategory.create',
+  COSTCATEGORY_UPDATE: 'CostCategory.update',
+  COSTCATEGORY_SOFT_DELETE: 'CostCategory.soft_delete',
+  COSTCATEGORY_RESTORE: 'CostCategory.restore',
+  COSTCODE_READ: 'CostCode.read',
+  COSTCODE_CREATE: 'CostCode.create',
+  COSTCODE_UPDATE: 'CostCode.update',
+  COSTCODE_SOFT_DELETE: 'CostCode.soft_delete',
+  COSTCODE_RESTORE: 'CostCode.restore',
+  UNITOFMEASURE_READ: 'UnitOfMeasure.read',
+  UNITOFMEASURE_CREATE: 'UnitOfMeasure.create',
+  UNITOFMEASURE_UPDATE: 'UnitOfMeasure.update',
+  UNITOFMEASURE_SOFT_DELETE: 'UnitOfMeasure.soft_delete',
+  UNITOFMEASURE_RESTORE: 'UnitOfMeasure.restore',
+  WORKTYPE_READ: 'WorkType.read',
+  WORKTYPE_CREATE: 'WorkType.create',
+  WORKTYPE_UPDATE: 'WorkType.update',
+  WORKTYPE_SOFT_DELETE: 'WorkType.soft_delete',
+  WORKTYPE_RESTORE: 'WorkType.restore',
 
   // ============================================================================
   // AUDIT_COMPLIANCE
   // ============================================================================
-  TENANTAUDITLOG_READ: "TenantAuditLog.read",
-  TENANTAUDITLOG_EXPORT: "TenantAuditLog.export",
-  DATARETENTIONPOLICY_READ: "DataRetentionPolicy.read",
-  DATARETENTIONPOLICY_CREATE: "DataRetentionPolicy.create",
-  DATARETENTIONPOLICY_UPDATE: "DataRetentionPolicy.update",
-  DATARETENTIONPOLICY_SOFT_DELETE: "DataRetentionPolicy.soft_delete",
-  DATARETENTIONPOLICY_RESTORE: "DataRetentionPolicy.restore",
-  DATARETENTIONPOLICY_ACTIVATE: "DataRetentionPolicy.activate",
-  DATARETENTIONPOLICY_DEACTIVATE: "DataRetentionPolicy.deactivate",
-  ERRORREPORT_READ: "ErrorReport.read",
-  ERRORREPORT_CREATE: "ErrorReport.create",
-  ERRORREPORT_UPDATE: "ErrorReport.update",
-  ERRORREPORT_SOFT_DELETE: "ErrorReport.soft_delete",
-  ERRORREPORT_RESTORE: "ErrorReport.restore",
-  SYSTEMLOG_READ: "SystemLog.read",
-  SYSTEMLOG_CREATE: "SystemLog.create",
-  SYSTEMLOG_UPDATE: "SystemLog.update",
-  SYSTEMLOG_SOFT_DELETE: "SystemLog.soft_delete",
-  SYSTEMLOG_RESTORE: "SystemLog.restore",
+  TENANTAUDITLOG_READ: 'TenantAuditLog.read',
+  TENANTAUDITLOG_EXPORT: 'TenantAuditLog.export',
+  DATARETENTIONPOLICY_READ: 'DataRetentionPolicy.read',
+  DATARETENTIONPOLICY_CREATE: 'DataRetentionPolicy.create',
+  DATARETENTIONPOLICY_UPDATE: 'DataRetentionPolicy.update',
+  DATARETENTIONPOLICY_SOFT_DELETE: 'DataRetentionPolicy.soft_delete',
+  DATARETENTIONPOLICY_RESTORE: 'DataRetentionPolicy.restore',
+  DATARETENTIONPOLICY_ACTIVATE: 'DataRetentionPolicy.activate',
+  DATARETENTIONPOLICY_DEACTIVATE: 'DataRetentionPolicy.deactivate',
+  ERRORREPORT_READ: 'ErrorReport.read',
+  ERRORREPORT_CREATE: 'ErrorReport.create',
+  ERRORREPORT_UPDATE: 'ErrorReport.update',
+  ERRORREPORT_SOFT_DELETE: 'ErrorReport.soft_delete',
+  ERRORREPORT_RESTORE: 'ErrorReport.restore',
+  SYSTEMLOG_READ: 'SystemLog.read',
+  SYSTEMLOG_CREATE: 'SystemLog.create',
+  SYSTEMLOG_UPDATE: 'SystemLog.update',
+  SYSTEMLOG_SOFT_DELETE: 'SystemLog.soft_delete',
+  SYSTEMLOG_RESTORE: 'SystemLog.restore',
 
   // ============================================================================
   // DATA_EXPORT_REPORTING
   // ============================================================================
-  EXPORTJOB_READ: "ExportJob.read",
-  EXPORTJOB_CREATE: "ExportJob.create",
-  EXPORTJOB_UPDATE: "ExportJob.update",
-  EXPORTJOB_SOFT_DELETE: "ExportJob.soft_delete",
-  EXPORTJOB_RESTORE: "ExportJob.restore",
-  EXPORTARTIFACT_READ: "ExportArtifact.read",
-  EXPORTARTIFACT_CREATE: "ExportArtifact.create",
-  EXPORTARTIFACT_UPDATE: "ExportArtifact.update",
-  EXPORTARTIFACT_SOFT_DELETE: "ExportArtifact.soft_delete",
-  EXPORTARTIFACT_RESTORE: "ExportArtifact.restore",
-  REPORTDEFINITION_READ: "ReportDefinition.read",
-  REPORTDEFINITION_CREATE: "ReportDefinition.create",
-  REPORTDEFINITION_UPDATE: "ReportDefinition.update",
-  REPORTDEFINITION_SOFT_DELETE: "ReportDefinition.soft_delete",
-  REPORTDEFINITION_RESTORE: "ReportDefinition.restore",
-  DASHBOARDDEFINITION_READ: "DashboardDefinition.read",
-  DASHBOARDDEFINITION_CREATE: "DashboardDefinition.create",
-  DASHBOARDDEFINITION_UPDATE: "DashboardDefinition.update",
-  DASHBOARDDEFINITION_SOFT_DELETE: "DashboardDefinition.soft_delete",
-  DASHBOARDDEFINITION_RESTORE: "DashboardDefinition.restore",
+  EXPORTJOB_READ: 'ExportJob.read',
+  EXPORTJOB_CREATE: 'ExportJob.create',
+  EXPORTJOB_UPDATE: 'ExportJob.update',
+  EXPORTJOB_SOFT_DELETE: 'ExportJob.soft_delete',
+  EXPORTJOB_RESTORE: 'ExportJob.restore',
+  EXPORTARTIFACT_READ: 'ExportArtifact.read',
+  EXPORTARTIFACT_CREATE: 'ExportArtifact.create',
+  EXPORTARTIFACT_UPDATE: 'ExportArtifact.update',
+  EXPORTARTIFACT_SOFT_DELETE: 'ExportArtifact.soft_delete',
+  EXPORTARTIFACT_RESTORE: 'ExportArtifact.restore',
+  REPORTDEFINITION_READ: 'ReportDefinition.read',
+  REPORTDEFINITION_CREATE: 'ReportDefinition.create',
+  REPORTDEFINITION_UPDATE: 'ReportDefinition.update',
+  REPORTDEFINITION_SOFT_DELETE: 'ReportDefinition.soft_delete',
+  REPORTDEFINITION_RESTORE: 'ReportDefinition.restore',
+  DASHBOARDDEFINITION_READ: 'DashboardDefinition.read',
+  DASHBOARDDEFINITION_CREATE: 'DashboardDefinition.create',
+  DASHBOARDDEFINITION_UPDATE: 'DashboardDefinition.update',
+  DASHBOARDDEFINITION_SOFT_DELETE: 'DashboardDefinition.soft_delete',
+  DASHBOARDDEFINITION_RESTORE: 'DashboardDefinition.restore',
+
 } as const;
 
-export type Permission = (typeof PERMISSIONS)[keyof typeof PERMISSIONS];
+export type Permission = typeof PERMISSIONS[keyof typeof PERMISSIONS];
 
 // ============================================================================
 // Permission Categories
@@ -3602,9034 +3602,8650 @@ export const PERMISSION_CATEGORIES = {
 // ============================================================================
 // Permission Details
 // ============================================================================
-export const PERMISSION_DETAILS: Record<
-  Permission,
-  { name: string; description: string; domain: string }
-> = {
-  "Tenant.read": {
-    name: "View Tenant",
-    description: "View and access tenant records within tenant scope",
-    domain: "tenant_management",
-  },
-  "Tenant.update": {
-    name: "Update Tenant",
-    description: "Modify existing tenant records within tenant scope",
-    domain: "tenant_management",
-  },
-  "Tenant.deactivate": {
-    name: "Deactivate Tenant",
-    description: "Deactivate tenant records within tenant scope",
-    domain: "tenant_management",
-  },
-  "TenantSettings.read": {
-    name: "View Tenant Settings",
-    description: "View and access tenant settings records within tenant scope",
-    domain: "tenant_management",
-  },
-  "TenantSettings.update": {
-    name: "Update Tenant Settings",
-    description: "Modify existing tenant settings records within tenant scope",
-    domain: "tenant_management",
-  },
-  "TenantSettings.activate": {
-    name: "Activate Tenant Settings",
-    description: "Activate tenant settings records within tenant scope",
-    domain: "tenant_management",
-  },
-  "TenantSettings.deactivate": {
-    name: "Deactivate Tenant Settings",
-    description: "Deactivate tenant settings records within tenant scope",
-    domain: "tenant_management",
-  },
-  "TenantMetrics.read": {
-    name: "View Tenant Metrics",
-    description: "View and access tenant metrics records within tenant scope",
-    domain: "tenant_management",
-  },
-  "TenantMetrics.export": {
-    name: "Export Tenant Metrics",
-    description: "Export data for tenant metrics records within tenant scope",
-    domain: "tenant_management",
-  },
-  "TenantFeatureFlag.read": {
-    name: "View Tenant Feature Flag",
-    description:
-      "View and access tenant feature flag records within tenant scope",
-    domain: "tenant_management",
-  },
-  "TenantFeatureFlag.create": {
-    name: "Create Tenant Feature Flag",
-    description: "Create new tenant feature flag records within tenant scope",
-    domain: "tenant_management",
-  },
-  "TenantFeatureFlag.update": {
-    name: "Update Tenant Feature Flag",
-    description:
-      "Modify existing tenant feature flag records within tenant scope",
-    domain: "tenant_management",
-  },
-  "TenantFeatureFlag.activate": {
-    name: "Activate Tenant Feature Flag",
-    description: "Activate tenant feature flag records within tenant scope",
-    domain: "tenant_management",
-  },
-  "TenantFeatureFlag.deactivate": {
-    name: "Deactivate Tenant Feature Flag",
-    description: "Deactivate tenant feature flag records within tenant scope",
-    domain: "tenant_management",
-  },
-  "TenantUsageRecord.read": {
-    name: "View Tenant Usage Record",
-    description:
-      "View and access tenant usage record records within tenant scope",
-    domain: "tenant_management",
-  },
-  "TenantUsageRecord.export": {
-    name: "Export Tenant Usage Record",
-    description:
-      "Export data for tenant usage record records within tenant scope",
-    domain: "tenant_management",
-  },
-  "TenantPriceList.read": {
-    name: "View Tenant Price List",
-    description:
-      "View and access tenant price list records within tenant scope",
-    domain: "tenant_management",
-  },
-  "TenantPriceList.create": {
-    name: "Create Tenant Price List",
-    description: "Create new tenant price list records within tenant scope",
-    domain: "tenant_management",
-  },
-  "TenantPriceList.update": {
-    name: "Update Tenant Price List",
-    description:
-      "Modify existing tenant price list records within tenant scope",
-    domain: "tenant_management",
-  },
-  "TenantPriceList.activate": {
-    name: "Activate Tenant Price List",
-    description: "Activate tenant price list records within tenant scope",
-    domain: "tenant_management",
-  },
-  "TenantPriceList.deactivate": {
-    name: "Deactivate Tenant Price List",
-    description: "Deactivate tenant price list records within tenant scope",
-    domain: "tenant_management",
-  },
-  "TenantPriceOverride.read": {
-    name: "View Tenant Price Override",
-    description:
-      "View and access tenant price override records within tenant scope",
-    domain: "tenant_management",
-  },
-  "TenantPriceOverride.create": {
-    name: "Create Tenant Price Override",
-    description: "Create new tenant price override records within tenant scope",
-    domain: "tenant_management",
-  },
-  "TenantPriceOverride.update": {
-    name: "Update Tenant Price Override",
-    description:
-      "Modify existing tenant price override records within tenant scope",
-    domain: "tenant_management",
-  },
-  "TenantPriceOverride.soft_delete": {
-    name: "Delete Tenant Price Override",
-    description:
-      "Delete (soft) tenant price override records within tenant scope",
-    domain: "tenant_management",
-  },
-  "TenantPriceOverride.restore": {
-    name: "Restore Tenant Price Override",
-    description:
-      "Restore deleted tenant price override records within tenant scope",
-    domain: "tenant_management",
-  },
-  "User.read": {
-    name: "View User",
-    description: "View and access user records within tenant scope",
-    domain: "identity_access",
-  },
-  "User.create": {
-    name: "Create User",
-    description: "Create new user records within tenant scope",
-    domain: "identity_access",
-  },
-  "User.update": {
-    name: "Update User",
-    description: "Modify existing user records within tenant scope",
-    domain: "identity_access",
-  },
-  "User.soft_delete": {
-    name: "Delete User",
-    description: "Delete (soft) user records within tenant scope",
-    domain: "identity_access",
-  },
-  "User.restore": {
-    name: "Restore User",
-    description: "Restore deleted user records within tenant scope",
-    domain: "identity_access",
-  },
-  "User.activate": {
-    name: "Activate User",
-    description: "Activate user records within tenant scope",
-    domain: "identity_access",
-  },
-  "User.deactivate": {
-    name: "Deactivate User",
-    description: "Deactivate user records within tenant scope",
-    domain: "identity_access",
-  },
-  "User.lock": {
-    name: "Lock User",
-    description: "Lock user records within tenant scope",
-    domain: "identity_access",
-  },
-  "User.unlock": {
-    name: "Unlock User",
-    description: "Unlock user records within tenant scope",
-    domain: "identity_access",
-  },
-  "Member.read": {
-    name: "View Member",
-    description: "View and access member records within tenant scope",
-    domain: "identity_access",
-  },
-  "Member.create": {
-    name: "Create Member",
-    description: "Create new member records within tenant scope",
-    domain: "identity_access",
-  },
-  "Member.update": {
-    name: "Update Member",
-    description: "Modify existing member records within tenant scope",
-    domain: "identity_access",
-  },
-  "Member.soft_delete": {
-    name: "Delete Member",
-    description: "Delete (soft) member records within tenant scope",
-    domain: "identity_access",
-  },
-  "Member.restore": {
-    name: "Restore Member",
-    description: "Restore deleted member records within tenant scope",
-    domain: "identity_access",
-  },
-  "Member.assign": {
-    name: "Assign Member",
-    description: "Assign member records within tenant scope",
-    domain: "identity_access",
-  },
-  "Member.unassign": {
-    name: "Unassign Member",
-    description: "Remove assignment of member records within tenant scope",
-    domain: "identity_access",
-  },
-  "Member.transfer": {
-    name: "Transfer Member",
-    description: "Transfer ownership of member records within tenant scope",
-    domain: "identity_access",
-  },
-  "Member.activate": {
-    name: "Activate Member",
-    description: "Activate member records within tenant scope",
-    domain: "identity_access",
-  },
-  "Member.deactivate": {
-    name: "Deactivate Member",
-    description: "Deactivate member records within tenant scope",
-    domain: "identity_access",
-  },
-  "MemberRole.read": {
-    name: "View Member Role",
-    description: "View and access member role records within tenant scope",
-    domain: "identity_access",
-  },
-  "MemberRole.create": {
-    name: "Create Member Role",
-    description: "Create new member role records within tenant scope",
-    domain: "identity_access",
-  },
-  "MemberRole.update": {
-    name: "Update Member Role",
-    description: "Modify existing member role records within tenant scope",
-    domain: "identity_access",
-  },
-  "MemberRole.soft_delete": {
-    name: "Delete Member Role",
-    description: "Delete (soft) member role records within tenant scope",
-    domain: "identity_access",
-  },
-  "MemberRole.restore": {
-    name: "Restore Member Role",
-    description: "Restore deleted member role records within tenant scope",
-    domain: "identity_access",
-  },
-  "MemberRole.assign": {
-    name: "Assign Member Role",
-    description: "Assign member role records within tenant scope",
-    domain: "identity_access",
-  },
-  "MemberRole.unassign": {
-    name: "Unassign Member Role",
-    description: "Remove assignment of member role records within tenant scope",
-    domain: "identity_access",
-  },
-  "MemberRole.transfer": {
-    name: "Transfer Member Role",
-    description:
-      "Transfer ownership of member role records within tenant scope",
-    domain: "identity_access",
-  },
-  "MemberSettings.read": {
-    name: "View Member Settings",
-    description: "View and access member settings records within tenant scope",
-    domain: "identity_access",
-  },
-  "MemberSettings.update": {
-    name: "Update Member Settings",
-    description: "Modify existing member settings records within tenant scope",
-    domain: "identity_access",
-  },
-  "MemberSettings.activate": {
-    name: "Activate Member Settings",
-    description: "Activate member settings records within tenant scope",
-    domain: "identity_access",
-  },
-  "MemberSettings.deactivate": {
-    name: "Deactivate Member Settings",
-    description: "Deactivate member settings records within tenant scope",
-    domain: "identity_access",
-  },
-  "MemberDocument.read": {
-    name: "View Member Document",
-    description: "View and access member document records within tenant scope",
-    domain: "identity_access",
-  },
-  "MemberDocument.create": {
-    name: "Create Member Document",
-    description: "Create new member document records within tenant scope",
-    domain: "identity_access",
-  },
-  "MemberDocument.update": {
-    name: "Update Member Document",
-    description: "Modify existing member document records within tenant scope",
-    domain: "identity_access",
-  },
-  "MemberDocument.soft_delete": {
-    name: "Delete Member Document",
-    description: "Delete (soft) member document records within tenant scope",
-    domain: "identity_access",
-  },
-  "MemberDocument.restore": {
-    name: "Restore Member Document",
-    description: "Restore deleted member document records within tenant scope",
-    domain: "identity_access",
-  },
-  "MemberDocument.approve": {
-    name: "Approve Member Document",
-    description: "Approve member document records within tenant scope",
-    domain: "identity_access",
-  },
-  "MemberDocument.reject": {
-    name: "Reject Member Document",
-    description: "Reject member document records within tenant scope",
-    domain: "identity_access",
-  },
-  "Role.read": {
-    name: "View Role",
-    description: "View and access role records within tenant scope",
-    domain: "rbac_security",
-  },
-  "Role.create": {
-    name: "Create Role",
-    description: "Create new role records within tenant scope",
-    domain: "rbac_security",
-  },
-  "Role.update": {
-    name: "Update Role",
-    description: "Modify existing role records within tenant scope",
-    domain: "rbac_security",
-  },
-  "Role.soft_delete": {
-    name: "Delete Role",
-    description: "Delete (soft) role records within tenant scope",
-    domain: "rbac_security",
-  },
-  "Role.restore": {
-    name: "Restore Role",
-    description: "Restore deleted role records within tenant scope",
-    domain: "rbac_security",
-  },
-  "Role.activate": {
-    name: "Activate Role",
-    description: "Activate role records within tenant scope",
-    domain: "rbac_security",
-  },
-  "Role.deactivate": {
-    name: "Deactivate Role",
-    description: "Deactivate role records within tenant scope",
-    domain: "rbac_security",
-  },
-  "Permission.read": {
-    name: "View Permission",
-    description: "View and access permission records within tenant scope",
-    domain: "rbac_security",
-  },
-  "RolePermission.read": {
-    name: "View Role Permission",
-    description: "View and access role permission records within tenant scope",
-    domain: "rbac_security",
-  },
-  "RolePermission.create": {
-    name: "Create Role Permission",
-    description: "Create new role permission records within tenant scope",
-    domain: "rbac_security",
-  },
-  "RolePermission.soft_delete": {
-    name: "Delete Role Permission",
-    description: "Delete (soft) role permission records within tenant scope",
-    domain: "rbac_security",
-  },
-  "RolePermission.restore": {
-    name: "Restore Role Permission",
-    description: "Restore deleted role permission records within tenant scope",
-    domain: "rbac_security",
-  },
-  "ApiKey.read": {
-    name: "View Api Key",
-    description: "View and access api key records within tenant scope",
-    domain: "rbac_security",
-  },
-  "ApiKey.create": {
-    name: "Create Api Key",
-    description: "Create new api key records within tenant scope",
-    domain: "rbac_security",
-  },
-  "ApiKey.update": {
-    name: "Update Api Key",
-    description: "Modify existing api key records within tenant scope",
-    domain: "rbac_security",
-  },
-  "ApiKey.soft_delete": {
-    name: "Delete Api Key",
-    description: "Delete (soft) api key records within tenant scope",
-    domain: "rbac_security",
-  },
-  "ApiKey.restore": {
-    name: "Restore Api Key",
-    description: "Restore deleted api key records within tenant scope",
-    domain: "rbac_security",
-  },
-  "ApiKey.activate": {
-    name: "Activate Api Key",
-    description: "Activate api key records within tenant scope",
-    domain: "rbac_security",
-  },
-  "ApiKey.deactivate": {
-    name: "Deactivate Api Key",
-    description: "Deactivate api key records within tenant scope",
-    domain: "rbac_security",
-  },
-  "AuthFactor.read": {
-    name: "View Auth Factor",
-    description: "View and access auth factor records within tenant scope",
-    domain: "rbac_security",
-  },
-  "AuthFactor.create": {
-    name: "Create Auth Factor",
-    description: "Create new auth factor records within tenant scope",
-    domain: "rbac_security",
-  },
-  "AuthFactor.update": {
-    name: "Update Auth Factor",
-    description: "Modify existing auth factor records within tenant scope",
-    domain: "rbac_security",
-  },
-  "AuthFactor.soft_delete": {
-    name: "Delete Auth Factor",
-    description: "Delete (soft) auth factor records within tenant scope",
-    domain: "rbac_security",
-  },
-  "AuthFactor.restore": {
-    name: "Restore Auth Factor",
-    description: "Restore deleted auth factor records within tenant scope",
-    domain: "rbac_security",
-  },
-  "AuthFactor.activate": {
-    name: "Activate Auth Factor",
-    description: "Activate auth factor records within tenant scope",
-    domain: "rbac_security",
-  },
-  "AuthFactor.deactivate": {
-    name: "Deactivate Auth Factor",
-    description: "Deactivate auth factor records within tenant scope",
-    domain: "rbac_security",
-  },
-  "Account.read": {
-    name: "View Account",
-    description: "View and access account records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Account.create": {
-    name: "Create Account",
-    description: "Create new account records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Account.update": {
-    name: "Update Account",
-    description: "Modify existing account records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Account.soft_delete": {
-    name: "Delete Account",
-    description: "Delete (soft) account records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Account.restore": {
-    name: "Restore Account",
-    description: "Restore deleted account records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Account.activate": {
-    name: "Activate Account",
-    description: "Activate account records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Account.deactivate": {
-    name: "Deactivate Account",
-    description: "Deactivate account records within tenant scope",
-    domain: "crm_sales",
-  },
-  "AccountAddress.read": {
-    name: "View Account Address",
-    description: "View and access account address records within tenant scope",
-    domain: "crm_sales",
-  },
-  "AccountAddress.create": {
-    name: "Create Account Address",
-    description: "Create new account address records within tenant scope",
-    domain: "crm_sales",
-  },
-  "AccountAddress.update": {
-    name: "Update Account Address",
-    description: "Modify existing account address records within tenant scope",
-    domain: "crm_sales",
-  },
-  "AccountAddress.soft_delete": {
-    name: "Delete Account Address",
-    description: "Delete (soft) account address records within tenant scope",
-    domain: "crm_sales",
-  },
-  "AccountAddress.restore": {
-    name: "Restore Account Address",
-    description: "Restore deleted account address records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Contact.read": {
-    name: "View Contact",
-    description: "View and access contact records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Contact.create": {
-    name: "Create Contact",
-    description: "Create new contact records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Contact.update": {
-    name: "Update Contact",
-    description: "Modify existing contact records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Contact.soft_delete": {
-    name: "Delete Contact",
-    description: "Delete (soft) contact records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Contact.restore": {
-    name: "Restore Contact",
-    description: "Restore deleted contact records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Lead.read": {
-    name: "View Lead",
-    description: "View and access lead records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Lead.create": {
-    name: "Create Lead",
-    description: "Create new lead records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Lead.update": {
-    name: "Update Lead",
-    description: "Modify existing lead records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Lead.soft_delete": {
-    name: "Delete Lead",
-    description: "Delete (soft) lead records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Lead.restore": {
-    name: "Restore Lead",
-    description: "Restore deleted lead records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Lead.assign": {
-    name: "Assign Lead",
-    description: "Assign lead records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Lead.unassign": {
-    name: "Unassign Lead",
-    description: "Remove assignment of lead records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Lead.transfer": {
-    name: "Transfer Lead",
-    description: "Transfer ownership of lead records within tenant scope",
-    domain: "crm_sales",
-  },
-  "LeadActivity.read": {
-    name: "View Lead Activity",
-    description: "View and access lead activity records within tenant scope",
-    domain: "crm_sales",
-  },
-  "LeadActivity.create": {
-    name: "Create Lead Activity",
-    description: "Create new lead activity records within tenant scope",
-    domain: "crm_sales",
-  },
-  "LeadActivity.update": {
-    name: "Update Lead Activity",
-    description: "Modify existing lead activity records within tenant scope",
-    domain: "crm_sales",
-  },
-  "LeadActivity.soft_delete": {
-    name: "Delete Lead Activity",
-    description: "Delete (soft) lead activity records within tenant scope",
-    domain: "crm_sales",
-  },
-  "LeadActivity.restore": {
-    name: "Restore Lead Activity",
-    description: "Restore deleted lead activity records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Opportunity.read": {
-    name: "View Opportunity",
-    description: "View and access opportunity records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Opportunity.create": {
-    name: "Create Opportunity",
-    description: "Create new opportunity records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Opportunity.update": {
-    name: "Update Opportunity",
-    description: "Modify existing opportunity records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Opportunity.soft_delete": {
-    name: "Delete Opportunity",
-    description: "Delete (soft) opportunity records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Opportunity.restore": {
-    name: "Restore Opportunity",
-    description: "Restore deleted opportunity records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Opportunity.assign": {
-    name: "Assign Opportunity",
-    description: "Assign opportunity records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Opportunity.unassign": {
-    name: "Unassign Opportunity",
-    description: "Remove assignment of opportunity records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Opportunity.transfer": {
-    name: "Transfer Opportunity",
-    description:
-      "Transfer ownership of opportunity records within tenant scope",
-    domain: "crm_sales",
-  },
-  "OpportunityStage.read": {
-    name: "View Opportunity Stage",
-    description:
-      "View and access opportunity stage records within tenant scope",
-    domain: "crm_sales",
-  },
-  "OpportunityStage.create": {
-    name: "Create Opportunity Stage",
-    description: "Create new opportunity stage records within tenant scope",
-    domain: "crm_sales",
-  },
-  "OpportunityStage.update": {
-    name: "Update Opportunity Stage",
-    description:
-      "Modify existing opportunity stage records within tenant scope",
-    domain: "crm_sales",
-  },
-  "OpportunityStage.soft_delete": {
-    name: "Delete Opportunity Stage",
-    description: "Delete (soft) opportunity stage records within tenant scope",
-    domain: "crm_sales",
-  },
-  "OpportunityStage.restore": {
-    name: "Restore Opportunity Stage",
-    description:
-      "Restore deleted opportunity stage records within tenant scope",
-    domain: "crm_sales",
-  },
-  "OpportunityLineItem.read": {
-    name: "View Opportunity Line Item",
-    description:
-      "View and access opportunity line item records within tenant scope",
-    domain: "crm_sales",
-  },
-  "OpportunityLineItem.create": {
-    name: "Create Opportunity Line Item",
-    description: "Create new opportunity line item records within tenant scope",
-    domain: "crm_sales",
-  },
-  "OpportunityLineItem.update": {
-    name: "Update Opportunity Line Item",
-    description:
-      "Modify existing opportunity line item records within tenant scope",
-    domain: "crm_sales",
-  },
-  "OpportunityLineItem.soft_delete": {
-    name: "Delete Opportunity Line Item",
-    description:
-      "Delete (soft) opportunity line item records within tenant scope",
-    domain: "crm_sales",
-  },
-  "OpportunityLineItem.restore": {
-    name: "Restore Opportunity Line Item",
-    description:
-      "Restore deleted opportunity line item records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Quote.read": {
-    name: "View Quote",
-    description: "View and access quote records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Quote.create": {
-    name: "Create Quote",
-    description: "Create new quote records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Quote.update": {
-    name: "Update Quote",
-    description: "Modify existing quote records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Quote.soft_delete": {
-    name: "Delete Quote",
-    description: "Delete (soft) quote records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Quote.restore": {
-    name: "Restore Quote",
-    description: "Restore deleted quote records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Quote.send": {
-    name: "Send Quote",
-    description: "Send quote records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Quote.approve": {
-    name: "Approve Quote",
-    description: "Approve quote records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Quote.reject": {
-    name: "Reject Quote",
-    description: "Reject quote records within tenant scope",
-    domain: "crm_sales",
-  },
-  "QuoteLineItem.read": {
-    name: "View Quote Line Item",
-    description: "View and access quote line item records within tenant scope",
-    domain: "crm_sales",
-  },
-  "QuoteLineItem.create": {
-    name: "Create Quote Line Item",
-    description: "Create new quote line item records within tenant scope",
-    domain: "crm_sales",
-  },
-  "QuoteLineItem.update": {
-    name: "Update Quote Line Item",
-    description: "Modify existing quote line item records within tenant scope",
-    domain: "crm_sales",
-  },
-  "QuoteLineItem.soft_delete": {
-    name: "Delete Quote Line Item",
-    description: "Delete (soft) quote line item records within tenant scope",
-    domain: "crm_sales",
-  },
-  "QuoteLineItem.restore": {
-    name: "Restore Quote Line Item",
-    description: "Restore deleted quote line item records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Estimate.read": {
-    name: "View Estimate",
-    description: "View and access estimate records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Estimate.create": {
-    name: "Create Estimate",
-    description: "Create new estimate records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Estimate.update": {
-    name: "Update Estimate",
-    description: "Modify existing estimate records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Estimate.soft_delete": {
-    name: "Delete Estimate",
-    description: "Delete (soft) estimate records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Estimate.restore": {
-    name: "Restore Estimate",
-    description: "Restore deleted estimate records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Estimate.send": {
-    name: "Send Estimate",
-    description: "Send estimate records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Estimate.approve": {
-    name: "Approve Estimate",
-    description: "Approve estimate records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Estimate.reject": {
-    name: "Reject Estimate",
-    description: "Reject estimate records within tenant scope",
-    domain: "crm_sales",
-  },
-  "EstimateLineItem.read": {
-    name: "View Estimate Line Item",
-    description:
-      "View and access estimate line item records within tenant scope",
-    domain: "crm_sales",
-  },
-  "EstimateLineItem.create": {
-    name: "Create Estimate Line Item",
-    description: "Create new estimate line item records within tenant scope",
-    domain: "crm_sales",
-  },
-  "EstimateLineItem.update": {
-    name: "Update Estimate Line Item",
-    description:
-      "Modify existing estimate line item records within tenant scope",
-    domain: "crm_sales",
-  },
-  "EstimateLineItem.soft_delete": {
-    name: "Delete Estimate Line Item",
-    description: "Delete (soft) estimate line item records within tenant scope",
-    domain: "crm_sales",
-  },
-  "EstimateLineItem.restore": {
-    name: "Restore Estimate Line Item",
-    description:
-      "Restore deleted estimate line item records within tenant scope",
-    domain: "crm_sales",
-  },
-  "EstimateAttachment.read": {
-    name: "View Estimate Attachment",
-    description:
-      "View and access estimate attachment records within tenant scope",
-    domain: "crm_sales",
-  },
-  "EstimateAttachment.create": {
-    name: "Create Estimate Attachment",
-    description: "Create new estimate attachment records within tenant scope",
-    domain: "crm_sales",
-  },
-  "EstimateAttachment.update": {
-    name: "Update Estimate Attachment",
-    description:
-      "Modify existing estimate attachment records within tenant scope",
-    domain: "crm_sales",
-  },
-  "EstimateAttachment.soft_delete": {
-    name: "Delete Estimate Attachment",
-    description:
-      "Delete (soft) estimate attachment records within tenant scope",
-    domain: "crm_sales",
-  },
-  "EstimateAttachment.restore": {
-    name: "Restore Estimate Attachment",
-    description:
-      "Restore deleted estimate attachment records within tenant scope",
-    domain: "crm_sales",
-  },
-  "EstimateApproval.read": {
-    name: "View Estimate Approval",
-    description:
-      "View and access estimate approval records within tenant scope",
-    domain: "crm_sales",
-  },
-  "EstimateApproval.create": {
-    name: "Create Estimate Approval",
-    description: "Create new estimate approval records within tenant scope",
-    domain: "crm_sales",
-  },
-  "EstimateApproval.approve": {
-    name: "Approve Estimate Approval",
-    description: "Approve estimate approval records within tenant scope",
-    domain: "crm_sales",
-  },
-  "EstimateApproval.reject": {
-    name: "Reject Estimate Approval",
-    description: "Reject estimate approval records within tenant scope",
-    domain: "crm_sales",
-  },
-  "RequestForQuote.read": {
-    name: "View Request For Quote",
-    description:
-      "View and access request for quote records within tenant scope",
-    domain: "crm_sales",
-  },
-  "RequestForQuote.create": {
-    name: "Create Request For Quote",
-    description: "Create new request for quote records within tenant scope",
-    domain: "crm_sales",
-  },
-  "RequestForQuote.update": {
-    name: "Update Request For Quote",
-    description:
-      "Modify existing request for quote records within tenant scope",
-    domain: "crm_sales",
-  },
-  "RequestForQuote.soft_delete": {
-    name: "Delete Request For Quote",
-    description: "Delete (soft) request for quote records within tenant scope",
-    domain: "crm_sales",
-  },
-  "RequestForQuote.restore": {
-    name: "Restore Request For Quote",
-    description:
-      "Restore deleted request for quote records within tenant scope",
-    domain: "crm_sales",
-  },
-  "RequestForQuote.send": {
-    name: "Send Request For Quote",
-    description: "Send request for quote records within tenant scope",
-    domain: "crm_sales",
-  },
-  "RFQLine.read": {
-    name: "View R F Q Line",
-    description: "View and access r f q line records within tenant scope",
-    domain: "crm_sales",
-  },
-  "RFQLine.create": {
-    name: "Create R F Q Line",
-    description: "Create new r f q line records within tenant scope",
-    domain: "crm_sales",
-  },
-  "RFQLine.update": {
-    name: "Update R F Q Line",
-    description: "Modify existing r f q line records within tenant scope",
-    domain: "crm_sales",
-  },
-  "RFQLine.soft_delete": {
-    name: "Delete R F Q Line",
-    description: "Delete (soft) r f q line records within tenant scope",
-    domain: "crm_sales",
-  },
-  "RFQLine.restore": {
-    name: "Restore R F Q Line",
-    description: "Restore deleted r f q line records within tenant scope",
-    domain: "crm_sales",
-  },
-  "RFQResponse.read": {
-    name: "View R F Q Response",
-    description: "View and access r f q response records within tenant scope",
-    domain: "crm_sales",
-  },
-  "RFQResponse.create": {
-    name: "Create R F Q Response",
-    description: "Create new r f q response records within tenant scope",
-    domain: "crm_sales",
-  },
-  "RFQResponse.update": {
-    name: "Update R F Q Response",
-    description: "Modify existing r f q response records within tenant scope",
-    domain: "crm_sales",
-  },
-  "RFQResponse.soft_delete": {
-    name: "Delete R F Q Response",
-    description: "Delete (soft) r f q response records within tenant scope",
-    domain: "crm_sales",
-  },
-  "RFQResponse.restore": {
-    name: "Restore R F Q Response",
-    description: "Restore deleted r f q response records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Bid.read": {
-    name: "View Bid",
-    description: "View and access bid records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Bid.create": {
-    name: "Create Bid",
-    description: "Create new bid records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Bid.update": {
-    name: "Update Bid",
-    description: "Modify existing bid records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Bid.soft_delete": {
-    name: "Delete Bid",
-    description: "Delete (soft) bid records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Bid.restore": {
-    name: "Restore Bid",
-    description: "Restore deleted bid records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Bid.submit": {
-    name: "Submit Bid",
-    description: "Submit bid records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Bid.approve": {
-    name: "Approve Bid",
-    description: "Approve bid records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Bid.reject": {
-    name: "Reject Bid",
-    description: "Reject bid records within tenant scope",
-    domain: "crm_sales",
-  },
-  "BidComparison.read": {
-    name: "View Bid Comparison",
-    description: "View and access bid comparison records within tenant scope",
-    domain: "crm_sales",
-  },
-  "BidComparison.create": {
-    name: "Create Bid Comparison",
-    description: "Create new bid comparison records within tenant scope",
-    domain: "crm_sales",
-  },
-  "BidComparison.update": {
-    name: "Update Bid Comparison",
-    description: "Modify existing bid comparison records within tenant scope",
-    domain: "crm_sales",
-  },
-  "BidComparison.soft_delete": {
-    name: "Delete Bid Comparison",
-    description: "Delete (soft) bid comparison records within tenant scope",
-    domain: "crm_sales",
-  },
-  "BidComparison.restore": {
-    name: "Restore Bid Comparison",
-    description: "Restore deleted bid comparison records within tenant scope",
-    domain: "crm_sales",
-  },
-  "BidInvitation.read": {
-    name: "View Bid Invitation",
-    description: "View and access bid invitation records within tenant scope",
-    domain: "crm_sales",
-  },
-  "BidInvitation.create": {
-    name: "Create Bid Invitation",
-    description: "Create new bid invitation records within tenant scope",
-    domain: "crm_sales",
-  },
-  "BidInvitation.update": {
-    name: "Update Bid Invitation",
-    description: "Modify existing bid invitation records within tenant scope",
-    domain: "crm_sales",
-  },
-  "BidInvitation.send": {
-    name: "Send Bid Invitation",
-    description: "Send bid invitation records within tenant scope",
-    domain: "crm_sales",
-  },
-  "BidInvitation.soft_delete": {
-    name: "Delete Bid Invitation",
-    description: "Delete (soft) bid invitation records within tenant scope",
-    domain: "crm_sales",
-  },
-  "BidInvitation.restore": {
-    name: "Restore Bid Invitation",
-    description: "Restore deleted bid invitation records within tenant scope",
-    domain: "crm_sales",
-  },
-  "BidSubmission.read": {
-    name: "View Bid Submission",
-    description: "View and access bid submission records within tenant scope",
-    domain: "crm_sales",
-  },
-  "BidSubmission.create": {
-    name: "Create Bid Submission",
-    description: "Create new bid submission records within tenant scope",
-    domain: "crm_sales",
-  },
-  "BidSubmission.update": {
-    name: "Update Bid Submission",
-    description: "Modify existing bid submission records within tenant scope",
-    domain: "crm_sales",
-  },
-  "BidSubmission.submit": {
-    name: "Submit Bid Submission",
-    description: "Submit bid submission records within tenant scope",
-    domain: "crm_sales",
-  },
-  "BidSubmission.approve": {
-    name: "Approve Bid Submission",
-    description: "Approve bid submission records within tenant scope",
-    domain: "crm_sales",
-  },
-  "BidSubmission.reject": {
-    name: "Reject Bid Submission",
-    description: "Reject bid submission records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Project.read": {
-    name: "View Project",
-    description: "View and access project records within tenant scope",
-    domain: "project_management",
-  },
-  "Project.create": {
-    name: "Create Project",
-    description: "Create new project records within tenant scope",
-    domain: "project_management",
-  },
-  "Project.update": {
-    name: "Update Project",
-    description: "Modify existing project records within tenant scope",
-    domain: "project_management",
-  },
-  "Project.soft_delete": {
-    name: "Delete Project",
-    description: "Delete (soft) project records within tenant scope",
-    domain: "project_management",
-  },
-  "Project.restore": {
-    name: "Restore Project",
-    description: "Restore deleted project records within tenant scope",
-    domain: "project_management",
-  },
-  "Project.hard_delete": {
-    name: "Permanently Delete Project",
-    description: "Permanently delete project records within tenant scope",
-    domain: "project_management",
-  },
-  "Project.archive": {
-    name: "Archive Project",
-    description: "Archive project records within tenant scope",
-    domain: "project_management",
-  },
-  "Project.activate": {
-    name: "Activate Project",
-    description: "Activate project records within tenant scope",
-    domain: "project_management",
-  },
-  "Project.deactivate": {
-    name: "Deactivate Project",
-    description: "Deactivate project records within tenant scope",
-    domain: "project_management",
-  },
-  "Project.duplicate": {
-    name: "Duplicate Project",
-    description: "Duplicate project records within tenant scope",
-    domain: "project_management",
-  },
-  "Project.transfer": {
-    name: "Transfer Project",
-    description: "Transfer ownership of project records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectTaskAssignment.read": {
-    name: "View Project Task Assignment",
-    description:
-      "View and access project task assignment records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectTaskAssignment.create": {
-    name: "Create Project Task Assignment",
-    description:
-      "Create new project task assignment records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectTaskAssignment.update": {
-    name: "Update Project Task Assignment",
-    description:
-      "Modify existing project task assignment records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectTaskAssignment.soft_delete": {
-    name: "Delete Project Task Assignment",
-    description:
-      "Delete (soft) project task assignment records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectTaskAssignment.restore": {
-    name: "Restore Project Task Assignment",
-    description:
-      "Restore deleted project task assignment records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectTaskAssignment.assign": {
-    name: "Assign Project Task Assignment",
-    description: "Assign project task assignment records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectTaskAssignment.unassign": {
-    name: "Unassign Project Task Assignment",
-    description:
-      "Remove assignment of project task assignment records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectTaskAssignment.transfer": {
-    name: "Transfer Project Task Assignment",
-    description:
-      "Transfer ownership of project task assignment records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectMember.read": {
-    name: "View Project Member",
-    description: "View and access project member records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectMember.create": {
-    name: "Create Project Member",
-    description: "Create new project member records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectMember.update": {
-    name: "Update Project Member",
-    description: "Modify existing project member records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectMember.soft_delete": {
-    name: "Delete Project Member",
-    description: "Delete (soft) project member records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectMember.restore": {
-    name: "Restore Project Member",
-    description: "Restore deleted project member records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectMember.assign": {
-    name: "Assign Project Member",
-    description: "Assign project member records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectMember.unassign": {
-    name: "Unassign Project Member",
-    description:
-      "Remove assignment of project member records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectMember.transfer": {
-    name: "Transfer Project Member",
-    description:
-      "Transfer ownership of project member records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectNote.read": {
-    name: "View Project Note",
-    description: "View and access project note records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectNote.create": {
-    name: "Create Project Note",
-    description: "Create new project note records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectNote.update": {
-    name: "Update Project Note",
-    description: "Modify existing project note records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectNote.soft_delete": {
-    name: "Delete Project Note",
-    description: "Delete (soft) project note records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectNote.restore": {
-    name: "Restore Project Note",
-    description: "Restore deleted project note records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectReport.read": {
-    name: "View Project Report",
-    description: "View and access project report records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectReport.create": {
-    name: "Create Project Report",
-    description: "Create new project report records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectReport.update": {
-    name: "Update Project Report",
-    description: "Modify existing project report records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectReport.soft_delete": {
-    name: "Delete Project Report",
-    description: "Delete (soft) project report records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectReport.restore": {
-    name: "Restore Project Report",
-    description: "Restore deleted project report records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectReport.export": {
-    name: "Export Project Report",
-    description: "Export data for project report records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectBudgetLine.read": {
-    name: "View Project Budget Line",
-    description:
-      "View and access project budget line records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectBudgetLine.create": {
-    name: "Create Project Budget Line",
-    description: "Create new project budget line records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectBudgetLine.update": {
-    name: "Update Project Budget Line",
-    description:
-      "Modify existing project budget line records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectBudgetLine.soft_delete": {
-    name: "Delete Project Budget Line",
-    description:
-      "Delete (soft) project budget line records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectBudgetLine.restore": {
-    name: "Restore Project Budget Line",
-    description:
-      "Restore deleted project budget line records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectFinancialSnapshot.read": {
-    name: "View Project Financial Snapshot",
-    description:
-      "View and access project financial snapshot records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectFinancialSnapshot.create": {
-    name: "Create Project Financial Snapshot",
-    description:
-      "Create new project financial snapshot records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectFinancialSnapshot.export": {
-    name: "Export Project Financial Snapshot",
-    description:
-      "Export data for project financial snapshot records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectInventoryTransaction.read": {
-    name: "View Project Inventory Transaction",
-    description:
-      "View and access project inventory transaction records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectInventoryTransaction.create": {
-    name: "Create Project Inventory Transaction",
-    description:
-      "Create new project inventory transaction records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectInventoryTransaction.update": {
-    name: "Update Project Inventory Transaction",
-    description:
-      "Modify existing project inventory transaction records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectInventoryTransaction.soft_delete": {
-    name: "Delete Project Inventory Transaction",
-    description:
-      "Delete (soft) project inventory transaction records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectInventoryTransaction.restore": {
-    name: "Restore Project Inventory Transaction",
-    description:
-      "Restore deleted project inventory transaction records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectPhase.read": {
-    name: "View Project Phase",
-    description: "View and access project phase records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectPhase.create": {
-    name: "Create Project Phase",
-    description: "Create new project phase records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectPhase.update": {
-    name: "Update Project Phase",
-    description: "Modify existing project phase records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectPhase.soft_delete": {
-    name: "Delete Project Phase",
-    description: "Delete (soft) project phase records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectPhase.restore": {
-    name: "Restore Project Phase",
-    description: "Restore deleted project phase records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectPhase.activate": {
-    name: "Activate Project Phase",
-    description: "Activate project phase records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectPhase.deactivate": {
-    name: "Deactivate Project Phase",
-    description: "Deactivate project phase records within tenant scope",
-    domain: "project_management",
-  },
-  "WBSItem.read": {
-    name: "View W B S Item",
-    description: "View and access w b s item records within tenant scope",
-    domain: "project_management",
-  },
-  "WBSItem.create": {
-    name: "Create W B S Item",
-    description: "Create new w b s item records within tenant scope",
-    domain: "project_management",
-  },
-  "WBSItem.update": {
-    name: "Update W B S Item",
-    description: "Modify existing w b s item records within tenant scope",
-    domain: "project_management",
-  },
-  "WBSItem.soft_delete": {
-    name: "Delete W B S Item",
-    description: "Delete (soft) w b s item records within tenant scope",
-    domain: "project_management",
-  },
-  "WBSItem.restore": {
-    name: "Restore W B S Item",
-    description: "Restore deleted w b s item records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectLocation.read": {
-    name: "View Project Location",
-    description: "View and access project location records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectLocation.create": {
-    name: "Create Project Location",
-    description: "Create new project location records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectLocation.update": {
-    name: "Update Project Location",
-    description: "Modify existing project location records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectLocation.soft_delete": {
-    name: "Delete Project Location",
-    description: "Delete (soft) project location records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectLocation.restore": {
-    name: "Restore Project Location",
-    description: "Restore deleted project location records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectTask.read": {
-    name: "View Project Task",
-    description: "View and access project task records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectTask.create": {
-    name: "Create Project Task",
-    description: "Create new project task records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectTask.update": {
-    name: "Update Project Task",
-    description: "Modify existing project task records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectTask.soft_delete": {
-    name: "Delete Project Task",
-    description: "Delete (soft) project task records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectTask.restore": {
-    name: "Restore Project Task",
-    description: "Restore deleted project task records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectTask.assign": {
-    name: "Assign Project Task",
-    description: "Assign project task records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectTask.unassign": {
-    name: "Unassign Project Task",
-    description:
-      "Remove assignment of project task records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectTask.transfer": {
-    name: "Transfer Project Task",
-    description:
-      "Transfer ownership of project task records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectTaskDependency.read": {
-    name: "View Project Task Dependency",
-    description:
-      "View and access project task dependency records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectTaskDependency.create": {
-    name: "Create Project Task Dependency",
-    description:
-      "Create new project task dependency records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectTaskDependency.update": {
-    name: "Update Project Task Dependency",
-    description:
-      "Modify existing project task dependency records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectTaskDependency.soft_delete": {
-    name: "Delete Project Task Dependency",
-    description:
-      "Delete (soft) project task dependency records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectTaskDependency.restore": {
-    name: "Restore Project Task Dependency",
-    description:
-      "Restore deleted project task dependency records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectTaskAttachment.read": {
-    name: "View Project Task Attachment",
-    description:
-      "View and access project task attachment records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectTaskAttachment.create": {
-    name: "Create Project Task Attachment",
-    description:
-      "Create new project task attachment records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectTaskAttachment.update": {
-    name: "Update Project Task Attachment",
-    description:
-      "Modify existing project task attachment records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectTaskAttachment.soft_delete": {
-    name: "Delete Project Task Attachment",
-    description:
-      "Delete (soft) project task attachment records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectTaskAttachment.restore": {
-    name: "Restore Project Task Attachment",
-    description:
-      "Restore deleted project task attachment records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectTaskComment.read": {
-    name: "View Project Task Comment",
-    description:
-      "View and access project task comment records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectTaskComment.create": {
-    name: "Create Project Task Comment",
-    description: "Create new project task comment records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectTaskComment.update": {
-    name: "Update Project Task Comment",
-    description:
-      "Modify existing project task comment records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectTaskComment.soft_delete": {
-    name: "Delete Project Task Comment",
-    description:
-      "Delete (soft) project task comment records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectTaskComment.restore": {
-    name: "Restore Project Task Comment",
-    description:
-      "Restore deleted project task comment records within tenant scope",
-    domain: "project_management",
-  },
-  "ChangeOrder.read": {
-    name: "View Change Order",
-    description: "View and access change order records within tenant scope",
-    domain: "project_management",
-  },
-  "ChangeOrder.create": {
-    name: "Create Change Order",
-    description: "Create new change order records within tenant scope",
-    domain: "project_management",
-  },
-  "ChangeOrder.update": {
-    name: "Update Change Order",
-    description: "Modify existing change order records within tenant scope",
-    domain: "project_management",
-  },
-  "ChangeOrder.soft_delete": {
-    name: "Delete Change Order",
-    description: "Delete (soft) change order records within tenant scope",
-    domain: "project_management",
-  },
-  "ChangeOrder.restore": {
-    name: "Restore Change Order",
-    description: "Restore deleted change order records within tenant scope",
-    domain: "project_management",
-  },
-  "ChangeOrder.approve": {
-    name: "Approve Change Order",
-    description: "Approve change order records within tenant scope",
-    domain: "project_management",
-  },
-  "ChangeOrder.reject": {
-    name: "Reject Change Order",
-    description: "Reject change order records within tenant scope",
-    domain: "project_management",
-  },
-  "ChangeOrderLine.read": {
-    name: "View Change Order Line",
-    description:
-      "View and access change order line records within tenant scope",
-    domain: "project_management",
-  },
-  "ChangeOrderLine.create": {
-    name: "Create Change Order Line",
-    description: "Create new change order line records within tenant scope",
-    domain: "project_management",
-  },
-  "ChangeOrderLine.update": {
-    name: "Update Change Order Line",
-    description:
-      "Modify existing change order line records within tenant scope",
-    domain: "project_management",
-  },
-  "ChangeOrderLine.soft_delete": {
-    name: "Delete Change Order Line",
-    description: "Delete (soft) change order line records within tenant scope",
-    domain: "project_management",
-  },
-  "ChangeOrderLine.restore": {
-    name: "Restore Change Order Line",
-    description:
-      "Restore deleted change order line records within tenant scope",
-    domain: "project_management",
-  },
-  "ChangeOrderApproval.read": {
-    name: "View Change Order Approval",
-    description:
-      "View and access change order approval records within tenant scope",
-    domain: "project_management",
-  },
-  "ChangeOrderApproval.create": {
-    name: "Create Change Order Approval",
-    description: "Create new change order approval records within tenant scope",
-    domain: "project_management",
-  },
-  "ChangeOrderApproval.approve": {
-    name: "Approve Change Order Approval",
-    description: "Approve change order approval records within tenant scope",
-    domain: "project_management",
-  },
-  "ChangeOrderApproval.reject": {
-    name: "Reject Change Order Approval",
-    description: "Reject change order approval records within tenant scope",
-    domain: "project_management",
-  },
-  "ChangeOrderDocument.read": {
-    name: "View Change Order Document",
-    description:
-      "View and access change order document records within tenant scope",
-    domain: "project_management",
-  },
-  "ChangeOrderDocument.create": {
-    name: "Create Change Order Document",
-    description: "Create new change order document records within tenant scope",
-    domain: "project_management",
-  },
-  "ChangeOrderDocument.update": {
-    name: "Update Change Order Document",
-    description:
-      "Modify existing change order document records within tenant scope",
-    domain: "project_management",
-  },
-  "ChangeOrderDocument.soft_delete": {
-    name: "Delete Change Order Document",
-    description:
-      "Delete (soft) change order document records within tenant scope",
-    domain: "project_management",
-  },
-  "ChangeOrderDocument.restore": {
-    name: "Restore Change Order Document",
-    description:
-      "Restore deleted change order document records within tenant scope",
-    domain: "project_management",
-  },
-  "RFI.read": {
-    name: "View R F I",
-    description: "View and access r f i records within tenant scope",
-    domain: "project_management",
-  },
-  "RFI.create": {
-    name: "Create R F I",
-    description: "Create new r f i records within tenant scope",
-    domain: "project_management",
-  },
-  "RFI.update": {
-    name: "Update R F I",
-    description: "Modify existing r f i records within tenant scope",
-    domain: "project_management",
-  },
-  "RFI.soft_delete": {
-    name: "Delete R F I",
-    description: "Delete (soft) r f i records within tenant scope",
-    domain: "project_management",
-  },
-  "RFI.restore": {
-    name: "Restore R F I",
-    description: "Restore deleted r f i records within tenant scope",
-    domain: "project_management",
-  },
-  "RFI.send": {
-    name: "Send R F I",
-    description: "Send r f i records within tenant scope",
-    domain: "project_management",
-  },
-  "RFIReply.read": {
-    name: "View R F I Reply",
-    description: "View and access r f i reply records within tenant scope",
-    domain: "project_management",
-  },
-  "RFIReply.create": {
-    name: "Create R F I Reply",
-    description: "Create new r f i reply records within tenant scope",
-    domain: "project_management",
-  },
-  "RFIReply.update": {
-    name: "Update R F I Reply",
-    description: "Modify existing r f i reply records within tenant scope",
-    domain: "project_management",
-  },
-  "RFIReply.soft_delete": {
-    name: "Delete R F I Reply",
-    description: "Delete (soft) r f i reply records within tenant scope",
-    domain: "project_management",
-  },
-  "RFIReply.restore": {
-    name: "Restore R F I Reply",
-    description: "Restore deleted r f i reply records within tenant scope",
-    domain: "project_management",
-  },
-  "Submittal.read": {
-    name: "View Submittal",
-    description: "View and access submittal records within tenant scope",
-    domain: "project_management",
-  },
-  "Submittal.create": {
-    name: "Create Submittal",
-    description: "Create new submittal records within tenant scope",
-    domain: "project_management",
-  },
-  "Submittal.update": {
-    name: "Update Submittal",
-    description: "Modify existing submittal records within tenant scope",
-    domain: "project_management",
-  },
-  "Submittal.soft_delete": {
-    name: "Delete Submittal",
-    description: "Delete (soft) submittal records within tenant scope",
-    domain: "project_management",
-  },
-  "Submittal.restore": {
-    name: "Restore Submittal",
-    description: "Restore deleted submittal records within tenant scope",
-    domain: "project_management",
-  },
-  "SubmittalItem.read": {
-    name: "View Submittal Item",
-    description: "View and access submittal item records within tenant scope",
-    domain: "project_management",
-  },
-  "SubmittalItem.create": {
-    name: "Create Submittal Item",
-    description: "Create new submittal item records within tenant scope",
-    domain: "project_management",
-  },
-  "SubmittalItem.update": {
-    name: "Update Submittal Item",
-    description: "Modify existing submittal item records within tenant scope",
-    domain: "project_management",
-  },
-  "SubmittalItem.soft_delete": {
-    name: "Delete Submittal Item",
-    description: "Delete (soft) submittal item records within tenant scope",
-    domain: "project_management",
-  },
-  "SubmittalItem.restore": {
-    name: "Restore Submittal Item",
-    description: "Restore deleted submittal item records within tenant scope",
-    domain: "project_management",
-  },
-  "SubmittalApproval.read": {
-    name: "View Submittal Approval",
-    description:
-      "View and access submittal approval records within tenant scope",
-    domain: "project_management",
-  },
-  "SubmittalApproval.create": {
-    name: "Create Submittal Approval",
-    description: "Create new submittal approval records within tenant scope",
-    domain: "project_management",
-  },
-  "SubmittalApproval.approve": {
-    name: "Approve Submittal Approval",
-    description: "Approve submittal approval records within tenant scope",
-    domain: "project_management",
-  },
-  "SubmittalApproval.reject": {
-    name: "Reject Submittal Approval",
-    description: "Reject submittal approval records within tenant scope",
-    domain: "project_management",
-  },
-  "Inspection.read": {
-    name: "View Inspection",
-    description: "View and access inspection records within tenant scope",
-    domain: "project_management",
-  },
-  "Inspection.create": {
-    name: "Create Inspection",
-    description: "Create new inspection records within tenant scope",
-    domain: "project_management",
-  },
-  "Inspection.update": {
-    name: "Update Inspection",
-    description: "Modify existing inspection records within tenant scope",
-    domain: "project_management",
-  },
-  "Inspection.soft_delete": {
-    name: "Delete Inspection",
-    description: "Delete (soft) inspection records within tenant scope",
-    domain: "project_management",
-  },
-  "Inspection.restore": {
-    name: "Restore Inspection",
-    description: "Restore deleted inspection records within tenant scope",
-    domain: "project_management",
-  },
-  "InspectionItem.read": {
-    name: "View Inspection Item",
-    description: "View and access inspection item records within tenant scope",
-    domain: "project_management",
-  },
-  "InspectionItem.create": {
-    name: "Create Inspection Item",
-    description: "Create new inspection item records within tenant scope",
-    domain: "project_management",
-  },
-  "InspectionItem.update": {
-    name: "Update Inspection Item",
-    description: "Modify existing inspection item records within tenant scope",
-    domain: "project_management",
-  },
-  "InspectionItem.soft_delete": {
-    name: "Delete Inspection Item",
-    description: "Delete (soft) inspection item records within tenant scope",
-    domain: "project_management",
-  },
-  "InspectionItem.restore": {
-    name: "Restore Inspection Item",
-    description: "Restore deleted inspection item records within tenant scope",
-    domain: "project_management",
-  },
-  "InspectionApproval.read": {
-    name: "View Inspection Approval",
-    description:
-      "View and access inspection approval records within tenant scope",
-    domain: "project_management",
-  },
-  "InspectionApproval.create": {
-    name: "Create Inspection Approval",
-    description: "Create new inspection approval records within tenant scope",
-    domain: "project_management",
-  },
-  "InspectionApproval.approve": {
-    name: "Approve Inspection Approval",
-    description: "Approve inspection approval records within tenant scope",
-    domain: "project_management",
-  },
-  "InspectionApproval.reject": {
-    name: "Reject Inspection Approval",
-    description: "Reject inspection approval records within tenant scope",
-    domain: "project_management",
-  },
-  "DailyLog.read": {
-    name: "View Daily Log",
-    description: "View and access daily log records within tenant scope",
-    domain: "project_management",
-  },
-  "DailyLog.create": {
-    name: "Create Daily Log",
-    description: "Create new daily log records within tenant scope",
-    domain: "project_management",
-  },
-  "DailyLog.update": {
-    name: "Update Daily Log",
-    description: "Modify existing daily log records within tenant scope",
-    domain: "project_management",
-  },
-  "DailyLog.soft_delete": {
-    name: "Delete Daily Log",
-    description: "Delete (soft) daily log records within tenant scope",
-    domain: "project_management",
-  },
-  "DailyLog.restore": {
-    name: "Restore Daily Log",
-    description: "Restore deleted daily log records within tenant scope",
-    domain: "project_management",
-  },
-  "PunchList.read": {
-    name: "View Punch List",
-    description: "View and access punch list records within tenant scope",
-    domain: "project_management",
-  },
-  "PunchList.create": {
-    name: "Create Punch List",
-    description: "Create new punch list records within tenant scope",
-    domain: "project_management",
-  },
-  "PunchList.update": {
-    name: "Update Punch List",
-    description: "Modify existing punch list records within tenant scope",
-    domain: "project_management",
-  },
-  "PunchList.soft_delete": {
-    name: "Delete Punch List",
-    description: "Delete (soft) punch list records within tenant scope",
-    domain: "project_management",
-  },
-  "PunchList.restore": {
-    name: "Restore Punch List",
-    description: "Restore deleted punch list records within tenant scope",
-    domain: "project_management",
-  },
-  "PunchListItem.read": {
-    name: "View Punch List Item",
-    description: "View and access punch list item records within tenant scope",
-    domain: "project_management",
-  },
-  "PunchListItem.create": {
-    name: "Create Punch List Item",
-    description: "Create new punch list item records within tenant scope",
-    domain: "project_management",
-  },
-  "PunchListItem.update": {
-    name: "Update Punch List Item",
-    description: "Modify existing punch list item records within tenant scope",
-    domain: "project_management",
-  },
-  "PunchListItem.soft_delete": {
-    name: "Delete Punch List Item",
-    description: "Delete (soft) punch list item records within tenant scope",
-    domain: "project_management",
-  },
-  "PunchListItem.restore": {
-    name: "Restore Punch List Item",
-    description: "Restore deleted punch list item records within tenant scope",
-    domain: "project_management",
-  },
-  "Activity.read": {
-    name: "View Activity",
-    description: "View and access activity records within tenant scope",
-    domain: "project_management",
-  },
-  "Activity.create": {
-    name: "Create Activity",
-    description: "Create new activity records within tenant scope",
-    domain: "project_management",
-  },
-  "Activity.update": {
-    name: "Update Activity",
-    description: "Modify existing activity records within tenant scope",
-    domain: "project_management",
-  },
-  "Activity.soft_delete": {
-    name: "Delete Activity",
-    description: "Delete (soft) activity records within tenant scope",
-    domain: "project_management",
-  },
-  "Activity.restore": {
-    name: "Restore Activity",
-    description: "Restore deleted activity records within tenant scope",
-    domain: "project_management",
-  },
-  "ActivityAttachment.read": {
-    name: "View Activity Attachment",
-    description:
-      "View and access activity attachment records within tenant scope",
-    domain: "project_management",
-  },
-  "ActivityAttachment.create": {
-    name: "Create Activity Attachment",
-    description: "Create new activity attachment records within tenant scope",
-    domain: "project_management",
-  },
-  "ActivityAttachment.update": {
-    name: "Update Activity Attachment",
-    description:
-      "Modify existing activity attachment records within tenant scope",
-    domain: "project_management",
-  },
-  "ActivityAttachment.soft_delete": {
-    name: "Delete Activity Attachment",
-    description:
-      "Delete (soft) activity attachment records within tenant scope",
-    domain: "project_management",
-  },
-  "ActivityAttachment.restore": {
-    name: "Restore Activity Attachment",
-    description:
-      "Restore deleted activity attachment records within tenant scope",
-    domain: "project_management",
-  },
-  "Milestone.read": {
-    name: "View Milestone",
-    description: "View and access milestone records within tenant scope",
-    domain: "project_management",
-  },
-  "Milestone.create": {
-    name: "Create Milestone",
-    description: "Create new milestone records within tenant scope",
-    domain: "project_management",
-  },
-  "Milestone.update": {
-    name: "Update Milestone",
-    description: "Modify existing milestone records within tenant scope",
-    domain: "project_management",
-  },
-  "Milestone.soft_delete": {
-    name: "Delete Milestone",
-    description: "Delete (soft) milestone records within tenant scope",
-    domain: "project_management",
-  },
-  "Milestone.restore": {
-    name: "Restore Milestone",
-    description: "Restore deleted milestone records within tenant scope",
-    domain: "project_management",
-  },
-  "MilestoneDependency.read": {
-    name: "View Milestone Dependency",
-    description:
-      "View and access milestone dependency records within tenant scope",
-    domain: "project_management",
-  },
-  "MilestoneDependency.create": {
-    name: "Create Milestone Dependency",
-    description: "Create new milestone dependency records within tenant scope",
-    domain: "project_management",
-  },
-  "MilestoneDependency.update": {
-    name: "Update Milestone Dependency",
-    description:
-      "Modify existing milestone dependency records within tenant scope",
-    domain: "project_management",
-  },
-  "MilestoneDependency.soft_delete": {
-    name: "Delete Milestone Dependency",
-    description:
-      "Delete (soft) milestone dependency records within tenant scope",
-    domain: "project_management",
-  },
-  "MilestoneDependency.restore": {
-    name: "Restore Milestone Dependency",
-    description:
-      "Restore deleted milestone dependency records within tenant scope",
-    domain: "project_management",
-  },
-  "MilestoneStakeholder.read": {
-    name: "View Milestone Stakeholder",
-    description:
-      "View and access milestone stakeholder records within tenant scope",
-    domain: "project_management",
-  },
-  "MilestoneStakeholder.create": {
-    name: "Create Milestone Stakeholder",
-    description: "Create new milestone stakeholder records within tenant scope",
-    domain: "project_management",
-  },
-  "MilestoneStakeholder.update": {
-    name: "Update Milestone Stakeholder",
-    description:
-      "Modify existing milestone stakeholder records within tenant scope",
-    domain: "project_management",
-  },
-  "MilestoneStakeholder.soft_delete": {
-    name: "Delete Milestone Stakeholder",
-    description:
-      "Delete (soft) milestone stakeholder records within tenant scope",
-    domain: "project_management",
-  },
-  "MilestoneStakeholder.restore": {
-    name: "Restore Milestone Stakeholder",
-    description:
-      "Restore deleted milestone stakeholder records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectDocument.read": {
-    name: "View Project Document",
-    description: "View and access project document records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectDocument.create": {
-    name: "Create Project Document",
-    description: "Create new project document records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectDocument.update": {
-    name: "Update Project Document",
-    description: "Modify existing project document records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectDocument.soft_delete": {
-    name: "Delete Project Document",
-    description: "Delete (soft) project document records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectDocument.restore": {
-    name: "Restore Project Document",
-    description: "Restore deleted project document records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectExternalAccess.read": {
-    name: "View Project External Access",
-    description:
-      "View and access project external access records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectExternalAccess.create": {
-    name: "Create Project External Access",
-    description:
-      "Create new project external access records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectExternalAccess.update": {
-    name: "Update Project External Access",
-    description:
-      "Modify existing project external access records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectExternalAccess.soft_delete": {
-    name: "Delete Project External Access",
-    description:
-      "Delete (soft) project external access records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectExternalAccess.restore": {
-    name: "Restore Project External Access",
-    description:
-      "Restore deleted project external access records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectExternalAccess.grant": {
-    name: "Grant Project External Access",
-    description:
-      "Grant access to project external access records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectExternalAccess.revoke": {
-    name: "Revoke Project External Access",
-    description:
-      "Revoke access to project external access records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectIssue.read": {
-    name: "View Project Issue",
-    description: "View and access project issue records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectIssue.create": {
-    name: "Create Project Issue",
-    description: "Create new project issue records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectIssue.update": {
-    name: "Update Project Issue",
-    description: "Modify existing project issue records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectIssue.soft_delete": {
-    name: "Delete Project Issue",
-    description: "Delete (soft) project issue records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectIssue.restore": {
-    name: "Restore Project Issue",
-    description: "Restore deleted project issue records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectIssue.assign": {
-    name: "Assign Project Issue",
-    description: "Assign project issue records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectIssue.resolve": {
-    name: "Resolve Project Issue",
-    description: "Resolve project issue records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectLedgerEntry.read": {
-    name: "View Project Ledger Entry",
-    description:
-      "View and access project ledger entry records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectLedgerEntry.create": {
-    name: "Create Project Ledger Entry",
-    description: "Create new project ledger entry records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectLedgerEntry.update": {
-    name: "Update Project Ledger Entry",
-    description:
-      "Modify existing project ledger entry records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectLedgerEntry.soft_delete": {
-    name: "Delete Project Ledger Entry",
-    description:
-      "Delete (soft) project ledger entry records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectLedgerEntry.restore": {
-    name: "Restore Project Ledger Entry",
-    description:
-      "Restore deleted project ledger entry records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectRisk.read": {
-    name: "View Project Risk",
-    description: "View and access project risk records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectRisk.create": {
-    name: "Create Project Risk",
-    description: "Create new project risk records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectRisk.update": {
-    name: "Update Project Risk",
-    description: "Modify existing project risk records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectRisk.soft_delete": {
-    name: "Delete Project Risk",
-    description: "Delete (soft) project risk records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectRisk.restore": {
-    name: "Restore Project Risk",
-    description: "Restore deleted project risk records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectRisk.assess": {
-    name: "Assess Project Risk",
-    description: "Assess project risk records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectRisk.mitigate": {
-    name: "Mitigate Project Risk",
-    description: "Mitigate project risk records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectTaskChecklistItem.read": {
-    name: "View Project Task Checklist Item",
-    description:
-      "View and access project task checklist item records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectTaskChecklistItem.create": {
-    name: "Create Project Task Checklist Item",
-    description:
-      "Create new project task checklist item records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectTaskChecklistItem.update": {
-    name: "Update Project Task Checklist Item",
-    description:
-      "Modify existing project task checklist item records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectTaskChecklistItem.soft_delete": {
-    name: "Delete Project Task Checklist Item",
-    description:
-      "Delete (soft) project task checklist item records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectTaskChecklistItem.restore": {
-    name: "Restore Project Task Checklist Item",
-    description:
-      "Restore deleted project task checklist item records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectTaskChecklistItem.complete": {
-    name: "Complete Project Task Checklist Item",
-    description:
-      "Mark as complete project task checklist item records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectType.read": {
-    name: "View Project Type",
-    description: "View and access project type records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectType.create": {
-    name: "Create Project Type",
-    description: "Create new project type records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectType.update": {
-    name: "Update Project Type",
-    description: "Modify existing project type records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectType.soft_delete": {
-    name: "Delete Project Type",
-    description: "Delete (soft) project type records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectType.restore": {
-    name: "Restore Project Type",
-    description: "Restore deleted project type records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectType.activate": {
-    name: "Activate Project Type",
-    description: "Activate project type records within tenant scope",
-    domain: "project_management",
-  },
-  "ProjectType.deactivate": {
-    name: "Deactivate Project Type",
-    description: "Deactivate project type records within tenant scope",
-    domain: "project_management",
-  },
-  "Task.read": {
-    name: "View Task",
-    description: "View and access task records within tenant scope",
-    domain: "task_execution",
-  },
-  "Task.create": {
-    name: "Create Task",
-    description: "Create new task records within tenant scope",
-    domain: "task_execution",
-  },
-  "Task.update": {
-    name: "Update Task",
-    description: "Modify existing task records within tenant scope",
-    domain: "task_execution",
-  },
-  "Task.soft_delete": {
-    name: "Delete Task",
-    description: "Delete (soft) task records within tenant scope",
-    domain: "task_execution",
-  },
-  "Task.restore": {
-    name: "Restore Task",
-    description: "Restore deleted task records within tenant scope",
-    domain: "task_execution",
-  },
-  "Task.hard_delete": {
-    name: "Permanently Delete Task",
-    description: "Permanently delete task records within tenant scope",
-    domain: "task_execution",
-  },
-  "Task.assign": {
-    name: "Assign Task",
-    description: "Assign task records within tenant scope",
-    domain: "task_execution",
-  },
-  "Task.unassign": {
-    name: "Unassign Task",
-    description: "Remove assignment of task records within tenant scope",
-    domain: "task_execution",
-  },
-  "Task.transfer": {
-    name: "Transfer Task",
-    description: "Transfer ownership of task records within tenant scope",
-    domain: "task_execution",
-  },
-  "Task.activate": {
-    name: "Activate Task",
-    description: "Activate task records within tenant scope",
-    domain: "task_execution",
-  },
-  "Task.deactivate": {
-    name: "Deactivate Task",
-    description: "Deactivate task records within tenant scope",
-    domain: "task_execution",
-  },
-  "Task.duplicate": {
-    name: "Duplicate Task",
-    description: "Duplicate task records within tenant scope",
-    domain: "task_execution",
-  },
-  "TaskAssignment.read": {
-    name: "View Task Assignment",
-    description: "View and access task assignment records within tenant scope",
-    domain: "task_execution",
-  },
-  "TaskAssignment.create": {
-    name: "Create Task Assignment",
-    description: "Create new task assignment records within tenant scope",
-    domain: "task_execution",
-  },
-  "TaskAssignment.update": {
-    name: "Update Task Assignment",
-    description: "Modify existing task assignment records within tenant scope",
-    domain: "task_execution",
-  },
-  "TaskAssignment.soft_delete": {
-    name: "Delete Task Assignment",
-    description: "Delete (soft) task assignment records within tenant scope",
-    domain: "task_execution",
-  },
-  "TaskAssignment.restore": {
-    name: "Restore Task Assignment",
-    description: "Restore deleted task assignment records within tenant scope",
-    domain: "task_execution",
-  },
-  "TaskAssignment.assign": {
-    name: "Assign Task Assignment",
-    description: "Assign task assignment records within tenant scope",
-    domain: "task_execution",
-  },
-  "TaskAssignment.unassign": {
-    name: "Unassign Task Assignment",
-    description:
-      "Remove assignment of task assignment records within tenant scope",
-    domain: "task_execution",
-  },
-  "TaskAssignment.transfer": {
-    name: "Transfer Task Assignment",
-    description:
-      "Transfer ownership of task assignment records within tenant scope",
-    domain: "task_execution",
-  },
-  "TaskDependency.read": {
-    name: "View Task Dependency",
-    description: "View and access task dependency records within tenant scope",
-    domain: "task_execution",
-  },
-  "TaskDependency.create": {
-    name: "Create Task Dependency",
-    description: "Create new task dependency records within tenant scope",
-    domain: "task_execution",
-  },
-  "TaskDependency.update": {
-    name: "Update Task Dependency",
-    description: "Modify existing task dependency records within tenant scope",
-    domain: "task_execution",
-  },
-  "TaskDependency.soft_delete": {
-    name: "Delete Task Dependency",
-    description: "Delete (soft) task dependency records within tenant scope",
-    domain: "task_execution",
-  },
-  "TaskDependency.restore": {
-    name: "Restore Task Dependency",
-    description: "Restore deleted task dependency records within tenant scope",
-    domain: "task_execution",
-  },
-  "TaskAttachment.read": {
-    name: "View Task Attachment",
-    description: "View and access task attachment records within tenant scope",
-    domain: "task_execution",
-  },
-  "TaskAttachment.create": {
-    name: "Create Task Attachment",
-    description: "Create new task attachment records within tenant scope",
-    domain: "task_execution",
-  },
-  "TaskAttachment.update": {
-    name: "Update Task Attachment",
-    description: "Modify existing task attachment records within tenant scope",
-    domain: "task_execution",
-  },
-  "TaskAttachment.soft_delete": {
-    name: "Delete Task Attachment",
-    description: "Delete (soft) task attachment records within tenant scope",
-    domain: "task_execution",
-  },
-  "TaskAttachment.restore": {
-    name: "Restore Task Attachment",
-    description: "Restore deleted task attachment records within tenant scope",
-    domain: "task_execution",
-  },
-  "TaskChecklistItem.read": {
-    name: "View Task Checklist Item",
-    description:
-      "View and access task checklist item records within tenant scope",
-    domain: "task_execution",
-  },
-  "TaskChecklistItem.create": {
-    name: "Create Task Checklist Item",
-    description: "Create new task checklist item records within tenant scope",
-    domain: "task_execution",
-  },
-  "TaskChecklistItem.update": {
-    name: "Update Task Checklist Item",
-    description:
-      "Modify existing task checklist item records within tenant scope",
-    domain: "task_execution",
-  },
-  "TaskChecklistItem.soft_delete": {
-    name: "Delete Task Checklist Item",
-    description:
-      "Delete (soft) task checklist item records within tenant scope",
-    domain: "task_execution",
-  },
-  "TaskChecklistItem.restore": {
-    name: "Restore Task Checklist Item",
-    description:
-      "Restore deleted task checklist item records within tenant scope",
-    domain: "task_execution",
-  },
-  "Invoice.read": {
-    name: "View Invoice",
-    description: "View and access invoice records within tenant scope",
-    domain: "financial_operations",
-  },
-  "Invoice.create": {
-    name: "Create Invoice",
-    description: "Create new invoice records within tenant scope",
-    domain: "financial_operations",
-  },
-  "Invoice.update": {
-    name: "Update Invoice",
-    description: "Modify existing invoice records within tenant scope",
-    domain: "financial_operations",
-  },
-  "Invoice.soft_delete": {
-    name: "Delete Invoice",
-    description: "Delete (soft) invoice records within tenant scope",
-    domain: "financial_operations",
-  },
-  "Invoice.restore": {
-    name: "Restore Invoice",
-    description: "Restore deleted invoice records within tenant scope",
-    domain: "financial_operations",
-  },
-  "Invoice.hard_delete": {
-    name: "Permanently Delete Invoice",
-    description: "Permanently delete invoice records within tenant scope",
-    domain: "financial_operations",
-  },
-  "Invoice.send": {
-    name: "Send Invoice",
-    description: "Send invoice records within tenant scope",
-    domain: "financial_operations",
-  },
-  "Invoice.duplicate": {
-    name: "Duplicate Invoice",
-    description: "Duplicate invoice records within tenant scope",
-    domain: "financial_operations",
-  },
-  "Invoice.export": {
-    name: "Export Invoice",
-    description: "Export data for invoice records within tenant scope",
-    domain: "financial_operations",
-  },
-  "Invoice.approve": {
-    name: "Approve Invoice",
-    description: "Approve invoice records within tenant scope",
-    domain: "financial_operations",
-  },
-  "Invoice.reject": {
-    name: "Reject Invoice",
-    description: "Reject invoice records within tenant scope",
-    domain: "financial_operations",
-  },
-  "InvoiceLineItem.read": {
-    name: "View Invoice Line Item",
-    description:
-      "View and access invoice line item records within tenant scope",
-    domain: "financial_operations",
-  },
-  "InvoiceLineItem.create": {
-    name: "Create Invoice Line Item",
-    description: "Create new invoice line item records within tenant scope",
-    domain: "financial_operations",
-  },
-  "InvoiceLineItem.update": {
-    name: "Update Invoice Line Item",
-    description:
-      "Modify existing invoice line item records within tenant scope",
-    domain: "financial_operations",
-  },
-  "InvoiceLineItem.soft_delete": {
-    name: "Delete Invoice Line Item",
-    description: "Delete (soft) invoice line item records within tenant scope",
-    domain: "financial_operations",
-  },
-  "InvoiceLineItem.restore": {
-    name: "Restore Invoice Line Item",
-    description:
-      "Restore deleted invoice line item records within tenant scope",
-    domain: "financial_operations",
-  },
-  "InvoiceAttachment.read": {
-    name: "View Invoice Attachment",
-    description:
-      "View and access invoice attachment records within tenant scope",
-    domain: "financial_operations",
-  },
-  "InvoiceAttachment.create": {
-    name: "Create Invoice Attachment",
-    description: "Create new invoice attachment records within tenant scope",
-    domain: "financial_operations",
-  },
-  "InvoiceAttachment.update": {
-    name: "Update Invoice Attachment",
-    description:
-      "Modify existing invoice attachment records within tenant scope",
-    domain: "financial_operations",
-  },
-  "InvoiceAttachment.soft_delete": {
-    name: "Delete Invoice Attachment",
-    description: "Delete (soft) invoice attachment records within tenant scope",
-    domain: "financial_operations",
-  },
-  "InvoiceAttachment.restore": {
-    name: "Restore Invoice Attachment",
-    description:
-      "Restore deleted invoice attachment records within tenant scope",
-    domain: "financial_operations",
-  },
-  "InvoiceTax.read": {
-    name: "View Invoice Tax",
-    description: "View and access invoice tax records within tenant scope",
-    domain: "financial_operations",
-  },
-  "InvoiceTax.create": {
-    name: "Create Invoice Tax",
-    description: "Create new invoice tax records within tenant scope",
-    domain: "financial_operations",
-  },
-  "InvoiceTax.update": {
-    name: "Update Invoice Tax",
-    description: "Modify existing invoice tax records within tenant scope",
-    domain: "financial_operations",
-  },
-  "InvoiceTax.soft_delete": {
-    name: "Delete Invoice Tax",
-    description: "Delete (soft) invoice tax records within tenant scope",
-    domain: "financial_operations",
-  },
-  "InvoiceTax.restore": {
-    name: "Restore Invoice Tax",
-    description: "Restore deleted invoice tax records within tenant scope",
-    domain: "financial_operations",
-  },
-  "Payment.read": {
-    name: "View Payment",
-    description: "View and access payment records within tenant scope",
-    domain: "financial_operations",
-  },
-  "Payment.create": {
-    name: "Create Payment",
-    description: "Create new payment records within tenant scope",
-    domain: "financial_operations",
-  },
-  "Payment.update": {
-    name: "Update Payment",
-    description: "Modify existing payment records within tenant scope",
-    domain: "financial_operations",
-  },
-  "Payment.soft_delete": {
-    name: "Delete Payment",
-    description: "Delete (soft) payment records within tenant scope",
-    domain: "financial_operations",
-  },
-  "Payment.restore": {
-    name: "Restore Payment",
-    description: "Restore deleted payment records within tenant scope",
-    domain: "financial_operations",
-  },
-  "Payment.export": {
-    name: "Export Payment",
-    description: "Export data for payment records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PaymentSchedule.read": {
-    name: "View Payment Schedule",
-    description: "View and access payment schedule records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PaymentSchedule.create": {
-    name: "Create Payment Schedule",
-    description: "Create new payment schedule records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PaymentSchedule.update": {
-    name: "Update Payment Schedule",
-    description: "Modify existing payment schedule records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PaymentSchedule.soft_delete": {
-    name: "Delete Payment Schedule",
-    description: "Delete (soft) payment schedule records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PaymentSchedule.restore": {
-    name: "Restore Payment Schedule",
-    description: "Restore deleted payment schedule records within tenant scope",
-    domain: "financial_operations",
-  },
-  "APBill.read": {
-    name: "View A P Bill",
-    description: "View and access a p bill records within tenant scope",
-    domain: "financial_operations",
-  },
-  "APBill.create": {
-    name: "Create A P Bill",
-    description: "Create new a p bill records within tenant scope",
-    domain: "financial_operations",
-  },
-  "APBill.update": {
-    name: "Update A P Bill",
-    description: "Modify existing a p bill records within tenant scope",
-    domain: "financial_operations",
-  },
-  "APBill.soft_delete": {
-    name: "Delete A P Bill",
-    description: "Delete (soft) a p bill records within tenant scope",
-    domain: "financial_operations",
-  },
-  "APBill.restore": {
-    name: "Restore A P Bill",
-    description: "Restore deleted a p bill records within tenant scope",
-    domain: "financial_operations",
-  },
-  "APBill.approve": {
-    name: "Approve A P Bill",
-    description: "Approve a p bill records within tenant scope",
-    domain: "financial_operations",
-  },
-  "APBill.reject": {
-    name: "Reject A P Bill",
-    description: "Reject a p bill records within tenant scope",
-    domain: "financial_operations",
-  },
-  "APBillLine.read": {
-    name: "View A P Bill Line",
-    description: "View and access a p bill line records within tenant scope",
-    domain: "financial_operations",
-  },
-  "APBillLine.create": {
-    name: "Create A P Bill Line",
-    description: "Create new a p bill line records within tenant scope",
-    domain: "financial_operations",
-  },
-  "APBillLine.update": {
-    name: "Update A P Bill Line",
-    description: "Modify existing a p bill line records within tenant scope",
-    domain: "financial_operations",
-  },
-  "APBillLine.soft_delete": {
-    name: "Delete A P Bill Line",
-    description: "Delete (soft) a p bill line records within tenant scope",
-    domain: "financial_operations",
-  },
-  "APBillLine.restore": {
-    name: "Restore A P Bill Line",
-    description: "Restore deleted a p bill line records within tenant scope",
-    domain: "financial_operations",
-  },
-  "BillApproval.read": {
-    name: "View Bill Approval",
-    description: "View and access bill approval records within tenant scope",
-    domain: "financial_operations",
-  },
-  "BillApproval.create": {
-    name: "Create Bill Approval",
-    description: "Create new bill approval records within tenant scope",
-    domain: "financial_operations",
-  },
-  "BillApproval.approve": {
-    name: "Approve Bill Approval",
-    description: "Approve bill approval records within tenant scope",
-    domain: "financial_operations",
-  },
-  "BillApproval.reject": {
-    name: "Reject Bill Approval",
-    description: "Reject bill approval records within tenant scope",
-    domain: "financial_operations",
-  },
-  "BillPayment.read": {
-    name: "View Bill Payment",
-    description: "View and access bill payment records within tenant scope",
-    domain: "financial_operations",
-  },
-  "BillPayment.create": {
-    name: "Create Bill Payment",
-    description: "Create new bill payment records within tenant scope",
-    domain: "financial_operations",
-  },
-  "BillPayment.update": {
-    name: "Update Bill Payment",
-    description: "Modify existing bill payment records within tenant scope",
-    domain: "financial_operations",
-  },
-  "BillPayment.soft_delete": {
-    name: "Delete Bill Payment",
-    description: "Delete (soft) bill payment records within tenant scope",
-    domain: "financial_operations",
-  },
-  "BillPayment.restore": {
-    name: "Restore Bill Payment",
-    description: "Restore deleted bill payment records within tenant scope",
-    domain: "financial_operations",
-  },
-  "Expense.read": {
-    name: "View Expense",
-    description: "View and access expense records within tenant scope",
-    domain: "financial_operations",
-  },
-  "Expense.create": {
-    name: "Create Expense",
-    description: "Create new expense records within tenant scope",
-    domain: "financial_operations",
-  },
-  "Expense.update": {
-    name: "Update Expense",
-    description: "Modify existing expense records within tenant scope",
-    domain: "financial_operations",
-  },
-  "Expense.soft_delete": {
-    name: "Delete Expense",
-    description: "Delete (soft) expense records within tenant scope",
-    domain: "financial_operations",
-  },
-  "Expense.restore": {
-    name: "Restore Expense",
-    description: "Restore deleted expense records within tenant scope",
-    domain: "financial_operations",
-  },
-  "Expense.approve": {
-    name: "Approve Expense",
-    description: "Approve expense records within tenant scope",
-    domain: "financial_operations",
-  },
-  "Expense.reject": {
-    name: "Reject Expense",
-    description: "Reject expense records within tenant scope",
-    domain: "financial_operations",
-  },
-  "Expense.export": {
-    name: "Export Expense",
-    description: "Export data for expense records within tenant scope",
-    domain: "financial_operations",
-  },
-  "ExpenseLine.read": {
-    name: "View Expense Line",
-    description: "View and access expense line records within tenant scope",
-    domain: "financial_operations",
-  },
-  "ExpenseLine.create": {
-    name: "Create Expense Line",
-    description: "Create new expense line records within tenant scope",
-    domain: "financial_operations",
-  },
-  "ExpenseLine.update": {
-    name: "Update Expense Line",
-    description: "Modify existing expense line records within tenant scope",
-    domain: "financial_operations",
-  },
-  "ExpenseLine.soft_delete": {
-    name: "Delete Expense Line",
-    description: "Delete (soft) expense line records within tenant scope",
-    domain: "financial_operations",
-  },
-  "ExpenseLine.restore": {
-    name: "Restore Expense Line",
-    description: "Restore deleted expense line records within tenant scope",
-    domain: "financial_operations",
-  },
-  "ExpenseApproval.read": {
-    name: "View Expense Approval",
-    description: "View and access expense approval records within tenant scope",
-    domain: "financial_operations",
-  },
-  "ExpenseApproval.create": {
-    name: "Create Expense Approval",
-    description: "Create new expense approval records within tenant scope",
-    domain: "financial_operations",
-  },
-  "ExpenseApproval.approve": {
-    name: "Approve Expense Approval",
-    description: "Approve expense approval records within tenant scope",
-    domain: "financial_operations",
-  },
-  "ExpenseApproval.reject": {
-    name: "Reject Expense Approval",
-    description: "Reject expense approval records within tenant scope",
-    domain: "financial_operations",
-  },
-  "ExpenseReceipt.read": {
-    name: "View Expense Receipt",
-    description: "View and access expense receipt records within tenant scope",
-    domain: "financial_operations",
-  },
-  "ExpenseReceipt.create": {
-    name: "Create Expense Receipt",
-    description: "Create new expense receipt records within tenant scope",
-    domain: "financial_operations",
-  },
-  "ExpenseReceipt.update": {
-    name: "Update Expense Receipt",
-    description: "Modify existing expense receipt records within tenant scope",
-    domain: "financial_operations",
-  },
-  "ExpenseReceipt.soft_delete": {
-    name: "Delete Expense Receipt",
-    description: "Delete (soft) expense receipt records within tenant scope",
-    domain: "financial_operations",
-  },
-  "ExpenseReceipt.restore": {
-    name: "Restore Expense Receipt",
-    description: "Restore deleted expense receipt records within tenant scope",
-    domain: "financial_operations",
-  },
-  "CreditMemo.read": {
-    name: "View Credit Memo",
-    description: "View and access credit memo records within tenant scope",
-    domain: "financial_operations",
-  },
-  "CreditMemo.create": {
-    name: "Create Credit Memo",
-    description: "Create new credit memo records within tenant scope",
-    domain: "financial_operations",
-  },
-  "CreditMemo.update": {
-    name: "Update Credit Memo",
-    description: "Modify existing credit memo records within tenant scope",
-    domain: "financial_operations",
-  },
-  "CreditMemo.soft_delete": {
-    name: "Delete Credit Memo",
-    description: "Delete (soft) credit memo records within tenant scope",
-    domain: "financial_operations",
-  },
-  "CreditMemo.restore": {
-    name: "Restore Credit Memo",
-    description: "Restore deleted credit memo records within tenant scope",
-    domain: "financial_operations",
-  },
-  "CreditMemoLine.read": {
-    name: "View Credit Memo Line",
-    description: "View and access credit memo line records within tenant scope",
-    domain: "financial_operations",
-  },
-  "CreditMemoLine.create": {
-    name: "Create Credit Memo Line",
-    description: "Create new credit memo line records within tenant scope",
-    domain: "financial_operations",
-  },
-  "CreditMemoLine.update": {
-    name: "Update Credit Memo Line",
-    description: "Modify existing credit memo line records within tenant scope",
-    domain: "financial_operations",
-  },
-  "CreditMemoLine.soft_delete": {
-    name: "Delete Credit Memo Line",
-    description: "Delete (soft) credit memo line records within tenant scope",
-    domain: "financial_operations",
-  },
-  "CreditMemoLine.restore": {
-    name: "Restore Credit Memo Line",
-    description: "Restore deleted credit memo line records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PurchaseOrder.read": {
-    name: "View Purchase Order",
-    description: "View and access purchase order records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PurchaseOrder.create": {
-    name: "Create Purchase Order",
-    description: "Create new purchase order records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PurchaseOrder.update": {
-    name: "Update Purchase Order",
-    description: "Modify existing purchase order records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PurchaseOrder.soft_delete": {
-    name: "Delete Purchase Order",
-    description: "Delete (soft) purchase order records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PurchaseOrder.restore": {
-    name: "Restore Purchase Order",
-    description: "Restore deleted purchase order records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PurchaseOrder.send": {
-    name: "Send Purchase Order",
-    description: "Send purchase order records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PurchaseOrder.approve": {
-    name: "Approve Purchase Order",
-    description: "Approve purchase order records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PurchaseOrder.reject": {
-    name: "Reject Purchase Order",
-    description: "Reject purchase order records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PurchaseOrderLine.read": {
-    name: "View Purchase Order Line",
-    description:
-      "View and access purchase order line records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PurchaseOrderLine.create": {
-    name: "Create Purchase Order Line",
-    description: "Create new purchase order line records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PurchaseOrderLine.update": {
-    name: "Update Purchase Order Line",
-    description:
-      "Modify existing purchase order line records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PurchaseOrderLine.soft_delete": {
-    name: "Delete Purchase Order Line",
-    description:
-      "Delete (soft) purchase order line records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PurchaseOrderLine.restore": {
-    name: "Restore Purchase Order Line",
-    description:
-      "Restore deleted purchase order line records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PurchaseOrderApproval.read": {
-    name: "View Purchase Order Approval",
-    description:
-      "View and access purchase order approval records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PurchaseOrderApproval.create": {
-    name: "Create Purchase Order Approval",
-    description:
-      "Create new purchase order approval records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PurchaseOrderApproval.approve": {
-    name: "Approve Purchase Order Approval",
-    description: "Approve purchase order approval records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PurchaseOrderApproval.reject": {
-    name: "Reject Purchase Order Approval",
-    description: "Reject purchase order approval records within tenant scope",
-    domain: "financial_operations",
-  },
-  "GLAccount.read": {
-    name: "View G L Account",
-    description: "View and access g l account records within tenant scope",
-    domain: "financial_operations",
-  },
-  "GLAccount.create": {
-    name: "Create G L Account",
-    description: "Create new g l account records within tenant scope",
-    domain: "financial_operations",
-  },
-  "GLAccount.update": {
-    name: "Update G L Account",
-    description: "Modify existing g l account records within tenant scope",
-    domain: "financial_operations",
-  },
-  "GLAccount.soft_delete": {
-    name: "Delete G L Account",
-    description: "Delete (soft) g l account records within tenant scope",
-    domain: "financial_operations",
-  },
-  "GLAccount.restore": {
-    name: "Restore G L Account",
-    description: "Restore deleted g l account records within tenant scope",
-    domain: "financial_operations",
-  },
-  "GLAccount.activate": {
-    name: "Activate G L Account",
-    description: "Activate g l account records within tenant scope",
-    domain: "financial_operations",
-  },
-  "GLAccount.deactivate": {
-    name: "Deactivate G L Account",
-    description: "Deactivate g l account records within tenant scope",
-    domain: "financial_operations",
-  },
-  "JournalEntry.read": {
-    name: "View Journal Entry",
-    description: "View and access journal entry records within tenant scope",
-    domain: "financial_operations",
-  },
-  "JournalEntry.create": {
-    name: "Create Journal Entry",
-    description: "Create new journal entry records within tenant scope",
-    domain: "financial_operations",
-  },
-  "JournalEntry.update": {
-    name: "Update Journal Entry",
-    description: "Modify existing journal entry records within tenant scope",
-    domain: "financial_operations",
-  },
-  "JournalEntry.soft_delete": {
-    name: "Delete Journal Entry",
-    description: "Delete (soft) journal entry records within tenant scope",
-    domain: "financial_operations",
-  },
-  "JournalEntry.restore": {
-    name: "Restore Journal Entry",
-    description: "Restore deleted journal entry records within tenant scope",
-    domain: "financial_operations",
-  },
-  "JournalLine.read": {
-    name: "View Journal Line",
-    description: "View and access journal line records within tenant scope",
-    domain: "financial_operations",
-  },
-  "JournalLine.create": {
-    name: "Create Journal Line",
-    description: "Create new journal line records within tenant scope",
-    domain: "financial_operations",
-  },
-  "JournalLine.update": {
-    name: "Update Journal Line",
-    description: "Modify existing journal line records within tenant scope",
-    domain: "financial_operations",
-  },
-  "JournalLine.soft_delete": {
-    name: "Delete Journal Line",
-    description: "Delete (soft) journal line records within tenant scope",
-    domain: "financial_operations",
-  },
-  "JournalLine.restore": {
-    name: "Restore Journal Line",
-    description: "Restore deleted journal line records within tenant scope",
-    domain: "financial_operations",
-  },
-  "BankAccount.read": {
-    name: "View Bank Account",
-    description: "View and access bank account records within tenant scope",
-    domain: "financial_operations",
-  },
-  "BankAccount.create": {
-    name: "Create Bank Account",
-    description: "Create new bank account records within tenant scope",
-    domain: "financial_operations",
-  },
-  "BankAccount.update": {
-    name: "Update Bank Account",
-    description: "Modify existing bank account records within tenant scope",
-    domain: "financial_operations",
-  },
-  "BankAccount.soft_delete": {
-    name: "Delete Bank Account",
-    description: "Delete (soft) bank account records within tenant scope",
-    domain: "financial_operations",
-  },
-  "BankAccount.restore": {
-    name: "Restore Bank Account",
-    description: "Restore deleted bank account records within tenant scope",
-    domain: "financial_operations",
-  },
-  "BankAccount.activate": {
-    name: "Activate Bank Account",
-    description: "Activate bank account records within tenant scope",
-    domain: "financial_operations",
-  },
-  "BankAccount.deactivate": {
-    name: "Deactivate Bank Account",
-    description: "Deactivate bank account records within tenant scope",
-    domain: "financial_operations",
-  },
-  "BankStatementLine.read": {
-    name: "View Bank Statement Line",
-    description:
-      "View and access bank statement line records within tenant scope",
-    domain: "financial_operations",
-  },
-  "BankStatementLine.create": {
-    name: "Create Bank Statement Line",
-    description: "Create new bank statement line records within tenant scope",
-    domain: "financial_operations",
-  },
-  "BankStatementLine.update": {
-    name: "Update Bank Statement Line",
-    description:
-      "Modify existing bank statement line records within tenant scope",
-    domain: "financial_operations",
-  },
-  "BankStatementLine.soft_delete": {
-    name: "Delete Bank Statement Line",
-    description:
-      "Delete (soft) bank statement line records within tenant scope",
-    domain: "financial_operations",
-  },
-  "BankStatementLine.restore": {
-    name: "Restore Bank Statement Line",
-    description:
-      "Restore deleted bank statement line records within tenant scope",
-    domain: "financial_operations",
-  },
-  "Reconciliation.read": {
-    name: "View Reconciliation",
-    description: "View and access reconciliation records within tenant scope",
-    domain: "financial_operations",
-  },
-  "Reconciliation.create": {
-    name: "Create Reconciliation",
-    description: "Create new reconciliation records within tenant scope",
-    domain: "financial_operations",
-  },
-  "Reconciliation.update": {
-    name: "Update Reconciliation",
-    description: "Modify existing reconciliation records within tenant scope",
-    domain: "financial_operations",
-  },
-  "Reconciliation.soft_delete": {
-    name: "Delete Reconciliation",
-    description: "Delete (soft) reconciliation records within tenant scope",
-    domain: "financial_operations",
-  },
-  "Reconciliation.restore": {
-    name: "Restore Reconciliation",
-    description: "Restore deleted reconciliation records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PayrollRun.read": {
-    name: "View Payroll Run",
-    description: "View and access payroll run records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PayrollRun.create": {
-    name: "Create Payroll Run",
-    description: "Create new payroll run records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PayrollRun.update": {
-    name: "Update Payroll Run",
-    description: "Modify existing payroll run records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PayrollRun.soft_delete": {
-    name: "Delete Payroll Run",
-    description: "Delete (soft) payroll run records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PayrollRun.restore": {
-    name: "Restore Payroll Run",
-    description: "Restore deleted payroll run records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PayrollRun.approve": {
-    name: "Approve Payroll Run",
-    description: "Approve payroll run records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PayrollRun.reject": {
-    name: "Reject Payroll Run",
-    description: "Reject payroll run records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PayrollItem.read": {
-    name: "View Payroll Item",
-    description: "View and access payroll item records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PayrollItem.create": {
-    name: "Create Payroll Item",
-    description: "Create new payroll item records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PayrollItem.update": {
-    name: "Update Payroll Item",
-    description: "Modify existing payroll item records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PayrollItem.soft_delete": {
-    name: "Delete Payroll Item",
-    description: "Delete (soft) payroll item records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PayrollItem.restore": {
-    name: "Restore Payroll Item",
-    description: "Restore deleted payroll item records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PayrollAdjustment.read": {
-    name: "View Payroll Adjustment",
-    description:
-      "View and access payroll adjustment records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PayrollAdjustment.create": {
-    name: "Create Payroll Adjustment",
-    description: "Create new payroll adjustment records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PayrollAdjustment.update": {
-    name: "Update Payroll Adjustment",
-    description:
-      "Modify existing payroll adjustment records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PayrollAdjustment.soft_delete": {
-    name: "Delete Payroll Adjustment",
-    description: "Delete (soft) payroll adjustment records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PayrollAdjustment.restore": {
-    name: "Restore Payroll Adjustment",
-    description:
-      "Restore deleted payroll adjustment records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PayrollPayment.read": {
-    name: "View Payroll Payment",
-    description: "View and access payroll payment records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PayrollPayment.create": {
-    name: "Create Payroll Payment",
-    description: "Create new payroll payment records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PayrollPayment.update": {
-    name: "Update Payroll Payment",
-    description: "Modify existing payroll payment records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PayrollPayment.soft_delete": {
-    name: "Delete Payroll Payment",
-    description: "Delete (soft) payroll payment records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PayrollPayment.restore": {
-    name: "Restore Payroll Payment",
-    description: "Restore deleted payroll payment records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PayrollTax.read": {
-    name: "View Payroll Tax",
-    description: "View and access payroll tax records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PayrollTax.create": {
-    name: "Create Payroll Tax",
-    description: "Create new payroll tax records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PayrollTax.update": {
-    name: "Update Payroll Tax",
-    description: "Modify existing payroll tax records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PayrollTax.soft_delete": {
-    name: "Delete Payroll Tax",
-    description: "Delete (soft) payroll tax records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PayrollTax.restore": {
-    name: "Restore Payroll Tax",
-    description: "Restore deleted payroll tax records within tenant scope",
-    domain: "financial_operations",
-  },
-  "InvoicePayment.read": {
-    name: "View Invoice Payment",
-    description: "View and access invoice payment records within tenant scope",
-    domain: "financial_operations",
-  },
-  "InvoicePayment.create": {
-    name: "Create Invoice Payment",
-    description: "Create new invoice payment records within tenant scope",
-    domain: "financial_operations",
-  },
-  "InvoicePayment.update": {
-    name: "Update Invoice Payment",
-    description: "Modify existing invoice payment records within tenant scope",
-    domain: "financial_operations",
-  },
-  "InvoicePayment.soft_delete": {
-    name: "Delete Invoice Payment",
-    description: "Delete (soft) invoice payment records within tenant scope",
-    domain: "financial_operations",
-  },
-  "InvoicePayment.restore": {
-    name: "Restore Invoice Payment",
-    description: "Restore deleted invoice payment records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PaymentApplication.read": {
-    name: "View Payment Application",
-    description:
-      "View and access payment application records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PaymentApplication.create": {
-    name: "Create Payment Application",
-    description: "Create new payment application records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PaymentApplication.update": {
-    name: "Update Payment Application",
-    description:
-      "Modify existing payment application records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PaymentApplication.soft_delete": {
-    name: "Delete Payment Application",
-    description:
-      "Delete (soft) payment application records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PaymentApplication.restore": {
-    name: "Restore Payment Application",
-    description:
-      "Restore deleted payment application records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PaymentGateway.read": {
-    name: "View Payment Gateway",
-    description: "View and access payment gateway records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PaymentGateway.create": {
-    name: "Create Payment Gateway",
-    description: "Create new payment gateway records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PaymentGateway.update": {
-    name: "Update Payment Gateway",
-    description: "Modify existing payment gateway records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PaymentGateway.soft_delete": {
-    name: "Delete Payment Gateway",
-    description: "Delete (soft) payment gateway records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PaymentGateway.restore": {
-    name: "Restore Payment Gateway",
-    description: "Restore deleted payment gateway records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PaymentGateway.activate": {
-    name: "Activate Payment Gateway",
-    description: "Activate payment gateway records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PaymentGateway.deactivate": {
-    name: "Deactivate Payment Gateway",
-    description: "Deactivate payment gateway records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PaymentMethod.read": {
-    name: "View Payment Method",
-    description: "View and access payment method records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PaymentMethod.create": {
-    name: "Create Payment Method",
-    description: "Create new payment method records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PaymentMethod.update": {
-    name: "Update Payment Method",
-    description: "Modify existing payment method records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PaymentMethod.soft_delete": {
-    name: "Delete Payment Method",
-    description: "Delete (soft) payment method records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PaymentMethod.restore": {
-    name: "Restore Payment Method",
-    description: "Restore deleted payment method records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PaymentMethodToken.read": {
-    name: "View Payment Method Token",
-    description:
-      "View and access payment method token records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PaymentMethodToken.create": {
-    name: "Create Payment Method Token",
-    description: "Create new payment method token records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PaymentMethodToken.update": {
-    name: "Update Payment Method Token",
-    description:
-      "Modify existing payment method token records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PaymentMethodToken.soft_delete": {
-    name: "Delete Payment Method Token",
-    description:
-      "Delete (soft) payment method token records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PaymentMethodToken.restore": {
-    name: "Restore Payment Method Token",
-    description:
-      "Restore deleted payment method token records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PaymentTerm.read": {
-    name: "View Payment Term",
-    description: "View and access payment term records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PaymentTerm.create": {
-    name: "Create Payment Term",
-    description: "Create new payment term records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PaymentTerm.update": {
-    name: "Update Payment Term",
-    description: "Modify existing payment term records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PaymentTerm.soft_delete": {
-    name: "Delete Payment Term",
-    description: "Delete (soft) payment term records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PaymentTerm.restore": {
-    name: "Restore Payment Term",
-    description: "Restore deleted payment term records within tenant scope",
-    domain: "financial_operations",
-  },
-  "FraudPolicy.read": {
-    name: "View Fraud Policy",
-    description: "View and access fraud policy records within tenant scope",
-    domain: "financial_operations",
-  },
-  "FraudPolicy.create": {
-    name: "Create Fraud Policy",
-    description: "Create new fraud policy records within tenant scope",
-    domain: "financial_operations",
-  },
-  "FraudPolicy.update": {
-    name: "Update Fraud Policy",
-    description: "Modify existing fraud policy records within tenant scope",
-    domain: "financial_operations",
-  },
-  "FraudPolicy.soft_delete": {
-    name: "Delete Fraud Policy",
-    description: "Delete (soft) fraud policy records within tenant scope",
-    domain: "financial_operations",
-  },
-  "FraudPolicy.restore": {
-    name: "Restore Fraud Policy",
-    description: "Restore deleted fraud policy records within tenant scope",
-    domain: "financial_operations",
-  },
-  "FraudPolicy.activate": {
-    name: "Activate Fraud Policy",
-    description: "Activate fraud policy records within tenant scope",
-    domain: "financial_operations",
-  },
-  "FraudPolicy.deactivate": {
-    name: "Deactivate Fraud Policy",
-    description: "Deactivate fraud policy records within tenant scope",
-    domain: "financial_operations",
-  },
-  "FraudPolicyRule.read": {
-    name: "View Fraud Policy Rule",
-    description:
-      "View and access fraud policy rule records within tenant scope",
-    domain: "financial_operations",
-  },
-  "FraudPolicyRule.create": {
-    name: "Create Fraud Policy Rule",
-    description: "Create new fraud policy rule records within tenant scope",
-    domain: "financial_operations",
-  },
-  "FraudPolicyRule.update": {
-    name: "Update Fraud Policy Rule",
-    description:
-      "Modify existing fraud policy rule records within tenant scope",
-    domain: "financial_operations",
-  },
-  "FraudPolicyRule.soft_delete": {
-    name: "Delete Fraud Policy Rule",
-    description: "Delete (soft) fraud policy rule records within tenant scope",
-    domain: "financial_operations",
-  },
-  "FraudPolicyRule.restore": {
-    name: "Restore Fraud Policy Rule",
-    description:
-      "Restore deleted fraud policy rule records within tenant scope",
-    domain: "financial_operations",
-  },
-  "FraudPolicyScope.read": {
-    name: "View Fraud Policy Scope",
-    description:
-      "View and access fraud policy scope records within tenant scope",
-    domain: "financial_operations",
-  },
-  "FraudPolicyScope.create": {
-    name: "Create Fraud Policy Scope",
-    description: "Create new fraud policy scope records within tenant scope",
-    domain: "financial_operations",
-  },
-  "FraudPolicyScope.update": {
-    name: "Update Fraud Policy Scope",
-    description:
-      "Modify existing fraud policy scope records within tenant scope",
-    domain: "financial_operations",
-  },
-  "FraudPolicyScope.soft_delete": {
-    name: "Delete Fraud Policy Scope",
-    description: "Delete (soft) fraud policy scope records within tenant scope",
-    domain: "financial_operations",
-  },
-  "FraudPolicyScope.restore": {
-    name: "Restore Fraud Policy Scope",
-    description:
-      "Restore deleted fraud policy scope records within tenant scope",
-    domain: "financial_operations",
-  },
-  "CurrencyRate.read": {
-    name: "View Currency Rate",
-    description: "View and access currency rate records within tenant scope",
-    domain: "financial_operations",
-  },
-  "CurrencyRate.create": {
-    name: "Create Currency Rate",
-    description: "Create new currency rate records within tenant scope",
-    domain: "financial_operations",
-  },
-  "CurrencyRate.update": {
-    name: "Update Currency Rate",
-    description: "Modify existing currency rate records within tenant scope",
-    domain: "financial_operations",
-  },
-  "ForecastLine.read": {
-    name: "View Forecast Line",
-    description: "View and access forecast line records within tenant scope",
-    domain: "financial_operations",
-  },
-  "ForecastLine.create": {
-    name: "Create Forecast Line",
-    description: "Create new forecast line records within tenant scope",
-    domain: "financial_operations",
-  },
-  "ForecastLine.update": {
-    name: "Update Forecast Line",
-    description: "Modify existing forecast line records within tenant scope",
-    domain: "financial_operations",
-  },
-  "ForecastLine.soft_delete": {
-    name: "Delete Forecast Line",
-    description: "Delete (soft) forecast line records within tenant scope",
-    domain: "financial_operations",
-  },
-  "ForecastLine.restore": {
-    name: "Restore Forecast Line",
-    description: "Restore deleted forecast line records within tenant scope",
-    domain: "financial_operations",
-  },
-  "ForecastSnapshot.read": {
-    name: "View Forecast Snapshot",
-    description:
-      "View and access forecast snapshot records within tenant scope",
-    domain: "financial_operations",
-  },
-  "ForecastSnapshot.create": {
-    name: "Create Forecast Snapshot",
-    description: "Create new forecast snapshot records within tenant scope",
-    domain: "financial_operations",
-  },
-  "ForecastSnapshot.export": {
-    name: "Export Forecast Snapshot",
-    description:
-      "Export data for forecast snapshot records within tenant scope",
-    domain: "financial_operations",
-  },
-  "Chargeback.read": {
-    name: "View Chargeback",
-    description: "View and access chargeback records within tenant scope",
-    domain: "financial_operations",
-  },
-  "Chargeback.create": {
-    name: "Create Chargeback",
-    description: "Create new chargeback records within tenant scope",
-    domain: "financial_operations",
-  },
-  "Chargeback.update": {
-    name: "Update Chargeback",
-    description: "Modify existing chargeback records within tenant scope",
-    domain: "financial_operations",
-  },
-  "Chargeback.soft_delete": {
-    name: "Delete Chargeback",
-    description: "Delete (soft) chargeback records within tenant scope",
-    domain: "financial_operations",
-  },
-  "Chargeback.restore": {
-    name: "Restore Chargeback",
-    description: "Restore deleted chargeback records within tenant scope",
-    domain: "financial_operations",
-  },
-  "ChargebackEvidence.read": {
-    name: "View Chargeback Evidence",
-    description:
-      "View and access chargeback evidence records within tenant scope",
-    domain: "financial_operations",
-  },
-  "ChargebackEvidence.create": {
-    name: "Create Chargeback Evidence",
-    description: "Create new chargeback evidence records within tenant scope",
-    domain: "financial_operations",
-  },
-  "ChargebackEvidence.update": {
-    name: "Update Chargeback Evidence",
-    description:
-      "Modify existing chargeback evidence records within tenant scope",
-    domain: "financial_operations",
-  },
-  "ChargebackEvidence.soft_delete": {
-    name: "Delete Chargeback Evidence",
-    description:
-      "Delete (soft) chargeback evidence records within tenant scope",
-    domain: "financial_operations",
-  },
-  "ChargebackEvidence.restore": {
-    name: "Restore Chargeback Evidence",
-    description:
-      "Restore deleted chargeback evidence records within tenant scope",
-    domain: "financial_operations",
-  },
-  "Refund.read": {
-    name: "View Refund",
-    description: "View and access refund records within tenant scope",
-    domain: "financial_operations",
-  },
-  "Refund.create": {
-    name: "Create Refund",
-    description: "Create new refund records within tenant scope",
-    domain: "financial_operations",
-  },
-  "Refund.update": {
-    name: "Update Refund",
-    description: "Modify existing refund records within tenant scope",
-    domain: "financial_operations",
-  },
-  "Refund.soft_delete": {
-    name: "Delete Refund",
-    description: "Delete (soft) refund records within tenant scope",
-    domain: "financial_operations",
-  },
-  "Refund.restore": {
-    name: "Restore Refund",
-    description: "Restore deleted refund records within tenant scope",
-    domain: "financial_operations",
-  },
-  "Payout.read": {
-    name: "View Payout",
-    description: "View and access payout records within tenant scope",
-    domain: "financial_operations",
-  },
-  "Payout.create": {
-    name: "Create Payout",
-    description: "Create new payout records within tenant scope",
-    domain: "financial_operations",
-  },
-  "Payout.update": {
-    name: "Update Payout",
-    description: "Modify existing payout records within tenant scope",
-    domain: "financial_operations",
-  },
-  "Payout.soft_delete": {
-    name: "Delete Payout",
-    description: "Delete (soft) payout records within tenant scope",
-    domain: "financial_operations",
-  },
-  "Payout.restore": {
-    name: "Restore Payout",
-    description: "Restore deleted payout records within tenant scope",
-    domain: "financial_operations",
-  },
-  "ExpenseReport.read": {
-    name: "View Expense Report",
-    description: "View and access expense report records within tenant scope",
-    domain: "financial_operations",
-  },
-  "ExpenseReport.create": {
-    name: "Create Expense Report",
-    description: "Create new expense report records within tenant scope",
-    domain: "financial_operations",
-  },
-  "ExpenseReport.update": {
-    name: "Update Expense Report",
-    description: "Modify existing expense report records within tenant scope",
-    domain: "financial_operations",
-  },
-  "ExpenseReport.soft_delete": {
-    name: "Delete Expense Report",
-    description: "Delete (soft) expense report records within tenant scope",
-    domain: "financial_operations",
-  },
-  "ExpenseReport.restore": {
-    name: "Restore Expense Report",
-    description: "Restore deleted expense report records within tenant scope",
-    domain: "financial_operations",
-  },
-  "ExpenseReport.submit": {
-    name: "Submit Expense Report",
-    description: "Submit expense report records within tenant scope",
-    domain: "financial_operations",
-  },
-  "ExpenseReport.approve": {
-    name: "Approve Expense Report",
-    description: "Approve expense report records within tenant scope",
-    domain: "financial_operations",
-  },
-  "ExpenseReport.reject": {
-    name: "Reject Expense Report",
-    description: "Reject expense report records within tenant scope",
-    domain: "financial_operations",
-  },
-  "Reimbursement.read": {
-    name: "View Reimbursement",
-    description: "View and access reimbursement records within tenant scope",
-    domain: "financial_operations",
-  },
-  "Reimbursement.create": {
-    name: "Create Reimbursement",
-    description: "Create new reimbursement records within tenant scope",
-    domain: "financial_operations",
-  },
-  "Reimbursement.update": {
-    name: "Update Reimbursement",
-    description: "Modify existing reimbursement records within tenant scope",
-    domain: "financial_operations",
-  },
-  "Reimbursement.soft_delete": {
-    name: "Delete Reimbursement",
-    description: "Delete (soft) reimbursement records within tenant scope",
-    domain: "financial_operations",
-  },
-  "Reimbursement.restore": {
-    name: "Restore Reimbursement",
-    description: "Restore deleted reimbursement records within tenant scope",
-    domain: "financial_operations",
-  },
-  "Reimbursement.process": {
-    name: "Process Reimbursement",
-    description: "Process reimbursement records within tenant scope",
-    domain: "financial_operations",
-  },
-  "DunningNotice.read": {
-    name: "View Dunning Notice",
-    description: "View and access dunning notice records within tenant scope",
-    domain: "financial_operations",
-  },
-  "DunningNotice.create": {
-    name: "Create Dunning Notice",
-    description: "Create new dunning notice records within tenant scope",
-    domain: "financial_operations",
-  },
-  "DunningNotice.update": {
-    name: "Update Dunning Notice",
-    description: "Modify existing dunning notice records within tenant scope",
-    domain: "financial_operations",
-  },
-  "DunningNotice.send": {
-    name: "Send Dunning Notice",
-    description: "Send dunning notice records within tenant scope",
-    domain: "financial_operations",
-  },
-  "ReturnReminder.read": {
-    name: "View Return Reminder",
-    description: "View and access return reminder records within tenant scope",
-    domain: "financial_operations",
-  },
-  "ReturnReminder.create": {
-    name: "Create Return Reminder",
-    description: "Create new return reminder records within tenant scope",
-    domain: "financial_operations",
-  },
-  "ReturnReminder.update": {
-    name: "Update Return Reminder",
-    description: "Modify existing return reminder records within tenant scope",
-    domain: "financial_operations",
-  },
-  "ReturnReminder.send": {
-    name: "Send Return Reminder",
-    description: "Send return reminder records within tenant scope",
-    domain: "financial_operations",
-  },
-  "ReturnReminderAttempt.read": {
-    name: "View Return Reminder Attempt",
-    description:
-      "View and access return reminder attempt records within tenant scope",
-    domain: "financial_operations",
-  },
-  "ReturnReminderAttempt.create": {
-    name: "Create Return Reminder Attempt",
-    description:
-      "Create new return reminder attempt records within tenant scope",
-    domain: "financial_operations",
-  },
-  "ClockInClockOut.read": {
-    name: "View Clock In Clock Out",
-    description:
-      "View and access clock in clock out records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "ClockInClockOut.create": {
-    name: "Create Clock In Clock Out",
-    description: "Create new clock in clock out records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "ClockInClockOut.update": {
-    name: "Update Clock In Clock Out",
-    description:
-      "Modify existing clock in clock out records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "ClockInClockOut.soft_delete": {
-    name: "Delete Clock In Clock Out",
-    description: "Delete (soft) clock in clock out records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "ClockInClockOut.restore": {
-    name: "Restore Clock In Clock Out",
-    description:
-      "Restore deleted clock in clock out records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "ClockInClockOut.approve": {
-    name: "Approve Clock In Clock Out",
-    description: "Approve clock in clock out records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "ClockInClockOut.reject": {
-    name: "Reject Clock In Clock Out",
-    description: "Reject clock in clock out records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "ClockInClockOut.export": {
-    name: "Export Clock In Clock Out",
-    description:
-      "Export data for clock in clock out records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "Schedule.read": {
-    name: "View Schedule",
-    description: "View and access schedule records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "Schedule.create": {
-    name: "Create Schedule",
-    description: "Create new schedule records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "Schedule.update": {
-    name: "Update Schedule",
-    description: "Modify existing schedule records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "Schedule.soft_delete": {
-    name: "Delete Schedule",
-    description: "Delete (soft) schedule records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "Schedule.restore": {
-    name: "Restore Schedule",
-    description: "Restore deleted schedule records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "Schedule.publish": {
-    name: "Publish Schedule",
-    description: "Publish schedule records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "Schedule.activate": {
-    name: "Activate Schedule",
-    description: "Activate schedule records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "Schedule.deactivate": {
-    name: "Deactivate Schedule",
-    description: "Deactivate schedule records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "ScheduleException.read": {
-    name: "View Schedule Exception",
-    description:
-      "View and access schedule exception records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "ScheduleException.create": {
-    name: "Create Schedule Exception",
-    description: "Create new schedule exception records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "ScheduleException.update": {
-    name: "Update Schedule Exception",
-    description:
-      "Modify existing schedule exception records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "ScheduleException.soft_delete": {
-    name: "Delete Schedule Exception",
-    description: "Delete (soft) schedule exception records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "ScheduleException.restore": {
-    name: "Restore Schedule Exception",
-    description:
-      "Restore deleted schedule exception records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "Leave.read": {
-    name: "View Leave",
-    description: "View and access leave records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "Leave.create": {
-    name: "Create Leave",
-    description: "Create new leave records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "Leave.update": {
-    name: "Update Leave",
-    description: "Modify existing leave records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "Leave.soft_delete": {
-    name: "Delete Leave",
-    description: "Delete (soft) leave records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "Leave.restore": {
-    name: "Restore Leave",
-    description: "Restore deleted leave records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "Leave.approve": {
-    name: "Approve Leave",
-    description: "Approve leave records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "Leave.reject": {
-    name: "Reject Leave",
-    description: "Reject leave records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "Timesheet.read": {
-    name: "View Timesheet",
-    description: "View and access timesheet records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "Timesheet.create": {
-    name: "Create Timesheet",
-    description: "Create new timesheet records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "Timesheet.update": {
-    name: "Update Timesheet",
-    description: "Modify existing timesheet records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "Timesheet.soft_delete": {
-    name: "Delete Timesheet",
-    description: "Delete (soft) timesheet records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "Timesheet.restore": {
-    name: "Restore Timesheet",
-    description: "Restore deleted timesheet records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "Timesheet.submit": {
-    name: "Submit Timesheet",
-    description: "Submit timesheet records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "Timesheet.approve": {
-    name: "Approve Timesheet",
-    description: "Approve timesheet records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "Timesheet.reject": {
-    name: "Reject Timesheet",
-    description: "Reject timesheet records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "TimesheetEntry.read": {
-    name: "View Timesheet Entry",
-    description: "View and access timesheet entry records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "TimesheetEntry.create": {
-    name: "Create Timesheet Entry",
-    description: "Create new timesheet entry records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "TimesheetEntry.update": {
-    name: "Update Timesheet Entry",
-    description: "Modify existing timesheet entry records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "TimesheetEntry.soft_delete": {
-    name: "Delete Timesheet Entry",
-    description: "Delete (soft) timesheet entry records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "TimesheetEntry.restore": {
-    name: "Restore Timesheet Entry",
-    description: "Restore deleted timesheet entry records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "TimesheetApproval.read": {
-    name: "View Timesheet Approval",
-    description:
-      "View and access timesheet approval records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "TimesheetApproval.create": {
-    name: "Create Timesheet Approval",
-    description: "Create new timesheet approval records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "TimesheetApproval.approve": {
-    name: "Approve Timesheet Approval",
-    description: "Approve timesheet approval records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "TimesheetApproval.reject": {
-    name: "Reject Timesheet Approval",
-    description: "Reject timesheet approval records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "LeaveOfAbsence.read": {
-    name: "View Leave Of Absence",
-    description: "View and access leave of absence records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "LeaveOfAbsence.create": {
-    name: "Create Leave Of Absence",
-    description: "Create new leave of absence records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "LeaveOfAbsence.update": {
-    name: "Update Leave Of Absence",
-    description: "Modify existing leave of absence records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "LeaveOfAbsence.soft_delete": {
-    name: "Delete Leave Of Absence",
-    description: "Delete (soft) leave of absence records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "LeaveOfAbsence.restore": {
-    name: "Restore Leave Of Absence",
-    description: "Restore deleted leave of absence records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "LeaveOfAbsence.approve": {
-    name: "Approve Leave Of Absence",
-    description: "Approve leave of absence records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "LeaveOfAbsence.reject": {
-    name: "Reject Leave Of Absence",
-    description: "Reject leave of absence records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "AbsenceBalance.read": {
-    name: "View Absence Balance",
-    description: "View and access absence balance records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "AbsenceBalance.create": {
-    name: "Create Absence Balance",
-    description: "Create new absence balance records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "AbsenceBalance.update": {
-    name: "Update Absence Balance",
-    description: "Modify existing absence balance records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "AbsenceBalance.soft_delete": {
-    name: "Delete Absence Balance",
-    description: "Delete (soft) absence balance records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "AbsenceBalance.restore": {
-    name: "Restore Absence Balance",
-    description: "Restore deleted absence balance records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "HolidayCalendar.read": {
-    name: "View Holiday Calendar",
-    description: "View and access holiday calendar records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "HolidayCalendar.create": {
-    name: "Create Holiday Calendar",
-    description: "Create new holiday calendar records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "HolidayCalendar.update": {
-    name: "Update Holiday Calendar",
-    description: "Modify existing holiday calendar records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "HolidayCalendar.soft_delete": {
-    name: "Delete Holiday Calendar",
-    description: "Delete (soft) holiday calendar records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "HolidayCalendar.restore": {
-    name: "Restore Holiday Calendar",
-    description: "Restore deleted holiday calendar records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "OvertimeRule.read": {
-    name: "View Overtime Rule",
-    description: "View and access overtime rule records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "OvertimeRule.create": {
-    name: "Create Overtime Rule",
-    description: "Create new overtime rule records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "OvertimeRule.update": {
-    name: "Update Overtime Rule",
-    description: "Modify existing overtime rule records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "OvertimeRule.soft_delete": {
-    name: "Delete Overtime Rule",
-    description: "Delete (soft) overtime rule records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "OvertimeRule.restore": {
-    name: "Restore Overtime Rule",
-    description: "Restore deleted overtime rule records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "OvertimeRule.activate": {
-    name: "Activate Overtime Rule",
-    description: "Activate overtime rule records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "OvertimeRule.deactivate": {
-    name: "Deactivate Overtime Rule",
-    description: "Deactivate overtime rule records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "PayCalendar.read": {
-    name: "View Pay Calendar",
-    description: "View and access pay calendar records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "PayCalendar.create": {
-    name: "Create Pay Calendar",
-    description: "Create new pay calendar records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "PayCalendar.update": {
-    name: "Update Pay Calendar",
-    description: "Modify existing pay calendar records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "PayCalendar.soft_delete": {
-    name: "Delete Pay Calendar",
-    description: "Delete (soft) pay calendar records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "PayCalendar.restore": {
-    name: "Restore Pay Calendar",
-    description: "Restore deleted pay calendar records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "PayGroup.read": {
-    name: "View Pay Group",
-    description: "View and access pay group records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "PayGroup.create": {
-    name: "Create Pay Group",
-    description: "Create new pay group records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "PayGroup.update": {
-    name: "Update Pay Group",
-    description: "Modify existing pay group records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "PayGroup.soft_delete": {
-    name: "Delete Pay Group",
-    description: "Delete (soft) pay group records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "PayGroup.restore": {
-    name: "Restore Pay Group",
-    description: "Restore deleted pay group records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "PayGroupAssignment.read": {
-    name: "View Pay Group Assignment",
-    description:
-      "View and access pay group assignment records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "PayGroupAssignment.create": {
-    name: "Create Pay Group Assignment",
-    description: "Create new pay group assignment records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "PayGroupAssignment.update": {
-    name: "Update Pay Group Assignment",
-    description:
-      "Modify existing pay group assignment records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "PayGroupAssignment.assign": {
-    name: "Assign Pay Group Assignment",
-    description: "Assign pay group assignment records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "PayGroupAssignment.unassign": {
-    name: "Unassign Pay Group Assignment",
-    description:
-      "Remove assignment of pay group assignment records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "InventoryItem.read": {
-    name: "View Inventory Item",
-    description: "View and access inventory item records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "InventoryItem.create": {
-    name: "Create Inventory Item",
-    description: "Create new inventory item records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "InventoryItem.update": {
-    name: "Update Inventory Item",
-    description: "Modify existing inventory item records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "InventoryItem.soft_delete": {
-    name: "Delete Inventory Item",
-    description: "Delete (soft) inventory item records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "InventoryItem.restore": {
-    name: "Restore Inventory Item",
-    description: "Restore deleted inventory item records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "InventoryItem.assign": {
-    name: "Assign Inventory Item",
-    description: "Assign inventory item records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "InventoryItem.unassign": {
-    name: "Unassign Inventory Item",
-    description:
-      "Remove assignment of inventory item records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "InventoryItem.transfer": {
-    name: "Transfer Inventory Item",
-    description:
-      "Transfer ownership of inventory item records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "InventoryItem.activate": {
-    name: "Activate Inventory Item",
-    description: "Activate inventory item records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "InventoryItem.deactivate": {
-    name: "Deactivate Inventory Item",
-    description: "Deactivate inventory item records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "InventoryTransaction.read": {
-    name: "View Inventory Transaction",
-    description:
-      "View and access inventory transaction records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "InventoryTransaction.create": {
-    name: "Create Inventory Transaction",
-    description: "Create new inventory transaction records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "InventoryTransaction.update": {
-    name: "Update Inventory Transaction",
-    description:
-      "Modify existing inventory transaction records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "InventoryTransaction.soft_delete": {
-    name: "Delete Inventory Transaction",
-    description:
-      "Delete (soft) inventory transaction records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "InventoryTransaction.restore": {
-    name: "Restore Inventory Transaction",
-    description:
-      "Restore deleted inventory transaction records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "InventoryAdjustment.read": {
-    name: "View Inventory Adjustment",
-    description:
-      "View and access inventory adjustment records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "InventoryAdjustment.create": {
-    name: "Create Inventory Adjustment",
-    description: "Create new inventory adjustment records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "InventoryAdjustment.update": {
-    name: "Update Inventory Adjustment",
-    description:
-      "Modify existing inventory adjustment records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "InventoryAdjustment.soft_delete": {
-    name: "Delete Inventory Adjustment",
-    description:
-      "Delete (soft) inventory adjustment records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "InventoryAdjustment.restore": {
-    name: "Restore Inventory Adjustment",
-    description:
-      "Restore deleted inventory adjustment records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "InventoryAdjustment.approve": {
-    name: "Approve Inventory Adjustment",
-    description: "Approve inventory adjustment records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "InventoryAdjustment.reject": {
-    name: "Reject Inventory Adjustment",
-    description: "Reject inventory adjustment records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "InventoryCount.read": {
-    name: "View Inventory Count",
-    description: "View and access inventory count records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "InventoryCount.create": {
-    name: "Create Inventory Count",
-    description: "Create new inventory count records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "InventoryCount.update": {
-    name: "Update Inventory Count",
-    description: "Modify existing inventory count records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "InventoryCount.soft_delete": {
-    name: "Delete Inventory Count",
-    description: "Delete (soft) inventory count records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "InventoryCount.restore": {
-    name: "Restore Inventory Count",
-    description: "Restore deleted inventory count records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "InventoryCountLine.read": {
-    name: "View Inventory Count Line",
-    description:
-      "View and access inventory count line records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "InventoryCountLine.create": {
-    name: "Create Inventory Count Line",
-    description: "Create new inventory count line records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "InventoryCountLine.update": {
-    name: "Update Inventory Count Line",
-    description:
-      "Modify existing inventory count line records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "InventoryCountLine.soft_delete": {
-    name: "Delete Inventory Count Line",
-    description:
-      "Delete (soft) inventory count line records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "InventoryCountLine.restore": {
-    name: "Restore Inventory Count Line",
-    description:
-      "Restore deleted inventory count line records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "Asset.read": {
-    name: "View Asset",
-    description: "View and access asset records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "Asset.create": {
-    name: "Create Asset",
-    description: "Create new asset records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "Asset.update": {
-    name: "Update Asset",
-    description: "Modify existing asset records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "Asset.soft_delete": {
-    name: "Delete Asset",
-    description: "Delete (soft) asset records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "Asset.restore": {
-    name: "Restore Asset",
-    description: "Restore deleted asset records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "Asset.assign": {
-    name: "Assign Asset",
-    description: "Assign asset records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "Asset.unassign": {
-    name: "Unassign Asset",
-    description: "Remove assignment of asset records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "Asset.transfer": {
-    name: "Transfer Asset",
-    description: "Transfer ownership of asset records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "Asset.activate": {
-    name: "Activate Asset",
-    description: "Activate asset records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "Asset.deactivate": {
-    name: "Deactivate Asset",
-    description: "Deactivate asset records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "AssetAssignment.read": {
-    name: "View Asset Assignment",
-    description: "View and access asset assignment records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "AssetAssignment.create": {
-    name: "Create Asset Assignment",
-    description: "Create new asset assignment records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "AssetAssignment.update": {
-    name: "Update Asset Assignment",
-    description: "Modify existing asset assignment records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "AssetAssignment.soft_delete": {
-    name: "Delete Asset Assignment",
-    description: "Delete (soft) asset assignment records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "AssetAssignment.restore": {
-    name: "Restore Asset Assignment",
-    description: "Restore deleted asset assignment records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "AssetAssignment.assign": {
-    name: "Assign Asset Assignment",
-    description: "Assign asset assignment records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "AssetAssignment.unassign": {
-    name: "Unassign Asset Assignment",
-    description:
-      "Remove assignment of asset assignment records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "AssetAssignment.transfer": {
-    name: "Transfer Asset Assignment",
-    description:
-      "Transfer ownership of asset assignment records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "AssetMaintenance.read": {
-    name: "View Asset Maintenance",
-    description:
-      "View and access asset maintenance records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "AssetMaintenance.create": {
-    name: "Create Asset Maintenance",
-    description: "Create new asset maintenance records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "AssetMaintenance.update": {
-    name: "Update Asset Maintenance",
-    description:
-      "Modify existing asset maintenance records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "AssetMaintenance.soft_delete": {
-    name: "Delete Asset Maintenance",
-    description: "Delete (soft) asset maintenance records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "AssetMaintenance.restore": {
-    name: "Restore Asset Maintenance",
-    description:
-      "Restore deleted asset maintenance records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "AssetDepreciation.read": {
-    name: "View Asset Depreciation",
-    description:
-      "View and access asset depreciation records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "AssetDepreciation.create": {
-    name: "Create Asset Depreciation",
-    description: "Create new asset depreciation records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "AssetDepreciation.update": {
-    name: "Update Asset Depreciation",
-    description:
-      "Modify existing asset depreciation records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "AssetDepreciation.soft_delete": {
-    name: "Delete Asset Depreciation",
-    description: "Delete (soft) asset depreciation records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "AssetDepreciation.restore": {
-    name: "Restore Asset Depreciation",
-    description:
-      "Restore deleted asset depreciation records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "AssetDocument.read": {
-    name: "View Asset Document",
-    description: "View and access asset document records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "AssetDocument.create": {
-    name: "Create Asset Document",
-    description: "Create new asset document records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "AssetDocument.update": {
-    name: "Update Asset Document",
-    description: "Modify existing asset document records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "AssetDocument.soft_delete": {
-    name: "Delete Asset Document",
-    description: "Delete (soft) asset document records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "AssetDocument.restore": {
-    name: "Restore Asset Document",
-    description: "Restore deleted asset document records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "AssetMeterReading.read": {
-    name: "View Asset Meter Reading",
-    description:
-      "View and access asset meter reading records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "AssetMeterReading.create": {
-    name: "Create Asset Meter Reading",
-    description: "Create new asset meter reading records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "AssetMeterReading.update": {
-    name: "Update Asset Meter Reading",
-    description:
-      "Modify existing asset meter reading records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "AssetMeterReading.soft_delete": {
-    name: "Delete Asset Meter Reading",
-    description:
-      "Delete (soft) asset meter reading records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "AssetMeterReading.restore": {
-    name: "Restore Asset Meter Reading",
-    description:
-      "Restore deleted asset meter reading records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "InventoryLocation.read": {
-    name: "View Inventory Location",
-    description:
-      "View and access inventory location records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "InventoryLocation.create": {
-    name: "Create Inventory Location",
-    description: "Create new inventory location records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "InventoryLocation.update": {
-    name: "Update Inventory Location",
-    description:
-      "Modify existing inventory location records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "InventoryLocation.soft_delete": {
-    name: "Delete Inventory Location",
-    description: "Delete (soft) inventory location records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "InventoryLocation.restore": {
-    name: "Restore Inventory Location",
-    description:
-      "Restore deleted inventory location records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "InventoryBin.read": {
-    name: "View Inventory Bin",
-    description: "View and access inventory bin records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "InventoryBin.create": {
-    name: "Create Inventory Bin",
-    description: "Create new inventory bin records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "InventoryBin.update": {
-    name: "Update Inventory Bin",
-    description: "Modify existing inventory bin records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "InventoryBin.soft_delete": {
-    name: "Delete Inventory Bin",
-    description: "Delete (soft) inventory bin records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "InventoryBin.restore": {
-    name: "Restore Inventory Bin",
-    description: "Restore deleted inventory bin records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "InventoryReservation.read": {
-    name: "View Inventory Reservation",
-    description:
-      "View and access inventory reservation records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "InventoryReservation.create": {
-    name: "Create Inventory Reservation",
-    description: "Create new inventory reservation records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "InventoryReservation.update": {
-    name: "Update Inventory Reservation",
-    description:
-      "Modify existing inventory reservation records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "InventoryReservation.soft_delete": {
-    name: "Delete Inventory Reservation",
-    description:
-      "Delete (soft) inventory reservation records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "InventoryReservation.restore": {
-    name: "Restore Inventory Reservation",
-    description:
-      "Restore deleted inventory reservation records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "InventoryAttachment.read": {
-    name: "View Inventory Attachment",
-    description:
-      "View and access inventory attachment records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "InventoryAttachment.create": {
-    name: "Create Inventory Attachment",
-    description: "Create new inventory attachment records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "InventoryAttachment.update": {
-    name: "Update Inventory Attachment",
-    description:
-      "Modify existing inventory attachment records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "InventoryAttachment.soft_delete": {
-    name: "Delete Inventory Attachment",
-    description:
-      "Delete (soft) inventory attachment records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "InventoryAttachment.restore": {
-    name: "Restore Inventory Attachment",
-    description:
-      "Restore deleted inventory attachment records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "GoodsReceipt.read": {
-    name: "View Goods Receipt",
-    description: "View and access goods receipt records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "GoodsReceipt.create": {
-    name: "Create Goods Receipt",
-    description: "Create new goods receipt records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "GoodsReceipt.update": {
-    name: "Update Goods Receipt",
-    description: "Modify existing goods receipt records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "GoodsReceipt.soft_delete": {
-    name: "Delete Goods Receipt",
-    description: "Delete (soft) goods receipt records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "GoodsReceipt.restore": {
-    name: "Restore Goods Receipt",
-    description: "Restore deleted goods receipt records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "GoodsReceiptLine.read": {
-    name: "View Goods Receipt Line",
-    description:
-      "View and access goods receipt line records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "GoodsReceiptLine.create": {
-    name: "Create Goods Receipt Line",
-    description: "Create new goods receipt line records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "GoodsReceiptLine.update": {
-    name: "Update Goods Receipt Line",
-    description:
-      "Modify existing goods receipt line records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "GoodsReceiptLine.soft_delete": {
-    name: "Delete Goods Receipt Line",
-    description: "Delete (soft) goods receipt line records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "GoodsReceiptLine.restore": {
-    name: "Restore Goods Receipt Line",
-    description:
-      "Restore deleted goods receipt line records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "RFQResponseLine.read": {
-    name: "View R F Q Response Line",
-    description:
-      "View and access r f q response line records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "RFQResponseLine.create": {
-    name: "Create R F Q Response Line",
-    description: "Create new r f q response line records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "RFQResponseLine.update": {
-    name: "Update R F Q Response Line",
-    description:
-      "Modify existing r f q response line records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "RFQResponseLine.soft_delete": {
-    name: "Delete R F Q Response Line",
-    description:
-      "Delete (soft) r f q response line records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "RFQResponseLine.restore": {
-    name: "Restore R F Q Response Line",
-    description:
-      "Restore deleted r f q response line records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "ReasonCode.read": {
-    name: "View Reason Code",
-    description: "View and access reason code records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "ReasonCode.create": {
-    name: "Create Reason Code",
-    description: "Create new reason code records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "ReasonCode.update": {
-    name: "Update Reason Code",
-    description: "Modify existing reason code records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "ReasonCode.soft_delete": {
-    name: "Delete Reason Code",
-    description: "Delete (soft) reason code records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "ReasonCode.restore": {
-    name: "Restore Reason Code",
-    description: "Restore deleted reason code records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "ResourceAllocation.read": {
-    name: "View Resource Allocation",
-    description:
-      "View and access resource allocation records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "ResourceAllocation.create": {
-    name: "Create Resource Allocation",
-    description: "Create new resource allocation records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "ResourceAllocation.update": {
-    name: "Update Resource Allocation",
-    description:
-      "Modify existing resource allocation records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "ResourceAllocation.soft_delete": {
-    name: "Delete Resource Allocation",
-    description:
-      "Delete (soft) resource allocation records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "ResourceAllocation.restore": {
-    name: "Restore Resource Allocation",
-    description:
-      "Restore deleted resource allocation records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "ResourceAllocation.allocate": {
-    name: "Allocate Resource Allocation",
-    description: "Allocate resource allocation records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "ResourceAllocation.deallocate": {
-    name: "Deallocate Resource Allocation",
-    description: "Deallocate resource allocation records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "Channel.read": {
-    name: "View Channel",
-    description: "View and access channel records within tenant scope",
-    domain: "communication",
-  },
-  "Channel.create": {
-    name: "Create Channel",
-    description: "Create new channel records within tenant scope",
-    domain: "communication",
-  },
-  "Channel.update": {
-    name: "Update Channel",
-    description: "Modify existing channel records within tenant scope",
-    domain: "communication",
-  },
-  "Channel.soft_delete": {
-    name: "Delete Channel",
-    description: "Delete (soft) channel records within tenant scope",
-    domain: "communication",
-  },
-  "Channel.restore": {
-    name: "Restore Channel",
-    description: "Restore deleted channel records within tenant scope",
-    domain: "communication",
-  },
-  "Channel.archive": {
-    name: "Archive Channel",
-    description: "Archive channel records within tenant scope",
-    domain: "communication",
-  },
-  "Channel.activate": {
-    name: "Activate Channel",
-    description: "Activate channel records within tenant scope",
-    domain: "communication",
-  },
-  "Channel.deactivate": {
-    name: "Deactivate Channel",
-    description: "Deactivate channel records within tenant scope",
-    domain: "communication",
-  },
-  "ChannelMember.read": {
-    name: "View Channel Member",
-    description: "View and access channel member records within tenant scope",
-    domain: "communication",
-  },
-  "ChannelMember.create": {
-    name: "Create Channel Member",
-    description: "Create new channel member records within tenant scope",
-    domain: "communication",
-  },
-  "ChannelMember.update": {
-    name: "Update Channel Member",
-    description: "Modify existing channel member records within tenant scope",
-    domain: "communication",
-  },
-  "ChannelMember.soft_delete": {
-    name: "Delete Channel Member",
-    description: "Delete (soft) channel member records within tenant scope",
-    domain: "communication",
-  },
-  "ChannelMember.restore": {
-    name: "Restore Channel Member",
-    description: "Restore deleted channel member records within tenant scope",
-    domain: "communication",
-  },
-  "ChannelMember.assign": {
-    name: "Assign Channel Member",
-    description: "Assign channel member records within tenant scope",
-    domain: "communication",
-  },
-  "ChannelMember.unassign": {
-    name: "Unassign Channel Member",
-    description:
-      "Remove assignment of channel member records within tenant scope",
-    domain: "communication",
-  },
-  "DirectChat.read": {
-    name: "View Direct Chat",
-    description: "View and access direct chat records within tenant scope",
-    domain: "communication",
-  },
-  "DirectChat.create": {
-    name: "Create Direct Chat",
-    description: "Create new direct chat records within tenant scope",
-    domain: "communication",
-  },
-  "DirectChat.update": {
-    name: "Update Direct Chat",
-    description: "Modify existing direct chat records within tenant scope",
-    domain: "communication",
-  },
-  "DirectChat.soft_delete": {
-    name: "Delete Direct Chat",
-    description: "Delete (soft) direct chat records within tenant scope",
-    domain: "communication",
-  },
-  "DirectChat.restore": {
-    name: "Restore Direct Chat",
-    description: "Restore deleted direct chat records within tenant scope",
-    domain: "communication",
-  },
-  "DirectChat.archive": {
-    name: "Archive Direct Chat",
-    description: "Archive direct chat records within tenant scope",
-    domain: "communication",
-  },
-  "DirectMessage.read": {
-    name: "View Direct Message",
-    description: "View and access direct message records within tenant scope",
-    domain: "communication",
-  },
-  "DirectMessage.create": {
-    name: "Create Direct Message",
-    description: "Create new direct message records within tenant scope",
-    domain: "communication",
-  },
-  "DirectMessage.update": {
-    name: "Update Direct Message",
-    description: "Modify existing direct message records within tenant scope",
-    domain: "communication",
-  },
-  "DirectMessage.soft_delete": {
-    name: "Delete Direct Message",
-    description: "Delete (soft) direct message records within tenant scope",
-    domain: "communication",
-  },
-  "DirectMessage.restore": {
-    name: "Restore Direct Message",
-    description: "Restore deleted direct message records within tenant scope",
-    domain: "communication",
-  },
-  "DirectMessageRead.read": {
-    name: "View Direct Message Read",
-    description:
-      "View and access direct message read records within tenant scope",
-    domain: "communication",
-  },
-  "DirectMessageRead.create": {
-    name: "Create Direct Message Read",
-    description: "Create new direct message read records within tenant scope",
-    domain: "communication",
-  },
-  "DirectMessageRead.update": {
-    name: "Update Direct Message Read",
-    description:
-      "Modify existing direct message read records within tenant scope",
-    domain: "communication",
-  },
-  "Notification.read": {
-    name: "View Notification",
-    description: "View and access notification records within tenant scope",
-    domain: "communication",
-  },
-  "Notification.create": {
-    name: "Create Notification",
-    description: "Create new notification records within tenant scope",
-    domain: "communication",
-  },
-  "Notification.update": {
-    name: "Update Notification",
-    description: "Modify existing notification records within tenant scope",
-    domain: "communication",
-  },
-  "Notification.soft_delete": {
-    name: "Delete Notification",
-    description: "Delete (soft) notification records within tenant scope",
-    domain: "communication",
-  },
-  "Notification.restore": {
-    name: "Restore Notification",
-    description: "Restore deleted notification records within tenant scope",
-    domain: "communication",
-  },
-  "InAppAnnouncement.read": {
-    name: "View In App Announcement",
-    description:
-      "View and access in app announcement records within tenant scope",
-    domain: "communication",
-  },
-  "InAppAnnouncement.create": {
-    name: "Create In App Announcement",
-    description: "Create new in app announcement records within tenant scope",
-    domain: "communication",
-  },
-  "InAppAnnouncement.update": {
-    name: "Update In App Announcement",
-    description:
-      "Modify existing in app announcement records within tenant scope",
-    domain: "communication",
-  },
-  "InAppAnnouncement.soft_delete": {
-    name: "Delete In App Announcement",
-    description:
-      "Delete (soft) in app announcement records within tenant scope",
-    domain: "communication",
-  },
-  "InAppAnnouncement.restore": {
-    name: "Restore In App Announcement",
-    description:
-      "Restore deleted in app announcement records within tenant scope",
-    domain: "communication",
-  },
-  "InAppAnnouncement.publish": {
-    name: "Publish In App Announcement",
-    description: "Publish in app announcement records within tenant scope",
-    domain: "communication",
-  },
-  "Message.read": {
-    name: "View Message",
-    description: "View and access message records within tenant scope",
-    domain: "communication",
-  },
-  "Message.create": {
-    name: "Create Message",
-    description: "Create new message records within tenant scope",
-    domain: "communication",
-  },
-  "Message.update": {
-    name: "Update Message",
-    description: "Modify existing message records within tenant scope",
-    domain: "communication",
-  },
-  "Message.soft_delete": {
-    name: "Delete Message",
-    description: "Delete (soft) message records within tenant scope",
-    domain: "communication",
-  },
-  "Message.restore": {
-    name: "Restore Message",
-    description: "Restore deleted message records within tenant scope",
-    domain: "communication",
-  },
-  "MessageAttachment.read": {
-    name: "View Message Attachment",
-    description:
-      "View and access message attachment records within tenant scope",
-    domain: "communication",
-  },
-  "MessageAttachment.create": {
-    name: "Create Message Attachment",
-    description: "Create new message attachment records within tenant scope",
-    domain: "communication",
-  },
-  "MessageAttachment.update": {
-    name: "Update Message Attachment",
-    description:
-      "Modify existing message attachment records within tenant scope",
-    domain: "communication",
-  },
-  "MessageAttachment.soft_delete": {
-    name: "Delete Message Attachment",
-    description: "Delete (soft) message attachment records within tenant scope",
-    domain: "communication",
-  },
-  "MessageAttachment.restore": {
-    name: "Restore Message Attachment",
-    description:
-      "Restore deleted message attachment records within tenant scope",
-    domain: "communication",
-  },
-  "MessageRead.read": {
-    name: "View Message Read",
-    description: "View and access message read records within tenant scope",
-    domain: "communication",
-  },
-  "MessageRead.create": {
-    name: "Create Message Read",
-    description: "Create new message read records within tenant scope",
-    domain: "communication",
-  },
-  "MessageRead.update": {
-    name: "Update Message Read",
-    description: "Modify existing message read records within tenant scope",
-    domain: "communication",
-  },
-  "NotificationPreference.read": {
-    name: "View Notification Preference",
-    description:
-      "View and access notification preference records within tenant scope",
-    domain: "communication",
-  },
-  "NotificationPreference.create": {
-    name: "Create Notification Preference",
-    description:
-      "Create new notification preference records within tenant scope",
-    domain: "communication",
-  },
-  "NotificationPreference.update": {
-    name: "Update Notification Preference",
-    description:
-      "Modify existing notification preference records within tenant scope",
-    domain: "communication",
-  },
-  "NotificationPreference.soft_delete": {
-    name: "Delete Notification Preference",
-    description:
-      "Delete (soft) notification preference records within tenant scope",
-    domain: "communication",
-  },
-  "NotificationPreference.restore": {
-    name: "Restore Notification Preference",
-    description:
-      "Restore deleted notification preference records within tenant scope",
-    domain: "communication",
-  },
-  "NotificationTemplate.read": {
-    name: "View Notification Template",
-    description:
-      "View and access notification template records within tenant scope",
-    domain: "communication",
-  },
-  "NotificationTemplate.create": {
-    name: "Create Notification Template",
-    description: "Create new notification template records within tenant scope",
-    domain: "communication",
-  },
-  "NotificationTemplate.update": {
-    name: "Update Notification Template",
-    description:
-      "Modify existing notification template records within tenant scope",
-    domain: "communication",
-  },
-  "NotificationTemplate.soft_delete": {
-    name: "Delete Notification Template",
-    description:
-      "Delete (soft) notification template records within tenant scope",
-    domain: "communication",
-  },
-  "NotificationTemplate.restore": {
-    name: "Restore Notification Template",
-    description:
-      "Restore deleted notification template records within tenant scope",
-    domain: "communication",
-  },
-  "EmailTemplate.read": {
-    name: "View Email Template",
-    description: "View and access email template records within tenant scope",
-    domain: "communication",
-  },
-  "EmailTemplate.create": {
-    name: "Create Email Template",
-    description: "Create new email template records within tenant scope",
-    domain: "communication",
-  },
-  "EmailTemplate.update": {
-    name: "Update Email Template",
-    description: "Modify existing email template records within tenant scope",
-    domain: "communication",
-  },
-  "EmailTemplate.soft_delete": {
-    name: "Delete Email Template",
-    description: "Delete (soft) email template records within tenant scope",
-    domain: "communication",
-  },
-  "EmailTemplate.restore": {
-    name: "Restore Email Template",
-    description: "Restore deleted email template records within tenant scope",
-    domain: "communication",
-  },
-  "FileObject.read": {
-    name: "View File Object",
-    description: "View and access file object records within tenant scope",
-    domain: "document_management",
-  },
-  "FileObject.create": {
-    name: "Create File Object",
-    description: "Create new file object records within tenant scope",
-    domain: "document_management",
-  },
-  "FileObject.update": {
-    name: "Update File Object",
-    description: "Modify existing file object records within tenant scope",
-    domain: "document_management",
-  },
-  "FileObject.soft_delete": {
-    name: "Delete File Object",
-    description: "Delete (soft) file object records within tenant scope",
-    domain: "document_management",
-  },
-  "FileObject.restore": {
-    name: "Restore File Object",
-    description: "Restore deleted file object records within tenant scope",
-    domain: "document_management",
-  },
-  "Attachment.read": {
-    name: "View Attachment",
-    description: "View and access attachment records within tenant scope",
-    domain: "document_management",
-  },
-  "Attachment.create": {
-    name: "Create Attachment",
-    description: "Create new attachment records within tenant scope",
-    domain: "document_management",
-  },
-  "Attachment.update": {
-    name: "Update Attachment",
-    description: "Modify existing attachment records within tenant scope",
-    domain: "document_management",
-  },
-  "Attachment.soft_delete": {
-    name: "Delete Attachment",
-    description: "Delete (soft) attachment records within tenant scope",
-    domain: "document_management",
-  },
-  "Attachment.restore": {
-    name: "Restore Attachment",
-    description: "Restore deleted attachment records within tenant scope",
-    domain: "document_management",
-  },
-  "Attachment.approve": {
-    name: "Approve Attachment",
-    description: "Approve attachment records within tenant scope",
-    domain: "document_management",
-  },
-  "Attachment.reject": {
-    name: "Reject Attachment",
-    description: "Reject attachment records within tenant scope",
-    domain: "document_management",
-  },
-  "AttachmentLink.read": {
-    name: "View Attachment Link",
-    description: "View and access attachment link records within tenant scope",
-    domain: "document_management",
-  },
-  "AttachmentLink.create": {
-    name: "Create Attachment Link",
-    description: "Create new attachment link records within tenant scope",
-    domain: "document_management",
-  },
-  "AttachmentLink.update": {
-    name: "Update Attachment Link",
-    description: "Modify existing attachment link records within tenant scope",
-    domain: "document_management",
-  },
-  "AttachmentLink.soft_delete": {
-    name: "Delete Attachment Link",
-    description: "Delete (soft) attachment link records within tenant scope",
-    domain: "document_management",
-  },
-  "AttachmentLink.restore": {
-    name: "Restore Attachment Link",
-    description: "Restore deleted attachment link records within tenant scope",
-    domain: "document_management",
-  },
-  "ESignatureEnvelope.read": {
-    name: "View E Signature Envelope",
-    description:
-      "View and access e signature envelope records within tenant scope",
-    domain: "document_management",
-  },
-  "ESignatureEnvelope.create": {
-    name: "Create E Signature Envelope",
-    description: "Create new e signature envelope records within tenant scope",
-    domain: "document_management",
-  },
-  "ESignatureEnvelope.update": {
-    name: "Update E Signature Envelope",
-    description:
-      "Modify existing e signature envelope records within tenant scope",
-    domain: "document_management",
-  },
-  "ESignatureEnvelope.soft_delete": {
-    name: "Delete E Signature Envelope",
-    description:
-      "Delete (soft) e signature envelope records within tenant scope",
-    domain: "document_management",
-  },
-  "ESignatureEnvelope.restore": {
-    name: "Restore E Signature Envelope",
-    description:
-      "Restore deleted e signature envelope records within tenant scope",
-    domain: "document_management",
-  },
-  "ESignatureEnvelope.send": {
-    name: "Send E Signature Envelope",
-    description: "Send e signature envelope records within tenant scope",
-    domain: "document_management",
-  },
-  "ESignatureRecipient.read": {
-    name: "View E Signature Recipient",
-    description:
-      "View and access e signature recipient records within tenant scope",
-    domain: "document_management",
-  },
-  "ESignatureRecipient.create": {
-    name: "Create E Signature Recipient",
-    description: "Create new e signature recipient records within tenant scope",
-    domain: "document_management",
-  },
-  "ESignatureRecipient.update": {
-    name: "Update E Signature Recipient",
-    description:
-      "Modify existing e signature recipient records within tenant scope",
-    domain: "document_management",
-  },
-  "ESignatureRecipient.soft_delete": {
-    name: "Delete E Signature Recipient",
-    description:
-      "Delete (soft) e signature recipient records within tenant scope",
-    domain: "document_management",
-  },
-  "ESignatureRecipient.restore": {
-    name: "Restore E Signature Recipient",
-    description:
-      "Restore deleted e signature recipient records within tenant scope",
-    domain: "document_management",
-  },
-  "DocumentGroup.read": {
-    name: "View Document Group",
-    description: "View and access document group records within tenant scope",
-    domain: "document_management",
-  },
-  "DocumentGroup.create": {
-    name: "Create Document Group",
-    description: "Create new document group records within tenant scope",
-    domain: "document_management",
-  },
-  "DocumentGroup.update": {
-    name: "Update Document Group",
-    description: "Modify existing document group records within tenant scope",
-    domain: "document_management",
-  },
-  "DocumentGroup.soft_delete": {
-    name: "Delete Document Group",
-    description: "Delete (soft) document group records within tenant scope",
-    domain: "document_management",
-  },
-  "DocumentGroup.restore": {
-    name: "Restore Document Group",
-    description: "Restore deleted document group records within tenant scope",
-    domain: "document_management",
-  },
-  "ContractTemplate.read": {
-    name: "View Contract Template",
-    description:
-      "View and access contract template records within tenant scope",
-    domain: "document_management",
-  },
-  "ContractTemplate.create": {
-    name: "Create Contract Template",
-    description: "Create new contract template records within tenant scope",
-    domain: "document_management",
-  },
-  "ContractTemplate.update": {
-    name: "Update Contract Template",
-    description:
-      "Modify existing contract template records within tenant scope",
-    domain: "document_management",
-  },
-  "ContractTemplate.soft_delete": {
-    name: "Delete Contract Template",
-    description: "Delete (soft) contract template records within tenant scope",
-    domain: "document_management",
-  },
-  "ContractTemplate.restore": {
-    name: "Restore Contract Template",
-    description:
-      "Restore deleted contract template records within tenant scope",
-    domain: "document_management",
-  },
-  "TermsTemplate.read": {
-    name: "View Terms Template",
-    description: "View and access terms template records within tenant scope",
-    domain: "document_management",
-  },
-  "TermsTemplate.create": {
-    name: "Create Terms Template",
-    description: "Create new terms template records within tenant scope",
-    domain: "document_management",
-  },
-  "TermsTemplate.update": {
-    name: "Update Terms Template",
-    description: "Modify existing terms template records within tenant scope",
-    domain: "document_management",
-  },
-  "TermsTemplate.soft_delete": {
-    name: "Delete Terms Template",
-    description: "Delete (soft) terms template records within tenant scope",
-    domain: "document_management",
-  },
-  "TermsTemplate.restore": {
-    name: "Restore Terms Template",
-    description: "Restore deleted terms template records within tenant scope",
-    domain: "document_management",
-  },
-  "Vendor.read": {
-    name: "View Vendor",
-    description: "View and access vendor records within tenant scope",
-    domain: "vendor_contract",
-  },
-  "Vendor.create": {
-    name: "Create Vendor",
-    description: "Create new vendor records within tenant scope",
-    domain: "vendor_contract",
-  },
-  "Vendor.update": {
-    name: "Update Vendor",
-    description: "Modify existing vendor records within tenant scope",
-    domain: "vendor_contract",
-  },
-  "Vendor.soft_delete": {
-    name: "Delete Vendor",
-    description: "Delete (soft) vendor records within tenant scope",
-    domain: "vendor_contract",
-  },
-  "Vendor.restore": {
-    name: "Restore Vendor",
-    description: "Restore deleted vendor records within tenant scope",
-    domain: "vendor_contract",
-  },
-  "Vendor.activate": {
-    name: "Activate Vendor",
-    description: "Activate vendor records within tenant scope",
-    domain: "vendor_contract",
-  },
-  "Vendor.deactivate": {
-    name: "Deactivate Vendor",
-    description: "Deactivate vendor records within tenant scope",
-    domain: "vendor_contract",
-  },
-  "VendorContact.read": {
-    name: "View Vendor Contact",
-    description: "View and access vendor contact records within tenant scope",
-    domain: "vendor_contract",
-  },
-  "VendorContact.create": {
-    name: "Create Vendor Contact",
-    description: "Create new vendor contact records within tenant scope",
-    domain: "vendor_contract",
-  },
-  "VendorContact.update": {
-    name: "Update Vendor Contact",
-    description: "Modify existing vendor contact records within tenant scope",
-    domain: "vendor_contract",
-  },
-  "VendorContact.soft_delete": {
-    name: "Delete Vendor Contact",
-    description: "Delete (soft) vendor contact records within tenant scope",
-    domain: "vendor_contract",
-  },
-  "VendorContact.restore": {
-    name: "Restore Vendor Contact",
-    description: "Restore deleted vendor contact records within tenant scope",
-    domain: "vendor_contract",
-  },
-  "VendorDocument.read": {
-    name: "View Vendor Document",
-    description: "View and access vendor document records within tenant scope",
-    domain: "vendor_contract",
-  },
-  "VendorDocument.create": {
-    name: "Create Vendor Document",
-    description: "Create new vendor document records within tenant scope",
-    domain: "vendor_contract",
-  },
-  "VendorDocument.update": {
-    name: "Update Vendor Document",
-    description: "Modify existing vendor document records within tenant scope",
-    domain: "vendor_contract",
-  },
-  "VendorDocument.soft_delete": {
-    name: "Delete Vendor Document",
-    description: "Delete (soft) vendor document records within tenant scope",
-    domain: "vendor_contract",
-  },
-  "VendorDocument.restore": {
-    name: "Restore Vendor Document",
-    description: "Restore deleted vendor document records within tenant scope",
-    domain: "vendor_contract",
-  },
-  "Contract.read": {
-    name: "View Contract",
-    description: "View and access contract records within tenant scope",
-    domain: "vendor_contract",
-  },
-  "Contract.create": {
-    name: "Create Contract",
-    description: "Create new contract records within tenant scope",
-    domain: "vendor_contract",
-  },
-  "Contract.update": {
-    name: "Update Contract",
-    description: "Modify existing contract records within tenant scope",
-    domain: "vendor_contract",
-  },
-  "Contract.soft_delete": {
-    name: "Delete Contract",
-    description: "Delete (soft) contract records within tenant scope",
-    domain: "vendor_contract",
-  },
-  "Contract.restore": {
-    name: "Restore Contract",
-    description: "Restore deleted contract records within tenant scope",
-    domain: "vendor_contract",
-  },
-  "Contract.send": {
-    name: "Send Contract",
-    description: "Send contract records within tenant scope",
-    domain: "vendor_contract",
-  },
-  "Contract.approve": {
-    name: "Approve Contract",
-    description: "Approve contract records within tenant scope",
-    domain: "vendor_contract",
-  },
-  "Contract.reject": {
-    name: "Reject Contract",
-    description: "Reject contract records within tenant scope",
-    domain: "vendor_contract",
-  },
-  "Person.read": {
-    name: "View Person",
-    description: "View and access person records within tenant scope",
-    domain: "vendor_contract",
-  },
-  "Person.create": {
-    name: "Create Person",
-    description: "Create new person records within tenant scope",
-    domain: "vendor_contract",
-  },
-  "Person.update": {
-    name: "Update Person",
-    description: "Modify existing person records within tenant scope",
-    domain: "vendor_contract",
-  },
-  "Person.soft_delete": {
-    name: "Delete Person",
-    description: "Delete (soft) person records within tenant scope",
-    domain: "vendor_contract",
-  },
-  "Person.restore": {
-    name: "Restore Person",
-    description: "Restore deleted person records within tenant scope",
-    domain: "vendor_contract",
-  },
-  "PersonName.read": {
-    name: "View Person Name",
-    description: "View and access person name records within tenant scope",
-    domain: "vendor_contract",
-  },
-  "PersonName.create": {
-    name: "Create Person Name",
-    description: "Create new person name records within tenant scope",
-    domain: "vendor_contract",
-  },
-  "PersonName.update": {
-    name: "Update Person Name",
-    description: "Modify existing person name records within tenant scope",
-    domain: "vendor_contract",
-  },
-  "PersonName.soft_delete": {
-    name: "Delete Person Name",
-    description: "Delete (soft) person name records within tenant scope",
-    domain: "vendor_contract",
-  },
-  "PersonName.restore": {
-    name: "Restore Person Name",
-    description: "Restore deleted person name records within tenant scope",
-    domain: "vendor_contract",
-  },
-  "PersonAddress.read": {
-    name: "View Person Address",
-    description: "View and access person address records within tenant scope",
-    domain: "vendor_contract",
-  },
-  "PersonAddress.create": {
-    name: "Create Person Address",
-    description: "Create new person address records within tenant scope",
-    domain: "vendor_contract",
-  },
-  "PersonAddress.update": {
-    name: "Update Person Address",
-    description: "Modify existing person address records within tenant scope",
-    domain: "vendor_contract",
-  },
-  "PersonAddress.soft_delete": {
-    name: "Delete Person Address",
-    description: "Delete (soft) person address records within tenant scope",
-    domain: "vendor_contract",
-  },
-  "PersonAddress.restore": {
-    name: "Restore Person Address",
-    description: "Restore deleted person address records within tenant scope",
-    domain: "vendor_contract",
-  },
-  "PersonContactMethod.read": {
-    name: "View Person Contact Method",
-    description:
-      "View and access person contact method records within tenant scope",
-    domain: "vendor_contract",
-  },
-  "PersonContactMethod.create": {
-    name: "Create Person Contact Method",
-    description: "Create new person contact method records within tenant scope",
-    domain: "vendor_contract",
-  },
-  "PersonContactMethod.update": {
-    name: "Update Person Contact Method",
-    description:
-      "Modify existing person contact method records within tenant scope",
-    domain: "vendor_contract",
-  },
-  "PersonContactMethod.soft_delete": {
-    name: "Delete Person Contact Method",
-    description:
-      "Delete (soft) person contact method records within tenant scope",
-    domain: "vendor_contract",
-  },
-  "PersonContactMethod.restore": {
-    name: "Restore Person Contact Method",
-    description:
-      "Restore deleted person contact method records within tenant scope",
-    domain: "vendor_contract",
-  },
-  "PersonDocument.read": {
-    name: "View Person Document",
-    description: "View and access person document records within tenant scope",
-    domain: "vendor_contract",
-  },
-  "PersonDocument.create": {
-    name: "Create Person Document",
-    description: "Create new person document records within tenant scope",
-    domain: "vendor_contract",
-  },
-  "PersonDocument.update": {
-    name: "Update Person Document",
-    description: "Modify existing person document records within tenant scope",
-    domain: "vendor_contract",
-  },
-  "PersonDocument.soft_delete": {
-    name: "Delete Person Document",
-    description: "Delete (soft) person document records within tenant scope",
-    domain: "vendor_contract",
-  },
-  "PersonDocument.restore": {
-    name: "Restore Person Document",
-    description: "Restore deleted person document records within tenant scope",
-    domain: "vendor_contract",
-  },
-  "AIAction.read": {
-    name: "View A I Action",
-    description: "View and access a i action records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIAction.create": {
-    name: "Create A I Action",
-    description: "Create new a i action records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIAction.update": {
-    name: "Update A I Action",
-    description: "Modify existing a i action records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIAction.soft_delete": {
-    name: "Delete A I Action",
-    description: "Delete (soft) a i action records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIAction.restore": {
-    name: "Restore A I Action",
-    description: "Restore deleted a i action records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIAction.activate": {
-    name: "Activate A I Action",
-    description: "Activate a i action records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIAction.deactivate": {
-    name: "Deactivate A I Action",
-    description: "Deactivate a i action records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIActionRun.read": {
-    name: "View A I Action Run",
-    description: "View and access a i action run records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIActionRun.create": {
-    name: "Create A I Action Run",
-    description: "Create new a i action run records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIActionRun.update": {
-    name: "Update A I Action Run",
-    description: "Modify existing a i action run records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIActionRun.soft_delete": {
-    name: "Delete A I Action Run",
-    description: "Delete (soft) a i action run records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIActionRun.restore": {
-    name: "Restore A I Action Run",
-    description: "Restore deleted a i action run records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIJob.read": {
-    name: "View A I Job",
-    description: "View and access a i job records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIJob.create": {
-    name: "Create A I Job",
-    description: "Create new a i job records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIJob.update": {
-    name: "Update A I Job",
-    description: "Modify existing a i job records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIJob.soft_delete": {
-    name: "Delete A I Job",
-    description: "Delete (soft) a i job records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIJob.restore": {
-    name: "Restore A I Job",
-    description: "Restore deleted a i job records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIJobArtifact.read": {
-    name: "View A I Job Artifact",
-    description: "View and access a i job artifact records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIJobArtifact.create": {
-    name: "Create A I Job Artifact",
-    description: "Create new a i job artifact records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIJobArtifact.update": {
-    name: "Update A I Job Artifact",
-    description: "Modify existing a i job artifact records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIJobArtifact.soft_delete": {
-    name: "Delete A I Job Artifact",
-    description: "Delete (soft) a i job artifact records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIJobArtifact.restore": {
-    name: "Restore A I Job Artifact",
-    description: "Restore deleted a i job artifact records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIInsight.read": {
-    name: "View A I Insight",
-    description: "View and access a i insight records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIInsight.create": {
-    name: "Create A I Insight",
-    description: "Create new a i insight records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIInsight.update": {
-    name: "Update A I Insight",
-    description: "Modify existing a i insight records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIInsight.soft_delete": {
-    name: "Delete A I Insight",
-    description: "Delete (soft) a i insight records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIInsight.restore": {
-    name: "Restore A I Insight",
-    description: "Restore deleted a i insight records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIInsightFeedback.read": {
-    name: "View A I Insight Feedback",
-    description:
-      "View and access a i insight feedback records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIInsightFeedback.create": {
-    name: "Create A I Insight Feedback",
-    description: "Create new a i insight feedback records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIInsightFeedback.update": {
-    name: "Update A I Insight Feedback",
-    description:
-      "Modify existing a i insight feedback records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIInsightFeedback.soft_delete": {
-    name: "Delete A I Insight Feedback",
-    description:
-      "Delete (soft) a i insight feedback records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIInsightFeedback.restore": {
-    name: "Restore A I Insight Feedback",
-    description:
-      "Restore deleted a i insight feedback records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIPlaybook.read": {
-    name: "View A I Playbook",
-    description: "View and access a i playbook records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIPlaybook.create": {
-    name: "Create A I Playbook",
-    description: "Create new a i playbook records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIPlaybook.update": {
-    name: "Update A I Playbook",
-    description: "Modify existing a i playbook records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIPlaybook.soft_delete": {
-    name: "Delete A I Playbook",
-    description: "Delete (soft) a i playbook records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIPlaybook.restore": {
-    name: "Restore A I Playbook",
-    description: "Restore deleted a i playbook records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIPlaybook.activate": {
-    name: "Activate A I Playbook",
-    description: "Activate a i playbook records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIPlaybook.deactivate": {
-    name: "Deactivate A I Playbook",
-    description: "Deactivate a i playbook records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIPlaybookStep.read": {
-    name: "View A I Playbook Step",
-    description:
-      "View and access a i playbook step records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIPlaybookStep.create": {
-    name: "Create A I Playbook Step",
-    description: "Create new a i playbook step records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIPlaybookStep.update": {
-    name: "Update A I Playbook Step",
-    description:
-      "Modify existing a i playbook step records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIPlaybookStep.soft_delete": {
-    name: "Delete A I Playbook Step",
-    description: "Delete (soft) a i playbook step records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIPlaybookStep.restore": {
-    name: "Restore A I Playbook Step",
-    description:
-      "Restore deleted a i playbook step records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIPromptTemplate.read": {
-    name: "View A I Prompt Template",
-    description:
-      "View and access a i prompt template records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIPromptTemplate.create": {
-    name: "Create A I Prompt Template",
-    description: "Create new a i prompt template records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIPromptTemplate.update": {
-    name: "Update A I Prompt Template",
-    description:
-      "Modify existing a i prompt template records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIPromptTemplate.soft_delete": {
-    name: "Delete A I Prompt Template",
-    description:
-      "Delete (soft) a i prompt template records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIPromptTemplate.restore": {
-    name: "Restore A I Prompt Template",
-    description:
-      "Restore deleted a i prompt template records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIAssistantProfile.read": {
-    name: "View A I Assistant Profile",
-    description:
-      "View and access a i assistant profile records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIAssistantProfile.create": {
-    name: "Create A I Assistant Profile",
-    description: "Create new a i assistant profile records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIAssistantProfile.update": {
-    name: "Update A I Assistant Profile",
-    description:
-      "Modify existing a i assistant profile records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIAssistantProfile.soft_delete": {
-    name: "Delete A I Assistant Profile",
-    description:
-      "Delete (soft) a i assistant profile records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIAssistantProfile.restore": {
-    name: "Restore A I Assistant Profile",
-    description:
-      "Restore deleted a i assistant profile records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIAssistantProfile.activate": {
-    name: "Activate A I Assistant Profile",
-    description: "Activate a i assistant profile records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIAssistantProfile.deactivate": {
-    name: "Deactivate A I Assistant Profile",
-    description: "Deactivate a i assistant profile records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIDocumentIndex.read": {
-    name: "View A I Document Index",
-    description:
-      "View and access a i document index records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIDocumentIndex.create": {
-    name: "Create A I Document Index",
-    description: "Create new a i document index records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIDocumentIndex.update": {
-    name: "Update A I Document Index",
-    description:
-      "Modify existing a i document index records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIDocumentIndex.soft_delete": {
-    name: "Delete A I Document Index",
-    description: "Delete (soft) a i document index records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIDocumentIndex.restore": {
-    name: "Restore A I Document Index",
-    description:
-      "Restore deleted a i document index records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIDocumentChunk.read": {
-    name: "View A I Document Chunk",
-    description:
-      "View and access a i document chunk records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIDocumentChunk.create": {
-    name: "Create A I Document Chunk",
-    description: "Create new a i document chunk records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIDocumentChunk.update": {
-    name: "Update A I Document Chunk",
-    description:
-      "Modify existing a i document chunk records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIDocumentChunk.soft_delete": {
-    name: "Delete A I Document Chunk",
-    description: "Delete (soft) a i document chunk records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIDocumentChunk.restore": {
-    name: "Restore A I Document Chunk",
-    description:
-      "Restore deleted a i document chunk records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIEmbedding.read": {
-    name: "View A I Embedding",
-    description: "View and access a i embedding records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIEmbedding.create": {
-    name: "Create A I Embedding",
-    description: "Create new a i embedding records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIEmbedding.update": {
-    name: "Update A I Embedding",
-    description: "Modify existing a i embedding records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIEmbedding.soft_delete": {
-    name: "Delete A I Embedding",
-    description: "Delete (soft) a i embedding records within tenant scope",
-    domain: "ai_automation",
-  },
-  "AIEmbedding.restore": {
-    name: "Restore A I Embedding",
-    description: "Restore deleted a i embedding records within tenant scope",
-    domain: "ai_automation",
-  },
-  "RoomScanSession.read": {
-    name: "View Room Scan Session",
-    description:
-      "View and access room scan session records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomScanSession.list": {
-    name: "List Room Scan Session",
-    description: "list room scan session records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomScanSession.create": {
-    name: "Create Room Scan Session",
-    description: "Create new room scan session records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomScanSession.update": {
-    name: "Update Room Scan Session",
-    description:
-      "Modify existing room scan session records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomScanSession.soft_delete": {
-    name: "Delete Room Scan Session",
-    description: "Delete (soft) room scan session records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomScanSession.restore": {
-    name: "Restore Room Scan Session",
-    description:
-      "Restore deleted room scan session records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomScanSession.activate": {
-    name: "Activate Room Scan Session",
-    description: "Activate room scan session records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomScanSession.deactivate": {
-    name: "Deactivate Room Scan Session",
-    description: "Deactivate room scan session records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomScanSession.export": {
-    name: "Export Room Scan Session",
-    description:
-      "Export data for room scan session records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomScanFile.read": {
-    name: "View Room Scan File",
-    description: "View and access room scan file records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomScanFile.list": {
-    name: "List Room Scan File",
-    description: "list room scan file records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomScanFile.create": {
-    name: "Create Room Scan File",
-    description: "Create new room scan file records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomScanFile.update": {
-    name: "Update Room Scan File",
-    description: "Modify existing room scan file records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomScanFile.soft_delete": {
-    name: "Delete Room Scan File",
-    description: "Delete (soft) room scan file records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomScanFile.restore": {
-    name: "Restore Room Scan File",
-    description: "Restore deleted room scan file records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomScanFile.export": {
-    name: "Export Room Scan File",
-    description: "Export data for room scan file records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomModel.read": {
-    name: "View Room Model",
-    description: "View and access room model records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomModel.list": {
-    name: "List Room Model",
-    description: "list room model records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomModel.create": {
-    name: "Create Room Model",
-    description: "Create new room model records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomModel.update": {
-    name: "Update Room Model",
-    description: "Modify existing room model records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomModel.soft_delete": {
-    name: "Delete Room Model",
-    description: "Delete (soft) room model records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomModel.restore": {
-    name: "Restore Room Model",
-    description: "Restore deleted room model records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomModel.publish": {
-    name: "Publish Room Model",
-    description: "Publish room model records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomModel.export": {
-    name: "Export Room Model",
-    description: "Export data for room model records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomModel.duplicate": {
-    name: "Duplicate Room Model",
-    description: "Duplicate room model records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomMeasurement.read": {
-    name: "View Room Measurement",
-    description: "View and access room measurement records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomMeasurement.list": {
-    name: "List Room Measurement",
-    description: "list room measurement records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomMeasurement.create": {
-    name: "Create Room Measurement",
-    description: "Create new room measurement records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomMeasurement.update": {
-    name: "Update Room Measurement",
-    description: "Modify existing room measurement records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomMeasurement.soft_delete": {
-    name: "Delete Room Measurement",
-    description: "Delete (soft) room measurement records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomMeasurement.restore": {
-    name: "Restore Room Measurement",
-    description: "Restore deleted room measurement records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomMeasurement.export": {
-    name: "Export Room Measurement",
-    description: "Export data for room measurement records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomObject.read": {
-    name: "View Room Object",
-    description: "View and access room object records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomObject.list": {
-    name: "List Room Object",
-    description: "list room object records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomObject.create": {
-    name: "Create Room Object",
-    description: "Create new room object records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomObject.update": {
-    name: "Update Room Object",
-    description: "Modify existing room object records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomObject.soft_delete": {
-    name: "Delete Room Object",
-    description: "Delete (soft) room object records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomObject.restore": {
-    name: "Restore Room Object",
-    description: "Restore deleted room object records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomObject.export": {
-    name: "Export Room Object",
-    description: "Export data for room object records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomSurface.read": {
-    name: "View Room Surface",
-    description: "View and access room surface records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomSurface.list": {
-    name: "List Room Surface",
-    description: "list room surface records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomSurface.create": {
-    name: "Create Room Surface",
-    description: "Create new room surface records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomSurface.update": {
-    name: "Update Room Surface",
-    description: "Modify existing room surface records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomSurface.soft_delete": {
-    name: "Delete Room Surface",
-    description: "Delete (soft) room surface records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomSurface.restore": {
-    name: "Restore Room Surface",
-    description: "Restore deleted room surface records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomSurface.export": {
-    name: "Export Room Surface",
-    description: "Export data for room surface records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomAnnotation.read": {
-    name: "View Room Annotation",
-    description: "View and access room annotation records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomAnnotation.list": {
-    name: "List Room Annotation",
-    description: "list room annotation records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomAnnotation.create": {
-    name: "Create Room Annotation",
-    description: "Create new room annotation records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomAnnotation.update": {
-    name: "Update Room Annotation",
-    description: "Modify existing room annotation records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomAnnotation.soft_delete": {
-    name: "Delete Room Annotation",
-    description: "Delete (soft) room annotation records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomAnnotation.restore": {
-    name: "Restore Room Annotation",
-    description: "Restore deleted room annotation records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomAnnotation.publish": {
-    name: "Publish Room Annotation",
-    description: "Publish room annotation records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomAnnotation.export": {
-    name: "Export Room Annotation",
-    description: "Export data for room annotation records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomExport.read": {
-    name: "View Room Export",
-    description: "View and access room export records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomExport.list": {
-    name: "List Room Export",
-    description: "list room export records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomExport.create": {
-    name: "Create Room Export",
-    description: "Create new room export records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomExport.update": {
-    name: "Update Room Export",
-    description: "Modify existing room export records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomExport.soft_delete": {
-    name: "Delete Room Export",
-    description: "Delete (soft) room export records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomExport.restore": {
-    name: "Restore Room Export",
-    description: "Restore deleted room export records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomExport.export": {
-    name: "Export Room Export",
-    description: "Export data for room export records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomExport.send": {
-    name: "Send Room Export",
-    description: "Send room export records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomPlanPreset.read": {
-    name: "View Room Plan Preset",
-    description: "View and access room plan preset records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomPlanPreset.list": {
-    name: "List Room Plan Preset",
-    description: "list room plan preset records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomPlanPreset.create": {
-    name: "Create Room Plan Preset",
-    description: "Create new room plan preset records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomPlanPreset.update": {
-    name: "Update Room Plan Preset",
-    description: "Modify existing room plan preset records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomPlanPreset.soft_delete": {
-    name: "Delete Room Plan Preset",
-    description: "Delete (soft) room plan preset records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomPlanPreset.restore": {
-    name: "Restore Room Plan Preset",
-    description: "Restore deleted room plan preset records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomPlanPreset.duplicate": {
-    name: "Duplicate Room Plan Preset",
-    description: "Duplicate room plan preset records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomPlanPreset.publish": {
-    name: "Publish Room Plan Preset",
-    description: "Publish room plan preset records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomProcessingJob.read": {
-    name: "View Room Processing Job",
-    description:
-      "View and access room processing job records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomProcessingJob.list": {
-    name: "List Room Processing Job",
-    description: "list room processing job records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomProcessingJob.create": {
-    name: "Create Room Processing Job",
-    description: "Create new room processing job records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomProcessingJob.update": {
-    name: "Update Room Processing Job",
-    description:
-      "Modify existing room processing job records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomProcessingJob.soft_delete": {
-    name: "Delete Room Processing Job",
-    description:
-      "Delete (soft) room processing job records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomProcessingJob.restore": {
-    name: "Restore Room Processing Job",
-    description:
-      "Restore deleted room processing job records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomProcessingJob.activate": {
-    name: "Activate Room Processing Job",
-    description: "Activate room processing job records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "RoomProcessingJob.deactivate": {
-    name: "Deactivate Room Processing Job",
-    description: "Deactivate room processing job records within tenant scope",
-    domain: "roomplan_spatial",
-  },
-  "Employment.read": {
-    name: "View Employment",
-    description: "View and access employment records within tenant scope",
-    domain: "hr_employment",
-  },
-  "Employment.create": {
-    name: "Create Employment",
-    description: "Create new employment records within tenant scope",
-    domain: "hr_employment",
-  },
-  "Employment.update": {
-    name: "Update Employment",
-    description: "Modify existing employment records within tenant scope",
-    domain: "hr_employment",
-  },
-  "Employment.soft_delete": {
-    name: "Delete Employment",
-    description: "Delete (soft) employment records within tenant scope",
-    domain: "hr_employment",
-  },
-  "Employment.restore": {
-    name: "Restore Employment",
-    description: "Restore deleted employment records within tenant scope",
-    domain: "hr_employment",
-  },
-  "Employment.activate": {
-    name: "Activate Employment",
-    description: "Activate employment records within tenant scope",
-    domain: "hr_employment",
-  },
-  "Employment.deactivate": {
-    name: "Deactivate Employment",
-    description: "Deactivate employment records within tenant scope",
-    domain: "hr_employment",
-  },
-  "Position.read": {
-    name: "View Position",
-    description: "View and access position records within tenant scope",
-    domain: "hr_employment",
-  },
-  "Position.create": {
-    name: "Create Position",
-    description: "Create new position records within tenant scope",
-    domain: "hr_employment",
-  },
-  "Position.update": {
-    name: "Update Position",
-    description: "Modify existing position records within tenant scope",
-    domain: "hr_employment",
-  },
-  "Position.soft_delete": {
-    name: "Delete Position",
-    description: "Delete (soft) position records within tenant scope",
-    domain: "hr_employment",
-  },
-  "Position.restore": {
-    name: "Restore Position",
-    description: "Restore deleted position records within tenant scope",
-    domain: "hr_employment",
-  },
-  "Position.activate": {
-    name: "Activate Position",
-    description: "Activate position records within tenant scope",
-    domain: "hr_employment",
-  },
-  "Position.deactivate": {
-    name: "Deactivate Position",
-    description: "Deactivate position records within tenant scope",
-    domain: "hr_employment",
-  },
-  "PositionAssignment.read": {
-    name: "View Position Assignment",
-    description:
-      "View and access position assignment records within tenant scope",
-    domain: "hr_employment",
-  },
-  "PositionAssignment.create": {
-    name: "Create Position Assignment",
-    description: "Create new position assignment records within tenant scope",
-    domain: "hr_employment",
-  },
-  "PositionAssignment.update": {
-    name: "Update Position Assignment",
-    description:
-      "Modify existing position assignment records within tenant scope",
-    domain: "hr_employment",
-  },
-  "PositionAssignment.soft_delete": {
-    name: "Delete Position Assignment",
-    description:
-      "Delete (soft) position assignment records within tenant scope",
-    domain: "hr_employment",
-  },
-  "PositionAssignment.restore": {
-    name: "Restore Position Assignment",
-    description:
-      "Restore deleted position assignment records within tenant scope",
-    domain: "hr_employment",
-  },
-  "PositionAssignment.assign": {
-    name: "Assign Position Assignment",
-    description: "Assign position assignment records within tenant scope",
-    domain: "hr_employment",
-  },
-  "PositionAssignment.unassign": {
-    name: "Unassign Position Assignment",
-    description:
-      "Remove assignment of position assignment records within tenant scope",
-    domain: "hr_employment",
-  },
-  "PositionBudget.read": {
-    name: "View Position Budget",
-    description: "View and access position budget records within tenant scope",
-    domain: "hr_employment",
-  },
-  "PositionBudget.create": {
-    name: "Create Position Budget",
-    description: "Create new position budget records within tenant scope",
-    domain: "hr_employment",
-  },
-  "PositionBudget.update": {
-    name: "Update Position Budget",
-    description: "Modify existing position budget records within tenant scope",
-    domain: "hr_employment",
-  },
-  "PositionBudget.soft_delete": {
-    name: "Delete Position Budget",
-    description: "Delete (soft) position budget records within tenant scope",
-    domain: "hr_employment",
-  },
-  "PositionBudget.restore": {
-    name: "Restore Position Budget",
-    description: "Restore deleted position budget records within tenant scope",
-    domain: "hr_employment",
-  },
-  "CompensationComponent.read": {
-    name: "View Compensation Component",
-    description:
-      "View and access compensation component records within tenant scope",
-    domain: "hr_employment",
-  },
-  "CompensationComponent.create": {
-    name: "Create Compensation Component",
-    description:
-      "Create new compensation component records within tenant scope",
-    domain: "hr_employment",
-  },
-  "CompensationComponent.update": {
-    name: "Update Compensation Component",
-    description:
-      "Modify existing compensation component records within tenant scope",
-    domain: "hr_employment",
-  },
-  "CompensationComponent.soft_delete": {
-    name: "Delete Compensation Component",
-    description:
-      "Delete (soft) compensation component records within tenant scope",
-    domain: "hr_employment",
-  },
-  "CompensationComponent.restore": {
-    name: "Restore Compensation Component",
-    description:
-      "Restore deleted compensation component records within tenant scope",
-    domain: "hr_employment",
-  },
-  "CompensationComponent.activate": {
-    name: "Activate Compensation Component",
-    description: "Activate compensation component records within tenant scope",
-    domain: "hr_employment",
-  },
-  "CompensationComponent.deactivate": {
-    name: "Deactivate Compensation Component",
-    description:
-      "Deactivate compensation component records within tenant scope",
-    domain: "hr_employment",
-  },
-  "CompensationPlan.read": {
-    name: "View Compensation Plan",
-    description:
-      "View and access compensation plan records within tenant scope",
-    domain: "hr_employment",
-  },
-  "CompensationPlan.create": {
-    name: "Create Compensation Plan",
-    description: "Create new compensation plan records within tenant scope",
-    domain: "hr_employment",
-  },
-  "CompensationPlan.update": {
-    name: "Update Compensation Plan",
-    description:
-      "Modify existing compensation plan records within tenant scope",
-    domain: "hr_employment",
-  },
-  "CompensationPlan.soft_delete": {
-    name: "Delete Compensation Plan",
-    description: "Delete (soft) compensation plan records within tenant scope",
-    domain: "hr_employment",
-  },
-  "CompensationPlan.restore": {
-    name: "Restore Compensation Plan",
-    description:
-      "Restore deleted compensation plan records within tenant scope",
-    domain: "hr_employment",
-  },
-  "CompensationPlan.activate": {
-    name: "Activate Compensation Plan",
-    description: "Activate compensation plan records within tenant scope",
-    domain: "hr_employment",
-  },
-  "CompensationPlan.deactivate": {
-    name: "Deactivate Compensation Plan",
-    description: "Deactivate compensation plan records within tenant scope",
-    domain: "hr_employment",
-  },
-  "Allowance.read": {
-    name: "View Allowance",
-    description: "View and access allowance records within tenant scope",
-    domain: "hr_employment",
-  },
-  "Allowance.create": {
-    name: "Create Allowance",
-    description: "Create new allowance records within tenant scope",
-    domain: "hr_employment",
-  },
-  "Allowance.update": {
-    name: "Update Allowance",
-    description: "Modify existing allowance records within tenant scope",
-    domain: "hr_employment",
-  },
-  "Allowance.soft_delete": {
-    name: "Delete Allowance",
-    description: "Delete (soft) allowance records within tenant scope",
-    domain: "hr_employment",
-  },
-  "Allowance.restore": {
-    name: "Restore Allowance",
-    description: "Restore deleted allowance records within tenant scope",
-    domain: "hr_employment",
-  },
-  "Allowance.approve": {
-    name: "Approve Allowance",
-    description: "Approve allowance records within tenant scope",
-    domain: "hr_employment",
-  },
-  "Allowance.reject": {
-    name: "Reject Allowance",
-    description: "Reject allowance records within tenant scope",
-    domain: "hr_employment",
-  },
-  "Deduction.read": {
-    name: "View Deduction",
-    description: "View and access deduction records within tenant scope",
-    domain: "hr_employment",
-  },
-  "Deduction.create": {
-    name: "Create Deduction",
-    description: "Create new deduction records within tenant scope",
-    domain: "hr_employment",
-  },
-  "Deduction.update": {
-    name: "Update Deduction",
-    description: "Modify existing deduction records within tenant scope",
-    domain: "hr_employment",
-  },
-  "Deduction.soft_delete": {
-    name: "Delete Deduction",
-    description: "Delete (soft) deduction records within tenant scope",
-    domain: "hr_employment",
-  },
-  "Deduction.restore": {
-    name: "Restore Deduction",
-    description: "Restore deleted deduction records within tenant scope",
-    domain: "hr_employment",
-  },
-  "Deduction.approve": {
-    name: "Approve Deduction",
-    description: "Approve deduction records within tenant scope",
-    domain: "hr_employment",
-  },
-  "Deduction.reject": {
-    name: "Reject Deduction",
-    description: "Reject deduction records within tenant scope",
-    domain: "hr_employment",
-  },
-  "BenefitDependent.read": {
-    name: "View Benefit Dependent",
-    description:
-      "View and access benefit dependent records within tenant scope",
-    domain: "hr_employment",
-  },
-  "BenefitDependent.create": {
-    name: "Create Benefit Dependent",
-    description: "Create new benefit dependent records within tenant scope",
-    domain: "hr_employment",
-  },
-  "BenefitDependent.update": {
-    name: "Update Benefit Dependent",
-    description:
-      "Modify existing benefit dependent records within tenant scope",
-    domain: "hr_employment",
-  },
-  "BenefitDependent.soft_delete": {
-    name: "Delete Benefit Dependent",
-    description: "Delete (soft) benefit dependent records within tenant scope",
-    domain: "hr_employment",
-  },
-  "BenefitDependent.restore": {
-    name: "Restore Benefit Dependent",
-    description:
-      "Restore deleted benefit dependent records within tenant scope",
-    domain: "hr_employment",
-  },
-  "BenefitEnrollment.read": {
-    name: "View Benefit Enrollment",
-    description:
-      "View and access benefit enrollment records within tenant scope",
-    domain: "hr_employment",
-  },
-  "BenefitEnrollment.create": {
-    name: "Create Benefit Enrollment",
-    description: "Create new benefit enrollment records within tenant scope",
-    domain: "hr_employment",
-  },
-  "BenefitEnrollment.update": {
-    name: "Update Benefit Enrollment",
-    description:
-      "Modify existing benefit enrollment records within tenant scope",
-    domain: "hr_employment",
-  },
-  "BenefitEnrollment.soft_delete": {
-    name: "Delete Benefit Enrollment",
-    description: "Delete (soft) benefit enrollment records within tenant scope",
-    domain: "hr_employment",
-  },
-  "BenefitEnrollment.restore": {
-    name: "Restore Benefit Enrollment",
-    description:
-      "Restore deleted benefit enrollment records within tenant scope",
-    domain: "hr_employment",
-  },
-  "BenefitEnrollment.approve": {
-    name: "Approve Benefit Enrollment",
-    description: "Approve benefit enrollment records within tenant scope",
-    domain: "hr_employment",
-  },
-  "BenefitEnrollment.reject": {
-    name: "Reject Benefit Enrollment",
-    description: "Reject benefit enrollment records within tenant scope",
-    domain: "hr_employment",
-  },
-  "Certification.read": {
-    name: "View Certification",
-    description: "View and access certification records within tenant scope",
-    domain: "hr_employment",
-  },
-  "Certification.create": {
-    name: "Create Certification",
-    description: "Create new certification records within tenant scope",
-    domain: "hr_employment",
-  },
-  "Certification.update": {
-    name: "Update Certification",
-    description: "Modify existing certification records within tenant scope",
-    domain: "hr_employment",
-  },
-  "Certification.soft_delete": {
-    name: "Delete Certification",
-    description: "Delete (soft) certification records within tenant scope",
-    domain: "hr_employment",
-  },
-  "Certification.restore": {
-    name: "Restore Certification",
-    description: "Restore deleted certification records within tenant scope",
-    domain: "hr_employment",
-  },
-  "Certification.approve": {
-    name: "Approve Certification",
-    description: "Approve certification records within tenant scope",
-    domain: "hr_employment",
-  },
-  "Certification.reject": {
-    name: "Reject Certification",
-    description: "Reject certification records within tenant scope",
-    domain: "hr_employment",
-  },
-  "PerformanceGoal.read": {
-    name: "View Performance Goal",
-    description: "View and access performance goal records within tenant scope",
-    domain: "hr_employment",
-  },
-  "PerformanceGoal.create": {
-    name: "Create Performance Goal",
-    description: "Create new performance goal records within tenant scope",
-    domain: "hr_employment",
-  },
-  "PerformanceGoal.update": {
-    name: "Update Performance Goal",
-    description: "Modify existing performance goal records within tenant scope",
-    domain: "hr_employment",
-  },
-  "PerformanceGoal.soft_delete": {
-    name: "Delete Performance Goal",
-    description: "Delete (soft) performance goal records within tenant scope",
-    domain: "hr_employment",
-  },
-  "PerformanceGoal.restore": {
-    name: "Restore Performance Goal",
-    description: "Restore deleted performance goal records within tenant scope",
-    domain: "hr_employment",
-  },
-  "PerformanceReview.read": {
-    name: "View Performance Review",
-    description:
-      "View and access performance review records within tenant scope",
-    domain: "hr_employment",
-  },
-  "PerformanceReview.create": {
-    name: "Create Performance Review",
-    description: "Create new performance review records within tenant scope",
-    domain: "hr_employment",
-  },
-  "PerformanceReview.update": {
-    name: "Update Performance Review",
-    description:
-      "Modify existing performance review records within tenant scope",
-    domain: "hr_employment",
-  },
-  "PerformanceReview.soft_delete": {
-    name: "Delete Performance Review",
-    description: "Delete (soft) performance review records within tenant scope",
-    domain: "hr_employment",
-  },
-  "PerformanceReview.restore": {
-    name: "Restore Performance Review",
-    description:
-      "Restore deleted performance review records within tenant scope",
-    domain: "hr_employment",
-  },
-  "PerformanceReview.approve": {
-    name: "Approve Performance Review",
-    description: "Approve performance review records within tenant scope",
-    domain: "hr_employment",
-  },
-  "PerformanceReview.reject": {
-    name: "Reject Performance Review",
-    description: "Reject performance review records within tenant scope",
-    domain: "hr_employment",
-  },
-  "Grade.read": {
-    name: "View Grade",
-    description: "View and access grade records within tenant scope",
-    domain: "hr_employment",
-  },
-  "Grade.create": {
-    name: "Create Grade",
-    description: "Create new grade records within tenant scope",
-    domain: "hr_employment",
-  },
-  "Grade.update": {
-    name: "Update Grade",
-    description: "Modify existing grade records within tenant scope",
-    domain: "hr_employment",
-  },
-  "Grade.soft_delete": {
-    name: "Delete Grade",
-    description: "Delete (soft) grade records within tenant scope",
-    domain: "hr_employment",
-  },
-  "Grade.restore": {
-    name: "Restore Grade",
-    description: "Restore deleted grade records within tenant scope",
-    domain: "hr_employment",
-  },
-  "Department.read": {
-    name: "View Department",
-    description: "View and access department records within tenant scope",
-    domain: "hr_employment",
-  },
-  "Department.create": {
-    name: "Create Department",
-    description: "Create new department records within tenant scope",
-    domain: "hr_employment",
-  },
-  "Department.update": {
-    name: "Update Department",
-    description: "Modify existing department records within tenant scope",
-    domain: "hr_employment",
-  },
-  "Department.soft_delete": {
-    name: "Delete Department",
-    description: "Delete (soft) department records within tenant scope",
-    domain: "hr_employment",
-  },
-  "Department.restore": {
-    name: "Restore Department",
-    description: "Restore deleted department records within tenant scope",
-    domain: "hr_employment",
-  },
-  "Department.activate": {
-    name: "Activate Department",
-    description: "Activate department records within tenant scope",
-    domain: "hr_employment",
-  },
-  "Department.deactivate": {
-    name: "Deactivate Department",
-    description: "Deactivate department records within tenant scope",
-    domain: "hr_employment",
-  },
-  "OrgUnit.read": {
-    name: "View Org Unit",
-    description: "View and access org unit records within tenant scope",
-    domain: "hr_employment",
-  },
-  "OrgUnit.create": {
-    name: "Create Org Unit",
-    description: "Create new org unit records within tenant scope",
-    domain: "hr_employment",
-  },
-  "OrgUnit.update": {
-    name: "Update Org Unit",
-    description: "Modify existing org unit records within tenant scope",
-    domain: "hr_employment",
-  },
-  "OrgUnit.soft_delete": {
-    name: "Delete Org Unit",
-    description: "Delete (soft) org unit records within tenant scope",
-    domain: "hr_employment",
-  },
-  "OrgUnit.restore": {
-    name: "Restore Org Unit",
-    description: "Restore deleted org unit records within tenant scope",
-    domain: "hr_employment",
-  },
-  "OrgUnit.activate": {
-    name: "Activate Org Unit",
-    description: "Activate org unit records within tenant scope",
-    domain: "hr_employment",
-  },
-  "OrgUnit.deactivate": {
-    name: "Deactivate Org Unit",
-    description: "Deactivate org unit records within tenant scope",
-    domain: "hr_employment",
-  },
-  "TrainingEnrollment.read": {
-    name: "View Training Enrollment",
-    description:
-      "View and access training enrollment records within tenant scope",
-    domain: "hr_employment",
-  },
-  "TrainingEnrollment.create": {
-    name: "Create Training Enrollment",
-    description: "Create new training enrollment records within tenant scope",
-    domain: "hr_employment",
-  },
-  "TrainingEnrollment.update": {
-    name: "Update Training Enrollment",
-    description:
-      "Modify existing training enrollment records within tenant scope",
-    domain: "hr_employment",
-  },
-  "TrainingEnrollment.soft_delete": {
-    name: "Delete Training Enrollment",
-    description:
-      "Delete (soft) training enrollment records within tenant scope",
-    domain: "hr_employment",
-  },
-  "TrainingEnrollment.restore": {
-    name: "Restore Training Enrollment",
-    description:
-      "Restore deleted training enrollment records within tenant scope",
-    domain: "hr_employment",
-  },
-  "TrainingEnrollment.approve": {
-    name: "Approve Training Enrollment",
-    description: "Approve training enrollment records within tenant scope",
-    domain: "hr_employment",
-  },
-  "TrainingEnrollment.reject": {
-    name: "Reject Training Enrollment",
-    description: "Reject training enrollment records within tenant scope",
-    domain: "hr_employment",
-  },
-  "Worker.read": {
-    name: "View Worker",
-    description: "View and access worker records within tenant scope",
-    domain: "hr_employment",
-  },
-  "Worker.create": {
-    name: "Create Worker",
-    description: "Create new worker records within tenant scope",
-    domain: "hr_employment",
-  },
-  "Worker.update": {
-    name: "Update Worker",
-    description: "Modify existing worker records within tenant scope",
-    domain: "hr_employment",
-  },
-  "Worker.soft_delete": {
-    name: "Delete Worker",
-    description: "Delete (soft) worker records within tenant scope",
-    domain: "hr_employment",
-  },
-  "Worker.restore": {
-    name: "Restore Worker",
-    description: "Restore deleted worker records within tenant scope",
-    domain: "hr_employment",
-  },
-  "Worker.activate": {
-    name: "Activate Worker",
-    description: "Activate worker records within tenant scope",
-    domain: "hr_employment",
-  },
-  "Worker.deactivate": {
-    name: "Deactivate Worker",
-    description: "Deactivate worker records within tenant scope",
-    domain: "hr_employment",
-  },
-  "LossInvestigation.read": {
-    name: "View Loss Investigation",
-    description:
-      "View and access loss investigation records within tenant scope",
-    domain: "hr_employment",
-  },
-  "LossInvestigation.create": {
-    name: "Create Loss Investigation",
-    description: "Create new loss investigation records within tenant scope",
-    domain: "hr_employment",
-  },
-  "LossInvestigation.update": {
-    name: "Update Loss Investigation",
-    description:
-      "Modify existing loss investigation records within tenant scope",
-    domain: "hr_employment",
-  },
-  "LossInvestigation.soft_delete": {
-    name: "Delete Loss Investigation",
-    description: "Delete (soft) loss investigation records within tenant scope",
-    domain: "hr_employment",
-  },
-  "LossInvestigation.restore": {
-    name: "Restore Loss Investigation",
-    description:
-      "Restore deleted loss investigation records within tenant scope",
-    domain: "hr_employment",
-  },
-  "LossInvestigationFinding.read": {
-    name: "View Loss Investigation Finding",
-    description:
-      "View and access loss investigation finding records within tenant scope",
-    domain: "hr_employment",
-  },
-  "LossInvestigationFinding.create": {
-    name: "Create Loss Investigation Finding",
-    description:
-      "Create new loss investigation finding records within tenant scope",
-    domain: "hr_employment",
-  },
-  "LossInvestigationFinding.update": {
-    name: "Update Loss Investigation Finding",
-    description:
-      "Modify existing loss investigation finding records within tenant scope",
-    domain: "hr_employment",
-  },
-  "LossInvestigationFinding.soft_delete": {
-    name: "Delete Loss Investigation Finding",
-    description:
-      "Delete (soft) loss investigation finding records within tenant scope",
-    domain: "hr_employment",
-  },
-  "LossInvestigationFinding.restore": {
-    name: "Restore Loss Investigation Finding",
-    description:
-      "Restore deleted loss investigation finding records within tenant scope",
-    domain: "hr_employment",
-  },
-  "MitigationAction.read": {
-    name: "View Mitigation Action",
-    description:
-      "View and access mitigation action records within tenant scope",
-    domain: "hr_employment",
-  },
-  "MitigationAction.create": {
-    name: "Create Mitigation Action",
-    description: "Create new mitigation action records within tenant scope",
-    domain: "hr_employment",
-  },
-  "MitigationAction.update": {
-    name: "Update Mitigation Action",
-    description:
-      "Modify existing mitigation action records within tenant scope",
-    domain: "hr_employment",
-  },
-  "MitigationAction.soft_delete": {
-    name: "Delete Mitigation Action",
-    description: "Delete (soft) mitigation action records within tenant scope",
-    domain: "hr_employment",
-  },
-  "MitigationAction.restore": {
-    name: "Restore Mitigation Action",
-    description:
-      "Restore deleted mitigation action records within tenant scope",
-    domain: "hr_employment",
-  },
-  "MitigationAction.implement": {
-    name: "Implement Mitigation Action",
-    description: "Implement mitigation action records within tenant scope",
-    domain: "hr_employment",
-  },
-  "RiskFactor.read": {
-    name: "View Risk Factor",
-    description: "View and access risk factor records within tenant scope",
-    domain: "hr_employment",
-  },
-  "RiskFactor.create": {
-    name: "Create Risk Factor",
-    description: "Create new risk factor records within tenant scope",
-    domain: "hr_employment",
-  },
-  "RiskFactor.update": {
-    name: "Update Risk Factor",
-    description: "Modify existing risk factor records within tenant scope",
-    domain: "hr_employment",
-  },
-  "RiskFactor.soft_delete": {
-    name: "Delete Risk Factor",
-    description: "Delete (soft) risk factor records within tenant scope",
-    domain: "hr_employment",
-  },
-  "RiskFactor.restore": {
-    name: "Restore Risk Factor",
-    description: "Restore deleted risk factor records within tenant scope",
-    domain: "hr_employment",
-  },
-  "RiskFactor.assess": {
-    name: "Assess Risk Factor",
-    description: "Assess risk factor records within tenant scope",
-    domain: "hr_employment",
-  },
-  "ScheduleRisk.read": {
-    name: "View Schedule Risk",
-    description: "View and access schedule risk records within tenant scope",
-    domain: "hr_employment",
-  },
-  "ScheduleRisk.create": {
-    name: "Create Schedule Risk",
-    description: "Create new schedule risk records within tenant scope",
-    domain: "hr_employment",
-  },
-  "ScheduleRisk.update": {
-    name: "Update Schedule Risk",
-    description: "Modify existing schedule risk records within tenant scope",
-    domain: "hr_employment",
-  },
-  "ScheduleRisk.soft_delete": {
-    name: "Delete Schedule Risk",
-    description: "Delete (soft) schedule risk records within tenant scope",
-    domain: "hr_employment",
-  },
-  "ScheduleRisk.restore": {
-    name: "Restore Schedule Risk",
-    description: "Restore deleted schedule risk records within tenant scope",
-    domain: "hr_employment",
-  },
-  "AnomalyCase.read": {
-    name: "View Anomaly Case",
-    description: "View and access anomaly case records within tenant scope",
-    domain: "hr_employment",
-  },
-  "AnomalyCase.create": {
-    name: "Create Anomaly Case",
-    description: "Create new anomaly case records within tenant scope",
-    domain: "hr_employment",
-  },
-  "AnomalyCase.update": {
-    name: "Update Anomaly Case",
-    description: "Modify existing anomaly case records within tenant scope",
-    domain: "hr_employment",
-  },
-  "AnomalyCase.soft_delete": {
-    name: "Delete Anomaly Case",
-    description: "Delete (soft) anomaly case records within tenant scope",
-    domain: "hr_employment",
-  },
-  "AnomalyCase.restore": {
-    name: "Restore Anomaly Case",
-    description: "Restore deleted anomaly case records within tenant scope",
-    domain: "hr_employment",
-  },
-  "AnomalyCase.investigate": {
-    name: "Investigate Anomaly Case",
-    description: "Investigate anomaly case records within tenant scope",
-    domain: "hr_employment",
-  },
-  "AnomalyCaseAction.read": {
-    name: "View Anomaly Case Action",
-    description:
-      "View and access anomaly case action records within tenant scope",
-    domain: "hr_employment",
-  },
-  "AnomalyCaseAction.create": {
-    name: "Create Anomaly Case Action",
-    description: "Create new anomaly case action records within tenant scope",
-    domain: "hr_employment",
-  },
-  "AnomalyCaseAction.update": {
-    name: "Update Anomaly Case Action",
-    description:
-      "Modify existing anomaly case action records within tenant scope",
-    domain: "hr_employment",
-  },
-  "AnomalyCaseAction.execute": {
-    name: "Execute Anomaly Case Action",
-    description: "Execute anomaly case action records within tenant scope",
-    domain: "hr_employment",
-  },
-  "AnomalySignal.read": {
-    name: "View Anomaly Signal",
-    description: "View and access anomaly signal records within tenant scope",
-    domain: "hr_employment",
-  },
-  "AnomalySignal.create": {
-    name: "Create Anomaly Signal",
-    description: "Create new anomaly signal records within tenant scope",
-    domain: "hr_employment",
-  },
-  "AnomalySignal.update": {
-    name: "Update Anomaly Signal",
-    description: "Modify existing anomaly signal records within tenant scope",
-    domain: "hr_employment",
-  },
-  "AnomalySignalFeature.read": {
-    name: "View Anomaly Signal Feature",
-    description:
-      "View and access anomaly signal feature records within tenant scope",
-    domain: "hr_employment",
-  },
-  "AnomalySignalFeature.create": {
-    name: "Create Anomaly Signal Feature",
-    description:
-      "Create new anomaly signal feature records within tenant scope",
-    domain: "hr_employment",
-  },
-  "AnomalySignalFeature.update": {
-    name: "Update Anomaly Signal Feature",
-    description:
-      "Modify existing anomaly signal feature records within tenant scope",
-    domain: "hr_employment",
-  },
-  "ApprovalRequest.read": {
-    name: "View Approval Request",
-    description: "View and access approval request records within tenant scope",
-    domain: "approval_workflows",
-  },
-  "ApprovalRequest.create": {
-    name: "Create Approval Request",
-    description: "Create new approval request records within tenant scope",
-    domain: "approval_workflows",
-  },
-  "ApprovalRequest.update": {
-    name: "Update Approval Request",
-    description: "Modify existing approval request records within tenant scope",
-    domain: "approval_workflows",
-  },
-  "ApprovalRequest.soft_delete": {
-    name: "Delete Approval Request",
-    description: "Delete (soft) approval request records within tenant scope",
-    domain: "approval_workflows",
-  },
-  "ApprovalRequest.restore": {
-    name: "Restore Approval Request",
-    description: "Restore deleted approval request records within tenant scope",
-    domain: "approval_workflows",
-  },
-  "ApprovalRequest.submit": {
-    name: "Submit Approval Request",
-    description: "Submit approval request records within tenant scope",
-    domain: "approval_workflows",
-  },
-  "ApprovalRequest.approve": {
-    name: "Approve Approval Request",
-    description: "Approve approval request records within tenant scope",
-    domain: "approval_workflows",
-  },
-  "ApprovalRequest.reject": {
-    name: "Reject Approval Request",
-    description: "Reject approval request records within tenant scope",
-    domain: "approval_workflows",
-  },
-  "ApprovalDecision.read": {
-    name: "View Approval Decision",
-    description:
-      "View and access approval decision records within tenant scope",
-    domain: "approval_workflows",
-  },
-  "ApprovalDecision.create": {
-    name: "Create Approval Decision",
-    description: "Create new approval decision records within tenant scope",
-    domain: "approval_workflows",
-  },
-  "ApprovalDecision.update": {
-    name: "Update Approval Decision",
-    description:
-      "Modify existing approval decision records within tenant scope",
-    domain: "approval_workflows",
-  },
-  "ApprovalDecision.soft_delete": {
-    name: "Delete Approval Decision",
-    description: "Delete (soft) approval decision records within tenant scope",
-    domain: "approval_workflows",
-  },
-  "ApprovalDecision.restore": {
-    name: "Restore Approval Decision",
-    description:
-      "Restore deleted approval decision records within tenant scope",
-    domain: "approval_workflows",
-  },
-  "ApprovalRule.read": {
-    name: "View Approval Rule",
-    description: "View and access approval rule records within tenant scope",
-    domain: "approval_workflows",
-  },
-  "ApprovalRule.create": {
-    name: "Create Approval Rule",
-    description: "Create new approval rule records within tenant scope",
-    domain: "approval_workflows",
-  },
-  "ApprovalRule.update": {
-    name: "Update Approval Rule",
-    description: "Modify existing approval rule records within tenant scope",
-    domain: "approval_workflows",
-  },
-  "ApprovalRule.soft_delete": {
-    name: "Delete Approval Rule",
-    description: "Delete (soft) approval rule records within tenant scope",
-    domain: "approval_workflows",
-  },
-  "ApprovalRule.restore": {
-    name: "Restore Approval Rule",
-    description: "Restore deleted approval rule records within tenant scope",
-    domain: "approval_workflows",
-  },
-  "ApprovalRule.activate": {
-    name: "Activate Approval Rule",
-    description: "Activate approval rule records within tenant scope",
-    domain: "approval_workflows",
-  },
-  "ApprovalRule.deactivate": {
-    name: "Deactivate Approval Rule",
-    description: "Deactivate approval rule records within tenant scope",
-    domain: "approval_workflows",
-  },
-  "JobRun.read": {
-    name: "View Job Run",
-    description: "View and access job run records within tenant scope",
-    domain: "system_operations",
-  },
-  "JobRun.create": {
-    name: "Create Job Run",
-    description: "Create new job run records within tenant scope",
-    domain: "system_operations",
-  },
-  "JobRun.update": {
-    name: "Update Job Run",
-    description: "Modify existing job run records within tenant scope",
-    domain: "system_operations",
-  },
-  "JobRun.soft_delete": {
-    name: "Delete Job Run",
-    description: "Delete (soft) job run records within tenant scope",
-    domain: "system_operations",
-  },
-  "JobRun.restore": {
-    name: "Restore Job Run",
-    description: "Restore deleted job run records within tenant scope",
-    domain: "system_operations",
-  },
-  "JobSchedule.read": {
-    name: "View Job Schedule",
-    description: "View and access job schedule records within tenant scope",
-    domain: "system_operations",
-  },
-  "JobSchedule.create": {
-    name: "Create Job Schedule",
-    description: "Create new job schedule records within tenant scope",
-    domain: "system_operations",
-  },
-  "JobSchedule.update": {
-    name: "Update Job Schedule",
-    description: "Modify existing job schedule records within tenant scope",
-    domain: "system_operations",
-  },
-  "JobSchedule.activate": {
-    name: "Activate Job Schedule",
-    description: "Activate job schedule records within tenant scope",
-    domain: "system_operations",
-  },
-  "JobSchedule.deactivate": {
-    name: "Deactivate Job Schedule",
-    description: "Deactivate job schedule records within tenant scope",
-    domain: "system_operations",
-  },
-  "JobFamily.read": {
-    name: "View Job Family",
-    description: "View and access job family records within tenant scope",
-    domain: "system_operations",
-  },
-  "JobFamily.create": {
-    name: "Create Job Family",
-    description: "Create new job family records within tenant scope",
-    domain: "system_operations",
-  },
-  "JobFamily.update": {
-    name: "Update Job Family",
-    description: "Modify existing job family records within tenant scope",
-    domain: "system_operations",
-  },
-  "JobFamily.soft_delete": {
-    name: "Delete Job Family",
-    description: "Delete (soft) job family records within tenant scope",
-    domain: "system_operations",
-  },
-  "JobFamily.restore": {
-    name: "Restore Job Family",
-    description: "Restore deleted job family records within tenant scope",
-    domain: "system_operations",
-  },
-  "JobProfile.read": {
-    name: "View Job Profile",
-    description: "View and access job profile records within tenant scope",
-    domain: "system_operations",
-  },
-  "JobProfile.create": {
-    name: "Create Job Profile",
-    description: "Create new job profile records within tenant scope",
-    domain: "system_operations",
-  },
-  "JobProfile.update": {
-    name: "Update Job Profile",
-    description: "Modify existing job profile records within tenant scope",
-    domain: "system_operations",
-  },
-  "JobProfile.soft_delete": {
-    name: "Delete Job Profile",
-    description: "Delete (soft) job profile records within tenant scope",
-    domain: "system_operations",
-  },
-  "JobProfile.restore": {
-    name: "Restore Job Profile",
-    description: "Restore deleted job profile records within tenant scope",
-    domain: "system_operations",
-  },
-  "JobProfileAssignment.read": {
-    name: "View Job Profile Assignment",
-    description:
-      "View and access job profile assignment records within tenant scope",
-    domain: "system_operations",
-  },
-  "JobProfileAssignment.create": {
-    name: "Create Job Profile Assignment",
-    description:
-      "Create new job profile assignment records within tenant scope",
-    domain: "system_operations",
-  },
-  "JobProfileAssignment.update": {
-    name: "Update Job Profile Assignment",
-    description:
-      "Modify existing job profile assignment records within tenant scope",
-    domain: "system_operations",
-  },
-  "JobProfileAssignment.assign": {
-    name: "Assign Job Profile Assignment",
-    description: "Assign job profile assignment records within tenant scope",
-    domain: "system_operations",
-  },
-  "JobProfileAssignment.unassign": {
-    name: "Unassign Job Profile Assignment",
-    description:
-      "Remove assignment of job profile assignment records within tenant scope",
-    domain: "system_operations",
-  },
-  "DistributedLock.read": {
-    name: "View Distributed Lock",
-    description: "View and access distributed lock records within tenant scope",
-    domain: "system_operations",
-  },
-  "DistributedLock.create": {
-    name: "Create Distributed Lock",
-    description: "Create new distributed lock records within tenant scope",
-    domain: "system_operations",
-  },
-  "DistributedLock.update": {
-    name: "Update Distributed Lock",
-    description: "Modify existing distributed lock records within tenant scope",
-    domain: "system_operations",
-  },
-  "NumberSequence.read": {
-    name: "View Number Sequence",
-    description: "View and access number sequence records within tenant scope",
-    domain: "system_operations",
-  },
-  "NumberSequence.create": {
-    name: "Create Number Sequence",
-    description: "Create new number sequence records within tenant scope",
-    domain: "system_operations",
-  },
-  "NumberSequence.update": {
-    name: "Update Number Sequence",
-    description: "Modify existing number sequence records within tenant scope",
-    domain: "system_operations",
-  },
-  "weather_alerts.read": {
-    name: "View weather_alerts",
-    description: "View and access weather_alerts records within tenant scope",
-    domain: "system_operations",
-  },
-  "weather_alerts.create": {
-    name: "Create weather_alerts",
-    description: "Create new weather_alerts records within tenant scope",
-    domain: "system_operations",
-  },
-  "weather_alerts.update": {
-    name: "Update weather_alerts",
-    description: "Modify existing weather_alerts records within tenant scope",
-    domain: "system_operations",
-  },
-  "weather_alerts.activate": {
-    name: "Activate weather_alerts",
-    description: "Activate weather_alerts records within tenant scope",
-    domain: "system_operations",
-  },
-  "weather_alerts.deactivate": {
-    name: "Deactivate weather_alerts",
-    description: "Deactivate weather_alerts records within tenant scope",
-    domain: "system_operations",
-  },
-  "weather_watches.read": {
-    name: "View weather_watches",
-    description: "View and access weather_watches records within tenant scope",
-    domain: "system_operations",
-  },
-  "weather_watches.create": {
-    name: "Create weather_watches",
-    description: "Create new weather_watches records within tenant scope",
-    domain: "system_operations",
-  },
-  "weather_watches.update": {
-    name: "Update weather_watches",
-    description: "Modify existing weather_watches records within tenant scope",
-    domain: "system_operations",
-  },
-  "weather_incidents.read": {
-    name: "View weather_incidents",
-    description:
-      "View and access weather_incidents records within tenant scope",
-    domain: "system_operations",
-  },
-  "weather_incidents.create": {
-    name: "Create weather_incidents",
-    description: "Create new weather_incidents records within tenant scope",
-    domain: "system_operations",
-  },
-  "weather_incidents.update": {
-    name: "Update weather_incidents",
-    description:
-      "Modify existing weather_incidents records within tenant scope",
-    domain: "system_operations",
-  },
-  "weather_incidents.resolve": {
-    name: "Resolve weather_incidents",
-    description: "Resolve weather_incidents records within tenant scope",
-    domain: "system_operations",
-  },
-  "weather_alert_deliveries.read": {
-    name: "View weather_alert_deliveries",
-    description:
-      "View and access weather_alert_deliveries records within tenant scope",
-    domain: "system_operations",
-  },
-  "weather_alert_deliveries.create": {
-    name: "Create weather_alert_deliveries",
-    description:
-      "Create new weather_alert_deliveries records within tenant scope",
-    domain: "system_operations",
-  },
-  "weather_alert_deliveries.update": {
-    name: "Update weather_alert_deliveries",
-    description:
-      "Modify existing weather_alert_deliveries records within tenant scope",
-    domain: "system_operations",
-  },
-  "weather_forecast_cache.read": {
-    name: "View weather_forecast_cache",
-    description:
-      "View and access weather_forecast_cache records within tenant scope",
-    domain: "system_operations",
-  },
-  "weather_forecast_cache.create": {
-    name: "Create weather_forecast_cache",
-    description:
-      "Create new weather_forecast_cache records within tenant scope",
-    domain: "system_operations",
-  },
-  "weather_forecast_cache.update": {
-    name: "Update weather_forecast_cache",
-    description:
-      "Modify existing weather_forecast_cache records within tenant scope",
-    domain: "system_operations",
-  },
-  "weather_providers.read": {
-    name: "View weather_providers",
-    description:
-      "View and access weather_providers records within tenant scope",
-    domain: "system_operations",
-  },
-  "weather_providers.create": {
-    name: "Create weather_providers",
-    description: "Create new weather_providers records within tenant scope",
-    domain: "system_operations",
-  },
-  "weather_providers.update": {
-    name: "Update weather_providers",
-    description:
-      "Modify existing weather_providers records within tenant scope",
-    domain: "system_operations",
-  },
-  "weather_providers.activate": {
-    name: "Activate weather_providers",
-    description: "Activate weather_providers records within tenant scope",
-    domain: "system_operations",
-  },
-  "weather_providers.deactivate": {
-    name: "Deactivate weather_providers",
-    description: "Deactivate weather_providers records within tenant scope",
-    domain: "system_operations",
-  },
-  "weather_risk_factors.read": {
-    name: "View weather_risk_factors",
-    description:
-      "View and access weather_risk_factors records within tenant scope",
-    domain: "system_operations",
-  },
-  "weather_risk_factors.create": {
-    name: "Create weather_risk_factors",
-    description: "Create new weather_risk_factors records within tenant scope",
-    domain: "system_operations",
-  },
-  "weather_risk_factors.update": {
-    name: "Update weather_risk_factors",
-    description:
-      "Modify existing weather_risk_factors records within tenant scope",
-    domain: "system_operations",
-  },
-  "weather_risk_factors.activate": {
-    name: "Activate weather_risk_factors",
-    description: "Activate weather_risk_factors records within tenant scope",
-    domain: "system_operations",
-  },
-  "weather_risk_factors.deactivate": {
-    name: "Deactivate weather_risk_factors",
-    description: "Deactivate weather_risk_factors records within tenant scope",
-    domain: "system_operations",
-  },
-  "Webhook.read": {
-    name: "View Webhook",
-    description: "View and access webhook records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "Webhook.create": {
-    name: "Create Webhook",
-    description: "Create new webhook records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "Webhook.update": {
-    name: "Update Webhook",
-    description: "Modify existing webhook records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "Webhook.soft_delete": {
-    name: "Delete Webhook",
-    description: "Delete (soft) webhook records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "Webhook.restore": {
-    name: "Restore Webhook",
-    description: "Restore deleted webhook records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "Webhook.activate": {
-    name: "Activate Webhook",
-    description: "Activate webhook records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "Webhook.deactivate": {
-    name: "Deactivate Webhook",
-    description: "Deactivate webhook records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "WebhookEndpoint.read": {
-    name: "View Webhook Endpoint",
-    description: "View and access webhook endpoint records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "WebhookEndpoint.create": {
-    name: "Create Webhook Endpoint",
-    description: "Create new webhook endpoint records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "WebhookEndpoint.update": {
-    name: "Update Webhook Endpoint",
-    description: "Modify existing webhook endpoint records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "WebhookEndpoint.soft_delete": {
-    name: "Delete Webhook Endpoint",
-    description: "Delete (soft) webhook endpoint records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "WebhookEndpoint.restore": {
-    name: "Restore Webhook Endpoint",
-    description: "Restore deleted webhook endpoint records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "WebhookDelivery.read": {
-    name: "View Webhook Delivery",
-    description: "View and access webhook delivery records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "WebhookDelivery.create": {
-    name: "Create Webhook Delivery",
-    description: "Create new webhook delivery records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "WebhookDelivery.update": {
-    name: "Update Webhook Delivery",
-    description: "Modify existing webhook delivery records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "WebhookDelivery.soft_delete": {
-    name: "Delete Webhook Delivery",
-    description: "Delete (soft) webhook delivery records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "WebhookDelivery.restore": {
-    name: "Restore Webhook Delivery",
-    description: "Restore deleted webhook delivery records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "WebhookEvent.read": {
-    name: "View Webhook Event",
-    description: "View and access webhook event records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "WebhookEvent.create": {
-    name: "Create Webhook Event",
-    description: "Create new webhook event records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "WebhookEvent.update": {
-    name: "Update Webhook Event",
-    description: "Modify existing webhook event records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "WebhookEvent.soft_delete": {
-    name: "Delete Webhook Event",
-    description: "Delete (soft) webhook event records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "WebhookEvent.restore": {
-    name: "Restore Webhook Event",
-    description: "Restore deleted webhook event records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "WebhookLog.read": {
-    name: "View Webhook Log",
-    description: "View and access webhook log records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "WebhookLog.create": {
-    name: "Create Webhook Log",
-    description: "Create new webhook log records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "WebhookLog.update": {
-    name: "Update Webhook Log",
-    description: "Modify existing webhook log records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "WebhookLog.soft_delete": {
-    name: "Delete Webhook Log",
-    description: "Delete (soft) webhook log records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "WebhookLog.restore": {
-    name: "Restore Webhook Log",
-    description: "Restore deleted webhook log records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "IntegrationConnection.read": {
-    name: "View Integration Connection",
-    description:
-      "View and access integration connection records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "IntegrationConnection.create": {
-    name: "Create Integration Connection",
-    description:
-      "Create new integration connection records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "IntegrationConnection.update": {
-    name: "Update Integration Connection",
-    description:
-      "Modify existing integration connection records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "IntegrationConnection.soft_delete": {
-    name: "Delete Integration Connection",
-    description:
-      "Delete (soft) integration connection records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "IntegrationConnection.restore": {
-    name: "Restore Integration Connection",
-    description:
-      "Restore deleted integration connection records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "IntegrationConnection.activate": {
-    name: "Activate Integration Connection",
-    description: "Activate integration connection records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "IntegrationConnection.deactivate": {
-    name: "Deactivate Integration Connection",
-    description:
-      "Deactivate integration connection records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "IntegrationConnector.read": {
-    name: "View Integration Connector",
-    description:
-      "View and access integration connector records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "IntegrationConnector.create": {
-    name: "Create Integration Connector",
-    description: "Create new integration connector records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "IntegrationConnector.update": {
-    name: "Update Integration Connector",
-    description:
-      "Modify existing integration connector records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "IntegrationConnector.soft_delete": {
-    name: "Delete Integration Connector",
-    description:
-      "Delete (soft) integration connector records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "IntegrationConnector.restore": {
-    name: "Restore Integration Connector",
-    description:
-      "Restore deleted integration connector records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "IntegrationMapping.read": {
-    name: "View Integration Mapping",
-    description:
-      "View and access integration mapping records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "IntegrationMapping.create": {
-    name: "Create Integration Mapping",
-    description: "Create new integration mapping records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "IntegrationMapping.update": {
-    name: "Update Integration Mapping",
-    description:
-      "Modify existing integration mapping records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "IntegrationMapping.soft_delete": {
-    name: "Delete Integration Mapping",
-    description:
-      "Delete (soft) integration mapping records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "IntegrationMapping.restore": {
-    name: "Restore Integration Mapping",
-    description:
-      "Restore deleted integration mapping records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "IntegrationProvider.read": {
-    name: "View Integration Provider",
-    description:
-      "View and access integration provider records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "IntegrationProvider.create": {
-    name: "Create Integration Provider",
-    description: "Create new integration provider records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "IntegrationProvider.update": {
-    name: "Update Integration Provider",
-    description:
-      "Modify existing integration provider records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "IntegrationProvider.soft_delete": {
-    name: "Delete Integration Provider",
-    description:
-      "Delete (soft) integration provider records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "IntegrationProvider.restore": {
-    name: "Restore Integration Provider",
-    description:
-      "Restore deleted integration provider records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "IntegrationSecret.read": {
-    name: "View Integration Secret",
-    description:
-      "View and access integration secret records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "IntegrationSecret.create": {
-    name: "Create Integration Secret",
-    description: "Create new integration secret records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "IntegrationSecret.update": {
-    name: "Update Integration Secret",
-    description:
-      "Modify existing integration secret records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "IntegrationSecret.soft_delete": {
-    name: "Delete Integration Secret",
-    description: "Delete (soft) integration secret records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "IntegrationSecret.restore": {
-    name: "Restore Integration Secret",
-    description:
-      "Restore deleted integration secret records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "SyncJob.read": {
-    name: "View Sync Job",
-    description: "View and access sync job records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "SyncJob.create": {
-    name: "Create Sync Job",
-    description: "Create new sync job records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "SyncJob.update": {
-    name: "Update Sync Job",
-    description: "Modify existing sync job records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "SyncJob.soft_delete": {
-    name: "Delete Sync Job",
-    description: "Delete (soft) sync job records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "SyncJob.restore": {
-    name: "Restore Sync Job",
-    description: "Restore deleted sync job records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "SyncLog.read": {
-    name: "View Sync Log",
-    description: "View and access sync log records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "SyncLog.create": {
-    name: "Create Sync Log",
-    description: "Create new sync log records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "SyncLog.update": {
-    name: "Update Sync Log",
-    description: "Modify existing sync log records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "SyncLog.soft_delete": {
-    name: "Delete Sync Log",
-    description: "Delete (soft) sync log records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "SyncLog.restore": {
-    name: "Restore Sync Log",
-    description: "Restore deleted sync log records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "SyncState.read": {
-    name: "View Sync State",
-    description: "View and access sync state records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "SyncState.create": {
-    name: "Create Sync State",
-    description: "Create new sync state records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "SyncState.update": {
-    name: "Update Sync State",
-    description: "Modify existing sync state records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "SyncState.soft_delete": {
-    name: "Delete Sync State",
-    description: "Delete (soft) sync state records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "SyncState.restore": {
-    name: "Restore Sync State",
-    description: "Restore deleted sync state records within tenant scope",
-    domain: "integrations_webhooks",
-  },
-  "Location.read": {
-    name: "View Location",
-    description: "View and access location records within tenant scope",
-    domain: "system_config",
-  },
-  "Location.create": {
-    name: "Create Location",
-    description: "Create new location records within tenant scope",
-    domain: "system_config",
-  },
-  "Location.update": {
-    name: "Update Location",
-    description: "Modify existing location records within tenant scope",
-    domain: "system_config",
-  },
-  "Location.soft_delete": {
-    name: "Delete Location",
-    description: "Delete (soft) location records within tenant scope",
-    domain: "system_config",
-  },
-  "Location.restore": {
-    name: "Restore Location",
-    description: "Restore deleted location records within tenant scope",
-    domain: "system_config",
-  },
-  "Country.read": {
-    name: "View Country",
-    description: "View and access country records within tenant scope",
-    domain: "system_config",
-  },
-  "Country.create": {
-    name: "Create Country",
-    description: "Create new country records within tenant scope",
-    domain: "system_config",
-  },
-  "Country.update": {
-    name: "Update Country",
-    description: "Modify existing country records within tenant scope",
-    domain: "system_config",
-  },
-  "Country.soft_delete": {
-    name: "Delete Country",
-    description: "Delete (soft) country records within tenant scope",
-    domain: "system_config",
-  },
-  "Country.restore": {
-    name: "Restore Country",
-    description: "Restore deleted country records within tenant scope",
-    domain: "system_config",
-  },
-  "Region.read": {
-    name: "View Region",
-    description: "View and access region records within tenant scope",
-    domain: "system_config",
-  },
-  "Region.create": {
-    name: "Create Region",
-    description: "Create new region records within tenant scope",
-    domain: "system_config",
-  },
-  "Region.update": {
-    name: "Update Region",
-    description: "Modify existing region records within tenant scope",
-    domain: "system_config",
-  },
-  "Region.soft_delete": {
-    name: "Delete Region",
-    description: "Delete (soft) region records within tenant scope",
-    domain: "system_config",
-  },
-  "Region.restore": {
-    name: "Restore Region",
-    description: "Restore deleted region records within tenant scope",
-    domain: "system_config",
-  },
-  "StateProvince.read": {
-    name: "View State Province",
-    description: "View and access state province records within tenant scope",
-    domain: "system_config",
-  },
-  "StateProvince.create": {
-    name: "Create State Province",
-    description: "Create new state province records within tenant scope",
-    domain: "system_config",
-  },
-  "StateProvince.update": {
-    name: "Update State Province",
-    description: "Modify existing state province records within tenant scope",
-    domain: "system_config",
-  },
-  "StateProvince.soft_delete": {
-    name: "Delete State Province",
-    description: "Delete (soft) state province records within tenant scope",
-    domain: "system_config",
-  },
-  "StateProvince.restore": {
-    name: "Restore State Province",
-    description: "Restore deleted state province records within tenant scope",
-    domain: "system_config",
-  },
-  "PriceList.read": {
-    name: "View Price List",
-    description: "View and access price list records within tenant scope",
-    domain: "system_config",
-  },
-  "PriceList.create": {
-    name: "Create Price List",
-    description: "Create new price list records within tenant scope",
-    domain: "system_config",
-  },
-  "PriceList.update": {
-    name: "Update Price List",
-    description: "Modify existing price list records within tenant scope",
-    domain: "system_config",
-  },
-  "PriceList.soft_delete": {
-    name: "Delete Price List",
-    description: "Delete (soft) price list records within tenant scope",
-    domain: "system_config",
-  },
-  "PriceList.restore": {
-    name: "Restore Price List",
-    description: "Restore deleted price list records within tenant scope",
-    domain: "system_config",
-  },
-  "PriceList.activate": {
-    name: "Activate Price List",
-    description: "Activate price list records within tenant scope",
-    domain: "system_config",
-  },
-  "PriceList.deactivate": {
-    name: "Deactivate Price List",
-    description: "Deactivate price list records within tenant scope",
-    domain: "system_config",
-  },
-  "PriceListItem.read": {
-    name: "View Price List Item",
-    description: "View and access price list item records within tenant scope",
-    domain: "system_config",
-  },
-  "PriceListItem.create": {
-    name: "Create Price List Item",
-    description: "Create new price list item records within tenant scope",
-    domain: "system_config",
-  },
-  "PriceListItem.update": {
-    name: "Update Price List Item",
-    description: "Modify existing price list item records within tenant scope",
-    domain: "system_config",
-  },
-  "PriceListItem.soft_delete": {
-    name: "Delete Price List Item",
-    description: "Delete (soft) price list item records within tenant scope",
-    domain: "system_config",
-  },
-  "PriceListItem.restore": {
-    name: "Restore Price List Item",
-    description: "Restore deleted price list item records within tenant scope",
-    domain: "system_config",
-  },
-  "CostCenter.read": {
-    name: "View Cost Center",
-    description: "View and access cost center records within tenant scope",
-    domain: "system_config",
-  },
-  "CostCenter.create": {
-    name: "Create Cost Center",
-    description: "Create new cost center records within tenant scope",
-    domain: "system_config",
-  },
-  "CostCenter.update": {
-    name: "Update Cost Center",
-    description: "Modify existing cost center records within tenant scope",
-    domain: "system_config",
-  },
-  "CostCenter.soft_delete": {
-    name: "Delete Cost Center",
-    description: "Delete (soft) cost center records within tenant scope",
-    domain: "system_config",
-  },
-  "CostCenter.restore": {
-    name: "Restore Cost Center",
-    description: "Restore deleted cost center records within tenant scope",
-    domain: "system_config",
-  },
-  "CostCategory.read": {
-    name: "View Cost Category",
-    description: "View and access cost category records within tenant scope",
-    domain: "system_config",
-  },
-  "CostCategory.create": {
-    name: "Create Cost Category",
-    description: "Create new cost category records within tenant scope",
-    domain: "system_config",
-  },
-  "CostCategory.update": {
-    name: "Update Cost Category",
-    description: "Modify existing cost category records within tenant scope",
-    domain: "system_config",
-  },
-  "CostCategory.soft_delete": {
-    name: "Delete Cost Category",
-    description: "Delete (soft) cost category records within tenant scope",
-    domain: "system_config",
-  },
-  "CostCategory.restore": {
-    name: "Restore Cost Category",
-    description: "Restore deleted cost category records within tenant scope",
-    domain: "system_config",
-  },
-  "CostCode.read": {
-    name: "View Cost Code",
-    description: "View and access cost code records within tenant scope",
-    domain: "system_config",
-  },
-  "CostCode.create": {
-    name: "Create Cost Code",
-    description: "Create new cost code records within tenant scope",
-    domain: "system_config",
-  },
-  "CostCode.update": {
-    name: "Update Cost Code",
-    description: "Modify existing cost code records within tenant scope",
-    domain: "system_config",
-  },
-  "CostCode.soft_delete": {
-    name: "Delete Cost Code",
-    description: "Delete (soft) cost code records within tenant scope",
-    domain: "system_config",
-  },
-  "CostCode.restore": {
-    name: "Restore Cost Code",
-    description: "Restore deleted cost code records within tenant scope",
-    domain: "system_config",
-  },
-  "UnitOfMeasure.read": {
-    name: "View Unit Of Measure",
-    description: "View and access unit of measure records within tenant scope",
-    domain: "system_config",
-  },
-  "UnitOfMeasure.create": {
-    name: "Create Unit Of Measure",
-    description: "Create new unit of measure records within tenant scope",
-    domain: "system_config",
-  },
-  "UnitOfMeasure.update": {
-    name: "Update Unit Of Measure",
-    description: "Modify existing unit of measure records within tenant scope",
-    domain: "system_config",
-  },
-  "UnitOfMeasure.soft_delete": {
-    name: "Delete Unit Of Measure",
-    description: "Delete (soft) unit of measure records within tenant scope",
-    domain: "system_config",
-  },
-  "UnitOfMeasure.restore": {
-    name: "Restore Unit Of Measure",
-    description: "Restore deleted unit of measure records within tenant scope",
-    domain: "system_config",
-  },
-  "WorkType.read": {
-    name: "View Work Type",
-    description: "View and access work type records within tenant scope",
-    domain: "system_config",
-  },
-  "WorkType.create": {
-    name: "Create Work Type",
-    description: "Create new work type records within tenant scope",
-    domain: "system_config",
-  },
-  "WorkType.update": {
-    name: "Update Work Type",
-    description: "Modify existing work type records within tenant scope",
-    domain: "system_config",
-  },
-  "WorkType.soft_delete": {
-    name: "Delete Work Type",
-    description: "Delete (soft) work type records within tenant scope",
-    domain: "system_config",
-  },
-  "WorkType.restore": {
-    name: "Restore Work Type",
-    description: "Restore deleted work type records within tenant scope",
-    domain: "system_config",
-  },
-  "TenantAuditLog.read": {
-    name: "View Tenant Audit Log",
-    description: "View and access tenant audit log records within tenant scope",
-    domain: "audit_compliance",
-  },
-  "TenantAuditLog.export": {
-    name: "Export Tenant Audit Log",
-    description: "Export data for tenant audit log records within tenant scope",
-    domain: "audit_compliance",
-  },
-  "DataRetentionPolicy.read": {
-    name: "View Data Retention Policy",
-    description:
-      "View and access data retention policy records within tenant scope",
-    domain: "audit_compliance",
-  },
-  "DataRetentionPolicy.create": {
-    name: "Create Data Retention Policy",
-    description: "Create new data retention policy records within tenant scope",
-    domain: "audit_compliance",
-  },
-  "DataRetentionPolicy.update": {
-    name: "Update Data Retention Policy",
-    description:
-      "Modify existing data retention policy records within tenant scope",
-    domain: "audit_compliance",
-  },
-  "DataRetentionPolicy.soft_delete": {
-    name: "Delete Data Retention Policy",
-    description:
-      "Delete (soft) data retention policy records within tenant scope",
-    domain: "audit_compliance",
-  },
-  "DataRetentionPolicy.restore": {
-    name: "Restore Data Retention Policy",
-    description:
-      "Restore deleted data retention policy records within tenant scope",
-    domain: "audit_compliance",
-  },
-  "DataRetentionPolicy.activate": {
-    name: "Activate Data Retention Policy",
-    description: "Activate data retention policy records within tenant scope",
-    domain: "audit_compliance",
-  },
-  "DataRetentionPolicy.deactivate": {
-    name: "Deactivate Data Retention Policy",
-    description: "Deactivate data retention policy records within tenant scope",
-    domain: "audit_compliance",
-  },
-  "ErrorReport.read": {
-    name: "View Error Report",
-    description: "View and access error report records within tenant scope",
-    domain: "audit_compliance",
-  },
-  "ErrorReport.create": {
-    name: "Create Error Report",
-    description: "Create new error report records within tenant scope",
-    domain: "audit_compliance",
-  },
-  "ErrorReport.update": {
-    name: "Update Error Report",
-    description: "Modify existing error report records within tenant scope",
-    domain: "audit_compliance",
-  },
-  "ErrorReport.soft_delete": {
-    name: "Delete Error Report",
-    description: "Delete (soft) error report records within tenant scope",
-    domain: "audit_compliance",
-  },
-  "ErrorReport.restore": {
-    name: "Restore Error Report",
-    description: "Restore deleted error report records within tenant scope",
-    domain: "audit_compliance",
-  },
-  "SystemLog.read": {
-    name: "View System Log",
-    description: "View and access system log records within tenant scope",
-    domain: "audit_compliance",
-  },
-  "SystemLog.create": {
-    name: "Create System Log",
-    description: "Create new system log records within tenant scope",
-    domain: "audit_compliance",
-  },
-  "SystemLog.update": {
-    name: "Update System Log",
-    description: "Modify existing system log records within tenant scope",
-    domain: "audit_compliance",
-  },
-  "SystemLog.soft_delete": {
-    name: "Delete System Log",
-    description: "Delete (soft) system log records within tenant scope",
-    domain: "audit_compliance",
-  },
-  "SystemLog.restore": {
-    name: "Restore System Log",
-    description: "Restore deleted system log records within tenant scope",
-    domain: "audit_compliance",
-  },
-  "ExportJob.read": {
-    name: "View Export Job",
-    description: "View and access export job records within tenant scope",
-    domain: "data_export_reporting",
-  },
-  "ExportJob.create": {
-    name: "Create Export Job",
-    description: "Create new export job records within tenant scope",
-    domain: "data_export_reporting",
-  },
-  "ExportJob.update": {
-    name: "Update Export Job",
-    description: "Modify existing export job records within tenant scope",
-    domain: "data_export_reporting",
-  },
-  "ExportJob.soft_delete": {
-    name: "Delete Export Job",
-    description: "Delete (soft) export job records within tenant scope",
-    domain: "data_export_reporting",
-  },
-  "ExportJob.restore": {
-    name: "Restore Export Job",
-    description: "Restore deleted export job records within tenant scope",
-    domain: "data_export_reporting",
-  },
-  "ExportArtifact.read": {
-    name: "View Export Artifact",
-    description: "View and access export artifact records within tenant scope",
-    domain: "data_export_reporting",
-  },
-  "ExportArtifact.create": {
-    name: "Create Export Artifact",
-    description: "Create new export artifact records within tenant scope",
-    domain: "data_export_reporting",
-  },
-  "ExportArtifact.update": {
-    name: "Update Export Artifact",
-    description: "Modify existing export artifact records within tenant scope",
-    domain: "data_export_reporting",
-  },
-  "ExportArtifact.soft_delete": {
-    name: "Delete Export Artifact",
-    description: "Delete (soft) export artifact records within tenant scope",
-    domain: "data_export_reporting",
-  },
-  "ExportArtifact.restore": {
-    name: "Restore Export Artifact",
-    description: "Restore deleted export artifact records within tenant scope",
-    domain: "data_export_reporting",
-  },
-  "ReportDefinition.read": {
-    name: "View Report Definition",
-    description:
-      "View and access report definition records within tenant scope",
-    domain: "data_export_reporting",
-  },
-  "ReportDefinition.create": {
-    name: "Create Report Definition",
-    description: "Create new report definition records within tenant scope",
-    domain: "data_export_reporting",
-  },
-  "ReportDefinition.update": {
-    name: "Update Report Definition",
-    description:
-      "Modify existing report definition records within tenant scope",
-    domain: "data_export_reporting",
-  },
-  "ReportDefinition.soft_delete": {
-    name: "Delete Report Definition",
-    description: "Delete (soft) report definition records within tenant scope",
-    domain: "data_export_reporting",
-  },
-  "ReportDefinition.restore": {
-    name: "Restore Report Definition",
-    description:
-      "Restore deleted report definition records within tenant scope",
-    domain: "data_export_reporting",
-  },
-  "DashboardDefinition.read": {
-    name: "View Dashboard Definition",
-    description:
-      "View and access dashboard definition records within tenant scope",
-    domain: "data_export_reporting",
-  },
-  "DashboardDefinition.create": {
-    name: "Create Dashboard Definition",
-    description: "Create new dashboard definition records within tenant scope",
-    domain: "data_export_reporting",
-  },
-  "DashboardDefinition.update": {
-    name: "Update Dashboard Definition",
-    description:
-      "Modify existing dashboard definition records within tenant scope",
-    domain: "data_export_reporting",
-  },
-  "DashboardDefinition.soft_delete": {
-    name: "Delete Dashboard Definition",
-    description:
-      "Delete (soft) dashboard definition records within tenant scope",
-    domain: "data_export_reporting",
-  },
-  "DashboardDefinition.restore": {
-    name: "Restore Dashboard Definition",
-    description:
-      "Restore deleted dashboard definition records within tenant scope",
-    domain: "data_export_reporting",
-  },
-  "Account.assign": {
-    name: "Assign Account",
-    description: "Assign account records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Account.unassign": {
-    name: "Unassign Account",
-    description: "Remove assignment of account records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Project.assign": {
-    name: "Assign Project",
-    description: "Assign project records within tenant scope",
-    domain: "project_management",
-  },
-  "Project.unassign": {
-    name: "Unassign Project",
-    description: "Remove assignment of project records within tenant scope",
-    domain: "project_management",
-  },
-  "ExpenseReceipt.approve": {
-    name: "Approve Expense Receipt",
-    description: "Approve expense receipt records within tenant scope",
-    domain: "financial_operations",
-  },
-  "ExpenseReceipt.reject": {
-    name: "Reject Expense Receipt",
-    description: "Reject expense receipt records within tenant scope",
-    domain: "financial_operations",
-  },
-  "PayrollRun.submit": {
-    name: "Submit Payroll Run",
-    description: "Submit payroll run records within tenant scope",
-    domain: "financial_operations",
-  },
-  "ScheduleException.approve": {
-    name: "Approve Schedule Exception",
-    description: "Approve schedule exception records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "ScheduleException.reject": {
-    name: "Reject Schedule Exception",
-    description: "Reject schedule exception records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "Vendor.assign": {
-    name: "Assign Vendor",
-    description: "Assign vendor records within tenant scope",
-    domain: "vendor_contract",
-  },
-  "Vendor.unassign": {
-    name: "Unassign Vendor",
-    description: "Remove assignment of vendor records within tenant scope",
-    domain: "vendor_contract",
-  },
-  "PayStatement.read": {
-    name: "View Pay Statement",
-    description: "View and access pay statement records within tenant scope",
-    domain: "financial_operations",
-  },
-  "Account.hard_delete": {
-    name: "Permanently Delete Account",
-    description: "Permanently delete account records within tenant scope",
-    domain: "crm_sales",
-  },
-  "AccountAddress.hard_delete": {
-    name: "Permanently Delete Account Address",
-    description:
-      "Permanently delete account address records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Contact.hard_delete": {
-    name: "Permanently Delete Contact",
-    description: "Permanently delete contact records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Lead.hard_delete": {
-    name: "Permanently Delete Lead",
-    description: "Permanently delete lead records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Opportunity.hard_delete": {
-    name: "Permanently Delete Opportunity",
-    description: "Permanently delete opportunity records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Quote.hard_delete": {
-    name: "Permanently Delete Quote",
-    description: "Permanently delete quote records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Estimate.hard_delete": {
-    name: "Permanently Delete Estimate",
-    description: "Permanently delete estimate records within tenant scope",
-    domain: "crm_sales",
-  },
-  "EstimateComment.read": {
-    name: "View Estimate Comment",
-    description: "View and access estimate comment records within tenant scope",
-    domain: "crm_sales",
-  },
-  "EstimateComment.create": {
-    name: "Create Estimate Comment",
-    description: "Create new estimate comment records within tenant scope",
-    domain: "crm_sales",
-  },
-  "EstimateComment.update": {
-    name: "Update Estimate Comment",
-    description: "Modify existing estimate comment records within tenant scope",
-    domain: "crm_sales",
-  },
-  "EstimateComment.soft_delete": {
-    name: "Delete Estimate Comment",
-    description: "Delete (soft) estimate comment records within tenant scope",
-    domain: "crm_sales",
-  },
-  "EstimateComment.restore": {
-    name: "Restore Estimate Comment",
-    description: "Restore deleted estimate comment records within tenant scope",
-    domain: "crm_sales",
-  },
-  "EstimateDiscount.read": {
-    name: "View Estimate Discount",
-    description:
-      "View and access estimate discount records within tenant scope",
-    domain: "crm_sales",
-  },
-  "EstimateDiscount.create": {
-    name: "Create Estimate Discount",
-    description: "Create new estimate discount records within tenant scope",
-    domain: "crm_sales",
-  },
-  "EstimateDiscount.update": {
-    name: "Update Estimate Discount",
-    description:
-      "Modify existing estimate discount records within tenant scope",
-    domain: "crm_sales",
-  },
-  "EstimateDiscount.soft_delete": {
-    name: "Delete Estimate Discount",
-    description: "Delete (soft) estimate discount records within tenant scope",
-    domain: "crm_sales",
-  },
-  "EstimateDiscount.restore": {
-    name: "Restore Estimate Discount",
-    description:
-      "Restore deleted estimate discount records within tenant scope",
-    domain: "crm_sales",
-  },
-  "EstimateHistoryEvent.read": {
-    name: "View Estimate History Event",
-    description:
-      "View and access estimate history event records within tenant scope",
-    domain: "crm_sales",
-  },
-  "EstimateHistoryEvent.create": {
-    name: "Create Estimate History Event",
-    description:
-      "Create new estimate history event records within tenant scope",
-    domain: "crm_sales",
-  },
-  "EstimateRevision.read": {
-    name: "View Estimate Revision",
-    description:
-      "View and access estimate revision records within tenant scope",
-    domain: "crm_sales",
-  },
-  "EstimateRevision.create": {
-    name: "Create Estimate Revision",
-    description: "Create new estimate revision records within tenant scope",
-    domain: "crm_sales",
-  },
-  "EstimateRevision.update": {
-    name: "Update Estimate Revision",
-    description:
-      "Modify existing estimate revision records within tenant scope",
-    domain: "crm_sales",
-  },
-  "EstimateRevision.soft_delete": {
-    name: "Delete Estimate Revision",
-    description: "Delete (soft) estimate revision records within tenant scope",
-    domain: "crm_sales",
-  },
-  "EstimateRevision.restore": {
-    name: "Restore Estimate Revision",
-    description:
-      "Restore deleted estimate revision records within tenant scope",
-    domain: "crm_sales",
-  },
-  "EstimateTax.read": {
-    name: "View Estimate Tax",
-    description: "View and access estimate tax records within tenant scope",
-    domain: "crm_sales",
-  },
-  "EstimateTax.create": {
-    name: "Create Estimate Tax",
-    description: "Create new estimate tax records within tenant scope",
-    domain: "crm_sales",
-  },
-  "EstimateTax.update": {
-    name: "Update Estimate Tax",
-    description: "Modify existing estimate tax records within tenant scope",
-    domain: "crm_sales",
-  },
-  "EstimateTax.soft_delete": {
-    name: "Delete Estimate Tax",
-    description: "Delete (soft) estimate tax records within tenant scope",
-    domain: "crm_sales",
-  },
-  "EstimateTax.restore": {
-    name: "Restore Estimate Tax",
-    description: "Restore deleted estimate tax records within tenant scope",
-    domain: "crm_sales",
-  },
-  "EstimateTerm.read": {
-    name: "View Estimate Term",
-    description: "View and access estimate term records within tenant scope",
-    domain: "crm_sales",
-  },
-  "EstimateTerm.create": {
-    name: "Create Estimate Term",
-    description: "Create new estimate term records within tenant scope",
-    domain: "crm_sales",
-  },
-  "EstimateTerm.update": {
-    name: "Update Estimate Term",
-    description: "Modify existing estimate term records within tenant scope",
-    domain: "crm_sales",
-  },
-  "EstimateTerm.soft_delete": {
-    name: "Delete Estimate Term",
-    description: "Delete (soft) estimate term records within tenant scope",
-    domain: "crm_sales",
-  },
-  "EstimateTerm.restore": {
-    name: "Restore Estimate Term",
-    description: "Restore deleted estimate term records within tenant scope",
-    domain: "crm_sales",
-  },
-  "Expense.hard_delete": {
-    name: "Permanently Delete Expense",
-    description: "Permanently delete expense records within tenant scope",
-    domain: "financial_operations",
-  },
-  "Schedule.hard_delete": {
-    name: "Permanently Delete Schedule",
-    description: "Permanently delete schedule records within tenant scope",
-    domain: "time_scheduling",
-  },
-  "InventoryItem.hard_delete": {
-    name: "Permanently Delete Inventory Item",
-    description:
-      "Permanently delete inventory item records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "Asset.hard_delete": {
-    name: "Permanently Delete Asset",
-    description: "Permanently delete asset records within tenant scope",
-    domain: "inventory_assets",
-  },
-  "Channel.hard_delete": {
-    name: "Permanently Delete Channel",
-    description: "Permanently delete channel records within tenant scope",
-    domain: "communication",
-  },
-  "DirectChat.hard_delete": {
-    name: "Permanently Delete Direct Chat",
-    description: "Permanently delete direct chat records within tenant scope",
-    domain: "communication",
-  },
-  "FileObject.hard_delete": {
-    name: "Permanently Delete File Object",
-    description: "Permanently delete file object records within tenant scope",
-    domain: "document_management",
-  },
-  "Attachment.hard_delete": {
-    name: "Permanently Delete Attachment",
-    description: "Permanently delete attachment records within tenant scope",
-    domain: "document_management",
-  },
-  "ContractTemplate.hard_delete": {
-    name: "Permanently Delete Contract Template",
-    description:
-      "Permanently delete contract template records within tenant scope",
-    domain: "document_management",
-  },
-  "TermsTemplate.hard_delete": {
-    name: "Permanently Delete Terms Template",
-    description:
-      "Permanently delete terms template records within tenant scope",
-    domain: "document_management",
-  },
-  "Vendor.hard_delete": {
-    name: "Permanently Delete Vendor",
-    description: "Permanently delete vendor records within tenant scope",
-    domain: "vendor_contract",
+export const PERMISSION_DETAILS: Record<Permission, { name: string; description: string; domain: string }> = {
+  'Tenant.read': {
+    name: 'View Tenant',
+    description: 'View and access tenant records within tenant scope',
+    domain: 'tenant_management'
+  },
+  'Tenant.update': {
+    name: 'Update Tenant',
+    description: 'Modify existing tenant records within tenant scope',
+    domain: 'tenant_management'
+  },
+  'Tenant.deactivate': {
+    name: 'Deactivate Tenant',
+    description: 'Deactivate tenant records within tenant scope',
+    domain: 'tenant_management'
+  },
+  'TenantSettings.read': {
+    name: 'View Tenant Settings',
+    description: 'View and access tenant settings records within tenant scope',
+    domain: 'tenant_management'
+  },
+  'TenantSettings.update': {
+    name: 'Update Tenant Settings',
+    description: 'Modify existing tenant settings records within tenant scope',
+    domain: 'tenant_management'
+  },
+  'TenantSettings.activate': {
+    name: 'Activate Tenant Settings',
+    description: 'Activate tenant settings records within tenant scope',
+    domain: 'tenant_management'
+  },
+  'TenantSettings.deactivate': {
+    name: 'Deactivate Tenant Settings',
+    description: 'Deactivate tenant settings records within tenant scope',
+    domain: 'tenant_management'
+  },
+  'TenantMetrics.read': {
+    name: 'View Tenant Metrics',
+    description: 'View and access tenant metrics records within tenant scope',
+    domain: 'tenant_management'
+  },
+  'TenantMetrics.export': {
+    name: 'Export Tenant Metrics',
+    description: 'Export data for tenant metrics records within tenant scope',
+    domain: 'tenant_management'
+  },
+  'TenantFeatureFlag.read': {
+    name: 'View Tenant Feature Flag',
+    description: 'View and access tenant feature flag records within tenant scope',
+    domain: 'tenant_management'
+  },
+  'TenantFeatureFlag.create': {
+    name: 'Create Tenant Feature Flag',
+    description: 'Create new tenant feature flag records within tenant scope',
+    domain: 'tenant_management'
+  },
+  'TenantFeatureFlag.update': {
+    name: 'Update Tenant Feature Flag',
+    description: 'Modify existing tenant feature flag records within tenant scope',
+    domain: 'tenant_management'
+  },
+  'TenantFeatureFlag.activate': {
+    name: 'Activate Tenant Feature Flag',
+    description: 'Activate tenant feature flag records within tenant scope',
+    domain: 'tenant_management'
+  },
+  'TenantFeatureFlag.deactivate': {
+    name: 'Deactivate Tenant Feature Flag',
+    description: 'Deactivate tenant feature flag records within tenant scope',
+    domain: 'tenant_management'
+  },
+  'TenantUsageRecord.read': {
+    name: 'View Tenant Usage Record',
+    description: 'View and access tenant usage record records within tenant scope',
+    domain: 'tenant_management'
+  },
+  'TenantUsageRecord.export': {
+    name: 'Export Tenant Usage Record',
+    description: 'Export data for tenant usage record records within tenant scope',
+    domain: 'tenant_management'
+  },
+  'TenantPriceList.read': {
+    name: 'View Tenant Price List',
+    description: 'View and access tenant price list records within tenant scope',
+    domain: 'tenant_management'
+  },
+  'TenantPriceList.create': {
+    name: 'Create Tenant Price List',
+    description: 'Create new tenant price list records within tenant scope',
+    domain: 'tenant_management'
+  },
+  'TenantPriceList.update': {
+    name: 'Update Tenant Price List',
+    description: 'Modify existing tenant price list records within tenant scope',
+    domain: 'tenant_management'
+  },
+  'TenantPriceList.activate': {
+    name: 'Activate Tenant Price List',
+    description: 'Activate tenant price list records within tenant scope',
+    domain: 'tenant_management'
+  },
+  'TenantPriceList.deactivate': {
+    name: 'Deactivate Tenant Price List',
+    description: 'Deactivate tenant price list records within tenant scope',
+    domain: 'tenant_management'
+  },
+  'TenantPriceOverride.read': {
+    name: 'View Tenant Price Override',
+    description: 'View and access tenant price override records within tenant scope',
+    domain: 'tenant_management'
+  },
+  'TenantPriceOverride.create': {
+    name: 'Create Tenant Price Override',
+    description: 'Create new tenant price override records within tenant scope',
+    domain: 'tenant_management'
+  },
+  'TenantPriceOverride.update': {
+    name: 'Update Tenant Price Override',
+    description: 'Modify existing tenant price override records within tenant scope',
+    domain: 'tenant_management'
+  },
+  'TenantPriceOverride.soft_delete': {
+    name: 'Delete Tenant Price Override',
+    description: 'Delete (soft) tenant price override records within tenant scope',
+    domain: 'tenant_management'
+  },
+  'TenantPriceOverride.restore': {
+    name: 'Restore Tenant Price Override',
+    description: 'Restore deleted tenant price override records within tenant scope',
+    domain: 'tenant_management'
+  },
+  'User.read': {
+    name: 'View User',
+    description: 'View and access user records within tenant scope',
+    domain: 'identity_access'
+  },
+  'User.create': {
+    name: 'Create User',
+    description: 'Create new user records within tenant scope',
+    domain: 'identity_access'
+  },
+  'User.update': {
+    name: 'Update User',
+    description: 'Modify existing user records within tenant scope',
+    domain: 'identity_access'
+  },
+  'User.soft_delete': {
+    name: 'Delete User',
+    description: 'Delete (soft) user records within tenant scope',
+    domain: 'identity_access'
+  },
+  'User.restore': {
+    name: 'Restore User',
+    description: 'Restore deleted user records within tenant scope',
+    domain: 'identity_access'
+  },
+  'User.activate': {
+    name: 'Activate User',
+    description: 'Activate user records within tenant scope',
+    domain: 'identity_access'
+  },
+  'User.deactivate': {
+    name: 'Deactivate User',
+    description: 'Deactivate user records within tenant scope',
+    domain: 'identity_access'
+  },
+  'User.lock': {
+    name: 'Lock User',
+    description: 'Lock user records within tenant scope',
+    domain: 'identity_access'
+  },
+  'User.unlock': {
+    name: 'Unlock User',
+    description: 'Unlock user records within tenant scope',
+    domain: 'identity_access'
+  },
+  'Member.read': {
+    name: 'View Member',
+    description: 'View and access member records within tenant scope',
+    domain: 'identity_access'
+  },
+  'Member.create': {
+    name: 'Create Member',
+    description: 'Create new member records within tenant scope',
+    domain: 'identity_access'
+  },
+  'Member.update': {
+    name: 'Update Member',
+    description: 'Modify existing member records within tenant scope',
+    domain: 'identity_access'
+  },
+  'Member.soft_delete': {
+    name: 'Delete Member',
+    description: 'Delete (soft) member records within tenant scope',
+    domain: 'identity_access'
+  },
+  'Member.restore': {
+    name: 'Restore Member',
+    description: 'Restore deleted member records within tenant scope',
+    domain: 'identity_access'
+  },
+  'Member.assign': {
+    name: 'Assign Member',
+    description: 'Assign member records within tenant scope',
+    domain: 'identity_access'
+  },
+  'Member.unassign': {
+    name: 'Unassign Member',
+    description: 'Remove assignment of member records within tenant scope',
+    domain: 'identity_access'
+  },
+  'Member.transfer': {
+    name: 'Transfer Member',
+    description: 'Transfer ownership of member records within tenant scope',
+    domain: 'identity_access'
+  },
+  'Member.activate': {
+    name: 'Activate Member',
+    description: 'Activate member records within tenant scope',
+    domain: 'identity_access'
+  },
+  'Member.deactivate': {
+    name: 'Deactivate Member',
+    description: 'Deactivate member records within tenant scope',
+    domain: 'identity_access'
+  },
+  'MemberRole.read': {
+    name: 'View Member Role',
+    description: 'View and access member role records within tenant scope',
+    domain: 'identity_access'
+  },
+  'MemberRole.create': {
+    name: 'Create Member Role',
+    description: 'Create new member role records within tenant scope',
+    domain: 'identity_access'
+  },
+  'MemberRole.update': {
+    name: 'Update Member Role',
+    description: 'Modify existing member role records within tenant scope',
+    domain: 'identity_access'
+  },
+  'MemberRole.soft_delete': {
+    name: 'Delete Member Role',
+    description: 'Delete (soft) member role records within tenant scope',
+    domain: 'identity_access'
+  },
+  'MemberRole.restore': {
+    name: 'Restore Member Role',
+    description: 'Restore deleted member role records within tenant scope',
+    domain: 'identity_access'
+  },
+  'MemberRole.assign': {
+    name: 'Assign Member Role',
+    description: 'Assign member role records within tenant scope',
+    domain: 'identity_access'
+  },
+  'MemberRole.unassign': {
+    name: 'Unassign Member Role',
+    description: 'Remove assignment of member role records within tenant scope',
+    domain: 'identity_access'
+  },
+  'MemberRole.transfer': {
+    name: 'Transfer Member Role',
+    description: 'Transfer ownership of member role records within tenant scope',
+    domain: 'identity_access'
+  },
+  'MemberSettings.read': {
+    name: 'View Member Settings',
+    description: 'View and access member settings records within tenant scope',
+    domain: 'identity_access'
+  },
+  'MemberSettings.update': {
+    name: 'Update Member Settings',
+    description: 'Modify existing member settings records within tenant scope',
+    domain: 'identity_access'
+  },
+  'MemberSettings.activate': {
+    name: 'Activate Member Settings',
+    description: 'Activate member settings records within tenant scope',
+    domain: 'identity_access'
+  },
+  'MemberSettings.deactivate': {
+    name: 'Deactivate Member Settings',
+    description: 'Deactivate member settings records within tenant scope',
+    domain: 'identity_access'
+  },
+  'MemberDocument.read': {
+    name: 'View Member Document',
+    description: 'View and access member document records within tenant scope',
+    domain: 'identity_access'
+  },
+  'MemberDocument.create': {
+    name: 'Create Member Document',
+    description: 'Create new member document records within tenant scope',
+    domain: 'identity_access'
+  },
+  'MemberDocument.update': {
+    name: 'Update Member Document',
+    description: 'Modify existing member document records within tenant scope',
+    domain: 'identity_access'
+  },
+  'MemberDocument.soft_delete': {
+    name: 'Delete Member Document',
+    description: 'Delete (soft) member document records within tenant scope',
+    domain: 'identity_access'
+  },
+  'MemberDocument.restore': {
+    name: 'Restore Member Document',
+    description: 'Restore deleted member document records within tenant scope',
+    domain: 'identity_access'
+  },
+  'MemberDocument.approve': {
+    name: 'Approve Member Document',
+    description: 'Approve member document records within tenant scope',
+    domain: 'identity_access'
+  },
+  'MemberDocument.reject': {
+    name: 'Reject Member Document',
+    description: 'Reject member document records within tenant scope',
+    domain: 'identity_access'
+  },
+  'Role.read': {
+    name: 'View Role',
+    description: 'View and access role records within tenant scope',
+    domain: 'rbac_security'
+  },
+  'Role.create': {
+    name: 'Create Role',
+    description: 'Create new role records within tenant scope',
+    domain: 'rbac_security'
+  },
+  'Role.update': {
+    name: 'Update Role',
+    description: 'Modify existing role records within tenant scope',
+    domain: 'rbac_security'
+  },
+  'Role.soft_delete': {
+    name: 'Delete Role',
+    description: 'Delete (soft) role records within tenant scope',
+    domain: 'rbac_security'
+  },
+  'Role.restore': {
+    name: 'Restore Role',
+    description: 'Restore deleted role records within tenant scope',
+    domain: 'rbac_security'
+  },
+  'Role.activate': {
+    name: 'Activate Role',
+    description: 'Activate role records within tenant scope',
+    domain: 'rbac_security'
+  },
+  'Role.deactivate': {
+    name: 'Deactivate Role',
+    description: 'Deactivate role records within tenant scope',
+    domain: 'rbac_security'
+  },
+  'Permission.read': {
+    name: 'View Permission',
+    description: 'View and access permission records within tenant scope',
+    domain: 'rbac_security'
+  },
+  'RolePermission.read': {
+    name: 'View Role Permission',
+    description: 'View and access role permission records within tenant scope',
+    domain: 'rbac_security'
+  },
+  'RolePermission.create': {
+    name: 'Create Role Permission',
+    description: 'Create new role permission records within tenant scope',
+    domain: 'rbac_security'
+  },
+  'RolePermission.soft_delete': {
+    name: 'Delete Role Permission',
+    description: 'Delete (soft) role permission records within tenant scope',
+    domain: 'rbac_security'
+  },
+  'RolePermission.restore': {
+    name: 'Restore Role Permission',
+    description: 'Restore deleted role permission records within tenant scope',
+    domain: 'rbac_security'
+  },
+  'ApiKey.read': {
+    name: 'View Api Key',
+    description: 'View and access api key records within tenant scope',
+    domain: 'rbac_security'
+  },
+  'ApiKey.create': {
+    name: 'Create Api Key',
+    description: 'Create new api key records within tenant scope',
+    domain: 'rbac_security'
+  },
+  'ApiKey.update': {
+    name: 'Update Api Key',
+    description: 'Modify existing api key records within tenant scope',
+    domain: 'rbac_security'
+  },
+  'ApiKey.soft_delete': {
+    name: 'Delete Api Key',
+    description: 'Delete (soft) api key records within tenant scope',
+    domain: 'rbac_security'
+  },
+  'ApiKey.restore': {
+    name: 'Restore Api Key',
+    description: 'Restore deleted api key records within tenant scope',
+    domain: 'rbac_security'
+  },
+  'ApiKey.activate': {
+    name: 'Activate Api Key',
+    description: 'Activate api key records within tenant scope',
+    domain: 'rbac_security'
+  },
+  'ApiKey.deactivate': {
+    name: 'Deactivate Api Key',
+    description: 'Deactivate api key records within tenant scope',
+    domain: 'rbac_security'
+  },
+  'AuthFactor.read': {
+    name: 'View Auth Factor',
+    description: 'View and access auth factor records within tenant scope',
+    domain: 'rbac_security'
+  },
+  'AuthFactor.create': {
+    name: 'Create Auth Factor',
+    description: 'Create new auth factor records within tenant scope',
+    domain: 'rbac_security'
+  },
+  'AuthFactor.update': {
+    name: 'Update Auth Factor',
+    description: 'Modify existing auth factor records within tenant scope',
+    domain: 'rbac_security'
+  },
+  'AuthFactor.soft_delete': {
+    name: 'Delete Auth Factor',
+    description: 'Delete (soft) auth factor records within tenant scope',
+    domain: 'rbac_security'
+  },
+  'AuthFactor.restore': {
+    name: 'Restore Auth Factor',
+    description: 'Restore deleted auth factor records within tenant scope',
+    domain: 'rbac_security'
+  },
+  'AuthFactor.activate': {
+    name: 'Activate Auth Factor',
+    description: 'Activate auth factor records within tenant scope',
+    domain: 'rbac_security'
+  },
+  'AuthFactor.deactivate': {
+    name: 'Deactivate Auth Factor',
+    description: 'Deactivate auth factor records within tenant scope',
+    domain: 'rbac_security'
+  },
+  'Account.read': {
+    name: 'View Account',
+    description: 'View and access account records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Account.create': {
+    name: 'Create Account',
+    description: 'Create new account records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Account.update': {
+    name: 'Update Account',
+    description: 'Modify existing account records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Account.soft_delete': {
+    name: 'Delete Account',
+    description: 'Delete (soft) account records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Account.restore': {
+    name: 'Restore Account',
+    description: 'Restore deleted account records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Account.activate': {
+    name: 'Activate Account',
+    description: 'Activate account records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Account.deactivate': {
+    name: 'Deactivate Account',
+    description: 'Deactivate account records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'AccountAddress.read': {
+    name: 'View Account Address',
+    description: 'View and access account address records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'AccountAddress.create': {
+    name: 'Create Account Address',
+    description: 'Create new account address records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'AccountAddress.update': {
+    name: 'Update Account Address',
+    description: 'Modify existing account address records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'AccountAddress.soft_delete': {
+    name: 'Delete Account Address',
+    description: 'Delete (soft) account address records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'AccountAddress.restore': {
+    name: 'Restore Account Address',
+    description: 'Restore deleted account address records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Contact.read': {
+    name: 'View Contact',
+    description: 'View and access contact records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Contact.create': {
+    name: 'Create Contact',
+    description: 'Create new contact records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Contact.update': {
+    name: 'Update Contact',
+    description: 'Modify existing contact records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Contact.soft_delete': {
+    name: 'Delete Contact',
+    description: 'Delete (soft) contact records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Contact.restore': {
+    name: 'Restore Contact',
+    description: 'Restore deleted contact records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Lead.read': {
+    name: 'View Lead',
+    description: 'View and access lead records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Lead.create': {
+    name: 'Create Lead',
+    description: 'Create new lead records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Lead.update': {
+    name: 'Update Lead',
+    description: 'Modify existing lead records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Lead.soft_delete': {
+    name: 'Delete Lead',
+    description: 'Delete (soft) lead records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Lead.restore': {
+    name: 'Restore Lead',
+    description: 'Restore deleted lead records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Lead.assign': {
+    name: 'Assign Lead',
+    description: 'Assign lead records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Lead.unassign': {
+    name: 'Unassign Lead',
+    description: 'Remove assignment of lead records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Lead.transfer': {
+    name: 'Transfer Lead',
+    description: 'Transfer ownership of lead records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'LeadActivity.read': {
+    name: 'View Lead Activity',
+    description: 'View and access lead activity records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'LeadActivity.create': {
+    name: 'Create Lead Activity',
+    description: 'Create new lead activity records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'LeadActivity.update': {
+    name: 'Update Lead Activity',
+    description: 'Modify existing lead activity records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'LeadActivity.soft_delete': {
+    name: 'Delete Lead Activity',
+    description: 'Delete (soft) lead activity records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'LeadActivity.restore': {
+    name: 'Restore Lead Activity',
+    description: 'Restore deleted lead activity records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Opportunity.read': {
+    name: 'View Opportunity',
+    description: 'View and access opportunity records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Opportunity.create': {
+    name: 'Create Opportunity',
+    description: 'Create new opportunity records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Opportunity.update': {
+    name: 'Update Opportunity',
+    description: 'Modify existing opportunity records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Opportunity.soft_delete': {
+    name: 'Delete Opportunity',
+    description: 'Delete (soft) opportunity records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Opportunity.restore': {
+    name: 'Restore Opportunity',
+    description: 'Restore deleted opportunity records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Opportunity.assign': {
+    name: 'Assign Opportunity',
+    description: 'Assign opportunity records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Opportunity.unassign': {
+    name: 'Unassign Opportunity',
+    description: 'Remove assignment of opportunity records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Opportunity.transfer': {
+    name: 'Transfer Opportunity',
+    description: 'Transfer ownership of opportunity records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'OpportunityStage.read': {
+    name: 'View Opportunity Stage',
+    description: 'View and access opportunity stage records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'OpportunityStage.create': {
+    name: 'Create Opportunity Stage',
+    description: 'Create new opportunity stage records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'OpportunityStage.update': {
+    name: 'Update Opportunity Stage',
+    description: 'Modify existing opportunity stage records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'OpportunityStage.soft_delete': {
+    name: 'Delete Opportunity Stage',
+    description: 'Delete (soft) opportunity stage records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'OpportunityStage.restore': {
+    name: 'Restore Opportunity Stage',
+    description: 'Restore deleted opportunity stage records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'OpportunityLineItem.read': {
+    name: 'View Opportunity Line Item',
+    description: 'View and access opportunity line item records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'OpportunityLineItem.create': {
+    name: 'Create Opportunity Line Item',
+    description: 'Create new opportunity line item records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'OpportunityLineItem.update': {
+    name: 'Update Opportunity Line Item',
+    description: 'Modify existing opportunity line item records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'OpportunityLineItem.soft_delete': {
+    name: 'Delete Opportunity Line Item',
+    description: 'Delete (soft) opportunity line item records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'OpportunityLineItem.restore': {
+    name: 'Restore Opportunity Line Item',
+    description: 'Restore deleted opportunity line item records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Quote.read': {
+    name: 'View Quote',
+    description: 'View and access quote records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Quote.create': {
+    name: 'Create Quote',
+    description: 'Create new quote records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Quote.update': {
+    name: 'Update Quote',
+    description: 'Modify existing quote records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Quote.soft_delete': {
+    name: 'Delete Quote',
+    description: 'Delete (soft) quote records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Quote.restore': {
+    name: 'Restore Quote',
+    description: 'Restore deleted quote records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Quote.send': {
+    name: 'Send Quote',
+    description: 'Send quote records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Quote.approve': {
+    name: 'Approve Quote',
+    description: 'Approve quote records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Quote.reject': {
+    name: 'Reject Quote',
+    description: 'Reject quote records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'QuoteLineItem.read': {
+    name: 'View Quote Line Item',
+    description: 'View and access quote line item records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'QuoteLineItem.create': {
+    name: 'Create Quote Line Item',
+    description: 'Create new quote line item records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'QuoteLineItem.update': {
+    name: 'Update Quote Line Item',
+    description: 'Modify existing quote line item records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'QuoteLineItem.soft_delete': {
+    name: 'Delete Quote Line Item',
+    description: 'Delete (soft) quote line item records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'QuoteLineItem.restore': {
+    name: 'Restore Quote Line Item',
+    description: 'Restore deleted quote line item records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Estimate.read': {
+    name: 'View Estimate',
+    description: 'View and access estimate records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Estimate.create': {
+    name: 'Create Estimate',
+    description: 'Create new estimate records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Estimate.update': {
+    name: 'Update Estimate',
+    description: 'Modify existing estimate records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Estimate.soft_delete': {
+    name: 'Delete Estimate',
+    description: 'Delete (soft) estimate records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Estimate.restore': {
+    name: 'Restore Estimate',
+    description: 'Restore deleted estimate records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Estimate.send': {
+    name: 'Send Estimate',
+    description: 'Send estimate records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Estimate.approve': {
+    name: 'Approve Estimate',
+    description: 'Approve estimate records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Estimate.reject': {
+    name: 'Reject Estimate',
+    description: 'Reject estimate records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'EstimateLineItem.read': {
+    name: 'View Estimate Line Item',
+    description: 'View and access estimate line item records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'EstimateLineItem.create': {
+    name: 'Create Estimate Line Item',
+    description: 'Create new estimate line item records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'EstimateLineItem.update': {
+    name: 'Update Estimate Line Item',
+    description: 'Modify existing estimate line item records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'EstimateLineItem.soft_delete': {
+    name: 'Delete Estimate Line Item',
+    description: 'Delete (soft) estimate line item records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'EstimateLineItem.restore': {
+    name: 'Restore Estimate Line Item',
+    description: 'Restore deleted estimate line item records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'EstimateAttachment.read': {
+    name: 'View Estimate Attachment',
+    description: 'View and access estimate attachment records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'EstimateAttachment.create': {
+    name: 'Create Estimate Attachment',
+    description: 'Create new estimate attachment records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'EstimateAttachment.update': {
+    name: 'Update Estimate Attachment',
+    description: 'Modify existing estimate attachment records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'EstimateAttachment.soft_delete': {
+    name: 'Delete Estimate Attachment',
+    description: 'Delete (soft) estimate attachment records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'EstimateAttachment.restore': {
+    name: 'Restore Estimate Attachment',
+    description: 'Restore deleted estimate attachment records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'EstimateApproval.read': {
+    name: 'View Estimate Approval',
+    description: 'View and access estimate approval records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'EstimateApproval.create': {
+    name: 'Create Estimate Approval',
+    description: 'Create new estimate approval records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'EstimateApproval.approve': {
+    name: 'Approve Estimate Approval',
+    description: 'Approve estimate approval records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'EstimateApproval.reject': {
+    name: 'Reject Estimate Approval',
+    description: 'Reject estimate approval records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'RequestForQuote.read': {
+    name: 'View Request For Quote',
+    description: 'View and access request for quote records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'RequestForQuote.create': {
+    name: 'Create Request For Quote',
+    description: 'Create new request for quote records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'RequestForQuote.update': {
+    name: 'Update Request For Quote',
+    description: 'Modify existing request for quote records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'RequestForQuote.soft_delete': {
+    name: 'Delete Request For Quote',
+    description: 'Delete (soft) request for quote records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'RequestForQuote.restore': {
+    name: 'Restore Request For Quote',
+    description: 'Restore deleted request for quote records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'RequestForQuote.send': {
+    name: 'Send Request For Quote',
+    description: 'Send request for quote records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'RFQLine.read': {
+    name: 'View R F Q Line',
+    description: 'View and access r f q line records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'RFQLine.create': {
+    name: 'Create R F Q Line',
+    description: 'Create new r f q line records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'RFQLine.update': {
+    name: 'Update R F Q Line',
+    description: 'Modify existing r f q line records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'RFQLine.soft_delete': {
+    name: 'Delete R F Q Line',
+    description: 'Delete (soft) r f q line records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'RFQLine.restore': {
+    name: 'Restore R F Q Line',
+    description: 'Restore deleted r f q line records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'RFQResponse.read': {
+    name: 'View R F Q Response',
+    description: 'View and access r f q response records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'RFQResponse.create': {
+    name: 'Create R F Q Response',
+    description: 'Create new r f q response records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'RFQResponse.update': {
+    name: 'Update R F Q Response',
+    description: 'Modify existing r f q response records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'RFQResponse.soft_delete': {
+    name: 'Delete R F Q Response',
+    description: 'Delete (soft) r f q response records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'RFQResponse.restore': {
+    name: 'Restore R F Q Response',
+    description: 'Restore deleted r f q response records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Bid.read': {
+    name: 'View Bid',
+    description: 'View and access bid records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Bid.create': {
+    name: 'Create Bid',
+    description: 'Create new bid records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Bid.update': {
+    name: 'Update Bid',
+    description: 'Modify existing bid records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Bid.soft_delete': {
+    name: 'Delete Bid',
+    description: 'Delete (soft) bid records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Bid.restore': {
+    name: 'Restore Bid',
+    description: 'Restore deleted bid records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Bid.submit': {
+    name: 'Submit Bid',
+    description: 'Submit bid records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Bid.approve': {
+    name: 'Approve Bid',
+    description: 'Approve bid records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Bid.reject': {
+    name: 'Reject Bid',
+    description: 'Reject bid records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'BidComparison.read': {
+    name: 'View Bid Comparison',
+    description: 'View and access bid comparison records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'BidComparison.create': {
+    name: 'Create Bid Comparison',
+    description: 'Create new bid comparison records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'BidComparison.update': {
+    name: 'Update Bid Comparison',
+    description: 'Modify existing bid comparison records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'BidComparison.soft_delete': {
+    name: 'Delete Bid Comparison',
+    description: 'Delete (soft) bid comparison records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'BidComparison.restore': {
+    name: 'Restore Bid Comparison',
+    description: 'Restore deleted bid comparison records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'BidInvitation.read': {
+    name: 'View Bid Invitation',
+    description: 'View and access bid invitation records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'BidInvitation.create': {
+    name: 'Create Bid Invitation',
+    description: 'Create new bid invitation records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'BidInvitation.update': {
+    name: 'Update Bid Invitation',
+    description: 'Modify existing bid invitation records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'BidInvitation.send': {
+    name: 'Send Bid Invitation',
+    description: 'Send bid invitation records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'BidInvitation.soft_delete': {
+    name: 'Delete Bid Invitation',
+    description: 'Delete (soft) bid invitation records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'BidInvitation.restore': {
+    name: 'Restore Bid Invitation',
+    description: 'Restore deleted bid invitation records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'BidSubmission.read': {
+    name: 'View Bid Submission',
+    description: 'View and access bid submission records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'BidSubmission.create': {
+    name: 'Create Bid Submission',
+    description: 'Create new bid submission records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'BidSubmission.update': {
+    name: 'Update Bid Submission',
+    description: 'Modify existing bid submission records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'BidSubmission.submit': {
+    name: 'Submit Bid Submission',
+    description: 'Submit bid submission records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'BidSubmission.approve': {
+    name: 'Approve Bid Submission',
+    description: 'Approve bid submission records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'BidSubmission.reject': {
+    name: 'Reject Bid Submission',
+    description: 'Reject bid submission records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Project.read': {
+    name: 'View Project',
+    description: 'View and access project records within tenant scope',
+    domain: 'project_management'
+  },
+  'Project.create': {
+    name: 'Create Project',
+    description: 'Create new project records within tenant scope',
+    domain: 'project_management'
+  },
+  'Project.update': {
+    name: 'Update Project',
+    description: 'Modify existing project records within tenant scope',
+    domain: 'project_management'
+  },
+  'Project.soft_delete': {
+    name: 'Delete Project',
+    description: 'Delete (soft) project records within tenant scope',
+    domain: 'project_management'
+  },
+  'Project.restore': {
+    name: 'Restore Project',
+    description: 'Restore deleted project records within tenant scope',
+    domain: 'project_management'
+  },
+  'Project.hard_delete': {
+    name: 'Permanently Delete Project',
+    description: 'Permanently delete project records within tenant scope',
+    domain: 'project_management'
+  },
+  'Project.archive': {
+    name: 'Archive Project',
+    description: 'Archive project records within tenant scope',
+    domain: 'project_management'
+  },
+  'Project.activate': {
+    name: 'Activate Project',
+    description: 'Activate project records within tenant scope',
+    domain: 'project_management'
+  },
+  'Project.deactivate': {
+    name: 'Deactivate Project',
+    description: 'Deactivate project records within tenant scope',
+    domain: 'project_management'
+  },
+  'Project.duplicate': {
+    name: 'Duplicate Project',
+    description: 'Duplicate project records within tenant scope',
+    domain: 'project_management'
+  },
+  'Project.transfer': {
+    name: 'Transfer Project',
+    description: 'Transfer ownership of project records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectTaskAssignment.read': {
+    name: 'View Project Task Assignment',
+    description: 'View and access project task assignment records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectTaskAssignment.create': {
+    name: 'Create Project Task Assignment',
+    description: 'Create new project task assignment records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectTaskAssignment.update': {
+    name: 'Update Project Task Assignment',
+    description: 'Modify existing project task assignment records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectTaskAssignment.soft_delete': {
+    name: 'Delete Project Task Assignment',
+    description: 'Delete (soft) project task assignment records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectTaskAssignment.restore': {
+    name: 'Restore Project Task Assignment',
+    description: 'Restore deleted project task assignment records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectTaskAssignment.assign': {
+    name: 'Assign Project Task Assignment',
+    description: 'Assign project task assignment records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectTaskAssignment.unassign': {
+    name: 'Unassign Project Task Assignment',
+    description: 'Remove assignment of project task assignment records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectTaskAssignment.transfer': {
+    name: 'Transfer Project Task Assignment',
+    description: 'Transfer ownership of project task assignment records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectMember.read': {
+    name: 'View Project Member',
+    description: 'View and access project member records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectMember.create': {
+    name: 'Create Project Member',
+    description: 'Create new project member records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectMember.update': {
+    name: 'Update Project Member',
+    description: 'Modify existing project member records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectMember.soft_delete': {
+    name: 'Delete Project Member',
+    description: 'Delete (soft) project member records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectMember.restore': {
+    name: 'Restore Project Member',
+    description: 'Restore deleted project member records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectMember.assign': {
+    name: 'Assign Project Member',
+    description: 'Assign project member records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectMember.unassign': {
+    name: 'Unassign Project Member',
+    description: 'Remove assignment of project member records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectMember.transfer': {
+    name: 'Transfer Project Member',
+    description: 'Transfer ownership of project member records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectNote.read': {
+    name: 'View Project Note',
+    description: 'View and access project note records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectNote.create': {
+    name: 'Create Project Note',
+    description: 'Create new project note records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectNote.update': {
+    name: 'Update Project Note',
+    description: 'Modify existing project note records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectNote.soft_delete': {
+    name: 'Delete Project Note',
+    description: 'Delete (soft) project note records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectNote.restore': {
+    name: 'Restore Project Note',
+    description: 'Restore deleted project note records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectReport.read': {
+    name: 'View Project Report',
+    description: 'View and access project report records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectReport.create': {
+    name: 'Create Project Report',
+    description: 'Create new project report records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectReport.update': {
+    name: 'Update Project Report',
+    description: 'Modify existing project report records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectReport.soft_delete': {
+    name: 'Delete Project Report',
+    description: 'Delete (soft) project report records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectReport.restore': {
+    name: 'Restore Project Report',
+    description: 'Restore deleted project report records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectReport.export': {
+    name: 'Export Project Report',
+    description: 'Export data for project report records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectBudgetLine.read': {
+    name: 'View Project Budget Line',
+    description: 'View and access project budget line records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectBudgetLine.create': {
+    name: 'Create Project Budget Line',
+    description: 'Create new project budget line records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectBudgetLine.update': {
+    name: 'Update Project Budget Line',
+    description: 'Modify existing project budget line records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectBudgetLine.soft_delete': {
+    name: 'Delete Project Budget Line',
+    description: 'Delete (soft) project budget line records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectBudgetLine.restore': {
+    name: 'Restore Project Budget Line',
+    description: 'Restore deleted project budget line records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectFinancialSnapshot.read': {
+    name: 'View Project Financial Snapshot',
+    description: 'View and access project financial snapshot records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectFinancialSnapshot.create': {
+    name: 'Create Project Financial Snapshot',
+    description: 'Create new project financial snapshot records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectFinancialSnapshot.export': {
+    name: 'Export Project Financial Snapshot',
+    description: 'Export data for project financial snapshot records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectInventoryTransaction.read': {
+    name: 'View Project Inventory Transaction',
+    description: 'View and access project inventory transaction records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectInventoryTransaction.create': {
+    name: 'Create Project Inventory Transaction',
+    description: 'Create new project inventory transaction records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectInventoryTransaction.update': {
+    name: 'Update Project Inventory Transaction',
+    description: 'Modify existing project inventory transaction records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectInventoryTransaction.soft_delete': {
+    name: 'Delete Project Inventory Transaction',
+    description: 'Delete (soft) project inventory transaction records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectInventoryTransaction.restore': {
+    name: 'Restore Project Inventory Transaction',
+    description: 'Restore deleted project inventory transaction records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectPhase.read': {
+    name: 'View Project Phase',
+    description: 'View and access project phase records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectPhase.create': {
+    name: 'Create Project Phase',
+    description: 'Create new project phase records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectPhase.update': {
+    name: 'Update Project Phase',
+    description: 'Modify existing project phase records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectPhase.soft_delete': {
+    name: 'Delete Project Phase',
+    description: 'Delete (soft) project phase records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectPhase.restore': {
+    name: 'Restore Project Phase',
+    description: 'Restore deleted project phase records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectPhase.activate': {
+    name: 'Activate Project Phase',
+    description: 'Activate project phase records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectPhase.deactivate': {
+    name: 'Deactivate Project Phase',
+    description: 'Deactivate project phase records within tenant scope',
+    domain: 'project_management'
+  },
+  'WBSItem.read': {
+    name: 'View W B S Item',
+    description: 'View and access w b s item records within tenant scope',
+    domain: 'project_management'
+  },
+  'WBSItem.create': {
+    name: 'Create W B S Item',
+    description: 'Create new w b s item records within tenant scope',
+    domain: 'project_management'
+  },
+  'WBSItem.update': {
+    name: 'Update W B S Item',
+    description: 'Modify existing w b s item records within tenant scope',
+    domain: 'project_management'
+  },
+  'WBSItem.soft_delete': {
+    name: 'Delete W B S Item',
+    description: 'Delete (soft) w b s item records within tenant scope',
+    domain: 'project_management'
+  },
+  'WBSItem.restore': {
+    name: 'Restore W B S Item',
+    description: 'Restore deleted w b s item records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectLocation.read': {
+    name: 'View Project Location',
+    description: 'View and access project location records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectLocation.create': {
+    name: 'Create Project Location',
+    description: 'Create new project location records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectLocation.update': {
+    name: 'Update Project Location',
+    description: 'Modify existing project location records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectLocation.soft_delete': {
+    name: 'Delete Project Location',
+    description: 'Delete (soft) project location records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectLocation.restore': {
+    name: 'Restore Project Location',
+    description: 'Restore deleted project location records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectTask.read': {
+    name: 'View Project Task',
+    description: 'View and access project task records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectTask.create': {
+    name: 'Create Project Task',
+    description: 'Create new project task records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectTask.update': {
+    name: 'Update Project Task',
+    description: 'Modify existing project task records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectTask.soft_delete': {
+    name: 'Delete Project Task',
+    description: 'Delete (soft) project task records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectTask.restore': {
+    name: 'Restore Project Task',
+    description: 'Restore deleted project task records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectTask.assign': {
+    name: 'Assign Project Task',
+    description: 'Assign project task records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectTask.unassign': {
+    name: 'Unassign Project Task',
+    description: 'Remove assignment of project task records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectTask.transfer': {
+    name: 'Transfer Project Task',
+    description: 'Transfer ownership of project task records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectTaskDependency.read': {
+    name: 'View Project Task Dependency',
+    description: 'View and access project task dependency records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectTaskDependency.create': {
+    name: 'Create Project Task Dependency',
+    description: 'Create new project task dependency records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectTaskDependency.update': {
+    name: 'Update Project Task Dependency',
+    description: 'Modify existing project task dependency records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectTaskDependency.soft_delete': {
+    name: 'Delete Project Task Dependency',
+    description: 'Delete (soft) project task dependency records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectTaskDependency.restore': {
+    name: 'Restore Project Task Dependency',
+    description: 'Restore deleted project task dependency records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectTaskAttachment.read': {
+    name: 'View Project Task Attachment',
+    description: 'View and access project task attachment records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectTaskAttachment.create': {
+    name: 'Create Project Task Attachment',
+    description: 'Create new project task attachment records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectTaskAttachment.update': {
+    name: 'Update Project Task Attachment',
+    description: 'Modify existing project task attachment records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectTaskAttachment.soft_delete': {
+    name: 'Delete Project Task Attachment',
+    description: 'Delete (soft) project task attachment records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectTaskAttachment.restore': {
+    name: 'Restore Project Task Attachment',
+    description: 'Restore deleted project task attachment records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectTaskComment.read': {
+    name: 'View Project Task Comment',
+    description: 'View and access project task comment records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectTaskComment.create': {
+    name: 'Create Project Task Comment',
+    description: 'Create new project task comment records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectTaskComment.update': {
+    name: 'Update Project Task Comment',
+    description: 'Modify existing project task comment records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectTaskComment.soft_delete': {
+    name: 'Delete Project Task Comment',
+    description: 'Delete (soft) project task comment records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectTaskComment.restore': {
+    name: 'Restore Project Task Comment',
+    description: 'Restore deleted project task comment records within tenant scope',
+    domain: 'project_management'
+  },
+  'ChangeOrder.read': {
+    name: 'View Change Order',
+    description: 'View and access change order records within tenant scope',
+    domain: 'project_management'
+  },
+  'ChangeOrder.create': {
+    name: 'Create Change Order',
+    description: 'Create new change order records within tenant scope',
+    domain: 'project_management'
+  },
+  'ChangeOrder.update': {
+    name: 'Update Change Order',
+    description: 'Modify existing change order records within tenant scope',
+    domain: 'project_management'
+  },
+  'ChangeOrder.soft_delete': {
+    name: 'Delete Change Order',
+    description: 'Delete (soft) change order records within tenant scope',
+    domain: 'project_management'
+  },
+  'ChangeOrder.restore': {
+    name: 'Restore Change Order',
+    description: 'Restore deleted change order records within tenant scope',
+    domain: 'project_management'
+  },
+  'ChangeOrder.approve': {
+    name: 'Approve Change Order',
+    description: 'Approve change order records within tenant scope',
+    domain: 'project_management'
+  },
+  'ChangeOrder.reject': {
+    name: 'Reject Change Order',
+    description: 'Reject change order records within tenant scope',
+    domain: 'project_management'
+  },
+  'ChangeOrderLine.read': {
+    name: 'View Change Order Line',
+    description: 'View and access change order line records within tenant scope',
+    domain: 'project_management'
+  },
+  'ChangeOrderLine.create': {
+    name: 'Create Change Order Line',
+    description: 'Create new change order line records within tenant scope',
+    domain: 'project_management'
+  },
+  'ChangeOrderLine.update': {
+    name: 'Update Change Order Line',
+    description: 'Modify existing change order line records within tenant scope',
+    domain: 'project_management'
+  },
+  'ChangeOrderLine.soft_delete': {
+    name: 'Delete Change Order Line',
+    description: 'Delete (soft) change order line records within tenant scope',
+    domain: 'project_management'
+  },
+  'ChangeOrderLine.restore': {
+    name: 'Restore Change Order Line',
+    description: 'Restore deleted change order line records within tenant scope',
+    domain: 'project_management'
+  },
+  'ChangeOrderApproval.read': {
+    name: 'View Change Order Approval',
+    description: 'View and access change order approval records within tenant scope',
+    domain: 'project_management'
+  },
+  'ChangeOrderApproval.create': {
+    name: 'Create Change Order Approval',
+    description: 'Create new change order approval records within tenant scope',
+    domain: 'project_management'
+  },
+  'ChangeOrderApproval.approve': {
+    name: 'Approve Change Order Approval',
+    description: 'Approve change order approval records within tenant scope',
+    domain: 'project_management'
+  },
+  'ChangeOrderApproval.reject': {
+    name: 'Reject Change Order Approval',
+    description: 'Reject change order approval records within tenant scope',
+    domain: 'project_management'
+  },
+  'ChangeOrderDocument.read': {
+    name: 'View Change Order Document',
+    description: 'View and access change order document records within tenant scope',
+    domain: 'project_management'
+  },
+  'ChangeOrderDocument.create': {
+    name: 'Create Change Order Document',
+    description: 'Create new change order document records within tenant scope',
+    domain: 'project_management'
+  },
+  'ChangeOrderDocument.update': {
+    name: 'Update Change Order Document',
+    description: 'Modify existing change order document records within tenant scope',
+    domain: 'project_management'
+  },
+  'ChangeOrderDocument.soft_delete': {
+    name: 'Delete Change Order Document',
+    description: 'Delete (soft) change order document records within tenant scope',
+    domain: 'project_management'
+  },
+  'ChangeOrderDocument.restore': {
+    name: 'Restore Change Order Document',
+    description: 'Restore deleted change order document records within tenant scope',
+    domain: 'project_management'
+  },
+  'RFI.read': {
+    name: 'View R F I',
+    description: 'View and access r f i records within tenant scope',
+    domain: 'project_management'
+  },
+  'RFI.create': {
+    name: 'Create R F I',
+    description: 'Create new r f i records within tenant scope',
+    domain: 'project_management'
+  },
+  'RFI.update': {
+    name: 'Update R F I',
+    description: 'Modify existing r f i records within tenant scope',
+    domain: 'project_management'
+  },
+  'RFI.soft_delete': {
+    name: 'Delete R F I',
+    description: 'Delete (soft) r f i records within tenant scope',
+    domain: 'project_management'
+  },
+  'RFI.restore': {
+    name: 'Restore R F I',
+    description: 'Restore deleted r f i records within tenant scope',
+    domain: 'project_management'
+  },
+  'RFI.send': {
+    name: 'Send R F I',
+    description: 'Send r f i records within tenant scope',
+    domain: 'project_management'
+  },
+  'RFIReply.read': {
+    name: 'View R F I Reply',
+    description: 'View and access r f i reply records within tenant scope',
+    domain: 'project_management'
+  },
+  'RFIReply.create': {
+    name: 'Create R F I Reply',
+    description: 'Create new r f i reply records within tenant scope',
+    domain: 'project_management'
+  },
+  'RFIReply.update': {
+    name: 'Update R F I Reply',
+    description: 'Modify existing r f i reply records within tenant scope',
+    domain: 'project_management'
+  },
+  'RFIReply.soft_delete': {
+    name: 'Delete R F I Reply',
+    description: 'Delete (soft) r f i reply records within tenant scope',
+    domain: 'project_management'
+  },
+  'RFIReply.restore': {
+    name: 'Restore R F I Reply',
+    description: 'Restore deleted r f i reply records within tenant scope',
+    domain: 'project_management'
+  },
+  'Submittal.read': {
+    name: 'View Submittal',
+    description: 'View and access submittal records within tenant scope',
+    domain: 'project_management'
+  },
+  'Submittal.create': {
+    name: 'Create Submittal',
+    description: 'Create new submittal records within tenant scope',
+    domain: 'project_management'
+  },
+  'Submittal.update': {
+    name: 'Update Submittal',
+    description: 'Modify existing submittal records within tenant scope',
+    domain: 'project_management'
+  },
+  'Submittal.soft_delete': {
+    name: 'Delete Submittal',
+    description: 'Delete (soft) submittal records within tenant scope',
+    domain: 'project_management'
+  },
+  'Submittal.restore': {
+    name: 'Restore Submittal',
+    description: 'Restore deleted submittal records within tenant scope',
+    domain: 'project_management'
+  },
+  'SubmittalItem.read': {
+    name: 'View Submittal Item',
+    description: 'View and access submittal item records within tenant scope',
+    domain: 'project_management'
+  },
+  'SubmittalItem.create': {
+    name: 'Create Submittal Item',
+    description: 'Create new submittal item records within tenant scope',
+    domain: 'project_management'
+  },
+  'SubmittalItem.update': {
+    name: 'Update Submittal Item',
+    description: 'Modify existing submittal item records within tenant scope',
+    domain: 'project_management'
+  },
+  'SubmittalItem.soft_delete': {
+    name: 'Delete Submittal Item',
+    description: 'Delete (soft) submittal item records within tenant scope',
+    domain: 'project_management'
+  },
+  'SubmittalItem.restore': {
+    name: 'Restore Submittal Item',
+    description: 'Restore deleted submittal item records within tenant scope',
+    domain: 'project_management'
+  },
+  'SubmittalApproval.read': {
+    name: 'View Submittal Approval',
+    description: 'View and access submittal approval records within tenant scope',
+    domain: 'project_management'
+  },
+  'SubmittalApproval.create': {
+    name: 'Create Submittal Approval',
+    description: 'Create new submittal approval records within tenant scope',
+    domain: 'project_management'
+  },
+  'SubmittalApproval.approve': {
+    name: 'Approve Submittal Approval',
+    description: 'Approve submittal approval records within tenant scope',
+    domain: 'project_management'
+  },
+  'SubmittalApproval.reject': {
+    name: 'Reject Submittal Approval',
+    description: 'Reject submittal approval records within tenant scope',
+    domain: 'project_management'
+  },
+  'Inspection.read': {
+    name: 'View Inspection',
+    description: 'View and access inspection records within tenant scope',
+    domain: 'project_management'
+  },
+  'Inspection.create': {
+    name: 'Create Inspection',
+    description: 'Create new inspection records within tenant scope',
+    domain: 'project_management'
+  },
+  'Inspection.update': {
+    name: 'Update Inspection',
+    description: 'Modify existing inspection records within tenant scope',
+    domain: 'project_management'
+  },
+  'Inspection.soft_delete': {
+    name: 'Delete Inspection',
+    description: 'Delete (soft) inspection records within tenant scope',
+    domain: 'project_management'
+  },
+  'Inspection.restore': {
+    name: 'Restore Inspection',
+    description: 'Restore deleted inspection records within tenant scope',
+    domain: 'project_management'
+  },
+  'InspectionItem.read': {
+    name: 'View Inspection Item',
+    description: 'View and access inspection item records within tenant scope',
+    domain: 'project_management'
+  },
+  'InspectionItem.create': {
+    name: 'Create Inspection Item',
+    description: 'Create new inspection item records within tenant scope',
+    domain: 'project_management'
+  },
+  'InspectionItem.update': {
+    name: 'Update Inspection Item',
+    description: 'Modify existing inspection item records within tenant scope',
+    domain: 'project_management'
+  },
+  'InspectionItem.soft_delete': {
+    name: 'Delete Inspection Item',
+    description: 'Delete (soft) inspection item records within tenant scope',
+    domain: 'project_management'
+  },
+  'InspectionItem.restore': {
+    name: 'Restore Inspection Item',
+    description: 'Restore deleted inspection item records within tenant scope',
+    domain: 'project_management'
+  },
+  'InspectionApproval.read': {
+    name: 'View Inspection Approval',
+    description: 'View and access inspection approval records within tenant scope',
+    domain: 'project_management'
+  },
+  'InspectionApproval.create': {
+    name: 'Create Inspection Approval',
+    description: 'Create new inspection approval records within tenant scope',
+    domain: 'project_management'
+  },
+  'InspectionApproval.approve': {
+    name: 'Approve Inspection Approval',
+    description: 'Approve inspection approval records within tenant scope',
+    domain: 'project_management'
+  },
+  'InspectionApproval.reject': {
+    name: 'Reject Inspection Approval',
+    description: 'Reject inspection approval records within tenant scope',
+    domain: 'project_management'
+  },
+  'DailyLog.read': {
+    name: 'View Daily Log',
+    description: 'View and access daily log records within tenant scope',
+    domain: 'project_management'
+  },
+  'DailyLog.create': {
+    name: 'Create Daily Log',
+    description: 'Create new daily log records within tenant scope',
+    domain: 'project_management'
+  },
+  'DailyLog.update': {
+    name: 'Update Daily Log',
+    description: 'Modify existing daily log records within tenant scope',
+    domain: 'project_management'
+  },
+  'DailyLog.soft_delete': {
+    name: 'Delete Daily Log',
+    description: 'Delete (soft) daily log records within tenant scope',
+    domain: 'project_management'
+  },
+  'DailyLog.restore': {
+    name: 'Restore Daily Log',
+    description: 'Restore deleted daily log records within tenant scope',
+    domain: 'project_management'
+  },
+  'PunchList.read': {
+    name: 'View Punch List',
+    description: 'View and access punch list records within tenant scope',
+    domain: 'project_management'
+  },
+  'PunchList.create': {
+    name: 'Create Punch List',
+    description: 'Create new punch list records within tenant scope',
+    domain: 'project_management'
+  },
+  'PunchList.update': {
+    name: 'Update Punch List',
+    description: 'Modify existing punch list records within tenant scope',
+    domain: 'project_management'
+  },
+  'PunchList.soft_delete': {
+    name: 'Delete Punch List',
+    description: 'Delete (soft) punch list records within tenant scope',
+    domain: 'project_management'
+  },
+  'PunchList.restore': {
+    name: 'Restore Punch List',
+    description: 'Restore deleted punch list records within tenant scope',
+    domain: 'project_management'
+  },
+  'PunchListItem.read': {
+    name: 'View Punch List Item',
+    description: 'View and access punch list item records within tenant scope',
+    domain: 'project_management'
+  },
+  'PunchListItem.create': {
+    name: 'Create Punch List Item',
+    description: 'Create new punch list item records within tenant scope',
+    domain: 'project_management'
+  },
+  'PunchListItem.update': {
+    name: 'Update Punch List Item',
+    description: 'Modify existing punch list item records within tenant scope',
+    domain: 'project_management'
+  },
+  'PunchListItem.soft_delete': {
+    name: 'Delete Punch List Item',
+    description: 'Delete (soft) punch list item records within tenant scope',
+    domain: 'project_management'
+  },
+  'PunchListItem.restore': {
+    name: 'Restore Punch List Item',
+    description: 'Restore deleted punch list item records within tenant scope',
+    domain: 'project_management'
+  },
+  'Activity.read': {
+    name: 'View Activity',
+    description: 'View and access activity records within tenant scope',
+    domain: 'project_management'
+  },
+  'Activity.create': {
+    name: 'Create Activity',
+    description: 'Create new activity records within tenant scope',
+    domain: 'project_management'
+  },
+  'Activity.update': {
+    name: 'Update Activity',
+    description: 'Modify existing activity records within tenant scope',
+    domain: 'project_management'
+  },
+  'Activity.soft_delete': {
+    name: 'Delete Activity',
+    description: 'Delete (soft) activity records within tenant scope',
+    domain: 'project_management'
+  },
+  'Activity.restore': {
+    name: 'Restore Activity',
+    description: 'Restore deleted activity records within tenant scope',
+    domain: 'project_management'
+  },
+  'ActivityAttachment.read': {
+    name: 'View Activity Attachment',
+    description: 'View and access activity attachment records within tenant scope',
+    domain: 'project_management'
+  },
+  'ActivityAttachment.create': {
+    name: 'Create Activity Attachment',
+    description: 'Create new activity attachment records within tenant scope',
+    domain: 'project_management'
+  },
+  'ActivityAttachment.update': {
+    name: 'Update Activity Attachment',
+    description: 'Modify existing activity attachment records within tenant scope',
+    domain: 'project_management'
+  },
+  'ActivityAttachment.soft_delete': {
+    name: 'Delete Activity Attachment',
+    description: 'Delete (soft) activity attachment records within tenant scope',
+    domain: 'project_management'
+  },
+  'ActivityAttachment.restore': {
+    name: 'Restore Activity Attachment',
+    description: 'Restore deleted activity attachment records within tenant scope',
+    domain: 'project_management'
+  },
+  'Milestone.read': {
+    name: 'View Milestone',
+    description: 'View and access milestone records within tenant scope',
+    domain: 'project_management'
+  },
+  'Milestone.create': {
+    name: 'Create Milestone',
+    description: 'Create new milestone records within tenant scope',
+    domain: 'project_management'
+  },
+  'Milestone.update': {
+    name: 'Update Milestone',
+    description: 'Modify existing milestone records within tenant scope',
+    domain: 'project_management'
+  },
+  'Milestone.soft_delete': {
+    name: 'Delete Milestone',
+    description: 'Delete (soft) milestone records within tenant scope',
+    domain: 'project_management'
+  },
+  'Milestone.restore': {
+    name: 'Restore Milestone',
+    description: 'Restore deleted milestone records within tenant scope',
+    domain: 'project_management'
+  },
+  'MilestoneDependency.read': {
+    name: 'View Milestone Dependency',
+    description: 'View and access milestone dependency records within tenant scope',
+    domain: 'project_management'
+  },
+  'MilestoneDependency.create': {
+    name: 'Create Milestone Dependency',
+    description: 'Create new milestone dependency records within tenant scope',
+    domain: 'project_management'
+  },
+  'MilestoneDependency.update': {
+    name: 'Update Milestone Dependency',
+    description: 'Modify existing milestone dependency records within tenant scope',
+    domain: 'project_management'
+  },
+  'MilestoneDependency.soft_delete': {
+    name: 'Delete Milestone Dependency',
+    description: 'Delete (soft) milestone dependency records within tenant scope',
+    domain: 'project_management'
+  },
+  'MilestoneDependency.restore': {
+    name: 'Restore Milestone Dependency',
+    description: 'Restore deleted milestone dependency records within tenant scope',
+    domain: 'project_management'
+  },
+  'MilestoneStakeholder.read': {
+    name: 'View Milestone Stakeholder',
+    description: 'View and access milestone stakeholder records within tenant scope',
+    domain: 'project_management'
+  },
+  'MilestoneStakeholder.create': {
+    name: 'Create Milestone Stakeholder',
+    description: 'Create new milestone stakeholder records within tenant scope',
+    domain: 'project_management'
+  },
+  'MilestoneStakeholder.update': {
+    name: 'Update Milestone Stakeholder',
+    description: 'Modify existing milestone stakeholder records within tenant scope',
+    domain: 'project_management'
+  },
+  'MilestoneStakeholder.soft_delete': {
+    name: 'Delete Milestone Stakeholder',
+    description: 'Delete (soft) milestone stakeholder records within tenant scope',
+    domain: 'project_management'
+  },
+  'MilestoneStakeholder.restore': {
+    name: 'Restore Milestone Stakeholder',
+    description: 'Restore deleted milestone stakeholder records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectDocument.read': {
+    name: 'View Project Document',
+    description: 'View and access project document records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectDocument.create': {
+    name: 'Create Project Document',
+    description: 'Create new project document records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectDocument.update': {
+    name: 'Update Project Document',
+    description: 'Modify existing project document records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectDocument.soft_delete': {
+    name: 'Delete Project Document',
+    description: 'Delete (soft) project document records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectDocument.restore': {
+    name: 'Restore Project Document',
+    description: 'Restore deleted project document records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectExternalAccess.read': {
+    name: 'View Project External Access',
+    description: 'View and access project external access records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectExternalAccess.create': {
+    name: 'Create Project External Access',
+    description: 'Create new project external access records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectExternalAccess.update': {
+    name: 'Update Project External Access',
+    description: 'Modify existing project external access records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectExternalAccess.soft_delete': {
+    name: 'Delete Project External Access',
+    description: 'Delete (soft) project external access records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectExternalAccess.restore': {
+    name: 'Restore Project External Access',
+    description: 'Restore deleted project external access records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectExternalAccess.grant': {
+    name: 'Grant Project External Access',
+    description: 'Grant access to project external access records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectExternalAccess.revoke': {
+    name: 'Revoke Project External Access',
+    description: 'Revoke access to project external access records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectIssue.read': {
+    name: 'View Project Issue',
+    description: 'View and access project issue records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectIssue.create': {
+    name: 'Create Project Issue',
+    description: 'Create new project issue records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectIssue.update': {
+    name: 'Update Project Issue',
+    description: 'Modify existing project issue records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectIssue.soft_delete': {
+    name: 'Delete Project Issue',
+    description: 'Delete (soft) project issue records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectIssue.restore': {
+    name: 'Restore Project Issue',
+    description: 'Restore deleted project issue records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectIssue.assign': {
+    name: 'Assign Project Issue',
+    description: 'Assign project issue records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectIssue.resolve': {
+    name: 'Resolve Project Issue',
+    description: 'Resolve project issue records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectLedgerEntry.read': {
+    name: 'View Project Ledger Entry',
+    description: 'View and access project ledger entry records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectLedgerEntry.create': {
+    name: 'Create Project Ledger Entry',
+    description: 'Create new project ledger entry records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectLedgerEntry.update': {
+    name: 'Update Project Ledger Entry',
+    description: 'Modify existing project ledger entry records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectLedgerEntry.soft_delete': {
+    name: 'Delete Project Ledger Entry',
+    description: 'Delete (soft) project ledger entry records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectLedgerEntry.restore': {
+    name: 'Restore Project Ledger Entry',
+    description: 'Restore deleted project ledger entry records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectRisk.read': {
+    name: 'View Project Risk',
+    description: 'View and access project risk records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectRisk.create': {
+    name: 'Create Project Risk',
+    description: 'Create new project risk records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectRisk.update': {
+    name: 'Update Project Risk',
+    description: 'Modify existing project risk records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectRisk.soft_delete': {
+    name: 'Delete Project Risk',
+    description: 'Delete (soft) project risk records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectRisk.restore': {
+    name: 'Restore Project Risk',
+    description: 'Restore deleted project risk records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectRisk.assess': {
+    name: 'Assess Project Risk',
+    description: 'Assess project risk records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectRisk.mitigate': {
+    name: 'Mitigate Project Risk',
+    description: 'Mitigate project risk records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectTaskChecklistItem.read': {
+    name: 'View Project Task Checklist Item',
+    description: 'View and access project task checklist item records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectTaskChecklistItem.create': {
+    name: 'Create Project Task Checklist Item',
+    description: 'Create new project task checklist item records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectTaskChecklistItem.update': {
+    name: 'Update Project Task Checklist Item',
+    description: 'Modify existing project task checklist item records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectTaskChecklistItem.soft_delete': {
+    name: 'Delete Project Task Checklist Item',
+    description: 'Delete (soft) project task checklist item records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectTaskChecklistItem.restore': {
+    name: 'Restore Project Task Checklist Item',
+    description: 'Restore deleted project task checklist item records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectTaskChecklistItem.complete': {
+    name: 'Complete Project Task Checklist Item',
+    description: 'Mark as complete project task checklist item records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectType.read': {
+    name: 'View Project Type',
+    description: 'View and access project type records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectType.create': {
+    name: 'Create Project Type',
+    description: 'Create new project type records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectType.update': {
+    name: 'Update Project Type',
+    description: 'Modify existing project type records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectType.soft_delete': {
+    name: 'Delete Project Type',
+    description: 'Delete (soft) project type records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectType.restore': {
+    name: 'Restore Project Type',
+    description: 'Restore deleted project type records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectType.activate': {
+    name: 'Activate Project Type',
+    description: 'Activate project type records within tenant scope',
+    domain: 'project_management'
+  },
+  'ProjectType.deactivate': {
+    name: 'Deactivate Project Type',
+    description: 'Deactivate project type records within tenant scope',
+    domain: 'project_management'
+  },
+  'Task.read': {
+    name: 'View Task',
+    description: 'View and access task records within tenant scope',
+    domain: 'task_execution'
+  },
+  'Task.create': {
+    name: 'Create Task',
+    description: 'Create new task records within tenant scope',
+    domain: 'task_execution'
+  },
+  'Task.update': {
+    name: 'Update Task',
+    description: 'Modify existing task records within tenant scope',
+    domain: 'task_execution'
+  },
+  'Task.soft_delete': {
+    name: 'Delete Task',
+    description: 'Delete (soft) task records within tenant scope',
+    domain: 'task_execution'
+  },
+  'Task.restore': {
+    name: 'Restore Task',
+    description: 'Restore deleted task records within tenant scope',
+    domain: 'task_execution'
+  },
+  'Task.hard_delete': {
+    name: 'Permanently Delete Task',
+    description: 'Permanently delete task records within tenant scope',
+    domain: 'task_execution'
+  },
+  'Task.assign': {
+    name: 'Assign Task',
+    description: 'Assign task records within tenant scope',
+    domain: 'task_execution'
+  },
+  'Task.unassign': {
+    name: 'Unassign Task',
+    description: 'Remove assignment of task records within tenant scope',
+    domain: 'task_execution'
+  },
+  'Task.transfer': {
+    name: 'Transfer Task',
+    description: 'Transfer ownership of task records within tenant scope',
+    domain: 'task_execution'
+  },
+  'Task.activate': {
+    name: 'Activate Task',
+    description: 'Activate task records within tenant scope',
+    domain: 'task_execution'
+  },
+  'Task.deactivate': {
+    name: 'Deactivate Task',
+    description: 'Deactivate task records within tenant scope',
+    domain: 'task_execution'
+  },
+  'Task.duplicate': {
+    name: 'Duplicate Task',
+    description: 'Duplicate task records within tenant scope',
+    domain: 'task_execution'
+  },
+  'TaskAssignment.read': {
+    name: 'View Task Assignment',
+    description: 'View and access task assignment records within tenant scope',
+    domain: 'task_execution'
+  },
+  'TaskAssignment.create': {
+    name: 'Create Task Assignment',
+    description: 'Create new task assignment records within tenant scope',
+    domain: 'task_execution'
+  },
+  'TaskAssignment.update': {
+    name: 'Update Task Assignment',
+    description: 'Modify existing task assignment records within tenant scope',
+    domain: 'task_execution'
+  },
+  'TaskAssignment.soft_delete': {
+    name: 'Delete Task Assignment',
+    description: 'Delete (soft) task assignment records within tenant scope',
+    domain: 'task_execution'
+  },
+  'TaskAssignment.restore': {
+    name: 'Restore Task Assignment',
+    description: 'Restore deleted task assignment records within tenant scope',
+    domain: 'task_execution'
+  },
+  'TaskAssignment.assign': {
+    name: 'Assign Task Assignment',
+    description: 'Assign task assignment records within tenant scope',
+    domain: 'task_execution'
+  },
+  'TaskAssignment.unassign': {
+    name: 'Unassign Task Assignment',
+    description: 'Remove assignment of task assignment records within tenant scope',
+    domain: 'task_execution'
+  },
+  'TaskAssignment.transfer': {
+    name: 'Transfer Task Assignment',
+    description: 'Transfer ownership of task assignment records within tenant scope',
+    domain: 'task_execution'
+  },
+  'TaskDependency.read': {
+    name: 'View Task Dependency',
+    description: 'View and access task dependency records within tenant scope',
+    domain: 'task_execution'
+  },
+  'TaskDependency.create': {
+    name: 'Create Task Dependency',
+    description: 'Create new task dependency records within tenant scope',
+    domain: 'task_execution'
+  },
+  'TaskDependency.update': {
+    name: 'Update Task Dependency',
+    description: 'Modify existing task dependency records within tenant scope',
+    domain: 'task_execution'
+  },
+  'TaskDependency.soft_delete': {
+    name: 'Delete Task Dependency',
+    description: 'Delete (soft) task dependency records within tenant scope',
+    domain: 'task_execution'
+  },
+  'TaskDependency.restore': {
+    name: 'Restore Task Dependency',
+    description: 'Restore deleted task dependency records within tenant scope',
+    domain: 'task_execution'
+  },
+  'TaskAttachment.read': {
+    name: 'View Task Attachment',
+    description: 'View and access task attachment records within tenant scope',
+    domain: 'task_execution'
+  },
+  'TaskAttachment.create': {
+    name: 'Create Task Attachment',
+    description: 'Create new task attachment records within tenant scope',
+    domain: 'task_execution'
+  },
+  'TaskAttachment.update': {
+    name: 'Update Task Attachment',
+    description: 'Modify existing task attachment records within tenant scope',
+    domain: 'task_execution'
+  },
+  'TaskAttachment.soft_delete': {
+    name: 'Delete Task Attachment',
+    description: 'Delete (soft) task attachment records within tenant scope',
+    domain: 'task_execution'
+  },
+  'TaskAttachment.restore': {
+    name: 'Restore Task Attachment',
+    description: 'Restore deleted task attachment records within tenant scope',
+    domain: 'task_execution'
+  },
+  'TaskChecklistItem.read': {
+    name: 'View Task Checklist Item',
+    description: 'View and access task checklist item records within tenant scope',
+    domain: 'task_execution'
+  },
+  'TaskChecklistItem.create': {
+    name: 'Create Task Checklist Item',
+    description: 'Create new task checklist item records within tenant scope',
+    domain: 'task_execution'
+  },
+  'TaskChecklistItem.update': {
+    name: 'Update Task Checklist Item',
+    description: 'Modify existing task checklist item records within tenant scope',
+    domain: 'task_execution'
+  },
+  'TaskChecklistItem.soft_delete': {
+    name: 'Delete Task Checklist Item',
+    description: 'Delete (soft) task checklist item records within tenant scope',
+    domain: 'task_execution'
+  },
+  'TaskChecklistItem.restore': {
+    name: 'Restore Task Checklist Item',
+    description: 'Restore deleted task checklist item records within tenant scope',
+    domain: 'task_execution'
+  },
+  'Invoice.read': {
+    name: 'View Invoice',
+    description: 'View and access invoice records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'Invoice.create': {
+    name: 'Create Invoice',
+    description: 'Create new invoice records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'Invoice.update': {
+    name: 'Update Invoice',
+    description: 'Modify existing invoice records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'Invoice.soft_delete': {
+    name: 'Delete Invoice',
+    description: 'Delete (soft) invoice records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'Invoice.restore': {
+    name: 'Restore Invoice',
+    description: 'Restore deleted invoice records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'Invoice.hard_delete': {
+    name: 'Permanently Delete Invoice',
+    description: 'Permanently delete invoice records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'Invoice.send': {
+    name: 'Send Invoice',
+    description: 'Send invoice records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'Invoice.duplicate': {
+    name: 'Duplicate Invoice',
+    description: 'Duplicate invoice records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'Invoice.export': {
+    name: 'Export Invoice',
+    description: 'Export data for invoice records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'Invoice.approve': {
+    name: 'Approve Invoice',
+    description: 'Approve invoice records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'Invoice.reject': {
+    name: 'Reject Invoice',
+    description: 'Reject invoice records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'InvoiceLineItem.read': {
+    name: 'View Invoice Line Item',
+    description: 'View and access invoice line item records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'InvoiceLineItem.create': {
+    name: 'Create Invoice Line Item',
+    description: 'Create new invoice line item records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'InvoiceLineItem.update': {
+    name: 'Update Invoice Line Item',
+    description: 'Modify existing invoice line item records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'InvoiceLineItem.soft_delete': {
+    name: 'Delete Invoice Line Item',
+    description: 'Delete (soft) invoice line item records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'InvoiceLineItem.restore': {
+    name: 'Restore Invoice Line Item',
+    description: 'Restore deleted invoice line item records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'InvoiceAttachment.read': {
+    name: 'View Invoice Attachment',
+    description: 'View and access invoice attachment records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'InvoiceAttachment.create': {
+    name: 'Create Invoice Attachment',
+    description: 'Create new invoice attachment records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'InvoiceAttachment.update': {
+    name: 'Update Invoice Attachment',
+    description: 'Modify existing invoice attachment records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'InvoiceAttachment.soft_delete': {
+    name: 'Delete Invoice Attachment',
+    description: 'Delete (soft) invoice attachment records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'InvoiceAttachment.restore': {
+    name: 'Restore Invoice Attachment',
+    description: 'Restore deleted invoice attachment records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'InvoiceTax.read': {
+    name: 'View Invoice Tax',
+    description: 'View and access invoice tax records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'InvoiceTax.create': {
+    name: 'Create Invoice Tax',
+    description: 'Create new invoice tax records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'InvoiceTax.update': {
+    name: 'Update Invoice Tax',
+    description: 'Modify existing invoice tax records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'InvoiceTax.soft_delete': {
+    name: 'Delete Invoice Tax',
+    description: 'Delete (soft) invoice tax records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'InvoiceTax.restore': {
+    name: 'Restore Invoice Tax',
+    description: 'Restore deleted invoice tax records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'Payment.read': {
+    name: 'View Payment',
+    description: 'View and access payment records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'Payment.create': {
+    name: 'Create Payment',
+    description: 'Create new payment records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'Payment.update': {
+    name: 'Update Payment',
+    description: 'Modify existing payment records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'Payment.soft_delete': {
+    name: 'Delete Payment',
+    description: 'Delete (soft) payment records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'Payment.restore': {
+    name: 'Restore Payment',
+    description: 'Restore deleted payment records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'Payment.export': {
+    name: 'Export Payment',
+    description: 'Export data for payment records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PaymentSchedule.read': {
+    name: 'View Payment Schedule',
+    description: 'View and access payment schedule records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PaymentSchedule.create': {
+    name: 'Create Payment Schedule',
+    description: 'Create new payment schedule records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PaymentSchedule.update': {
+    name: 'Update Payment Schedule',
+    description: 'Modify existing payment schedule records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PaymentSchedule.soft_delete': {
+    name: 'Delete Payment Schedule',
+    description: 'Delete (soft) payment schedule records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PaymentSchedule.restore': {
+    name: 'Restore Payment Schedule',
+    description: 'Restore deleted payment schedule records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'APBill.read': {
+    name: 'View A P Bill',
+    description: 'View and access a p bill records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'APBill.create': {
+    name: 'Create A P Bill',
+    description: 'Create new a p bill records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'APBill.update': {
+    name: 'Update A P Bill',
+    description: 'Modify existing a p bill records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'APBill.soft_delete': {
+    name: 'Delete A P Bill',
+    description: 'Delete (soft) a p bill records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'APBill.restore': {
+    name: 'Restore A P Bill',
+    description: 'Restore deleted a p bill records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'APBill.approve': {
+    name: 'Approve A P Bill',
+    description: 'Approve a p bill records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'APBill.reject': {
+    name: 'Reject A P Bill',
+    description: 'Reject a p bill records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'APBillLine.read': {
+    name: 'View A P Bill Line',
+    description: 'View and access a p bill line records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'APBillLine.create': {
+    name: 'Create A P Bill Line',
+    description: 'Create new a p bill line records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'APBillLine.update': {
+    name: 'Update A P Bill Line',
+    description: 'Modify existing a p bill line records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'APBillLine.soft_delete': {
+    name: 'Delete A P Bill Line',
+    description: 'Delete (soft) a p bill line records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'APBillLine.restore': {
+    name: 'Restore A P Bill Line',
+    description: 'Restore deleted a p bill line records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'BillApproval.read': {
+    name: 'View Bill Approval',
+    description: 'View and access bill approval records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'BillApproval.create': {
+    name: 'Create Bill Approval',
+    description: 'Create new bill approval records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'BillApproval.approve': {
+    name: 'Approve Bill Approval',
+    description: 'Approve bill approval records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'BillApproval.reject': {
+    name: 'Reject Bill Approval',
+    description: 'Reject bill approval records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'BillPayment.read': {
+    name: 'View Bill Payment',
+    description: 'View and access bill payment records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'BillPayment.create': {
+    name: 'Create Bill Payment',
+    description: 'Create new bill payment records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'BillPayment.update': {
+    name: 'Update Bill Payment',
+    description: 'Modify existing bill payment records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'BillPayment.soft_delete': {
+    name: 'Delete Bill Payment',
+    description: 'Delete (soft) bill payment records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'BillPayment.restore': {
+    name: 'Restore Bill Payment',
+    description: 'Restore deleted bill payment records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'Expense.read': {
+    name: 'View Expense',
+    description: 'View and access expense records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'Expense.create': {
+    name: 'Create Expense',
+    description: 'Create new expense records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'Expense.update': {
+    name: 'Update Expense',
+    description: 'Modify existing expense records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'Expense.soft_delete': {
+    name: 'Delete Expense',
+    description: 'Delete (soft) expense records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'Expense.restore': {
+    name: 'Restore Expense',
+    description: 'Restore deleted expense records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'Expense.approve': {
+    name: 'Approve Expense',
+    description: 'Approve expense records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'Expense.reject': {
+    name: 'Reject Expense',
+    description: 'Reject expense records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'Expense.export': {
+    name: 'Export Expense',
+    description: 'Export data for expense records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'ExpenseLine.read': {
+    name: 'View Expense Line',
+    description: 'View and access expense line records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'ExpenseLine.create': {
+    name: 'Create Expense Line',
+    description: 'Create new expense line records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'ExpenseLine.update': {
+    name: 'Update Expense Line',
+    description: 'Modify existing expense line records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'ExpenseLine.soft_delete': {
+    name: 'Delete Expense Line',
+    description: 'Delete (soft) expense line records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'ExpenseLine.restore': {
+    name: 'Restore Expense Line',
+    description: 'Restore deleted expense line records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'ExpenseApproval.read': {
+    name: 'View Expense Approval',
+    description: 'View and access expense approval records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'ExpenseApproval.create': {
+    name: 'Create Expense Approval',
+    description: 'Create new expense approval records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'ExpenseApproval.approve': {
+    name: 'Approve Expense Approval',
+    description: 'Approve expense approval records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'ExpenseApproval.reject': {
+    name: 'Reject Expense Approval',
+    description: 'Reject expense approval records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'ExpenseReceipt.read': {
+    name: 'View Expense Receipt',
+    description: 'View and access expense receipt records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'ExpenseReceipt.create': {
+    name: 'Create Expense Receipt',
+    description: 'Create new expense receipt records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'ExpenseReceipt.update': {
+    name: 'Update Expense Receipt',
+    description: 'Modify existing expense receipt records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'ExpenseReceipt.soft_delete': {
+    name: 'Delete Expense Receipt',
+    description: 'Delete (soft) expense receipt records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'ExpenseReceipt.restore': {
+    name: 'Restore Expense Receipt',
+    description: 'Restore deleted expense receipt records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'CreditMemo.read': {
+    name: 'View Credit Memo',
+    description: 'View and access credit memo records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'CreditMemo.create': {
+    name: 'Create Credit Memo',
+    description: 'Create new credit memo records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'CreditMemo.update': {
+    name: 'Update Credit Memo',
+    description: 'Modify existing credit memo records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'CreditMemo.soft_delete': {
+    name: 'Delete Credit Memo',
+    description: 'Delete (soft) credit memo records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'CreditMemo.restore': {
+    name: 'Restore Credit Memo',
+    description: 'Restore deleted credit memo records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'CreditMemoLine.read': {
+    name: 'View Credit Memo Line',
+    description: 'View and access credit memo line records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'CreditMemoLine.create': {
+    name: 'Create Credit Memo Line',
+    description: 'Create new credit memo line records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'CreditMemoLine.update': {
+    name: 'Update Credit Memo Line',
+    description: 'Modify existing credit memo line records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'CreditMemoLine.soft_delete': {
+    name: 'Delete Credit Memo Line',
+    description: 'Delete (soft) credit memo line records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'CreditMemoLine.restore': {
+    name: 'Restore Credit Memo Line',
+    description: 'Restore deleted credit memo line records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PurchaseOrder.read': {
+    name: 'View Purchase Order',
+    description: 'View and access purchase order records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PurchaseOrder.create': {
+    name: 'Create Purchase Order',
+    description: 'Create new purchase order records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PurchaseOrder.update': {
+    name: 'Update Purchase Order',
+    description: 'Modify existing purchase order records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PurchaseOrder.soft_delete': {
+    name: 'Delete Purchase Order',
+    description: 'Delete (soft) purchase order records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PurchaseOrder.restore': {
+    name: 'Restore Purchase Order',
+    description: 'Restore deleted purchase order records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PurchaseOrder.send': {
+    name: 'Send Purchase Order',
+    description: 'Send purchase order records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PurchaseOrder.approve': {
+    name: 'Approve Purchase Order',
+    description: 'Approve purchase order records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PurchaseOrder.reject': {
+    name: 'Reject Purchase Order',
+    description: 'Reject purchase order records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PurchaseOrderLine.read': {
+    name: 'View Purchase Order Line',
+    description: 'View and access purchase order line records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PurchaseOrderLine.create': {
+    name: 'Create Purchase Order Line',
+    description: 'Create new purchase order line records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PurchaseOrderLine.update': {
+    name: 'Update Purchase Order Line',
+    description: 'Modify existing purchase order line records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PurchaseOrderLine.soft_delete': {
+    name: 'Delete Purchase Order Line',
+    description: 'Delete (soft) purchase order line records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PurchaseOrderLine.restore': {
+    name: 'Restore Purchase Order Line',
+    description: 'Restore deleted purchase order line records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PurchaseOrderApproval.read': {
+    name: 'View Purchase Order Approval',
+    description: 'View and access purchase order approval records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PurchaseOrderApproval.create': {
+    name: 'Create Purchase Order Approval',
+    description: 'Create new purchase order approval records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PurchaseOrderApproval.approve': {
+    name: 'Approve Purchase Order Approval',
+    description: 'Approve purchase order approval records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PurchaseOrderApproval.reject': {
+    name: 'Reject Purchase Order Approval',
+    description: 'Reject purchase order approval records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'GLAccount.read': {
+    name: 'View G L Account',
+    description: 'View and access g l account records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'GLAccount.create': {
+    name: 'Create G L Account',
+    description: 'Create new g l account records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'GLAccount.update': {
+    name: 'Update G L Account',
+    description: 'Modify existing g l account records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'GLAccount.soft_delete': {
+    name: 'Delete G L Account',
+    description: 'Delete (soft) g l account records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'GLAccount.restore': {
+    name: 'Restore G L Account',
+    description: 'Restore deleted g l account records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'GLAccount.activate': {
+    name: 'Activate G L Account',
+    description: 'Activate g l account records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'GLAccount.deactivate': {
+    name: 'Deactivate G L Account',
+    description: 'Deactivate g l account records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'JournalEntry.read': {
+    name: 'View Journal Entry',
+    description: 'View and access journal entry records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'JournalEntry.create': {
+    name: 'Create Journal Entry',
+    description: 'Create new journal entry records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'JournalEntry.update': {
+    name: 'Update Journal Entry',
+    description: 'Modify existing journal entry records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'JournalEntry.soft_delete': {
+    name: 'Delete Journal Entry',
+    description: 'Delete (soft) journal entry records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'JournalEntry.restore': {
+    name: 'Restore Journal Entry',
+    description: 'Restore deleted journal entry records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'JournalLine.read': {
+    name: 'View Journal Line',
+    description: 'View and access journal line records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'JournalLine.create': {
+    name: 'Create Journal Line',
+    description: 'Create new journal line records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'JournalLine.update': {
+    name: 'Update Journal Line',
+    description: 'Modify existing journal line records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'JournalLine.soft_delete': {
+    name: 'Delete Journal Line',
+    description: 'Delete (soft) journal line records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'JournalLine.restore': {
+    name: 'Restore Journal Line',
+    description: 'Restore deleted journal line records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'BankAccount.read': {
+    name: 'View Bank Account',
+    description: 'View and access bank account records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'BankAccount.create': {
+    name: 'Create Bank Account',
+    description: 'Create new bank account records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'BankAccount.update': {
+    name: 'Update Bank Account',
+    description: 'Modify existing bank account records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'BankAccount.soft_delete': {
+    name: 'Delete Bank Account',
+    description: 'Delete (soft) bank account records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'BankAccount.restore': {
+    name: 'Restore Bank Account',
+    description: 'Restore deleted bank account records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'BankAccount.activate': {
+    name: 'Activate Bank Account',
+    description: 'Activate bank account records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'BankAccount.deactivate': {
+    name: 'Deactivate Bank Account',
+    description: 'Deactivate bank account records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'BankStatementLine.read': {
+    name: 'View Bank Statement Line',
+    description: 'View and access bank statement line records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'BankStatementLine.create': {
+    name: 'Create Bank Statement Line',
+    description: 'Create new bank statement line records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'BankStatementLine.update': {
+    name: 'Update Bank Statement Line',
+    description: 'Modify existing bank statement line records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'BankStatementLine.soft_delete': {
+    name: 'Delete Bank Statement Line',
+    description: 'Delete (soft) bank statement line records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'BankStatementLine.restore': {
+    name: 'Restore Bank Statement Line',
+    description: 'Restore deleted bank statement line records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'Reconciliation.read': {
+    name: 'View Reconciliation',
+    description: 'View and access reconciliation records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'Reconciliation.create': {
+    name: 'Create Reconciliation',
+    description: 'Create new reconciliation records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'Reconciliation.update': {
+    name: 'Update Reconciliation',
+    description: 'Modify existing reconciliation records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'Reconciliation.soft_delete': {
+    name: 'Delete Reconciliation',
+    description: 'Delete (soft) reconciliation records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'Reconciliation.restore': {
+    name: 'Restore Reconciliation',
+    description: 'Restore deleted reconciliation records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PayrollRun.read': {
+    name: 'View Payroll Run',
+    description: 'View and access payroll run records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PayrollRun.create': {
+    name: 'Create Payroll Run',
+    description: 'Create new payroll run records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PayrollRun.update': {
+    name: 'Update Payroll Run',
+    description: 'Modify existing payroll run records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PayrollRun.soft_delete': {
+    name: 'Delete Payroll Run',
+    description: 'Delete (soft) payroll run records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PayrollRun.restore': {
+    name: 'Restore Payroll Run',
+    description: 'Restore deleted payroll run records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PayrollRun.approve': {
+    name: 'Approve Payroll Run',
+    description: 'Approve payroll run records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PayrollRun.reject': {
+    name: 'Reject Payroll Run',
+    description: 'Reject payroll run records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PayrollItem.read': {
+    name: 'View Payroll Item',
+    description: 'View and access payroll item records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PayrollItem.create': {
+    name: 'Create Payroll Item',
+    description: 'Create new payroll item records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PayrollItem.update': {
+    name: 'Update Payroll Item',
+    description: 'Modify existing payroll item records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PayrollItem.soft_delete': {
+    name: 'Delete Payroll Item',
+    description: 'Delete (soft) payroll item records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PayrollItem.restore': {
+    name: 'Restore Payroll Item',
+    description: 'Restore deleted payroll item records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PayrollAdjustment.read': {
+    name: 'View Payroll Adjustment',
+    description: 'View and access payroll adjustment records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PayrollAdjustment.create': {
+    name: 'Create Payroll Adjustment',
+    description: 'Create new payroll adjustment records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PayrollAdjustment.update': {
+    name: 'Update Payroll Adjustment',
+    description: 'Modify existing payroll adjustment records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PayrollAdjustment.soft_delete': {
+    name: 'Delete Payroll Adjustment',
+    description: 'Delete (soft) payroll adjustment records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PayrollAdjustment.restore': {
+    name: 'Restore Payroll Adjustment',
+    description: 'Restore deleted payroll adjustment records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PayrollPayment.read': {
+    name: 'View Payroll Payment',
+    description: 'View and access payroll payment records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PayrollPayment.create': {
+    name: 'Create Payroll Payment',
+    description: 'Create new payroll payment records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PayrollPayment.update': {
+    name: 'Update Payroll Payment',
+    description: 'Modify existing payroll payment records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PayrollPayment.soft_delete': {
+    name: 'Delete Payroll Payment',
+    description: 'Delete (soft) payroll payment records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PayrollPayment.restore': {
+    name: 'Restore Payroll Payment',
+    description: 'Restore deleted payroll payment records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PayrollTax.read': {
+    name: 'View Payroll Tax',
+    description: 'View and access payroll tax records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PayrollTax.create': {
+    name: 'Create Payroll Tax',
+    description: 'Create new payroll tax records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PayrollTax.update': {
+    name: 'Update Payroll Tax',
+    description: 'Modify existing payroll tax records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PayrollTax.soft_delete': {
+    name: 'Delete Payroll Tax',
+    description: 'Delete (soft) payroll tax records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PayrollTax.restore': {
+    name: 'Restore Payroll Tax',
+    description: 'Restore deleted payroll tax records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'InvoicePayment.read': {
+    name: 'View Invoice Payment',
+    description: 'View and access invoice payment records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'InvoicePayment.create': {
+    name: 'Create Invoice Payment',
+    description: 'Create new invoice payment records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'InvoicePayment.update': {
+    name: 'Update Invoice Payment',
+    description: 'Modify existing invoice payment records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'InvoicePayment.soft_delete': {
+    name: 'Delete Invoice Payment',
+    description: 'Delete (soft) invoice payment records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'InvoicePayment.restore': {
+    name: 'Restore Invoice Payment',
+    description: 'Restore deleted invoice payment records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PaymentApplication.read': {
+    name: 'View Payment Application',
+    description: 'View and access payment application records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PaymentApplication.create': {
+    name: 'Create Payment Application',
+    description: 'Create new payment application records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PaymentApplication.update': {
+    name: 'Update Payment Application',
+    description: 'Modify existing payment application records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PaymentApplication.soft_delete': {
+    name: 'Delete Payment Application',
+    description: 'Delete (soft) payment application records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PaymentApplication.restore': {
+    name: 'Restore Payment Application',
+    description: 'Restore deleted payment application records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PaymentGateway.read': {
+    name: 'View Payment Gateway',
+    description: 'View and access payment gateway records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PaymentGateway.create': {
+    name: 'Create Payment Gateway',
+    description: 'Create new payment gateway records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PaymentGateway.update': {
+    name: 'Update Payment Gateway',
+    description: 'Modify existing payment gateway records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PaymentGateway.soft_delete': {
+    name: 'Delete Payment Gateway',
+    description: 'Delete (soft) payment gateway records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PaymentGateway.restore': {
+    name: 'Restore Payment Gateway',
+    description: 'Restore deleted payment gateway records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PaymentGateway.activate': {
+    name: 'Activate Payment Gateway',
+    description: 'Activate payment gateway records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PaymentGateway.deactivate': {
+    name: 'Deactivate Payment Gateway',
+    description: 'Deactivate payment gateway records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PaymentMethod.read': {
+    name: 'View Payment Method',
+    description: 'View and access payment method records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PaymentMethod.create': {
+    name: 'Create Payment Method',
+    description: 'Create new payment method records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PaymentMethod.update': {
+    name: 'Update Payment Method',
+    description: 'Modify existing payment method records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PaymentMethod.soft_delete': {
+    name: 'Delete Payment Method',
+    description: 'Delete (soft) payment method records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PaymentMethod.restore': {
+    name: 'Restore Payment Method',
+    description: 'Restore deleted payment method records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PaymentMethodToken.read': {
+    name: 'View Payment Method Token',
+    description: 'View and access payment method token records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PaymentMethodToken.create': {
+    name: 'Create Payment Method Token',
+    description: 'Create new payment method token records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PaymentMethodToken.update': {
+    name: 'Update Payment Method Token',
+    description: 'Modify existing payment method token records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PaymentMethodToken.soft_delete': {
+    name: 'Delete Payment Method Token',
+    description: 'Delete (soft) payment method token records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PaymentMethodToken.restore': {
+    name: 'Restore Payment Method Token',
+    description: 'Restore deleted payment method token records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PaymentTerm.read': {
+    name: 'View Payment Term',
+    description: 'View and access payment term records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PaymentTerm.create': {
+    name: 'Create Payment Term',
+    description: 'Create new payment term records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PaymentTerm.update': {
+    name: 'Update Payment Term',
+    description: 'Modify existing payment term records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PaymentTerm.soft_delete': {
+    name: 'Delete Payment Term',
+    description: 'Delete (soft) payment term records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PaymentTerm.restore': {
+    name: 'Restore Payment Term',
+    description: 'Restore deleted payment term records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'FraudPolicy.read': {
+    name: 'View Fraud Policy',
+    description: 'View and access fraud policy records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'FraudPolicy.create': {
+    name: 'Create Fraud Policy',
+    description: 'Create new fraud policy records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'FraudPolicy.update': {
+    name: 'Update Fraud Policy',
+    description: 'Modify existing fraud policy records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'FraudPolicy.soft_delete': {
+    name: 'Delete Fraud Policy',
+    description: 'Delete (soft) fraud policy records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'FraudPolicy.restore': {
+    name: 'Restore Fraud Policy',
+    description: 'Restore deleted fraud policy records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'FraudPolicy.activate': {
+    name: 'Activate Fraud Policy',
+    description: 'Activate fraud policy records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'FraudPolicy.deactivate': {
+    name: 'Deactivate Fraud Policy',
+    description: 'Deactivate fraud policy records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'FraudPolicyRule.read': {
+    name: 'View Fraud Policy Rule',
+    description: 'View and access fraud policy rule records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'FraudPolicyRule.create': {
+    name: 'Create Fraud Policy Rule',
+    description: 'Create new fraud policy rule records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'FraudPolicyRule.update': {
+    name: 'Update Fraud Policy Rule',
+    description: 'Modify existing fraud policy rule records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'FraudPolicyRule.soft_delete': {
+    name: 'Delete Fraud Policy Rule',
+    description: 'Delete (soft) fraud policy rule records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'FraudPolicyRule.restore': {
+    name: 'Restore Fraud Policy Rule',
+    description: 'Restore deleted fraud policy rule records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'FraudPolicyScope.read': {
+    name: 'View Fraud Policy Scope',
+    description: 'View and access fraud policy scope records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'FraudPolicyScope.create': {
+    name: 'Create Fraud Policy Scope',
+    description: 'Create new fraud policy scope records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'FraudPolicyScope.update': {
+    name: 'Update Fraud Policy Scope',
+    description: 'Modify existing fraud policy scope records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'FraudPolicyScope.soft_delete': {
+    name: 'Delete Fraud Policy Scope',
+    description: 'Delete (soft) fraud policy scope records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'FraudPolicyScope.restore': {
+    name: 'Restore Fraud Policy Scope',
+    description: 'Restore deleted fraud policy scope records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'CurrencyRate.read': {
+    name: 'View Currency Rate',
+    description: 'View and access currency rate records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'CurrencyRate.create': {
+    name: 'Create Currency Rate',
+    description: 'Create new currency rate records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'CurrencyRate.update': {
+    name: 'Update Currency Rate',
+    description: 'Modify existing currency rate records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'ForecastLine.read': {
+    name: 'View Forecast Line',
+    description: 'View and access forecast line records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'ForecastLine.create': {
+    name: 'Create Forecast Line',
+    description: 'Create new forecast line records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'ForecastLine.update': {
+    name: 'Update Forecast Line',
+    description: 'Modify existing forecast line records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'ForecastLine.soft_delete': {
+    name: 'Delete Forecast Line',
+    description: 'Delete (soft) forecast line records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'ForecastLine.restore': {
+    name: 'Restore Forecast Line',
+    description: 'Restore deleted forecast line records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'ForecastSnapshot.read': {
+    name: 'View Forecast Snapshot',
+    description: 'View and access forecast snapshot records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'ForecastSnapshot.create': {
+    name: 'Create Forecast Snapshot',
+    description: 'Create new forecast snapshot records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'ForecastSnapshot.export': {
+    name: 'Export Forecast Snapshot',
+    description: 'Export data for forecast snapshot records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'Chargeback.read': {
+    name: 'View Chargeback',
+    description: 'View and access chargeback records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'Chargeback.create': {
+    name: 'Create Chargeback',
+    description: 'Create new chargeback records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'Chargeback.update': {
+    name: 'Update Chargeback',
+    description: 'Modify existing chargeback records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'Chargeback.soft_delete': {
+    name: 'Delete Chargeback',
+    description: 'Delete (soft) chargeback records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'Chargeback.restore': {
+    name: 'Restore Chargeback',
+    description: 'Restore deleted chargeback records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'ChargebackEvidence.read': {
+    name: 'View Chargeback Evidence',
+    description: 'View and access chargeback evidence records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'ChargebackEvidence.create': {
+    name: 'Create Chargeback Evidence',
+    description: 'Create new chargeback evidence records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'ChargebackEvidence.update': {
+    name: 'Update Chargeback Evidence',
+    description: 'Modify existing chargeback evidence records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'ChargebackEvidence.soft_delete': {
+    name: 'Delete Chargeback Evidence',
+    description: 'Delete (soft) chargeback evidence records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'ChargebackEvidence.restore': {
+    name: 'Restore Chargeback Evidence',
+    description: 'Restore deleted chargeback evidence records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'Refund.read': {
+    name: 'View Refund',
+    description: 'View and access refund records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'Refund.create': {
+    name: 'Create Refund',
+    description: 'Create new refund records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'Refund.update': {
+    name: 'Update Refund',
+    description: 'Modify existing refund records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'Refund.soft_delete': {
+    name: 'Delete Refund',
+    description: 'Delete (soft) refund records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'Refund.restore': {
+    name: 'Restore Refund',
+    description: 'Restore deleted refund records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'Payout.read': {
+    name: 'View Payout',
+    description: 'View and access payout records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'Payout.create': {
+    name: 'Create Payout',
+    description: 'Create new payout records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'Payout.update': {
+    name: 'Update Payout',
+    description: 'Modify existing payout records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'Payout.soft_delete': {
+    name: 'Delete Payout',
+    description: 'Delete (soft) payout records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'Payout.restore': {
+    name: 'Restore Payout',
+    description: 'Restore deleted payout records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'ExpenseReport.read': {
+    name: 'View Expense Report',
+    description: 'View and access expense report records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'ExpenseReport.create': {
+    name: 'Create Expense Report',
+    description: 'Create new expense report records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'ExpenseReport.update': {
+    name: 'Update Expense Report',
+    description: 'Modify existing expense report records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'ExpenseReport.soft_delete': {
+    name: 'Delete Expense Report',
+    description: 'Delete (soft) expense report records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'ExpenseReport.restore': {
+    name: 'Restore Expense Report',
+    description: 'Restore deleted expense report records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'ExpenseReport.submit': {
+    name: 'Submit Expense Report',
+    description: 'Submit expense report records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'ExpenseReport.approve': {
+    name: 'Approve Expense Report',
+    description: 'Approve expense report records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'ExpenseReport.reject': {
+    name: 'Reject Expense Report',
+    description: 'Reject expense report records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'Reimbursement.read': {
+    name: 'View Reimbursement',
+    description: 'View and access reimbursement records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'Reimbursement.create': {
+    name: 'Create Reimbursement',
+    description: 'Create new reimbursement records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'Reimbursement.update': {
+    name: 'Update Reimbursement',
+    description: 'Modify existing reimbursement records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'Reimbursement.soft_delete': {
+    name: 'Delete Reimbursement',
+    description: 'Delete (soft) reimbursement records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'Reimbursement.restore': {
+    name: 'Restore Reimbursement',
+    description: 'Restore deleted reimbursement records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'Reimbursement.process': {
+    name: 'Process Reimbursement',
+    description: 'Process reimbursement records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'DunningNotice.read': {
+    name: 'View Dunning Notice',
+    description: 'View and access dunning notice records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'DunningNotice.create': {
+    name: 'Create Dunning Notice',
+    description: 'Create new dunning notice records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'DunningNotice.update': {
+    name: 'Update Dunning Notice',
+    description: 'Modify existing dunning notice records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'DunningNotice.send': {
+    name: 'Send Dunning Notice',
+    description: 'Send dunning notice records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'ReturnReminder.read': {
+    name: 'View Return Reminder',
+    description: 'View and access return reminder records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'ReturnReminder.create': {
+    name: 'Create Return Reminder',
+    description: 'Create new return reminder records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'ReturnReminder.update': {
+    name: 'Update Return Reminder',
+    description: 'Modify existing return reminder records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'ReturnReminder.send': {
+    name: 'Send Return Reminder',
+    description: 'Send return reminder records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'ReturnReminderAttempt.read': {
+    name: 'View Return Reminder Attempt',
+    description: 'View and access return reminder attempt records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'ReturnReminderAttempt.create': {
+    name: 'Create Return Reminder Attempt',
+    description: 'Create new return reminder attempt records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'ClockInClockOut.read': {
+    name: 'View Clock In Clock Out',
+    description: 'View and access clock in clock out records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'ClockInClockOut.create': {
+    name: 'Create Clock In Clock Out',
+    description: 'Create new clock in clock out records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'ClockInClockOut.update': {
+    name: 'Update Clock In Clock Out',
+    description: 'Modify existing clock in clock out records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'ClockInClockOut.soft_delete': {
+    name: 'Delete Clock In Clock Out',
+    description: 'Delete (soft) clock in clock out records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'ClockInClockOut.restore': {
+    name: 'Restore Clock In Clock Out',
+    description: 'Restore deleted clock in clock out records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'ClockInClockOut.approve': {
+    name: 'Approve Clock In Clock Out',
+    description: 'Approve clock in clock out records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'ClockInClockOut.reject': {
+    name: 'Reject Clock In Clock Out',
+    description: 'Reject clock in clock out records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'ClockInClockOut.export': {
+    name: 'Export Clock In Clock Out',
+    description: 'Export data for clock in clock out records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'Schedule.read': {
+    name: 'View Schedule',
+    description: 'View and access schedule records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'Schedule.create': {
+    name: 'Create Schedule',
+    description: 'Create new schedule records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'Schedule.update': {
+    name: 'Update Schedule',
+    description: 'Modify existing schedule records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'Schedule.soft_delete': {
+    name: 'Delete Schedule',
+    description: 'Delete (soft) schedule records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'Schedule.restore': {
+    name: 'Restore Schedule',
+    description: 'Restore deleted schedule records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'Schedule.publish': {
+    name: 'Publish Schedule',
+    description: 'Publish schedule records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'Schedule.activate': {
+    name: 'Activate Schedule',
+    description: 'Activate schedule records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'Schedule.deactivate': {
+    name: 'Deactivate Schedule',
+    description: 'Deactivate schedule records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'ScheduleException.read': {
+    name: 'View Schedule Exception',
+    description: 'View and access schedule exception records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'ScheduleException.create': {
+    name: 'Create Schedule Exception',
+    description: 'Create new schedule exception records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'ScheduleException.update': {
+    name: 'Update Schedule Exception',
+    description: 'Modify existing schedule exception records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'ScheduleException.soft_delete': {
+    name: 'Delete Schedule Exception',
+    description: 'Delete (soft) schedule exception records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'ScheduleException.restore': {
+    name: 'Restore Schedule Exception',
+    description: 'Restore deleted schedule exception records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'Leave.read': {
+    name: 'View Leave',
+    description: 'View and access leave records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'Leave.create': {
+    name: 'Create Leave',
+    description: 'Create new leave records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'Leave.update': {
+    name: 'Update Leave',
+    description: 'Modify existing leave records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'Leave.soft_delete': {
+    name: 'Delete Leave',
+    description: 'Delete (soft) leave records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'Leave.restore': {
+    name: 'Restore Leave',
+    description: 'Restore deleted leave records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'Leave.approve': {
+    name: 'Approve Leave',
+    description: 'Approve leave records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'Leave.reject': {
+    name: 'Reject Leave',
+    description: 'Reject leave records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'Timesheet.read': {
+    name: 'View Timesheet',
+    description: 'View and access timesheet records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'Timesheet.create': {
+    name: 'Create Timesheet',
+    description: 'Create new timesheet records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'Timesheet.update': {
+    name: 'Update Timesheet',
+    description: 'Modify existing timesheet records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'Timesheet.soft_delete': {
+    name: 'Delete Timesheet',
+    description: 'Delete (soft) timesheet records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'Timesheet.restore': {
+    name: 'Restore Timesheet',
+    description: 'Restore deleted timesheet records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'Timesheet.submit': {
+    name: 'Submit Timesheet',
+    description: 'Submit timesheet records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'Timesheet.approve': {
+    name: 'Approve Timesheet',
+    description: 'Approve timesheet records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'Timesheet.reject': {
+    name: 'Reject Timesheet',
+    description: 'Reject timesheet records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'TimesheetEntry.read': {
+    name: 'View Timesheet Entry',
+    description: 'View and access timesheet entry records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'TimesheetEntry.create': {
+    name: 'Create Timesheet Entry',
+    description: 'Create new timesheet entry records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'TimesheetEntry.update': {
+    name: 'Update Timesheet Entry',
+    description: 'Modify existing timesheet entry records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'TimesheetEntry.soft_delete': {
+    name: 'Delete Timesheet Entry',
+    description: 'Delete (soft) timesheet entry records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'TimesheetEntry.restore': {
+    name: 'Restore Timesheet Entry',
+    description: 'Restore deleted timesheet entry records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'TimesheetApproval.read': {
+    name: 'View Timesheet Approval',
+    description: 'View and access timesheet approval records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'TimesheetApproval.create': {
+    name: 'Create Timesheet Approval',
+    description: 'Create new timesheet approval records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'TimesheetApproval.approve': {
+    name: 'Approve Timesheet Approval',
+    description: 'Approve timesheet approval records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'TimesheetApproval.reject': {
+    name: 'Reject Timesheet Approval',
+    description: 'Reject timesheet approval records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'LeaveOfAbsence.read': {
+    name: 'View Leave Of Absence',
+    description: 'View and access leave of absence records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'LeaveOfAbsence.create': {
+    name: 'Create Leave Of Absence',
+    description: 'Create new leave of absence records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'LeaveOfAbsence.update': {
+    name: 'Update Leave Of Absence',
+    description: 'Modify existing leave of absence records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'LeaveOfAbsence.soft_delete': {
+    name: 'Delete Leave Of Absence',
+    description: 'Delete (soft) leave of absence records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'LeaveOfAbsence.restore': {
+    name: 'Restore Leave Of Absence',
+    description: 'Restore deleted leave of absence records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'LeaveOfAbsence.approve': {
+    name: 'Approve Leave Of Absence',
+    description: 'Approve leave of absence records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'LeaveOfAbsence.reject': {
+    name: 'Reject Leave Of Absence',
+    description: 'Reject leave of absence records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'AbsenceBalance.read': {
+    name: 'View Absence Balance',
+    description: 'View and access absence balance records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'AbsenceBalance.create': {
+    name: 'Create Absence Balance',
+    description: 'Create new absence balance records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'AbsenceBalance.update': {
+    name: 'Update Absence Balance',
+    description: 'Modify existing absence balance records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'AbsenceBalance.soft_delete': {
+    name: 'Delete Absence Balance',
+    description: 'Delete (soft) absence balance records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'AbsenceBalance.restore': {
+    name: 'Restore Absence Balance',
+    description: 'Restore deleted absence balance records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'HolidayCalendar.read': {
+    name: 'View Holiday Calendar',
+    description: 'View and access holiday calendar records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'HolidayCalendar.create': {
+    name: 'Create Holiday Calendar',
+    description: 'Create new holiday calendar records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'HolidayCalendar.update': {
+    name: 'Update Holiday Calendar',
+    description: 'Modify existing holiday calendar records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'HolidayCalendar.soft_delete': {
+    name: 'Delete Holiday Calendar',
+    description: 'Delete (soft) holiday calendar records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'HolidayCalendar.restore': {
+    name: 'Restore Holiday Calendar',
+    description: 'Restore deleted holiday calendar records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'OvertimeRule.read': {
+    name: 'View Overtime Rule',
+    description: 'View and access overtime rule records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'OvertimeRule.create': {
+    name: 'Create Overtime Rule',
+    description: 'Create new overtime rule records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'OvertimeRule.update': {
+    name: 'Update Overtime Rule',
+    description: 'Modify existing overtime rule records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'OvertimeRule.soft_delete': {
+    name: 'Delete Overtime Rule',
+    description: 'Delete (soft) overtime rule records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'OvertimeRule.restore': {
+    name: 'Restore Overtime Rule',
+    description: 'Restore deleted overtime rule records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'OvertimeRule.activate': {
+    name: 'Activate Overtime Rule',
+    description: 'Activate overtime rule records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'OvertimeRule.deactivate': {
+    name: 'Deactivate Overtime Rule',
+    description: 'Deactivate overtime rule records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'PayCalendar.read': {
+    name: 'View Pay Calendar',
+    description: 'View and access pay calendar records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'PayCalendar.create': {
+    name: 'Create Pay Calendar',
+    description: 'Create new pay calendar records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'PayCalendar.update': {
+    name: 'Update Pay Calendar',
+    description: 'Modify existing pay calendar records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'PayCalendar.soft_delete': {
+    name: 'Delete Pay Calendar',
+    description: 'Delete (soft) pay calendar records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'PayCalendar.restore': {
+    name: 'Restore Pay Calendar',
+    description: 'Restore deleted pay calendar records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'PayGroup.read': {
+    name: 'View Pay Group',
+    description: 'View and access pay group records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'PayGroup.create': {
+    name: 'Create Pay Group',
+    description: 'Create new pay group records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'PayGroup.update': {
+    name: 'Update Pay Group',
+    description: 'Modify existing pay group records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'PayGroup.soft_delete': {
+    name: 'Delete Pay Group',
+    description: 'Delete (soft) pay group records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'PayGroup.restore': {
+    name: 'Restore Pay Group',
+    description: 'Restore deleted pay group records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'PayGroupAssignment.read': {
+    name: 'View Pay Group Assignment',
+    description: 'View and access pay group assignment records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'PayGroupAssignment.create': {
+    name: 'Create Pay Group Assignment',
+    description: 'Create new pay group assignment records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'PayGroupAssignment.update': {
+    name: 'Update Pay Group Assignment',
+    description: 'Modify existing pay group assignment records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'PayGroupAssignment.assign': {
+    name: 'Assign Pay Group Assignment',
+    description: 'Assign pay group assignment records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'PayGroupAssignment.unassign': {
+    name: 'Unassign Pay Group Assignment',
+    description: 'Remove assignment of pay group assignment records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'InventoryItem.read': {
+    name: 'View Inventory Item',
+    description: 'View and access inventory item records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'InventoryItem.create': {
+    name: 'Create Inventory Item',
+    description: 'Create new inventory item records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'InventoryItem.update': {
+    name: 'Update Inventory Item',
+    description: 'Modify existing inventory item records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'InventoryItem.soft_delete': {
+    name: 'Delete Inventory Item',
+    description: 'Delete (soft) inventory item records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'InventoryItem.restore': {
+    name: 'Restore Inventory Item',
+    description: 'Restore deleted inventory item records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'InventoryItem.assign': {
+    name: 'Assign Inventory Item',
+    description: 'Assign inventory item records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'InventoryItem.unassign': {
+    name: 'Unassign Inventory Item',
+    description: 'Remove assignment of inventory item records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'InventoryItem.transfer': {
+    name: 'Transfer Inventory Item',
+    description: 'Transfer ownership of inventory item records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'InventoryItem.activate': {
+    name: 'Activate Inventory Item',
+    description: 'Activate inventory item records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'InventoryItem.deactivate': {
+    name: 'Deactivate Inventory Item',
+    description: 'Deactivate inventory item records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'InventoryTransaction.read': {
+    name: 'View Inventory Transaction',
+    description: 'View and access inventory transaction records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'InventoryTransaction.create': {
+    name: 'Create Inventory Transaction',
+    description: 'Create new inventory transaction records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'InventoryTransaction.update': {
+    name: 'Update Inventory Transaction',
+    description: 'Modify existing inventory transaction records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'InventoryTransaction.soft_delete': {
+    name: 'Delete Inventory Transaction',
+    description: 'Delete (soft) inventory transaction records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'InventoryTransaction.restore': {
+    name: 'Restore Inventory Transaction',
+    description: 'Restore deleted inventory transaction records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'InventoryAdjustment.read': {
+    name: 'View Inventory Adjustment',
+    description: 'View and access inventory adjustment records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'InventoryAdjustment.create': {
+    name: 'Create Inventory Adjustment',
+    description: 'Create new inventory adjustment records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'InventoryAdjustment.update': {
+    name: 'Update Inventory Adjustment',
+    description: 'Modify existing inventory adjustment records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'InventoryAdjustment.soft_delete': {
+    name: 'Delete Inventory Adjustment',
+    description: 'Delete (soft) inventory adjustment records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'InventoryAdjustment.restore': {
+    name: 'Restore Inventory Adjustment',
+    description: 'Restore deleted inventory adjustment records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'InventoryAdjustment.approve': {
+    name: 'Approve Inventory Adjustment',
+    description: 'Approve inventory adjustment records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'InventoryAdjustment.reject': {
+    name: 'Reject Inventory Adjustment',
+    description: 'Reject inventory adjustment records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'InventoryCount.read': {
+    name: 'View Inventory Count',
+    description: 'View and access inventory count records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'InventoryCount.create': {
+    name: 'Create Inventory Count',
+    description: 'Create new inventory count records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'InventoryCount.update': {
+    name: 'Update Inventory Count',
+    description: 'Modify existing inventory count records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'InventoryCount.soft_delete': {
+    name: 'Delete Inventory Count',
+    description: 'Delete (soft) inventory count records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'InventoryCount.restore': {
+    name: 'Restore Inventory Count',
+    description: 'Restore deleted inventory count records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'InventoryCountLine.read': {
+    name: 'View Inventory Count Line',
+    description: 'View and access inventory count line records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'InventoryCountLine.create': {
+    name: 'Create Inventory Count Line',
+    description: 'Create new inventory count line records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'InventoryCountLine.update': {
+    name: 'Update Inventory Count Line',
+    description: 'Modify existing inventory count line records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'InventoryCountLine.soft_delete': {
+    name: 'Delete Inventory Count Line',
+    description: 'Delete (soft) inventory count line records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'InventoryCountLine.restore': {
+    name: 'Restore Inventory Count Line',
+    description: 'Restore deleted inventory count line records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'Asset.read': {
+    name: 'View Asset',
+    description: 'View and access asset records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'Asset.create': {
+    name: 'Create Asset',
+    description: 'Create new asset records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'Asset.update': {
+    name: 'Update Asset',
+    description: 'Modify existing asset records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'Asset.soft_delete': {
+    name: 'Delete Asset',
+    description: 'Delete (soft) asset records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'Asset.restore': {
+    name: 'Restore Asset',
+    description: 'Restore deleted asset records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'Asset.assign': {
+    name: 'Assign Asset',
+    description: 'Assign asset records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'Asset.unassign': {
+    name: 'Unassign Asset',
+    description: 'Remove assignment of asset records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'Asset.transfer': {
+    name: 'Transfer Asset',
+    description: 'Transfer ownership of asset records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'Asset.activate': {
+    name: 'Activate Asset',
+    description: 'Activate asset records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'Asset.deactivate': {
+    name: 'Deactivate Asset',
+    description: 'Deactivate asset records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'AssetAssignment.read': {
+    name: 'View Asset Assignment',
+    description: 'View and access asset assignment records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'AssetAssignment.create': {
+    name: 'Create Asset Assignment',
+    description: 'Create new asset assignment records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'AssetAssignment.update': {
+    name: 'Update Asset Assignment',
+    description: 'Modify existing asset assignment records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'AssetAssignment.soft_delete': {
+    name: 'Delete Asset Assignment',
+    description: 'Delete (soft) asset assignment records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'AssetAssignment.restore': {
+    name: 'Restore Asset Assignment',
+    description: 'Restore deleted asset assignment records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'AssetAssignment.assign': {
+    name: 'Assign Asset Assignment',
+    description: 'Assign asset assignment records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'AssetAssignment.unassign': {
+    name: 'Unassign Asset Assignment',
+    description: 'Remove assignment of asset assignment records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'AssetAssignment.transfer': {
+    name: 'Transfer Asset Assignment',
+    description: 'Transfer ownership of asset assignment records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'AssetMaintenance.read': {
+    name: 'View Asset Maintenance',
+    description: 'View and access asset maintenance records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'AssetMaintenance.create': {
+    name: 'Create Asset Maintenance',
+    description: 'Create new asset maintenance records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'AssetMaintenance.update': {
+    name: 'Update Asset Maintenance',
+    description: 'Modify existing asset maintenance records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'AssetMaintenance.soft_delete': {
+    name: 'Delete Asset Maintenance',
+    description: 'Delete (soft) asset maintenance records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'AssetMaintenance.restore': {
+    name: 'Restore Asset Maintenance',
+    description: 'Restore deleted asset maintenance records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'AssetDepreciation.read': {
+    name: 'View Asset Depreciation',
+    description: 'View and access asset depreciation records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'AssetDepreciation.create': {
+    name: 'Create Asset Depreciation',
+    description: 'Create new asset depreciation records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'AssetDepreciation.update': {
+    name: 'Update Asset Depreciation',
+    description: 'Modify existing asset depreciation records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'AssetDepreciation.soft_delete': {
+    name: 'Delete Asset Depreciation',
+    description: 'Delete (soft) asset depreciation records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'AssetDepreciation.restore': {
+    name: 'Restore Asset Depreciation',
+    description: 'Restore deleted asset depreciation records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'AssetDocument.read': {
+    name: 'View Asset Document',
+    description: 'View and access asset document records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'AssetDocument.create': {
+    name: 'Create Asset Document',
+    description: 'Create new asset document records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'AssetDocument.update': {
+    name: 'Update Asset Document',
+    description: 'Modify existing asset document records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'AssetDocument.soft_delete': {
+    name: 'Delete Asset Document',
+    description: 'Delete (soft) asset document records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'AssetDocument.restore': {
+    name: 'Restore Asset Document',
+    description: 'Restore deleted asset document records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'AssetMeterReading.read': {
+    name: 'View Asset Meter Reading',
+    description: 'View and access asset meter reading records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'AssetMeterReading.create': {
+    name: 'Create Asset Meter Reading',
+    description: 'Create new asset meter reading records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'AssetMeterReading.update': {
+    name: 'Update Asset Meter Reading',
+    description: 'Modify existing asset meter reading records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'AssetMeterReading.soft_delete': {
+    name: 'Delete Asset Meter Reading',
+    description: 'Delete (soft) asset meter reading records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'AssetMeterReading.restore': {
+    name: 'Restore Asset Meter Reading',
+    description: 'Restore deleted asset meter reading records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'InventoryLocation.read': {
+    name: 'View Inventory Location',
+    description: 'View and access inventory location records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'InventoryLocation.create': {
+    name: 'Create Inventory Location',
+    description: 'Create new inventory location records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'InventoryLocation.update': {
+    name: 'Update Inventory Location',
+    description: 'Modify existing inventory location records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'InventoryLocation.soft_delete': {
+    name: 'Delete Inventory Location',
+    description: 'Delete (soft) inventory location records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'InventoryLocation.restore': {
+    name: 'Restore Inventory Location',
+    description: 'Restore deleted inventory location records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'InventoryBin.read': {
+    name: 'View Inventory Bin',
+    description: 'View and access inventory bin records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'InventoryBin.create': {
+    name: 'Create Inventory Bin',
+    description: 'Create new inventory bin records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'InventoryBin.update': {
+    name: 'Update Inventory Bin',
+    description: 'Modify existing inventory bin records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'InventoryBin.soft_delete': {
+    name: 'Delete Inventory Bin',
+    description: 'Delete (soft) inventory bin records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'InventoryBin.restore': {
+    name: 'Restore Inventory Bin',
+    description: 'Restore deleted inventory bin records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'InventoryReservation.read': {
+    name: 'View Inventory Reservation',
+    description: 'View and access inventory reservation records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'InventoryReservation.create': {
+    name: 'Create Inventory Reservation',
+    description: 'Create new inventory reservation records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'InventoryReservation.update': {
+    name: 'Update Inventory Reservation',
+    description: 'Modify existing inventory reservation records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'InventoryReservation.soft_delete': {
+    name: 'Delete Inventory Reservation',
+    description: 'Delete (soft) inventory reservation records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'InventoryReservation.restore': {
+    name: 'Restore Inventory Reservation',
+    description: 'Restore deleted inventory reservation records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'InventoryAttachment.read': {
+    name: 'View Inventory Attachment',
+    description: 'View and access inventory attachment records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'InventoryAttachment.create': {
+    name: 'Create Inventory Attachment',
+    description: 'Create new inventory attachment records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'InventoryAttachment.update': {
+    name: 'Update Inventory Attachment',
+    description: 'Modify existing inventory attachment records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'InventoryAttachment.soft_delete': {
+    name: 'Delete Inventory Attachment',
+    description: 'Delete (soft) inventory attachment records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'InventoryAttachment.restore': {
+    name: 'Restore Inventory Attachment',
+    description: 'Restore deleted inventory attachment records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'GoodsReceipt.read': {
+    name: 'View Goods Receipt',
+    description: 'View and access goods receipt records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'GoodsReceipt.create': {
+    name: 'Create Goods Receipt',
+    description: 'Create new goods receipt records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'GoodsReceipt.update': {
+    name: 'Update Goods Receipt',
+    description: 'Modify existing goods receipt records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'GoodsReceipt.soft_delete': {
+    name: 'Delete Goods Receipt',
+    description: 'Delete (soft) goods receipt records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'GoodsReceipt.restore': {
+    name: 'Restore Goods Receipt',
+    description: 'Restore deleted goods receipt records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'GoodsReceiptLine.read': {
+    name: 'View Goods Receipt Line',
+    description: 'View and access goods receipt line records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'GoodsReceiptLine.create': {
+    name: 'Create Goods Receipt Line',
+    description: 'Create new goods receipt line records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'GoodsReceiptLine.update': {
+    name: 'Update Goods Receipt Line',
+    description: 'Modify existing goods receipt line records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'GoodsReceiptLine.soft_delete': {
+    name: 'Delete Goods Receipt Line',
+    description: 'Delete (soft) goods receipt line records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'GoodsReceiptLine.restore': {
+    name: 'Restore Goods Receipt Line',
+    description: 'Restore deleted goods receipt line records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'RFQResponseLine.read': {
+    name: 'View R F Q Response Line',
+    description: 'View and access r f q response line records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'RFQResponseLine.create': {
+    name: 'Create R F Q Response Line',
+    description: 'Create new r f q response line records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'RFQResponseLine.update': {
+    name: 'Update R F Q Response Line',
+    description: 'Modify existing r f q response line records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'RFQResponseLine.soft_delete': {
+    name: 'Delete R F Q Response Line',
+    description: 'Delete (soft) r f q response line records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'RFQResponseLine.restore': {
+    name: 'Restore R F Q Response Line',
+    description: 'Restore deleted r f q response line records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'ReasonCode.read': {
+    name: 'View Reason Code',
+    description: 'View and access reason code records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'ReasonCode.create': {
+    name: 'Create Reason Code',
+    description: 'Create new reason code records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'ReasonCode.update': {
+    name: 'Update Reason Code',
+    description: 'Modify existing reason code records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'ReasonCode.soft_delete': {
+    name: 'Delete Reason Code',
+    description: 'Delete (soft) reason code records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'ReasonCode.restore': {
+    name: 'Restore Reason Code',
+    description: 'Restore deleted reason code records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'ResourceAllocation.read': {
+    name: 'View Resource Allocation',
+    description: 'View and access resource allocation records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'ResourceAllocation.create': {
+    name: 'Create Resource Allocation',
+    description: 'Create new resource allocation records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'ResourceAllocation.update': {
+    name: 'Update Resource Allocation',
+    description: 'Modify existing resource allocation records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'ResourceAllocation.soft_delete': {
+    name: 'Delete Resource Allocation',
+    description: 'Delete (soft) resource allocation records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'ResourceAllocation.restore': {
+    name: 'Restore Resource Allocation',
+    description: 'Restore deleted resource allocation records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'ResourceAllocation.allocate': {
+    name: 'Allocate Resource Allocation',
+    description: 'Allocate resource allocation records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'ResourceAllocation.deallocate': {
+    name: 'Deallocate Resource Allocation',
+    description: 'Deallocate resource allocation records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'Channel.read': {
+    name: 'View Channel',
+    description: 'View and access channel records within tenant scope',
+    domain: 'communication'
+  },
+  'Channel.create': {
+    name: 'Create Channel',
+    description: 'Create new channel records within tenant scope',
+    domain: 'communication'
+  },
+  'Channel.update': {
+    name: 'Update Channel',
+    description: 'Modify existing channel records within tenant scope',
+    domain: 'communication'
+  },
+  'Channel.soft_delete': {
+    name: 'Delete Channel',
+    description: 'Delete (soft) channel records within tenant scope',
+    domain: 'communication'
+  },
+  'Channel.restore': {
+    name: 'Restore Channel',
+    description: 'Restore deleted channel records within tenant scope',
+    domain: 'communication'
+  },
+  'Channel.archive': {
+    name: 'Archive Channel',
+    description: 'Archive channel records within tenant scope',
+    domain: 'communication'
+  },
+  'Channel.activate': {
+    name: 'Activate Channel',
+    description: 'Activate channel records within tenant scope',
+    domain: 'communication'
+  },
+  'Channel.deactivate': {
+    name: 'Deactivate Channel',
+    description: 'Deactivate channel records within tenant scope',
+    domain: 'communication'
+  },
+  'ChannelMember.read': {
+    name: 'View Channel Member',
+    description: 'View and access channel member records within tenant scope',
+    domain: 'communication'
+  },
+  'ChannelMember.create': {
+    name: 'Create Channel Member',
+    description: 'Create new channel member records within tenant scope',
+    domain: 'communication'
+  },
+  'ChannelMember.update': {
+    name: 'Update Channel Member',
+    description: 'Modify existing channel member records within tenant scope',
+    domain: 'communication'
+  },
+  'ChannelMember.soft_delete': {
+    name: 'Delete Channel Member',
+    description: 'Delete (soft) channel member records within tenant scope',
+    domain: 'communication'
+  },
+  'ChannelMember.restore': {
+    name: 'Restore Channel Member',
+    description: 'Restore deleted channel member records within tenant scope',
+    domain: 'communication'
+  },
+  'ChannelMember.assign': {
+    name: 'Assign Channel Member',
+    description: 'Assign channel member records within tenant scope',
+    domain: 'communication'
+  },
+  'ChannelMember.unassign': {
+    name: 'Unassign Channel Member',
+    description: 'Remove assignment of channel member records within tenant scope',
+    domain: 'communication'
+  },
+  'DirectChat.read': {
+    name: 'View Direct Chat',
+    description: 'View and access direct chat records within tenant scope',
+    domain: 'communication'
+  },
+  'DirectChat.create': {
+    name: 'Create Direct Chat',
+    description: 'Create new direct chat records within tenant scope',
+    domain: 'communication'
+  },
+  'DirectChat.update': {
+    name: 'Update Direct Chat',
+    description: 'Modify existing direct chat records within tenant scope',
+    domain: 'communication'
+  },
+  'DirectChat.soft_delete': {
+    name: 'Delete Direct Chat',
+    description: 'Delete (soft) direct chat records within tenant scope',
+    domain: 'communication'
+  },
+  'DirectChat.restore': {
+    name: 'Restore Direct Chat',
+    description: 'Restore deleted direct chat records within tenant scope',
+    domain: 'communication'
+  },
+  'DirectChat.archive': {
+    name: 'Archive Direct Chat',
+    description: 'Archive direct chat records within tenant scope',
+    domain: 'communication'
+  },
+  'DirectMessage.read': {
+    name: 'View Direct Message',
+    description: 'View and access direct message records within tenant scope',
+    domain: 'communication'
+  },
+  'DirectMessage.create': {
+    name: 'Create Direct Message',
+    description: 'Create new direct message records within tenant scope',
+    domain: 'communication'
+  },
+  'DirectMessage.update': {
+    name: 'Update Direct Message',
+    description: 'Modify existing direct message records within tenant scope',
+    domain: 'communication'
+  },
+  'DirectMessage.soft_delete': {
+    name: 'Delete Direct Message',
+    description: 'Delete (soft) direct message records within tenant scope',
+    domain: 'communication'
+  },
+  'DirectMessage.restore': {
+    name: 'Restore Direct Message',
+    description: 'Restore deleted direct message records within tenant scope',
+    domain: 'communication'
+  },
+  'DirectMessageRead.read': {
+    name: 'View Direct Message Read',
+    description: 'View and access direct message read records within tenant scope',
+    domain: 'communication'
+  },
+  'DirectMessageRead.create': {
+    name: 'Create Direct Message Read',
+    description: 'Create new direct message read records within tenant scope',
+    domain: 'communication'
+  },
+  'DirectMessageRead.update': {
+    name: 'Update Direct Message Read',
+    description: 'Modify existing direct message read records within tenant scope',
+    domain: 'communication'
+  },
+  'Notification.read': {
+    name: 'View Notification',
+    description: 'View and access notification records within tenant scope',
+    domain: 'communication'
+  },
+  'Notification.create': {
+    name: 'Create Notification',
+    description: 'Create new notification records within tenant scope',
+    domain: 'communication'
+  },
+  'Notification.update': {
+    name: 'Update Notification',
+    description: 'Modify existing notification records within tenant scope',
+    domain: 'communication'
+  },
+  'Notification.soft_delete': {
+    name: 'Delete Notification',
+    description: 'Delete (soft) notification records within tenant scope',
+    domain: 'communication'
+  },
+  'Notification.restore': {
+    name: 'Restore Notification',
+    description: 'Restore deleted notification records within tenant scope',
+    domain: 'communication'
+  },
+  'InAppAnnouncement.read': {
+    name: 'View In App Announcement',
+    description: 'View and access in app announcement records within tenant scope',
+    domain: 'communication'
+  },
+  'InAppAnnouncement.create': {
+    name: 'Create In App Announcement',
+    description: 'Create new in app announcement records within tenant scope',
+    domain: 'communication'
+  },
+  'InAppAnnouncement.update': {
+    name: 'Update In App Announcement',
+    description: 'Modify existing in app announcement records within tenant scope',
+    domain: 'communication'
+  },
+  'InAppAnnouncement.soft_delete': {
+    name: 'Delete In App Announcement',
+    description: 'Delete (soft) in app announcement records within tenant scope',
+    domain: 'communication'
+  },
+  'InAppAnnouncement.restore': {
+    name: 'Restore In App Announcement',
+    description: 'Restore deleted in app announcement records within tenant scope',
+    domain: 'communication'
+  },
+  'InAppAnnouncement.publish': {
+    name: 'Publish In App Announcement',
+    description: 'Publish in app announcement records within tenant scope',
+    domain: 'communication'
+  },
+  'Message.read': {
+    name: 'View Message',
+    description: 'View and access message records within tenant scope',
+    domain: 'communication'
+  },
+  'Message.create': {
+    name: 'Create Message',
+    description: 'Create new message records within tenant scope',
+    domain: 'communication'
+  },
+  'Message.update': {
+    name: 'Update Message',
+    description: 'Modify existing message records within tenant scope',
+    domain: 'communication'
+  },
+  'Message.soft_delete': {
+    name: 'Delete Message',
+    description: 'Delete (soft) message records within tenant scope',
+    domain: 'communication'
+  },
+  'Message.restore': {
+    name: 'Restore Message',
+    description: 'Restore deleted message records within tenant scope',
+    domain: 'communication'
+  },
+  'MessageAttachment.read': {
+    name: 'View Message Attachment',
+    description: 'View and access message attachment records within tenant scope',
+    domain: 'communication'
+  },
+  'MessageAttachment.create': {
+    name: 'Create Message Attachment',
+    description: 'Create new message attachment records within tenant scope',
+    domain: 'communication'
+  },
+  'MessageAttachment.update': {
+    name: 'Update Message Attachment',
+    description: 'Modify existing message attachment records within tenant scope',
+    domain: 'communication'
+  },
+  'MessageAttachment.soft_delete': {
+    name: 'Delete Message Attachment',
+    description: 'Delete (soft) message attachment records within tenant scope',
+    domain: 'communication'
+  },
+  'MessageAttachment.restore': {
+    name: 'Restore Message Attachment',
+    description: 'Restore deleted message attachment records within tenant scope',
+    domain: 'communication'
+  },
+  'MessageRead.read': {
+    name: 'View Message Read',
+    description: 'View and access message read records within tenant scope',
+    domain: 'communication'
+  },
+  'MessageRead.create': {
+    name: 'Create Message Read',
+    description: 'Create new message read records within tenant scope',
+    domain: 'communication'
+  },
+  'MessageRead.update': {
+    name: 'Update Message Read',
+    description: 'Modify existing message read records within tenant scope',
+    domain: 'communication'
+  },
+  'NotificationPreference.read': {
+    name: 'View Notification Preference',
+    description: 'View and access notification preference records within tenant scope',
+    domain: 'communication'
+  },
+  'NotificationPreference.create': {
+    name: 'Create Notification Preference',
+    description: 'Create new notification preference records within tenant scope',
+    domain: 'communication'
+  },
+  'NotificationPreference.update': {
+    name: 'Update Notification Preference',
+    description: 'Modify existing notification preference records within tenant scope',
+    domain: 'communication'
+  },
+  'NotificationPreference.soft_delete': {
+    name: 'Delete Notification Preference',
+    description: 'Delete (soft) notification preference records within tenant scope',
+    domain: 'communication'
+  },
+  'NotificationPreference.restore': {
+    name: 'Restore Notification Preference',
+    description: 'Restore deleted notification preference records within tenant scope',
+    domain: 'communication'
+  },
+  'NotificationTemplate.read': {
+    name: 'View Notification Template',
+    description: 'View and access notification template records within tenant scope',
+    domain: 'communication'
+  },
+  'NotificationTemplate.create': {
+    name: 'Create Notification Template',
+    description: 'Create new notification template records within tenant scope',
+    domain: 'communication'
+  },
+  'NotificationTemplate.update': {
+    name: 'Update Notification Template',
+    description: 'Modify existing notification template records within tenant scope',
+    domain: 'communication'
+  },
+  'NotificationTemplate.soft_delete': {
+    name: 'Delete Notification Template',
+    description: 'Delete (soft) notification template records within tenant scope',
+    domain: 'communication'
+  },
+  'NotificationTemplate.restore': {
+    name: 'Restore Notification Template',
+    description: 'Restore deleted notification template records within tenant scope',
+    domain: 'communication'
+  },
+  'EmailTemplate.read': {
+    name: 'View Email Template',
+    description: 'View and access email template records within tenant scope',
+    domain: 'communication'
+  },
+  'EmailTemplate.create': {
+    name: 'Create Email Template',
+    description: 'Create new email template records within tenant scope',
+    domain: 'communication'
+  },
+  'EmailTemplate.update': {
+    name: 'Update Email Template',
+    description: 'Modify existing email template records within tenant scope',
+    domain: 'communication'
+  },
+  'EmailTemplate.soft_delete': {
+    name: 'Delete Email Template',
+    description: 'Delete (soft) email template records within tenant scope',
+    domain: 'communication'
+  },
+  'EmailTemplate.restore': {
+    name: 'Restore Email Template',
+    description: 'Restore deleted email template records within tenant scope',
+    domain: 'communication'
+  },
+  'FileObject.read': {
+    name: 'View File Object',
+    description: 'View and access file object records within tenant scope',
+    domain: 'document_management'
+  },
+  'FileObject.create': {
+    name: 'Create File Object',
+    description: 'Create new file object records within tenant scope',
+    domain: 'document_management'
+  },
+  'FileObject.update': {
+    name: 'Update File Object',
+    description: 'Modify existing file object records within tenant scope',
+    domain: 'document_management'
+  },
+  'FileObject.soft_delete': {
+    name: 'Delete File Object',
+    description: 'Delete (soft) file object records within tenant scope',
+    domain: 'document_management'
+  },
+  'FileObject.restore': {
+    name: 'Restore File Object',
+    description: 'Restore deleted file object records within tenant scope',
+    domain: 'document_management'
+  },
+  'Attachment.read': {
+    name: 'View Attachment',
+    description: 'View and access attachment records within tenant scope',
+    domain: 'document_management'
+  },
+  'Attachment.create': {
+    name: 'Create Attachment',
+    description: 'Create new attachment records within tenant scope',
+    domain: 'document_management'
+  },
+  'Attachment.update': {
+    name: 'Update Attachment',
+    description: 'Modify existing attachment records within tenant scope',
+    domain: 'document_management'
+  },
+  'Attachment.soft_delete': {
+    name: 'Delete Attachment',
+    description: 'Delete (soft) attachment records within tenant scope',
+    domain: 'document_management'
+  },
+  'Attachment.restore': {
+    name: 'Restore Attachment',
+    description: 'Restore deleted attachment records within tenant scope',
+    domain: 'document_management'
+  },
+  'Attachment.approve': {
+    name: 'Approve Attachment',
+    description: 'Approve attachment records within tenant scope',
+    domain: 'document_management'
+  },
+  'Attachment.reject': {
+    name: 'Reject Attachment',
+    description: 'Reject attachment records within tenant scope',
+    domain: 'document_management'
+  },
+  'AttachmentLink.read': {
+    name: 'View Attachment Link',
+    description: 'View and access attachment link records within tenant scope',
+    domain: 'document_management'
+  },
+  'AttachmentLink.create': {
+    name: 'Create Attachment Link',
+    description: 'Create new attachment link records within tenant scope',
+    domain: 'document_management'
+  },
+  'AttachmentLink.update': {
+    name: 'Update Attachment Link',
+    description: 'Modify existing attachment link records within tenant scope',
+    domain: 'document_management'
+  },
+  'AttachmentLink.soft_delete': {
+    name: 'Delete Attachment Link',
+    description: 'Delete (soft) attachment link records within tenant scope',
+    domain: 'document_management'
+  },
+  'AttachmentLink.restore': {
+    name: 'Restore Attachment Link',
+    description: 'Restore deleted attachment link records within tenant scope',
+    domain: 'document_management'
+  },
+  'ESignatureEnvelope.read': {
+    name: 'View E Signature Envelope',
+    description: 'View and access e signature envelope records within tenant scope',
+    domain: 'document_management'
+  },
+  'ESignatureEnvelope.create': {
+    name: 'Create E Signature Envelope',
+    description: 'Create new e signature envelope records within tenant scope',
+    domain: 'document_management'
+  },
+  'ESignatureEnvelope.update': {
+    name: 'Update E Signature Envelope',
+    description: 'Modify existing e signature envelope records within tenant scope',
+    domain: 'document_management'
+  },
+  'ESignatureEnvelope.soft_delete': {
+    name: 'Delete E Signature Envelope',
+    description: 'Delete (soft) e signature envelope records within tenant scope',
+    domain: 'document_management'
+  },
+  'ESignatureEnvelope.restore': {
+    name: 'Restore E Signature Envelope',
+    description: 'Restore deleted e signature envelope records within tenant scope',
+    domain: 'document_management'
+  },
+  'ESignatureEnvelope.send': {
+    name: 'Send E Signature Envelope',
+    description: 'Send e signature envelope records within tenant scope',
+    domain: 'document_management'
+  },
+  'ESignatureRecipient.read': {
+    name: 'View E Signature Recipient',
+    description: 'View and access e signature recipient records within tenant scope',
+    domain: 'document_management'
+  },
+  'ESignatureRecipient.create': {
+    name: 'Create E Signature Recipient',
+    description: 'Create new e signature recipient records within tenant scope',
+    domain: 'document_management'
+  },
+  'ESignatureRecipient.update': {
+    name: 'Update E Signature Recipient',
+    description: 'Modify existing e signature recipient records within tenant scope',
+    domain: 'document_management'
+  },
+  'ESignatureRecipient.soft_delete': {
+    name: 'Delete E Signature Recipient',
+    description: 'Delete (soft) e signature recipient records within tenant scope',
+    domain: 'document_management'
+  },
+  'ESignatureRecipient.restore': {
+    name: 'Restore E Signature Recipient',
+    description: 'Restore deleted e signature recipient records within tenant scope',
+    domain: 'document_management'
+  },
+  'DocumentGroup.read': {
+    name: 'View Document Group',
+    description: 'View and access document group records within tenant scope',
+    domain: 'document_management'
+  },
+  'DocumentGroup.create': {
+    name: 'Create Document Group',
+    description: 'Create new document group records within tenant scope',
+    domain: 'document_management'
+  },
+  'DocumentGroup.update': {
+    name: 'Update Document Group',
+    description: 'Modify existing document group records within tenant scope',
+    domain: 'document_management'
+  },
+  'DocumentGroup.soft_delete': {
+    name: 'Delete Document Group',
+    description: 'Delete (soft) document group records within tenant scope',
+    domain: 'document_management'
+  },
+  'DocumentGroup.restore': {
+    name: 'Restore Document Group',
+    description: 'Restore deleted document group records within tenant scope',
+    domain: 'document_management'
+  },
+  'ContractTemplate.read': {
+    name: 'View Contract Template',
+    description: 'View and access contract template records within tenant scope',
+    domain: 'document_management'
+  },
+  'ContractTemplate.create': {
+    name: 'Create Contract Template',
+    description: 'Create new contract template records within tenant scope',
+    domain: 'document_management'
+  },
+  'ContractTemplate.update': {
+    name: 'Update Contract Template',
+    description: 'Modify existing contract template records within tenant scope',
+    domain: 'document_management'
+  },
+  'ContractTemplate.soft_delete': {
+    name: 'Delete Contract Template',
+    description: 'Delete (soft) contract template records within tenant scope',
+    domain: 'document_management'
+  },
+  'ContractTemplate.restore': {
+    name: 'Restore Contract Template',
+    description: 'Restore deleted contract template records within tenant scope',
+    domain: 'document_management'
+  },
+  'TermsTemplate.read': {
+    name: 'View Terms Template',
+    description: 'View and access terms template records within tenant scope',
+    domain: 'document_management'
+  },
+  'TermsTemplate.create': {
+    name: 'Create Terms Template',
+    description: 'Create new terms template records within tenant scope',
+    domain: 'document_management'
+  },
+  'TermsTemplate.update': {
+    name: 'Update Terms Template',
+    description: 'Modify existing terms template records within tenant scope',
+    domain: 'document_management'
+  },
+  'TermsTemplate.soft_delete': {
+    name: 'Delete Terms Template',
+    description: 'Delete (soft) terms template records within tenant scope',
+    domain: 'document_management'
+  },
+  'TermsTemplate.restore': {
+    name: 'Restore Terms Template',
+    description: 'Restore deleted terms template records within tenant scope',
+    domain: 'document_management'
+  },
+  'Vendor.read': {
+    name: 'View Vendor',
+    description: 'View and access vendor records within tenant scope',
+    domain: 'vendor_contract'
+  },
+  'Vendor.create': {
+    name: 'Create Vendor',
+    description: 'Create new vendor records within tenant scope',
+    domain: 'vendor_contract'
+  },
+  'Vendor.update': {
+    name: 'Update Vendor',
+    description: 'Modify existing vendor records within tenant scope',
+    domain: 'vendor_contract'
+  },
+  'Vendor.soft_delete': {
+    name: 'Delete Vendor',
+    description: 'Delete (soft) vendor records within tenant scope',
+    domain: 'vendor_contract'
+  },
+  'Vendor.restore': {
+    name: 'Restore Vendor',
+    description: 'Restore deleted vendor records within tenant scope',
+    domain: 'vendor_contract'
+  },
+  'Vendor.activate': {
+    name: 'Activate Vendor',
+    description: 'Activate vendor records within tenant scope',
+    domain: 'vendor_contract'
+  },
+  'Vendor.deactivate': {
+    name: 'Deactivate Vendor',
+    description: 'Deactivate vendor records within tenant scope',
+    domain: 'vendor_contract'
+  },
+  'VendorContact.read': {
+    name: 'View Vendor Contact',
+    description: 'View and access vendor contact records within tenant scope',
+    domain: 'vendor_contract'
+  },
+  'VendorContact.create': {
+    name: 'Create Vendor Contact',
+    description: 'Create new vendor contact records within tenant scope',
+    domain: 'vendor_contract'
+  },
+  'VendorContact.update': {
+    name: 'Update Vendor Contact',
+    description: 'Modify existing vendor contact records within tenant scope',
+    domain: 'vendor_contract'
+  },
+  'VendorContact.soft_delete': {
+    name: 'Delete Vendor Contact',
+    description: 'Delete (soft) vendor contact records within tenant scope',
+    domain: 'vendor_contract'
+  },
+  'VendorContact.restore': {
+    name: 'Restore Vendor Contact',
+    description: 'Restore deleted vendor contact records within tenant scope',
+    domain: 'vendor_contract'
+  },
+  'VendorDocument.read': {
+    name: 'View Vendor Document',
+    description: 'View and access vendor document records within tenant scope',
+    domain: 'vendor_contract'
+  },
+  'VendorDocument.create': {
+    name: 'Create Vendor Document',
+    description: 'Create new vendor document records within tenant scope',
+    domain: 'vendor_contract'
+  },
+  'VendorDocument.update': {
+    name: 'Update Vendor Document',
+    description: 'Modify existing vendor document records within tenant scope',
+    domain: 'vendor_contract'
+  },
+  'VendorDocument.soft_delete': {
+    name: 'Delete Vendor Document',
+    description: 'Delete (soft) vendor document records within tenant scope',
+    domain: 'vendor_contract'
+  },
+  'VendorDocument.restore': {
+    name: 'Restore Vendor Document',
+    description: 'Restore deleted vendor document records within tenant scope',
+    domain: 'vendor_contract'
+  },
+  'Contract.read': {
+    name: 'View Contract',
+    description: 'View and access contract records within tenant scope',
+    domain: 'vendor_contract'
+  },
+  'Contract.create': {
+    name: 'Create Contract',
+    description: 'Create new contract records within tenant scope',
+    domain: 'vendor_contract'
+  },
+  'Contract.update': {
+    name: 'Update Contract',
+    description: 'Modify existing contract records within tenant scope',
+    domain: 'vendor_contract'
+  },
+  'Contract.soft_delete': {
+    name: 'Delete Contract',
+    description: 'Delete (soft) contract records within tenant scope',
+    domain: 'vendor_contract'
+  },
+  'Contract.restore': {
+    name: 'Restore Contract',
+    description: 'Restore deleted contract records within tenant scope',
+    domain: 'vendor_contract'
+  },
+  'Contract.send': {
+    name: 'Send Contract',
+    description: 'Send contract records within tenant scope',
+    domain: 'vendor_contract'
+  },
+  'Contract.approve': {
+    name: 'Approve Contract',
+    description: 'Approve contract records within tenant scope',
+    domain: 'vendor_contract'
+  },
+  'Contract.reject': {
+    name: 'Reject Contract',
+    description: 'Reject contract records within tenant scope',
+    domain: 'vendor_contract'
+  },
+  'Person.read': {
+    name: 'View Person',
+    description: 'View and access person records within tenant scope',
+    domain: 'vendor_contract'
+  },
+  'Person.create': {
+    name: 'Create Person',
+    description: 'Create new person records within tenant scope',
+    domain: 'vendor_contract'
+  },
+  'Person.update': {
+    name: 'Update Person',
+    description: 'Modify existing person records within tenant scope',
+    domain: 'vendor_contract'
+  },
+  'Person.soft_delete': {
+    name: 'Delete Person',
+    description: 'Delete (soft) person records within tenant scope',
+    domain: 'vendor_contract'
+  },
+  'Person.restore': {
+    name: 'Restore Person',
+    description: 'Restore deleted person records within tenant scope',
+    domain: 'vendor_contract'
+  },
+  'PersonName.read': {
+    name: 'View Person Name',
+    description: 'View and access person name records within tenant scope',
+    domain: 'vendor_contract'
+  },
+  'PersonName.create': {
+    name: 'Create Person Name',
+    description: 'Create new person name records within tenant scope',
+    domain: 'vendor_contract'
+  },
+  'PersonName.update': {
+    name: 'Update Person Name',
+    description: 'Modify existing person name records within tenant scope',
+    domain: 'vendor_contract'
+  },
+  'PersonName.soft_delete': {
+    name: 'Delete Person Name',
+    description: 'Delete (soft) person name records within tenant scope',
+    domain: 'vendor_contract'
+  },
+  'PersonName.restore': {
+    name: 'Restore Person Name',
+    description: 'Restore deleted person name records within tenant scope',
+    domain: 'vendor_contract'
+  },
+  'PersonAddress.read': {
+    name: 'View Person Address',
+    description: 'View and access person address records within tenant scope',
+    domain: 'vendor_contract'
+  },
+  'PersonAddress.create': {
+    name: 'Create Person Address',
+    description: 'Create new person address records within tenant scope',
+    domain: 'vendor_contract'
+  },
+  'PersonAddress.update': {
+    name: 'Update Person Address',
+    description: 'Modify existing person address records within tenant scope',
+    domain: 'vendor_contract'
+  },
+  'PersonAddress.soft_delete': {
+    name: 'Delete Person Address',
+    description: 'Delete (soft) person address records within tenant scope',
+    domain: 'vendor_contract'
+  },
+  'PersonAddress.restore': {
+    name: 'Restore Person Address',
+    description: 'Restore deleted person address records within tenant scope',
+    domain: 'vendor_contract'
+  },
+  'PersonContactMethod.read': {
+    name: 'View Person Contact Method',
+    description: 'View and access person contact method records within tenant scope',
+    domain: 'vendor_contract'
+  },
+  'PersonContactMethod.create': {
+    name: 'Create Person Contact Method',
+    description: 'Create new person contact method records within tenant scope',
+    domain: 'vendor_contract'
+  },
+  'PersonContactMethod.update': {
+    name: 'Update Person Contact Method',
+    description: 'Modify existing person contact method records within tenant scope',
+    domain: 'vendor_contract'
+  },
+  'PersonContactMethod.soft_delete': {
+    name: 'Delete Person Contact Method',
+    description: 'Delete (soft) person contact method records within tenant scope',
+    domain: 'vendor_contract'
+  },
+  'PersonContactMethod.restore': {
+    name: 'Restore Person Contact Method',
+    description: 'Restore deleted person contact method records within tenant scope',
+    domain: 'vendor_contract'
+  },
+  'PersonDocument.read': {
+    name: 'View Person Document',
+    description: 'View and access person document records within tenant scope',
+    domain: 'vendor_contract'
+  },
+  'PersonDocument.create': {
+    name: 'Create Person Document',
+    description: 'Create new person document records within tenant scope',
+    domain: 'vendor_contract'
+  },
+  'PersonDocument.update': {
+    name: 'Update Person Document',
+    description: 'Modify existing person document records within tenant scope',
+    domain: 'vendor_contract'
+  },
+  'PersonDocument.soft_delete': {
+    name: 'Delete Person Document',
+    description: 'Delete (soft) person document records within tenant scope',
+    domain: 'vendor_contract'
+  },
+  'PersonDocument.restore': {
+    name: 'Restore Person Document',
+    description: 'Restore deleted person document records within tenant scope',
+    domain: 'vendor_contract'
+  },
+  'AIAction.read': {
+    name: 'View A I Action',
+    description: 'View and access a i action records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIAction.create': {
+    name: 'Create A I Action',
+    description: 'Create new a i action records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIAction.update': {
+    name: 'Update A I Action',
+    description: 'Modify existing a i action records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIAction.soft_delete': {
+    name: 'Delete A I Action',
+    description: 'Delete (soft) a i action records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIAction.restore': {
+    name: 'Restore A I Action',
+    description: 'Restore deleted a i action records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIAction.activate': {
+    name: 'Activate A I Action',
+    description: 'Activate a i action records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIAction.deactivate': {
+    name: 'Deactivate A I Action',
+    description: 'Deactivate a i action records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIActionRun.read': {
+    name: 'View A I Action Run',
+    description: 'View and access a i action run records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIActionRun.create': {
+    name: 'Create A I Action Run',
+    description: 'Create new a i action run records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIActionRun.update': {
+    name: 'Update A I Action Run',
+    description: 'Modify existing a i action run records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIActionRun.soft_delete': {
+    name: 'Delete A I Action Run',
+    description: 'Delete (soft) a i action run records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIActionRun.restore': {
+    name: 'Restore A I Action Run',
+    description: 'Restore deleted a i action run records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIJob.read': {
+    name: 'View A I Job',
+    description: 'View and access a i job records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIJob.create': {
+    name: 'Create A I Job',
+    description: 'Create new a i job records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIJob.update': {
+    name: 'Update A I Job',
+    description: 'Modify existing a i job records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIJob.soft_delete': {
+    name: 'Delete A I Job',
+    description: 'Delete (soft) a i job records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIJob.restore': {
+    name: 'Restore A I Job',
+    description: 'Restore deleted a i job records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIJobArtifact.read': {
+    name: 'View A I Job Artifact',
+    description: 'View and access a i job artifact records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIJobArtifact.create': {
+    name: 'Create A I Job Artifact',
+    description: 'Create new a i job artifact records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIJobArtifact.update': {
+    name: 'Update A I Job Artifact',
+    description: 'Modify existing a i job artifact records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIJobArtifact.soft_delete': {
+    name: 'Delete A I Job Artifact',
+    description: 'Delete (soft) a i job artifact records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIJobArtifact.restore': {
+    name: 'Restore A I Job Artifact',
+    description: 'Restore deleted a i job artifact records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIInsight.read': {
+    name: 'View A I Insight',
+    description: 'View and access a i insight records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIInsight.create': {
+    name: 'Create A I Insight',
+    description: 'Create new a i insight records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIInsight.update': {
+    name: 'Update A I Insight',
+    description: 'Modify existing a i insight records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIInsight.soft_delete': {
+    name: 'Delete A I Insight',
+    description: 'Delete (soft) a i insight records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIInsight.restore': {
+    name: 'Restore A I Insight',
+    description: 'Restore deleted a i insight records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIInsightFeedback.read': {
+    name: 'View A I Insight Feedback',
+    description: 'View and access a i insight feedback records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIInsightFeedback.create': {
+    name: 'Create A I Insight Feedback',
+    description: 'Create new a i insight feedback records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIInsightFeedback.update': {
+    name: 'Update A I Insight Feedback',
+    description: 'Modify existing a i insight feedback records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIInsightFeedback.soft_delete': {
+    name: 'Delete A I Insight Feedback',
+    description: 'Delete (soft) a i insight feedback records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIInsightFeedback.restore': {
+    name: 'Restore A I Insight Feedback',
+    description: 'Restore deleted a i insight feedback records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIPlaybook.read': {
+    name: 'View A I Playbook',
+    description: 'View and access a i playbook records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIPlaybook.create': {
+    name: 'Create A I Playbook',
+    description: 'Create new a i playbook records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIPlaybook.update': {
+    name: 'Update A I Playbook',
+    description: 'Modify existing a i playbook records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIPlaybook.soft_delete': {
+    name: 'Delete A I Playbook',
+    description: 'Delete (soft) a i playbook records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIPlaybook.restore': {
+    name: 'Restore A I Playbook',
+    description: 'Restore deleted a i playbook records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIPlaybook.activate': {
+    name: 'Activate A I Playbook',
+    description: 'Activate a i playbook records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIPlaybook.deactivate': {
+    name: 'Deactivate A I Playbook',
+    description: 'Deactivate a i playbook records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIPlaybookStep.read': {
+    name: 'View A I Playbook Step',
+    description: 'View and access a i playbook step records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIPlaybookStep.create': {
+    name: 'Create A I Playbook Step',
+    description: 'Create new a i playbook step records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIPlaybookStep.update': {
+    name: 'Update A I Playbook Step',
+    description: 'Modify existing a i playbook step records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIPlaybookStep.soft_delete': {
+    name: 'Delete A I Playbook Step',
+    description: 'Delete (soft) a i playbook step records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIPlaybookStep.restore': {
+    name: 'Restore A I Playbook Step',
+    description: 'Restore deleted a i playbook step records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIPromptTemplate.read': {
+    name: 'View A I Prompt Template',
+    description: 'View and access a i prompt template records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIPromptTemplate.create': {
+    name: 'Create A I Prompt Template',
+    description: 'Create new a i prompt template records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIPromptTemplate.update': {
+    name: 'Update A I Prompt Template',
+    description: 'Modify existing a i prompt template records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIPromptTemplate.soft_delete': {
+    name: 'Delete A I Prompt Template',
+    description: 'Delete (soft) a i prompt template records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIPromptTemplate.restore': {
+    name: 'Restore A I Prompt Template',
+    description: 'Restore deleted a i prompt template records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIAssistantProfile.read': {
+    name: 'View A I Assistant Profile',
+    description: 'View and access a i assistant profile records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIAssistantProfile.create': {
+    name: 'Create A I Assistant Profile',
+    description: 'Create new a i assistant profile records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIAssistantProfile.update': {
+    name: 'Update A I Assistant Profile',
+    description: 'Modify existing a i assistant profile records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIAssistantProfile.soft_delete': {
+    name: 'Delete A I Assistant Profile',
+    description: 'Delete (soft) a i assistant profile records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIAssistantProfile.restore': {
+    name: 'Restore A I Assistant Profile',
+    description: 'Restore deleted a i assistant profile records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIAssistantProfile.activate': {
+    name: 'Activate A I Assistant Profile',
+    description: 'Activate a i assistant profile records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIAssistantProfile.deactivate': {
+    name: 'Deactivate A I Assistant Profile',
+    description: 'Deactivate a i assistant profile records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIDocumentIndex.read': {
+    name: 'View A I Document Index',
+    description: 'View and access a i document index records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIDocumentIndex.create': {
+    name: 'Create A I Document Index',
+    description: 'Create new a i document index records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIDocumentIndex.update': {
+    name: 'Update A I Document Index',
+    description: 'Modify existing a i document index records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIDocumentIndex.soft_delete': {
+    name: 'Delete A I Document Index',
+    description: 'Delete (soft) a i document index records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIDocumentIndex.restore': {
+    name: 'Restore A I Document Index',
+    description: 'Restore deleted a i document index records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIDocumentChunk.read': {
+    name: 'View A I Document Chunk',
+    description: 'View and access a i document chunk records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIDocumentChunk.create': {
+    name: 'Create A I Document Chunk',
+    description: 'Create new a i document chunk records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIDocumentChunk.update': {
+    name: 'Update A I Document Chunk',
+    description: 'Modify existing a i document chunk records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIDocumentChunk.soft_delete': {
+    name: 'Delete A I Document Chunk',
+    description: 'Delete (soft) a i document chunk records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIDocumentChunk.restore': {
+    name: 'Restore A I Document Chunk',
+    description: 'Restore deleted a i document chunk records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIEmbedding.read': {
+    name: 'View A I Embedding',
+    description: 'View and access a i embedding records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIEmbedding.create': {
+    name: 'Create A I Embedding',
+    description: 'Create new a i embedding records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIEmbedding.update': {
+    name: 'Update A I Embedding',
+    description: 'Modify existing a i embedding records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIEmbedding.soft_delete': {
+    name: 'Delete A I Embedding',
+    description: 'Delete (soft) a i embedding records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'AIEmbedding.restore': {
+    name: 'Restore A I Embedding',
+    description: 'Restore deleted a i embedding records within tenant scope',
+    domain: 'ai_automation'
+  },
+  'RoomScanSession.read': {
+    name: 'View Room Scan Session',
+    description: 'View and access room scan session records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomScanSession.list': {
+    name: 'List Room Scan Session',
+    description: 'list room scan session records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomScanSession.create': {
+    name: 'Create Room Scan Session',
+    description: 'Create new room scan session records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomScanSession.update': {
+    name: 'Update Room Scan Session',
+    description: 'Modify existing room scan session records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomScanSession.soft_delete': {
+    name: 'Delete Room Scan Session',
+    description: 'Delete (soft) room scan session records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomScanSession.restore': {
+    name: 'Restore Room Scan Session',
+    description: 'Restore deleted room scan session records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomScanSession.activate': {
+    name: 'Activate Room Scan Session',
+    description: 'Activate room scan session records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomScanSession.deactivate': {
+    name: 'Deactivate Room Scan Session',
+    description: 'Deactivate room scan session records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomScanSession.export': {
+    name: 'Export Room Scan Session',
+    description: 'Export data for room scan session records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomScanFile.read': {
+    name: 'View Room Scan File',
+    description: 'View and access room scan file records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomScanFile.list': {
+    name: 'List Room Scan File',
+    description: 'list room scan file records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomScanFile.create': {
+    name: 'Create Room Scan File',
+    description: 'Create new room scan file records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomScanFile.update': {
+    name: 'Update Room Scan File',
+    description: 'Modify existing room scan file records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomScanFile.soft_delete': {
+    name: 'Delete Room Scan File',
+    description: 'Delete (soft) room scan file records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomScanFile.restore': {
+    name: 'Restore Room Scan File',
+    description: 'Restore deleted room scan file records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomScanFile.export': {
+    name: 'Export Room Scan File',
+    description: 'Export data for room scan file records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomModel.read': {
+    name: 'View Room Model',
+    description: 'View and access room model records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomModel.list': {
+    name: 'List Room Model',
+    description: 'list room model records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomModel.create': {
+    name: 'Create Room Model',
+    description: 'Create new room model records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomModel.update': {
+    name: 'Update Room Model',
+    description: 'Modify existing room model records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomModel.soft_delete': {
+    name: 'Delete Room Model',
+    description: 'Delete (soft) room model records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomModel.restore': {
+    name: 'Restore Room Model',
+    description: 'Restore deleted room model records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomModel.publish': {
+    name: 'Publish Room Model',
+    description: 'Publish room model records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomModel.export': {
+    name: 'Export Room Model',
+    description: 'Export data for room model records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomModel.duplicate': {
+    name: 'Duplicate Room Model',
+    description: 'Duplicate room model records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomMeasurement.read': {
+    name: 'View Room Measurement',
+    description: 'View and access room measurement records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomMeasurement.list': {
+    name: 'List Room Measurement',
+    description: 'list room measurement records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomMeasurement.create': {
+    name: 'Create Room Measurement',
+    description: 'Create new room measurement records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomMeasurement.update': {
+    name: 'Update Room Measurement',
+    description: 'Modify existing room measurement records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomMeasurement.soft_delete': {
+    name: 'Delete Room Measurement',
+    description: 'Delete (soft) room measurement records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomMeasurement.restore': {
+    name: 'Restore Room Measurement',
+    description: 'Restore deleted room measurement records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomMeasurement.export': {
+    name: 'Export Room Measurement',
+    description: 'Export data for room measurement records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomObject.read': {
+    name: 'View Room Object',
+    description: 'View and access room object records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomObject.list': {
+    name: 'List Room Object',
+    description: 'list room object records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomObject.create': {
+    name: 'Create Room Object',
+    description: 'Create new room object records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomObject.update': {
+    name: 'Update Room Object',
+    description: 'Modify existing room object records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomObject.soft_delete': {
+    name: 'Delete Room Object',
+    description: 'Delete (soft) room object records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomObject.restore': {
+    name: 'Restore Room Object',
+    description: 'Restore deleted room object records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomObject.export': {
+    name: 'Export Room Object',
+    description: 'Export data for room object records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomSurface.read': {
+    name: 'View Room Surface',
+    description: 'View and access room surface records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomSurface.list': {
+    name: 'List Room Surface',
+    description: 'list room surface records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomSurface.create': {
+    name: 'Create Room Surface',
+    description: 'Create new room surface records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomSurface.update': {
+    name: 'Update Room Surface',
+    description: 'Modify existing room surface records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomSurface.soft_delete': {
+    name: 'Delete Room Surface',
+    description: 'Delete (soft) room surface records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomSurface.restore': {
+    name: 'Restore Room Surface',
+    description: 'Restore deleted room surface records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomSurface.export': {
+    name: 'Export Room Surface',
+    description: 'Export data for room surface records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomAnnotation.read': {
+    name: 'View Room Annotation',
+    description: 'View and access room annotation records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomAnnotation.list': {
+    name: 'List Room Annotation',
+    description: 'list room annotation records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomAnnotation.create': {
+    name: 'Create Room Annotation',
+    description: 'Create new room annotation records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomAnnotation.update': {
+    name: 'Update Room Annotation',
+    description: 'Modify existing room annotation records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomAnnotation.soft_delete': {
+    name: 'Delete Room Annotation',
+    description: 'Delete (soft) room annotation records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomAnnotation.restore': {
+    name: 'Restore Room Annotation',
+    description: 'Restore deleted room annotation records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomAnnotation.publish': {
+    name: 'Publish Room Annotation',
+    description: 'Publish room annotation records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomAnnotation.export': {
+    name: 'Export Room Annotation',
+    description: 'Export data for room annotation records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomExport.read': {
+    name: 'View Room Export',
+    description: 'View and access room export records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomExport.list': {
+    name: 'List Room Export',
+    description: 'list room export records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomExport.create': {
+    name: 'Create Room Export',
+    description: 'Create new room export records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomExport.update': {
+    name: 'Update Room Export',
+    description: 'Modify existing room export records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomExport.soft_delete': {
+    name: 'Delete Room Export',
+    description: 'Delete (soft) room export records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomExport.restore': {
+    name: 'Restore Room Export',
+    description: 'Restore deleted room export records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomExport.export': {
+    name: 'Export Room Export',
+    description: 'Export data for room export records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomExport.send': {
+    name: 'Send Room Export',
+    description: 'Send room export records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomPlanPreset.read': {
+    name: 'View Room Plan Preset',
+    description: 'View and access room plan preset records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomPlanPreset.list': {
+    name: 'List Room Plan Preset',
+    description: 'list room plan preset records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomPlanPreset.create': {
+    name: 'Create Room Plan Preset',
+    description: 'Create new room plan preset records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomPlanPreset.update': {
+    name: 'Update Room Plan Preset',
+    description: 'Modify existing room plan preset records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomPlanPreset.soft_delete': {
+    name: 'Delete Room Plan Preset',
+    description: 'Delete (soft) room plan preset records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomPlanPreset.restore': {
+    name: 'Restore Room Plan Preset',
+    description: 'Restore deleted room plan preset records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomPlanPreset.duplicate': {
+    name: 'Duplicate Room Plan Preset',
+    description: 'Duplicate room plan preset records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomPlanPreset.publish': {
+    name: 'Publish Room Plan Preset',
+    description: 'Publish room plan preset records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomProcessingJob.read': {
+    name: 'View Room Processing Job',
+    description: 'View and access room processing job records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomProcessingJob.list': {
+    name: 'List Room Processing Job',
+    description: 'list room processing job records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomProcessingJob.create': {
+    name: 'Create Room Processing Job',
+    description: 'Create new room processing job records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomProcessingJob.update': {
+    name: 'Update Room Processing Job',
+    description: 'Modify existing room processing job records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomProcessingJob.soft_delete': {
+    name: 'Delete Room Processing Job',
+    description: 'Delete (soft) room processing job records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomProcessingJob.restore': {
+    name: 'Restore Room Processing Job',
+    description: 'Restore deleted room processing job records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomProcessingJob.activate': {
+    name: 'Activate Room Processing Job',
+    description: 'Activate room processing job records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'RoomProcessingJob.deactivate': {
+    name: 'Deactivate Room Processing Job',
+    description: 'Deactivate room processing job records within tenant scope',
+    domain: 'roomplan_spatial'
+  },
+  'Employment.read': {
+    name: 'View Employment',
+    description: 'View and access employment records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'Employment.create': {
+    name: 'Create Employment',
+    description: 'Create new employment records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'Employment.update': {
+    name: 'Update Employment',
+    description: 'Modify existing employment records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'Employment.soft_delete': {
+    name: 'Delete Employment',
+    description: 'Delete (soft) employment records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'Employment.restore': {
+    name: 'Restore Employment',
+    description: 'Restore deleted employment records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'Employment.activate': {
+    name: 'Activate Employment',
+    description: 'Activate employment records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'Employment.deactivate': {
+    name: 'Deactivate Employment',
+    description: 'Deactivate employment records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'Position.read': {
+    name: 'View Position',
+    description: 'View and access position records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'Position.create': {
+    name: 'Create Position',
+    description: 'Create new position records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'Position.update': {
+    name: 'Update Position',
+    description: 'Modify existing position records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'Position.soft_delete': {
+    name: 'Delete Position',
+    description: 'Delete (soft) position records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'Position.restore': {
+    name: 'Restore Position',
+    description: 'Restore deleted position records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'Position.activate': {
+    name: 'Activate Position',
+    description: 'Activate position records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'Position.deactivate': {
+    name: 'Deactivate Position',
+    description: 'Deactivate position records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'PositionAssignment.read': {
+    name: 'View Position Assignment',
+    description: 'View and access position assignment records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'PositionAssignment.create': {
+    name: 'Create Position Assignment',
+    description: 'Create new position assignment records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'PositionAssignment.update': {
+    name: 'Update Position Assignment',
+    description: 'Modify existing position assignment records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'PositionAssignment.soft_delete': {
+    name: 'Delete Position Assignment',
+    description: 'Delete (soft) position assignment records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'PositionAssignment.restore': {
+    name: 'Restore Position Assignment',
+    description: 'Restore deleted position assignment records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'PositionAssignment.assign': {
+    name: 'Assign Position Assignment',
+    description: 'Assign position assignment records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'PositionAssignment.unassign': {
+    name: 'Unassign Position Assignment',
+    description: 'Remove assignment of position assignment records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'PositionBudget.read': {
+    name: 'View Position Budget',
+    description: 'View and access position budget records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'PositionBudget.create': {
+    name: 'Create Position Budget',
+    description: 'Create new position budget records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'PositionBudget.update': {
+    name: 'Update Position Budget',
+    description: 'Modify existing position budget records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'PositionBudget.soft_delete': {
+    name: 'Delete Position Budget',
+    description: 'Delete (soft) position budget records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'PositionBudget.restore': {
+    name: 'Restore Position Budget',
+    description: 'Restore deleted position budget records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'CompensationComponent.read': {
+    name: 'View Compensation Component',
+    description: 'View and access compensation component records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'CompensationComponent.create': {
+    name: 'Create Compensation Component',
+    description: 'Create new compensation component records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'CompensationComponent.update': {
+    name: 'Update Compensation Component',
+    description: 'Modify existing compensation component records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'CompensationComponent.soft_delete': {
+    name: 'Delete Compensation Component',
+    description: 'Delete (soft) compensation component records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'CompensationComponent.restore': {
+    name: 'Restore Compensation Component',
+    description: 'Restore deleted compensation component records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'CompensationComponent.activate': {
+    name: 'Activate Compensation Component',
+    description: 'Activate compensation component records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'CompensationComponent.deactivate': {
+    name: 'Deactivate Compensation Component',
+    description: 'Deactivate compensation component records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'CompensationPlan.read': {
+    name: 'View Compensation Plan',
+    description: 'View and access compensation plan records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'CompensationPlan.create': {
+    name: 'Create Compensation Plan',
+    description: 'Create new compensation plan records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'CompensationPlan.update': {
+    name: 'Update Compensation Plan',
+    description: 'Modify existing compensation plan records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'CompensationPlan.soft_delete': {
+    name: 'Delete Compensation Plan',
+    description: 'Delete (soft) compensation plan records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'CompensationPlan.restore': {
+    name: 'Restore Compensation Plan',
+    description: 'Restore deleted compensation plan records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'CompensationPlan.activate': {
+    name: 'Activate Compensation Plan',
+    description: 'Activate compensation plan records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'CompensationPlan.deactivate': {
+    name: 'Deactivate Compensation Plan',
+    description: 'Deactivate compensation plan records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'Allowance.read': {
+    name: 'View Allowance',
+    description: 'View and access allowance records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'Allowance.create': {
+    name: 'Create Allowance',
+    description: 'Create new allowance records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'Allowance.update': {
+    name: 'Update Allowance',
+    description: 'Modify existing allowance records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'Allowance.soft_delete': {
+    name: 'Delete Allowance',
+    description: 'Delete (soft) allowance records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'Allowance.restore': {
+    name: 'Restore Allowance',
+    description: 'Restore deleted allowance records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'Allowance.approve': {
+    name: 'Approve Allowance',
+    description: 'Approve allowance records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'Allowance.reject': {
+    name: 'Reject Allowance',
+    description: 'Reject allowance records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'Deduction.read': {
+    name: 'View Deduction',
+    description: 'View and access deduction records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'Deduction.create': {
+    name: 'Create Deduction',
+    description: 'Create new deduction records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'Deduction.update': {
+    name: 'Update Deduction',
+    description: 'Modify existing deduction records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'Deduction.soft_delete': {
+    name: 'Delete Deduction',
+    description: 'Delete (soft) deduction records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'Deduction.restore': {
+    name: 'Restore Deduction',
+    description: 'Restore deleted deduction records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'Deduction.approve': {
+    name: 'Approve Deduction',
+    description: 'Approve deduction records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'Deduction.reject': {
+    name: 'Reject Deduction',
+    description: 'Reject deduction records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'BenefitDependent.read': {
+    name: 'View Benefit Dependent',
+    description: 'View and access benefit dependent records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'BenefitDependent.create': {
+    name: 'Create Benefit Dependent',
+    description: 'Create new benefit dependent records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'BenefitDependent.update': {
+    name: 'Update Benefit Dependent',
+    description: 'Modify existing benefit dependent records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'BenefitDependent.soft_delete': {
+    name: 'Delete Benefit Dependent',
+    description: 'Delete (soft) benefit dependent records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'BenefitDependent.restore': {
+    name: 'Restore Benefit Dependent',
+    description: 'Restore deleted benefit dependent records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'BenefitEnrollment.read': {
+    name: 'View Benefit Enrollment',
+    description: 'View and access benefit enrollment records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'BenefitEnrollment.create': {
+    name: 'Create Benefit Enrollment',
+    description: 'Create new benefit enrollment records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'BenefitEnrollment.update': {
+    name: 'Update Benefit Enrollment',
+    description: 'Modify existing benefit enrollment records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'BenefitEnrollment.soft_delete': {
+    name: 'Delete Benefit Enrollment',
+    description: 'Delete (soft) benefit enrollment records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'BenefitEnrollment.restore': {
+    name: 'Restore Benefit Enrollment',
+    description: 'Restore deleted benefit enrollment records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'BenefitEnrollment.approve': {
+    name: 'Approve Benefit Enrollment',
+    description: 'Approve benefit enrollment records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'BenefitEnrollment.reject': {
+    name: 'Reject Benefit Enrollment',
+    description: 'Reject benefit enrollment records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'Certification.read': {
+    name: 'View Certification',
+    description: 'View and access certification records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'Certification.create': {
+    name: 'Create Certification',
+    description: 'Create new certification records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'Certification.update': {
+    name: 'Update Certification',
+    description: 'Modify existing certification records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'Certification.soft_delete': {
+    name: 'Delete Certification',
+    description: 'Delete (soft) certification records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'Certification.restore': {
+    name: 'Restore Certification',
+    description: 'Restore deleted certification records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'Certification.approve': {
+    name: 'Approve Certification',
+    description: 'Approve certification records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'Certification.reject': {
+    name: 'Reject Certification',
+    description: 'Reject certification records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'PerformanceGoal.read': {
+    name: 'View Performance Goal',
+    description: 'View and access performance goal records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'PerformanceGoal.create': {
+    name: 'Create Performance Goal',
+    description: 'Create new performance goal records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'PerformanceGoal.update': {
+    name: 'Update Performance Goal',
+    description: 'Modify existing performance goal records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'PerformanceGoal.soft_delete': {
+    name: 'Delete Performance Goal',
+    description: 'Delete (soft) performance goal records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'PerformanceGoal.restore': {
+    name: 'Restore Performance Goal',
+    description: 'Restore deleted performance goal records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'PerformanceReview.read': {
+    name: 'View Performance Review',
+    description: 'View and access performance review records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'PerformanceReview.create': {
+    name: 'Create Performance Review',
+    description: 'Create new performance review records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'PerformanceReview.update': {
+    name: 'Update Performance Review',
+    description: 'Modify existing performance review records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'PerformanceReview.soft_delete': {
+    name: 'Delete Performance Review',
+    description: 'Delete (soft) performance review records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'PerformanceReview.restore': {
+    name: 'Restore Performance Review',
+    description: 'Restore deleted performance review records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'PerformanceReview.approve': {
+    name: 'Approve Performance Review',
+    description: 'Approve performance review records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'PerformanceReview.reject': {
+    name: 'Reject Performance Review',
+    description: 'Reject performance review records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'Grade.read': {
+    name: 'View Grade',
+    description: 'View and access grade records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'Grade.create': {
+    name: 'Create Grade',
+    description: 'Create new grade records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'Grade.update': {
+    name: 'Update Grade',
+    description: 'Modify existing grade records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'Grade.soft_delete': {
+    name: 'Delete Grade',
+    description: 'Delete (soft) grade records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'Grade.restore': {
+    name: 'Restore Grade',
+    description: 'Restore deleted grade records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'Department.read': {
+    name: 'View Department',
+    description: 'View and access department records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'Department.create': {
+    name: 'Create Department',
+    description: 'Create new department records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'Department.update': {
+    name: 'Update Department',
+    description: 'Modify existing department records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'Department.soft_delete': {
+    name: 'Delete Department',
+    description: 'Delete (soft) department records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'Department.restore': {
+    name: 'Restore Department',
+    description: 'Restore deleted department records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'Department.activate': {
+    name: 'Activate Department',
+    description: 'Activate department records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'Department.deactivate': {
+    name: 'Deactivate Department',
+    description: 'Deactivate department records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'OrgUnit.read': {
+    name: 'View Org Unit',
+    description: 'View and access org unit records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'OrgUnit.create': {
+    name: 'Create Org Unit',
+    description: 'Create new org unit records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'OrgUnit.update': {
+    name: 'Update Org Unit',
+    description: 'Modify existing org unit records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'OrgUnit.soft_delete': {
+    name: 'Delete Org Unit',
+    description: 'Delete (soft) org unit records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'OrgUnit.restore': {
+    name: 'Restore Org Unit',
+    description: 'Restore deleted org unit records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'OrgUnit.activate': {
+    name: 'Activate Org Unit',
+    description: 'Activate org unit records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'OrgUnit.deactivate': {
+    name: 'Deactivate Org Unit',
+    description: 'Deactivate org unit records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'TrainingEnrollment.read': {
+    name: 'View Training Enrollment',
+    description: 'View and access training enrollment records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'TrainingEnrollment.create': {
+    name: 'Create Training Enrollment',
+    description: 'Create new training enrollment records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'TrainingEnrollment.update': {
+    name: 'Update Training Enrollment',
+    description: 'Modify existing training enrollment records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'TrainingEnrollment.soft_delete': {
+    name: 'Delete Training Enrollment',
+    description: 'Delete (soft) training enrollment records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'TrainingEnrollment.restore': {
+    name: 'Restore Training Enrollment',
+    description: 'Restore deleted training enrollment records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'TrainingEnrollment.approve': {
+    name: 'Approve Training Enrollment',
+    description: 'Approve training enrollment records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'TrainingEnrollment.reject': {
+    name: 'Reject Training Enrollment',
+    description: 'Reject training enrollment records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'Worker.read': {
+    name: 'View Worker',
+    description: 'View and access worker records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'Worker.create': {
+    name: 'Create Worker',
+    description: 'Create new worker records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'Worker.update': {
+    name: 'Update Worker',
+    description: 'Modify existing worker records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'Worker.soft_delete': {
+    name: 'Delete Worker',
+    description: 'Delete (soft) worker records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'Worker.restore': {
+    name: 'Restore Worker',
+    description: 'Restore deleted worker records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'Worker.activate': {
+    name: 'Activate Worker',
+    description: 'Activate worker records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'Worker.deactivate': {
+    name: 'Deactivate Worker',
+    description: 'Deactivate worker records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'LossInvestigation.read': {
+    name: 'View Loss Investigation',
+    description: 'View and access loss investigation records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'LossInvestigation.create': {
+    name: 'Create Loss Investigation',
+    description: 'Create new loss investigation records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'LossInvestigation.update': {
+    name: 'Update Loss Investigation',
+    description: 'Modify existing loss investigation records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'LossInvestigation.soft_delete': {
+    name: 'Delete Loss Investigation',
+    description: 'Delete (soft) loss investigation records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'LossInvestigation.restore': {
+    name: 'Restore Loss Investigation',
+    description: 'Restore deleted loss investigation records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'LossInvestigationFinding.read': {
+    name: 'View Loss Investigation Finding',
+    description: 'View and access loss investigation finding records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'LossInvestigationFinding.create': {
+    name: 'Create Loss Investigation Finding',
+    description: 'Create new loss investigation finding records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'LossInvestigationFinding.update': {
+    name: 'Update Loss Investigation Finding',
+    description: 'Modify existing loss investigation finding records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'LossInvestigationFinding.soft_delete': {
+    name: 'Delete Loss Investigation Finding',
+    description: 'Delete (soft) loss investigation finding records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'LossInvestigationFinding.restore': {
+    name: 'Restore Loss Investigation Finding',
+    description: 'Restore deleted loss investigation finding records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'MitigationAction.read': {
+    name: 'View Mitigation Action',
+    description: 'View and access mitigation action records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'MitigationAction.create': {
+    name: 'Create Mitigation Action',
+    description: 'Create new mitigation action records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'MitigationAction.update': {
+    name: 'Update Mitigation Action',
+    description: 'Modify existing mitigation action records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'MitigationAction.soft_delete': {
+    name: 'Delete Mitigation Action',
+    description: 'Delete (soft) mitigation action records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'MitigationAction.restore': {
+    name: 'Restore Mitigation Action',
+    description: 'Restore deleted mitigation action records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'MitigationAction.implement': {
+    name: 'Implement Mitigation Action',
+    description: 'Implement mitigation action records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'RiskFactor.read': {
+    name: 'View Risk Factor',
+    description: 'View and access risk factor records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'RiskFactor.create': {
+    name: 'Create Risk Factor',
+    description: 'Create new risk factor records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'RiskFactor.update': {
+    name: 'Update Risk Factor',
+    description: 'Modify existing risk factor records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'RiskFactor.soft_delete': {
+    name: 'Delete Risk Factor',
+    description: 'Delete (soft) risk factor records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'RiskFactor.restore': {
+    name: 'Restore Risk Factor',
+    description: 'Restore deleted risk factor records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'RiskFactor.assess': {
+    name: 'Assess Risk Factor',
+    description: 'Assess risk factor records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'ScheduleRisk.read': {
+    name: 'View Schedule Risk',
+    description: 'View and access schedule risk records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'ScheduleRisk.create': {
+    name: 'Create Schedule Risk',
+    description: 'Create new schedule risk records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'ScheduleRisk.update': {
+    name: 'Update Schedule Risk',
+    description: 'Modify existing schedule risk records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'ScheduleRisk.soft_delete': {
+    name: 'Delete Schedule Risk',
+    description: 'Delete (soft) schedule risk records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'ScheduleRisk.restore': {
+    name: 'Restore Schedule Risk',
+    description: 'Restore deleted schedule risk records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'AnomalyCase.read': {
+    name: 'View Anomaly Case',
+    description: 'View and access anomaly case records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'AnomalyCase.create': {
+    name: 'Create Anomaly Case',
+    description: 'Create new anomaly case records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'AnomalyCase.update': {
+    name: 'Update Anomaly Case',
+    description: 'Modify existing anomaly case records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'AnomalyCase.soft_delete': {
+    name: 'Delete Anomaly Case',
+    description: 'Delete (soft) anomaly case records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'AnomalyCase.restore': {
+    name: 'Restore Anomaly Case',
+    description: 'Restore deleted anomaly case records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'AnomalyCase.investigate': {
+    name: 'Investigate Anomaly Case',
+    description: 'Investigate anomaly case records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'AnomalyCaseAction.read': {
+    name: 'View Anomaly Case Action',
+    description: 'View and access anomaly case action records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'AnomalyCaseAction.create': {
+    name: 'Create Anomaly Case Action',
+    description: 'Create new anomaly case action records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'AnomalyCaseAction.update': {
+    name: 'Update Anomaly Case Action',
+    description: 'Modify existing anomaly case action records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'AnomalyCaseAction.execute': {
+    name: 'Execute Anomaly Case Action',
+    description: 'Execute anomaly case action records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'AnomalySignal.read': {
+    name: 'View Anomaly Signal',
+    description: 'View and access anomaly signal records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'AnomalySignal.create': {
+    name: 'Create Anomaly Signal',
+    description: 'Create new anomaly signal records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'AnomalySignal.update': {
+    name: 'Update Anomaly Signal',
+    description: 'Modify existing anomaly signal records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'AnomalySignalFeature.read': {
+    name: 'View Anomaly Signal Feature',
+    description: 'View and access anomaly signal feature records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'AnomalySignalFeature.create': {
+    name: 'Create Anomaly Signal Feature',
+    description: 'Create new anomaly signal feature records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'AnomalySignalFeature.update': {
+    name: 'Update Anomaly Signal Feature',
+    description: 'Modify existing anomaly signal feature records within tenant scope',
+    domain: 'hr_employment'
+  },
+  'ApprovalRequest.read': {
+    name: 'View Approval Request',
+    description: 'View and access approval request records within tenant scope',
+    domain: 'approval_workflows'
+  },
+  'ApprovalRequest.create': {
+    name: 'Create Approval Request',
+    description: 'Create new approval request records within tenant scope',
+    domain: 'approval_workflows'
+  },
+  'ApprovalRequest.update': {
+    name: 'Update Approval Request',
+    description: 'Modify existing approval request records within tenant scope',
+    domain: 'approval_workflows'
+  },
+  'ApprovalRequest.soft_delete': {
+    name: 'Delete Approval Request',
+    description: 'Delete (soft) approval request records within tenant scope',
+    domain: 'approval_workflows'
+  },
+  'ApprovalRequest.restore': {
+    name: 'Restore Approval Request',
+    description: 'Restore deleted approval request records within tenant scope',
+    domain: 'approval_workflows'
+  },
+  'ApprovalRequest.submit': {
+    name: 'Submit Approval Request',
+    description: 'Submit approval request records within tenant scope',
+    domain: 'approval_workflows'
+  },
+  'ApprovalRequest.approve': {
+    name: 'Approve Approval Request',
+    description: 'Approve approval request records within tenant scope',
+    domain: 'approval_workflows'
+  },
+  'ApprovalRequest.reject': {
+    name: 'Reject Approval Request',
+    description: 'Reject approval request records within tenant scope',
+    domain: 'approval_workflows'
+  },
+  'ApprovalDecision.read': {
+    name: 'View Approval Decision',
+    description: 'View and access approval decision records within tenant scope',
+    domain: 'approval_workflows'
+  },
+  'ApprovalDecision.create': {
+    name: 'Create Approval Decision',
+    description: 'Create new approval decision records within tenant scope',
+    domain: 'approval_workflows'
+  },
+  'ApprovalDecision.update': {
+    name: 'Update Approval Decision',
+    description: 'Modify existing approval decision records within tenant scope',
+    domain: 'approval_workflows'
+  },
+  'ApprovalDecision.soft_delete': {
+    name: 'Delete Approval Decision',
+    description: 'Delete (soft) approval decision records within tenant scope',
+    domain: 'approval_workflows'
+  },
+  'ApprovalDecision.restore': {
+    name: 'Restore Approval Decision',
+    description: 'Restore deleted approval decision records within tenant scope',
+    domain: 'approval_workflows'
+  },
+  'ApprovalRule.read': {
+    name: 'View Approval Rule',
+    description: 'View and access approval rule records within tenant scope',
+    domain: 'approval_workflows'
+  },
+  'ApprovalRule.create': {
+    name: 'Create Approval Rule',
+    description: 'Create new approval rule records within tenant scope',
+    domain: 'approval_workflows'
+  },
+  'ApprovalRule.update': {
+    name: 'Update Approval Rule',
+    description: 'Modify existing approval rule records within tenant scope',
+    domain: 'approval_workflows'
+  },
+  'ApprovalRule.soft_delete': {
+    name: 'Delete Approval Rule',
+    description: 'Delete (soft) approval rule records within tenant scope',
+    domain: 'approval_workflows'
+  },
+  'ApprovalRule.restore': {
+    name: 'Restore Approval Rule',
+    description: 'Restore deleted approval rule records within tenant scope',
+    domain: 'approval_workflows'
+  },
+  'ApprovalRule.activate': {
+    name: 'Activate Approval Rule',
+    description: 'Activate approval rule records within tenant scope',
+    domain: 'approval_workflows'
+  },
+  'ApprovalRule.deactivate': {
+    name: 'Deactivate Approval Rule',
+    description: 'Deactivate approval rule records within tenant scope',
+    domain: 'approval_workflows'
+  },
+  'JobRun.read': {
+    name: 'View Job Run',
+    description: 'View and access job run records within tenant scope',
+    domain: 'system_operations'
+  },
+  'JobRun.create': {
+    name: 'Create Job Run',
+    description: 'Create new job run records within tenant scope',
+    domain: 'system_operations'
+  },
+  'JobRun.update': {
+    name: 'Update Job Run',
+    description: 'Modify existing job run records within tenant scope',
+    domain: 'system_operations'
+  },
+  'JobRun.soft_delete': {
+    name: 'Delete Job Run',
+    description: 'Delete (soft) job run records within tenant scope',
+    domain: 'system_operations'
+  },
+  'JobRun.restore': {
+    name: 'Restore Job Run',
+    description: 'Restore deleted job run records within tenant scope',
+    domain: 'system_operations'
+  },
+  'JobSchedule.read': {
+    name: 'View Job Schedule',
+    description: 'View and access job schedule records within tenant scope',
+    domain: 'system_operations'
+  },
+  'JobSchedule.create': {
+    name: 'Create Job Schedule',
+    description: 'Create new job schedule records within tenant scope',
+    domain: 'system_operations'
+  },
+  'JobSchedule.update': {
+    name: 'Update Job Schedule',
+    description: 'Modify existing job schedule records within tenant scope',
+    domain: 'system_operations'
+  },
+  'JobSchedule.activate': {
+    name: 'Activate Job Schedule',
+    description: 'Activate job schedule records within tenant scope',
+    domain: 'system_operations'
+  },
+  'JobSchedule.deactivate': {
+    name: 'Deactivate Job Schedule',
+    description: 'Deactivate job schedule records within tenant scope',
+    domain: 'system_operations'
+  },
+  'JobFamily.read': {
+    name: 'View Job Family',
+    description: 'View and access job family records within tenant scope',
+    domain: 'system_operations'
+  },
+  'JobFamily.create': {
+    name: 'Create Job Family',
+    description: 'Create new job family records within tenant scope',
+    domain: 'system_operations'
+  },
+  'JobFamily.update': {
+    name: 'Update Job Family',
+    description: 'Modify existing job family records within tenant scope',
+    domain: 'system_operations'
+  },
+  'JobFamily.soft_delete': {
+    name: 'Delete Job Family',
+    description: 'Delete (soft) job family records within tenant scope',
+    domain: 'system_operations'
+  },
+  'JobFamily.restore': {
+    name: 'Restore Job Family',
+    description: 'Restore deleted job family records within tenant scope',
+    domain: 'system_operations'
+  },
+  'JobProfile.read': {
+    name: 'View Job Profile',
+    description: 'View and access job profile records within tenant scope',
+    domain: 'system_operations'
+  },
+  'JobProfile.create': {
+    name: 'Create Job Profile',
+    description: 'Create new job profile records within tenant scope',
+    domain: 'system_operations'
+  },
+  'JobProfile.update': {
+    name: 'Update Job Profile',
+    description: 'Modify existing job profile records within tenant scope',
+    domain: 'system_operations'
+  },
+  'JobProfile.soft_delete': {
+    name: 'Delete Job Profile',
+    description: 'Delete (soft) job profile records within tenant scope',
+    domain: 'system_operations'
+  },
+  'JobProfile.restore': {
+    name: 'Restore Job Profile',
+    description: 'Restore deleted job profile records within tenant scope',
+    domain: 'system_operations'
+  },
+  'JobProfileAssignment.read': {
+    name: 'View Job Profile Assignment',
+    description: 'View and access job profile assignment records within tenant scope',
+    domain: 'system_operations'
+  },
+  'JobProfileAssignment.create': {
+    name: 'Create Job Profile Assignment',
+    description: 'Create new job profile assignment records within tenant scope',
+    domain: 'system_operations'
+  },
+  'JobProfileAssignment.update': {
+    name: 'Update Job Profile Assignment',
+    description: 'Modify existing job profile assignment records within tenant scope',
+    domain: 'system_operations'
+  },
+  'JobProfileAssignment.assign': {
+    name: 'Assign Job Profile Assignment',
+    description: 'Assign job profile assignment records within tenant scope',
+    domain: 'system_operations'
+  },
+  'JobProfileAssignment.unassign': {
+    name: 'Unassign Job Profile Assignment',
+    description: 'Remove assignment of job profile assignment records within tenant scope',
+    domain: 'system_operations'
+  },
+  'DistributedLock.read': {
+    name: 'View Distributed Lock',
+    description: 'View and access distributed lock records within tenant scope',
+    domain: 'system_operations'
+  },
+  'DistributedLock.create': {
+    name: 'Create Distributed Lock',
+    description: 'Create new distributed lock records within tenant scope',
+    domain: 'system_operations'
+  },
+  'DistributedLock.update': {
+    name: 'Update Distributed Lock',
+    description: 'Modify existing distributed lock records within tenant scope',
+    domain: 'system_operations'
+  },
+  'NumberSequence.read': {
+    name: 'View Number Sequence',
+    description: 'View and access number sequence records within tenant scope',
+    domain: 'system_operations'
+  },
+  'NumberSequence.create': {
+    name: 'Create Number Sequence',
+    description: 'Create new number sequence records within tenant scope',
+    domain: 'system_operations'
+  },
+  'NumberSequence.update': {
+    name: 'Update Number Sequence',
+    description: 'Modify existing number sequence records within tenant scope',
+    domain: 'system_operations'
+  },
+  'weather_alerts.read': {
+    name: 'View weather_alerts',
+    description: 'View and access weather_alerts records within tenant scope',
+    domain: 'system_operations'
+  },
+  'weather_alerts.create': {
+    name: 'Create weather_alerts',
+    description: 'Create new weather_alerts records within tenant scope',
+    domain: 'system_operations'
+  },
+  'weather_alerts.update': {
+    name: 'Update weather_alerts',
+    description: 'Modify existing weather_alerts records within tenant scope',
+    domain: 'system_operations'
+  },
+  'weather_alerts.activate': {
+    name: 'Activate weather_alerts',
+    description: 'Activate weather_alerts records within tenant scope',
+    domain: 'system_operations'
+  },
+  'weather_alerts.deactivate': {
+    name: 'Deactivate weather_alerts',
+    description: 'Deactivate weather_alerts records within tenant scope',
+    domain: 'system_operations'
+  },
+  'weather_watches.read': {
+    name: 'View weather_watches',
+    description: 'View and access weather_watches records within tenant scope',
+    domain: 'system_operations'
+  },
+  'weather_watches.create': {
+    name: 'Create weather_watches',
+    description: 'Create new weather_watches records within tenant scope',
+    domain: 'system_operations'
+  },
+  'weather_watches.update': {
+    name: 'Update weather_watches',
+    description: 'Modify existing weather_watches records within tenant scope',
+    domain: 'system_operations'
+  },
+  'weather_incidents.read': {
+    name: 'View weather_incidents',
+    description: 'View and access weather_incidents records within tenant scope',
+    domain: 'system_operations'
+  },
+  'weather_incidents.create': {
+    name: 'Create weather_incidents',
+    description: 'Create new weather_incidents records within tenant scope',
+    domain: 'system_operations'
+  },
+  'weather_incidents.update': {
+    name: 'Update weather_incidents',
+    description: 'Modify existing weather_incidents records within tenant scope',
+    domain: 'system_operations'
+  },
+  'weather_incidents.resolve': {
+    name: 'Resolve weather_incidents',
+    description: 'Resolve weather_incidents records within tenant scope',
+    domain: 'system_operations'
+  },
+  'weather_alert_deliveries.read': {
+    name: 'View weather_alert_deliveries',
+    description: 'View and access weather_alert_deliveries records within tenant scope',
+    domain: 'system_operations'
+  },
+  'weather_alert_deliveries.create': {
+    name: 'Create weather_alert_deliveries',
+    description: 'Create new weather_alert_deliveries records within tenant scope',
+    domain: 'system_operations'
+  },
+  'weather_alert_deliveries.update': {
+    name: 'Update weather_alert_deliveries',
+    description: 'Modify existing weather_alert_deliveries records within tenant scope',
+    domain: 'system_operations'
+  },
+  'weather_forecast_cache.read': {
+    name: 'View weather_forecast_cache',
+    description: 'View and access weather_forecast_cache records within tenant scope',
+    domain: 'system_operations'
+  },
+  'weather_forecast_cache.create': {
+    name: 'Create weather_forecast_cache',
+    description: 'Create new weather_forecast_cache records within tenant scope',
+    domain: 'system_operations'
+  },
+  'weather_forecast_cache.update': {
+    name: 'Update weather_forecast_cache',
+    description: 'Modify existing weather_forecast_cache records within tenant scope',
+    domain: 'system_operations'
+  },
+  'weather_providers.read': {
+    name: 'View weather_providers',
+    description: 'View and access weather_providers records within tenant scope',
+    domain: 'system_operations'
+  },
+  'weather_providers.create': {
+    name: 'Create weather_providers',
+    description: 'Create new weather_providers records within tenant scope',
+    domain: 'system_operations'
+  },
+  'weather_providers.update': {
+    name: 'Update weather_providers',
+    description: 'Modify existing weather_providers records within tenant scope',
+    domain: 'system_operations'
+  },
+  'weather_providers.activate': {
+    name: 'Activate weather_providers',
+    description: 'Activate weather_providers records within tenant scope',
+    domain: 'system_operations'
+  },
+  'weather_providers.deactivate': {
+    name: 'Deactivate weather_providers',
+    description: 'Deactivate weather_providers records within tenant scope',
+    domain: 'system_operations'
+  },
+  'weather_risk_factors.read': {
+    name: 'View weather_risk_factors',
+    description: 'View and access weather_risk_factors records within tenant scope',
+    domain: 'system_operations'
+  },
+  'weather_risk_factors.create': {
+    name: 'Create weather_risk_factors',
+    description: 'Create new weather_risk_factors records within tenant scope',
+    domain: 'system_operations'
+  },
+  'weather_risk_factors.update': {
+    name: 'Update weather_risk_factors',
+    description: 'Modify existing weather_risk_factors records within tenant scope',
+    domain: 'system_operations'
+  },
+  'weather_risk_factors.activate': {
+    name: 'Activate weather_risk_factors',
+    description: 'Activate weather_risk_factors records within tenant scope',
+    domain: 'system_operations'
+  },
+  'weather_risk_factors.deactivate': {
+    name: 'Deactivate weather_risk_factors',
+    description: 'Deactivate weather_risk_factors records within tenant scope',
+    domain: 'system_operations'
+  },
+  'Webhook.read': {
+    name: 'View Webhook',
+    description: 'View and access webhook records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'Webhook.create': {
+    name: 'Create Webhook',
+    description: 'Create new webhook records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'Webhook.update': {
+    name: 'Update Webhook',
+    description: 'Modify existing webhook records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'Webhook.soft_delete': {
+    name: 'Delete Webhook',
+    description: 'Delete (soft) webhook records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'Webhook.restore': {
+    name: 'Restore Webhook',
+    description: 'Restore deleted webhook records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'Webhook.activate': {
+    name: 'Activate Webhook',
+    description: 'Activate webhook records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'Webhook.deactivate': {
+    name: 'Deactivate Webhook',
+    description: 'Deactivate webhook records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'WebhookEndpoint.read': {
+    name: 'View Webhook Endpoint',
+    description: 'View and access webhook endpoint records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'WebhookEndpoint.create': {
+    name: 'Create Webhook Endpoint',
+    description: 'Create new webhook endpoint records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'WebhookEndpoint.update': {
+    name: 'Update Webhook Endpoint',
+    description: 'Modify existing webhook endpoint records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'WebhookEndpoint.soft_delete': {
+    name: 'Delete Webhook Endpoint',
+    description: 'Delete (soft) webhook endpoint records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'WebhookEndpoint.restore': {
+    name: 'Restore Webhook Endpoint',
+    description: 'Restore deleted webhook endpoint records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'WebhookDelivery.read': {
+    name: 'View Webhook Delivery',
+    description: 'View and access webhook delivery records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'WebhookDelivery.create': {
+    name: 'Create Webhook Delivery',
+    description: 'Create new webhook delivery records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'WebhookDelivery.update': {
+    name: 'Update Webhook Delivery',
+    description: 'Modify existing webhook delivery records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'WebhookDelivery.soft_delete': {
+    name: 'Delete Webhook Delivery',
+    description: 'Delete (soft) webhook delivery records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'WebhookDelivery.restore': {
+    name: 'Restore Webhook Delivery',
+    description: 'Restore deleted webhook delivery records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'WebhookEvent.read': {
+    name: 'View Webhook Event',
+    description: 'View and access webhook event records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'WebhookEvent.create': {
+    name: 'Create Webhook Event',
+    description: 'Create new webhook event records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'WebhookEvent.update': {
+    name: 'Update Webhook Event',
+    description: 'Modify existing webhook event records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'WebhookEvent.soft_delete': {
+    name: 'Delete Webhook Event',
+    description: 'Delete (soft) webhook event records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'WebhookEvent.restore': {
+    name: 'Restore Webhook Event',
+    description: 'Restore deleted webhook event records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'WebhookLog.read': {
+    name: 'View Webhook Log',
+    description: 'View and access webhook log records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'WebhookLog.create': {
+    name: 'Create Webhook Log',
+    description: 'Create new webhook log records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'WebhookLog.update': {
+    name: 'Update Webhook Log',
+    description: 'Modify existing webhook log records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'WebhookLog.soft_delete': {
+    name: 'Delete Webhook Log',
+    description: 'Delete (soft) webhook log records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'WebhookLog.restore': {
+    name: 'Restore Webhook Log',
+    description: 'Restore deleted webhook log records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'IntegrationConnection.read': {
+    name: 'View Integration Connection',
+    description: 'View and access integration connection records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'IntegrationConnection.create': {
+    name: 'Create Integration Connection',
+    description: 'Create new integration connection records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'IntegrationConnection.update': {
+    name: 'Update Integration Connection',
+    description: 'Modify existing integration connection records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'IntegrationConnection.soft_delete': {
+    name: 'Delete Integration Connection',
+    description: 'Delete (soft) integration connection records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'IntegrationConnection.restore': {
+    name: 'Restore Integration Connection',
+    description: 'Restore deleted integration connection records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'IntegrationConnection.activate': {
+    name: 'Activate Integration Connection',
+    description: 'Activate integration connection records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'IntegrationConnection.deactivate': {
+    name: 'Deactivate Integration Connection',
+    description: 'Deactivate integration connection records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'IntegrationConnector.read': {
+    name: 'View Integration Connector',
+    description: 'View and access integration connector records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'IntegrationConnector.create': {
+    name: 'Create Integration Connector',
+    description: 'Create new integration connector records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'IntegrationConnector.update': {
+    name: 'Update Integration Connector',
+    description: 'Modify existing integration connector records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'IntegrationConnector.soft_delete': {
+    name: 'Delete Integration Connector',
+    description: 'Delete (soft) integration connector records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'IntegrationConnector.restore': {
+    name: 'Restore Integration Connector',
+    description: 'Restore deleted integration connector records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'IntegrationMapping.read': {
+    name: 'View Integration Mapping',
+    description: 'View and access integration mapping records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'IntegrationMapping.create': {
+    name: 'Create Integration Mapping',
+    description: 'Create new integration mapping records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'IntegrationMapping.update': {
+    name: 'Update Integration Mapping',
+    description: 'Modify existing integration mapping records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'IntegrationMapping.soft_delete': {
+    name: 'Delete Integration Mapping',
+    description: 'Delete (soft) integration mapping records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'IntegrationMapping.restore': {
+    name: 'Restore Integration Mapping',
+    description: 'Restore deleted integration mapping records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'IntegrationProvider.read': {
+    name: 'View Integration Provider',
+    description: 'View and access integration provider records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'IntegrationProvider.create': {
+    name: 'Create Integration Provider',
+    description: 'Create new integration provider records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'IntegrationProvider.update': {
+    name: 'Update Integration Provider',
+    description: 'Modify existing integration provider records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'IntegrationProvider.soft_delete': {
+    name: 'Delete Integration Provider',
+    description: 'Delete (soft) integration provider records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'IntegrationProvider.restore': {
+    name: 'Restore Integration Provider',
+    description: 'Restore deleted integration provider records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'IntegrationSecret.read': {
+    name: 'View Integration Secret',
+    description: 'View and access integration secret records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'IntegrationSecret.create': {
+    name: 'Create Integration Secret',
+    description: 'Create new integration secret records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'IntegrationSecret.update': {
+    name: 'Update Integration Secret',
+    description: 'Modify existing integration secret records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'IntegrationSecret.soft_delete': {
+    name: 'Delete Integration Secret',
+    description: 'Delete (soft) integration secret records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'IntegrationSecret.restore': {
+    name: 'Restore Integration Secret',
+    description: 'Restore deleted integration secret records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'SyncJob.read': {
+    name: 'View Sync Job',
+    description: 'View and access sync job records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'SyncJob.create': {
+    name: 'Create Sync Job',
+    description: 'Create new sync job records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'SyncJob.update': {
+    name: 'Update Sync Job',
+    description: 'Modify existing sync job records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'SyncJob.soft_delete': {
+    name: 'Delete Sync Job',
+    description: 'Delete (soft) sync job records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'SyncJob.restore': {
+    name: 'Restore Sync Job',
+    description: 'Restore deleted sync job records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'SyncLog.read': {
+    name: 'View Sync Log',
+    description: 'View and access sync log records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'SyncLog.create': {
+    name: 'Create Sync Log',
+    description: 'Create new sync log records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'SyncLog.update': {
+    name: 'Update Sync Log',
+    description: 'Modify existing sync log records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'SyncLog.soft_delete': {
+    name: 'Delete Sync Log',
+    description: 'Delete (soft) sync log records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'SyncLog.restore': {
+    name: 'Restore Sync Log',
+    description: 'Restore deleted sync log records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'SyncState.read': {
+    name: 'View Sync State',
+    description: 'View and access sync state records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'SyncState.create': {
+    name: 'Create Sync State',
+    description: 'Create new sync state records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'SyncState.update': {
+    name: 'Update Sync State',
+    description: 'Modify existing sync state records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'SyncState.soft_delete': {
+    name: 'Delete Sync State',
+    description: 'Delete (soft) sync state records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'SyncState.restore': {
+    name: 'Restore Sync State',
+    description: 'Restore deleted sync state records within tenant scope',
+    domain: 'integrations_webhooks'
+  },
+  'Location.read': {
+    name: 'View Location',
+    description: 'View and access location records within tenant scope',
+    domain: 'system_config'
+  },
+  'Location.create': {
+    name: 'Create Location',
+    description: 'Create new location records within tenant scope',
+    domain: 'system_config'
+  },
+  'Location.update': {
+    name: 'Update Location',
+    description: 'Modify existing location records within tenant scope',
+    domain: 'system_config'
+  },
+  'Location.soft_delete': {
+    name: 'Delete Location',
+    description: 'Delete (soft) location records within tenant scope',
+    domain: 'system_config'
+  },
+  'Location.restore': {
+    name: 'Restore Location',
+    description: 'Restore deleted location records within tenant scope',
+    domain: 'system_config'
+  },
+  'Country.read': {
+    name: 'View Country',
+    description: 'View and access country records within tenant scope',
+    domain: 'system_config'
+  },
+  'Country.create': {
+    name: 'Create Country',
+    description: 'Create new country records within tenant scope',
+    domain: 'system_config'
+  },
+  'Country.update': {
+    name: 'Update Country',
+    description: 'Modify existing country records within tenant scope',
+    domain: 'system_config'
+  },
+  'Country.soft_delete': {
+    name: 'Delete Country',
+    description: 'Delete (soft) country records within tenant scope',
+    domain: 'system_config'
+  },
+  'Country.restore': {
+    name: 'Restore Country',
+    description: 'Restore deleted country records within tenant scope',
+    domain: 'system_config'
+  },
+  'Region.read': {
+    name: 'View Region',
+    description: 'View and access region records within tenant scope',
+    domain: 'system_config'
+  },
+  'Region.create': {
+    name: 'Create Region',
+    description: 'Create new region records within tenant scope',
+    domain: 'system_config'
+  },
+  'Region.update': {
+    name: 'Update Region',
+    description: 'Modify existing region records within tenant scope',
+    domain: 'system_config'
+  },
+  'Region.soft_delete': {
+    name: 'Delete Region',
+    description: 'Delete (soft) region records within tenant scope',
+    domain: 'system_config'
+  },
+  'Region.restore': {
+    name: 'Restore Region',
+    description: 'Restore deleted region records within tenant scope',
+    domain: 'system_config'
+  },
+  'StateProvince.read': {
+    name: 'View State Province',
+    description: 'View and access state province records within tenant scope',
+    domain: 'system_config'
+  },
+  'StateProvince.create': {
+    name: 'Create State Province',
+    description: 'Create new state province records within tenant scope',
+    domain: 'system_config'
+  },
+  'StateProvince.update': {
+    name: 'Update State Province',
+    description: 'Modify existing state province records within tenant scope',
+    domain: 'system_config'
+  },
+  'StateProvince.soft_delete': {
+    name: 'Delete State Province',
+    description: 'Delete (soft) state province records within tenant scope',
+    domain: 'system_config'
+  },
+  'StateProvince.restore': {
+    name: 'Restore State Province',
+    description: 'Restore deleted state province records within tenant scope',
+    domain: 'system_config'
+  },
+  'PriceList.read': {
+    name: 'View Price List',
+    description: 'View and access price list records within tenant scope',
+    domain: 'system_config'
+  },
+  'PriceList.create': {
+    name: 'Create Price List',
+    description: 'Create new price list records within tenant scope',
+    domain: 'system_config'
+  },
+  'PriceList.update': {
+    name: 'Update Price List',
+    description: 'Modify existing price list records within tenant scope',
+    domain: 'system_config'
+  },
+  'PriceList.soft_delete': {
+    name: 'Delete Price List',
+    description: 'Delete (soft) price list records within tenant scope',
+    domain: 'system_config'
+  },
+  'PriceList.restore': {
+    name: 'Restore Price List',
+    description: 'Restore deleted price list records within tenant scope',
+    domain: 'system_config'
+  },
+  'PriceList.activate': {
+    name: 'Activate Price List',
+    description: 'Activate price list records within tenant scope',
+    domain: 'system_config'
+  },
+  'PriceList.deactivate': {
+    name: 'Deactivate Price List',
+    description: 'Deactivate price list records within tenant scope',
+    domain: 'system_config'
+  },
+  'PriceListItem.read': {
+    name: 'View Price List Item',
+    description: 'View and access price list item records within tenant scope',
+    domain: 'system_config'
+  },
+  'PriceListItem.create': {
+    name: 'Create Price List Item',
+    description: 'Create new price list item records within tenant scope',
+    domain: 'system_config'
+  },
+  'PriceListItem.update': {
+    name: 'Update Price List Item',
+    description: 'Modify existing price list item records within tenant scope',
+    domain: 'system_config'
+  },
+  'PriceListItem.soft_delete': {
+    name: 'Delete Price List Item',
+    description: 'Delete (soft) price list item records within tenant scope',
+    domain: 'system_config'
+  },
+  'PriceListItem.restore': {
+    name: 'Restore Price List Item',
+    description: 'Restore deleted price list item records within tenant scope',
+    domain: 'system_config'
+  },
+  'CostCenter.read': {
+    name: 'View Cost Center',
+    description: 'View and access cost center records within tenant scope',
+    domain: 'system_config'
+  },
+  'CostCenter.create': {
+    name: 'Create Cost Center',
+    description: 'Create new cost center records within tenant scope',
+    domain: 'system_config'
+  },
+  'CostCenter.update': {
+    name: 'Update Cost Center',
+    description: 'Modify existing cost center records within tenant scope',
+    domain: 'system_config'
+  },
+  'CostCenter.soft_delete': {
+    name: 'Delete Cost Center',
+    description: 'Delete (soft) cost center records within tenant scope',
+    domain: 'system_config'
+  },
+  'CostCenter.restore': {
+    name: 'Restore Cost Center',
+    description: 'Restore deleted cost center records within tenant scope',
+    domain: 'system_config'
+  },
+  'CostCategory.read': {
+    name: 'View Cost Category',
+    description: 'View and access cost category records within tenant scope',
+    domain: 'system_config'
+  },
+  'CostCategory.create': {
+    name: 'Create Cost Category',
+    description: 'Create new cost category records within tenant scope',
+    domain: 'system_config'
+  },
+  'CostCategory.update': {
+    name: 'Update Cost Category',
+    description: 'Modify existing cost category records within tenant scope',
+    domain: 'system_config'
+  },
+  'CostCategory.soft_delete': {
+    name: 'Delete Cost Category',
+    description: 'Delete (soft) cost category records within tenant scope',
+    domain: 'system_config'
+  },
+  'CostCategory.restore': {
+    name: 'Restore Cost Category',
+    description: 'Restore deleted cost category records within tenant scope',
+    domain: 'system_config'
+  },
+  'CostCode.read': {
+    name: 'View Cost Code',
+    description: 'View and access cost code records within tenant scope',
+    domain: 'system_config'
+  },
+  'CostCode.create': {
+    name: 'Create Cost Code',
+    description: 'Create new cost code records within tenant scope',
+    domain: 'system_config'
+  },
+  'CostCode.update': {
+    name: 'Update Cost Code',
+    description: 'Modify existing cost code records within tenant scope',
+    domain: 'system_config'
+  },
+  'CostCode.soft_delete': {
+    name: 'Delete Cost Code',
+    description: 'Delete (soft) cost code records within tenant scope',
+    domain: 'system_config'
+  },
+  'CostCode.restore': {
+    name: 'Restore Cost Code',
+    description: 'Restore deleted cost code records within tenant scope',
+    domain: 'system_config'
+  },
+  'UnitOfMeasure.read': {
+    name: 'View Unit Of Measure',
+    description: 'View and access unit of measure records within tenant scope',
+    domain: 'system_config'
+  },
+  'UnitOfMeasure.create': {
+    name: 'Create Unit Of Measure',
+    description: 'Create new unit of measure records within tenant scope',
+    domain: 'system_config'
+  },
+  'UnitOfMeasure.update': {
+    name: 'Update Unit Of Measure',
+    description: 'Modify existing unit of measure records within tenant scope',
+    domain: 'system_config'
+  },
+  'UnitOfMeasure.soft_delete': {
+    name: 'Delete Unit Of Measure',
+    description: 'Delete (soft) unit of measure records within tenant scope',
+    domain: 'system_config'
+  },
+  'UnitOfMeasure.restore': {
+    name: 'Restore Unit Of Measure',
+    description: 'Restore deleted unit of measure records within tenant scope',
+    domain: 'system_config'
+  },
+  'WorkType.read': {
+    name: 'View Work Type',
+    description: 'View and access work type records within tenant scope',
+    domain: 'system_config'
+  },
+  'WorkType.create': {
+    name: 'Create Work Type',
+    description: 'Create new work type records within tenant scope',
+    domain: 'system_config'
+  },
+  'WorkType.update': {
+    name: 'Update Work Type',
+    description: 'Modify existing work type records within tenant scope',
+    domain: 'system_config'
+  },
+  'WorkType.soft_delete': {
+    name: 'Delete Work Type',
+    description: 'Delete (soft) work type records within tenant scope',
+    domain: 'system_config'
+  },
+  'WorkType.restore': {
+    name: 'Restore Work Type',
+    description: 'Restore deleted work type records within tenant scope',
+    domain: 'system_config'
+  },
+  'TenantAuditLog.read': {
+    name: 'View Tenant Audit Log',
+    description: 'View and access tenant audit log records within tenant scope',
+    domain: 'audit_compliance'
+  },
+  'TenantAuditLog.export': {
+    name: 'Export Tenant Audit Log',
+    description: 'Export data for tenant audit log records within tenant scope',
+    domain: 'audit_compliance'
+  },
+  'DataRetentionPolicy.read': {
+    name: 'View Data Retention Policy',
+    description: 'View and access data retention policy records within tenant scope',
+    domain: 'audit_compliance'
+  },
+  'DataRetentionPolicy.create': {
+    name: 'Create Data Retention Policy',
+    description: 'Create new data retention policy records within tenant scope',
+    domain: 'audit_compliance'
+  },
+  'DataRetentionPolicy.update': {
+    name: 'Update Data Retention Policy',
+    description: 'Modify existing data retention policy records within tenant scope',
+    domain: 'audit_compliance'
+  },
+  'DataRetentionPolicy.soft_delete': {
+    name: 'Delete Data Retention Policy',
+    description: 'Delete (soft) data retention policy records within tenant scope',
+    domain: 'audit_compliance'
+  },
+  'DataRetentionPolicy.restore': {
+    name: 'Restore Data Retention Policy',
+    description: 'Restore deleted data retention policy records within tenant scope',
+    domain: 'audit_compliance'
+  },
+  'DataRetentionPolicy.activate': {
+    name: 'Activate Data Retention Policy',
+    description: 'Activate data retention policy records within tenant scope',
+    domain: 'audit_compliance'
+  },
+  'DataRetentionPolicy.deactivate': {
+    name: 'Deactivate Data Retention Policy',
+    description: 'Deactivate data retention policy records within tenant scope',
+    domain: 'audit_compliance'
+  },
+  'ErrorReport.read': {
+    name: 'View Error Report',
+    description: 'View and access error report records within tenant scope',
+    domain: 'audit_compliance'
+  },
+  'ErrorReport.create': {
+    name: 'Create Error Report',
+    description: 'Create new error report records within tenant scope',
+    domain: 'audit_compliance'
+  },
+  'ErrorReport.update': {
+    name: 'Update Error Report',
+    description: 'Modify existing error report records within tenant scope',
+    domain: 'audit_compliance'
+  },
+  'ErrorReport.soft_delete': {
+    name: 'Delete Error Report',
+    description: 'Delete (soft) error report records within tenant scope',
+    domain: 'audit_compliance'
+  },
+  'ErrorReport.restore': {
+    name: 'Restore Error Report',
+    description: 'Restore deleted error report records within tenant scope',
+    domain: 'audit_compliance'
+  },
+  'SystemLog.read': {
+    name: 'View System Log',
+    description: 'View and access system log records within tenant scope',
+    domain: 'audit_compliance'
+  },
+  'SystemLog.create': {
+    name: 'Create System Log',
+    description: 'Create new system log records within tenant scope',
+    domain: 'audit_compliance'
+  },
+  'SystemLog.update': {
+    name: 'Update System Log',
+    description: 'Modify existing system log records within tenant scope',
+    domain: 'audit_compliance'
+  },
+  'SystemLog.soft_delete': {
+    name: 'Delete System Log',
+    description: 'Delete (soft) system log records within tenant scope',
+    domain: 'audit_compliance'
+  },
+  'SystemLog.restore': {
+    name: 'Restore System Log',
+    description: 'Restore deleted system log records within tenant scope',
+    domain: 'audit_compliance'
+  },
+  'ExportJob.read': {
+    name: 'View Export Job',
+    description: 'View and access export job records within tenant scope',
+    domain: 'data_export_reporting'
+  },
+  'ExportJob.create': {
+    name: 'Create Export Job',
+    description: 'Create new export job records within tenant scope',
+    domain: 'data_export_reporting'
+  },
+  'ExportJob.update': {
+    name: 'Update Export Job',
+    description: 'Modify existing export job records within tenant scope',
+    domain: 'data_export_reporting'
+  },
+  'ExportJob.soft_delete': {
+    name: 'Delete Export Job',
+    description: 'Delete (soft) export job records within tenant scope',
+    domain: 'data_export_reporting'
+  },
+  'ExportJob.restore': {
+    name: 'Restore Export Job',
+    description: 'Restore deleted export job records within tenant scope',
+    domain: 'data_export_reporting'
+  },
+  'ExportArtifact.read': {
+    name: 'View Export Artifact',
+    description: 'View and access export artifact records within tenant scope',
+    domain: 'data_export_reporting'
+  },
+  'ExportArtifact.create': {
+    name: 'Create Export Artifact',
+    description: 'Create new export artifact records within tenant scope',
+    domain: 'data_export_reporting'
+  },
+  'ExportArtifact.update': {
+    name: 'Update Export Artifact',
+    description: 'Modify existing export artifact records within tenant scope',
+    domain: 'data_export_reporting'
+  },
+  'ExportArtifact.soft_delete': {
+    name: 'Delete Export Artifact',
+    description: 'Delete (soft) export artifact records within tenant scope',
+    domain: 'data_export_reporting'
+  },
+  'ExportArtifact.restore': {
+    name: 'Restore Export Artifact',
+    description: 'Restore deleted export artifact records within tenant scope',
+    domain: 'data_export_reporting'
+  },
+  'ReportDefinition.read': {
+    name: 'View Report Definition',
+    description: 'View and access report definition records within tenant scope',
+    domain: 'data_export_reporting'
+  },
+  'ReportDefinition.create': {
+    name: 'Create Report Definition',
+    description: 'Create new report definition records within tenant scope',
+    domain: 'data_export_reporting'
+  },
+  'ReportDefinition.update': {
+    name: 'Update Report Definition',
+    description: 'Modify existing report definition records within tenant scope',
+    domain: 'data_export_reporting'
+  },
+  'ReportDefinition.soft_delete': {
+    name: 'Delete Report Definition',
+    description: 'Delete (soft) report definition records within tenant scope',
+    domain: 'data_export_reporting'
+  },
+  'ReportDefinition.restore': {
+    name: 'Restore Report Definition',
+    description: 'Restore deleted report definition records within tenant scope',
+    domain: 'data_export_reporting'
+  },
+  'DashboardDefinition.read': {
+    name: 'View Dashboard Definition',
+    description: 'View and access dashboard definition records within tenant scope',
+    domain: 'data_export_reporting'
+  },
+  'DashboardDefinition.create': {
+    name: 'Create Dashboard Definition',
+    description: 'Create new dashboard definition records within tenant scope',
+    domain: 'data_export_reporting'
+  },
+  'DashboardDefinition.update': {
+    name: 'Update Dashboard Definition',
+    description: 'Modify existing dashboard definition records within tenant scope',
+    domain: 'data_export_reporting'
+  },
+  'DashboardDefinition.soft_delete': {
+    name: 'Delete Dashboard Definition',
+    description: 'Delete (soft) dashboard definition records within tenant scope',
+    domain: 'data_export_reporting'
+  },
+  'DashboardDefinition.restore': {
+    name: 'Restore Dashboard Definition',
+    description: 'Restore deleted dashboard definition records within tenant scope',
+    domain: 'data_export_reporting'
+  },
+  'Account.assign': {
+    name: 'Assign Account',
+    description: 'Assign account records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Account.unassign': {
+    name: 'Unassign Account',
+    description: 'Remove assignment of account records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Project.assign': {
+    name: 'Assign Project',
+    description: 'Assign project records within tenant scope',
+    domain: 'project_management'
+  },
+  'Project.unassign': {
+    name: 'Unassign Project',
+    description: 'Remove assignment of project records within tenant scope',
+    domain: 'project_management'
+  },
+  'ExpenseReceipt.approve': {
+    name: 'Approve Expense Receipt',
+    description: 'Approve expense receipt records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'ExpenseReceipt.reject': {
+    name: 'Reject Expense Receipt',
+    description: 'Reject expense receipt records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'PayrollRun.submit': {
+    name: 'Submit Payroll Run',
+    description: 'Submit payroll run records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'ScheduleException.approve': {
+    name: 'Approve Schedule Exception',
+    description: 'Approve schedule exception records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'ScheduleException.reject': {
+    name: 'Reject Schedule Exception',
+    description: 'Reject schedule exception records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'Vendor.assign': {
+    name: 'Assign Vendor',
+    description: 'Assign vendor records within tenant scope',
+    domain: 'vendor_contract'
+  },
+  'Vendor.unassign': {
+    name: 'Unassign Vendor',
+    description: 'Remove assignment of vendor records within tenant scope',
+    domain: 'vendor_contract'
+  },
+  'PayStatement.read': {
+    name: 'View Pay Statement',
+    description: 'View and access pay statement records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'Account.hard_delete': {
+    name: 'Permanently Delete Account',
+    description: 'Permanently delete account records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'AccountAddress.hard_delete': {
+    name: 'Permanently Delete Account Address',
+    description: 'Permanently delete account address records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Contact.hard_delete': {
+    name: 'Permanently Delete Contact',
+    description: 'Permanently delete contact records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Lead.hard_delete': {
+    name: 'Permanently Delete Lead',
+    description: 'Permanently delete lead records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Opportunity.hard_delete': {
+    name: 'Permanently Delete Opportunity',
+    description: 'Permanently delete opportunity records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Quote.hard_delete': {
+    name: 'Permanently Delete Quote',
+    description: 'Permanently delete quote records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Estimate.hard_delete': {
+    name: 'Permanently Delete Estimate',
+    description: 'Permanently delete estimate records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'EstimateComment.read': {
+    name: 'View Estimate Comment',
+    description: 'View and access estimate comment records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'EstimateComment.create': {
+    name: 'Create Estimate Comment',
+    description: 'Create new estimate comment records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'EstimateComment.update': {
+    name: 'Update Estimate Comment',
+    description: 'Modify existing estimate comment records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'EstimateComment.soft_delete': {
+    name: 'Delete Estimate Comment',
+    description: 'Delete (soft) estimate comment records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'EstimateComment.restore': {
+    name: 'Restore Estimate Comment',
+    description: 'Restore deleted estimate comment records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'EstimateDiscount.read': {
+    name: 'View Estimate Discount',
+    description: 'View and access estimate discount records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'EstimateDiscount.create': {
+    name: 'Create Estimate Discount',
+    description: 'Create new estimate discount records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'EstimateDiscount.update': {
+    name: 'Update Estimate Discount',
+    description: 'Modify existing estimate discount records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'EstimateDiscount.soft_delete': {
+    name: 'Delete Estimate Discount',
+    description: 'Delete (soft) estimate discount records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'EstimateDiscount.restore': {
+    name: 'Restore Estimate Discount',
+    description: 'Restore deleted estimate discount records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'EstimateHistoryEvent.read': {
+    name: 'View Estimate History Event',
+    description: 'View and access estimate history event records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'EstimateHistoryEvent.create': {
+    name: 'Create Estimate History Event',
+    description: 'Create new estimate history event records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'EstimateRevision.read': {
+    name: 'View Estimate Revision',
+    description: 'View and access estimate revision records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'EstimateRevision.create': {
+    name: 'Create Estimate Revision',
+    description: 'Create new estimate revision records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'EstimateRevision.update': {
+    name: 'Update Estimate Revision',
+    description: 'Modify existing estimate revision records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'EstimateRevision.soft_delete': {
+    name: 'Delete Estimate Revision',
+    description: 'Delete (soft) estimate revision records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'EstimateRevision.restore': {
+    name: 'Restore Estimate Revision',
+    description: 'Restore deleted estimate revision records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'EstimateTax.read': {
+    name: 'View Estimate Tax',
+    description: 'View and access estimate tax records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'EstimateTax.create': {
+    name: 'Create Estimate Tax',
+    description: 'Create new estimate tax records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'EstimateTax.update': {
+    name: 'Update Estimate Tax',
+    description: 'Modify existing estimate tax records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'EstimateTax.soft_delete': {
+    name: 'Delete Estimate Tax',
+    description: 'Delete (soft) estimate tax records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'EstimateTax.restore': {
+    name: 'Restore Estimate Tax',
+    description: 'Restore deleted estimate tax records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'EstimateTerm.read': {
+    name: 'View Estimate Term',
+    description: 'View and access estimate term records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'EstimateTerm.create': {
+    name: 'Create Estimate Term',
+    description: 'Create new estimate term records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'EstimateTerm.update': {
+    name: 'Update Estimate Term',
+    description: 'Modify existing estimate term records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'EstimateTerm.soft_delete': {
+    name: 'Delete Estimate Term',
+    description: 'Delete (soft) estimate term records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'EstimateTerm.restore': {
+    name: 'Restore Estimate Term',
+    description: 'Restore deleted estimate term records within tenant scope',
+    domain: 'crm_sales'
+  },
+  'Expense.hard_delete': {
+    name: 'Permanently Delete Expense',
+    description: 'Permanently delete expense records within tenant scope',
+    domain: 'financial_operations'
+  },
+  'Schedule.hard_delete': {
+    name: 'Permanently Delete Schedule',
+    description: 'Permanently delete schedule records within tenant scope',
+    domain: 'time_scheduling'
+  },
+  'InventoryItem.hard_delete': {
+    name: 'Permanently Delete Inventory Item',
+    description: 'Permanently delete inventory item records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'Asset.hard_delete': {
+    name: 'Permanently Delete Asset',
+    description: 'Permanently delete asset records within tenant scope',
+    domain: 'inventory_assets'
+  },
+  'Channel.hard_delete': {
+    name: 'Permanently Delete Channel',
+    description: 'Permanently delete channel records within tenant scope',
+    domain: 'communication'
+  },
+  'DirectChat.hard_delete': {
+    name: 'Permanently Delete Direct Chat',
+    description: 'Permanently delete direct chat records within tenant scope',
+    domain: 'communication'
+  },
+  'FileObject.hard_delete': {
+    name: 'Permanently Delete File Object',
+    description: 'Permanently delete file object records within tenant scope',
+    domain: 'document_management'
+  },
+  'Attachment.hard_delete': {
+    name: 'Permanently Delete Attachment',
+    description: 'Permanently delete attachment records within tenant scope',
+    domain: 'document_management'
+  },
+  'ContractTemplate.hard_delete': {
+    name: 'Permanently Delete Contract Template',
+    description: 'Permanently delete contract template records within tenant scope',
+    domain: 'document_management'
+  },
+  'TermsTemplate.hard_delete': {
+    name: 'Permanently Delete Terms Template',
+    description: 'Permanently delete terms template records within tenant scope',
+    domain: 'document_management'
+  },
+  'Vendor.hard_delete': {
+    name: 'Permanently Delete Vendor',
+    description: 'Permanently delete vendor records within tenant scope',
+    domain: 'vendor_contract'
   },
 };
