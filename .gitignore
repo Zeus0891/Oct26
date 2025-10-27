@@ -1,1 +1,165 @@
+# ==========================================
+# 🧠 ROOT GITIGNORE — MONOREPO (Backend + Frontend)
+# ==========================================
+
+# ------------------------------------------------------
+# ⚙️  SYSTEM / OS
+# ------------------------------------------------------
 .DS_Store
+*.DS_Store
+Thumbs.db
+Desktop.ini
+ehthumbs.db
+.AppleDouble
+._*
+
+# ------------------------------------------------------
+# ⚙️  NODE / DEPENDENCIES
+# ------------------------------------------------------
+node_modules/
+**/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.eslintcache
+.ts-node/
+.nyc_output/
+.pnp
+.pnp.*
+
+# Yarn (keep only important directories)
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# ------------------------------------------------------
+# ⚙️  BUILD OUTPUTS
+# ------------------------------------------------------
+dist/
+build/
+.out/
+.cache/
+coverage/
+.next/
+.out/
+.vite/
+out/
+**/coverage/
+**/build/
+**/.next/
+**/out/
+*.tsbuildinfo
+.next-env.d.ts
+
+# ------------------------------------------------------
+# ⚙️  LOGS / TEMPORARY FILES
+# ------------------------------------------------------
+logs/
+*.log
+*.csv
+*.pid
+*.seed
+*.seed.sql
+*.dump
+*.tgz
+/tmp/
+temp/
+tmp/
+.cache/
+*.tmp
+
+# ------------------------------------------------------
+# ⚙️  ENVIRONMENT / SECRETS
+# ------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+
+# ------------------------------------------------------
+# ⚙️  DATABASE / PRISMA
+# ------------------------------------------------------
+*.sqlite
+*.db
+*.db-journal
+prisma/migrations/dev/
+prisma/migrations/**/shadow.db
+prisma/migrations/**/README.md
+prisma/seed/generated/
+node_modules/.prisma/**
+node_modules/@prisma/engines/**
+**/generated/
+**/.generated/
+
+# ------------------------------------------------------
+# ⚙️  IDE / EDITORS
+# ------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+
+# ------------------------------------------------------
+# ⚙️  TESTING / SMOKE / DEBUG OUTPUTS
+# ------------------------------------------------------
+scripts/*.tmp
+scripts/*.json
+scripts/*.log
+scripts/auth-smoke-test-output.json
+**/coverage/
+**/test-output/
+**/*.snap
+**/*.spec.ts
+**/*.test.ts
+**/jest-results.json
+
+# ------------------------------------------------------
+# ⚙️  RBAC / AUDIT / GENERATED DOCS
+# ------------------------------------------------------
+src/rbac/middleware/*.bak
+src/rbac/middleware/*.tmp
+docs/**/*.log
+docs/**/*.tmp
+
+# ------------------------------------------------------
+# ⚙️  PLAYGROUND / SCRATCH / LOCAL
+# ------------------------------------------------------
+playground/
+testdata/
+scratch/
+
+# ------------------------------------------------------
+# ⚙️  FRONTEND SPECIFIC (Next.js / React / Vite)
+# ------------------------------------------------------
+.vercel/
+.next/
+out/
+Frontend/.next/
+Frontend/out/
+Frontend/.vercel/
+Frontend/build/
+Frontend/.cache/
+Frontend/coverage/
+Frontend/dist/
+Frontend/.eslintcache
+
+# ------------------------------------------------------
+# ⚙️  LOCKFILES (only keep root lock)
+# ------------------------------------------------------
+Backend/package-lock.json
+Frontend/package-lock.json
+
+# ------------------------------------------------------
+# ⚙️  MISC / BACKUP FILES
+# ------------------------------------------------------
+*.bak
+*.orig
+*.rej
+*.tmp
+*.log
+
+# ------------------------------------------------------
+# ✅  END
+# ------------------------------------------------------
